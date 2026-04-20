@@ -1,0 +1,69 @@
+# NVIDIA ConnectX / InfiniBand
+
+**Type:** Technology
+**Tags:** NVIDIA, networking, InfiniBand, RDMA, HPC, data center, high performance networking, ConnectX, Ethernet
+**Related:** [[GPUDirect-RDMA]], [[NVLink]], [[NVIDIA-BlueField-DPU]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Last Updated:** 2026-04-10
+
+## Summary
+NVIDIA ConnectX is a family of high-performance network adapters (HCAs — Host Channel Adapters) that provide InfiniBand and high-speed Ethernet connectivity for data centers, HPC clusters, and AI training infrastructure. ConnectX adapters are the dominant InfiniBand HCAs globally and are the standard networking choice for NVIDIA DGX SuperPOD and AI data center deployments, enabling the low-latency, high-bandwidth inter-node communication that large-scale distributed AI training requires. NVIDIA acquired Mellanox in 2020, making ConnectX, Quantum InfiniBand switches, and Spectrum Ethernet switches part of the NVIDIA networking portfolio.
+
+## Detail
+
+### Purpose
+Distributed AI training across multiple servers requires extremely low-latency, high-bandwidth inter-node networking for NCCL AllReduce operations. A 512-GPU LLM training run performing AllReduce on gradient tensors needs to move hundreds of gigabytes per iteration across the cluster network. Standard 10/25/100 GbE Ethernet with TCP/IP has too much latency (10s of µs for TCP overhead) and too little bandwidth per port. ConnectX InfiniBand provides sub-microsecond latency (~1 µs) and 200–400 Gb/s per port, while the RDMA transport layer enables GPUDirect RDMA to bypass CPU and system memory entirely.
+
+### Key Features
+
+**ConnectX Generations and Speeds:**
+| Adapter | Interface | Speed | Key Features |
+|---|---|---|---|
+| ConnectX-5 | InfiniBand EDR / 100GbE | 100 Gb/s | GPUDirect RDMA, RDMA over Converged Ethernet (RoCE) |
+| ConnectX-6 | InfiniBand HDR / 200GbE | 200 Gb/s | GPUDirect Async, hardware tag matching |
+| ConnectX-6 Dx | Ethernet only | 100/200 GbE | Smart offloads, VXLAN, hardware crypto |
+| ConnectX-7 | InfiniBand NDR / 400GbE | 400 Gb/s | PCIe Gen5, hardware packet pacing, NVIDIA DOCA |
+| ConnectX-8 | InfiniBand XDR / 800GbE | 800 Gb/s | Blackwell-generation; scheduled 2025 |
+
+**Key Capabilities:**
+- **RDMA (Remote Direct Memory Access):** Kernel-bypass DMA; NIC reads/writes host or GPU memory without CPU involvement; InfiniBand RC (Reliable Connected) QP; RoCE (RDMA over Converged Ethernet) for Ethernet networks
+- **GPUDirect RDMA:** ConnectX HCAs directly DMA to/from NVIDIA GPU frame buffer; NCCL uses this for inter-node GPU collectives
+- **GPUDirect Async:** ConnectX-6+ feature allowing GPU kernels to directly trigger RDMA operations by writing to doorbell registers; true GPU-driven networking without CPU
+- **Quantum InfiniBand Switches:** NVIDIA's InfiniBand switch family; Quantum-2 (400 Gb/s NDR) with 64 ports per switch; fat-tree topologies for DGX SuperPOD; switch-based collectives (InfiniBand Sharp) for hardware-offloaded AllReduce
+- **InfiniBand Sharp (Scalable Hierarchical Aggregation Protocol):** In-network computing — AllReduce operations offloaded to the Quantum switch fabric; reduces network traffic for gradient synchronization by ~2× vs endpoint-based AllReduce
+- **NVIDIA DOCA SDK:** Software platform for programming ConnectX-7/8 and BlueField DPU networking features; replaces legacy MLNX_OFED programming model
+- **OpenFabrics Alliance (OFA) / MLNX_OFED:** OFED (OpenFabrics Enterprise Distribution) driver stack for InfiniBand; `mlx5` kernel driver; `ibverbs`, `rdmacm` user-space libraries
+
+### Use Cases
+- Multi-node LLM training (hundreds to thousands of GPUs) on DGX SuperPOD with InfiniBand NDR fabric
+- HPC MPI workloads (molecular dynamics, climate modeling, financial simulation) using RDMA-based MPI collective operations
+- Distributed GPU databases and analytics (Dask-CUDA, cuDF) with UCX over RDMA
+- AI inference disaggregation: prefill/decode worker communication via InfiniBand for KV cache transfer (NIXL)
+- Storage networking: NVMe-oF (NVMe over Fabrics) over RDMA for GPU-direct storage access
+- Container networking: Kubernetes with RDMA device plugin for NCCL over InfiniBand in K8s GPU pods
+
+### Hardware Requirements / Compatibility
+- **Host Interface:** PCIe Gen3/4/5 x16 (model-dependent); ConnectX-7 uses PCIe Gen5
+- **OS:** Linux (MLNX_OFED driver for full InfiniBand; native `mlx5` kernel driver in Linux 5.x+); Windows Server (limited)
+- **Software Stack:** MLNX_OFED 5.x/6.x or NVIDIA DOCA; OpenMPI or MVAPICH2 with InfiniBand support; NCCL with `NCCL_IB_DISABLE=0`
+- **InfiniBand Subnet Manager:** OpenSM or NVIDIA UFM (Unified Fabric Manager) for managing InfiniBand subnets
+
+### Language Bindings / APIs
+- **NCCL:** Primary consumer; `NCCL_IB_HCA=mlx5_0:1` env variable selects specific ConnectX port; auto-configured in most cases
+- **libibverbs / rdmacm:** Low-level RDMA programming (InfiniBand verbs C API)
+- **UCX (Unified Communication X):** High-level RDMA transport library used by OpenMPI, Dask, and NIXL
+- **NVIDIA DOCA:** Modern Python/C++ SDK for programming advanced ConnectX/BlueField features
+
+## Connections
+- [[GPUDirect-RDMA]] — ConnectX HCAs implement GPUDirect RDMA by directly DMAing to/from NVIDIA GPU memory over PCIe
+- [[NVLink]] — NVLink handles intra-node GPU communication; ConnectX InfiniBand handles inter-node; both used in DGX SuperPOD
+- [[NVIDIA-BlueField-DPU]] — BlueField DPU is a ConnectX adapter with an embedded ARM CPU for network function offloading; shares ASIC with ConnectX-7
+- [[NCCL]] — NCCL uses ConnectX InfiniBand (via `libnccl-net-ib`) for inter-node AllReduce in distributed training
+- [[NVIDIA-DGX]] — DGX H100 includes 8× ConnectX-7 (400 Gb/s NDR InfiniBand) NICs for multi-node cluster connectivity
+
+## Resources
+- [NVIDIA Networking](https://www.nvidia.com/en-us/networking/)
+- [ConnectX Adapter Cards](https://www.nvidia.com/en-us/networking/ethernet-adapters/)
+- [InfiniBand Technology Overview](https://www.nvidia.com/en-us/networking/infiniband/)
+- [NVIDIA DOCA SDK](https://developer.nvidia.com/networking/doca)
+- [MLNX_OFED Documentation](https://docs.nvidia.com/networking/display/mlnxofedv23101180lts)

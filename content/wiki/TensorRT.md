@@ -1,0 +1,63 @@
+# TensorRT
+
+**Type:** Technology
+**Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[cuDNN]]
+**Sources:** NVIDIA official documentation
+**Last Updated:** 2026-04-09
+
+## Summary
+TensorRT is NVIDIA's ecosystem of inference compilers, runtimes, and model optimization tools that deliver low latency and high throughput for production deep learning inference. It can accelerate inference by up to 36x over CPU-only platforms through quantization, layer/tensor fusion, and kernel tuning. TensorRT-LLM extends this specifically to large language model serving, delivering up to 8x speedups for models like GPT-J.
+
+## Detail
+
+### Purpose
+Moving deep learning models from training to production requires inference-time optimization — reducing model size, fusing operations, and selecting the fastest kernels for target hardware. TensorRT automates this optimization pipeline, enabling developers to deploy high-accuracy models at production scale without manual kernel engineering.
+
+### Key Features
+- Inference compilers and runtimes targeting NVIDIA GPUs from edge to data center
+- Quantization support: FP8, FP4, INT8, INT4, AWQ, post-training quantization, quantization-aware training
+- Layer and tensor fusion for reduced memory bandwidth and latency
+- Automatic kernel selection and tuning per problem size and target hardware
+- ONNX model import for framework-agnostic deployment
+- PyTorch integration via Torch-TensorRT (6x faster inference)
+- Hugging Face integration
+- **TensorRT-LLM**: open-source library for LLM inference with simplified Python API (up to 8x speedup)
+- **TensorRT Model Optimizer**: compression and quantization toolkit
+- **TensorRT Cloud**: automated engine generation for LLMs (limited access)
+- **TensorRT for RTX**: optimized for RTX/consumer GPUs with fast build times (<30s, <200MB)
+- Tripy: Pythonic frontend for TensorRT
+- Deployment via NVIDIA Triton Inference Server
+
+### Use Cases
+- Large language model (LLM) inference in data center
+- Computer vision model deployment (object detection, segmentation, classification)
+- Edge and embedded AI (Jetson, IGX)
+- Automotive safety-critical systems (NVIDIA DRIVE AGX)
+- Conversational AI and speech recognition
+- Recommendation systems
+
+### Hardware Requirements
+- Data center GPUs: GB100, H100, A100 (and older)
+- Workstations: NVIDIA RTX / RTX Pro
+- Edge: Jetson Orin, AGX Xavier, IGX
+- Automotive: DRIVE AGX
+- Consumer: GeForce RTX
+- Supports CUDA 11.x and 12.x toolchains
+
+### Language Bindings
+- Python (primary for TensorRT-LLM and Model Optimizer)
+- C++ (core TensorRT runtime API)
+- ONNX (model interchange format)
+
+## Connections
+- [[cuDNN]] — TensorRT uses cuDNN for layer-level inference kernels
+- [[cuBLAS]] — TensorRT uses cuBLAS for GEMM operations
+- [[CUTLASS]] — TensorRT uses CUTLASS-derived kernels for optimized GEMM
+- [[NCCL]] — multi-GPU TensorRT inference uses NCCL for tensor parallelism communication
+- [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
+
+## Resources
+- [Official Page](https://developer.nvidia.com/tensorrt)
+- [TensorRT Documentation](https://docs.nvidia.com/deeplearning/tensorrt/)
+- [TensorRT-LLM GitHub](https://github.com/NVIDIA/TensorRT-LLM)

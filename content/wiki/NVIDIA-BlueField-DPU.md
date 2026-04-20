@@ -1,0 +1,69 @@
+# NVIDIA BlueField DPU
+
+**Type:** Technology
+**Tags:** NVIDIA, DPU, data processing unit, networking, offload, security, SmartNIC, BlueField, infrastructure
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[GPUDirect-RDMA]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Last Updated:** 2026-04-10
+
+## Summary
+NVIDIA BlueField is a Data Processing Unit (DPU) — a programmable network adapter that combines a high-speed ConnectX NIC with an embedded ARM multicore CPU, memory, and hardware accelerators for networking, security, and storage tasks. BlueField offloads infrastructure services (firewall, load balancer, storage compression/encryption, RDMA routing, telemetry) from server CPUs to the DPU, freeing server CPUs entirely for application workloads while providing stronger security isolation. In AI data centers, BlueField-3 offloads NCCL networking, storage virtualization, and tenant isolation, enabling GPU servers to run more AI compute per server by reclaiming infrastructure CPU cycles.
+
+## Detail
+
+### Purpose
+Modern data center servers spend 20–30% of server CPU cycles on infrastructure functions: network packet processing (firewall, routing, QoS), storage virtualization (encryption, compression, deduplication), and security monitoring. This "infrastructure tax" reduces the CPUs available for the revenue-generating application (AI training, database queries, web serving). BlueField DPU moves these functions off the server CPU onto the DPU's embedded ARM cores — which are purpose-built for network packet processing — returning those CPU cycles to applications. For GPU AI servers, the benefit is even greater: every freed CPU cycle can be used for data preprocessing or orchestration that accelerates GPU utilization.
+
+### Key Features
+
+**BlueField Generations:**
+| DPU | ConnectX NIC | Embedded CPU | Speed | Key Features |
+|---|---|---|---|---|
+| BlueField-1 | ConnectX-5 | 16× ARM A72 | 100 Gb/s | Initial DPU; storage/networking offload |
+| BlueField-2 | ConnectX-6 Dx | 8× ARM A72 | 200 Gb/s | Full data center offload; OVS-DPDK; RegEx engine |
+| BlueField-3 | ConnectX-7 | 16× ARM A78 | 400 Gb/s | AI-optimized DPU; DOCA Telemetry; NCCL offload; PCIe Gen5 |
+
+**Core Capabilities:**
+- **Networking Offloads:** Open vSwitch (OVS-DOCA/DPDK), VXLAN/Geneve tunneling, BGP routing, firewall (conntrack, ACL), rate limiting — all run on BlueField ARM cores without touching server CPU
+- **Storage Offloads:** NVMe-oF target (GPU-Direct Storage integration), RAID, compression (LZ4, zstd hardware engine on BF-3), encryption (AES-256 hardware engine)
+- **Security:** Hardware-enforced tenant isolation; cryptographic attestation of DPU and host; secure boot chain independent of server OS; intrusion detection via RegEx pattern matching engine (BF-2+)
+- **Telemetry Engine (BF-3):** BlueField-3 includes a dedicated telemetry accelerator for line-rate packet analysis and metrics collection without CPU overhead
+- **SNAP (Software-Defined NVMe/VirtIO):** Emulates NVMe and VirtIO devices to VMs running on the server; enables storage virtualization with DPU-managed back-end
+- **DOCA SDK:** NVIDIA DOCA (Data Center Infrastructure on a Chip Architecture) is the software framework for programming BlueField; Python and C++ API; replaces legacy DPDK+MLNX_OFED programming model
+- **Arm Neoverse N2 Cores (BF-3):** 16× ARM Neoverse N2 @ 2 GHz; 16+ GB LPDDR5 on-DPU memory; runs a full Ubuntu or Wind River Linux OS independently of server host
+- **NCCL Offload (BF-3):** BlueField-3 + DOCA-NCCL enables in-network AllReduce and collective offloading for AI training; reduces server CPU burden for communication coordination
+
+### Use Cases
+- **AI Training Infrastructure:** Offload networking and storage from CPU in DGX nodes; BlueField-3 handles NCCL network communication processing, freeing CPUs for data preprocessing
+- **Secure Multi-Tenant Cloud:** Hyperscale clouds use BlueField to implement network isolation between tenants in hardware — firewall, QoS, VPC routing all run on DPU, not server CPU
+- **Storage Virtualization (Disaggregated Storage):** BlueField presents NVMe-oF targets to servers; enables software-defined storage with hardware-grade performance
+- **Zero-Trust Security:** BlueField's independent OS enables a "guardian" that monitors server behavior from outside the main OS; detects and responds to host compromise
+- **5G and Telecom:** BlueField-based SmartNIC for vRAN (virtual Radio Access Network) packet processing and timing
+- **NVIDIA SuperPOD:** BlueField-3 in DGX H100 nodes handles storage (NVMe-oF to VAST/WekaFS) and provides tenant isolation
+
+### Hardware Requirements / Compatibility
+- **Host Interface:** PCIe Gen4 x16 (BF-2); PCIe Gen5 x16 (BF-3)
+- **OS (DPU):** Ubuntu 22.04 aarch64 on embedded ARM; Wind River Linux (real-time option); DOCA runs on DPU OS
+- **OS (Host):** Linux (Ubuntu/RHEL) for full DOCA integration; Windows Server (limited)
+- **Power:** 25–75W TDP (model-dependent)
+- **Driver:** MLNX_OFED 5.x+ on host; DOCA runtime on DPU OS
+
+### Language Bindings / APIs
+- **NVIDIA DOCA SDK:** `pip install doca`; Python and C++ APIs; `doca_flow` (packet processing), `doca_rdma` (RDMA offload), `doca_compress` (compression), `doca_crypto` (encryption)
+- **DPDK:** BlueField supports DPDK for high-performance user-space networking
+- **Kubernetes:** NVIDIA Network Operator manages BlueField DPUs in Kubernetes clusters; RDMA device plugin exposes RDMA interfaces to pods
+- **CLI:** `mlxconfig`, `mst` tools for DPU management; `bfb-install` for DPU firmware and OS flashing
+
+## Connections
+- [[NVIDIA-ConnectX-InfiniBand]] — BlueField is a ConnectX HCA with an embedded ARM processor; shares ASIC design; BF-3 uses ConnectX-7 NIC silicon
+- [[GPUDirect-RDMA]] — BlueField supports GPUDirect RDMA; BF-3 NCCL offload enables GPU communication coordinated by DPU
+- [[NVIDIA-AI-Enterprise]] — BlueField DPUs are part of NVIDIA's AI infrastructure stack; supported under AI Enterprise for security and networking offload in AI data centers
+- [[NVIDIA-DCGM]] — BlueField's telemetry engine and DOCA can feed network metrics to DCGM-based monitoring for holistic AI cluster observability
+- [[NVIDIA-GPU-Operator]] — NVIDIA Network Operator (companion to GPU Operator) manages BlueField DPU networking in Kubernetes
+
+## Resources
+- [NVIDIA BlueField DPU](https://www.nvidia.com/en-us/networking/products/data-processing-unit/)
+- [NVIDIA DOCA SDK](https://developer.nvidia.com/networking/doca)
+- [BlueField-3 Datasheet](https://www.nvidia.com/content/dam/en-zz/Solutions/networking/infiniband-switching/bluefield-3-dpu-datasheet.pdf)
+- [DOCA Documentation](https://docs.nvidia.com/doca/sdk/index.html)
+- [NVIDIA Network Operator](https://docs.nvidia.com/networking/display/cokan10/network+operator)

@@ -1,0 +1,58 @@
+# NVIDIA Quantum InfiniBand
+
+**Type:** Technology
+**Tags:** NVIDIA, InfiniBand, Networking, HPC, AI Networking, Quantum-2, NDR, HDR, Collective Offload
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NCCL]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation
+**Last Updated:** 2026-04-10
+
+## Summary
+NVIDIA Quantum InfiniBand is NVIDIA's line of high-performance InfiniBand switch silicon and switch systems designed for AI and HPC cluster interconnects. The Quantum-2 generation supports NDR (Next Data Rate) 400Gb/s per port InfiniBand with SHARP (Scalable Hierarchical Aggregation and Reduction Protocol) in-network computing for lossless all-reduce collective operations without host CPU involvement. NVIDIA InfiniBand is the dominant interconnect fabric in AI supercomputers, used in DGX SuperPODs and top HPC clusters worldwide.
+
+## Detail
+
+### Purpose
+At hyperscale AI training, the interconnect between GPUs becomes the performance bottleneck — tens of thousands of GPUs performing all-reduce gradient synchronization require microsecond latency and terabit-per-second bandwidth. NVIDIA Quantum InfiniBand provides the lowest-latency, highest-bandwidth, and most feature-rich interconnect fabric available for this purpose, with SHARP offloading collective operations into the switch to reduce host CPU load and improve effective all-reduce bandwidth.
+
+### Key Features
+- Quantum-2 NDR: 400Gb/s per port (up to 64 ports per switch, total 25.6Tb/s switch bandwidth)
+- SHARP (Scalable Hierarchical Aggregation and Reduction Protocol): in-network all-reduce and all-gather offload
+- SHARP v3: supports FP32 and BF16 SHARP operations for LLM training
+- RoCE support: InfiniBand switch can also support RoCEv2 for Ethernet-connected endpoints
+- Sub-600ns port-to-port latency
+- Adaptive routing for congestion avoidance in fat-tree topologies
+- Co-design with ConnectX-7/8 NICs for end-to-end acceleration
+- UFM (Unified Fabric Manager) integration for fabric management
+- Used in NVIDIA DGX SuperPOD, Selene, Eos AI supercomputers
+
+### Use Cases
+- Large-scale LLM training (GPT-4, LLaMA, Nemotron scale)
+- HPC simulation: molecular dynamics, CFD, weather modeling
+- Distributed inference with tensor parallelism across nodes
+- AI factory networking backbone
+- Scientific computing at national labs and universities
+
+### Hardware Requirements / Compatibility
+- Quantum-2 QM9700 Switch: 400Gb/s NDR, 64 ports
+- Quantum QM8700 Switch: 200Gb/s HDR, 40 ports (previous gen)
+- ConnectX-7 (400Gb/s NDR) or ConnectX-6 (200Gb/s HDR) NICs required
+- Compatible with DGX H100, DGX B200, and third-party GPU servers
+- UFM management software for fabric topology and health monitoring
+
+### Language Bindings / APIs
+- NCCL with InfiniBand SHARP plugin (nccl-ib-sharp) for offloaded collectives
+- UCX (Unified Communication X) layer
+- MPI (OpenMPI, MPICH) over InfiniBand
+- OpenSHMEM via NVSHMEM
+
+## Connections
+- [[NVIDIA-ConnectX-InfiniBand]] — ConnectX NICs are the endpoint adapters that connect to Quantum switches
+- [[NVIDIA-Spectrum-X]] — Spectrum-X is NVIDIA's Ethernet counterpart for AI networking
+- [[NVIDIA-UFM]] — UFM manages and monitors the InfiniBand fabric
+- [[NCCL]] — NCCL uses InfiniBand SHARP for accelerated collective communication
+- [[NVIDIA-DGX]] — DGX SuperPOD uses Quantum InfiniBand as the backbone interconnect
+
+## Resources
+- [Quantum InfiniBand](https://www.nvidia.com/en-us/networking/quantum2/)
+- [NVIDIA Networking](https://www.nvidia.com/en-us/networking/)
+- [SHARP In-Network Computing](https://developer.nvidia.com/networking/sharp)
