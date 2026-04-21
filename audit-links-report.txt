@@ -1,47 +1,5 @@
 Scanned 141 files.
-Missing targets:    11
+Missing targets:    0
 Case mismatches:    0
-Space vs hyphen:    27
-
-=== SPACE-VS-HYPHEN (stem has spaces but hyphenated file exists) ===
-  index.md: [[NVIDIA NIM]]  ->  rename link to [[NVIDIA-NIM]]
-  index.md: [[NVIDIA AI Enterprise]]  ->  rename link to [[NVIDIA-AI-Enterprise]]
-  index.md: [[NVIDIA AI Workbench]]  ->  rename link to [[NVIDIA-AI-Workbench]]
-  index.md: [[NVIDIA Base Command]]  ->  rename link to [[NVIDIA-Base-Command]]
-  index.md: [[NVIDIA BioNeMo]]  ->  rename link to [[NVIDIA-BioNeMo]]
-  index.md: [[NVIDIA Riva]]  ->  rename link to [[NVIDIA-Riva]]
-  index.md: [[NVIDIA Maxine]]  ->  rename link to [[NVIDIA-Maxine]]
-  index.md: [[NVIDIA Clara]]  ->  rename link to [[NVIDIA-Clara]]
-  index.md: [[NVIDIA Metropolis]]  ->  rename link to [[NVIDIA-Metropolis]]
-  index.md: [[NVIDIA DeepStream]]  ->  rename link to [[NVIDIA-DeepStream]]
-  index.md: [[NVIDIA DGX]]  ->  rename link to [[NVIDIA-DGX]]
-  index.md: [[NVIDIA Jetson Platform]]  ->  rename link to [[NVIDIA-Jetson-Platform]]
-  index.md: [[NVIDIA Drive Platform]]  ->  rename link to [[NVIDIA-Drive-Platform]]
-  index.md: [[NVIDIA Blackwell Architecture]]  ->  rename link to [[NVIDIA-Blackwell-Architecture]]
-  index.md: [[NVIDIA Hopper Architecture]]  ->  rename link to [[NVIDIA-Hopper-Architecture]]
-  index.md: [[NVIDIA Grace CPU]]  ->  rename link to [[NVIDIA-Grace-CPU]]
-  index.md: [[CUDA Graphs]]  ->  rename link to [[CUDA-Graphs]]
-  index.md: [[CUDA Unified Memory]]  ->  rename link to [[CUDA-Unified-Memory]]
-  index.md: [[CUDA Streams]]  ->  rename link to [[CUDA-Streams]]
-  index.md: [[GPUDirect RDMA]]  ->  rename link to [[GPUDirect-RDMA]]
-  index.md: [[NVIDIA GPU Operator]]  ->  rename link to [[NVIDIA-GPU-Operator]]
-  index.md: [[NVIDIA Container Toolkit]]  ->  rename link to [[NVIDIA-Container-Toolkit]]
-  index.md: [[NVIDIA DCGM]]  ->  rename link to [[NVIDIA-DCGM]]
-  index.md: [[NVIDIA ConnectX InfiniBand]]  ->  rename link to [[NVIDIA-ConnectX-InfiniBand]]
-  index.md: [[NVIDIA BlueField DPU]]  ->  rename link to [[NVIDIA-BlueField-DPU]]
-  wiki/Nemotron.md: [[NVIDIA AI Enterprise]]  ->  rename link to [[NVIDIA-AI-Enterprise]]
-  wiki/Nemotron.md: [[NVIDIA AI Enterprise]]  ->  rename link to [[NVIDIA-AI-Enterprise]]
-
-=== MISSING (no matching file; may be intentional placeholder or genuinely missing) ===
-  CLAUDE.md: [[Page Name]]  ->  no file "Page Name.md"
-  CLAUDE.md: [[Page Name]]  ->  no file "Page Name.md"
-  CLAUDE.md: [[Related Page]]  ->  no file "Related Page.md"
-  CLAUDE.md: [[Another Page]]  ->  no file "Another Page.md"
-  CLAUDE.md: [[links]]  ->  no file "links.md"
-  CLAUDE.md: [[Concept Name]]  ->  no file "Concept Name.md"
-  CLAUDE.md: [[Person Name]]  ->  no file "Person Name.md"
-  CLAUDE.md: [[Org Name]]  ->  no file "Org Name.md"
-  CLAUDE.md: [[Tech Name]]  ->  no file "Tech Name.md"
-  CLAUDE.md: [[Project Name]]  ->  no file "Project Name.md"
-  wiki/cuQuantum.md: [[cuStateVec]]  ->  no file "cuStateVec.md"
+Space vs hyphen:    0
 

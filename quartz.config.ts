@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "TODO-set-hosting-url.example.com",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "CLAUDE.md", "raw"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

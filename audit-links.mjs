@@ -3,6 +3,15 @@ import { join, relative, basename, extname } from "node:path"
 
 const CONTENT = "C:/dev/quartz/content"
 
+// Mirror the ignorePatterns from quartz.config.ts. Files matching these
+// are excluded from the audit because they aren't published.
+const IGNORE = ["private", "templates", ".obsidian", "CLAUDE.md", "raw"]
+
+function isIgnored(relPath) {
+  const segs = relPath.replace(/\\/g, "/").split("/")
+  return IGNORE.some((pat) => segs.includes(pat) || segs[segs.length - 1] === pat)
+}
+
 function walk(dir) {
   const out = []
   for (const name of readdirSync(dir)) {
@@ -13,7 +22,7 @@ function walk(dir) {
   return out
 }
 
-const files = walk(CONTENT)
+const files = walk(CONTENT).filter((f) => !isIgnored(f.slice(CONTENT.length + 1)))
 
 // Index by exact stem and by lowercase stem
 const byStem = new Map()

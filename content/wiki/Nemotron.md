@@ -2,7 +2,7 @@
 
 **Type:** Model
 **Tags:** NVIDIA, LLM, Nemotron, NLP, Generative AI, RLHF, Alignment
-**Related:** [[NVIDIA-NeMo]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[Megatron-LM]], [[NVIDIA AI Enterprise]]
+**Related:** [[NVIDIA-NeMo]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[Megatron-LM]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -51,7 +51,7 @@ Enterprises need high-quality, customizable LLMs that can be fine-tuned, deploye
 - [[TensorRT-LLM]] — deployment optimization engine for Nemotron inference
 - [[NVIDIA-NIM]] — Nemotron available as NIM microservice containers
 - [[Megatron-LM]] — Nemotron-4 340B trained using Megatron-LM for 3D parallelism
-- [[NVIDIA AI Enterprise]] — Nemotron models included in NVAIE software suite
+- [[NVIDIA-AI-Enterprise]] — Nemotron models included in NVAIE software suite
 
 ## Resources
 - [Nemotron Developer Page](https://developer.nvidia.com/nemotron)

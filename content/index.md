@@ -140,23 +140,23 @@
 
 ### AI Cloud & Software Platforms
 - [[NGC]] — NVIDIA GPU Cloud: curated hub of GPU-optimized containers, models, Helm charts, and SDKs
-- [[NVIDIA NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
-- [[NVIDIA AI Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
-- [[NVIDIA AI Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
-- [[NVIDIA Base Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
+- [[NVIDIA-NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
+- [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
+- [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
 
 ### AI Application Platforms
-- [[NVIDIA BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
-- [[NVIDIA Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
-- [[NVIDIA Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
-- [[NVIDIA Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
-- [[NVIDIA Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
-- [[NVIDIA DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
+- [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
+- [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
+- [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
+- [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
+- [[NVIDIA-Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
+- [[NVIDIA-DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
 
 ### Hardware Platforms
-- [[NVIDIA DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
-- [[NVIDIA Jetson Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
-- [[NVIDIA Drive Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
+- [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
+- [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
+- [[NVIDIA-Drive-Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
 - [[NVIDIA-HGX]] — Multi-GPU baseboard platform (8x SXM) for OEM servers; HGX B200, B300, Rubin NVL8 configurations
 - [[NVIDIA-GB200-NVL4]] — Single-server 4x B200 + 2x Grace config; 1.3 TB coherent memory, ~6 kW, OEM ecosystem entry point
@@ -165,28 +165,28 @@
 
 ## GPU Architectures
 
-- [[NVIDIA Blackwell Architecture]] — 2024 architecture: FP4 Tensor Cores, NVLink 5 (1.8TB/s), NVL72 rack-scale, NVLink-C2C
-- [[NVIDIA Hopper Architecture]] — 2022 architecture: Transformer Engine (FP8), NVLink 4 (900GB/s), MIG, Confidential Computing
-- [[NVIDIA Grace CPU]] — NVIDIA's ARM Neoverse V2 data center CPU; paired with GPUs via NVLink-C2C in GH200/GB200
+- [[NVIDIA-Blackwell-Architecture]] — 2024 architecture: FP4 Tensor Cores, NVLink 5 (1.8TB/s), NVL72 rack-scale, NVLink-C2C
+- [[NVIDIA-Hopper-Architecture]] — 2022 architecture: Transformer Engine (FP8), NVLink 4 (900GB/s), MIG, Confidential Computing
+- [[NVIDIA-Grace-CPU]] — NVIDIA's ARM Neoverse V2 data center CPU; paired with GPUs via NVLink-C2C in GH200/GB200
 
 ---
 
 ## CUDA Concepts
 
-- [[CUDA Graphs]] — Capture GPU operation sequences as a graph for single-submission replay; eliminates per-kernel CPU launch overhead
-- [[CUDA Unified Memory]] — Single-pointer CPU+GPU memory with hardware-managed demand paging; GH200 enables coherent access at NVLink bandwidth
-- [[CUDA Streams]] — Sequences of ordered GPU operations enabling concurrent kernel execution and compute/transfer overlap
+- [[CUDA-Graphs]] — Capture GPU operation sequences as a graph for single-submission replay; eliminates per-kernel CPU launch overhead
+- [[CUDA-Unified-Memory]] — Single-pointer CPU+GPU memory with hardware-managed demand paging; GH200 enables coherent access at NVLink bandwidth
+- [[CUDA-Streams]] — Sequences of ordered GPU operations enabling concurrent kernel execution and compute/transfer overlap
 - [[NVLink]] — NVIDIA's proprietary high-bandwidth GPU interconnect: NVLink 5 delivers 1.8TB/s per GPU on Blackwell
-- [[GPUDirect RDMA]] — Direct NIC↔GPU memory DMA path, bypassing CPU; enables high-performance inter-node GPU communication
+- [[GPUDirect-RDMA]] — Direct NIC↔GPU memory DMA path, bypassing CPU; enables high-performance inter-node GPU communication
 - [[Multi-Process-Service]] — MPS: enables concurrent kernel execution from multiple CUDA processes on a single GPU for improved utilization
 
 ---
 
 ## Infrastructure & DevOps
 
-- [[NVIDIA GPU Operator]] — Kubernetes operator automating NVIDIA driver, Container Toolkit, DCGM, MIG Manager, and device plugin lifecycle
-- [[NVIDIA Container Toolkit]] — Container runtime hook enabling GPU access from Docker/containerd/Podman without driver bundling in images
-- [[NVIDIA DCGM]] — Data Center GPU Manager: cluster telemetry, health monitoring, diagnostics, and Prometheus metrics for GPU fleets
+- [[NVIDIA-GPU-Operator]] — Kubernetes operator automating NVIDIA driver, Container Toolkit, DCGM, MIG Manager, and device plugin lifecycle
+- [[NVIDIA-Container-Toolkit]] — Container runtime hook enabling GPU access from Docker/containerd/Podman without driver bundling in images
+- [[NVIDIA-DCGM]] — Data Center GPU Manager: cluster telemetry, health monitoring, diagnostics, and Prometheus metrics for GPU fleets
 - [[CUPTI]] — CUDA Profiling Tools Interface: low-level API for hardware counters, activity tracing, and CUDA API callbacks used by Nsight tools
 - [[NVBit]] — Open-source binary instrumentation framework for custom GPU analysis tools without source code (NVlabs research tool)
 
@@ -208,8 +208,8 @@
 
 ## Networking
 
-- [[NVIDIA ConnectX InfiniBand]] — NVIDIA ConnectX NICs and Quantum InfiniBand switches powering DGX SuperPODs and HPC clusters (up to 400Gb/s)
-- [[NVIDIA BlueField DPU]] — Data Processing Unit combining ConnectX NIC with ARM CPU and hardware accelerators for infrastructure offload
+- [[NVIDIA-ConnectX-InfiniBand]] — NVIDIA ConnectX NICs and Quantum InfiniBand switches powering DGX SuperPODs and HPC clusters (up to 400Gb/s)
+- [[NVIDIA-BlueField-DPU]] — Data Processing Unit combining ConnectX NIC with ARM CPU and hardware accelerators for infrastructure offload
 
 ---
 
