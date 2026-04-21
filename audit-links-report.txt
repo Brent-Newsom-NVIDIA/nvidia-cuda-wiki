@@ -1,5 +1,0 @@
-Scanned 141 files.
-Missing targets:    0
-Case mismatches:    0
-Space vs hyphen:    0
-

@@ -30,6 +30,16 @@ npx quartz build --serve
 
 The site is served at `http://localhost:8080` by default.
 
+## Scripts
+
+- **`scripts/audit-links.mjs`** — scans `content/` for broken `[[wikilinks]]` and writes a categorized report (space-vs-hyphen, case mismatches, genuinely missing targets) to `audit-links-report.txt` at the repo root. The report is gitignored; regenerate with:
+
+  ```
+  node scripts/audit-links.mjs
+  ```
+
+  Exits non-zero when issues are found, so it can gate a publish step.
+
 ## Hosting
 
 Not yet configured. `baseUrl` in `quartz.config.ts` is set to a placeholder (`TODO-set-hosting-url.example.com`). Once the hosting destination is decided (GitHub Enterprise Pages or internal NVIDIA hosting are under consideration), update `baseUrl` and uncomment the `git push` line in `publish.bat`.

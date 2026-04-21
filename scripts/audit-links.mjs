@@ -1,7 +1,14 @@
-import { readFileSync, readdirSync, statSync } from "node:fs"
-import { join, relative, basename, extname } from "node:path"
+// Scan content/ for broken [[wikilinks]] and write a categorized report.
+// Run: `node scripts/audit-links.mjs` from the repo root.
+// Report goes to audit-links-report.txt at the repo root (gitignored).
 
-const CONTENT = "C:/dev/quartz/content"
+import { readFileSync, readdirSync, statSync, writeFileSync } from "node:fs"
+import { join, relative, basename, extname, dirname, resolve } from "node:path"
+import { fileURLToPath } from "node:url"
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..")
+const CONTENT = resolve(ROOT, "content")
+const REPORT_PATH = resolve(ROOT, "audit-links-report.txt")
 
 // Mirror the ignorePatterns from quartz.config.ts. Files matching these
 // are excluded from the audit because they aren't published.
@@ -22,7 +29,7 @@ function walk(dir) {
   return out
 }
 
-const files = walk(CONTENT).filter((f) => !isIgnored(f.slice(CONTENT.length + 1)))
+const files = walk(CONTENT).filter((f) => !isIgnored(relative(CONTENT, f)))
 
 // Index by exact stem and by lowercase stem
 const byStem = new Map()
@@ -35,12 +42,11 @@ for (const f of files) {
   byLowerStem.get(lower).push(stem)
 }
 
-// Match [[target]] but NOT ![[embed]] images handled same way (both count as references).
-// Capture group: inner contents of [[...]]
+// Match [[target]] and ![[embed]]; capture group 2 is the inner text.
 const WIKILINK = /(!?)\[\[([^\]]+)\]\]/g
 
-const missing = []   // stem doesn't exist at all
-const caseMismatch = [] // stem exists with different case only
+const missing = []        // stem doesn't exist at all
+const caseMismatch = []   // stem exists with different case only
 const hyphenMismatch = [] // stem has spaces but a hyphenated variant exists
 
 for (const f of files) {
@@ -50,17 +56,16 @@ for (const f of files) {
   while ((m = WIKILINK.exec(text)) !== null) {
     const embed = m[1] === "!"
     let inner = m[2].trim()
-    // Strip display text after |
+    // Strip display text after | and anchor after #
     const pipeIdx = inner.indexOf("|")
     if (pipeIdx !== -1) inner = inner.slice(0, pipeIdx)
-    // Strip anchor after #
     const hashIdx = inner.indexOf("#")
     if (hashIdx !== -1) inner = inner.slice(0, hashIdx)
     inner = inner.trim()
     if (!inner) continue
     // If link includes slashes (explicit path), take basename for stem
     const stem = inner.includes("/") ? inner.split("/").pop() : inner
-    // Skip attachment-style links (image/pdf embeds with real extensions)
+    // Skip attachment-style embeds (image/pdf embeds with real extensions)
     if (embed && /\.(png|jpg|jpeg|gif|svg|webp|pdf|mp4|webm|mp3|wav)$/i.test(stem)) continue
 
     if (byStem.has(stem)) continue
@@ -81,23 +86,36 @@ for (const f of files) {
   }
 }
 
-console.log(`Scanned ${files.length} files.`)
-console.log(`Missing targets:    ${missing.length}`)
-console.log(`Case mismatches:    ${caseMismatch.length}`)
-console.log(`Space vs hyphen:    ${hyphenMismatch.length}`)
-console.log("")
+// Build report
+const lines = []
+lines.push(`Scanned ${files.length} files.`)
+lines.push(`Missing targets:    ${missing.length}`)
+lines.push(`Case mismatches:    ${caseMismatch.length}`)
+lines.push(`Space vs hyphen:    ${hyphenMismatch.length}`)
+lines.push("")
 if (hyphenMismatch.length) {
-  console.log("=== SPACE-VS-HYPHEN (stem has spaces but hyphenated file exists) ===")
-  for (const x of hyphenMismatch) console.log(`  ${x.file}: ${x.link}  ->  rename link to [[${x.actual}]]`)
-  console.log("")
+  lines.push("=== SPACE-VS-HYPHEN (stem has spaces but hyphenated file exists) ===")
+  for (const x of hyphenMismatch) lines.push(`  ${x.file}: ${x.link}  ->  rename link to [[${x.actual}]]`)
+  lines.push("")
 }
 if (caseMismatch.length) {
-  console.log("=== CASE MISMATCH (target exists with different case) ===")
-  for (const x of caseMismatch) console.log(`  ${x.file}: ${x.link}  ->  "${x.target}" but actual is "${x.actual.join(", ")}"`)
-  console.log("")
+  lines.push("=== CASE MISMATCH (target exists with different case) ===")
+  for (const x of caseMismatch) lines.push(`  ${x.file}: ${x.link}  ->  "${x.target}" but actual is "${x.actual.join(", ")}"`)
+  lines.push("")
 }
 if (missing.length) {
-  console.log("=== MISSING (no matching file; may be intentional placeholder or genuinely missing) ===")
-  for (const x of missing) console.log(`  ${x.file}: ${x.link}  ->  no file "${x.target}.md"`)
-  console.log("")
+  lines.push("=== MISSING (no matching file; may be intentional placeholder or genuinely missing) ===")
+  for (const x of missing) lines.push(`  ${x.file}: ${x.link}  ->  no file "${x.target}.md"`)
+  lines.push("")
 }
+
+writeFileSync(REPORT_PATH, lines.join("\n"))
+
+const total = missing.length + caseMismatch.length + hyphenMismatch.length
+const relReport = relative(process.cwd(), REPORT_PATH) || REPORT_PATH
+console.log(
+  `audit: ${files.length} files, ${total} issue(s) ` +
+  `(${missing.length} missing, ${caseMismatch.length} case, ${hyphenMismatch.length} hyphen)  ->  ${relReport}`
+)
+// Non-zero exit if issues found, so this can gate a publish step.
+process.exit(total > 0 ? 1 : 0)
