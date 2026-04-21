@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "TODO-set-hosting-url.example.com",
+    baseUrl: "brent-newsom-nvidia.github.io/nvidia-cuda-wiki",
     ignorePatterns: ["private", "templates", ".obsidian", "CLAUDE.md", "raw"],
     defaultDateType: "modified",
     theme: {
