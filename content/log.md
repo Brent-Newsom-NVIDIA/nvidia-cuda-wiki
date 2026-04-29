@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 94: cuBLASLt and cuBLASXt API coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch94-20260429T125446Z`; local Git tag `codex-backup-overnight-pre-batch94-20260429T125446Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cublas/index.html, https://docs.nvidia.com/cuda/cublas/index.html#using-the-cublaslt-api, https://docs.nvidia.com/cuda/cublas/index.html#using-the-cublasxt-api
+
+**Gap analysis summary:**
+
+- Found that [[cuBLAS]] and [[JAX]] already mentioned cuBLASLt/cuBLASXt but the wiki lacked canonical pages for those durable cuBLAS API families.
+- Added separate pages because current NVIDIA cuBLAS documentation presents cuBLASLt and cuBLASXt as distinct API surfaces with different roles: programmable GEMM tuning and single-node multi-GPU BLAS3 execution.
+- Connected the new pages to cuBLAS, CUDA, cuBLASMp/cuBLASDx, CUDA math-library users, and framework/inference pages where GEMM acceleration is relevant.
+
+**Pages created (2 total):**
+
+- `content/wiki/cuBLASLt.md`
+- `content/wiki/cuBLASXt.md`
+
+**Pages updated:**
+
+- `content/wiki/cuBLAS.md` - converted cuBLASLt/cuBLASXt mentions into canonical wikilinks and added connections.
+- `content/wiki/NVIDIA-CUDA.md` - connected cuBLASLt/cuBLASXt into the CUDA library graph.
+- `content/wiki/JAX.md` - linked cuBLASLt from the XLA/GEMM connection.
+- `content/index.md` - updated total page count to 480 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 93: cuTENSOR multi-GPU and distributed tensor support
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch93-20260429T125110Z`; local Git tag `codex-backup-overnight-pre-batch93-20260429T125110Z`

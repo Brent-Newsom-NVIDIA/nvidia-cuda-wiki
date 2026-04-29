@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, GPU computing, CUDA Toolkit, programming model, software stack
-**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[NVCC]], [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuFFTMp]], [[cuTENSORMg]], [[cuTENSORMp]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
-**Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
+**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[NVCC]], [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuBLASLt]], [[cuBLASXt]], [[cuFFTMp]], [[cuTENSORMg]], [[cuTENSORMp]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
+**Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://docs.nvidia.com/cuda/cublas/index.html, https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,7 +20,7 @@ CUDA is the foundation beneath NVIDIA CUDA-X libraries, AI frameworks, HPC appli
 - **API layers:** [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Math-API]], [[CUDA-Debugger-API]], [[PTX-Compiler-APIs]], [[NVRTC]], and [[nvJitLink]].
 - **Python access:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], and [[CUPTI-Python]].
 - **Compiler path:** [[NVCC]], [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[PTX-ISA]], [[CUDA-Tile-IR]], [[NVVM-IR]], [[libNVVM]], [[libdevice]], [[nvFatbin]], and [[CUDA-Binary-Utilities]].
-- **Libraries:** [[cuBLAS]], [[cuFFT]], [[cuFFTMp]], [[cuRAND]], [[cuSOLVER]], [[cuSPARSE]], [[NPP]], [[nvJPEG]], [[cuDNN]], [[NCCL]], and newer device/distributed libraries such as [[cuBLASDx]], [[cuFFTDx]], [[cuBLASMp]], [[cuSOLVERMp]], [[cuSPARSELt]], [[cuTENSORMg]], and [[cuTENSORMp]].
+- **Libraries:** [[cuBLAS]], [[cuBLASLt]], [[cuBLASXt]], [[cuFFT]], [[cuFFTMp]], [[cuRAND]], [[cuSOLVER]], [[cuSPARSE]], [[NPP]], [[nvJPEG]], [[cuDNN]], [[NCCL]], and newer device/distributed libraries such as [[cuBLASDx]], [[cuFFTDx]], [[cuBLASMp]], [[cuSOLVERMp]], [[cuSPARSELt]], [[cuTENSORMg]], and [[cuTENSORMp]].
 - **Deployment contexts:** [[CUDA-Compatibility]], [[CUDA-Demo-Suite]], [[CUDA-on-WSL]], [[CUDA-on-EFLOW]], [[CUDA-for-Tegra]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[GPUDirect-RDMA]], and [[GPU-Direct-Storage]].
 - **Architecture guidance:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], and [[NVIDIA-Turing-Architecture]] capture current and legacy tuning/compatibility context.
 
@@ -49,6 +49,7 @@ CUDA is the connective tissue for NVIDIA hardware generations from data center G
 - [[CUDA-on-EFLOW]] - edge Windows/Linux deployment guidance for CUDA container workloads.
 - [[Floating-Point-and-IEEE-754]] - NVIDIA's numerical accuracy guidance for CUDA floating-point behavior.
 - [[cuBLAS]] - representative CUDA-X library built on the CUDA platform.
+- [[cuBLASLt]] and [[cuBLASXt]] - cuBLAS API families for programmable GEMM and single-node multi-GPU BLAS3 execution.
 
 ## Source Excerpts
 - NVIDIA CUDA docs present the Toolkit as the development environment for high-performance GPU-accelerated applications.

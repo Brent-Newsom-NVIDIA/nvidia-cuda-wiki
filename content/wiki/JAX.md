@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Machine Learning, Automatic Differentiation, JIT, Python, Scientific Computing
-**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[cuBLAS]], [[NCCL]], [[CuPy]], [[PyTorch]], [[Transformer-Engine]], [[TensorFlow-GPU]]
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[cuBLAS]], [[cuBLASLt]], [[NCCL]], [[CuPy]], [[PyTorch]], [[Transformer-Engine]], [[TensorFlow-GPU]]
 **Sources:** jax.readthedocs.io official documentation, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
 **Last Updated:** 2026-04-29
 
@@ -54,7 +54,7 @@ JAX solves the problem of writing high-performance numerical code that is simult
 ## Connections
 - [[NVIDIA-Optimized-Frameworks]] - NVIDIA optimized framework containers provide a versioned path for JAX GPU environments where available.
 - [[cuDNN]] — XLA uses cuDNN for convolution and attention operations on NVIDIA GPUs
-- [[cuBLAS]] — XLA delegates GEMM operations to cuBLAS/cuBLASLt
+- [[cuBLAS]] and [[cuBLASLt]] — XLA delegates GEMM operations to cuBLAS-family libraries
 - [[NCCL]] — JAX's `pmap`/`shard_map` multi-device collectives use NCCL
 - [[CuPy]] — CuPy and JAX arrays interoperable via CUDA Array Interface for zero-copy exchange
 - [[PyTorch]] — JAX and PyTorch coexist in many research workflows; DLPack enables tensor sharing

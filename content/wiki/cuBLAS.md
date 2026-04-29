@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Linear Algebra, BLAS, Math, HPC, AI
-**Related:** [[cuSOLVER]], [[cuBLASDx]], [[cuBLASMp]], [[cuSPARSE]], [[Incomplete-LU-Cholesky]], [[Floating-Point-and-IEEE-754]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]], [[NVIDIA-CUDA]]
-**Sources:** NVIDIA official documentation
+**Related:** [[cuSOLVER]], [[cuBLASLt]], [[cuBLASXt]], [[cuBLASDx]], [[cuBLASMp]], [[cuSPARSE]], [[Incomplete-LU-Cholesky]], [[Floating-Point-and-IEEE-754]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]], [[NVIDIA-CUDA]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/cuda/cublas/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -19,13 +19,13 @@ cuBLAS solves the problem of accelerating dense linear algebra workloads by offl
 - Half-precision and integer matrix multiplication (GEMM) for AI workloads
 - GEMM operations optimized for Tensor Cores with kernel fusion support
 - Batched operations for processing many small matrices efficiently
-- Multi-GPU execution via cuBLASXt and cuBLASMp variants
+- Multi-GPU execution via [[cuBLASXt]] and [[cuBLASMp]] variants
 - Mixed- and low-precision computation support (FP64, FP32, FP16, INT8)
 - CUDA stream compatibility for concurrent, asynchronous operations
-- cuBLASLt: multi-stage GEMM APIs with advanced tuning options
-- cuBLASXt: single-node, multi-GPU interface for Level 3 workloads
-- cuBLASMp: multi-node distributed linear algebra (preview)
-- cuBLASDx: device-side kernel API for use inside CUDA kernels (preview)
+- [[cuBLASLt]]: programmable GEMM API with descriptors, heuristics, and advanced tuning options
+- [[cuBLASXt]]: single-node, multi-GPU interface for Level 3 workloads
+- [[cuBLASMp]]: multi-node distributed linear algebra (preview)
+- [[cuBLASDx]]: device-side kernel API for use inside CUDA kernels (preview)
 
 ### Use Cases
 - Training and inference of deep neural networks
@@ -46,6 +46,8 @@ cuBLAS solves the problem of accelerating dense linear algebra workloads by offl
 
 ## Connections
 - [[cuSOLVER]] — builds on cuBLAS for linear solvers and decompositions
+- [[cuBLASLt]] — flexible cuBLAS GEMM API for descriptor-driven tuning, heuristics, and low-precision matrix multiply
+- [[cuBLASXt]] — single-node multi-GPU cuBLAS host interface for BLAS3 operations
 - [[cuBLASDx]] — device-side BLAS-style operations for fused CUDA kernels
 - [[cuBLASMp]] — distributed dense linear algebra extension for multi-process GPU systems
 - [[cuSPARSE]] — sparse counterpart to cuBLAS dense operations
