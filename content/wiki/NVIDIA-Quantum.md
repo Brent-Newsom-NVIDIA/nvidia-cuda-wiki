@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, quantum computing, accelerated quantum supercomputing, QPU, CUDA-Q, NVQLink, CUDA-QX
-**Related:** [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[cuStateVec]], [[cuPQC]], [[Ising-Calibration-1-35B-A3B]], [[Ising-Decoding]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-Quantum-InfiniBand]]
+**Related:** [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[cuStateVec]], [[cuPQC]], [[NVIDIA-Ising]], [[Ising-Calibration-1-35B-A3B]], [[Ising-Decoding]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-Quantum-InfiniBand]]
 **Sources:** https://www.nvidia.com/en-us/solutions/quantum-computing/
 **Last Updated:** 2026-04-29
 
@@ -21,6 +21,7 @@ NVIDIA Quantum exists because practical quantum computing is not only a QPU prob
 - [[CUDA-Q-Realtime]] - realtime CUDA-Q networking/runtime API layer used with NVQLink.
 - [[cuQuantum]] - low-level GPU-accelerated quantum circuit simulation libraries and appliance.
 - [[cuPQC]] - GPU-accelerated post-quantum cryptography library.
+- [[NVIDIA-Ising]] - open AI model family for quantum processor calibration and QEC pre-decoding.
 - [[Ising-Calibration-1-35B-A3B]] - NVIDIA quantum calibration VLM for analyzing quantum calibration experiment plots.
 - [[Ising-Decoding]] - NVIDIA Ising predecoder models and training framework for quantum error correction.
 - [[NVIDIA-Quantum-Cloud]] - API/cloud access path for running CUDA-Q projects on NVIDIA GPU systems.
@@ -36,6 +37,7 @@ Do not confuse this quantum-computing platform page with [[NVIDIA-Quantum-Infini
 - [[NVIDIA-NVQLink]] - current architecture for quantum-to-GPU realtime integration.
 - [[cuQuantum]] - simulation library family within the NVIDIA Quantum solution area.
 - [[cuPQC]] - quantum-safe cryptography library surfaced from the same NVIDIA Quantum page.
+- [[NVIDIA-Ising]] - family-level page for NVIDIA's open quantum AI models.
 - [[Ising-Calibration-1-35B-A3B]] - NVIDIA Ising-family model endpoint for quantum calibration plot understanding.
 - [[Ising-Decoding]] - NVIDIA Ising-family model/training framework for QEC pre-decoding.
 - [[NVIDIA-DGX-Quantum]] - earlier/reference DGX Quantum identity now redirected toward NVQLink in current en-US navigation.

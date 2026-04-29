@@ -2,7 +2,7 @@
 
 **Type:** NVIDIA model family / training framework
 **Tags:** NVIDIA, Ising, quantum computing, quantum error correction, QEC, surface code, predecoder, CNN, PyTorch, CUDA-Q, CUDA-QX, NVQLink, cuQuantum
-**Related:** [[NVIDIA-Quantum]], [[Ising-Calibration-1-35B-A3B]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[PyTorch]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-GB200-NVL72]]
+**Related:** [[NVIDIA-Ising]], [[NVIDIA-Quantum]], [[Ising-Calibration-1-35B-A3B]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[PyTorch]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-GB200-NVL72]]
 **Sources:** https://www.nvidia.com/en-us/solutions/quantum-computing/ising/, https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/, https://github.com/NVIDIA/Ising-Decoding, https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Fast, https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,7 @@ The NVIDIA Ising page summarizes Ising Decoding as providing 2.5x speed improvem
 
 ## Connections
 - [[NVIDIA-Quantum]] - Ising Decoding is part of NVIDIA's accelerated quantum computing platform direction.
+- [[NVIDIA-Ising]] - family-level page for NVIDIA's open quantum AI models.
 - [[Ising-Calibration-1-35B-A3B]] - sibling Ising model domain for quantum processor calibration.
 - [[CUDA-QX]] - CUDA-Q QEC is the software context for realtime decoder workflows.
 - [[CUDA-Q-Realtime]] - low-latency API path used for realtime GPU-to-controller feedback loops.

@@ -2,7 +2,7 @@
 
 **Type:** NVIDIA model
 **Tags:** NVIDIA, Ising, quantum computing, quantum calibration, vision-language model, VLM, MoE, NIM, build.nvidia, vLLM, QCalEval
-**Related:** [[NVIDIA-Quantum]], [[Ising-Decoding]], [[CUDA-Q]], [[NVIDIA-NVQLink]], [[CUDA-QX]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-GB200-NVL72]]
+**Related:** [[NVIDIA-Ising]], [[NVIDIA-Quantum]], [[Ising-Decoding]], [[CUDA-Q]], [[NVIDIA-NVQLink]], [[CUDA-QX]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-GB200-NVL72]]
 **Sources:** https://build.nvidia.com/nvidia/ising-calibration-1-35b-a3b/modelcard, https://build.nvidia.com/nvidia/ising-calibration-1-35b-a3b, https://huggingface.co/nvidia/Ising-Calibration-1-35B-A3B
 **Last Updated:** 2026-04-29
 
@@ -31,6 +31,7 @@ Evaluation uses QCalEval, described as a benchmark for quantum calibration plots
 
 ## Connections
 - [[NVIDIA-Quantum]] - Ising Calibration belongs in NVIDIA's accelerated quantum computing context.
+- [[NVIDIA-Ising]] - family-level page for NVIDIA's quantum calibration and QEC AI models.
 - [[Ising-Decoding]] - sibling NVIDIA Ising model domain for quantum error correction pre-decoding.
 - [[CUDA-Q]] - CUDA-Q is the programming layer for hybrid quantum-classical workflows around NVIDIA quantum systems.
 - [[NVIDIA-NVQLink]] - realtime GPU-QPU integration is adjacent to calibration and QEC workflows.

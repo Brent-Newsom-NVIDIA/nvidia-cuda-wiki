@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 457*
+*Total pages: 458*
 
 ---
 
@@ -91,6 +91,7 @@
 - [[cuLitho]] — GPU-accelerated computational lithography (OPC, ILT) for semiconductor manufacturing
 - [[NVIDIA-Quantum]] — NVIDIA accelerated quantum computing platform for QPU, GPU, CUDA-Q, and NVQLink workflows
 - [[NVIDIA-NVQLink]] — realtime GPU-QPU integration architecture for calibration, QEC, and hybrid quantum workflows
+- [[NVIDIA-Ising]] — NVIDIA open AI model family for quantum calibration and quantum error correction decoding
 - [[CUDA-QX]] — CUDA-Q library collection for quantum error correction and quantum-classical solver workflows
 - [[CUDA-Q-Realtime]] — CUDA-Q realtime API and networking layer for NVQLink GPU-to-controller feedback loops
 - [[cuQuantum]] — GPU-accelerated quantum computing simulation (state vector, tensor network, density matrix)
@@ -551,6 +552,7 @@
 - [[NVIDIA-ACE]] — Avatar Cloud Engine: AI microservices for interactive digital humans and NPCs (ASR+LLM+TTS+animation)
 
 ### Quantum Models
+- [[NVIDIA-Ising]] — NVIDIA open model family for AI-assisted quantum calibration and QEC
 - [[Ising-Calibration-1-35B-A3B]] — NVIDIA Ising-family VLM for quantum calibration plot understanding
 - [[Ising-Decoding]] — NVIDIA Ising-family QEC predecoder models and training framework
 

@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 84: NVIDIA Ising
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch84-20260429T121439Z`; local Git tag `codex-backup-overnight-pre-batch84-20260429T121439Z`
+
+**Source URLs:** https://www.nvidia.com/en-us/solutions/quantum-computing/ising/, https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/, https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-Ising-the-Worlds-First-Open-AI-Models-to-Accelerate-the-Path-to-Useful-Quantum-Computers/default.aspx
+
+**Gap analysis summary:**
+
+- Added a family-level NVIDIA Ising page after creating individual pages for Ising Calibration and Ising Decoding and finding no queryable hub for the overall NVIDIA model family.
+- Kept the hub concise and linked to the existing child pages instead of duplicating model-card details.
+- Connected NVIDIA Ising to NVIDIA Quantum, CUDA-Q, CUDA-QX, CUDA-Q Realtime, NVQLink, cuQuantum, NIM, and NVAQC context.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Ising.md`
+
+**Pages updated:**
+
+- `content/wiki/Ising-Calibration-1-35B-A3B.md` and `content/wiki/Ising-Decoding.md` - linked back to the family hub.
+- `content/wiki/NVIDIA-Quantum.md` - linked Ising as a current quantum AI model family.
+- `content/index.md` - updated total page count to 458 and indexed the new hub.
+
+---
+
 ## 2026-04-29 - Overnight batch 83: Ising Decoding
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch83-20260429T121211Z`; local Git tag `codex-backup-overnight-pre-batch83-20260429T121211Z`
