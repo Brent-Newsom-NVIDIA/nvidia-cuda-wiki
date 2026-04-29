@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Isaac, robotics, simulation, Omniverse, OpenUSD, PhysX, RTX, synthetic data, ROS 2
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos]], [[NVIDIA-Warp]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos]], [[NVIDIA-Warp]]
 **Sources:** https://docs.isaacsim.omniverse.nvidia.com/latest/index.html, https://developer.nvidia.com/isaac/
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,10 @@ Isaac Sim sits at the junction of NVIDIA graphics, simulation, AI, and edge depl
 - [[NVIDIA-Isaac]] - parent robotics platform that includes Isaac Sim, Isaac Lab, Isaac ROS, and Isaac GR00T.
 - [[NVIDIA-Isaac-Lab]] - uses Isaac Sim for robot learning, simulation, and policy validation workflows.
 - [[NVIDIA-Isaac-ROS]] - provides ROS 2 deployment packages that connect simulated and physical robots.
+- [[NVIDIA-Isaac-for-Manipulation]] - current Isaac ROS manipulation workflow with Isaac Sim tutorials for simulated robot planning and sim-to-real paths.
+- [[NVIDIA-Isaac-for-Mobility]] - current Isaac ROS mobility workflow area that can use Isaac Sim for AMR validation.
+- [[Isaac-ROS-cuMotion]] - motion-planning component with Isaac Sim tutorial paths.
+- [[Isaac-ROS-nvblox]] - reconstruction component with Isaac Sim examples for depth-based mapping.
 - [[NVIDIA-Omniverse]] - Isaac Sim is an Omniverse Kit application using OpenUSD, RTX, and simulation extensions.
 - [[NVIDIA-Cosmos]] - Cosmos and Isaac Sim can be combined for physical AI synthetic data and world-model workflows.
 - [[NVIDIA-Warp]] - adjacent GPU simulation framework used across NVIDIA physical AI and robotics tooling.

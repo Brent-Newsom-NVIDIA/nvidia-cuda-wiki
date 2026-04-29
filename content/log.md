@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 35: Isaac ROS physical AI workflows
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch35-20260429T085227Z`; local Git tag `codex-backup-overnight-pre-batch35-20260429T085227Z`
+
+**Source URLs:** https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_manipulation/reference_architecture.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_mobility/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html, https://nvidia-isaac-ros.github.io/concepts/scene_reconstruction/nvblox/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html, https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/isaac_ros_foundationpose/index.html, https://nvidia-isaac-ros.github.io/concepts/stereo_depth/foundationstereo/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_dnn_stereo_depth/isaac_ros_foundationstereo/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
+
+**Gap analysis summary:**
+
+- Added current Isaac ROS physical AI workflow pages that were missing from the wiki: Isaac for Manipulation, Isaac for Mobility, cuMotion, nvblox, FoundationPose, and FoundationStereo.
+- Used the latest Isaac ROS naming: Isaac for Manipulation is the current workflow family for what older release notes may call Isaac Manipulator, and Isaac for Mobility continues Isaac Perceptor while current docs optimize the path for Thor.
+- Kept each durable workflow/model/component as one canonical page and did not create separate wiki pages for every tutorial, package subdirectory, robot bringup package, or individual build.
+- Connected manipulation to cuMotion, nvblox, FoundationPose, FoundationStereo, Isaac Sim, Isaac Lab, Jetson, and TensorRT.
+- Connected mobility to nvblox, FoundationStereo, Jetson Thor, Isaac Sim, VPI, TensorRT, and current Isaac ROS release signals.
+- Treated build-style and tutorial-style pages as supporting discovery only; no pages were created for one-off examples or repeated variants.
+
+**Pages created (6 total):**
+
+- `content/wiki/NVIDIA-Isaac-for-Manipulation.md`
+- `content/wiki/NVIDIA-Isaac-for-Mobility.md`
+- `content/wiki/Isaac-ROS-cuMotion.md`
+- `content/wiki/Isaac-ROS-nvblox.md`
+- `content/wiki/Isaac-ROS-FoundationPose.md`
+- `content/wiki/Isaac-ROS-FoundationStereo.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Isaac.md` - promoted current manipulation/mobility workflow naming and linked durable Isaac ROS component pages.
+- `content/wiki/NVIDIA-Isaac-ROS.md` - connected the new workflow and component pages to the deployment-side ROS 2 stack.
+- `content/wiki/NVIDIA-Isaac-Sim.md` and `content/wiki/NVIDIA-Isaac-Lab.md` - connected simulation and robot-learning pages to the new manipulation/mobility workflows.
+- `content/wiki/NVIDIA-Jetson-Platform.md` and `content/wiki/NVIDIA-JetPack-SDK.md` - connected current Isaac ROS mobility/manipulation component coverage to Jetson and JetPack compatibility context.
+- `content/index.md` - updated page count to 380 and indexed the six new Isaac ROS physical AI pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 34: NeMo Framework tooling
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch34-20260429T084414Z`; local Git tag `codex-backup-overnight-pre-batch34-20260429T084414Z`

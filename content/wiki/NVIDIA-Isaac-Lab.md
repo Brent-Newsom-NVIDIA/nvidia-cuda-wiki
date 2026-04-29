@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Isaac, robotics, robot learning, reinforcement learning, imitation learning, simulation, PhysX, Newton, Warp
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[PyTorch]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-cuMotion]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[PyTorch]]
 **Sources:** https://isaac-sim.github.io/IsaacLab/develop/index.html, https://isaac-sim.github.io/IsaacLab/develop/source/overview/core-concepts/multi_backend_architecture.html, https://isaac-sim.github.io/IsaacLab/develop/source/overview/core-concepts/renderers.html
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,9 @@ Isaac Lab connects NVIDIA simulation and AI infrastructure into robot learning. 
 ## Connections
 - [[NVIDIA-Isaac]] - parent robotics platform that includes Isaac Lab as the robot-learning layer.
 - [[NVIDIA-Isaac-Sim]] - simulation substrate for Isaac Lab tasks, assets, sensors, and policy validation.
+- [[NVIDIA-Isaac-ROS]] - deployment-side ROS 2 stack that can receive sim-to-real policies and manipulation workflows.
+- [[NVIDIA-Isaac-for-Manipulation]] - current manipulation workflow with sim-to-real tutorials that connect Isaac Lab policies to real robot execution.
+- [[Isaac-ROS-cuMotion]] - motion-planning component adjacent to Isaac Lab manipulation and policy workflows.
 - [[NVIDIA-Isaac-GR00T]] - GR00T humanoid workflows use Isaac Lab for training and policy development.
 - [[NVIDIA-Warp]] - Warp underpins emerging Newton/Warp simulation and renderer paths.
 - [[NVIDIA-Omniverse]] - provides OpenUSD, RTX rendering, and simulation foundations through Isaac Sim.

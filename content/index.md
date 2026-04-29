@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 374*
+*Total pages: 380*
 
 ---
 
@@ -196,10 +196,16 @@
 - [[NIM-for-DoMINO-Automotive-Aero]] — PhysicsNeMo NIM for automotive external-aerodynamics surrogate simulation
 
 ### Robotics & Simulation
-- [[NVIDIA-Isaac]] — robotics development platform: Isaac Sim, Isaac Lab, Isaac ROS, Isaac Perceptor
+- [[NVIDIA-Isaac]] — robotics development platform: Isaac Sim, Isaac Lab, Isaac ROS, manipulation, mobility, and GR00T
 - [[NVIDIA-Isaac-Sim]] — Omniverse-based robotics simulation application for synthetic data, sensor simulation, and validation
 - [[NVIDIA-Isaac-Lab]] — modular robot-learning framework for RL, imitation learning, motion planning, and sim-to-real workflows
 - [[NVIDIA-Isaac-ROS]] — CUDA-accelerated ROS 2 packages, models, and reference workflows for deployed robots
+- [[NVIDIA-Isaac-for-Manipulation]] — current Isaac ROS reference architecture for perception-driven robot-arm manipulation
+- [[NVIDIA-Isaac-for-Mobility]] — current Isaac ROS mobility workflow area continuing Isaac Perceptor for AMR stacks
+- [[Isaac-ROS-cuMotion]] — CUDA-accelerated robot-arm motion planning, MoveIt 2 integration, and robot segmentation
+- [[Isaac-ROS-nvblox]] — GPU-accelerated 3D reconstruction, mapping, ESDF/TSDF, and Nav2 costmap component
+- [[Isaac-ROS-FoundationPose]] — 6DoF object pose-estimation model and ROS 2 package for manipulation workflows
+- [[Isaac-ROS-FoundationStereo]] — stereo-depth foundation model and ROS 2 package for disparity/depth perception
 - [[NVIDIA-Isaac-GR00T]] — humanoid robotics foundation model platform and data pipeline for general-purpose robot skills
 - [[NVIDIA-Omniverse]] — OpenUSD-based 3D simulation and digital twin platform with RTX rendering
 
