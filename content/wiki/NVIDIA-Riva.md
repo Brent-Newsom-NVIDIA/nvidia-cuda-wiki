@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, speech AI, ASR, TTS, NLP, real-time, conversational AI, speech-to-text, text-to-speech
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[Nemotron-ASR-Streaming]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html)
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[Nemotron-ASR-Streaming]], [[Nemotron-3-VoiceChat]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://build.nvidia.com/nvidia/nemotron-voicechat/modelcard)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,6 +26,7 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - **Current Speech NIM docs:** [[NVIDIA-Speech-NIM-Microservices]] is the maintained docs surface for Riva-lineage ASR, TTS, and NMT NIM deployments.
 - **NIM Packaging:** ASR, TTS, and NMT capabilities are deployable as NIM microservices via Docker or Helm with gRPC/HTTP APIs.
 - **Nemotron ASR:** [[Nemotron-ASR-Streaming]] is the model-specific current English streaming ASR page for the Riva/Speech NIM path.
+- **Nemotron VoiceChat:** [[Nemotron-3-VoiceChat]] is NVIDIA's full-duplex speech-to-speech model, adjacent to Riva/Speech NIM pipelines that would otherwise chain ASR, LLM, and TTS.
 - **Hardware-Optimized:** TensorRT-compiled models; optimized for Ampere and Hopper GPU Tensor Cores
 
 ### Use Cases
@@ -58,6 +59,7 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - [[NVIDIA-Speech-NIM-Microservices]] - current maintained docs collection for ASR, TTS, and NMT NIMs.
 - [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] - current speech microservice pages for transcription, synthesis, and translation.
 - [[Nemotron-ASR-Streaming]] - current NVIDIA streaming ASR model for English transcription.
+- [[Nemotron-3-VoiceChat]] - full-duplex speech-to-speech Nemotron model for realtime conversational agents.
 - [[NVIDIA-NeMo]] — NeMo is the training framework for customizing and fine-tuning Riva's acoustic, language, and TTS models
 - [[Triton-Inference-Server]] — Riva server is built on Triton; models are served via Triton inference engine
 - [[NVIDIA-AI-Enterprise]] — Riva is included in AI Enterprise with enterprise SLA and security support

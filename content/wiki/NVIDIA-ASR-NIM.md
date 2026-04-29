@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, ASR, automatic speech recognition, speech-to-text, Parakeet, Canary, Whisper, Nemotron, Riva
-**Related:** [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-NIM]], [[NVIDIA-Riva]], [[Nemotron-ASR-Streaming]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[Nemotron]], [[NVIDIA-NeMo]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[TensorRT]], [[Triton-Inference-Server]]
+**Related:** [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-NIM]], [[NVIDIA-Riva]], [[Nemotron-ASR-Streaming]], [[Nemotron-3-VoiceChat]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[Nemotron]], [[NVIDIA-NeMo]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[TensorRT]], [[Triton-Inference-Server]]
 **Sources:** https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html
 **Last Updated:** 2026-04-29
 
@@ -33,6 +33,7 @@ ASR NIM is where [[Parakeet-ASR]], [[NVIDIA-Canary]], and Nemotron ASR deploymen
 - [[Nemotron]] - broader model-family context for Nemotron speech models.
 - [[NVIDIA-Background-Noise-Removal-NIM]] - audio cleanup can improve speech intelligibility and ASR accuracy in noisy environments.
 - [[NVIDIA-TTS-NIM]] and [[NVIDIA-NMT-NIM]] - downstream services for voice response and translation pipelines.
+- [[Nemotron-3-VoiceChat]] - unified full-duplex speech-to-speech model that avoids a separate ASR-to-LLM-to-TTS cascade for some voice-agent workflows.
 - [[TensorRT]] and [[Triton-Inference-Server]] - acceleration and serving layers packaged inside the NIM.
 
 ## Source Excerpts

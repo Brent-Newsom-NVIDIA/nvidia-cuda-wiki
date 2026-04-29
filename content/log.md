@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 97: Nemotron 3 VoiceChat model
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch97-20260429T130545Z`; local Git tag `codex-backup-overnight-pre-batch97-20260429T130545Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/nemotron-voicechat/modelcard, https://build.nvidia.com/nvidia/nemotron-voicechat, https://developer.nvidia.com/blog/building-nvidia-nemotron-3-agents-for-reasoning-multimodal-rag-voice-and-safety/, https://developer.nvidia.com/nemotron-voicechat-early-access
+
+**Gap analysis summary:**
+
+- Found a durable NVIDIA-published Build model, `nvidia/nemotron-voicechat`, that was not represented as a canonical wiki page.
+- Added one page for [[Nemotron-3-VoiceChat]] rather than creating separate pages for benchmark sections, early-access details, or Build variants.
+- Connected the model to Nemotron, NIM, Speech NIM, Riva, ASR/TTS, ACE, Tokkio, and the model-family index.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-3-VoiceChat.md`
+
+**Pages updated:**
+
+- `content/wiki/Nemotron.md`
+- `content/wiki/NVIDIA-Speech-NIM-Microservices.md`
+- `content/wiki/NVIDIA-ASR-NIM.md`
+- `content/wiki/NVIDIA-TTS-NIM.md`
+- `content/wiki/NVIDIA-Riva.md`
+- `content/wiki/NVIDIA-NIM.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 96: current CUDA specialty library refresh
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch96-20260429T130150Z`; local Git tag `codex-backup-overnight-pre-batch96-20260429T130150Z`
