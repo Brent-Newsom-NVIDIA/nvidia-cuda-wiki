@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, JetPack, Jetson, edge AI, robotics, CUDA, TensorRT, Jetson Linux, developer tools
-**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-DeepStream]], [[TensorRT]]
+**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-DeepStream]], [[TensorRT]]
 **Sources:** https://docs.nvidia.com/jetson/, https://docs.nvidia.com/jetson/archives/index.html, https://developer.nvidia.com/embedded/faq, https://developer.nvidia.com/blog/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/
 **Last Updated:** 2026-04-29
 
@@ -34,6 +34,9 @@ JetPack turns Jetson modules and developer kits into usable edge AI development 
 - [[NVIDIA-Jetson-Platform-Services]] - JPS is a Jetson service layer supported by modern JetPack releases.
 - [[NVIDIA-Isaac-ROS]] - robotics deployment stack that depends on JetPack/Jetson compatibility.
 - [[NVIDIA-Isaac-for-Mobility]] - current Isaac ROS mobility workflow area that tracks Thor and JetPack compatibility signals.
+- [[Isaac-ROS-NITROS]] - transport layer for accelerated Isaac ROS graphs on Jetson.
+- [[Isaac-ROS-DNN-Inference]] - TensorRT/Triton-backed robot perception stack that tracks JetPack and Jetson support.
+- [[Isaac-ROS-Visual-SLAM]] - cuVSLAM package commonly deployed on Jetson mobility robots.
 - [[Isaac-ROS-FoundationStereo]] - Isaac ROS model support surfaced alongside JetPack 7.1 and Thor T4000 support in recent release notes.
 - [[NVIDIA-DeepStream]] - video AI SDK commonly deployed through JetPack on Jetson devices.
 - [[TensorRT]] - primary inference optimization runtime included in Jetson AI deployments.

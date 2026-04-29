@@ -2,7 +2,7 @@
 
 **Type:** Model / ROS Package
 **Tags:** NVIDIA, Isaac ROS, FoundationPose, pose estimation, 6DoF, robotics, manipulation, CUDA, TensorRT, Jetson
-**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Jetson-Platform]], [[TensorRT]], [[Triton-Inference-Server]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Jetson-Platform]], [[TensorRT]], [[Triton-Inference-Server]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/pose_estimation/foundationpose/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/isaac_ros_foundationpose/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,9 @@ FoundationPose links NVIDIA foundation-model research to practical robot manipul
 ## Connections
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem for FoundationPose.
 - [[NVIDIA-Isaac-for-Manipulation]] - reference workflow that uses pose estimation for goal-state estimation.
+- [[Isaac-ROS-DNN-Inference]] - inference infrastructure adjacent to pose-estimation model execution.
+- [[Isaac-ROS-Object-Detection]] - detection context can identify candidate objects before 6DoF pose estimation.
+- [[Isaac-ROS-NITROS]] - accelerated image/tensor/detection transport layer for Isaac ROS perception graphs.
 - [[Isaac-ROS-cuMotion]] - motion planner that can consume object or goal poses from perception.
 - [[Isaac-ROS-nvblox]] - obstacle/environment representation used alongside pose estimation.
 - [[NVIDIA-Isaac-Sim]] - simulation environment for generating assets, scenes, and pose-estimation tutorials.

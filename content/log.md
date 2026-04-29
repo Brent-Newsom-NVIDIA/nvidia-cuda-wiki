@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 36: Isaac ROS core graph components
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch36-20260429T085823Z`; local Git tag `codex-backup-overnight-pre-batch36-20260429T085823Z`
+
+**Source URLs:** https://nvidia-isaac-ros.github.io/concepts/nitros/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nitros/index.html, https://nvidia-isaac-ros.github.io/concepts/visual_slam/cuvslam/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_visual_slam/index.html, https://nvidia-isaac-ros.github.io/concepts/visual_global_localization/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_mapping_and_localization/isaac_ros_visual_global_localization/index.html, https://nvidia-isaac-ros.github.io/concepts/dnn_inference/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_dnn_inference/index.html, https://nvidia-isaac-ros.github.io/concepts/object_detection/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
+
+**Gap analysis summary:**
+
+- Added current Isaac ROS core graph pages that were missing from the wiki: NITROS, Visual SLAM/cuVSLAM, Visual Global Localization/cuVGL, DNN Inference, and Object Detection.
+- Kept each topic as one canonical page and folded package subdirectories, quickstarts, and model-specific tutorials into the relevant page rather than creating one wiki page per tutorial or model variant.
+- Connected NITROS to accelerated ROS 2 type adaptation/negotiation and the Isaac ROS perception graph.
+- Connected Visual SLAM and Visual Global Localization to mobility, nvblox, stereo depth, Jetson, and Isaac Sim validation workflows.
+- Connected DNN Inference and Object Detection to TensorRT, Triton, NITROS, Jetson, manipulation, and mobility.
+- Continued treating build-style pages and individual examples as supporting context only.
+
+**Pages created (5 total):**
+
+- `content/wiki/Isaac-ROS-NITROS.md`
+- `content/wiki/Isaac-ROS-Visual-SLAM.md`
+- `content/wiki/Isaac-ROS-Visual-Global-Localization.md`
+- `content/wiki/Isaac-ROS-DNN-Inference.md`
+- `content/wiki/Isaac-ROS-Object-Detection.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Isaac.md` and `content/wiki/NVIDIA-Isaac-ROS.md` - promoted the new Isaac ROS core graph pages into the umbrella robotics graph.
+- `content/wiki/NVIDIA-Isaac-for-Mobility.md` and `content/wiki/NVIDIA-Isaac-for-Manipulation.md` - connected the new perception, localization, and transport pages to current reference workflows.
+- `content/wiki/Isaac-ROS-nvblox.md`, `content/wiki/Isaac-ROS-FoundationPose.md`, and `content/wiki/Isaac-ROS-FoundationStereo.md` - connected mapping and model pages to the new core graph components.
+- `content/wiki/NVIDIA-Jetson-Platform.md` and `content/wiki/NVIDIA-JetPack-SDK.md` - connected Jetson/JetPack context to NITROS, Visual SLAM, DNN Inference, and object detection.
+- `content/wiki/TensorRT.md` and `content/wiki/Triton-Inference-Server.md` - connected general inference pages to Isaac ROS DNN Inference and robot perception.
+- `content/index.md` - updated page count to 385 and indexed the five new Isaac ROS core graph pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 35: Isaac ROS physical AI workflows
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch35-20260429T085227Z`; local Git tag `codex-backup-overnight-pre-batch35-20260429T085227Z`

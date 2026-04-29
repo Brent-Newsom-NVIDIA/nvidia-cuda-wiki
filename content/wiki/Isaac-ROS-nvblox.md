@@ -2,7 +2,7 @@
 
 **Type:** Library / ROS Package
 **Tags:** NVIDIA, Isaac ROS, nvblox, CUDA, robotics, scene reconstruction, mapping, ESDF, TSDF, Nav2, Jetson
-**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-VPI]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-NITROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-VPI]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/scene_reconstruction/nvblox/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -30,8 +30,11 @@ nvblox is a durable bridge between NVIDIA perception and robot motion. In mobile
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem for nvblox.
 - [[NVIDIA-Isaac-for-Mobility]] - uses nvblox-style mapping and costmaps in AMR workflows.
 - [[NVIDIA-Isaac-for-Manipulation]] - uses nvblox for environment and obstacle perception.
+- [[Isaac-ROS-Visual-SLAM]] - pose/odometry source that can feed nvblox reconstruction.
+- [[Isaac-ROS-Visual-Global-Localization]] - global pose/relocalization path adjacent to mapping and costmaps.
 - [[Isaac-ROS-cuMotion]] - can consume reconstructed obstacle representations for collision-aware motion planning.
 - [[Isaac-ROS-FoundationStereo]] - stereo-depth source that can feed reconstruction.
+- [[Isaac-ROS-NITROS]] - accelerated transport layer for depth, pose, point-cloud, and occupancy-grid data.
 - [[NVIDIA-Jetson-Platform]] - edge deployment target for GPU-accelerated robot mapping.
 - [[NVIDIA-Isaac-Sim]] - simulation source for depth, pose, and reconstruction tutorials.
 - [[NVIDIA-VPI]] - adjacent Jetson vision acceleration layer for camera and stereo processing.

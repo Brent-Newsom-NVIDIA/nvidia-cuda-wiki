@@ -2,7 +2,7 @@
 
 **Type:** Reference Architecture
 **Tags:** NVIDIA, Isaac, Isaac ROS, robotics, manipulation, robot arms, motion planning, CUDA, cuMotion, Jetson
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Jetson-Platform]], [[TensorRT]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-NITROS]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Jetson-Platform]], [[TensorRT]]
 **Sources:** https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_manipulation/reference_architecture.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -19,8 +19,10 @@ Isaac for Manipulation gives robotics teams a validated starting architecture fo
 - Visual input from live or simulated RGB/depth cameras, including stereo-depth paths such as [[Isaac-ROS-FoundationStereo]] or ESS.
 - Environment and obstacle perception through [[Isaac-ROS-nvblox]] scene reconstruction.
 - Object and goal-state estimation with pose-estimation components such as [[Isaac-ROS-FoundationPose]].
+- DNN inference and object detection through [[Isaac-ROS-DNN-Inference]] and [[Isaac-ROS-Object-Detection]] when workflows need object candidates or model-backed perception.
 - Robot configuration through URDF plus XRDF-style collision and configuration-space metadata.
 - Collision-free, time-optimized motion planning through [[Isaac-ROS-cuMotion]] and MoveIt 2 integration.
+- Accelerated ROS graph transport through [[Isaac-ROS-NITROS]].
 - Sim-to-real tutorials that connect [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-Sim]], Isaac ROS, and physical robot execution.
 
 ### Current naming
@@ -38,6 +40,9 @@ Isaac for Manipulation is where NVIDIA's robotics deployment stack becomes an in
 - [[Isaac-ROS-nvblox]] - 3D reconstruction and obstacle representation for collision-aware planning.
 - [[Isaac-ROS-FoundationPose]] - pose-estimation model family for object/goal-state estimation.
 - [[Isaac-ROS-FoundationStereo]] - stereo-depth foundation model useful when RGB stereo cameras provide depth.
+- [[Isaac-ROS-DNN-Inference]] - inference infrastructure for model-backed manipulation perception.
+- [[Isaac-ROS-Object-Detection]] - detection package family for locating objects before pose estimation or manipulation.
+- [[Isaac-ROS-NITROS]] - accelerated transport layer for Isaac ROS manipulation graphs.
 - [[NVIDIA-Isaac-Sim]] - simulation environment for manipulation tutorials, sensor simulation, and validation.
 - [[NVIDIA-Isaac-Lab]] - robot-learning framework used in sim-to-real manipulation workflows.
 - [[NVIDIA-Jetson-Platform]] - edge deployment family for robot-side Isaac ROS workloads.

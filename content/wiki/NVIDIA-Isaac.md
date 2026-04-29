@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Robotics, Simulation, ROS, Perception, Edge AI, Physical AI
-**Related:** [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-GR00T]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[TensorRT]]
+**Related:** [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-GR00T]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[TensorRT]]
 **Sources:** https://developer.nvidia.com/isaac/, https://docs.isaacsim.omniverse.nvidia.com/latest/index.html, https://isaac-sim.github.io/IsaacLab/develop/index.html, https://nvidia-isaac-ros.github.io/, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_manipulation/reference_architecture.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_mobility/index.html, https://developer.nvidia.com/isaac/gr00t, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html
 **Last Updated:** 2026-04-29
 
@@ -21,7 +21,7 @@ Isaac addresses the sim-to-real gap in robotics by combining photorealistic GPU 
 - [[NVIDIA-Isaac-for-Manipulation]]: current Isaac ROS reference architecture for perception-driven robotic arm manipulation; formerly surfaced as Isaac Manipulator
 - [[NVIDIA-Isaac-for-Mobility]]: current Isaac ROS mobility reference area continuing the Isaac Perceptor work for AMR perception, mapping, and navigation
 - [[NVIDIA-Isaac-GR00T]]: humanoid robot foundation model platform and data pipelines for general-purpose robot skills
-- [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], and [[Isaac-ROS-FoundationStereo]] as current durable Isaac ROS component pages for manipulation and mobility workflows
+- [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], and [[Isaac-ROS-FoundationStereo]] as current durable Isaac ROS component pages for manipulation and mobility workflows
 - Synthetic data generation with Isaac Sim, Replicator, Cosmos, [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], and domain randomization
 - RTX ray tracing for photorealistic rendering of simulated environments
 - Import support for URDF, MJCF, USD robot descriptions
@@ -55,6 +55,11 @@ Isaac addresses the sim-to-real gap in robotics by combining photorealistic GPU 
 - [[NVIDIA-Isaac-ROS]] - deployment-side ROS 2 acceleration package family.
 - [[NVIDIA-Isaac-for-Manipulation]] - current robot-arm manipulation reference workflow.
 - [[NVIDIA-Isaac-for-Mobility]] - current mobile-robot mobility reference workflow continuing Isaac Perceptor.
+- [[Isaac-ROS-NITROS]] - accelerated ROS 2 transport and type negotiation for Isaac ROS graphs.
+- [[Isaac-ROS-Visual-SLAM]] - cuVSLAM package for visual odometry and SLAM.
+- [[Isaac-ROS-Visual-Global-Localization]] - cuVGL package for global localization and relocalization.
+- [[Isaac-ROS-DNN-Inference]] - TensorRT/Triton-backed DNN inference package family.
+- [[Isaac-ROS-Object-Detection]] - robotics object-detection package family.
 - [[Isaac-ROS-cuMotion]] - GPU-accelerated arm motion planning and robot segmentation component.
 - [[Isaac-ROS-nvblox]] - scene reconstruction and costmap component for mobility and manipulation.
 - [[Isaac-ROS-FoundationPose]] - 6DoF pose-estimation component for manipulation.

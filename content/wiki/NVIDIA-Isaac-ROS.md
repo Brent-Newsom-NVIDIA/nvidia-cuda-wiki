@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Isaac, ROS 2, robotics, CUDA, Jetson, perception, SLAM, NITROS, edge AI
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Thor]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-DeepStream]]
-**Sources:** https://nvidia-isaac-ros.github.io/, https://nvidia-isaac-ros.github.io/releases/index.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_manipulation/reference_architecture.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_mobility/index.html, https://developer.nvidia.com/isaac/
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Thor]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-DeepStream]]
+**Sources:** https://nvidia-isaac-ros.github.io/, https://nvidia-isaac-ros.github.io/releases/index.html, https://nvidia-isaac-ros.github.io/concepts/nitros/index.html, https://nvidia-isaac-ros.github.io/concepts/visual_slam/cuvslam/index.html, https://nvidia-isaac-ros.github.io/concepts/visual_global_localization/index.html, https://nvidia-isaac-ros.github.io/concepts/dnn_inference/index.html, https://nvidia-isaac-ros.github.io/concepts/object_detection/index.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_manipulation/reference_architecture.html, https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_mobility/index.html, https://developer.nvidia.com/isaac/
 **Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA Isaac ROS is NVIDIA's collection of CUDA-accelerated ROS 2 packages, AI models, and reference workflows for building advanced robotics applications. It brings GPU-accelerated perception, visual SLAM, mapping, localization, manipulation, message transport, and benchmarking into ROS-native robot stacks. Current durable reference workflow pages include [[NVIDIA-Isaac-for-Manipulation]] and [[NVIDIA-Isaac-for-Mobility]], with supporting components such as [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], and [[Isaac-ROS-FoundationStereo]].
+NVIDIA Isaac ROS is NVIDIA's collection of CUDA-accelerated ROS 2 packages, AI models, and reference workflows for building advanced robotics applications. It brings GPU-accelerated perception, visual SLAM, mapping, localization, manipulation, message transport, and benchmarking into ROS-native robot stacks. Current durable reference workflow pages include [[NVIDIA-Isaac-for-Manipulation]] and [[NVIDIA-Isaac-for-Mobility]], with supporting components such as [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationPose]], and [[Isaac-ROS-FoundationStereo]].
 
 ## Detail
 
@@ -16,8 +16,9 @@ ROS 2 is the common integration layer for robotics, but high-throughput percepti
 
 ### Key capabilities
 - CUDA-accelerated ROS 2 packages for perception, pose estimation, mapping, localization, visual SLAM, and manipulation.
-- NITROS transport patterns for reducing host/device copies and improving intra-graph throughput.
-- [[Isaac-ROS-nvblox]], cuVSLAM, visual mapping/localization, and occupancy/costmap workflows for mobile robots.
+- [[Isaac-ROS-NITROS]] transport patterns for reducing host/device copies and improving intra-graph throughput.
+- [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-nvblox]], and occupancy/costmap workflows for mobile robots.
+- [[Isaac-ROS-DNN-Inference]] and [[Isaac-ROS-Object-Detection]] for TensorRT/Triton-backed robot perception.
 - [[Isaac-ROS-FoundationPose]] object pose estimation and [[Isaac-ROS-FoundationStereo]] stereo-depth model support.
 - [[NVIDIA-Isaac-for-Manipulation]] and [[NVIDIA-Isaac-for-Mobility]] reference workflow areas; earlier docs may call these Isaac Manipulator and Isaac Perceptor.
 - [[Isaac-ROS-cuMotion]] GPU-accelerated manipulation planning and robot segmentation.
@@ -37,6 +38,11 @@ Isaac ROS makes NVIDIA acceleration usable inside the ROS 2 ecosystem. It connec
 - [[NVIDIA-Isaac-Sim]] - simulation environment that integrates with ROS 2 and Isaac ROS for hardware-in-the-loop testing.
 - [[NVIDIA-Isaac-for-Manipulation]] - current reference architecture for perception-driven robot-arm manipulation.
 - [[NVIDIA-Isaac-for-Mobility]] - current reference workflow area continuing Isaac Perceptor for AMR mobility.
+- [[Isaac-ROS-NITROS]] - transport and type-negotiation layer for accelerated Isaac ROS graphs.
+- [[Isaac-ROS-Visual-SLAM]] - cuVSLAM-based visual odometry and SLAM package.
+- [[Isaac-ROS-Visual-Global-Localization]] - cuVGL-based global localization package for map-frame pose recovery.
+- [[Isaac-ROS-DNN-Inference]] - TensorRT/Triton-backed DNN inference package family.
+- [[Isaac-ROS-Object-Detection]] - GPU-accelerated object detection package family for DetectNet, Grounding DINO, RT-DETR, and YOLOv8.
 - [[Isaac-ROS-cuMotion]] - CUDA-accelerated manipulation planning component.
 - [[Isaac-ROS-nvblox]] - GPU-accelerated reconstruction and costmap component.
 - [[Isaac-ROS-FoundationPose]] - object pose-estimation component.
@@ -52,6 +58,7 @@ Isaac ROS makes NVIDIA acceleration usable inside the ROS 2 ecosystem. It connec
 - NVIDIA Isaac ROS docs present it as ROS 2 packages and models accelerated with NVIDIA CUDA.
 - Isaac ROS release notes list version 4.3.0 as the March 23, 2026 release.
 - Current reference workflow docs use Isaac for Manipulation and Isaac for Mobility as the canonical names, while older docs may use Isaac Manipulator and Isaac Perceptor.
+- Current concept docs include first-class pages for NITROS, cuVSLAM, Visual Global Localization, DNN Inference, and Object Detection.
 - Recent release notes include SIPL/Camera-over-Ethernet, JetPack 7.1, Thor, FoundationStereo, and mapping/manipulation updates.
 
 ## Resources

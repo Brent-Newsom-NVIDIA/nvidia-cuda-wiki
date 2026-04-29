@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 380*
+*Total pages: 385*
 
 ---
 
@@ -202,6 +202,11 @@
 - [[NVIDIA-Isaac-ROS]] — CUDA-accelerated ROS 2 packages, models, and reference workflows for deployed robots
 - [[NVIDIA-Isaac-for-Manipulation]] — current Isaac ROS reference architecture for perception-driven robot-arm manipulation
 - [[NVIDIA-Isaac-for-Mobility]] — current Isaac ROS mobility workflow area continuing Isaac Perceptor for AMR stacks
+- [[Isaac-ROS-NITROS]] — NVIDIA Isaac Transport for ROS, type adaptation/negotiation, and accelerated ROS graph transport
+- [[Isaac-ROS-Visual-SLAM]] — cuVSLAM-based visual odometry and SLAM for stereo/IMU robot localization
+- [[Isaac-ROS-Visual-Global-Localization]] — cuVGL-based global localization and relocalization from stereo keyframe maps
+- [[Isaac-ROS-DNN-Inference]] — TensorRT/Triton-backed DNN inference infrastructure for robot perception graphs
+- [[Isaac-ROS-Object-Detection]] — DetectNet, Grounding DINO, RT-DETR, and YOLOv8 object detection packages for Isaac ROS
 - [[Isaac-ROS-cuMotion]] — CUDA-accelerated robot-arm motion planning, MoveIt 2 integration, and robot segmentation
 - [[Isaac-ROS-nvblox]] — GPU-accelerated 3D reconstruction, mapping, ESDF/TSDF, and Nav2 costmap component
 - [[Isaac-ROS-FoundationPose]] — 6DoF object pose-estimation model and ROS 2 package for manipulation workflows
