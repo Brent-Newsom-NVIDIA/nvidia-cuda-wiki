@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Medical Imaging, Edge AI, Real-time, Sensor Processing, Healthcare
-**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
+**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Rivermax]], [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/holoscan-sdk, https://docs.nvidia.com/holoscan/index.html, https://docs.nvidia.com/holoscan/sdk-user-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -55,6 +55,7 @@ Current NVIDIA docs list Holoscan SDK v4.1.0 as the current Holoscan version and
 - [[NVIDIA-Clara]] — Holoscan sits in Clara's medical-device and healthcare AI portfolio.
 - [[NVIDIA-Clara-Viz]] — visualization component adjacent to medical imaging applications built with Holoscan.
 - [[NVIDIA-MONAI-Toolkit]] — medical imaging models can feed Holoscan real-time applications.
+- [[NVIDIA-Rivermax]] — Rivermax provides accelerated media/data streaming paths for ST 2110 and high-throughput sensor ingest.
 - [[TensorRT]] — Holoscan's inference operator uses TensorRT for optimized model execution
 - [[CV-CUDA]] — GPU image processing operators used within Holoscan preprocessing pipelines
 - [[NVIDIA-DALI]] — DALI can be used as a data augmentation backend within Holoscan pipelines

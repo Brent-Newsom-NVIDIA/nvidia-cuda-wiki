@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video analytics, streaming, GStreamer, IVA, edge AI, intelligent video, multi-stream
-**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[NVIDIA-Rivermax]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -53,6 +53,7 @@ Processing live video for AI analytics at scale is a data-movement and compute c
 - [[NVIDIA-Jetson-Platform-Services]] - JPS wraps DeepStream perception into service-oriented Jetson edge AI workflows.
 - [[NVIDIA-JetPack-SDK]] - JetPack supplies the Jetson software environment for DeepStream deployments.
 - [[NVIDIA-VPI]] - complementary Jetson vision library for preprocessing and computer vision stages.
+- [[NVIDIA-Rivermax]] - accelerated media/data streaming SDK that can feed GPU-resident video pipelines.
 - [[Triton-Inference-Server]] — `nvinferserver` plugin enables Triton-backed inference within DeepStream pipelines
 - [[TensorRT]] — `nvinfer` plugin uses TensorRT for on-device optimized inference within DeepStream
 - [[NGC]] — DeepStream containers and pre-trained TAO models distributed via NGC

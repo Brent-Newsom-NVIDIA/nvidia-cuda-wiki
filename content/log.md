@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 8: NVIDIA networking software and DOCA gap expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch8-20260429T060102Z`; local Git tag `codex-backup-overnight-pre-batch8-20260429T060102Z`
+
+**Source URLs:** https://docs.nvidia.com/doca/sdk/index.html, https://developer.nvidia.com/networking/doca, https://developer.nvidia.com/networking/doca/getting-started, https://docs.nvidia.com/networking/software/cloud-orchestration/index.html, https://docs.nvidia.com/networking/display/kubernetes2610/index.html, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking-ethernet-software/, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking-ethernet-software/cumulus-netq-51/, https://docs.nvidia.com/networking-ethernet-software/nvidia-air/, https://docs.nvidia.com/networking/display/hpcxv226, https://developer.nvidia.com/networking/hpc-x, https://developer.nvidia.com/networking/rivermax, https://developer.nvidia.com/networking/rivermax/faq, https://docs.nvidia.com/doca/sdk/DOCA-Rivermax/index.html
+
+**Gap analysis summary:**
+
+- Added durable NVIDIA networking software pages that were previously only mentioned inside hardware/fabric pages: DOCA, Network Operator, Cumulus Linux, NetQ, DSX Air, HPC-X, and Rivermax.
+- Treated build/demo/simulation material cautiously: DSX Air was added as the canonical NVIDIA simulation platform, not as individual build pages.
+- Kept DOCA subcomponents such as DOCA Rivermax, DOCA Flow, DOCA services, and DOCA tools consolidated into the DOCA or Rivermax pages rather than creating many one-off subpages from a single docs tree.
+- Refreshed existing BlueField, ConnectX, Spectrum-X, Quantum InfiniBand, UFM, GPUDirect RDMA, NCCL, NVSHMEM, GPU Operator, Cloud Native Technologies, Mission Control, Holoscan, and DeepStream pages with new wiki connections.
+- Used the latest/current public docs surfaces found in this pass: DOCA 3.3.0, Network Operator 26.1.0, Cumulus Linux 5.16, NetQ 5.1, DSX Air, and HPC-X 2.26.
+
+**Pages created (7 total):**
+
+- `content/wiki/NVIDIA-DOCA.md`
+- `content/wiki/NVIDIA-Network-Operator.md`
+- `content/wiki/NVIDIA-Cumulus-Linux.md`
+- `content/wiki/NVIDIA-NetQ.md`
+- `content/wiki/NVIDIA-DSX-Air.md`
+- `content/wiki/NVIDIA-HPC-X.md`
+- `content/wiki/NVIDIA-Rivermax.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-BlueField-DPU.md` and `content/wiki/NVIDIA-ConnectX-InfiniBand.md` - connected DOCA, DOCA-OFED, Network Operator, HPC-X, Rivermax, and current NVIDIA networking software context.
+- `content/wiki/NVIDIA-Spectrum-X.md`, `content/wiki/NVIDIA-Quantum-InfiniBand.md`, and `content/wiki/NVIDIA-UFM.md` - connected Spectrum-X RA2.1-adjacent docs, Cumulus Linux, NetQ, DSX Air, HPC-X, DOCA, and Mission Control fabric operations.
+- `content/wiki/GPUDirect-RDMA.md`, `content/wiki/NCCL.md`, and `content/wiki/NVSHMEM.md` - linked GPU communication paths to DOCA, Network Operator, HPC-X, Spectrum-X, and Quantum InfiniBand.
+- `content/wiki/NVIDIA-Cloud-Native-Technologies.md` and `content/wiki/NVIDIA-GPU-Operator.md` - linked Network Operator as the Kubernetes networking companion to GPU Operator.
+- `content/wiki/NVIDIA-Mission-Control.md` - connected NetQ to Mission Control network/NVLink observability.
+- `content/wiki/NVIDIA-Holoscan.md` and `content/wiki/NVIDIA-DeepStream.md` - connected Rivermax to GPU media streaming, sensor ingest, and video analytics pipelines.
+- `content/index.md` - updated page count to 237 and indexed the seven new networking pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 7: DRIVE autonomous vehicle platform expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch7-20260429T055544Z`; local Git tag `codex-backup-overnight-pre-batch7-20260429T055544Z`

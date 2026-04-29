@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, PGAS, Distributed Computing, Multi-GPU, HPC, OpenSHMEM
-**Related:** [[NCCL]], [[cuFFT]], [[cuBLAS]], [[AmgX]]
+**Related:** [[NCCL]], [[NVIDIA-HPC-X]], [[GPUDirect-RDMA]], [[cuFFT]], [[cuBLAS]], [[AmgX]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -46,6 +46,8 @@ Traditional multi-GPU programming models (MPI, NCCL) require CPU involvement to 
 
 ## Connections
 - [[NCCL]] — NCCL handles collective operations; NVSHMEM handles fine-grained point-to-point PGAS communication
+- [[NVIDIA-HPC-X]] — HPC-X includes SHMEM/PGAS communication libraries that sit near NVSHMEM's GPU-cluster programming model
+- [[GPUDirect-RDMA]] — NVSHMEM relies on GPU-aware RDMA paths for inter-node GPU communication
 - [[cuFFT]] — cuFFTMp uses NVSHMEM for multi-node distributed FFT communication
 - [[cuBLAS]] — cuBLASMp multi-node linear algebra uses NVSHMEM for data movement
 - [[AmgX]] — AmgX multi-node solvers use NVSHMEM-like communication patterns

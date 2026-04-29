@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, UFM, InfiniBand, Network Management, Fabric Management, HPC, AI Networking
-**Related:** [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-DCGM]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-NetQ]], [[NVIDIA-Mission-Control]], [[NVIDIA-DCGM]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -51,6 +51,8 @@ Large-scale InfiniBand and Ethernet AI fabrics are complex systems with thousand
 - [[NVIDIA-Quantum-InfiniBand]] — UFM is the subnet manager and control plane for Quantum IB fabrics
 - [[NVIDIA-Spectrum-X]] — UFM extended to manage Spectrum-X Ethernet AI fabrics
 - [[NVIDIA-ConnectX-InfiniBand]] — UFM manages ConnectX NIC endpoint configuration and routing
+- [[NVIDIA-NetQ]] — NetQ provides adjacent network operations visibility, validation, and NVLink management.
+- [[NVIDIA-Mission-Control]] — Mission Control incorporates fabric-aware operations including UFM and network/NVLink observability.
 - [[NVIDIA-DCGM]] — DCGM monitors GPU health; UFM monitors network fabric health; complementary tools
 - [[NVIDIA-DGX]] — DGX SuperPOD deployments use UFM as the standard fabric management solution
 

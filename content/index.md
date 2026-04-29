@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 230*
+*Total pages: 237*
 
 ---
 
@@ -78,6 +78,7 @@
 - [[cuda-parallel]] — Python bindings for CUB/Thrust parallel algorithms with JIT-compiled user operators
 - [[NCCL]] — multi-GPU and multi-node collective communications (all-reduce, all-gather, broadcast)
 - [[NVSHMEM]] — GPU-cluster PGAS (Partitioned Global Address Space) communication via OpenSHMEM
+- [[NVIDIA-HPC-X]] — NVIDIA MPI, SHMEM, UCX, UCC, HCOLL, ClusterKit, and NCCL-RDMA-SHARP communications toolkit
 
 ### Scientific & Physics
 - [[NVIDIA-Warp]] — open-source Python framework for GPU-accelerated physics simulation with auto-diff
@@ -305,8 +306,14 @@
 
 ## Networking
 
+- [[NVIDIA-DOCA]] — software framework for BlueField, SuperNIC, and ConnectX infrastructure offload, DOCA-Host, and DOCA-OFED
+- [[NVIDIA-Network-Operator]] — Kubernetes operator for NVIDIA networking, RDMA, GPUDirect RDMA, SR-IOV, secondary networks, and DOCA-OFED
+- [[NVIDIA-Cumulus-Linux]] — Linux-based Ethernet switch OS for NVIDIA Spectrum and Spectrum-X fabrics
+- [[NVIDIA-NetQ]] — network operations and observability tool set for Cumulus, Spectrum, NVLink, and data center fabrics
+- [[NVIDIA-DSX-Air]] — cloud-hosted network simulation and digital twin platform for validating NVIDIA networking configurations
 - [[NVIDIA-ConnectX-InfiniBand]] — NVIDIA ConnectX NICs and Quantum InfiniBand switches powering DGX SuperPODs and HPC clusters (up to 400Gb/s)
 - [[NVIDIA-BlueField-DPU]] — Data Processing Unit combining ConnectX NIC with ARM CPU and hardware accelerators for infrastructure offload
+- [[NVIDIA-Rivermax]] — optimized networking SDK for GPUDirect media/data streaming, SMPTE ST 2110, BlueField, and ConnectX workflows
 
 ---
 
@@ -365,9 +372,12 @@
 
 ### Ethernet AI Networking
 - [[NVIDIA-Spectrum-X]] — Spectrum-4 400GbE AI networking platform; Adaptive Routing for lossless Ethernet RDMA
+- [[NVIDIA-Cumulus-Linux]] — validated switch OS layer for current Spectrum-X reference architecture releases
+- [[NVIDIA-NetQ]] — fabric operations visibility and validation for Ethernet AI networking
 
 ### Collective Communication
 - [[NCCL-Algorithms]] — Ring and tree allreduce algorithms, SHARP offload, topology-aware selection in NCCL
+- [[NVIDIA-HPC-X]] — MPI/SHMEM/UCX/UCC toolkit with NCCL-RDMA-SHARP and Spectrum-X plugin guidance
 
 ---
 

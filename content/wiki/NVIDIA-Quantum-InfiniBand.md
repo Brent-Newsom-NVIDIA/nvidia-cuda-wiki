@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, InfiniBand, Networking, HPC, AI Networking, Quantum-2, NDR, HDR, Collective Offload
-**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NCCL]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -41,6 +41,7 @@ At hyperscale AI training, the interconnect between GPUs becomes the performance
 
 ### Language Bindings / APIs
 - NCCL with InfiniBand SHARP plugin (nccl-ib-sharp) for offloaded collectives
+- [[NVIDIA-HPC-X]] with MPI, SHMEM, UCX, UCC, HCOLL, and NCCL-RDMA-SHARP plugin support
 - UCX (Unified Communication X) layer
 - MPI (OpenMPI, MPICH) over InfiniBand
 - OpenSHMEM via NVSHMEM
@@ -49,6 +50,8 @@ At hyperscale AI training, the interconnect between GPUs becomes the performance
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX NICs are the endpoint adapters that connect to Quantum switches
 - [[NVIDIA-Spectrum-X]] — Spectrum-X is NVIDIA's Ethernet counterpart for AI networking
 - [[NVIDIA-UFM]] — UFM manages and monitors the InfiniBand fabric
+- [[NVIDIA-HPC-X]] — HPC-X packages MPI/SHMEM/UCX/UCC and SHARP-aware communication libraries for NVIDIA fabrics
+- [[NVIDIA-DOCA]] — DOCA/DOCA-OFED supplies the modern host and adapter software substrate for NVIDIA networking
 - [[NCCL]] — NCCL uses InfiniBand SHARP for accelerated collective communication
 - [[NVIDIA-DGX]] — DGX SuperPOD uses Quantum InfiniBand as the backbone interconnect
 

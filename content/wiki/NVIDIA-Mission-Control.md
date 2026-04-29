@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI factory, cluster management, DGX, SuperPOD, orchestration, observability, recovery, GB200, GB300
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-Base-Command]], [[NVIDIA-UFM]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-Base-Command]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
 **Sources:** https://docs.nvidia.com/mission-control/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html
 **Last Updated:** 2026-04-28
 
@@ -37,6 +37,7 @@ As of docs accessed on 2026-04-28, the latest surfaced user-guide and release-no
 - [[NVIDIA-DGX]] - Mission Control is the operations layer for current DGX B200/B300 and DGX GB200/GB300 deployments.
 - [[NVIDIA-Base-Command]] - BCM is the provisioning and cluster-management backbone inside Mission Control.
 - [[NVIDIA-UFM]] - UFM handles InfiniBand scale-out fabric management inside supported Mission Control deployments.
+- [[NVIDIA-NetQ]] - NetQ/NMX-style network and NVLink visibility connects Mission Control to fabric operations.
 - [[NVIDIA-AI-Enterprise]] - Mission Control complements AI Enterprise by focusing on day-2 cluster operations and integrated infrastructure management.
 - [[NVIDIA-DCGM]] - DCGM provides GPU telemetry that fits into Mission Control's broader observability model.
 - [[NVLink]] - Mission Control's NetQ/NMX components extend operations into NVLink fabrics and partition-aware telemetry.

@@ -1,0 +1,33 @@
+# NVIDIA Network Operator
+
+**Type:** Tool
+**Tags:** NVIDIA, Kubernetes, networking, RDMA, GPUDirect RDMA, DOCA-OFED, SR-IOV, CNI, IPAM, Spectrum-X
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]]
+**Sources:** https://docs.nvidia.com/networking/software/cloud-orchestration/index.html; https://docs.nvidia.com/networking/display/kubernetes2610/index.html
+**Last Updated:** 2026-04-29
+
+## Summary
+NVIDIA Network Operator is the Kubernetes operator for provisioning and managing NVIDIA networking resources in GPU and AI clusters. It installs the host networking software needed for RDMA, GPUDirect RDMA, SR-IOV, secondary networks, CNI plugins, IPAM, and DOCA-OFED driver management. It works alongside [[NVIDIA-GPU-Operator]] so scale-out GPU workloads can receive both accelerated compute resources and accelerated network resources through Kubernetes-native control.
+
+## Detail
+The current NVIDIA docs hub lists Network Operator v26.1.0 as the latest public documentation line. NVIDIA describes the operator as a Helm-deployed Kubernetes component that brings together the networking driver, device plugin, CNI plugins, IPAM plugin, and other components needed for high-speed network connectivity on NVIDIA-enabled nodes.
+
+Network Operator is not a replacement for GPU Operator. It is the networking-side companion: GPU Operator manages GPU drivers, device plugins, DCGM, MIG, and container runtime integration, while Network Operator manages NIC/DPU-facing software for RDMA, SR-IOV, host device networks, MacVLAN networks, IP over InfiniBand, and other secondary-network patterns. Together they provide the cluster substrate for distributed training, inference, storage, and data processing workloads.
+
+The current docs call out four major feature areas: RDMA support across InfiniBand and RoCE, SR-IOV virtualization for hardware-isolated virtual functions, secondary networks for specialized workloads, and automated NVIDIA DOCA-OFED driver deployment with version control and updates. The v26.1.0 documentation also includes NIC Configuration Operator content, Spectrum-X-specific NIC configuration, and tech-preview Kubernetes Launch Kit assistance for generating cluster deployment files.
+
+For NVIDIA AI infrastructure, Network Operator matters because [[NCCL]], [[NVSHMEM]], [[NVIDIA-HPC-X]], MPI, and storage applications depend on predictable, low-latency network access. Kubernetes clusters running multi-node GPU jobs need a declarative way to expose that hardware without one-off node setup.
+
+## Connections
+- [[NVIDIA-DOCA]] - Network Operator manages DOCA-OFED driver containers and related host networking software.
+- [[NVIDIA-GPU-Operator]] - complementary Kubernetes operator for GPU lifecycle and GPU resource exposure.
+- [[NVIDIA-Cloud-Native-Technologies]] - cloud-native hub page for Kubernetes GPU and networking deployment patterns.
+- [[NVIDIA-BlueField-DPU]] - BlueField DPUs can be managed as part of accelerated Kubernetes networking environments.
+- [[NVIDIA-ConnectX-InfiniBand]] - ConnectX adapters provide the RDMA and RoCE hardware exposed by Network Operator.
+- [[NVIDIA-Spectrum-X]] - current docs include Spectrum-X NIC configuration paths for RA2.1-style clusters.
+- [[GPUDirect-RDMA]] - Network Operator enables the RDMA plumbing used by GPUDirect workloads.
+
+## Source Excerpts
+- "The NVIDIA Network Operator simplifies the provisioning and management of NVIDIA networking resources in a Kubernetes cluster."
+- "The NVIDIA Network Operator works in conjunction with the NVIDIA GPU Operator."
+
