@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Nsight, Visual Studio Code, CUDA debugging, GPU development, cuda-gdb, cuda-gdbserver, remote debugging, WSL, containers
-**Related:** [[Nsight-Developer-Tools]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]], [[CUDA-Installation-Guide-Windows]], [[CUDA-on-WSL]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Copilot]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]], [[CUDA-Installation-Guide-Windows]], [[CUDA-on-WSL]], [[NVIDIA-Developer-Program]]
 **Sources:** https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/introduction/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/install-setup/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-debugger/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-control-gpu-execution/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-inspect-state/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
 **Last Updated:** 2026-04-29
 
@@ -18,8 +18,11 @@ Setup guidance centers on Visual Studio Code, the NVIDIA CUDA Toolkit, a compati
 
 Use [[CUDA-GDB]] for the lower-level command-line debugger context, [[Compute-Sanitizer]] for automated CUDA correctness checking, [[Nsight-Compute]] for kernel performance profiling, and [[Nsight-Systems]] for system-wide timeline analysis.
 
+Use [[Nsight-Copilot]] when the task is CUDA-aware AI assistance inside VS Code rather than debugger control, breakpoints, or state inspection.
+
 ## Connections
 - [[Nsight-Visual-Studio-Edition]] - sibling IDE integration for Microsoft Visual Studio rather than VS Code.
+- [[Nsight-Copilot]] - CUDA-aware AI assistant available through a Visual Studio Code extension.
 - [[CUDA-GDB]] - command-line CUDA debugger foundation and remote debugging context.
 - [[NVCC]] - compiles CUDA code and debug builds used by Nsight VSCE.
 - [[Compute-Sanitizer]] - complementary CUDA correctness tool for memory, race, init, and sync errors.

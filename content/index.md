@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 453*
+*Total pages: 454*
 
 ---
 
@@ -145,6 +145,7 @@
 - [[Nsight-Developer-Tools]] — Suite-level hub for NVIDIA Nsight debugging, profiling, correctness, IDE, cloud, and SDK tools
 - [[Nsight-Aftermath-SDK]] — SDK for collecting and analyzing GPU crash mini-dumps from D3D12/Vulkan applications
 - [[Nsight-Cloud]] — cloud-native Nsight profiling components for Kubernetes, containers, Operator, and Streamer workflows
+- [[Nsight-Copilot]] — CUDA-aware AI assistant for VS Code development and preview Nsight Compute guidance
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
 - [[Nsight-Deep-Learning-Designer]] — visual ONNX model design and inference profiling IDE with TensorRT/ONNX Runtime profilers
 - [[Nsight-Graphics]] — standalone graphics debugger/profiler for GPU Trace, frame capture, shaders, ray tracing, DRIVE, and Jetson

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, Performance Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Developer-Tools]], [[Nsight-JupyterLab-Extension]], [[Nsight-Python]], [[Nsight-Systems]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVTX]], [[NVCC]], [[CUDA-Python]], [[cuda-bindings]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Copilot]], [[Nsight-JupyterLab-Extension]], [[Nsight-Python]], [[Nsight-Systems]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVTX]], [[NVCC]], [[CUDA-Python]], [[cuda-bindings]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html, https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer, https://docs.nvidia.com/nsight-developer-tools/index.html, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html, https://developer.nvidia.com/tools-overview/nsight-compute/get-started
 **Last Updated:** 2026-04-29
 
@@ -16,6 +16,7 @@ Writing a correct GPU kernel is only half the challenge — writing a fast one r
 
 ### Key Features
 - Interactive kernel profiler with GUI (Nsight Compute IDE) and command-line tool (ncu)
+- Nsight Copilot preview in the standalone Nsight Compute 2026.1 download for CUDA-aware profiler guidance
 - Detailed hardware performance metrics: compute throughput, memory bandwidth, L1/L2/HBM utilization
 - Warp execution efficiency and occupancy analysis
 - Roofline performance model visualization
@@ -46,6 +47,7 @@ Writing a correct GPU kernel is only half the challenge — writing a fast one r
 
 ## Connections
 - [[Nsight-Systems]] — Nsight Systems provides application-level profiling; Nsight Compute provides kernel-level deep dive
+- [[Nsight-Copilot]] - preview integration in Nsight Compute for CUDA-aware guidance on profiler findings.
 - [[Nsight-Python]] — Python automation layer can collect Nsight Compute-style kernel metrics.
 - [[Nsight-JupyterLab-Extension]] - JupyterLab workflow for launching Nsight Compute profiling on notebook cells.
 - [[NVTX]] - annotation API whose ranges can focus Nsight Compute profiling.

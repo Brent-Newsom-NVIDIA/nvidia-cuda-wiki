@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 80: Nsight Copilot
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch80-20260429T120252Z`; local Git tag `codex-backup-overnight-pre-batch80-20260429T120252Z`
+
+**Source URLs:** https://developer.nvidia.com/nsight-copilot, https://developer.nvidia.com/tools-overview/nsight-compute/get-started
+
+**Gap analysis summary:**
+
+- Added a canonical Nsight Copilot page after finding a current NVIDIA developer page and current Nsight Compute 2026.1 download page coverage with no existing wiki page.
+- Kept the scope to the durable NVIDIA tool rather than creating separate pages for underlying autocomplete models, beta signup paths, or every related forum/build surface.
+- Connected Nsight Copilot to Nsight Developer Tools, Nsight Compute, Nsight Visual Studio Code Edition, NIM, CUDA, PyTorch-to-CUDA migration context, and developer-program access.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Copilot.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Developer-Tools.md` - promoted Nsight Copilot from future gap candidate to linked page.
+- `content/wiki/Nsight-Compute.md` - connected the 2026.1 preview integration.
+- `content/wiki/Nsight-Visual-Studio-Code-Edition.md` - connected the VS Code assistant path.
+- `content/wiki/NVIDIA-NIM.md` - linked Nsight Copilot as a NIM-powered developer-tool assistant.
+- `content/index.md` - updated total page count to 454 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 79: Compute Sanitizer API refresh
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch79-20260429T115931Z`; local Git tag `codex-backup-overnight-pre-batch79-20260429T115931Z`
