@@ -2,7 +2,7 @@
 
 **Type:** Model
 **Tags:** NVIDIA, VLM, Vision-Language, Multimodal, EAGLE2, Synthetic Data, Computer Vision
-**Related:** [[NVLM]], [[NVIDIA-NeMo]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[Nemotron]]
+**Related:** [[NVLM]], [[NVIDIA-NeMo]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[Nemotron]], [[Llama-Nemotron-Embed-VL-1B-v2]], [[Llama-Nemotron-Rerank-VL-1B-v2]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -51,6 +51,7 @@ Building a frontier-class VLM typically requires enormous compute budgets and pr
 - [[TensorRT-LLM]] — EAGLE models optimized via TensorRT-LLM for fast inference
 - [[NVIDIA-NIM]] — EAGLE available as NIM containers
 - [[Nemotron]] — EAGLE2 variants use Nemotron LLM backbones
+- [[Llama-Nemotron-Embed-VL-1B-v2]] and [[Llama-Nemotron-Rerank-VL-1B-v2]] - current NVIDIA retrieval model cards cite Eagle/Eagle 2 VLM architecture ideas for visual document understanding.
 
 ## Resources
 - [EAGLE2 Blog Post](https://developer.nvidia.com/blog/eagle2-building-competitive-multimodal-llms-with-synthetic-data/)

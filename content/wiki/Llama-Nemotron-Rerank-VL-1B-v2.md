@@ -2,7 +2,7 @@
 
 **Type:** NVIDIA model
 **Tags:** NVIDIA, Llama Nemotron, NeMo Retriever, reranking, multimodal retrieval, VLM, RAG, document retrieval, TensorRT, Build NVIDIA
-**Related:** [[NeMo-Retriever]], [[NeMo-Retriever-Reranking-NIM]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[Nemotron-Parse]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[TensorRT]], [[Triton-Inference-Server]]
+**Related:** [[NeMo-Retriever]], [[NeMo-Retriever-Reranking-NIM]], [[NeMo-Retriever-Embedding-NIM]], [[Llama-Nemotron-Embed-VL-1B-v2]], [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[Nemotron-Parse]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[TensorRT]], [[Triton-Inference-Server]]
 **Sources:** https://build.nvidia.com/nvidia/llama-nemotron-rerank-vl-1b-v2/modelcard, https://build.nvidia.com/nvidia/llama-nemotron-rerank-vl-1b-v2, https://huggingface.co/nvidia/llama-nemotron-rerank-vl-1b-v2
 **Last Updated:** 2026-04-29
 
@@ -25,12 +25,12 @@ Architecturally, the model card describes a transformer cross-encoder with about
 ## Deployment and Evaluation
 The model card lists TensorRT as the runtime engine, Linux as the supported OS, and NVIDIA Ampere, Hopper, Lovelace, and Blackwell as supported hardware microarchitectures. It is also usable from Hugging Face Transformers with `transformers>=4.56.0` and optional FlashAttention.
 
-NVIDIA reports evaluation on ViDoRe V1, V2, V3 and internal visual retrieval datasets, plus text retrieval benchmarks such as BEIR, MIRACL, MLQA, and MLDR. The model card evaluates it in an embedding-plus-reranking pipeline with the companion llama-nemotron-embed-vl-1b-v2 embedding model.
+NVIDIA reports evaluation on ViDoRe V1, V2, V3 and internal visual retrieval datasets, plus text retrieval benchmarks such as BEIR, MIRACL, MLQA, and MLDR. The model card evaluates it in an embedding-plus-reranking pipeline with the companion [[Llama-Nemotron-Embed-VL-1B-v2]] embedding model.
 
 ## Connections
 - [[NeMo-Retriever]] - model belongs in NVIDIA's retrieval/RAG stack.
 - [[NeMo-Retriever-Reranking-NIM]] - service-level reranking NIM page; this page covers the specific multimodal reranker model.
-- [[NeMo-Retriever-Embedding-NIM]] and [[NIM-for-NV-CLIP]] - embedding stages that can produce candidates before reranking.
+- [[NeMo-Retriever-Embedding-NIM]], [[Llama-Nemotron-Embed-VL-1B-v2]], and [[NIM-for-NV-CLIP]] - embedding stages that can produce candidates before reranking.
 - [[NIM-for-Vision-Language-Models]] and [[NVIDIA-EAGLE]] - VLM architecture and model-family context.
 - [[Nemotron]] and [[Nemotron-Parse]] - Nemotron family and document-parsing context around multimodal retrieval.
 - [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], and [[NVIDIA-AI-Data-Platform]] - application contexts where multimodal retrieval/reranking improves grounded answers.

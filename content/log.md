@@ -2,6 +2,36 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 86: Llama Nemotron Embed VL 1B v2
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch86-20260429T122059Z`; local Git tag `codex-backup-overnight-pre-batch86-20260429T122059Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/llama-nemotron-embed-vl-1b-v2/modelcard, https://build.nvidia.com/nvidia/llama-nemotron-embed-vl-1b-v2, https://huggingface.co/nvidia/llama-nemotron-embed-vl-1b-v2
+
+**Gap analysis summary:**
+
+- Added a canonical page for the NVIDIA-published llama-nemotron-embed-vl-1b-v2 model after finding current Build NVIDIA and NVIDIA Hugging Face model pages and no existing wiki page.
+- Kept this as a model-specific complement to the broader NeMo Retriever Embedding NIM page instead of duplicating service-level docs.
+- Connected the model to its companion multimodal reranker, NeMo Retriever, NIM, VLM/EAGLE context, Nemotron, RAG blueprints, AI Data Platform, TensorRT, and Triton.
+
+**Pages created (1 total):**
+
+- `content/wiki/Llama-Nemotron-Embed-VL-1B-v2.md`
+
+**Pages updated:**
+
+- `content/wiki/Llama-Nemotron-Rerank-VL-1B-v2.md` - linked the companion embedding model used before multimodal reranking.
+- `content/wiki/NeMo-Retriever-Embedding-NIM.md` - connected the service-level embedding page to the specific Build NVIDIA model.
+- `content/wiki/NeMo-Retriever.md` - added model-specific multimodal document retrieval context.
+- `content/wiki/NIM-for-Vision-Language-Models.md` - linked the model as an adjacent VLM-style retrieval embedding surface.
+- `content/wiki/NVIDIA-NIM.md` - connected the model into the NIM/Retriever model graph.
+- `content/wiki/NVIDIA-RAG-Blueprint.md` - replaced the raw model slug with a canonical wikilink and added rerank pairing.
+- `content/wiki/Nemotron.md` - linked Llama Nemotron embedding/reranking retrieval coverage.
+- `content/wiki/NVIDIA-EAGLE.md` - added retrieval-model connections for Eagle-style VLM architecture context.
+- `content/index.md` - updated total page count to 460 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 85: Llama Nemotron Rerank VL 1B v2
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch85-20260429T121645Z`; local Git tag `codex-backup-overnight-pre-batch85-20260429T121645Z`
