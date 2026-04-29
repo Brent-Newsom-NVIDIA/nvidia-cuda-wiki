@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Equivariant Neural Networks, Drug Discovery, Materials Science, Scientific AI
-**Related:** [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]]
+**Related:** [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]], [[NVIDIA-BioNeMo]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold2]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -49,6 +49,10 @@ Equivariant neural networks (E3NNs) respect the symmetries of physical systems (
 - [[cuTENSOR]] — cuTENSOR handles general tensor contractions; cuEquivariance handles irreps-specific contractions
 - [[NVIDIA-Warp]] — Warp enables differentiable physics simulation; cuEquivariance enables equivariant ML on molecular data
 - [[cuBLAS]] — cuBLAS handles standard GEMM; cuEquivariance handles structured tensor products not expressible as standard GEMM
+- [[NVIDIA-BioNeMo]] — BioNeMo structure models use geometry-aware/equivariant neural network acceleration.
+- [[NIM-for-OpenFold3]] — current OpenFold3 NIM docs call out cuEquivariance kernels in the optimized backend.
+- [[NIM-for-Boltz2]] — Boltz-style biomolecular structure prediction is adjacent to equivariant model acceleration.
+- [[NIM-for-OpenFold2]] — OpenFold-style structure prediction is part of the BioNeMo structure-model family.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/cuequivariance)

@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, drug discovery, biology, biomolecular AI, protein, genomics, cheminformatics, NIM, life sciences
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Clara]], [[NVIDIA-Parabricks]], [[cuEquivariance]], [[NGC]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/bionemo-framework/latest/index.html
+**Related:** [[NVIDIA-NIM]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Clara]], [[NVIDIA-Parabricks]], [[cuEquivariance]], [[NGC]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/bionemo-framework/latest/index.html, https://docs.nvidia.com/nim/bionemo/alphafold2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/alphafold2-multimer/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold3/latest/overview.html, https://docs.nvidia.com/nim/bionemo/boltz2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/evo2/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,8 +17,10 @@ Computational biology and drug discovery involve computationally intensive tasks
 ### Key Features
 - **Pre-Trained Biomolecular Models:** A growing library of foundation models including:
   - **ESM-2 / ESM-3:** Protein language models (Meta ESM family) for sequence embedding, property prediction, and generation
-  - **AlphaFold2 (GPU-accelerated):** NVIDIA-optimized protein structure prediction running at 10–100× CPU speeds
-  - **OpenFold:** Trainable, open-source AlphaFold2 implementation for fine-tuning on custom datasets
+  - **[[NIM-for-AlphaFold2]] / [[NIM-for-AlphaFold2-Multimer]]:** NVIDIA NIMs for single-chain and multimer AlphaFold2 protein structure prediction, with MSA workflows.
+  - **[[NIM-for-OpenFold2]] / [[NIM-for-OpenFold3]]:** OpenFold protein and biomolecular-complex structure prediction NIMs; OpenFold3 covers proteins, DNA, RNA, ligands, structural templates, TensorRT, and cuEquivariance acceleration.
+  - **[[NIM-for-Boltz2]]:** biomolecular structure and binding-affinity prediction NIM for proteins, RNA, DNA, ligands, and constrained molecular interactions.
+  - **[[NIM-for-Evo-2]]:** DNA sequence interpretation and generation NIM for biological foundation-model workflows.
   - **DiffDock:** Diffusion-based molecular docking model for predicting protein-ligand binding poses
   - **MolMIM:** Molecular generation model using masked image modeling for drug-like molecule design
   - **EquiDock, ProteinMPNN, RoseTTAFold:** Additional structure prediction and design tools
@@ -53,6 +55,12 @@ Computational biology and drug discovery involve computationally intensive tasks
 
 ## Connections
 - [[NVIDIA-NIM]] — All BioNeMo models are deployed as NIM microservices with REST APIs
+- [[NIM-for-AlphaFold2]] — BioNeMo NIM for single-chain AlphaFold2 protein structure prediction.
+- [[NIM-for-AlphaFold2-Multimer]] — BioNeMo NIM for AlphaFold2 protein-complex prediction.
+- [[NIM-for-OpenFold2]] — BioNeMo NIM for OpenFold2 monomer protein structure prediction.
+- [[NIM-for-OpenFold3]] — BioNeMo NIM for all-atom biomolecular complexes.
+- [[NIM-for-Boltz2]] — BioNeMo NIM for structure and binding-affinity prediction.
+- [[NIM-for-Evo-2]] — BioNeMo NIM for DNA sequence interpretation and generation.
 - [[NVIDIA-NeMo]] — BioNeMo Framework shares architectural patterns with NeMo; NeMo Curator used for biomolecular data curation
 - [[NVIDIA-Clara]] — Clara is the broader NVIDIA healthcare platform; BioNeMo is the drug discovery / computational biology component
 - [[NVIDIA-Parabricks]] — genomics acceleration sibling within the Clara life sciences portfolio

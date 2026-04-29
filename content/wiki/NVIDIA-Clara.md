@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, healthcare, medical imaging, genomics, drug discovery, AI, radiology, clinical AI, life sciences
-**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-BioNeMo]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[TensorRT]]
+**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-BioNeMo]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[TensorRT]]
 **Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html
 **Last Updated:** 2026-04-29
 
@@ -57,6 +57,7 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 - [[NVIDIA-Clara-Viz]] — Clara visualization component for 2D/3D medical imaging and pathology.
 - [[NVIDIA-MONAI-Toolkit]] — enterprise-supported MONAI distribution for medical imaging AI development.
 - [[NVIDIA-BioNeMo]] — BioNeMo is the drug discovery/computational biology layer of Clara; Clara encompasses BioNeMo + imaging + genomics
+- [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]] — representative BioNeMo NIMs for structure, interaction, and DNA sequence workflows.
 - [[NVIDIA-Holoscan]] — Clara Holoscan became the NVIDIA Holoscan SDK; the real-time streaming AI platform for medical devices
 - [[NVIDIA-Riva]] — Riva provides speech AI for clinical documentation (ambient clinical intelligence use cases)
 - [[NVIDIA-AI-Enterprise]] — Clara workloads run under AI Enterprise license for regulated healthcare environments

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 320*
+*Total pages: 326*
 
 ---
 
@@ -251,6 +251,12 @@
 ### AI Application Platforms
 - [[NVIDIA-AI-Aerial]] — Accelerated AI-RAN platform for 5G/6G wireless network development and simulation
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
+- [[NIM-for-AlphaFold2]] — BioNeMo NIM for single-chain AlphaFold2 protein structure prediction and MSA workflows
+- [[NIM-for-AlphaFold2-Multimer]] — BioNeMo NIM for AlphaFold2 multimer protein-complex structure prediction
+- [[NIM-for-OpenFold2]] — BioNeMo NIM for OpenFold2 monomer protein structure prediction with optional MSAs/templates
+- [[NIM-for-OpenFold3]] — BioNeMo NIM for all-atom biomolecular complexes with proteins, DNA, RNA, and ligands
+- [[NIM-for-Boltz2]] — BioNeMo NIM for biomolecular structure and binding-affinity prediction
+- [[NIM-for-Evo-2]] — BioNeMo NIM for Evo 2 DNA sequence interpretation and generation
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
 - [[NVIDIA-AI-for-Media-SDKs]] — Current docs hub for NVIDIA audio, video, AR, and Triton-enabled media AI SDKs

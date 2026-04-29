@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, inference, microservices, LLM, AI, REST API, containers, production deployment, OpenAI-compatible
-**Related:** [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NVIDIA-Brev]], [[NVIDIA-Cloud-Accelerator-NCX]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nim/index.html, https://docs.nvidia.com/nim-operator/latest/index.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/index.html
+**Related:** [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NVIDIA-Brev]], [[NVIDIA-Cloud-Accelerator-NCX]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-BioNeMo]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nim/index.html, https://docs.nvidia.com/nim-operator/latest/index.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://docs.nvidia.com/nim/bionemo/alphafold2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold3/latest/overview.html, https://docs.nvidia.com/nim/bionemo/boltz2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/evo2/latest/overview.html, https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,7 +30,7 @@ NIM packages model-specific inference runtimes, APIs, containers, and deployment
 ### Representative model families
 - [[Nemotron]] reasoning, instruction, safety, ASR, OCR, voice, embedding, and reranking models.
 - [[Parakeet-ASR]] and [[NVIDIA-Canary]] speech models.
-- BioNeMo/Biology models surfaced through NIM-style APIs and NGC artifacts.
+- BioNeMo/Biology models surfaced through NIM-style APIs and NGC artifacts, including [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]].
 - Community and partner open models optimized for NVIDIA inference.
 
 ### NVIDIA context
@@ -43,6 +43,12 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 - [[NeMo-Retriever-Reranking-NIM]] - reranking NIM for improving retrieved passage relevance.
 - [[NIM-for-Image-OCR]] - OCR NIM for extracting text from visual document regions.
 - [[NIM-for-Object-Detection]] - document object-detection NIMs for page, table, and graphic elements.
+- [[NIM-for-AlphaFold2]] - BioNeMo NIM for single-chain protein structure prediction.
+- [[NIM-for-AlphaFold2-Multimer]] - BioNeMo NIM for protein complex structure prediction.
+- [[NIM-for-OpenFold2]] - BioNeMo NIM for OpenFold2 monomer protein structure prediction.
+- [[NIM-for-OpenFold3]] - BioNeMo NIM for all-atom biomolecular complexes.
+- [[NIM-for-Boltz2]] - BioNeMo NIM for biomolecular structure and binding-affinity prediction.
+- [[NIM-for-Evo-2]] - BioNeMo NIM for DNA sequence interpretation and generation.
 - [[NVIDIA-AI-Enterprise]] - commercial enterprise software layer that includes supported NIM runtimes.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - distribution path for containers, models, and artifacts.
 - [[NVIDIA-AI-Blueprints]] - reference workflows that compose NIM with NeMo, Retriever, Nemotron, and deployment assets.
@@ -57,6 +63,7 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 - [[Triton-Inference-Server]] - serving layer used across NVIDIA model modalities.
 - [[NeMo-Platform]] - agent lifecycle platform that integrates hosted and self-hosted NIM targets.
 - [[NeMo-Retriever]] - retrieval microservices use NIM for embeddings and reranking.
+- [[NVIDIA-BioNeMo]] - biology and drug-discovery NIMs sit under the BioNeMo platform.
 - [[NVIDIA-Dynamo]] - newer NVIDIA inference-serving platform adjacent to NIM deployments.
 - [[NVIDIA-CMX]] - context-memory storage platform relevant to long-context, multi-turn NIM inference at scale.
 - [[Nemotron]] - flagship NVIDIA model family available through build.nvidia.com and NIM paths.

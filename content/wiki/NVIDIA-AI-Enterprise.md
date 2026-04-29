@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-BioNeMo]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html)
 **Last Updated:** 2026-04-29
 
@@ -36,7 +36,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - End-to-end LLMOps pipelines: data curation → fine-tuning → evaluation → guardrails → deployment → monitoring
 - Cybersecurity AI using Morpheus for real-time threat detection, log analysis, and SIEM acceleration
 - Accelerated data analytics and ML with RAPIDS as a GPU-powered drop-in for pandas/scikit-learn workloads
-- Healthcare and life sciences AI on NVIDIA Clara and BioNeMo platforms under enterprise license
+- Healthcare and life sciences AI on NVIDIA Clara and BioNeMo platforms under enterprise license, including BioNeMo NIMs such as [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]].
 - Enterprise medical imaging AI with [[NVIDIA-MONAI-Toolkit]] as an AI Enterprise-supported MONAI distribution
 - Multi-cloud AI infrastructure with consistent software stack and support across AWS, Azure, GCP, and on-premises
 
@@ -71,6 +71,8 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[LLM-Inference-Quick-Start-Recipes]] — quick-start recipes show common LLM inference deployment paths on NVIDIA software
 - [[NeMo-Platform]] — NeMo Platform microservices provide customization, evaluation, guardrails, and inference workflows
 - [[NeMo-Retriever]] — enterprise RAG and data-retrieval microservices connect proprietary data to AI applications
+- [[NVIDIA-BioNeMo]] — life-sciences platform for biomolecular model training and NIM deployment.
+- [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]] — representative BioNeMo NIMs for supported life-sciences workflows.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] — agent workflow, profiling, evaluation, MCP, and A2A toolkit in the NeMo family
 - [[Triton-Inference-Server]] — Triton is bundled with enterprise SLA; the primary model serving framework
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support

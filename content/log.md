@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 24: BioNeMo NIM structure and sequence models
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch24-20260429T073330Z`; local Git tag `codex-backup-overnight-pre-batch24-20260429T073330Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/bionemo/alphafold2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/alphafold2-multimer/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold3/latest/overview.html, https://docs.nvidia.com/nim/bionemo/openfold3/latest/support-matrix.html, https://docs.nvidia.com/nim/bionemo/boltz2/latest/overview.html, https://docs.nvidia.com/nim/bionemo/evo2/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added first-class BioNeMo NIM pages for current NVIDIA-authored protein structure, biomolecular-complex, binding-affinity, and DNA foundation-model docs.
+- Split AlphaFold2, AlphaFold2-Multimer, OpenFold2, OpenFold3, Boltz2, and Evo 2 because each has a distinct current docs page, model purpose, input surface, and query intent.
+- Connected the new pages to BioNeMo, NIM, Clara, AI Enterprise, NGC, TensorRT, and cuEquivariance instead of leaving BioNeMo as a single overloaded drug-discovery page.
+- Did not create pages for every BioNeMo model listed in the NIM index; this batch covers the most visible current structure/sequence NIMs and leaves additional biology NIMs for later batches.
+
+**Pages created (6 total):**
+
+- `content/wiki/NIM-for-AlphaFold2.md`
+- `content/wiki/NIM-for-AlphaFold2-Multimer.md`
+- `content/wiki/NIM-for-OpenFold2.md`
+- `content/wiki/NIM-for-OpenFold3.md`
+- `content/wiki/NIM-for-Boltz2.md`
+- `content/wiki/NIM-for-Evo-2.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-BioNeMo.md` - promoted current BioNeMo NIM pages into the model/platform graph.
+- `content/wiki/NVIDIA-NIM.md` - added the BioNeMo NIM pages to representative model families and connections.
+- `content/wiki/NVIDIA-Clara.md` - linked BioNeMo NIMs from the healthcare/life-sciences umbrella.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected enterprise NIM deployment to BioNeMo model pages.
+- `content/wiki/cuEquivariance.md` and `content/wiki/TensorRT.md` - connected optimized structure-prediction NIMs to GPU kernel and inference acceleration layers.
+- `content/index.md` - updated page count to 326 and indexed the new BioNeMo NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 23: NIM Operator and NeMo Retriever NIM microservices
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch23-20260429T072901Z`; local Git tag `codex-backup-overnight-pre-batch23-20260429T072901Z`
