@@ -1,30 +1,33 @@
 # NVIDIA CUDA Knowledge Base
 
-A Quartz 4 static site built from the `NVIDIA WIKI` Obsidian vault. The source vault is a curated, interlinked knowledge base covering NVIDIA's public CUDA platform, libraries, hardware, and ecosystem tooling.
+A Quartz 4 static site backed by a curated, interlinked markdown knowledge base covering NVIDIA's public CUDA platform, libraries, hardware, and ecosystem tooling.
 
 ## Content source
 
-- **Vault:** `C:\Users\bnewsom\OneDrive - NVIDIA Corporation\Desktop\NVIDIA WIKI`
-- **Content here:** `content/` — mirrored copy of the vault, excluding `.obsidian/` and `.trash/`
-- **Scope:** public NVIDIA/CUDA technical documentation — safe to publish broadly. No internal or confidential material.
+- **Canonical vault:** `content/`
+- **Recommended editing model:** open `content/` directly as the Obsidian vault
+- **Scope:** public NVIDIA/CUDA technical documentation - safe to publish broadly. No internal or confidential material.
 
-Vault structure under `content/`:
+Canonical structure under `content/`:
 
-- `wiki/` — curated wiki pages (one per concept, library, hardware platform, etc.)
-- `raw/` — raw source material (articles, transcripts, notes) used to build wiki pages
-- `index.md` — Master Index, grouped by category
-- `log.md` — ingestion history
-- `CLAUDE.md` — agent operating instructions for the vault (informational)
+- `wiki/` - curated wiki pages (one per concept, library, hardware platform, etc.)
+- `raw/` - raw source material (articles, transcripts, notes) used to build wiki pages
+- `index.md` - Master Index, grouped by category
+- `log.md` - ingestion history
+- `CLAUDE.md` - Claude-oriented agent instructions
+- `codex.md` - Codex-oriented agent instructions
+
+The older standalone `NVIDIA WIKI` desktop folder should be treated as a legacy/local copy unless it is explicitly resynced from `content/`. The repository is the source of truth.
 
 ## Updating content
 
-1. Edit pages in the Obsidian vault at the path above.
-2. Run `publish.bat` from the Desktop. It robocopies the vault into `content/`, builds the site, commits, and (once hosting is configured) pushes.
+1. Edit markdown directly in `content/`, or open `content/` as the Obsidian vault and work there.
+2. Commit changes in this repo normally, or run `publish.bat` from the repo root to stage, commit, and push the latest content changes.
 
 ## Local preview
 
-```
-cd C:\dev\quartz
+```bash
+cd C:\Users\bnewsom\OneDrive - NVIDIA Corporation\Desktop\nvidia-cuda-wiki
 npx quartz build --serve
 ```
 
@@ -32,9 +35,9 @@ The site is served at `http://localhost:8080` by default.
 
 ## Scripts
 
-- **`scripts/audit-links.mjs`** — scans `content/` for broken `[[wikilinks]]` and writes a categorized report (space-vs-hyphen, case mismatches, genuinely missing targets) to `audit-links-report.txt` at the repo root. The report is gitignored; regenerate with:
+- **`scripts/audit-links.mjs`** - scans `content/` for broken `[[wikilinks]]` and writes a categorized report (space-vs-hyphen, case mismatches, genuinely missing targets) to `audit-links-report.txt` at the repo root. The report is gitignored; regenerate with:
 
-  ```
+  ```bash
   node scripts/audit-links.mjs
   ```
 
@@ -42,10 +45,10 @@ The site is served at `http://localhost:8080` by default.
 
 ## Hosting
 
-Not yet configured. `baseUrl` in `quartz.config.ts` is set to a placeholder (`TODO-set-hosting-url.example.com`). Once the hosting destination is decided (GitHub Enterprise Pages or internal NVIDIA hosting are under consideration), update `baseUrl` and uncomment the `git push` line in `publish.bat`.
+Not yet configured. `baseUrl` in `quartz.config.ts` is set to a placeholder (`TODO-set-hosting-url.example.com`). Once the hosting destination is decided (GitHub Enterprise Pages or internal NVIDIA hosting are under consideration), update `baseUrl` as needed.
 
 ## Stack
 
-- [Quartz 4](https://quartz.jzhao.xyz/) — Obsidian-aware static site generator
+- [Quartz 4](https://quartz.jzhao.xyz/) - Obsidian-aware static site generator
 - Link resolution strategy: **shortest path** (matches Obsidian's default)
-- Content strategy: **Empty Quartz** (new content folder, vault contents copied in)
+- Content strategy: **Empty Quartz** (new content folder, canonical vault content lives directly in-repo)
