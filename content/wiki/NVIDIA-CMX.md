@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, CMX, context memory storage, KV cache, long-context inference, BlueField-4, DOCA, Spectrum-X, Dynamo
-**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[DOCA-SNAP]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
-**Sources:** https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/
+**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[Dynamo-KV-Block-Manager]], [[Dynamo-KV-Cache-Aware-Routing]], [[Dynamo-Disaggregated-Serving]], [[NIXL]], [[DOCA-SNAP]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
+**Sources:** https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://docs.nvidia.com/dynamo/latest/components/kvbm, https://docs.nvidia.com/dynamo/latest/user-guides/kv-cache-aware-routing
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -19,6 +19,7 @@ Long-context and multi-agent inference can stall GPUs when systems repeatedly re
 - DOCA Memos, described by NVIDIA as a CMX-optimized SDK for managing and sharing KV cache through simple key-value APIs.
 - [[NVIDIA-Spectrum-X]] Ethernet for low-latency, high-bandwidth RDMA access to context memory across the pod.
 - [[NVIDIA-Dynamo]] integration so serving can route requests with awareness of where relevant KV cache already resides.
+- [[Dynamo-KV-Block-Manager]] and [[Dynamo-KV-Cache-Aware-Routing]] are the Dynamo-side query points for KV block memory and cache-aware placement.
 
 ### Benefits
 CMX is positioned to reclaim data center power from traditional storage, improve GPU utilization, reduce stalls, enable pod-wide KV-cache sharing, extend context capacity, reduce time to first token, and increase tokens per second for multi-turn agentic inference.
@@ -30,6 +31,10 @@ CMX is the context-memory building block inside [[NVIDIA-STX]] and [[NVIDIA-AI-D
 - [[NVIDIA-STX]] - STX is the broader modular AI storage reference architecture that includes CMX context memory.
 - [[NVIDIA-AI-Data-Platform]] - AI Data Platform uses storage and context infrastructure such as CMX to support agentic workloads.
 - [[NVIDIA-Dynamo]] - Dynamo is the serving layer NVIDIA describes as making CMX context storage usable across the pod.
+- [[Dynamo-KV-Block-Manager]] - Dynamo component closest to CMX-style KV cache memory tiering.
+- [[Dynamo-KV-Cache-Aware-Routing]] - routes requests where reusable context or KV cache can reduce recomputation.
+- [[Dynamo-Disaggregated-Serving]] - prefill/decode split increases the need for shared context and cache movement.
+- [[NIXL]] - transfer layer that underpins Dynamo KV cache movement between GPU, host, network, and storage tiers.
 - [[DOCA-SNAP]] - SNAP is adjacent to BlueField-based storage virtualization and NVMe services.
 - [[GPU-Direct-Storage]] - direct GPU storage paths complement CMX context and KV-cache movement.
 - [[NVIDIA-BlueField-DPU]] - BlueField provides storage, networking, integrity, encryption, and offload capabilities.

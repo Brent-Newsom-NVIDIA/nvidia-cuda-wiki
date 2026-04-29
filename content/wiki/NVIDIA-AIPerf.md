@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, AIPerf, benchmarking, LLM inference, performance, latency, throughput, OpenAI-compatible, telemetry
-**Related:** [[NVIDIA-GenAI-Perf]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-NIM]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[TensorRT-LLM]], [[vLLM]], [[NIXL]], [[NVIDIA-DCGM]], [[Triton-Performance-Analyzer]]
-**Sources:** https://docs.nvidia.com/aiperf/welcome-to-ai-perf-documentation, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/aiperf/getting-started/migrating-from-gen-ai-perf, https://docs.nvidia.com/aiperf/architecture-internals/architecture-of-ai-perf, https://docs.nvidia.com/nim/benchmarking/llm/latest/step-by-step.html
+**Related:** [[NVIDIA-GenAI-Perf]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-NIM]], [[NVIDIA-Dynamo]], [[Dynamo-Profiler]], [[Dynamo-Planner]], [[Dynamo-Disaggregated-Serving]], [[Triton-Inference-Server]], [[TensorRT-LLM]], [[vLLM]], [[NIXL]], [[NVIDIA-DCGM]], [[Triton-Performance-Analyzer]]
+**Sources:** https://docs.nvidia.com/aiperf/welcome-to-ai-perf-documentation, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/aiperf/getting-started/migrating-from-gen-ai-perf, https://docs.nvidia.com/aiperf/architecture-internals/architecture-of-ai-perf, https://docs.nvidia.com/nim/benchmarking/llm/latest/step-by-step.html, https://docs.nvidia.com/dynamo/latest/user-guides/benchmarking, https://docs.nvidia.com/dynamo/latest/components/profiler
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -32,6 +32,9 @@ AIPerf sits in the measurement layer of the NVIDIA inference stack. It is the cu
 - [[NIM-for-LLM-Benchmarking-Guide]] - NIM docs now use AIPerf for LLM benchmarking walkthroughs.
 - [[NVIDIA-NIM]] - OpenAI-compatible NIM services are common AIPerf benchmark targets.
 - [[NVIDIA-Dynamo]] - scale-out inference systems need AIPerf-style load generation and telemetry.
+- [[Dynamo-Profiler]] - uses online AIPerf profiling for high-accuracy deployment measurements.
+- [[Dynamo-Planner]] - Planner behavior can be validated with AIPerf latency and throughput results.
+- [[Dynamo-Disaggregated-Serving]] - AIPerf measures whether prefill/decode split improves user-visible service metrics.
 - [[Triton-Inference-Server]] - AIPerf complements Triton benchmarking tools for generative AI services.
 - [[TensorRT-LLM]] - optimized LLM runtime whose served endpoints can be benchmarked with AIPerf.
 - [[vLLM]] - current AIPerf examples include vLLM-style OpenAI-compatible serving.

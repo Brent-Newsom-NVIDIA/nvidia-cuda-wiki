@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, KAI Scheduler, Kubernetes, GPU scheduling, AI workloads, Run:ai, topology-aware scheduling, gang scheduling
-**Related:** [[NVIDIA-Run-ai]], [[NVIDIA-Grove]], [[NVIDIA-Dynamo]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]]
-**Sources:** https://docs.nvidia.com/ncx/index.html; https://github.com/kai-scheduler/KAI-Scheduler; https://docs.nvidia.com/cloud-functions/legacy/latest/cluster-management/kai-scheduler.html; https://docs.nvidia.com/dynamo/latest/kubernetes-deployment/multinode/topology-aware-scheduling
+**Related:** [[NVIDIA-Run-ai]], [[NVIDIA-Grove]], [[NVIDIA-Dynamo]], [[Dynamo-Disaggregated-Serving]], [[Dynamo-Planner]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]]
+**Sources:** https://docs.nvidia.com/ncx/index.html; https://github.com/kai-scheduler/KAI-Scheduler; https://docs.nvidia.com/cloud-functions/legacy/latest/cluster-management/kai-scheduler.html; https://docs.nvidia.com/dynamo/latest/kubernetes-deployment/multinode/topology-aware-scheduling; https://docs.nvidia.com/dynamo/latest/components/planner
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,6 +20,8 @@ NVIDIA Cloud Functions docs also reference KAI Scheduler for optimized AI worklo
 - [[NVIDIA-Run-ai]] - KAI Scheduler is based on NVIDIA Run:ai scheduling work and is listed as an open-source Run:ai solution.
 - [[NVIDIA-Grove]] - Grove uses KAI for topology-aware and gang-scheduled placement of inference components.
 - [[NVIDIA-Dynamo]] - Dynamo multinode and topology-aware serving paths reference Grove and KAI Scheduler.
+- [[Dynamo-Disaggregated-Serving]] - prefill/decode deployments benefit from topology-aware worker placement.
+- [[Dynamo-Planner]] - autoscaled workers still require scheduler placement that respects GPU topology and resource groups.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - NCX lists KAI as a scalable GPU scheduler component for AI clouds.
 - [[NVIDIA-GPU-Operator]] - KAI prerequisites include GPU Operator for scheduling workloads that request GPU resources.
 - [[NVIDIA-Cloud-Native-Technologies]] - KAI extends NVIDIA's Kubernetes AI infrastructure story beyond basic GPU exposure.
@@ -27,4 +29,3 @@ NVIDIA Cloud Functions docs also reference KAI Scheduler for optimized AI worklo
 ## Source Excerpts
 - "KAI Scheduler is a scalable Kubernetes scheduler optimized for GPU resource allocation."
 - "KAI Scheduler is required by Grove for topology-aware pod placement."
-

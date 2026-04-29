@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Grove, Dynamo, Kubernetes, inference, disaggregated serving, topology-aware scheduling, gang scheduling
-**Related:** [[NVIDIA-Dynamo]], [[KAI-Scheduler]], [[NVIDIA-Run-ai]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NIXL]], [[TensorRT-LLM]], [[NVIDIA-NIM]]
-**Sources:** https://docs.nvidia.com/ncx/index.html; https://github.com/ai-dynamo/grove; https://docs.nvidia.com/dynamo/latest/kubernetes-deployment/multinode/topology-aware-scheduling; https://www.nvidia.com/en-us/software/run-ai/
+**Related:** [[NVIDIA-Dynamo]], [[Dynamo-Disaggregated-Serving]], [[Dynamo-Planner]], [[Dynamo-Profiler]], [[KAI-Scheduler]], [[NVIDIA-Run-ai]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NIXL]], [[TensorRT-LLM]], [[NVIDIA-NIM]]
+**Sources:** https://docs.nvidia.com/ncx/index.html; https://github.com/ai-dynamo/grove; https://docs.nvidia.com/dynamo/latest/kubernetes-deployment/multinode/topology-aware-scheduling; https://docs.nvidia.com/dynamo/latest/components/planner; https://www.nvidia.com/en-us/software/run-ai/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,9 @@ In NVIDIA's stack, Grove connects [[NVIDIA-Dynamo]] inference deployment to [[KA
 
 ## Connections
 - [[NVIDIA-Dynamo]] - Grove is a modular Dynamo component for declarative multi-component inference deployments.
+- [[Dynamo-Disaggregated-Serving]] - Grove is relevant when prefill and decode workers need coordinated scheduling.
+- [[Dynamo-Planner]] - Planner scaling decisions need a placement layer to add/remove workers safely.
+- [[Dynamo-Profiler]] - generated deployment recommendations can flow into Grove-managed Kubernetes deployments.
 - [[KAI-Scheduler]] - Grove relies on KAI for topology-aware and gang-scheduled placement.
 - [[NVIDIA-Run-ai]] - NVIDIA Run:ai product materials list Grove as a topology-optimized serving component.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - NCX lists Grove among the modular software components for AI cloud operators.
@@ -28,4 +31,3 @@ In NVIDIA's stack, Grove connects [[NVIDIA-Dynamo]] inference deployment to [[KA
 ## Source Excerpts
 - "Grove is a Kubernetes API that provides a single declarative interface."
 - "KAI Scheduler is required by Grove for topology-aware pod placement."
-

@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 40: Dynamo advanced serving components
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch40-20260429T091633Z`; local Git tag `codex-backup-overnight-pre-batch40-20260429T091633Z`
+
+**Source URLs:** https://docs.nvidia.com/dynamo/latest/getting-started/introduction, https://docs.nvidia.com/dynamo/design-docs/disaggregated-serving, https://docs.nvidia.com/dynamo/latest/user-guides/kv-cache-aware-routing, https://docs.nvidia.com/dynamo/latest/components/kvbm, https://docs.nvidia.com/dynamo/backends/v-llm/kv-cache-offloading, https://docs.nvidia.com/dynamo/latest/components/planner, https://docs.nvidia.com/dynamo/latest/components/profiler, https://docs.nvidia.com/dynamo/latest/user-guides/benchmarking
+
+**Gap analysis summary:**
+
+- Added first-class pages for durable current Dynamo docs topics that were missing from the wiki: Disaggregated Serving, KV Cache-Aware Routing, KV Block Manager, Planner, and Profiler.
+- Kept Dynamo benchmarking folded into AIPerf and the Profiler context instead of creating a duplicate benchmark page.
+- Connected the new pages to Dynamo, NIXL, CMX, Grove, KAI Scheduler, AIPerf, TensorRT-LLM, and vLLM so system-level inference concepts are queryable.
+- Avoided creating pages for every Dynamo quickstart, example script, backend recipe, environment variable, or build listing.
+
+**Pages created (5 total):**
+
+- `content/wiki/Dynamo-Disaggregated-Serving.md`
+- `content/wiki/Dynamo-KV-Cache-Aware-Routing.md`
+- `content/wiki/Dynamo-KV-Block-Manager.md`
+- `content/wiki/Dynamo-Planner.md`
+- `content/wiki/Dynamo-Profiler.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Dynamo.md` - promoted current Dynamo component pages into the umbrella serving framework page.
+- `content/wiki/NIXL.md` and `content/wiki/NVIDIA-CMX.md` - connected transfer and context-memory infrastructure to KVBM, routing, and disaggregated serving.
+- `content/wiki/NVIDIA-Grove.md` and `content/wiki/KAI-Scheduler.md` - connected topology-aware orchestration to Planner and disaggregated serving.
+- `content/wiki/NVIDIA-AIPerf.md` - connected Dynamo benchmarking and Profiler workflows to AIPerf.
+- `content/index.md` - updated page count to 402 and indexed the five Dynamo pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 39: Triton and AIPerf benchmarking tools
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch39-20260429T091123Z`; local Git tag `codex-backup-overnight-pre-batch39-20260429T091123Z`

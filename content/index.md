@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 397*
+*Total pages: 402*
 
 ---
 
@@ -156,6 +156,11 @@
 ### Inference & Data Transfer
 - [[NIXL]] — NVIDIA Inference Xfer Library; high-throughput KV cache and tensor transfer for LLM serving
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform for local, VM, and Kubernetes deployment paths
+- [[Dynamo-Disaggregated-Serving]] — Dynamo prefill/decode split for scalable LLM serving
+- [[Dynamo-KV-Cache-Aware-Routing]] — Dynamo router mode for cache-overlap and load-aware request placement
+- [[Dynamo-KV-Block-Manager]] — Dynamo KV cache memory layer for block management, offload, and tiering
+- [[Dynamo-Planner]] — Dynamo autoscaler for LLM-specific TTFT, ITL, throughput, and SLA targets
+- [[Dynamo-Profiler]] — Dynamo profiling tool for deployment recommendations and Planner performance data
 
 ---
 
