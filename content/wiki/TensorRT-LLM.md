@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Inference, Optimization, Transformer, Generative AI, CUDA-X
-**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm
-**Last Updated:** 2026-04-09
+**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[NeMo-Export-Deploy]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 TensorRT-LLM is NVIDIA's open-source library for optimizing and deploying large language model (LLM) inference at maximum throughput and minimum latency on NVIDIA GPUs. It provides a Python API for defining and compiling LLM inference engines, incorporating state-of-the-art optimizations including in-flight batching (continuous batching), paged KV cache, custom attention kernels (Flash Attention), tensor parallelism, pipeline parallelism, quantization (INT4, INT8, FP8), and speculative decoding. TensorRT-LLM is the backend for NVIDIA Triton's LLM serving and the primary path to production LLM deployment on NVIDIA hardware.
@@ -29,6 +29,7 @@ TensorRT-LLM solves the performance gap between raw LLM inference and hardware-o
 - Supports: GPT, Llama, Mistral, Mixtral, Falcon, Nemotron, Gemma, Phi, Qwen, BLOOM, and more
 - Python Model Definition API for building custom LLM engines
 - Triton Inference Server backend for production serving
+- NeMo Export-Deploy path for exporting NeMo, AutoModel, Megatron Bridge, and Hugging Face checkpoints into TensorRT-LLM deployment flows.
 
 ### Use Cases
 - Production LLM API serving (ChatGPT-style applications)
@@ -56,6 +57,8 @@ TensorRT-LLM solves the performance gap between raw LLM inference and hardware-o
 ## Connections
 - [[TensorRT]] — TensorRT-LLM is built on TensorRT's compilation and runtime infrastructure
 - [[Triton-Inference-Server]] — Triton's `tensorrtllm` backend wraps TRT-LLM for production serving
+- [[NeMo-Export-Deploy]] - current NeMo library that exports and deploys LLM/MM checkpoints through TensorRT-LLM, Triton, and related runtimes.
+- [[NeMo-Megatron-Bridge]] and [[NeMo-AutoModel]] - upstream NeMo training/checkpoint sources that can feed TensorRT-LLM deployment paths.
 - [[FlashInfer]] — FlashInfer attention kernels integrated as an optional attention backend
 - [[CUTLASS]] — custom GEMM and attention kernels in TRT-LLM use CUTLASS templates
 - [[NVIDIA-NeMo]] — NeMo-trained LLMs are exported and deployed via TRT-LLM

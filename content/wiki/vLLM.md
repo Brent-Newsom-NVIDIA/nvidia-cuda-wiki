@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** LLM, inference, serving, GPU, paged attention, CUDA, Python, open source, throughput
-**Related:** [[NVIDIA-NIM]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[FlashInfer]], [[CUDA-Graphs]], [[NCCL]]
-**Sources:** vLLM official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NIM]], [[NeMo-Export-Deploy]], [[NeMo-RL]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[FlashInfer]], [[CUDA-Graphs]], [[NCCL]]
+**Sources:** vLLM official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 vLLM is a high-throughput, memory-efficient open-source LLM serving and inference engine developed at UC Berkeley and widely adopted as the de facto standard for LLM inference in production. Its core innovation, PagedAttention, manages the KV cache in paged virtual memory blocks — eliminating fragmentation and enabling near-zero memory waste — dramatically improving throughput for batched inference compared to static allocation. vLLM supports OpenAI-compatible APIs, continuous batching, speculative decoding, tensor parallelism, and dozens of model architectures, running natively on NVIDIA CUDA hardware.
@@ -34,6 +34,7 @@ LLM inference has a unique memory bottleneck: the KV (key-value) cache storing a
 - Multi-LoRA serving: vLLM supports dynamic LoRA adapter loading without model reloads
 - Batch offline inference for dataset annotation, summarization, or evaluation
 - As the inference backend for NVIDIA NIM (vLLM used in some NIM configurations)
+- As a current NeMo Export-Deploy and NeMo RL backend for deployment and generation/rollout paths documented by NVIDIA.
 
 ### Hardware Requirements / Compatibility
 - **GPU:** NVIDIA V100, A100, H100, H200, L40S, L4, RTX 3090/4090 (compute capability 7.0+)
@@ -51,6 +52,8 @@ LLM inference has a unique memory bottleneck: the KV (key-value) cache storing a
 
 ## Connections
 - [[NVIDIA-NIM]] — NIM uses vLLM as one of its inference backends for certain LLM models; NIM packages vLLM with TRT-LLM pre-optimization
+- [[NeMo-Export-Deploy]] - NVIDIA NeMo export/deployment path that supports vLLM alongside TensorRT-LLM and Triton workflows.
+- [[NeMo-RL]] - current NeMo RL docs list vLLM as a generation/rollout backend.
 - [[TensorRT-LLM]] — TensorRT-LLM is NVIDIA's alternative to vLLM with stronger TRT optimization; vLLM offers broader model support and easier deployment
 - [[Triton-Inference-Server]] — vLLM can optionally use Triton as a serving frontend; also competes in the same inference serving space
 - [[FlashInfer]] — FlashInfer provides optimized CUDA kernels for vLLM attention computation (optional backend)

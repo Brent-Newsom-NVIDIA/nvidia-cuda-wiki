@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 369*
+*Total pages: 374*
 
 ---
 
@@ -169,6 +169,11 @@
 - [[NeMo-Evaluator]] — NeMo Platform service for model, RAG, retriever, and agent evaluation
 - [[NeMo-Safe-Synthesizer]] — NeMo Platform service for private synthetic tabular data generation
 - [[NeMo-Auditor]] — NeMo Platform early-access service for LLM safety audits
+- [[NeMo-AutoModel]] — Hugging Face-compatible NeMo training library for LLM, VLM, diffusion, and fine-tuning workflows
+- [[NeMo-RL]] — NeMo post-training library for reinforcement learning and alignment workflows
+- [[NeMo-Run]] — NeMo experiment configuration, execution, and management tool for local, cluster, and cloud runs
+- [[NeMo-Megatron-Bridge]] — NeMo library for Hugging Face and Megatron conversion, verification, and high-scale training
+- [[NeMo-Export-Deploy]] — NeMo export and deployment library for TensorRT-LLM, vLLM, Triton, and Ray Serve paths
 - [[NeMo-Retriever]] — Multimodal extraction, embedding, indexing, retrieval, and reranking microservices for RAG
 - [[NVIDIA-Speech-NIM-Microservices]] — Current Speech NIM docs collection for ASR, TTS, and NMT microservices
 - [[NVIDIA-ASR-NIM]] — Speech-to-text NIM for Parakeet, Canary, Whisper, Conformer, and Nemotron ASR models

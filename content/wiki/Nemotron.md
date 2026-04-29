@@ -2,8 +2,8 @@
 
 **Type:** Model
 **Tags:** NVIDIA, Nemotron, LLM, multimodal, speech, OCR, content safety, agentic AI, NIM
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
-**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/llama-3-1-nemotron-safety-guard-8b/latest/index.html
+**Related:** [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
+**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/llama-3-1-nemotron-safety-guard-8b/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,6 +16,7 @@ Nemotron gives NVIDIA a model family that can be trained and customized through 
 
 ### Current model directions
 - **Agentic LLMs:** Nemotron 3 Super 120B-A12B and Nemotron 3 Nano 30B-A3B are MoE-oriented models positioned for reasoning, coding, long-context work, tool use, planning, and agentic workflows.
+- **Training/post-training support:** current [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] docs list Nemotron/Minitron, Llama-Nemotron, Nemotron Nano, and Nemotron H style model support in NVIDIA training and post-training paths.
 - **Omnimodal reasoning:** Nemotron 3 Nano Omni 30B-A3B Reasoning appears in build.nvidia.com as an NVIDIA model that understands images, video, speech, and text.
 - **Content safety:** Nemotron 3 Content Safety is a multilingual, multimodal safety model for classifying unsafe prompts/images and responses, tied to [[NeMo-Guardrails]] use cases.
 - **NemoGuard safety NIMs:** [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] and [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] connect Nemotron safety datasets and models to deployable NIM guardrails.
@@ -29,6 +30,8 @@ Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model e
 
 ## Connections
 - [[NVIDIA-NeMo]] - lifecycle suite for training, customizing, evaluating, and deploying Nemotron-related systems.
+- [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] - current NeMo framework tooling for Nemotron-compatible training, post-training, and Megatron/Hugging Face conversion paths.
+- [[NeMo-Customizer]] and [[NeMo-Evaluator]] - managed adaptation and measurement services for Nemotron-related systems.
 - [[NVIDIA-NIM]] - hosted and self-hosted endpoint path for Nemotron models.
 - [[NVIDIA-Speech-NIM-Microservices]] - current docs surface for Nemotron ASR, TTS, and NMT model-family microservices.
 - [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] - deployable speech NIMs connected to Nemotron speech model families.

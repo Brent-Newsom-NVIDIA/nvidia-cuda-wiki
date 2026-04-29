@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NeMo Platform, evaluation, benchmarks, metrics, LLM-as-a-judge, RAG evaluation, agent evaluation
-**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Customizer]], [[NeMo-Data-Designer]], [[NeMo-Retriever]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-NIM]], [[Nemotron]], [[NeMo-Auditor]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
+**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Customizer]], [[NeMo-Data-Designer]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Retriever]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-NIM]], [[Nemotron]], [[NeMo-Auditor]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,12 +24,15 @@ AI systems need repeatable measurement before deployment and after each model, p
 
 ### NVIDIA context
 Evaluator is the measurement layer for [[NeMo-Customizer]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], and [[NVIDIA-Data-Flywheel-Blueprint]]. It is especially important in the wiki graph because most production AI questions eventually become quality, safety, latency, or regression questions, not just deployment questions.
+It is also the natural regression layer for models trained through [[NeMo-AutoModel]], post-trained through [[NeMo-RL]], converted or trained with [[NeMo-Megatron-Bridge]], and exported with [[NeMo-Export-Deploy]].
 
 ## Connections
 - [[NeMo-Platform]] - parent platform for evaluation APIs, jobs, and results.
 - [[NVIDIA-NeMo]] - broader model and agent lifecycle suite.
 - [[NeMo-Customizer]] - fine-tuned models should be evaluated before deployment.
 - [[NeMo-Data-Designer]] - generated datasets can become evaluation inputs.
+- [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] - framework tools whose outputs need benchmark and regression evaluation.
+- [[NeMo-Export-Deploy]] - deployment handoff should follow evaluation gates.
 - [[NeMo-Retriever]] and [[NVIDIA-RAG-Blueprint]] - RAG and retriever metrics evaluate retrieval and grounded generation.
 - [[NVIDIA-AI-Q-Blueprint]] - research-agent workflows need citation, retrieval, and answer-quality evaluation.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - continuous optimization loop depends on evaluation to compare model candidates.

@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Distributed Training, Transformer, Research, Pre-training
-**Related:** [[NVIDIA-NeMo]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
-**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
+**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-Megatron-LM is NVIDIA's open-source research framework for efficient training of large transformer-based language models, developed by the NVIDIA Applied Deep Learning Research team. It pioneered the combination of tensor parallelism, pipeline parallelism, and data parallelism (3D parallelism) that enables training of models with hundreds of billions to trillions of parameters across thousands of NVIDIA GPUs. Megatron-LM's parallelism core is embedded in NVIDIA NeMo, making it the de facto backbone for production LLM pre-training within the NVIDIA ecosystem.
+Megatron-LM is NVIDIA's open-source research framework for efficient training of large transformer-based language models, developed by the NVIDIA Applied Deep Learning Research team. It pioneered the combination of tensor parallelism, pipeline parallelism, and data parallelism that enables training of models with hundreds of billions to trillions of parameters across thousands of NVIDIA GPUs. Current NeMo docs now place [[NeMo-Megatron-Bridge]] beside this lineage as the PyTorch-native bridge, conversion, and training layer for Hugging Face and Megatron Core workflows.
 
 ## Detail
 
@@ -29,6 +29,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 - GPT, BERT, T5, and Llama-style architecture support
 - Interleaved pipeline schedule for reduced pipeline bubble overhead
 - Checkpoint conversion utilities for downstream fine-tuning
+- Current NeMo ecosystem bridge through [[NeMo-Megatron-Bridge]] for Hugging Face/Megatron conversion, verification, recipes, and downstream export.
 
 ### Use Cases
 - Pre-training GPT/Llama/Nemotron-style decoder LLMs at scale
@@ -53,6 +54,10 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 
 ## Connections
 - [[NVIDIA-NeMo]] — NeMo incorporates Megatron-LM's parallelism core as its distributed training backbone
+- [[NeMo-Megatron-Bridge]] - current NeMo library for Hugging Face/Megatron conversion, high-scale recipes, and Megatron Core training paths.
+- [[NeMo-AutoModel]] - Hugging Face-compatible training path that complements Megatron-scale workflows.
+- [[NeMo-RL]] - post-training library that can use Megatron-style backends for larger models.
+- [[NeMo-Export-Deploy]] - downstream export/deploy path for Megatron Bridge and Megatron-family checkpoints.
 - [[NCCL]] — all cross-GPU collective communications (all-reduce, reduce-scatter, all-gather) use NCCL
 - [[PyTorch]] — Megatron-LM is built on top of PyTorch
 - [[CUTLASS]] — custom GEMM kernels optionally used for optimized matrix multiplications

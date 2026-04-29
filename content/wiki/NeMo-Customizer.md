@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NeMo Platform, fine-tuning, customization, LoRA, SFT, DPO, embedding models, NIM
-**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Nemotron]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html
+**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Nemotron]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,12 +24,15 @@ Production AI systems often need task-specific behavior, domain terminology, too
 
 ### NVIDIA context
 Customizer is the adaptation layer between synthetic/curated data and production inference. It connects [[NeMo-Data-Designer]] and [[NeMo-Curator]] data workflows to [[NVIDIA-NIM]] deployment, [[NeMo-Evaluator]] regression checks, and [[NVIDIA-Data-Flywheel-Blueprint]] continuous optimization loops.
+For code-level training and post-training, [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] are adjacent NeMo Framework tools; [[NeMo-Export-Deploy]] covers deployment handoff from framework checkpoints.
 
 ## Connections
 - [[NeMo-Platform]] - parent platform for customization jobs, model entities, filesets, and deployment handoff.
 - [[NVIDIA-NeMo]] - broader model development and agent lifecycle suite.
 - [[NeMo-Data-Designer]] - synthetic datasets can become fine-tuning inputs.
 - [[NeMo-Evaluator]] - customized models should be evaluated before deployment.
+- [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] - code-level training and post-training tools adjacent to managed customization.
+- [[NeMo-Export-Deploy]] - framework checkpoint export/deploy path downstream of customization.
 - [[NVIDIA-NIM]] and [[NIM-for-Large-Language-Models]] - deployment target for customized LLM outputs.
 - [[Nemotron]] - NVIDIA model family listed in current customization catalogs.
 - [[NeMo-Retriever-Embedding-NIM]] - embedding model customization connects to retrieval quality and RAG workflows.

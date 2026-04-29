@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 34: NeMo Framework tooling
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch34-20260429T084414Z`; local Git tag `codex-backup-overnight-pre-batch34-20260429T084414Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html, https://docs.nvidia.com/nemo/automodel/latest/launcher/nemo-run.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/nemo/run/latest/index.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html, https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added current NVIDIA NeMo Framework tooling docs that were missing from the wiki: AutoModel, RL, Run, Megatron Bridge, and Export-Deploy.
+- Kept each tool as one canonical page because each has its own latest NVIDIA docs tree, separate package/tool identity, and distinct query intent.
+- Connected AutoModel to Hugging Face-compatible training, SFT/PEFT, VLM/diffusion, FP8, QAT, distillation, and NeMo Run launch workflows.
+- Connected NeMo RL to post-training, reinforcement learning, Ray, AutoModel/PyTorch and Megatron backends, vLLM rollouts, and Nemotron model support.
+- Connected Megatron Bridge and Export-Deploy to the training-to-inference path across Megatron, Hugging Face, TensorRT-LLM, vLLM, Triton, and NIM.
+- Continued avoiding per-model or per-recipe pages; supported models and recipes were folded into the canonical tool pages and the existing Nemotron/NeMo pages.
+
+**Pages created (5 total):**
+
+- `content/wiki/NeMo-AutoModel.md`
+- `content/wiki/NeMo-RL.md`
+- `content/wiki/NeMo-Run.md`
+- `content/wiki/NeMo-Megatron-Bridge.md`
+- `content/wiki/NeMo-Export-Deploy.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NeMo.md` - promoted the five NeMo Framework tooling pages into the core NeMo architecture and connections.
+- `content/wiki/NeMo-Customizer.md` and `content/wiki/NeMo-Evaluator.md` - connected managed customization/evaluation to code-level training, post-training, bridge, and deployment tooling.
+- `content/wiki/NVIDIA-NIM.md` and `content/wiki/NVIDIA-AI-Enterprise.md` - connected the new framework tooling to inference and enterprise deployment context.
+- `content/wiki/Megatron-LM.md`, `content/wiki/TensorRT-LLM.md`, `content/wiki/Triton-Inference-Server.md`, and `content/wiki/vLLM.md` - connected the new NeMo tooling to training, export, and serving paths.
+- `content/wiki/Nemotron.md` - connected current Nemotron model support to AutoModel, NeMo RL, and Megatron Bridge.
+- `content/index.md` - updated page count to 374 and indexed the five new NeMo Framework tooling pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 33: NeMo Platform microservices
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch33-20260429T083628Z`; local Git tag `codex-backup-overnight-pre-batch33-20260429T083628Z`
