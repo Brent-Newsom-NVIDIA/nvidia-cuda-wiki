@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 29: Maxine and Digital Human NIM microservices
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch29-20260429T080215Z`; local Git tag `codex-backup-overnight-pre-batch29-20260429T080215Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/support-matrix.html, https://docs.nvidia.com/nim/maxine/audio2face-2d/latest/overview.html, https://docs.nvidia.com/nim/maxine/audio2face-2d/latest/support-matrix.html, https://docs.nvidia.com/nim/maxine/eye-contact/latest/overview.html, https://docs.nvidia.com/nim/maxine/eye-contact/latest/support-matrix.html, https://docs.nvidia.com/nim/maxine/active-speaker-detection/latest/overview.html, https://docs.nvidia.com/nim/maxine/active-speaker-detection/latest/support-matrix.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/support-matrix.html
+
+**Gap analysis summary:**
+
+- Added current NVIDIA-authored Maxine NIM docs surfaces that were missing from the media AI graph: Studio Voice, Audio2Face-2D, Eye Contact, and Active Speaker Detection.
+- Added the current Digital Human Audio2Face-3D NIM page as the ACE-facing 3D avatar animation counterpart to the 2D Maxine Audio2Face page.
+- Kept each NIM as its own wiki page because each has a durable current NVIDIA docs surface, separate model/service ID, distinct inputs/outputs, and different query intent.
+- Treated build.nvidia links only as Try API/demo references named by the docs, not as independent wiki-page sources or a reason to create per-build pages.
+- Connected Maxine NIMs to Maxine, AI for Media SDKs, AR SDK, Audio Effects SDK, Speech NIMs, Riva, ACE, Omniverse, DeepStream, AI Enterprise, TensorRT, Triton, CUDA, NGC, and the master index.
+
+**Pages created (5 total):**
+
+- `content/wiki/NIM-for-Maxine-Studio-Voice.md`
+- `content/wiki/NIM-for-Maxine-Audio2Face-2D.md`
+- `content/wiki/NIM-for-Maxine-Eye-Contact.md`
+- `content/wiki/NIM-for-Maxine-Active-Speaker-Detection.md`
+- `content/wiki/NIM-for-Audio2Face-3D.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Maxine.md` - promoted current Maxine NIM services into the platform graph.
+- `content/wiki/NVIDIA-AI-for-Media-SDKs.md`, `content/wiki/NVIDIA-Augmented-Reality-SDK.md`, and `content/wiki/NVIDIA-Audio-Effects-SDK.md` - linked SDK-level media capabilities to deployable NIM counterparts.
+- `content/wiki/NVIDIA-ACE.md` and `content/wiki/NVIDIA-Omniverse.md` - connected Audio2Face-3D to digital-human and 3D avatar workflows.
+- `content/wiki/NVIDIA-NIM.md` and `content/wiki/NVIDIA-AI-Enterprise.md` - added media and digital-human NIMs to the broader NIM/enterprise catalog graph.
+- `content/wiki/NVIDIA-Speech-NIM-Microservices.md`, `content/wiki/NVIDIA-TTS-NIM.md`, `content/wiki/NVIDIA-Riva.md`, and `content/wiki/NVIDIA-Background-Noise-Removal-NIM.md` - connected speech/audio pipelines to Studio Voice and Audio2Face workflows.
+- `content/wiki/NVIDIA-DeepStream.md`, `content/wiki/TensorRT.md`, and `content/wiki/Triton-Inference-Server.md` - connected media NIMs to video pipeline, optimization, and serving layers.
+- `content/index.md` - updated page count to 350 and indexed the new Maxine/Digital Human NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 28: MONAI medical imaging NIMs
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch28-20260429T075833Z`; local Git tag `codex-backup-overnight-pre-batch28-20260429T075833Z`

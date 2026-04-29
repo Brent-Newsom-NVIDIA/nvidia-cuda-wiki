@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video analytics, streaming, GStreamer, IVA, edge AI, intelligent video, multi-stream
-**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[NVIDIA-Rivermax]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[NVIDIA-Rivermax]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Maxine-Eye-Contact]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/nim/maxine/active-speaker-detection/latest/support-matrix.html)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA DeepStream SDK is a streaming analytics toolkit for building AI-powered, multi-stream video analytics applications. Built on GStreamer, it provides a graph-based pipeline architecture that handles video decoding (H.264/H.265/AV1), pre-processing, batched AI inference via TensorRT or Triton, object tracking, and metadata output — enabling a single GPU to process dozens to hundreds of simultaneous HD video streams. DeepStream is the foundational technology for NVIDIA Metropolis and is used in intelligent video analytics, autonomous machine perception, and edge AI deployments.
@@ -54,6 +54,8 @@ Processing live video for AI analytics at scale is a data-movement and compute c
 - [[NVIDIA-JetPack-SDK]] - JetPack supplies the Jetson software environment for DeepStream deployments.
 - [[NVIDIA-VPI]] - complementary Jetson vision library for preprocessing and computer vision stages.
 - [[NVIDIA-Rivermax]] - accelerated media/data streaming SDK that can feed GPU-resident video pipelines.
+- [[NIM-for-Maxine-Active-Speaker-Detection]] - current support matrix names DeepStream 8.0 in the active speaker detection NIM software stack.
+- [[NIM-for-Maxine-Eye-Contact]] - current support matrix names DeepStream 8.0 in the eye contact NIM software stack.
 - [[Triton-Inference-Server]] — `nvinferserver` plugin enables Triton-backed inference within DeepStream pipelines
 - [[TensorRT]] — `nvinfer` plugin uses TensorRT for on-device optimized inference within DeepStream
 - [[NGC]] — DeepStream containers and pre-trained TAO models distributed via NGC

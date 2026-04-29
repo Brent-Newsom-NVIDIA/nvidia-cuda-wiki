@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 345*
+*Total pages: 350*
 
 ---
 
@@ -266,6 +266,11 @@
 - [[NIM-for-Evo-2]] — BioNeMo NIM for Evo 2 DNA sequence interpretation and generation
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
+- [[NIM-for-Maxine-Studio-Voice]] — Maxine NIM for streaming and transactional studio-quality speech enhancement
+- [[NIM-for-Maxine-Audio2Face-2D]] — Maxine NIM for animating 2D portrait images from speech audio
+- [[NIM-for-Maxine-Eye-Contact]] — Maxine NIM for gaze correction and simulated camera-facing eye contact in video
+- [[NIM-for-Maxine-Active-Speaker-Detection]] — Maxine NIM for active speaker detection from video and diarized audio
+- [[NIM-for-Audio2Face-3D]] — Digital Human NIM for audio/emotion-driven 3D facial animation and ARKit blendshape output
 - [[NVIDIA-AI-for-Media-SDKs]] — Current docs hub for NVIDIA audio, video, AR, and Triton-enabled media AI SDKs
 - [[NVIDIA-Audio-Effects-SDK]] — AFX SDK for echo cancellation, denoise, dereverb, speaker focus, studio voice, and voice font
 - [[NVIDIA-Augmented-Reality-SDK]] — AR SDK for face/body tracking, landmarks, eye contact, lip sync, and active speaker detection

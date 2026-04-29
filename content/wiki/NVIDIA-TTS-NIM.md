@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, TTS, text-to-speech, speech synthesis, Magpie, voice cloning, SSML, Riva
-**Related:** [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-NIM]], [[NVIDIA-Riva]], [[NVIDIA-ASR-NIM]], [[NVIDIA-NMT-NIM]], [[Nemotron]], [[NVIDIA-NeMo]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[TensorRT]], [[Triton-Inference-Server]]
+**Related:** [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-NIM]], [[NVIDIA-Riva]], [[NVIDIA-ASR-NIM]], [[NVIDIA-NMT-NIM]], [[Nemotron]], [[NVIDIA-NeMo]], [[NVIDIA-ACE]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Maxine]], [[TensorRT]], [[Triton-Inference-Server]]
 **Sources:** https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html
 **Last Updated:** 2026-04-29
 
@@ -23,13 +23,14 @@ TTS NIM gives applications a production speech-synthesis endpoint for voice assi
 - Customization covers voices, emotional styles, batch synthesis, SSML subset support, and custom pronunciation dictionaries.
 
 ### NVIDIA context
-TTS NIM is the current NIM deployment surface for NVIDIA text-to-speech models. It connects [[NVIDIA-Riva]] speech workflows, [[NVIDIA-ACE]] digital humans, and [[NVIDIA-Maxine]] real-time media workflows to the production [[NVIDIA-NIM]] stack.
+TTS NIM is the current NIM deployment surface for NVIDIA text-to-speech models. It connects [[NVIDIA-Riva]] speech workflows, [[NVIDIA-ACE]] digital humans, [[NIM-for-Audio2Face-3D]] avatar animation, and [[NVIDIA-Maxine]] real-time media workflows to the production [[NVIDIA-NIM]] stack.
 
 ## Connections
 - [[NVIDIA-Speech-NIM-Microservices]] - parent docs surface for Speech NIMs.
 - [[NVIDIA-Riva]] - broader NVIDIA speech AI platform and historical TTS runtime context.
 - [[NVIDIA-ASR-NIM]] and [[NVIDIA-NMT-NIM]] - companion speech microservices for voice and translation pipelines.
 - [[NVIDIA-ACE]] - digital humans and NPCs use ASR/TTS style speech pipelines.
+- [[NIM-for-Audio2Face-3D]] and [[NIM-for-Maxine-Audio2Face-2D]] - speech audio can drive 3D avatar animation or 2D portrait animation.
 - [[NVIDIA-Maxine]] - real-time media and avatar workflows can pair with speech synthesis.
 - [[NVIDIA-NeMo]] - model training/customization framework behind speech models.
 - [[TensorRT]] and [[Triton-Inference-Server]] - acceleration and serving layers packaged inside the NIM.

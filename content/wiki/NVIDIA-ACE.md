@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, ACE, NPC, Avatar, Digital Human, Speech AI, Animation, Gaming, Simulation
-**Related:** [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-Maxine]], [[NVIDIA-Omniverse]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]]
-**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/speech/latest/index.html
+**Related:** [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Maxine]], [[NVIDIA-Omniverse]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -19,7 +19,7 @@ Traditional game NPCs use scripted dialog trees that feel rigid and limited. ACE
 - TTS microservice: expressive neural text-to-speech via Riva
 - Current [[NVIDIA-Speech-NIM-Microservices]] docs split ASR, TTS, and NMT into deployable NIM containers that can feed ACE-style digital human pipelines
 - LLM microservice: NIM-hosted LLM for conversational intelligence and intent understanding
-- Audio2Face: real-time facial animation driven by audio/phoneme input
+- Audio2Face: real-time facial animation driven by audio/phoneme input, including [[NIM-for-Audio2Face-3D]] for ARKit blendshape output and [[NIM-for-Maxine-Audio2Face-2D]] for portrait animation.
 - RAG pipeline: retrieval from lore/knowledge databases to keep NPCs factually grounded
 - Emotion and personality control via SteerLM-style conditioning
 - Low-latency pipeline: designed for real-time interactive use (<200ms end-to-end)
@@ -50,6 +50,8 @@ Traditional game NPCs use scripted dialog trees that feel rigid and limited. ACE
 ## Connections
 - [[NVIDIA-Riva]] — ACE uses Riva for ASR and TTS in the speech pipeline
 - [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], and [[NVIDIA-TTS-NIM]] - current speech NIM docs for deployable ASR/TTS services.
+- [[NIM-for-Audio2Face-3D]] - current Digital Human NIM for speech-to-facial animation and emotion-driven expressions.
+- [[NIM-for-Maxine-Audio2Face-2D]] - Maxine NIM for 2D portrait animation from speech audio.
 - [[NVIDIA-Maxine]] — Maxine handles video/audio enhancement; ACE uses Maxine for avatar video quality
 - [[NVIDIA-Omniverse]] — ACE avatars rendered in Omniverse for USD-based digital human pipelines
 - [[NVIDIA-NIM]] — all ACE microservices deploy as NIM containers

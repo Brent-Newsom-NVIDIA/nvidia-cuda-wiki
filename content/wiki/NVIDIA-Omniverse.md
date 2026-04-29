@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Simulation, 3D, USD, Digital Twin, Rendering, RTX, Collaboration
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-ACE]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -22,7 +22,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - Replicator: synthetic data generation (SDG) framework with domain randomization for AI training
 - Nucleus: collaborative asset and scene management server
 - Omniverse Connectors: live sync plugins for Blender, Maya, 3ds Max, Revit, Unreal Engine
-- Audio2Face, Audio2Gesture: AI-driven facial animation and gesture synthesis
+- Audio2Face, Audio2Gesture: AI-driven facial animation and gesture synthesis; current NIM docs expose [[NIM-for-Audio2Face-3D]] for ARKit blendshape avatar animation
 - CloudXR: streaming of RTX-rendered content to XR devices
 - Python scripting via omni.ext extension system
 - Support for MaterialX, MDL (Material Definition Language) physically-based materials
@@ -57,6 +57,9 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows use Omniverse/Cosmos simulation infrastructure
 - [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]] - world foundation models and deployable NIMs for synthetic physical AI video/world generation.
 - [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for searching and curating physical AI datasets.
+- [[NIM-for-Audio2Face-3D]] - deployable Audio2Face NIM for speech-to-facial animation in digital-human workflows.
+- [[NIM-for-Maxine-Audio2Face-2D]] - adjacent 2D portrait animation NIM.
+- [[NVIDIA-ACE]] - digital-human application layer that uses Audio2Face-style animation.
 - [[NVIDIA-DRIVE-Sim]] - AV simulation workflows use Omniverse-style reconstruction and synthetic data context.
 - [[Earth-2]] - climate digital twin workflows use Omniverse as a visualization and simulation context.
 - [[NVIDIA-RTX-PRO-Server]] - enterprise RTX server platform for Omniverse, simulation, and digital twin workloads.

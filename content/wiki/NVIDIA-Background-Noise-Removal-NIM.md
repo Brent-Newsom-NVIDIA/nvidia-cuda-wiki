@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, Maxine, background noise removal, BNR, audio AI, speech enhancement, ASR preprocessing
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-ASR-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-Riva]], [[NVIDIA-Cloud-Functions]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-Maxine]], [[NIM-for-Maxine-Studio-Voice]], [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-ASR-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-Riva]], [[NVIDIA-Cloud-Functions]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nim/maxine/bnr/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -22,10 +22,11 @@ BNR NIM is a deployable audio cleanup service for conferencing, broadcasting, me
 - Try API access through build.nvidia.com using NVIDIA Cloud Functions as the backend.
 
 ### NVIDIA context
-BNR NIM overlaps the media and speech graphs: [[NVIDIA-Maxine]] and [[NVIDIA-Audio-Effects-SDK]] provide broader audio effects context, while [[NVIDIA-ASR-NIM]] and [[NVIDIA-Speech-NIM-Microservices]] consume cleaner audio in speech AI workflows.
+BNR NIM overlaps the media and speech graphs: [[NVIDIA-Maxine]] and [[NVIDIA-Audio-Effects-SDK]] provide broader audio effects context, [[NIM-for-Maxine-Studio-Voice]] covers a neighboring speech-enhancement NIM, and [[NVIDIA-ASR-NIM]] plus [[NVIDIA-Speech-NIM-Microservices]] consume cleaner audio in speech AI workflows.
 
 ## Connections
 - [[NVIDIA-Maxine]] - broader media AI platform for real-time audio/video enhancement.
+- [[NIM-for-Maxine-Studio-Voice]] - neighboring Maxine audio NIM for improving speech toward studio-recorded quality.
 - [[NVIDIA-Audio-Effects-SDK]] - adjacent SDK surface for denoise, dereverb, echo cancellation, speaker focus, and related effects.
 - [[NVIDIA-ASR-NIM]] - downstream ASR service that can benefit from noise-reduced audio.
 - [[NVIDIA-Speech-NIM-Microservices]] - speech AI container family adjacent to BNR.

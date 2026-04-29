@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NIM, speech AI, ASR, TTS, NMT, Nemotron, Riva, CUDA, TensorRT, Triton
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html
 **Last Updated:** 2026-04-29
 
@@ -30,6 +30,9 @@ This page is the current canonical wiki entry for the post-migration Speech NIM 
 - [[NVIDIA-TTS-NIM]] - text-to-speech NIM for Magpie TTS models and voice workflows.
 - [[NVIDIA-NMT-NIM]] - neural machine translation NIM for Riva Translate 1.6B.
 - [[NVIDIA-Riva]] - broader NVIDIA speech AI platform and historical docs lineage.
+- [[NIM-for-Maxine-Studio-Voice]] - Maxine audio enhancement NIM that can improve speech inputs for ASR and media workflows.
+- [[NIM-for-Audio2Face-3D]] - digital-human animation NIM that consumes speech audio in avatar pipelines.
+- [[NVIDIA-ACE]] and [[NVIDIA-Maxine]] - application layers that combine speech services with media and digital-human animation.
 - [[NVIDIA-NeMo]] - training and customization framework for speech models used by Speech NIMs.
 - [[Nemotron]] - speech docs describe each Speech NIM as serving a Nemotron model family.
 - [[Parakeet-ASR]] and [[NVIDIA-Canary]] - ASR model families surfaced through ASR NIM.

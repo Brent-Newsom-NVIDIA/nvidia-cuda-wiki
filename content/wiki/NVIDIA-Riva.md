@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, speech AI, ASR, TTS, NLP, real-time, conversational AI, speech-to-text, text-to-speech
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html)
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -62,6 +62,8 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - [[NVIDIA-Maxine]] — Maxine uses Riva for the speech AI component (noise cancellation feeds into Riva ASR)
 - [[NVIDIA-Audio-Effects-SDK]] — audio cleanup can improve upstream audio quality before ASR or voice workflows.
 - [[NVIDIA-Background-Noise-Removal-NIM]] - deployable BNR audio cleanup NIM that can improve speech intelligibility and ASR accuracy.
+- [[NIM-for-Maxine-Studio-Voice]] - deployable speech enhancement NIM for low-quality, noisy, or reverberant source audio.
+- [[NIM-for-Audio2Face-3D]] - digital-human animation NIM that can consume Riva/TTS-style speech audio.
 
 ## Resources
 - [NVIDIA Riva Developer Page](https://developer.nvidia.com/riva)
