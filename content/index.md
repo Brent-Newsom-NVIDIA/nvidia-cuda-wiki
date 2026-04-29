@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 423*
+*Total pages: 424*
 
 ---
 
@@ -283,6 +283,7 @@
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, Mission Control, and NIM LLM sizing workflows
+- [[NVIDIA-Run-ai-Support-and-Lifecycle]] — Run:ai self-hosted support phases, component alignment, and current version lifecycle dates
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-AI-Workbench-Projects]] — AI Workbench Git/container project model for reproducible GPU development environments
 - [[NVIDIA-AI-Workbench-Locations]] — AI Workbench local and remote machine abstraction for project execution

@@ -2,7 +2,7 @@
 
 **Type:** Service
 **Tags:** NVIDIA, enterprise support, enterprise services, support portal, RMA, TAM, education, advisory services
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Enterprise-Reference-Architectures]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Enterprise-Reference-Architectures]]
 **Sources:** https://docs.nvidia.com/enterprise-services/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-support-overview/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-support-details/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/value-add-support-services/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/support-resources-and-requests/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-services/index.html
 **Last Updated:** 2026-04-29
 
@@ -33,6 +33,7 @@ Use this page for questions about enterprise support entitlements, support level
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - AI Enterprise subscriptions and licenses include enterprise support and depend on support entitlements.
 - [[NVIDIA-Enterprise-Licensing-Guide]] - licensing defines support inclusion, Business Standard, Business Critical upgrade paths, and entitlement context.
+- [[NVIDIA-Run-ai-Support-and-Lifecycle]] - Run:ai product support periods and version lifecycle sit under broader enterprise support operations.
 - [[NVIDIA-DGX-Enterprise-Support]] - DGX-specific service page for DGX systems, DGX BasePOD, and DGX SuperPOD.
 - [[NVIDIA-DGX]] - enterprise support and services are operational layers around DGX infrastructure.
 - [[NVIDIA-vGPU]] - enterprise support and NVIDIA License System access are relevant to vGPU and AI Enterprise licensing.

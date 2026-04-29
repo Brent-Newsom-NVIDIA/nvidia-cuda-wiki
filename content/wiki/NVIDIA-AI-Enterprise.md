@@ -25,7 +25,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - **NeMo Framework tooling:** Current NeMo docs also expose [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Megatron-Bridge]], and [[NeMo-Export-Deploy]] for library-level training, post-training, experiment execution, checkpoint conversion, and deployment.
 - **Flexible Licensing:** Licensed via NVIDIA License System (NLS); supports on-premises DGX and certified servers, VMware vSphere with vGPU, Red Hat OpenShift, bare metal, and all major public clouds (AWS, Azure, GCP, OCI Marketplace)
 - **NIM Operator:** [[NVIDIA-NIM-Operator]] is the Kubernetes lifecycle manager for NIM and NeMo microservices in production clusters.
-- **Run:ai:** current AI Enterprise guidance includes [[NVIDIA-Run-ai]] self-hosted GPU scheduling and workload orchestration; SaaS remains a separate offering
+- **Run:ai:** current AI Enterprise guidance includes [[NVIDIA-Run-ai]] self-hosted GPU scheduling and workload orchestration; SaaS remains a separate offering, and [[NVIDIA-Run-ai-Support-and-Lifecycle]] tracks current self-hosted support phases and version dates
 - **AI factory guidance:** current planning docs include [[NVIDIA-Enterprise-AI-Factory]] strategy plus [[NVIDIA-Enterprise-Reference-Architectures]] for concrete hardware, software, observability, and deployment patterns.
 - **Software Reference Architecture:** [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] documents the common AI Enterprise software stack for single-tenant production AI workloads across Enterprise RA hardware.
 - **Observability:** [[NVIDIA-Enterprise-RA-Observability-Guide]] connects AI Enterprise infrastructure software to Prometheus, Grafana, DCGM, NIM Operator, BCM, and NetQ telemetry patterns.
@@ -115,7 +115,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[NVIDIA-DGX-Station]] - deskside GB300 development system preconfigured with NVIDIA AI software.
 - [[NVIDIA-DGX-BasePOD]] - BasePOD combines DGX infrastructure with AI Enterprise software for enterprise AI factories.
 - [[NVIDIA-DGX-Enterprise-Support]] - DGX support/services complement AI Enterprise support for production deployments.
-- [[NVIDIA-Run-ai]] — self-hosted GPU scheduling and workload orchestration included in current AI Enterprise guidance.
+- [[NVIDIA-Run-ai]] and [[NVIDIA-Run-ai-Support-and-Lifecycle]] — self-hosted GPU scheduling, workload orchestration, support phases, and version lifecycle included in current AI Enterprise guidance.
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
 - [[NVIDIA-Certified-Storage]] — validated storage layer for AI factory and AI Data Platform deployments.
 - [[NVIDIA-RTX-PRO-Server]] — RTX PRO servers can run enterprise AI, simulation, and visual computing workloads with NVIDIA software.

@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 49: Run:ai support and lifecycle coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch49-20260429T100639Z`; local Git tag `codex-backup-overnight-pre-batch49-20260429T100639Z`
+
+**Source URLs:** https://run-ai-docs.nvidia.com/self-hosted/support-policy/product-support-policy, https://run-ai-docs.nvidia.com/self-hosted/support-policy/product-version-life-cycle, https://run-ai-docs.nvidia.com/self-hosted/getting-started/installation, https://docs.nvidia.com/ai-enterprise/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for current NVIDIA Run:ai self-hosted support policy and product version lifecycle because the wiki had a Run:ai product page but no queryable support/version page.
+- Kept support policy and version lifecycle together instead of creating separate tiny pages for full support, extended support, end of support, individual Run:ai versions, connected installs, air-gapped installs, NGC artifacts, or component alignment.
+- Connected the page to Run:ai, AI Enterprise, AI Enterprise lifecycle, Enterprise Support and Services, GPU Operator, Mission Control, NIM LLM deployment/sizing, and NGC.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Run-ai-Support-and-Lifecycle.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Run-ai.md` - added the support/lifecycle page as the canonical support-date companion.
+- `content/wiki/NVIDIA-AI-Enterprise.md` and `content/wiki/NVIDIA-AI-Enterprise-Lifecycle-Policy.md` - connected Run:ai support dates to AI Enterprise lifecycle planning.
+- `content/wiki/NVIDIA-Enterprise-Support-and-Services.md` - linked broad enterprise support operations to Run:ai product support periods.
+- `content/index.md` - updated total page count to 424 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 48: Enterprise Support and Services coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch48-20260429T100405Z`; local Git tag `codex-backup-overnight-pre-batch48-20260429T100405Z`

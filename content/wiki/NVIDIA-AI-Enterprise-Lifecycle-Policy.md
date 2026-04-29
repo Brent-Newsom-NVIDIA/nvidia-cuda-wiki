@@ -2,7 +2,7 @@
 
 **Type:** Policy
 **Tags:** NVIDIA, AI Enterprise, lifecycle, release branches, compatibility, support, EOL
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Run-ai]], [[NVIDIA-Omniverse]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise-Security]], [[NVIDIA-AI-Software-for-Regulated-Environments]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-Omniverse]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise-Security]], [[NVIDIA-AI-Software-for-Regulated-Environments]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/lifecycle/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -30,7 +30,7 @@ Use this page when a question asks which AI Enterprise branch to deploy, whether
 - [[NVIDIA-NIM]] - application software whose production and long-term branches matter for enterprise deployment.
 - [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], and [[NVIDIA-NIM-Operator]] - infrastructure and Kubernetes components whose versions must align.
 - [[NVIDIA-DOCA-Platform-Framework]] - DPU/DPF component in the infrastructure software layer.
-- [[NVIDIA-Run-ai]] - self-hosted Run:ai compatibility is part of the lifecycle planning surface.
+- [[NVIDIA-Run-ai]] and [[NVIDIA-Run-ai-Support-and-Lifecycle]] - self-hosted Run:ai compatibility and product support dates are part of lifecycle planning.
 - [[NVIDIA-Omniverse]] - Omniverse has AI Enterprise branch coverage but separate documentation.
 - [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], and [[Red-Hat-AI-Factory-with-NVIDIA]] - deployment paths that should be checked against lifecycle compatibility.
 - [[NVIDIA-AI-Enterprise-Security]] and [[NVIDIA-AI-Software-for-Regulated-Environments]] - security and regulated-environment pages depend on branch stability and support windows.

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Run:ai, GPU orchestration, workload orchestration, Kubernetes, AI Enterprise, MLOps, AI factory
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-GPU-Operator]], [[KAI-Scheduler]], [[NVIDIA-Grove]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-GPU-Operator]], [[KAI-Scheduler]], [[NVIDIA-Grove]]
 **Sources:** https://docs.nvidia.com/run-ai/; https://docs.nvidia.com/run-ai/self-hosted/index.html; https://www.nvidia.com/en-us/software/run-ai/; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/overview-runai.html; https://docs.nvidia.com/enterprise-reference-architectures/nim-llm-with-run-ai-and-vanilla-kubernetes.pdf
 **Last Updated:** 2026-04-29
 
@@ -10,7 +10,7 @@
 NVIDIA Run:ai is NVIDIA's AI workload and GPU orchestration platform for running AI workloads across the AI lifecycle. It manages GPU allocation, workload scheduling, policy, quota, governance, monitoring, and user/API workflows across hybrid infrastructure, with SaaS and self-hosted deployment paths. In current NVIDIA docs, Run:ai is part of the AI factory operations stack, appears in [[NVIDIA-AI-Enterprise]] guidance, and is integrated into [[NVIDIA-Mission-Control]] workflows for Kubernetes-native AI workload orchestration.
 
 ## Detail
-The current NVIDIA Run:ai docs split users into SaaS and self-hosted product paths. SaaS is NVIDIA's fully managed cloud-hosted platform, while self-hosted is for on-premises and private cloud deployments aligned to cluster release cycles.
+The current NVIDIA Run:ai docs split users into SaaS and self-hosted product paths. SaaS is NVIDIA's fully managed cloud-hosted platform, while self-hosted is for on-premises and private cloud deployments aligned to cluster release cycles. Use [[NVIDIA-Run-ai-Support-and-Lifecycle]] for the current self-hosted support phases and version support dates.
 
 Self-hosted docs cover install, setup, monitoring, organizations and resources, model building/training/deployment, APIs, workload assets, permissions, policies, health/performance monitoring, telemetry, and the Run:ai Scheduler. This makes Run:ai the canonical page for questions about NVIDIA-managed AI workload submission, quota, teams/projects, policy-driven GPU access, and multi-tenant workload operations.
 
@@ -20,6 +20,7 @@ Run:ai also anchors open-source scheduling work. NVIDIA's product page links KAI
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - current AI Enterprise docs include self-hosted Run:ai in the enterprise software portfolio.
+- [[NVIDIA-Run-ai-Support-and-Lifecycle]] - support phases, supported component alignment, and current self-hosted version lifecycle.
 - [[NVIDIA-Enterprise-Reference-Architectures]] - current Enterprise RAs list Run:ai as part of the AI factory software stack.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA positions Kubernetes as the orchestration base beneath AI Enterprise workloads.
 - [[NIM-for-Large-Language-Models]] - NIM LLM inference workloads are a current Enterprise RA sizing target for Run:ai.
