@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, hardware, HPC, AI supercomputer, DGX, data center, training, infrastructure
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html, https://www.nvidia.com/en-us/data-center/dgx-support/)
 **Last Updated:** 2026-04-29
 
@@ -33,7 +33,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 
 **Key System Capabilities:**
 - **NVLink/NVSwitch Fabric:** All 8 GPUs in a DGX node are fully connected via NVSwitch, enabling any-to-any GPU communication at line rate — critical for tensor parallelism in LLM training
-- **NVIDIA AI Enterprise Bundle:** DGX systems ship with Base Command Manager (cluster OS), NGC access, and AI Enterprise software as standard
+- **NVIDIA AI Enterprise Bundle:** DGX systems ship with Base Command Manager (cluster OS), NGC access, and AI Enterprise software as standard; current [[NVIDIA-Enterprise-Licensing-Guide]] guidance distinguishes Hopper DGX bundle inclusion from Blackwell DGX systems that require separate AI Enterprise licenses
 - **Validated Storage Integration:** Certified with VAST Data, WekaFS, DDN EXAScaler, and NetApp for high-throughput model checkpoint storage
 - **Validated AI factory ecosystem:** DGX deployments connect to [[NVIDIA-Certified-Systems]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-Data-Center-CPUs]], and [[NVIDIA-Cloud-Accelerator-NCX]] guidance for broader data center infrastructure.
 
@@ -84,6 +84,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 - [[NVIDIA-MIG]] — partitions supported DGX GPUs for isolated multi-tenant workloads
 - [[NVIDIA-GPU-Operator]] — GPU Operator provisions Kubernetes on DGX SuperPOD nodes
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software included with DGX systems for production AI workloads
+- [[NVIDIA-Enterprise-Licensing-Guide]] — explains DGX software bundle treatment for Hopper systems and separate AI Enterprise licensing for Blackwell DGX systems
 
 ## Resources
 - [DGX Systems Overview](https://www.nvidia.com/en-us/data-center/dgx-systems/)

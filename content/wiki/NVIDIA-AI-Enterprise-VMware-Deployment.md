@@ -2,7 +2,7 @@
 
 **Type:** Deployment Guide
 **Tags:** NVIDIA, AI Enterprise, VMware, vSphere, vGPU, ESXi, vCenter, virtualized AI
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-NIM]], [[NGC]], [[NVIDIA-Certified-Systems]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Optimizing-VM-Configuration-for-AI-Inference]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-NIM]], [[NGC]], [[NVIDIA-Certified-Systems]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Optimizing-VM-Configuration-for-AI-Inference]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/deployment/vmware/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -31,6 +31,7 @@ Use this page for AI Enterprise on VMware. Use [[NVIDIA-vGPU]] for vGPU concepts
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - software suite deployed on vSphere.
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] - branch and compatibility planning before installing/upgrading.
+- [[NVIDIA-Enterprise-Licensing-Guide]] - licensing companion for vGPU for Compute, NLS, support, and per-GPU entitlement.
 - [[NVIDIA-vGPU]] - GPU virtualization technology used in VMware AI Enterprise deployments.
 - [[NVIDIA-Data-Center-GPU-Drivers]] - driver and host software layer.
 - [[NVIDIA-Container-Toolkit]] - GPU container runtime inside AI Enterprise VMs.

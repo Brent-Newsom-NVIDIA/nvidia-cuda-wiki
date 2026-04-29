@@ -2,7 +2,7 @@
 
 **Type:** Deployment Guide
 **Tags:** NVIDIA, AI Enterprise, cloud, AWS, Azure, Google Cloud, OCI, Alibaba Cloud, Tencent Cloud, Kubernetes, VMI
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-vGPU]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-vGPU]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/deployment/cloud/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -22,7 +22,7 @@ Cloud deployment lets organizations run AI Enterprise with public-cloud GPU capa
 - Managed Kubernetes paths for AWS, Azure, and Google Cloud.
 - Marketplace Red Hat OpenShift in AWS, Azure, and Google Cloud.
 - NGC container pull/run guidance.
-- BYOL and pay-as-you-go/private-offer licensing notes.
+- BYOL, on-demand/pay-as-you-go, and private-offer licensing notes; the current [[NVIDIA-Enterprise-Licensing-Guide]] also ties BYOL consumption to per-GPU subscription licensing on certified cloud providers.
 
 ### NVIDIA context
 Use this page for AI Enterprise in public clouds. Use [[NVIDIA-DGX-Cloud]] for NVIDIA-hosted/partner AI supercomputing capacity and [[NVIDIA-Cloud-Accelerator-NCX]] for cloud partner AI infrastructure components.
@@ -30,6 +30,7 @@ Use this page for AI Enterprise in public clouds. Use [[NVIDIA-DGX-Cloud]] for N
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - enterprise AI software suite deployed on CSP infrastructure.
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] - branch compatibility and support windows for cloud deployments.
+- [[NVIDIA-Enterprise-Licensing-Guide]] - cloud marketplace, private offer, BYOL, per-GPU entitlement, and support-included licensing context.
 - [[NVIDIA-DGX-Cloud]] - NVIDIA cloud AI supercomputing platform adjacent to CSP deployment.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - validated cloud partner infrastructure context.
 - [[NVIDIA-NIM]], [[NGC]], and [[NVIDIA-NGC-Catalog]] - AI Enterprise application software and containers used in cloud deployments.

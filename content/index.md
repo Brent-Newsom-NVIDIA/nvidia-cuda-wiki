@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 421*
+*Total pages: 422*
 
 ---
 
@@ -268,6 +268,7 @@
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] — AI Enterprise branch, compatibility, support, and EOL planning policy
+- [[NVIDIA-Enterprise-Licensing-Guide]] — AI Enterprise entitlement, per-GPU licensing, cloud marketplace, BYOL, support, and NVIDIA License System guidance
 - [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]] — AI Enterprise installation guide for physical servers, drivers, Docker, Kubernetes, and GPUDirect Storage
 - [[NVIDIA-AI-Enterprise-VMware-Deployment]] — AI Enterprise deployment guide for VMware vSphere, vGPU, ESXi, vCenter, and AI Enterprise VMs
 - [[NVIDIA-AI-Enterprise-Cloud-Deployment]] — AI Enterprise deployment guide for AWS, Azure, Google Cloud, OCI, Alibaba, Tencent, VMIs, managed Kubernetes, and OpenShift

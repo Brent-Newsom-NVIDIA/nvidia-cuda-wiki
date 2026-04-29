@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 47: AI Enterprise licensing guidance
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch47-20260429T095921Z`; local Git tag `codex-backup-overnight-pre-batch47-20260429T095921Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/license-system.html
+
+**Gap analysis summary:**
+
+- Added one canonical licensing page for the current NVIDIA Enterprise Licensing Guide rather than splitting NLS, support, cloud pricing, Inception, Connect, or training/education sections into separate wiki pages.
+- Connected AI Enterprise licensing to deployment paths, lifecycle planning, vGPU/NLS, DGX bundle treatment, certified systems, NGC, and cloud marketplace/BYOL context.
+- Kept licensing as NVIDIA-specific AI Enterprise guidance and did not create generic AWS/Azure/GCP/OCI, marketplace, or support-program pages.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Enterprise-Licensing-Guide.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added licensing as an AI Enterprise planning surface.
+- `content/wiki/NVIDIA-AI-Enterprise-Lifecycle-Policy.md`, `content/wiki/NVIDIA-AI-Enterprise-Cloud-Deployment.md`, `content/wiki/NVIDIA-AI-Enterprise-VMware-Deployment.md`, and `content/wiki/NVIDIA-vGPU.md` - connected licensing/NLS/cloud entitlement guidance.
+- `content/wiki/NVIDIA-DGX.md` and `content/wiki/NVIDIA-DGX-Enterprise-Support.md` - connected DGX bundle licensing and support-included licensing context.
+- `content/index.md` - updated total page count to 422 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 46: Omniverse reference architecture coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch46-20260429T095632Z`; local Git tag `codex-backup-overnight-pre-batch46-20260429T095632Z`
