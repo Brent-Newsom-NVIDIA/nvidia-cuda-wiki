@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo Retriever, RAG, retrieval, embedding, reranking, multimodal data extraction
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/aiq-blueprint/latest/index.html
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[Nemotron-Parse]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/aiq-blueprint/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -15,7 +15,7 @@ NeMo Retriever is NVIDIA's collection of microservices for building and scaling 
 Enterprise RAG and agent systems need to connect models to proprietary data with privacy, accuracy, and scale. NeMo Retriever provides document extraction, embedding, indexing, semantic/hybrid search, and reranking services optimized for NVIDIA infrastructure.
 
 ### Key capabilities
-- Multimodal data extraction for documents with text, tables, charts, and infographics, including [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]].
+- Multimodal data extraction for documents with text, tables, charts, and infographics, including [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], and adjacent VLM-style parsing with [[Nemotron-Parse]].
 - Embedding and indexing flows using vector databases such as LanceDB or Milvus, including [[NeMo-Retriever-Embedding-NIM]].
 - Multimodal text/image embedding and semantic image retrieval through [[NIM-for-NV-CLIP]].
 - GPU-accelerated vector search and indexing through [[cuVS]].
@@ -36,6 +36,7 @@ NeMo Retriever is a central bridge between enterprise data and NVIDIA agent syst
 - [[NeMo-Retriever-Reranking-NIM]] - reranking microservice for improving candidate context relevance.
 - [[NIM-for-Image-OCR]] - OCR extraction microservice for images and visual document regions.
 - [[NIM-for-Object-Detection]] - document object-detection microservices for page, table, and graphic elements.
+- [[Nemotron-Parse]] - VLM document parser for text/table extraction, semantic classes, and bounding boxes.
 - [[NVIDIA-AI-Data-Platform]] - AI Data Platform uses retrieval, indexing, and vector search to connect agents to enterprise data.
 - [[NVIDIA-AI-Q-Blueprint]] - AI-Q uses retrieval and knowledge sources as part of its enterprise research workflow.
 - [[NVIDIA-AI-Blueprints]] - RAG, deep research, and data search blueprints are discovery surfaces for Retriever-related patterns.

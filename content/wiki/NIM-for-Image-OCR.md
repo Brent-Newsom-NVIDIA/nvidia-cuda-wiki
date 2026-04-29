@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, NeMo Retriever, OCR, image OCR, document extraction, multimodal RAG, tables, charts, infographics
-**Related:** [[NeMo-Retriever]], [[NVIDIA-NIM]], [[NIM-for-Object-Detection]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-NIM-Operator]], [[Triton-Inference-Server]], [[TensorRT]]
-**Sources:** https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html; https://docs.nvidia.com/nim/ingestion/image-ocr/latest/getting-started.html; https://docs.nvidia.com/nim/ingestion/image-ocr/latest/deploy-kubernetes.html
+**Related:** [[NeMo-Retriever]], [[NVIDIA-NIM]], [[NIM-for-Object-Detection]], [[Nemotron-Parse]], [[NIM-for-Vision-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-NIM-Operator]], [[Triton-Inference-Server]], [[TensorRT]]
+**Sources:** https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html; https://docs.nvidia.com/nim/ingestion/image-ocr/latest/getting-started.html; https://docs.nvidia.com/nim/ingestion/image-ocr/latest/deploy-kubernetes.html; https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,10 +16,14 @@ OCR is the text extraction step in document-heavy RAG. It turns image regions in
 
 This page should be used for questions about NVIDIA OCR in Retriever/NIM workflows, document extraction, or turning visual document content into retrievable text. Use [[NIM-for-Object-Detection]] for layout and visual-region detection and [[NeMo-Retriever-Embedding-NIM]] for embedding/indexing the extracted text.
 
+For the newer Nemotron document-parser model, use [[Nemotron-Parse]]. That page covers Nemotron-Parse-v1.2 in [[NIM-for-Vision-Language-Models]], which combines Markdown text, bounding boxes, semantic classes, and table/document structure in a single VLM output rather than acting as the Retriever OCR microservice.
+
 ## Connections
 - [[NeMo-Retriever]] - Image OCR is a NeMo Retriever extraction microservice.
 - [[NVIDIA-NIM]] - delivered as an NVIDIA NIM microservice.
 - [[NIM-for-Object-Detection]] - object detection finds tables, charts, and infographics for OCR extraction.
+- [[Nemotron-Parse]] - VLM-style document parser for text, tables, semantic classes, and bounding boxes.
+- [[NIM-for-Vision-Language-Models]] - current NIM surface for Nemotron-Parse-v1.2.
 - [[NeMo-Retriever-Embedding-NIM]] - extracted OCR text can be embedded for semantic search.
 - [[NeMo-Retriever-Reranking-NIM]] - retrieved OCR-derived passages can be reranked for answer quality.
 - [[NVIDIA-AI-Data-Platform]] - multimodal enterprise data extraction feeds AI Data Platform retrieval workflows.
@@ -31,4 +35,3 @@ This page should be used for questions about NVIDIA OCR in Retriever/NIM workflo
 - "optical character recognition"
 - "extracts text from images"
 - "tables, charts, and infographics"
-

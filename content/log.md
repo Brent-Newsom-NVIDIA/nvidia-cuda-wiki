@@ -2,6 +2,36 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 57: Nemotron VLM and document parsing coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch57-20260429T103415Z`; local Git tag `codex-backup-overnight-pre-batch57-20260429T103415Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/release-notes.html, https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-3-nano-omni-30b-a3b-reasoning/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html, https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning, https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/, https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model, https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-v1.2
+
+**Gap analysis summary:**
+
+- Added canonical pages for two current NVIDIA Nemotron/VLM gaps found in the latest NIM for VLMs 1.7.0 documentation: Nemotron 3 Nano Omni and Nemotron Parse.
+- Kept `Nemotron-Parse` as one durable page instead of creating separate pages for v1.2, API examples, older past-release docs, prompt modes, model cards, or bounding-box scripts.
+- Kept partner VLM support-matrix entries such as Qwen, Kimi, Gemma, Mistral, and Ministral folded into the broader `NIM-for-Vision-Language-Models` page instead of creating NVIDIA wiki pages for non-NVIDIA model families.
+- Treated build.nvidia as a durable model/NIM signal for Nemotron 3 Nano Omni, not as a reason to ingest every build.nvidia listing.
+
+**Pages created (2 total):**
+
+- `content/wiki/Nemotron-3-Nano-Omni.md`
+- `content/wiki/Nemotron-Parse.md`
+
+**Pages updated:**
+
+- `content/wiki/NIM-for-Vision-Language-Models.md` - refreshed current 1.7.0 VLM NIM scope and linked canonical Nemotron model pages.
+- `content/wiki/Nemotron.md` - connected the Nemotron family hub to Nano Omni and Parse.
+- `content/wiki/NVIDIA-NIM.md` - linked the umbrella NIM graph to the new VLM model pages.
+- `content/wiki/NIM-for-Image-OCR.md` and `content/wiki/NIM-for-Object-Detection.md` - distinguished NeMo Retriever extraction NIMs from the Nemotron Parse VLM parser.
+- `content/wiki/NeMo-Retriever.md`, `content/wiki/NVIDIA-AI-Data-Platform.md`, `content/wiki/NVIDIA-RAG-Blueprint.md`, and `content/wiki/NVIDIA-AI-Q-Blueprint.md` - added document-parsing and omnimodal reasoning connections for retrieval and agent workflows.
+- `content/wiki/NVIDIA-NemoClaw.md` and `content/wiki/NVIDIA-OpenShell.md` - linked current Nano Omni agent examples.
+- `content/index.md` - updated total page count to 432 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 56: Cosmos Reason VLM NIM
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch56-20260429T103027Z`; local Git tag `codex-backup-overnight-pre-batch56-20260429T103027Z`

@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, NeMo Retriever, object detection, document extraction, multimodal RAG, page elements, tables, charts, infographics
-**Related:** [[NeMo-Retriever]], [[NVIDIA-NIM]], [[NIM-for-Image-OCR]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-NIM-Operator]], [[Triton-Inference-Server]], [[TensorRT]]
-**Sources:** https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html; https://docs.nvidia.com/nim/ingestion/object-detection/latest/getting-started.html; https://docs.nvidia.com/nim/ingestion/object-detection/latest/deploy-kubernetes.html
+**Related:** [[NeMo-Retriever]], [[NVIDIA-NIM]], [[NIM-for-Image-OCR]], [[Nemotron-Parse]], [[NIM-for-Vision-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-NIM-Operator]], [[Triton-Inference-Server]], [[TensorRT]]
+**Sources:** https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html; https://docs.nvidia.com/nim/ingestion/object-detection/latest/getting-started.html; https://docs.nvidia.com/nim/ingestion/object-detection/latest/deploy-kubernetes.html; https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,10 +16,14 @@ The page-elements NIM identifies charts, tables, and infographics in an enterpri
 
 This page is distinct from general computer vision object detection. Its NVIDIA context is enterprise document understanding for multimodal RAG. Use it with [[NIM-for-Image-OCR]], [[NeMo-Retriever-Embedding-NIM]], and [[NeMo-Retriever-Reranking-NIM]] when questions involve extracting searchable knowledge from PDFs, reports, tables, charts, or infographics.
 
+For a single-model document parser that outputs text, table/document structure, semantic classes, and bounding boxes from an input image, use [[Nemotron-Parse]]. Nemotron Parse sits in [[NIM-for-Vision-Language-Models]], while this page covers the NeMo Retriever page/table/graphic detector microservices.
+
 ## Connections
 - [[NeMo-Retriever]] - Object Detection NIM is a NeMo Retriever extraction microservice family.
 - [[NVIDIA-NIM]] - delivered as NVIDIA NIM microservices.
 - [[NIM-for-Image-OCR]] - OCR extracts text from the regions detected by object/layout services.
+- [[Nemotron-Parse]] - VLM-style document parser that can output bounding boxes and semantic document classes.
+- [[NIM-for-Vision-Language-Models]] - current NIM surface for Nemotron-Parse-v1.2.
 - [[NeMo-Retriever-Embedding-NIM]] - extracted content can be embedded for semantic search.
 - [[NeMo-Retriever-Reranking-NIM]] - retrieved content can be reranked before generation.
 - [[NVIDIA-AI-Data-Platform]] - document extraction is a data-platform prerequisite for enterprise RAG.
@@ -31,4 +35,3 @@ This page is distinct from general computer vision object detection. Its NVIDIA 
 - "page elements"
 - "table structure"
 - "graphic elements"
-

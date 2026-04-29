@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Blueprint, RAG, retrieval augmented generation, NeMo Retriever, NIM, multimodal RAG, enterprise search
-**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NeMo-Retriever]], [[NeMo-Evaluator]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-NemoGuard-NIMs]], [[Nemotron]], [[cuVS]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]]
-**Sources:** https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/rag/latest/vlm-embed.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
+**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NeMo-Retriever]], [[NeMo-Evaluator]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[Nemotron-Parse]], [[NIM-for-Vision-Language-Models]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NemoGuard-NIMs]], [[Nemotron]], [[cuVS]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]]
+**Sources:** https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/rag/latest/vlm-embed.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-3-nano-omni-30b-a3b-reasoning/api.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,7 +18,7 @@ Enterprise RAG systems need more than a vector database and an LLM. NVIDIA RAG B
 - Deployment with Docker, Kubernetes/Helm, NIM Operator, hosted NIM endpoints, self-hosted NIMs, and retrieval-only mode.
 - Ingestion paths for text-only content, enhanced PDF extraction, audio ingestion, custom metadata, object storage, data catalog workflows, and MCP server usage.
 - Retrieval features including hybrid search, multi-collection retrieval, query decomposition, Milvus and Elasticsearch configuration, and GPU vector-search adjacency through [[cuVS]].
-- Multimodal features including [[NIM-for-NV-CLIP]]-style text/image embedding patterns, `nvidia/llama-nemotron-embed-vl-1b-v2` VLM embeddings, [[NIM-for-Vision-Language-Models]] generation, image captioning, and multimodal query support.
+- Multimodal features including [[NIM-for-NV-CLIP]]-style text/image embedding patterns, `nvidia/llama-nemotron-embed-vl-1b-v2` VLM embeddings, [[NIM-for-Vision-Language-Models]] generation, image captioning, document parsing with [[Nemotron-Parse]], and multimodal query support.
 - Governance and operations features including [[NVIDIA-NemoGuard-NIMs]], [[NeMo-Evaluator]], RAG accuracy benchmarks, observability, and query-to-answer tracing.
 
 ### NVIDIA context
@@ -30,9 +30,10 @@ This page is the canonical wiki target for the durable RAG blueprint, not for ev
 - [[NVIDIA-AI-Q-Blueprint]] - AI-Q can use RAG Blueprint-style retrieval services as an enterprise knowledge source.
 - [[NVIDIA-Enterprise-Reference-Architectures]] - AI-Q Enterprise RA paper shows RAG services as part of a sized research-agent deployment.
 - [[NVIDIA-AI-Data-Platform]] - data-layer reference design for RAG, vector search, and enterprise agent data access.
-- [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], and [[NIM-for-Object-Detection]] - retrieval, embedding, reranking, and extraction services used by RAG workflows.
+- [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], and [[Nemotron-Parse]] - retrieval, embedding, reranking, parsing, and extraction services used by RAG workflows.
 - [[NeMo-Evaluator]] - evaluation service for RAG, retriever, and grounded-generation metrics.
 - [[NIM-for-Vision-Language-Models]] - VLM generation layer for multimodal RAG over visual content.
+- [[Nemotron-3-Nano-Omni]] - omnimodal Nemotron model relevant to document, chart, image, video, and audio reasoning in agentic RAG.
 - [[NVIDIA-NemoGuard-NIMs]] - guardrail layer for governing RAG inputs and outputs.
 - [[Nemotron]] - current RAG docs reference Nemotron model choices for reasoning and multimodal query workflows.
 - [[cuVS]] - GPU vector search layer adjacent to embedding indexes.
