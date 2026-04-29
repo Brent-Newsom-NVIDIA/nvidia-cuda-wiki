@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Equivariant Neural Networks, Drug Discovery, Materials Science, Scientific AI
-**Related:** [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]], [[NVIDIA-BioNeMo]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold2]]
+**Related:** [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]], [[NVIDIA-BioNeMo]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold2]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -53,6 +53,8 @@ Equivariant neural networks (E3NNs) respect the symmetries of physical systems (
 - [[NIM-for-OpenFold3]] — current OpenFold3 NIM docs call out cuEquivariance kernels in the optimized backend.
 - [[NIM-for-Boltz2]] — Boltz-style biomolecular structure prediction is adjacent to equivariant model acceleration.
 - [[NIM-for-OpenFold2]] — OpenFold-style structure prediction is part of the BioNeMo structure-model family.
+- [[NIM-for-DiffDock]] — molecular docking NIM based on equivariant/geometric pose prediction.
+- [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] and [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIMs use MLIP model families such as MACE, which are adjacent to cuEquivariance acceleration.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/cuequivariance)

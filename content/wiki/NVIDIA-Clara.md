@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, healthcare, medical imaging, genomics, drug discovery, AI, radiology, clinical AI, life sciences
-**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NVIDIA-BioNeMo]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NGC]], [[TensorRT]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html
+**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NVIDIA-BioNeMo]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NIM-for-MSA-Search]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-MolMIM]], [[NIM-for-GenMol]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NGC]], [[TensorRT]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html, https://docs.nvidia.com/nim/bionemo/msa-search/latest/overview.html, https://docs.nvidia.com/nim/bionemo/proteinmpnn/latest/overview.html, https://docs.nvidia.com/nim/bionemo/rfdiffusion/latest/overview.html, https://docs.nvidia.com/nim/bionemo/molmim/latest/overview.html, https://docs.nvidia.com/nim/bionemo/genmol/latest/overview.html, https://docs.nvidia.com/nim/bionemo/diffdock/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -60,6 +60,8 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 - [[NIM-for-MAISI]] and [[NIM-for-VISTA-3D]] — current medical imaging NIMs for synthetic CT generation and 3D segmentation/annotation.
 - [[NVIDIA-BioNeMo]] — BioNeMo is the drug discovery/computational biology layer of Clara; Clara encompasses BioNeMo + imaging + genomics
 - [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]] — representative BioNeMo NIMs for structure, interaction, and DNA sequence workflows.
+- [[NIM-for-MSA-Search]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-MolMIM]], [[NIM-for-GenMol]], and [[NIM-for-DiffDock]] — additional BioNeMo NIMs for sequence search, protein design, molecular generation, and docking.
+- [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] and [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIMs for atomistic modeling adjacent to drug discovery and materials workflows.
 - [[NVIDIA-Holoscan]] — Clara Holoscan became the NVIDIA Holoscan SDK; the real-time streaming AI platform for medical devices
 - [[NVIDIA-Riva]] — Riva provides speech AI for clinical documentation (ambient clinical intelligence use cases)
 - [[NVIDIA-AI-Enterprise]] — Clara workloads run under AI Enterprise license for regulated healthcare environments

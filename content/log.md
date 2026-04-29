@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 30: ALCHEMI and expanded BioNeMo NIMs
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch30-20260429T081149Z`; local Git tag `codex-backup-overnight-pre-batch30-20260429T081149Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/alchemi/alchemi-bgr/latest/overview.html, https://docs.nvidia.com/nim/alchemi/alchemi-bmd/latest/overview.html, https://docs.nvidia.com/nim/bionemo/molmim/latest/overview.html, https://docs.nvidia.com/nim/bionemo/genmol/latest/overview.html, https://docs.nvidia.com/nim/bionemo/msa-search/latest/overview.html, https://docs.nvidia.com/nim/bionemo/proteinmpnn/latest/overview.html, https://docs.nvidia.com/nim/bionemo/rfdiffusion/latest/overview.html, https://docs.nvidia.com/nim/bionemo/diffdock/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added current NVIDIA-authored ALCHEMI NIM docs for batched geometry relaxation and batched molecular dynamics.
+- Added current BioNeMo NIM docs that were missing from the wiki graph: MolMIM, GenMol, MSA Search, ProteinMPNN, RFdiffusion, and DiffDock.
+- Kept each NIM as its own page because each has a separate current NVIDIA docs surface, distinct model/service purpose, and different query intent.
+- Connected the new pages into the existing BioNeMo, Clara, NIM, AI Enterprise, TensorRT, Triton, cuEquivariance, and structure-prediction graphs.
+- Did not create pages for every release note, support-matrix row, model-card/table entry, or build.nvidia listing; build.nvidia/model-card references remain supporting context only when NVIDIA docs point there.
+
+**Pages created (8 total):**
+
+- `content/wiki/NIM-for-ALCHEMI-Batched-Geometry-Relaxation.md`
+- `content/wiki/NIM-for-ALCHEMI-Batched-Molecular-Dynamics.md`
+- `content/wiki/NIM-for-MolMIM.md`
+- `content/wiki/NIM-for-GenMol.md`
+- `content/wiki/NIM-for-MSA-Search.md`
+- `content/wiki/NIM-for-ProteinMPNN.md`
+- `content/wiki/NIM-for-RFdiffusion.md`
+- `content/wiki/NIM-for-DiffDock.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-BioNeMo.md` - expanded BioNeMo coverage for MSA search, protein design, small molecule generation, docking, and ALCHEMI atomistic modeling.
+- `content/wiki/NVIDIA-NIM.md` - promoted additional BioNeMo/ALCHEMI NIMs into the umbrella NIM graph.
+- `content/wiki/NVIDIA-AI-Enterprise.md` and `content/wiki/NVIDIA-Clara.md` - linked new life-sciences and atomistic modeling NIMs to enterprise and healthcare/life-sciences contexts.
+- `content/wiki/NIM-for-AlphaFold2.md`, `content/wiki/NIM-for-AlphaFold2-Multimer.md`, `content/wiki/NIM-for-OpenFold2.md`, `content/wiki/NIM-for-OpenFold3.md`, `content/wiki/NIM-for-Boltz2.md`, and `content/wiki/NIM-for-Evo-2.md` - connected existing structure/sequence pages to MSA Search, ProteinMPNN, RFdiffusion, and DiffDock where relevant.
+- `content/wiki/cuEquivariance.md`, `content/wiki/TensorRT.md`, and `content/wiki/Triton-Inference-Server.md` - connected geometry-aware/scientific NIMs to acceleration and serving layers.
+- `content/index.md` - updated page count to 358 and indexed the new ALCHEMI/BioNeMo NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 29: Maxine and Digital Human NIM microservices
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch29-20260429T080215Z`; local Git tag `codex-backup-overnight-pre-batch29-20260429T080215Z`

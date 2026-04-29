@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, BioNeMo, AlphaFold2, protein structure prediction, MSA, drug discovery, computational biology
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-MSA-Search]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-ProteinMPNN]], [[NIM-for-Evo-2]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
 **Sources:** https://docs.nvidia.com/nim/bionemo/alphafold2/latest/overview.html; https://docs.nvidia.com/nim/bionemo/alphafold2/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -17,11 +17,13 @@ This page should be used when a question asks for NVIDIA's AlphaFold2 deployment
 ## Connections
 - [[NVIDIA-BioNeMo]] - BioNeMo is the NVIDIA life-sciences platform that includes AlphaFold2 NIM.
 - [[NVIDIA-NIM]] - AlphaFold2 is delivered as a NIM microservice.
+- [[NIM-for-MSA-Search]] - GPU-accelerated MSA and template search can feed AlphaFold2-style structure prediction workflows.
 - [[NIM-for-AlphaFold2-Multimer]] - multimer variant for multiple protein sequences and complexes.
 - [[NIM-for-OpenFold2]] - OpenFold2 is an open PyTorch reimplementation of AlphaFold2 concepts.
 - [[NIM-for-OpenFold3]] - extends structure prediction toward all-atom biomolecular complexes.
 - [[NIM-for-Boltz2]] - newer biomolecular structure and binding-affinity NIM.
 - [[NIM-for-Evo-2]] - DNA foundation model NIM in the BioNeMo ecosystem.
+- [[NIM-for-ProteinMPNN]] - protein sequence design NIM adjacent to structure prediction/validation workflows.
 - [[NVIDIA-Clara]] - Clara is the broader healthcare/life-sciences platform.
 - [[NVIDIA-AI-Enterprise]] - enterprise support and security context for production NIM deployments.
 - [[NGC]] - distribution path for NIM containers and model assets.
@@ -30,4 +32,3 @@ This page should be used when a question asks for NVIDIA's AlphaFold2 deployment
 - "Predict protein structure"
 - "GPU-accelerated MMSeqs2"
 - "consistent API"
-

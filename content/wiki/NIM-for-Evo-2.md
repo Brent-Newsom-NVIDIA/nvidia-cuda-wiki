@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, BioNeMo, Evo 2, DNA, genome, biological foundation model, synthetic biology, drug discovery
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold3]], [[NIM-for-AlphaFold2]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold3]], [[NIM-for-AlphaFold2]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
 **Sources:** https://docs.nvidia.com/nim/bionemo/evo2/latest/overview.html; https://docs.nvidia.com/nim/bionemo/evo2/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -20,6 +20,7 @@ Evo 2 belongs with BioNeMo NIMs, but its query intent is different from structur
 - [[NIM-for-Boltz2]] - structure/binding-affinity prediction adjacent to drug discovery workflows.
 - [[NIM-for-OpenFold3]] - biomolecular complex prediction adjacent to sequence-to-structure pipelines.
 - [[NIM-for-AlphaFold2]] - protein structure prediction NIM in the same BioNeMo family.
+- [[NIM-for-ProteinMPNN]] and [[NIM-for-RFdiffusion]] - protein design NIMs adjacent to biological sequence and design workflows.
 - [[NVIDIA-Clara]] - healthcare/life-sciences umbrella platform.
 - [[NVIDIA-AI-Enterprise]] - enterprise support and production deployment context.
 - [[NGC]] - distribution path for NIM containers and model assets.
@@ -28,4 +29,3 @@ Evo 2 belongs with BioNeMo NIMs, but its query intent is different from structur
 - "interpret and generate DNA sequences"
 - "entire genomes"
 - "zero-shot predictions"
-

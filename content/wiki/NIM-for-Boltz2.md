@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, BioNeMo, Boltz-2, protein structure, biomolecular complexes, binding affinity, ligands, drug discovery
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-OpenFold3]], [[NIM-for-OpenFold2]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-Evo-2]], [[cuEquivariance]], [[TensorRT]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-MSA-Search]], [[NIM-for-OpenFold3]], [[NIM-for-OpenFold2]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-Evo-2]], [[NIM-for-DiffDock]], [[NIM-for-ProteinMPNN]], [[cuEquivariance]], [[TensorRT]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
 **Sources:** https://docs.nvidia.com/nim/bionemo/boltz2/latest/overview.html; https://docs.nvidia.com/nim/bionemo/boltz2/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -17,10 +17,13 @@ Boltz2 belongs near [[NIM-for-OpenFold3]] because both model biomolecular comple
 ## Connections
 - [[NVIDIA-BioNeMo]] - BioNeMo includes Boltz2 in its biomolecular NIM ecosystem.
 - [[NVIDIA-NIM]] - delivered as an NVIDIA NIM microservice.
+- [[NIM-for-MSA-Search]] - sequence/template search context for structure prediction workflows.
 - [[NIM-for-OpenFold3]] - adjacent all-atom biomolecular complex prediction NIM.
 - [[NIM-for-OpenFold2]] - earlier OpenFold protein structure prediction NIM.
 - [[NIM-for-AlphaFold2]] and [[NIM-for-AlphaFold2-Multimer]] - related protein structure prediction NIMs.
 - [[NIM-for-Evo-2]] - sequence-design foundation model adjacent to drug discovery and synthetic biology.
+- [[NIM-for-DiffDock]] - docking/pose-prediction NIM adjacent to protein-ligand modeling.
+- [[NIM-for-ProteinMPNN]] - sequence-design NIM adjacent to protein engineering workflows.
 - [[cuEquivariance]] - structure-aware/equivariant acceleration library relevant to biomolecular models.
 - [[TensorRT]] - production inference optimization stack for NVIDIA NIMs.
 - [[NVIDIA-Clara]] - healthcare/life-sciences umbrella platform.
@@ -31,4 +34,3 @@ Boltz2 belongs near [[NIM-for-OpenFold3]] because both model biomolecular comple
 - "binding affinity prediction"
 - "proteins, RNA, DNA"
 - "constraint-guided predictions"
-

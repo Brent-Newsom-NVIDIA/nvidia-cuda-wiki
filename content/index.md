@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 350*
+*Total pages: 358*
 
 ---
 
@@ -264,6 +264,14 @@
 - [[NIM-for-OpenFold3]] — BioNeMo NIM for all-atom biomolecular complexes with proteins, DNA, RNA, and ligands
 - [[NIM-for-Boltz2]] — BioNeMo NIM for biomolecular structure and binding-affinity prediction
 - [[NIM-for-Evo-2]] — BioNeMo NIM for Evo 2 DNA sequence interpretation and generation
+- [[NIM-for-MSA-Search]] — BioNeMo NIM for GPU-accelerated MSA, paired MSA, and structural template search
+- [[NIM-for-RFdiffusion]] — BioNeMo NIM for generative protein structure and complex design
+- [[NIM-for-ProteinMPNN]] — BioNeMo NIM for protein sequence design from backbone structures
+- [[NIM-for-MolMIM]] — BioNeMo NIM for controlled small molecule generation from SMILES latent spaces
+- [[NIM-for-GenMol]] — BioNeMo NIM for fragment-based small molecule generation with SAFE representations
+- [[NIM-for-DiffDock]] — BioNeMo NIM for protein-ligand docking and pose prediction
+- [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] — ALCHEMI NIM for MLIP-driven batched atomistic geometry relaxation
+- [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIM for MLIP-driven batched molecular dynamics simulations
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
 - [[NIM-for-Maxine-Studio-Voice]] — Maxine NIM for streaming and transactional studio-quality speech enhancement

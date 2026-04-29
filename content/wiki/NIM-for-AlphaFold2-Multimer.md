@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, BioNeMo, AlphaFold2-Multimer, protein complexes, MSA, drug discovery, computational biology
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-MSA-Search]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-ProteinMPNN]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
 **Sources:** https://docs.nvidia.com/nim/bionemo/alphafold2-multimer/latest/overview.html; https://docs.nvidia.com/nim/bionemo/alphafold2-multimer/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -17,10 +17,12 @@ This page is useful when the query is about protein-protein complexes or multime
 ## Connections
 - [[NVIDIA-BioNeMo]] - BioNeMo is the NVIDIA life-sciences platform that includes AlphaFold2-Multimer NIM.
 - [[NVIDIA-NIM]] - delivered as an NVIDIA NIM microservice.
+- [[NIM-for-MSA-Search]] - paired MSA search supports multimer and protein-complex structure prediction workflows.
 - [[NIM-for-AlphaFold2]] - single-chain AlphaFold2 NIM.
 - [[NIM-for-OpenFold2]] - open AlphaFold2-style protein structure prediction NIM.
 - [[NIM-for-OpenFold3]] - all-atom biomolecular complex prediction NIM.
 - [[NIM-for-Boltz2]] - biomolecular complex and binding-affinity prediction NIM.
+- [[NIM-for-ProteinMPNN]] - sequence-design NIM adjacent to generated or predicted protein structures.
 - [[NVIDIA-Clara]] - healthcare/life-sciences umbrella platform.
 - [[NVIDIA-AI-Enterprise]] - enterprise support and production deployment context.
 - [[NGC]] - distribution path for NIM containers and model assets.
@@ -29,4 +31,3 @@ This page is useful when the query is about protein-protein complexes or multime
 - "multiple protein sequences"
 - "computer-aided drug discovery"
 - "pre-computed MSA"
-

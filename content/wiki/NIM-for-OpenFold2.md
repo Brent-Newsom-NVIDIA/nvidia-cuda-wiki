@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, BioNeMo, OpenFold2, AlphaFold2, protein structure prediction, PyTorch, templates
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[cuEquivariance]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-NIM]], [[NIM-for-MSA-Search]], [[NIM-for-AlphaFold2]], [[NIM-for-AlphaFold2-Multimer]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-ProteinMPNN]], [[cuEquivariance]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]]
 **Sources:** https://docs.nvidia.com/nim/bionemo/openfold2/latest/overview.html; https://docs.nvidia.com/nim/bionemo/openfold2/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -17,10 +17,12 @@ This page is distinct from [[NIM-for-AlphaFold2]] because OpenFold2 is the open 
 ## Connections
 - [[NVIDIA-BioNeMo]] - BioNeMo includes OpenFold2 in its biomolecular NIM ecosystem.
 - [[NVIDIA-NIM]] - delivered as an NVIDIA NIM microservice.
+- [[NIM-for-MSA-Search]] - MSA and template search are preprocessing inputs for OpenFold-style structure prediction.
 - [[NIM-for-AlphaFold2]] - related AlphaFold2 NIM for single-chain protein structure prediction.
 - [[NIM-for-AlphaFold2-Multimer]] - multimer AlphaFold2 NIM for multiple protein sequences.
 - [[NIM-for-OpenFold3]] - next-generation all-atom complex prediction page.
 - [[NIM-for-Boltz2]] - biomolecular complex and binding-affinity prediction NIM.
+- [[NIM-for-ProteinMPNN]] - sequence-design NIM adjacent to structure generation and validation workflows.
 - [[cuEquivariance]] - related CUDA-X library for structure-aware/equivariant model kernels.
 - [[NVIDIA-Clara]] - healthcare/life-sciences umbrella platform.
 - [[NVIDIA-AI-Enterprise]] - enterprise support and production deployment context.
@@ -30,4 +32,3 @@ This page is distinct from [[NIM-for-AlphaFold2]] because OpenFold2 is the open 
 - "PyTorch re-implementation"
 - "monomer"
 - "optional inputs"
-
