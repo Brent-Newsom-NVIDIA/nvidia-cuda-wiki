@@ -2,6 +2,86 @@
 
 ---
 
+## 2026-04-29 - Gap analysis and first broad NVIDIA docs/build expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/pre-expansion-20260429T042416Z`; local Git tag `codex-backup-pre-expansion-20260429T042416Z`
+
+**Source URLs:** https://docs.nvidia.com/, https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://docs.nvidia.com/nim/index.html, https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://build.nvidia.com/models, https://docs.nvidia.com/dynamo/index.html, https://docs.nvidia.com/aistore, https://docs.nvidia.com/nemoclaw/index.html, https://docs.nvidia.com/openshell/index.html, https://docs.nvidia.com/aerial/index.html, https://docs.nvidia.com/ai-grid/index.html, https://docs.nvidia.com/attestation/index.html, https://docs.nvidia.com/base-command-manager/index.html, https://docs.nvidia.com/baseos/index.html, https://docs.nvidia.com/dgx-cloud/index.html, https://docs.nvidia.com/dgx-superpod/index.html, https://docs.nvidia.com/datacenter/tesla/index.html, https://docs.nvidia.com/cloud-functions/index.html, https://docs.nvidia.com/cupti-python/, https://docs.nvidia.com/cupynumeric/latest/
+
+**Gap analysis summary:**
+
+- Checked all current `content/wiki/*.md` pages against NVIDIA Docs Hub, CUDA 13.2 documentation, build.nvidia.com model catalog, and newly surfaced NVIDIA platform docs.
+- Prioritized latest/current NVIDIA-authored public docs and avoided creating duplicate topic pages when an existing topic page should absorb new material.
+- Identified major missing clusters: CUDA compiler/runtime/API references, device/distributed CUDA-X libraries, image codecs, CUDA deployment contexts, NeMo agent lifecycle components, NVIDIA agent runtime/sandboxing, AI factory storage/OS/cluster management, DGX Cloud/SuperPOD, and current Nemotron/NIM model catalog updates.
+
+**Pages created (42 total):**
+
+### CUDA platform, APIs, compiler SDK, and deployment (14)
+- `content/wiki/NVIDIA-CUDA.md`
+- `content/wiki/CUDA-Runtime-API.md`
+- `content/wiki/CUDA-Driver-API.md`
+- `content/wiki/CUDA-Compatibility.md`
+- `content/wiki/PTX-ISA.md`
+- `content/wiki/CUDA-Cpp-Standard-Library.md`
+- `content/wiki/nvFatbin.md`
+- `content/wiki/PTX-Compiler-APIs.md`
+- `content/wiki/CUDA-Binary-Utilities.md`
+- `content/wiki/CUDA-Compile-Time-Advisor.md`
+- `content/wiki/CUDA-Debugger-API.md`
+- `content/wiki/libdevice.md`
+- `content/wiki/NVVM-IR.md`
+- `content/wiki/CUDA-on-WSL.md`
+
+### CUDA-X libraries and codecs (10)
+- `content/wiki/cuFFTDx.md`
+- `content/wiki/cuBLASDx.md`
+- `content/wiki/cuBLASMp.md`
+- `content/wiki/cuSOLVERMp.md`
+- `content/wiki/cuSPARSELt.md`
+- `content/wiki/nvJPEG2000.md`
+- `content/wiki/nvTIFF.md`
+- `content/wiki/CUDA-for-Tegra.md`
+- `content/wiki/CUPTI-Python.md`
+- `content/wiki/cuPyNumeric.md`
+
+### Infrastructure, platform, and AI factory docs (10)
+- `content/wiki/NVIDIA-Dynamo.md`
+- `content/wiki/NVIDIA-AIStore.md`
+- `content/wiki/NVIDIA-AI-Grid.md`
+- `content/wiki/NVIDIA-Attestation.md`
+- `content/wiki/NVIDIA-Base-Command-Manager.md`
+- `content/wiki/NVIDIA-BaseOS.md`
+- `content/wiki/NVIDIA-DGX-Cloud.md`
+- `content/wiki/NVIDIA-DGX-SuperPOD.md`
+- `content/wiki/NVIDIA-Data-Center-GPU-Drivers.md`
+- `content/wiki/NVIDIA-Cloud-Functions.md`
+
+### Agents, NeMo, and virtualization (8)
+- `content/wiki/NVIDIA-NemoClaw.md`
+- `content/wiki/NVIDIA-OpenShell.md`
+- `content/wiki/NVIDIA-Agent-Intelligence-Toolkit.md`
+- `content/wiki/NVIDIA-AI-Aerial.md`
+- `content/wiki/NeMo-Platform.md`
+- `content/wiki/NeMo-Retriever.md`
+- `content/wiki/NVIDIA-MIG.md`
+- `content/wiki/NVIDIA-vGPU.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md` - refreshed from current NIM docs and build.nvidia.com model catalog; linked Dynamo, NeMo Platform, NeMo Retriever, NIXL, and Nemotron.
+- `content/wiki/NVIDIA-NeMo.md` - reframed from framework-only to current NeMo lifecycle suite covering microservices, framework, Retriever, Guardrails, Agent Toolkit, and deployment.
+- `content/wiki/Nemotron.md` - updated from current build.nvidia.com Nemotron model cards, including Nemotron 3, content safety, ASR, OCR/document, retrieval, and multimodal directions.
+- `content/wiki/NVIDIA-DGX.md` - connected DGX Cloud, DGX SuperPOD, BaseOS, Base Command Manager, and MIG.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected NeMo Platform, Retriever, Agent Toolkit, MIG, vGPU, and Attestation.
+- `content/wiki/NGC.md` - connected NGC with NIM, Nemotron, NeMo Platform, and Dynamo.
+- `content/wiki/NVIDIA-Base-Command.md` - clarified links to Base Command Manager, DGX Cloud, DGX SuperPOD, and BaseOS.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md` - connected CUDA compatibility, DGX SuperPOD, MIG, and Attestation.
+- `content/wiki/NVCC.md` - connected PTX, NVVM IR, libdevice, nvFatbin, binary utilities, and compile-time advisor.
+- `content/wiki/cuBLAS.md`, `content/wiki/cuFFT.md`, `content/wiki/cuSPARSE.md` - linked new Dx/Mp/structured-sparsity companion pages.
+- `content/index.md` - updated page count to 182, added all 42 new pages, and fixed pre-existing missing index entries for `PyTorch` and `cuStateVec`.
+
+---
+
 ## 2026-04-28 - Ingested NVIDIA Mission Control docs into a consolidated wiki page
 
 **Source URLs:** https://docs.nvidia.com/mission-control/index.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html

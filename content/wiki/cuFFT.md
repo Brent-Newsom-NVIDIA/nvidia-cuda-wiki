@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, FFT, Signal Processing, Math, HPC, Scientific Computing
-**Related:** [[cuBLAS]], [[cuSOLVER]], [[NVSHMEM]], [[nvmath-python]]
+**Related:** [[cuBLAS]], [[cuFFTDx]], [[cuSOLVER]], [[NVSHMEM]], [[nvmath-python]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuFFT is NVIDIA's GPU-accelerated library for Fast Fourier Transform (FFT) computations, supporting 1D, 2D, and 3D transforms over real and complex data. It provides FFTW-compatible APIs and scales from single-GPU to multi-node exascale systems via cuFFTMp. Applications span deep learning, computational physics, molecular dynamics, seismic imaging, and medical imaging.
@@ -46,6 +46,7 @@ FFTs are a core computation in signal processing, physics simulation, and deep l
 
 ## Connections
 - [[cuBLAS]] — complements cuFFT for dense linear algebra in signal pipelines
+- [[cuFFTDx]] — device-side FFT operations for fused CUDA kernels
 - [[NVSHMEM]] — used by cuFFTMp for multi-node distributed FFTs
 - [[nvmath-python]] — Python interface exposing cuFFT functionality
 - [[cuSOLVER]] — used alongside cuFFT in scientific computing pipelines

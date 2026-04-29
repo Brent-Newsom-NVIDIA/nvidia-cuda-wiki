@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, hardware, HPC, AI supercomputer, DGX, data center, training, infrastructure
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA DGX systems are purpose-built AI supercomputers and infrastructure platforms integrating NVIDIA's most powerful GPUs, NVLink interconnects, high-bandwidth memory, and software stack into validated, production-ready systems for large-scale AI training and inference. The DGX family spans from single-node workstations (DGX Station) to rack-scale (DGX H100/H200) to hyperscale (DGX SuperPOD), and DGX Cloud — a fully managed cloud service. DGX represents NVIDIA's vertically integrated "AI factory" vision: hardware, interconnect, software, and MLOps stack combined and optimized end-to-end.
@@ -54,10 +54,15 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 
 ## Connections
 - [[NVIDIA-Base-Command]] — Base Command Platform is the MLOps software layer for DGX SuperPOD and DGX Cloud
+- [[NVIDIA-Base-Command-Manager]] — Base Command Manager handles cluster management and infrastructure operations for AI data centers
+- [[NVIDIA-BaseOS]] — BaseOS/DGX OS provides the validated operating system layer for DGX deployments
+- [[NVIDIA-DGX-Cloud]] — cloud-accessible counterpart to on-prem DGX infrastructure
+- [[NVIDIA-DGX-SuperPOD]] — scale-out DGX cluster architecture for AI factories and large training runs
 - [[NVIDIA-Blackwell-Architecture]] — DGX B200 and GB200 NVL72 are the flagship DGX systems for Blackwell architecture
 - [[NVIDIA-Hopper-Architecture]] — DGX H100 and H200 are the Hopper-generation DGX systems
 - [[NVLink]] — NVLink/NVSwitch fabric is the defining interconnect technology within every DGX node
 - [[NCCL]] — NCCL handles GPU-to-GPU communication for distributed training across DGX nodes
+- [[NVIDIA-MIG]] — partitions supported DGX GPUs for isolated multi-tenant workloads
 - [[NVIDIA-GPU-Operator]] — GPU Operator provisions Kubernetes on DGX SuperPOD nodes
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software included with DGX systems for production AI workloads
 

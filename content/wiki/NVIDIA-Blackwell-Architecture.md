@@ -2,9 +2,9 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Blackwell, B100, B200, GB200, NVLink 5, HBM3e, FP4, Tensor Core, AI superchip
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-DGX]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]]
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Blackwell is the GPU architecture introduced in 2024, succeeding Hopper, and represents NVIDIA's most powerful computing platform to date. Named after statistician David Blackwell, the architecture introduces 5th-generation NVLink, 2nd-generation Transformer Engine with FP4 precision, a new Decompression Engine, a Reliability, Availability, and Serviceability (RAS) Engine, and the GB200 "superchip" combining two B200 GPUs with a Grace CPU via NVLink-C2C. Blackwell delivers up to 5× AI inference throughput versus Hopper H100, targeting the next generation of trillion-parameter LLM training and serving.
@@ -63,10 +63,13 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 ## Connections
 - [[NVIDIA-Hopper-Architecture]] — Blackwell succeeds Hopper; B200 replaces H100 as NVIDIA's flagship data center GPU
 - [[NVIDIA-DGX]] — DGX B200 and GB200 NVL72 are the Blackwell-based DGX systems
+- [[NVIDIA-DGX-SuperPOD]] — Blackwell-based DGX clusters are part of the current AI factory scale-out story
 - [[NVLink]] — NVLink 5 is a defining Blackwell feature; NVSwitch 4 enables GB200 NVL72 rack-scale connectivity
 - [[NVIDIA-Grace-CPU]] — Grace CPU pairs with B200 in GB200 superchip via NVLink-C2C
 - [[TensorRT]] — TensorRT exploits Blackwell FP4/FP6 precision and new Tensor Core capabilities for maximum throughput
 - [[CUDA-Graphs]] — CUDA Graphs optimizations align with Blackwell's pipelining capabilities for LLM inference
+- [[CUDA-Compatibility]] — Blackwell CUDA compatibility and tuning guidance are part of current CUDA documentation
+- [[NVIDIA-Attestation]] — confidential computing and platform integrity are part of modern NVIDIA data center deployments
 
 ## Resources
 - [Blackwell Architecture](https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/)
