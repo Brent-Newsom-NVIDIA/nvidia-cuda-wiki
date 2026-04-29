@@ -38,7 +38,7 @@
 - [[cuTENSOR]] — GPU-accelerated tensor contraction, reduction, and elementwise operations
 - [[cuTENSORMg]] — cuTENSOR single-process multi-GPU tensor operation support
 - [[cuTENSORMp]] — cuTENSOR multi-process distributed tensor contraction support
-- [[cuDSS]] — GPU-accelerated direct sparse solver for very sparse linear systems
+- [[cuDSS]] — Preview CUDA direct sparse solver with single-GPU, multi-GPU, and multi-node modes
 - [[AmgX]] — GPU-accelerated algebraic multigrid and Krylov solver library (open source)
 - [[Incomplete-LU-Cholesky]] — CUDA whitepaper guidance for preconditioned iterative solvers using cuSPARSE and cuBLAS
 - [[nvmath-python]] — Python interface to NVIDIA CUDA-X math libraries (cuBLAS, cuFFT, cuRAND, cuDSS)
@@ -93,7 +93,7 @@
 
 ### Scientific & Physics
 - [[NVIDIA-Warp]] — open-source Python framework for GPU-accelerated physics simulation with auto-diff
-- [[cuEquivariance]] — GPU-accelerated kernels for equivariant neural networks (drug discovery, materials science)
+- [[cuEquivariance]] — NVIDIA geometric neural network library with segmented polynomials, CUDA kernels, PyTorch, and JAX
 - [[cuLitho]] — GPU-accelerated computational lithography (OPC, ILT) for semiconductor manufacturing
 - [[NVIDIA-Quantum]] — NVIDIA accelerated quantum computing platform for QPU, GPU, CUDA-Q, and NVQLink workflows
 - [[NVIDIA-NVQLink]] — realtime GPU-QPU integration architecture for calibration, QEC, and hybrid quantum workflows
@@ -115,7 +115,7 @@
 - [[NVIDIA-DGX-Quantum]] — queryable DGX Quantum architecture identity now redirected toward NVQLink as the current direction
 
 ### Security & Cryptography
-- [[cuPQC]] — GPU-accelerated post-quantum cryptography (Kyber, Dilithium, FALCON, SPHINCS+)
+- [[cuPQC]] — CUDA cryptography SDK with cuPQC-PK for ML-KEM/ML-DSA and cuPQC-Hash for hash/Merkle operations
 
 ### Signal & Electronic Warfare
 - [[cuEST]] — GPU-accelerated RF signal processing for electronic warfare and spectrum monitoring

@@ -1,31 +1,26 @@
 # cuEquivariance
 
 **Type:** Technology
-**Tags:** CUDA, NVIDIA, GPU, Equivariant Neural Networks, Drug Discovery, Materials Science, Scientific AI
-**Related:** [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]], [[NVIDIA-BioNeMo]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold2]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Tags:** CUDA, NVIDIA, GPU, Equivariant Neural Networks, Geometric Neural Networks, PyTorch, JAX, Scientific AI
+**Related:** [[PyTorch]], [[JAX]], [[cuDNN]], [[cuTENSOR]], [[NVIDIA-Warp]], [[cuBLAS]], [[NVIDIA-BioNeMo]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-OpenFold2]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NVIDIA-CUDA]]
+**Sources:** https://docs.nvidia.com/cuda/cuequivariance/, https://docs.nvidia.com/cuda/cuequivariance/changelog.html, https://github.com/NVIDIA/cuEquivariance
+**Last Updated:** 2026-04-29
 
 ## Summary
-cuEquivariance is a CUDA-X library providing optimized GPU kernels for geometry-aware (equivariant) neural networks used in drug discovery, materials science, and molecular simulation. It delivers dramatic speedups — 10x for MACE models, 200x for symmetric contractions, 3.5x for triangle operations — and supports leading interatomic potential models (MACE, Allegro, NequIP) and protein structure prediction models (DiffDock, Boltz, OpenFold). It offers JAX and PyTorch frontends.
+cuEquivariance is NVIDIA's Python library for building high-performance geometric/equivariant neural networks with segmented polynomials, segmented tensor products, triangular operations, and optimized CUDA kernels. Current docs expose core non-ML components plus PyTorch and JAX frontends.
 
 ## Detail
 
 ### Purpose
-Equivariant neural networks (E3NNs) respect the symmetries of physical systems (rotations, reflections, translations) and are therefore highly accurate for molecular property prediction and simulation. However, their core operations — irreducible representation (irreps) tensor products, symmetric contractions, triangle attention — are computationally expensive and not well-served by generic cuBLAS or cuDNN kernels. cuEquivariance provides hand-optimized CUDA implementations of these specific operations.
+Equivariant neural networks respect symmetries such as rotations and translations, which is valuable for physical, molecular, structural biology, and materials-science models. cuEquivariance gives model authors a way to describe these operations with group representations and segmented tensor-product/polynomial descriptors, then execute them through optimized CUDA-backed PyTorch or JAX paths.
 
 ### Key Features
-- Optimized CUDA kernels for irreps tensor products and tensor contractions
-- Triangle attention and triangle multiplication kernels (used in AlphaFold-style architectures)
-- 10x speedup for MACE model performance
-- 200x speedup for symmetric contractions
-- 3.5x speedup for triangle operations
-- Scalability: up to 100,000 atoms per GPU simulation
-- Flexible API: define custom irreps basis tensor products
-- Extensible beyond irreps for general equivariant operations
-- JAX frontend for JAX-based frameworks
-- PyTorch frontend for PyTorch-based frameworks
-- Supports compute capabilities cu12 and cu13
+- Core package for non-ML components such as representations, irreps, layouts, descriptors, segmented tensor products, and segmented polynomials.
+- PyTorch package for modules such as segmented polynomial execution, channel-wise and fully connected tensor products, linear layers, spherical harmonics, rotation/inversion utilities, triangle attention, and triangle multiplicative update.
+- JAX package for representation arrays, segmented/equivariant polynomial execution, spherical harmonics, indexed linear operations, triangle attention, and triangle multiplicative update.
+- Descriptor hierarchy based on `EquivariantPolynomial`, `SegmentedPolynomial`, and `SegmentedTensorProduct`.
+- CUDA kernel packages for PyTorch and JAX with CUDA 12 and CUDA 13 variants.
+- Open-source frontend under Apache 2.0, with NVIDIA-distributed optimized CUDA operations.
 
 ### Use Cases
 - Drug discovery: molecular docking and force field computation (DiffDock)
@@ -36,15 +31,20 @@ Equivariant neural networks (E3NNs) respect the symmetries of physical systems (
 - Catalyst design and discovery
 
 ### Hardware Requirements
-- NVIDIA GPU, CUDA compute capability 12.x or 13.x (Hopper H100 / Blackwell B200)
-- JAX or PyTorch installation for respective frontends
+- Linux x86_64 or aarch64 for CUDA operations packages.
+- Python 3.10-3.14.
+- PyTorch 2.4.0+ for torch packages.
+- JAX 0.8.1+ for JAX packages.
+- CUDA 12 or CUDA 13 package variants for optimized GPU kernels.
 
 ### Language Bindings
 - Python via JAX frontend
 - Python via PyTorch frontend
-- C++ core (underlying CUDA kernels)
+- Core Python package for non-ML representation and descriptor components
 
 ## Connections
+- [[PyTorch]] - cuEquivariance provides PyTorch modules and CUDA operation packages.
+- [[JAX]] - cuEquivariance provides JAX execution functions and array wrappers.
 - [[cuDNN]] — cuDNN provides general DNN primitives; cuEquivariance provides equivariance-specific ops
 - [[cuTENSOR]] — cuTENSOR handles general tensor contractions; cuEquivariance handles irreps-specific contractions
 - [[NVIDIA-Warp]] — Warp enables differentiable physics simulation; cuEquivariance enables equivariant ML on molecular data
@@ -55,6 +55,11 @@ Equivariant neural networks (E3NNs) respect the symmetries of physical systems (
 - [[NIM-for-OpenFold2]] — OpenFold-style structure prediction is part of the BioNeMo structure-model family.
 - [[NIM-for-DiffDock]] — molecular docking NIM based on equivariant/geometric pose prediction.
 - [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] and [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIMs use MLIP model families such as MACE, which are adjacent to cuEquivariance acceleration.
+- [[NVIDIA-CUDA]] - CUDA platform underneath the optimized kernel packages.
+
+## Source Excerpts
+- NVIDIA describes cuEquivariance as a Python library for high-performance geometric neural networks using segmented polynomials, triangular operations, and optimized CUDA kernels.
+- Current docs organize cuEquivariance into core, JAX, and PyTorch packages.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/cuequivariance)

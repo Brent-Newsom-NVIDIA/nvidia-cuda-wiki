@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 96: current CUDA specialty library refresh
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch96-20260429T130150Z`; local Git tag `codex-backup-overnight-pre-batch96-20260429T130150Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cupqc/index.html, https://docs.nvidia.com/cuda/cupqc/overview/features.html, https://docs.nvidia.com/cuda/cupqc/overview/requirements.html, https://docs.nvidia.com/cuda/cupqc/additional/release_notes.html, https://docs.nvidia.com/cuda/cudss/index.html, https://docs.nvidia.com/cuda/cudss/release_notes.html, https://docs.nvidia.com/cuda/cuequivariance/
+
+**Gap analysis summary:**
+
+- Found existing cuPQC, cuDSS, and cuEquivariance pages whose summaries lagged current NVIDIA docs.
+- Refreshed cuPQC around the current SDK structure: cuPQC-PK for ML-KEM/ML-DSA and cuPQC-Hash for SHA-2/SHA-3/SHAKE/Poseidon2/Merkle operations.
+- Refreshed cuDSS around current preview features, including batching, hybrid modes, MG/MGMN/MT execution, CUDA Graphs, deterministic mode, and v0.7.x release signals.
+- Refreshed cuEquivariance around current segmented-polynomial/segmented-tensor-product terminology, package layout, PyTorch/JAX frontends, and CUDA 12/13 operation packages.
+- Updated related index and NVIDIA Quantum wording without creating duplicate subpages for cuPQC-PK, cuPQC-Hash, or cuDSS feature guides.
+
+**Pages created:** none
+
+**Pages updated:**
+
+- `content/wiki/cuPQC.md`
+- `content/wiki/cuDSS.md`
+- `content/wiki/cuEquivariance.md`
+- `content/wiki/NVIDIA-Quantum.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 95: cuFFTW FFTW-compatible cuFFT interface
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch95-20260429T125808Z`; local Git tag `codex-backup-overnight-pre-batch95-20260429T125808Z`

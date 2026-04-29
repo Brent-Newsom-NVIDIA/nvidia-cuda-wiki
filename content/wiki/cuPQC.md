@@ -2,57 +2,62 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Post-Quantum Cryptography, Security, Cryptography, CUDA-X
-**Related:** [[NVIDIA-Quantum]], [[NVCC]], [[NVRTC]], [[cuBLAS]], [[Thrust]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/cupqc, https://www.nvidia.com/en-us/solutions/quantum-computing/
+**Related:** [[NVIDIA-Quantum]], [[NVIDIA-CUDA]], [[NVCC]], [[NVRTC]], [[CUDA-Cpp-Standard-Library]], [[Thrust]]
+**Sources:** https://docs.nvidia.com/cuda/cupqc/index.html, https://docs.nvidia.com/cuda/cupqc/overview/features.html, https://docs.nvidia.com/cuda/cupqc/overview/requirements.html, https://docs.nvidia.com/cuda/cupqc/additional/release_notes.html, https://www.nvidia.com/en-us/solutions/quantum-computing/
 **Last Updated:** 2026-04-29
 
 ## Summary
-cuPQC (CUDA Post-Quantum Cryptography) is an NVIDIA CUDA-X library providing GPU-accelerated implementations of post-quantum cryptographic (PQC) algorithms standardized or under evaluation by NIST. As quantum computers threaten to break current public-key cryptography (RSA, ECC), cuPQC enables organizations to perform high-throughput PQC operations — key generation, encapsulation/decapsulation, signing/verification — at GPU speeds, supporting the migration of security infrastructure to quantum-resistant algorithms.
-The current [[NVIDIA-Quantum]] page surfaces cuPQC alongside CUDA-Q, cuQuantum, and NVQLink as part of NVIDIA's broader quantum computing and quantum-safe security story.
+cuPQC is NVIDIA's CUDA SDK for building high-performance cryptographic applications on GPUs. Current documentation describes two device-side libraries: cuPQC-PK for post-quantum public-key algorithms such as ML-KEM and ML-DSA, and cuPQC-Hash for SHA-2, SHA-3, SHAKE, Poseidon2, and Merkle tree operations. The SDK is designed to integrate directly into CUDA kernels so cryptographic work can be fused with GPU computation.
 
 ## Detail
 
 ### Purpose
-cuPQC addresses the massive computational cost of post-quantum cryptographic operations, which are significantly more expensive than RSA/ECC equivalents. By accelerating PQC on NVIDIA GPUs, it enables applications that require high-throughput cryptographic processing (TLS certificate authorities, code signing, VPN gateways, hardware security modules) to adopt quantum-resistant algorithms without sacrificing performance.
+Cryptographic workloads often need both high throughput and low data-movement overhead. cuPQC addresses this by exposing CUDA-kernel-integrated cryptographic building blocks, allowing applications to run post-quantum key/signature operations and hash/Merkle computations inside GPU kernels rather than staging work through CPU-side libraries.
 
-### Key Features
-- GPU-accelerated CRYSTALS-Kyber (ML-KEM): NIST-standardized key encapsulation mechanism
-- GPU-accelerated CRYSTALS-Dilithium (ML-DSA): NIST-standardized digital signature scheme
-- GPU-accelerated FALCON: NIST-standardized lattice-based signature scheme
-- GPU-accelerated SPHINCS+ (SLH-DSA): hash-based signature scheme
-- Batched operations: thousands of PQC operations per GPU kernel call
-- Both device-side (kernel) and host-side APIs
-- Integration with CUDA streams for pipelined cryptographic processing
-- Constant-time implementations for side-channel resistance
-- Support for multiple NIST security levels (1, 3, 5)
+### Current SDK shape
+- **cuPQC-PK:** device-side post-quantum public-key library for ML-KEM key encapsulation and ML-DSA digital signatures.
+- **cuPQC-Hash:** device-side cryptographic hash library for SHA-2, SHA-3, SHAKE, Poseidon2, and Merkle tree operations.
+- **Descriptor/operator model:** applications describe the algorithm, function, execution mode, and block dimension in CUDA C++ types.
+- **Kernel fusion:** cryptographic functions are intended to execute directly in CUDA kernels so they can be fused with other GPU work.
+- **Batched throughput:** current docs emphasize high-throughput batched operations for both public-key and hash/Merkle workloads.
+- **Security posture:** NVIDIA documents side-channel protections for cuPQC-PK and a separate security notes section.
+- **Packaging:** current releases use static libraries such as `libcupqc-pk.a` and `libcupqc-hash.a`, with CommonDx headers as a dependency.
+- **Release direction:** cuPQC 0.4.1 documents the cuPQC-PK/cuPQC-Hash naming split and new Poseidon2/Merkle tree improvements.
 
 ### Use Cases
 - High-throughput TLS/certificate authority operations migrating to PQC
 - Code signing and firmware authentication at scale
 - VPN and secure channel establishment with quantum-resistant KEM
-- Blockchain and digital ledger systems requiring PQC signatures
+- Blockchain, ZK, and digital ledger systems requiring GPU-side hashing or Merkle tree computation
 - HSM (Hardware Security Module) software acceleration
 - IoT device provisioning at scale
-- Research into PQC performance benchmarking
+- Research into PQC and cryptographic hash performance benchmarking
 
 ### Hardware Requirements
-- NVIDIA GPU with CUDA Compute Capability 7.0+ (Volta minimum)
-- A100/H100 recommended for maximum throughput
-- CUDA 11.0 or higher
+- CUDA Toolkit 12.8 or newer
+- Supported CUDA compiler, with NVCC 12.8+ listed in current requirements
+- C++17-capable host compiler
+- x86_64 or Arm64 CPU
+- NVIDIA GPU architecture `sm_70`, `sm_75`, `sm_80`, `sm_86`, `sm_87`, `sm_89`, or `sm_90`
 
 ### Language Bindings
-- C (C API)
-- C++ (header-based API)
-- Python bindings (planned/available via wrapper)
+- CUDA C++ device-side libraries
+- CMake integration through SDK package configuration files
 
 ## Connections
 - [[NVIDIA-Quantum]] - cuPQC is listed in NVIDIA's current quantum solution map for quantum-safe security.
-- [[NVCC]] — cuPQC kernels compiled with NVCC for device-side execution
-- [[NVRTC]] — runtime compilation optionally used for dynamic algorithm selection
-- [[Thrust]] — Thrust primitives used internally for auxiliary GPU operations
-- [[cuBLAS]] — lattice-based PQC involves polynomial matrix operations that parallel BLAS patterns
+- [[NVIDIA-CUDA]] - platform context for CUDA kernels, compilers, and GPU execution.
+- [[NVCC]] - current cuPQC examples compile CUDA C++ with LTO-oriented NVCC flags.
+- [[NVRTC]] - adjacent runtime compilation path for systems that generate CUDA code dynamically.
+- [[CUDA-Cpp-Standard-Library]] - C++17 CUDA development context for header/static-library integration.
+- [[Thrust]] - adjacent CUDA C++ parallel-programming library often used in GPU-side data processing.
+
+## Source Excerpts
+- NVIDIA describes cuPQC as an SDK of high-performance GPU cryptography libraries that integrate directly into CUDA kernels.
+- Current docs split the SDK into cuPQC-PK for ML-KEM/ML-DSA and cuPQC-Hash for SHA-2, SHA-3, SHAKE, Poseidon2, and Merkle tree operations.
 
 ## Resources
+- [cuPQC Documentation](https://docs.nvidia.com/cuda/cupqc/index.html)
+- [cuPQC SDK Features](https://docs.nvidia.com/cuda/cupqc/overview/features.html)
+- [cuPQC System Requirements](https://docs.nvidia.com/cuda/cupqc/overview/requirements.html)
 - [NVIDIA cuPQC Developer Page](https://developer.nvidia.com/cupqc)
-- [NIST PQC Standardization](https://csrc.nist.gov/projects/post-quantum-cryptography)
-- [NVIDIA Security Libraries Overview](https://developer.nvidia.com/cryptography)
