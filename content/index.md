@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 343*
+*Total pages: 345*
 
 ---
 
@@ -283,6 +283,8 @@
 - [[NVIDIA-Parabricks]] — Clara genomics acceleration platform for next-generation sequencing pipelines
 - [[NVIDIA-Clara-Viz]] — Clara medical image visualization toolkit for 2D/3D imaging and pathology data
 - [[NVIDIA-MONAI-Toolkit]] — NVIDIA AI Enterprise-supported MONAI distribution for medical imaging AI development
+- [[NIM-for-MAISI]] — Medical imaging NIM for synthetic 3D CT generation and annotation masks
+- [[NIM-for-VISTA-3D]] — Medical imaging NIM for interactive 3D segmentation and annotation
 - [[NVIDIA-Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
 - [[NVIDIA-DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
 

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -64,6 +64,7 @@ Moving deep learning models from training to production requires inference-time 
 - [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] — current Speech NIM docs package TensorRT/CUDA execution inside ASR, TTS, and NMT containers.
 - [[NVIDIA-Background-Noise-Removal-NIM]] — BNR docs name TensorRT as part of the audio cleanup NIM acceleration stack.
 - [[NVIDIA-NemoGuard-NIMs]] and [[NIM-for-Multimodal-Safety]] — safety NIMs use NIM LLM or Triton/TensorRT-backed deployment surfaces.
+- [[NIM-for-MAISI]] and [[NIM-for-VISTA-3D]] - medical imaging NIMs sit on the same NVIDIA optimized inference deployment stack.
 - [[NIM-for-OpenFold3]] and [[NIM-for-Boltz2]] — BioNeMo NIMs whose docs reference TensorRT-backed production inference optimization.
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
 - [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.

@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, MONAI, Clara, medical imaging, healthcare AI, AI Enterprise, federated learning
-**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-Holoscan]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[PyTorch]]
-**Sources:** https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/clara/monai/overview.html
+**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NVIDIA-Holoscan]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NGC]], [[PyTorch]]
+**Sources:** https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/clara/monai/overview.html, https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -14,11 +14,16 @@ MONAI itself is an open-source medical AI framework co-founded by NVIDIA and aca
 
 The toolkit supports medical image labeling, training, federated learning, Auto3D segmentation, model-zoo onboarding, Jupyter workflows, and Base Command Platform usage. It is strongly connected to [[NVIDIA-AI-Enterprise]] because enterprise support, security, and deployment options are part of NVIDIA's MONAI offering.
 
+Current medical NIM pages include [[NIM-for-MAISI]] for synthetic 3D CT image generation and [[NIM-for-VISTA-3D]] for 3D medical image segmentation and annotation.
+
 ## Connections
 - [[NVIDIA-Clara]] - parent healthcare AI platform.
 - [[NVIDIA-Clara-Viz]] - visualization companion for medical imaging data.
+- [[NIM-for-MAISI]] - medical imaging NIM for synthetic CT image and segmentation-mask generation.
+- [[NIM-for-VISTA-3D]] - medical imaging NIM for interactive 3D segmentation and annotation.
 - [[NVIDIA-Holoscan]] - real-time medical device deployment path for AI applications.
 - [[NVIDIA-AI-Enterprise]] - enterprise-supported distribution and licensing context.
+- [[NVIDIA-NIM]] - deployment layer for current medical imaging NIMs.
 - [[NGC]] - distribution path for containers and model assets.
 - [[PyTorch]] - MONAI Core is PyTorch-driven for medical imaging model development.
 

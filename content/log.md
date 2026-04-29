@@ -2,6 +2,36 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 28: MONAI medical imaging NIMs
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch28-20260429T075833Z`; local Git tag `codex-backup-overnight-pre-batch28-20260429T075833Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/maisi/latest/index.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/index.html, https://docs.nvidia.com/nim/medical/vista3d/latest/api-reference.html
+
+**Gap analysis summary:**
+
+- Added the two current NVIDIA medical imaging NIM docs pages that were missing from the Clara/MONAI graph: MAISI and VISTA-3D.
+- Kept MAISI and VISTA-3D separate because each has its own durable NVIDIA documentation page, model purpose, API surface, and query intent.
+- Connected MAISI to MONAI, Clara, Clara Viz, NIM, AI Enterprise, NGC, TensorRT, and Triton as the synthetic CT generation and annotation-mask NIM.
+- Connected VISTA-3D to MONAI, Clara, Clara Viz, NIM, AI Enterprise, NGC, TensorRT, and Triton as the interactive 3D segmentation and annotation NIM.
+- Did not create separate pages for release notes, API endpoints, 3D Slicer examples, or support matrix rows.
+
+**Pages created (2 total):**
+
+- `content/wiki/NIM-for-MAISI.md`
+- `content/wiki/NIM-for-VISTA-3D.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-MONAI-Toolkit.md` - added current medical imaging NIMs to the MONAI graph.
+- `content/wiki/NVIDIA-Clara.md` and `content/wiki/NVIDIA-Clara-Viz.md` - linked MAISI and VISTA-3D into healthcare imaging and visualization workflows.
+- `content/wiki/NVIDIA-NIM.md` - promoted medical imaging NIMs into the NIM catalog graph.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected medical imaging NIMs to enterprise deployment context.
+- `content/wiki/TensorRT.md` and `content/wiki/Triton-Inference-Server.md` - connected medical imaging NIMs to acceleration and serving layers.
+- `content/index.md` - updated page count to 345 and indexed the new medical imaging NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 27: NemoGuard and multimodal safety NIMs
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch27-20260429T075302Z`; local Git tag `codex-backup-overnight-pre-batch27-20260429T075302Z`

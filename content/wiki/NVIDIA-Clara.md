@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, healthcare, medical imaging, genomics, drug discovery, AI, radiology, clinical AI, life sciences
-**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-BioNeMo]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[TensorRT]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html
+**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NVIDIA-BioNeMo]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NGC]], [[TensorRT]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,7 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 
 **Clara Imaging (Medical Imaging AI):**
 - **[[NVIDIA-MONAI-Toolkit]]:** NVIDIA AI Enterprise-supported MONAI development sandbox for medical imaging AI, including MONAI Core, MONAI Label, NVIDIA FLARE integration, and curated pretrained models.
+- **Medical imaging NIMs:** [[NIM-for-MAISI]] generates synthetic 3D CT images and annotation masks for research workflows, while [[NIM-for-VISTA-3D]] provides interactive 3D segmentation and annotation.
 - **MONAI Deploy:** MLOps framework for packaging, validating, and deploying medical imaging AI as MONAI Application Packages (MAPs) integrated with hospital PACS/VNA systems
 - **Pre-trained Segmentation Models:** AI models for organ segmentation (liver, lungs, kidneys, brain), lesion detection (lung nodules, liver tumors), and annotation (total body segmentation)
 - **[[NVIDIA-Clara-Viz]]:** CUDA-based 2D/3D medical image visualization and digital pathology viewing.
@@ -56,11 +57,13 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 - [[NVIDIA-Parabricks]] — genomics acceleration component of Clara for next-generation sequencing workflows.
 - [[NVIDIA-Clara-Viz]] — Clara visualization component for 2D/3D medical imaging and pathology.
 - [[NVIDIA-MONAI-Toolkit]] — enterprise-supported MONAI distribution for medical imaging AI development.
+- [[NIM-for-MAISI]] and [[NIM-for-VISTA-3D]] — current medical imaging NIMs for synthetic CT generation and 3D segmentation/annotation.
 - [[NVIDIA-BioNeMo]] — BioNeMo is the drug discovery/computational biology layer of Clara; Clara encompasses BioNeMo + imaging + genomics
 - [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]] — representative BioNeMo NIMs for structure, interaction, and DNA sequence workflows.
 - [[NVIDIA-Holoscan]] — Clara Holoscan became the NVIDIA Holoscan SDK; the real-time streaming AI platform for medical devices
 - [[NVIDIA-Riva]] — Riva provides speech AI for clinical documentation (ambient clinical intelligence use cases)
 - [[NVIDIA-AI-Enterprise]] — Clara workloads run under AI Enterprise license for regulated healthcare environments
+- [[NVIDIA-NIM]] - medical imaging, BioNeMo, and speech healthcare capabilities can be deployed as NIM microservices.
 - [[NGC]] — Clara containers, Parabricks, MONAI models, and reference applications distributed via NGC
 - [[TensorRT]] — TensorRT accelerates inference for MONAI segmentation models and Clara imaging pipelines
 
