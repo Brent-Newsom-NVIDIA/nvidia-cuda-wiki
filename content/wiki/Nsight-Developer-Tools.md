@@ -20,7 +20,7 @@ For notebook and Python workflows, use [[Nsight-JupyterLab-Extension]] to profil
 
 For APIs and SDKs, related pages include [[CUPTI]] for profiler/tracer construction, [[NVTX]] for application ranges and annotations, [[CUDA-Debugger-API]] for debugger integration, [[Nsight-Aftermath-SDK]] for graphics crash dump collection, and [[Nsight-Perf-SDK]] for in-application graphics performance metrics.
 
-The current NVIDIA overview also lists Nsight Copilot, Compute Sanitizer API, and legacy tools. Those should be added as separate wiki pages only when current NVIDIA-authored public docs justify a canonical page.
+The current NVIDIA overview also lists Nsight Copilot and legacy tools. Compute Sanitizer API coverage belongs in [[Compute-Sanitizer]] while NVIDIA keeps the API reference inside the current Compute Sanitizer documentation set.
 
 ## Connections
 - [[Nsight-Systems]] - high-level system profiler and recommended first stop for profiling.

@@ -140,7 +140,7 @@
 - [[CUDA-Runtime-API]] — Higher-level CUDA API for devices, memory, streams, graphs, and launches
 - [[CUDA-Driver-API]] — Lower-level CUDA API for contexts, modules, memory, and explicit control
 - [[CUDA-Math-API]] — device-side math functions (sin, cos, exp, FP16/BF16 intrinsics) for CUDA kernels
-- [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
+- [[Compute-Sanitizer]] — CUDA correctness suite and API for memory, race, init, sync, and custom checker workflows
 - [[NVTX]] — NVIDIA Tools Extension annotation API for profiling markers, ranges, and resource names
 - [[Nsight-Developer-Tools]] — Suite-level hub for NVIDIA Nsight debugging, profiling, correctness, IDE, cloud, and SDK tools
 - [[Nsight-Aftermath-SDK]] — SDK for collecting and analyzing GPU crash mini-dumps from D3D12/Vulkan applications

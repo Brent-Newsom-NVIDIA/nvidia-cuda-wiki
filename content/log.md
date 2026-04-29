@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 79: Compute Sanitizer API refresh
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch79-20260429T115931Z`; local Git tag `codex-backup-overnight-pre-batch79-20260429T115931Z`
+
+**Source URLs:** https://docs.nvidia.com/compute-sanitizer/, https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html, https://docs.nvidia.com/compute-sanitizer/SanitizerApiGuide/index.html, https://docs.nvidia.com/compute-sanitizer/SanitizerNvtxGuide/index.html
+
+**Gap analysis summary:**
+
+- Refreshed the existing Compute Sanitizer page after finding current NVIDIA docs for the tool, Compute Sanitizer API, Sanitizer API reference, and NVTX Memory API under the same product documentation set.
+- Kept Compute Sanitizer API coverage inside `content/wiki/Compute-Sanitizer.md` instead of creating a duplicate API page, matching the current NVIDIA documentation structure and the one-topic-per-page wiki rule.
+- Added current coverage for memcheck, racecheck, initcheck, synccheck, CUDA API error reporting, coredumps, CI-friendly options, custom sanitizer/tracing APIs, and NVTX memory metadata.
+
+**Pages created (0 total):**
+
+- None.
+
+**Pages updated:**
+
+- `content/wiki/Compute-Sanitizer.md` - refreshed current tool and API coverage.
+- `content/wiki/Nsight-Developer-Tools.md` - clarified that Compute Sanitizer API belongs in the existing Compute Sanitizer page.
+- `content/index.md` - updated the Compute Sanitizer entry without changing the total page count.
+
+---
+
 ## 2026-04-29 - Overnight batch 78: NVTX
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch78-20260429T115704Z`; local Git tag `codex-backup-overnight-pre-batch78-20260429T115704Z`
