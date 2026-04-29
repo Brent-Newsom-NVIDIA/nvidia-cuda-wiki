@@ -2,7 +2,7 @@
 
 **Type:** Model / ROS Package
 **Tags:** NVIDIA, Isaac ROS, object detection, DetectNet, Grounding DINO, RT-DETR, YOLOv8, robotics, TensorRT, NITROS
-**Related:** [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-NITROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-nvblox]], [[TensorRT]], [[NVIDIA-Jetson-Platform]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-TAO]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-NITROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-nvblox]], [[TensorRT]], [[NVIDIA-Jetson-Platform]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/object_detection/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_object_detection/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,7 @@ Isaac ROS Object Detection is a robotics-specific perception layer, distinct fro
 
 ## Connections
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem.
+- [[NVIDIA-TAO]] - model training/fine-tuning surface for object detection families such as DINO, Grounding DINO, RT-DETR, DetectNet, and YOLO variants.
 - [[Isaac-ROS-DNN-Inference]] - encoder/inference/decoder infrastructure for object detection models.
 - [[Isaac-ROS-Image-Segmentation]] - pixel-level perception package family adjacent to object detection.
 - [[Isaac-ROS-NITROS]] - acceleration layer used by the object detection package.

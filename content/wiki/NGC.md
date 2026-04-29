@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -54,6 +54,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software is licensed, distributed, and updated exclusively through NGC
 - [[NVIDIA-NIM]] — All NIM containers are hosted in the NGC catalog and deployed via NGC credentials
 - [[NVIDIA-NGC-Catalog]] — public catalog surface for containers, models, Helm charts, and SDKs
+- [[NVIDIA-TAO]] — TAO containers, pretrained CV models, and model artifacts are distributed through NGC.
 - [[Nemotron]] — NVIDIA model family whose downloadable and API-facing artifacts appear through NVIDIA model catalogs
 - [[NeMo-Platform]] — NeMo microservices rely on NGC credentials and NVIDIA-hosted artifacts
 - [[NVIDIA-Dynamo]] — inference-serving stack that fits the NGC/NIM deployment ecosystem

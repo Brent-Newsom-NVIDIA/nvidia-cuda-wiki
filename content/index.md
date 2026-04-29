@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 391*
+*Total pages: 392*
 
 ---
 
@@ -324,6 +324,7 @@
 - [[NIM-for-Cosmos-Embed1]] — Cosmos Embed1 NIM for joint video-text embeddings and physical AI video retrieval
 - [[NIM-for-Vision-Language-Models]] — VLM NIM family for multimodal reasoning, image understanding, and visual assistants
 - [[NIM-for-Visual-Generative-AI]] — Visual GenAI NIM family for image generation, image editing, and 3D asset generation
+- [[NVIDIA-TAO]] — Train, Adapt, and Optimize platform for fine-tuning and deploying CV, embedding, and VLM models
 - [[NVIDIA-Jetson-Platform-Services]] — Jetson edge AI microservice layer for video analytics, VLM, detection, storage, and APIs
 - [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
 - [[NVIDIA-Parabricks]] — Clara genomics acceleration platform for next-generation sequencing pipelines

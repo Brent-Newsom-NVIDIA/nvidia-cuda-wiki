@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 38: NVIDIA TAO coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch38-20260429T090656Z`; local Git tag `codex-backup-overnight-pre-batch38-20260429T090656Z`
+
+**Source URLs:** https://docs.nvidia.com/tao/index.html, https://docs.nvidia.com/tao/tao-toolkit/latest/index.html, https://docs.nvidia.com/tao/tao-toolkit/latest/text/overview.html, https://docs.nvidia.com/tao/tao-toolkit/latest/text/model_zoo/overview.html, https://docs.nvidia.com/tao/tao-toolkit/latest/text/data_services/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical NVIDIA TAO page for the current TAO Toolkit docs surface instead of creating separate pages for every model, launcher, microservice, deploy recipe, or tutorial under the TAO docs tree.
+- Captured current TAO scope across fine-tuning microservices, launcher/containers/wheels/source workflows, model zoo, data services, CV/VLM/embedding fine-tuning, quantization, TensorRT, Triton, DeepStream, and NGC.
+- Included current release signals from TAO 6.26.3 such as CLIP/Cosmos Embed1/C-RADIO model paths, expanded QDQ ONNX quantization, TensorRT FP8/INT8 engine generation, and Cosmos Reason 2.0 VLM fine-tuning.
+- Connected TAO to Metropolis, DeepStream, NGC, NGC Catalog, TensorRT, Triton, Jetson, and Isaac ROS perception pages.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-TAO.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Metropolis.md` and `content/wiki/NVIDIA-DeepStream.md` - connected TAO as the model customization and optimization path for video analytics.
+- `content/wiki/NGC.md` and `content/wiki/NVIDIA-NGC-Catalog.md` - connected TAO containers and pretrained models to NVIDIA artifact distribution.
+- `content/wiki/TensorRT.md` and `content/wiki/Triton-Inference-Server.md` - connected TAO deployment/profiling paths to optimized inference and model serving.
+- `content/wiki/Isaac-ROS-DNN-Inference.md`, `content/wiki/Isaac-ROS-Object-Detection.md`, and `content/wiki/Isaac-ROS-Image-Segmentation.md` - connected TAO model fine-tuning to robotics perception.
+- `content/wiki/NVIDIA-Jetson-Platform.md` - connected TAO to Jetson-deployed DeepStream and robotics models.
+- `content/index.md` - updated page count to 392 and indexed NVIDIA TAO.
+
+---
+
 ## 2026-04-29 - Overnight batch 37: Isaac ROS perception utilities
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch37-20260429T090226Z`; local Git tag `codex-backup-overnight-pre-batch37-20260429T090226Z`

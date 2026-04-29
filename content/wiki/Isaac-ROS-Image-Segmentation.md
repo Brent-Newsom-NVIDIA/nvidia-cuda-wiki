@@ -2,7 +2,7 @@
 
 **Type:** Model / ROS Package
 **Tags:** NVIDIA, Isaac ROS, image segmentation, semantic segmentation, U-Net, SegFormer, Segment Anything, robotics, TensorRT, NITROS
-**Related:** [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-nvblox]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[TensorRT]], [[NVIDIA-Jetson-Platform]], [[NGC]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-TAO]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-nvblox]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[TensorRT]], [[NVIDIA-Jetson-Platform]], [[NGC]]
 **Sources:** https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_segmentation/index.html, https://nvidia-isaac-ros.github.io/concepts/dnn_inference/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,7 @@ Image segmentation is a richer perception primitive than bounding-box detection.
 
 ## Connections
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem.
+- [[NVIDIA-TAO]] - fine-tuning and optimization surface for segmentation models such as SegFormer, U-Net, Mask2Former, and related model families.
 - [[Isaac-ROS-DNN-Inference]] - encoder/inference/decoder infrastructure for segmentation models.
 - [[Isaac-ROS-NITROS]] - accelerated transport layer used by segmentation graphs.
 - [[Isaac-ROS-Object-Detection]] - adjacent bounding-box perception package family.

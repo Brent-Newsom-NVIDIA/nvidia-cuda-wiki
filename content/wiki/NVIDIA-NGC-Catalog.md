@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NGC, Model Catalog, Containers, Pre-Trained Models, AI, Developer
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[NVIDIA-NeMo]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-TAO]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[NVIDIA-NeMo]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -48,6 +48,7 @@ Finding, evaluating, and deploying production-ready AI models requires significa
 ## Connections
 - [[NGC]] — NGC Catalog is the public-facing frontend of the NGC platform
 - [[NVIDIA-NIM]] — NIM models are delivered through the NGC Catalog
+- [[NVIDIA-TAO]] — TAO pretrained models and containers are distributed through the NGC catalog.
 - [[NVIDIA-AI-Enterprise]] — NVAIE subscribers get private NGC access with enterprise-grade containers
 - [[TensorRT]] — TensorRT containers and engine files distributed via NGC
 - [[NVIDIA-NeMo]] — NeMo containers and pre-trained models hosted in NGC Catalog

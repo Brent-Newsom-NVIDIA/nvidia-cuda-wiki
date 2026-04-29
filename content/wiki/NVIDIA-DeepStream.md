@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video analytics, streaming, GStreamer, IVA, edge AI, intelligent video, multi-stream
-**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[NVIDIA-Rivermax]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Maxine-Eye-Contact]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/maxine/active-speaker-detection/latest/support-matrix.html)
+**Related:** [[NVIDIA-Metropolis]], [[NVIDIA-TAO]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-VPI]], [[NVIDIA-Rivermax]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Maxine-Eye-Contact]], [[Triton-Inference-Server]], [[TensorRT]], [[NGC]], [[NVIDIA-AI-Enterprise]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/maxine/active-speaker-detection/latest/support-matrix.html, https://docs.nvidia.com/tao/tao-toolkit/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,6 +26,7 @@ Processing live video for AI analytics at scale is a data-movement and compute c
 - **REST API Server:** `nvdsrestapi` plugin for dynamic stream addition/removal and configuration changes without restarting the pipeline
 - **DeepStream Graph Composer:** Visual drag-and-drop pipeline editor for building DeepStream applications without writing GStreamer code
 - **VSS adjacency:** [[NVIDIA-Video-Search-and-Summarization-Blueprint]] builds higher-level video-agent workflows around real-time vision microservices, search, summarization, and alert verification.
+- **TAO model path:** [[NVIDIA-TAO]] fine-tunes and optimizes custom CV models that can be deployed into DeepStream pipelines.
 
 ### Use Cases
 - Multi-camera retail analytics: concurrent processing of 50–200 store cameras per server for shrinkage detection, queue monitoring, and foot traffic
@@ -50,6 +51,7 @@ Processing live video for AI analytics at scale is a data-movement and compute c
 
 ## Connections
 - [[NVIDIA-Metropolis]] — Metropolis is built on DeepStream; Metropolis provides the higher-level application framework and microservices layer
+- [[NVIDIA-TAO]] — custom model training, adaptation, quantization, and deployment preparation for DeepStream-compatible CV models
 - [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - VSS is the blueprint-level video search, summarization, and vision-agent workflow above video analytics microservices.
 - [[NVIDIA-Jetson-Platform]] — DeepStream runs natively on Jetson with full hardware decode/encode acceleration
 - [[NVIDIA-Jetson-Platform-Services]] - JPS wraps DeepStream perception into service-oriented Jetson edge AI workflows.

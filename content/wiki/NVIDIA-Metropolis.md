@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, intelligent video analytics, IVA, smart cities, edge AI, retail, safety, computer vision
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/)
+**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-TAO]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/ and https://docs.nvidia.com/tao/tao-toolkit/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,7 +17,7 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 ### Key Features
 - **Video Analytics Microservices (VAS):** Metropolis microservices for video ingestion, multi-stream management, metadata output, and AI inference — architected for Kubernetes deployment
 - **Pre-Trained Perception Models:** PeopleNet (person detection), TrafficCamNet (vehicle detection), DashCamNet, FaceDetect, LicensePlateNet, and dozens of domain-specific models available on NGC
-- **TAO (Train, Adapt, Optimize) Toolkit:** GUI and CLI-based tool for transfer learning and fine-tuning Metropolis perception models on custom datasets without writing training code; exports TensorRT-optimized models
+- **[[NVIDIA-TAO]] (Train, Adapt, Optimize):** toolkit and services for transfer learning, fine-tuning, quantization, and deployment preparation for Metropolis perception models
 - **DeepStream Integration:** Built on top of NVIDIA DeepStream SDK for multi-stream GStreamer pipeline management; handles video decode, pre-processing, inference, and output in a unified pipeline
 - **Retail Analytics:** Shopper journey analysis, queue detection, heat maps, shrinkage detection, planogram compliance
 - **Manufacturing Quality Inspection:** Defect detection, assembly verification, safety compliance monitoring on factory floors
@@ -49,6 +49,7 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 
 ## Connections
 - [[NVIDIA-DeepStream]] — DeepStream SDK is the foundational video analytics engine underpinning Metropolis pipelines
+- [[NVIDIA-TAO]] — model customization and optimization path for Metropolis vision models and datasets
 - [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - current VSS blueprint for building vision agents and video analytics applications.
 - [[NVIDIA-Jetson-Platform]] — Jetson is the primary edge hardware platform for Metropolis edge deployments
 - [[NVIDIA-Jetson-Platform-Services]] - JPS provides Jetson-hosted services for video analytics, VLM, detection, and edge application APIs.

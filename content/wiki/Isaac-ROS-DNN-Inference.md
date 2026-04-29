@@ -2,7 +2,7 @@
 
 **Type:** Library / ROS Package
 **Tags:** NVIDIA, Isaac ROS, DNN inference, TensorRT, Triton, robotics, perception, CUDA, NITROS, Jetson
-**Related:** [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-Jetson-Platform]], [[NGC]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-TAO]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-Jetson-Platform]], [[NGC]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/dnn_inference/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_dnn_inference/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,7 @@ Isaac ROS DNN Inference is the bridge between NVIDIA inference platforms and ROS
 
 ## Connections
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem.
+- [[NVIDIA-TAO]] - fine-tuning and optimization toolkit for CV models that can feed robotics inference paths.
 - [[Isaac-ROS-NITROS]] - acceleration layer used by DNN inference packages.
 - [[Isaac-ROS-Object-Detection]] - object detection package family built on DNN inference infrastructure.
 - [[Isaac-ROS-Image-Segmentation]] - semantic segmentation package family built on DNN inference infrastructure.

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, edge AI, embedded, IoT, robotics, autonomous machines, Jetson, JetPack, Jetson Linux, Blackwell, ARM, SoC
-**Related:** [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-VPI]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-AprilTag]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
+**Related:** [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-VPI]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-DeepStream]], [[NVIDIA-TAO]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-AprilTag]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
 **Sources:** https://docs.nvidia.com/jetson/, https://developer.nvidia.com/embedded/develop/hardware, https://developer.nvidia.com/embedded/faq, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/AR/JetsonSoftwareArchitecture.html
 **Last Updated:** 2026-04-29
 
@@ -69,6 +69,7 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - [[NVIDIA-VPI]] — computer vision/image processing library that targets Jetson GPU and dedicated vision hardware.
 - [[NVIDIA-Jetson-Platform-Services]] — edge AI microservice layer for Jetson video/VLM/analytics applications.
 - [[NVIDIA-DeepStream]] — DeepStream runs natively on Jetson for multi-stream intelligent video analytics at the edge
+- [[NVIDIA-TAO]] — model fine-tuning and optimization path for Jetson-deployed DeepStream and robotics perception models
 - [[NVIDIA-Metropolis]] — Metropolis edge deployments run on Jetson modules in smart city and retail use cases
 - [[NVIDIA-Isaac]] — Isaac robotics workflows target Jetson as a primary robot compute platform
 - [[NVIDIA-Isaac-ROS]] — CUDA-accelerated ROS 2 package family for Jetson robot deployment
