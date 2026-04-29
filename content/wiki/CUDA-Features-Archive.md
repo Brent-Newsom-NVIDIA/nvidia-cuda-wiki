@@ -2,7 +2,7 @@
 
 **Type:** Reference
 **Tags:** NVIDIA, CUDA, features archive, toolkit versions, driver support, compatibility
-**Related:** [[CUDA-Release-Notes]], [[CUDA-Compatibility]], [[NVIDIA-CUDA]], [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[NVCC]]
+**Related:** [[CUDA-Release-Notes]], [[CUDA-Compatibility]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Turing-Compatibility-Guide]], [[NVIDIA-CUDA]], [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[NVCC]]
 **Sources:** https://docs.nvidia.com/cuda/cuda-features-archive/index.html
 **Last Updated:** 2026-04-29
 
@@ -20,6 +20,7 @@ Use this page alongside [[CUDA-Release-Notes]] and [[CUDA-Compatibility]]. The r
 ## Connections
 - [[CUDA-Release-Notes]] - current release notes are the primary source for latest changes.
 - [[CUDA-Compatibility]] - compatibility rules determine whether a feature can be used in a deployment.
+- [[CUDA-Ada-Compatibility-Guide]] and [[CUDA-Turing-Compatibility-Guide]] - examples of current CUDA architecture notes that keep older GPU generations documented without making old toolkits canonical.
 - [[NVIDIA-CUDA]] - top-level CUDA platform page.
 - [[CUDA-Programming-Guide]] - programming model reference for many archived features.
 - [[CUDA-Best-Practices-Guide]] - performance and deployment guidance.

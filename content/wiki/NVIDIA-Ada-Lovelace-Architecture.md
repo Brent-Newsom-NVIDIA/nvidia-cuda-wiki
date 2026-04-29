@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, Ada Lovelace, GPU architecture, CUDA, RTX, workstation, graphics
-**Related:** [[NVIDIA-RTX]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Compatibility]], [[NVIDIA-DLSS]]
+**Related:** [[NVIDIA-RTX]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ada-Tuning-Guide]], [[CUDA-Compatibility]], [[NVIDIA-DLSS]]
 **Sources:** https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-tuning-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -19,6 +19,8 @@ In the wiki, Ada connects CUDA compute, RTX rendering, DLSS, workstation AI, and
 - [[NVIDIA-DLSS]] - Ada-era RTX GPUs support AI rendering features.
 - [[NVIDIA-Ampere-Architecture]] - predecessor architecture referenced by Ada tuning docs.
 - [[NVIDIA-Turing-Architecture]] - earlier RTX architecture and CUDA tuning reference point.
+- [[CUDA-Ada-Compatibility-Guide]] - CUDA binary compatibility guidance for Ada GPUs.
+- [[CUDA-Ada-Tuning-Guide]] - Ada-specific CUDA performance tuning guidance.
 - [[CUDA-Compatibility]] - Ada compatibility depends on CUDA toolkit and driver support.
 
 ## Source Excerpts

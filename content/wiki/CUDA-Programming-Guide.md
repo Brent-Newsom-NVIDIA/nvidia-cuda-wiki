@@ -2,8 +2,8 @@
 
 **Type:** Guide
 **Tags:** NVIDIA, CUDA, programming model, kernels, memory, streams, graphs, SIMT
-**Related:** [[NVIDIA-CUDA]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[CUDA-Best-Practices-Guide]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Features-Archive]], [[NVCC]]
-**Sources:** https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[CUDA-Best-Practices-Guide]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Turing-Compatibility-Guide]], [[CUDA-Features-Archive]], [[NVCC]]
+**Sources:** https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,7 +20,7 @@ Architecture-specific compatibility and tuning pages link back here for the cano
 - [[CUDA-Runtime-API]] - API surface used by most CUDA programs.
 - [[CUDA-Driver-API]] - lower-level module, context, and memory control layer.
 - [[CUDA-Best-Practices-Guide]] - optimization companion to the programming guide.
-- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], and [[CUDA-Ampere-Compatibility-Guide]] - architecture-specific build compatibility notes.
+- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], and [[CUDA-Turing-Compatibility-Guide]] - architecture-specific build compatibility notes.
 - [[CUDA-Features-Archive]] - feature availability reference that points back to programming-guide concepts.
 - [[NVCC]] - compiler path described in the programming guide.
 

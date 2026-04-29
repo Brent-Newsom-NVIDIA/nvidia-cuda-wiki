@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, Turing, GPU architecture, CUDA, RTX, Tensor Cores, RT Cores
-**Related:** [[NVIDIA-RTX]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Compatibility]], [[NVIDIA-DLSS]]
+**Related:** [[NVIDIA-RTX]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Turing-Compatibility-Guide]], [[CUDA-Turing-Tuning-Guide]], [[CUDA-Compatibility]], [[NVIDIA-DLSS]]
 **Sources:** https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-tuning-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -18,6 +18,8 @@ In the wiki, Turing is the predecessor context for Ada, Ampere, Hopper, and Blac
 - [[NVIDIA-RTX]] - Turing introduced the RTX generation for real-time ray tracing.
 - [[NVIDIA-Ada-Lovelace-Architecture]] - later RTX architecture.
 - [[NVIDIA-Ampere-Architecture]] - successor generation for client and data center GPUs.
+- [[CUDA-Turing-Compatibility-Guide]] - CUDA binary compatibility guidance for Turing GPUs.
+- [[CUDA-Turing-Tuning-Guide]] - Turing-specific CUDA performance tuning guidance.
 - [[CUDA-Compatibility]] - Turing docs focus on application compatibility across CUDA versions.
 - [[NVIDIA-DLSS]] - DLSS and Tensor Core graphics features trace back through RTX architectures.
 

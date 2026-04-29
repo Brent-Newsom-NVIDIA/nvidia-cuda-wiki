@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Compiler, Development Tools, Build System, CUDA Toolkit
-**Related:** [[NVIDIA-CUDA]], [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Features-Archive]], [[NVRTC]], [[PTX-ISA]], [[Inline-PTX-Assembly]], [[PTX-Interoperability]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[Floating-Point-and-IEEE-754]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
-**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Turing-Compatibility-Guide]], [[CUDA-Features-Archive]], [[NVRTC]], [[PTX-ISA]], [[Inline-PTX-Assembly]], [[PTX-Interoperability]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[Floating-Point-and-IEEE-754]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
+**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -44,7 +44,7 @@ CUDA programs contain mixed host and device code in the same source file — a s
 - [[NVRTC]] — NVRTC provides runtime (JIT) CUDA compilation; NVCC provides ahead-of-time compilation
 - [[CUDA-Programming-Guide]] — programming guide covers CUDA compilation workflow and compatibility concepts
 - [[CUDA-Best-Practices-Guide]] — best-practices guide documents compiler switches and optimization considerations
-- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], and [[CUDA-Ampere-Compatibility-Guide]] — architecture guides show how NVCC `-gencode` targets control cubin/PTX compatibility.
+- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], and [[CUDA-Turing-Compatibility-Guide]] — architecture guides show how NVCC `-gencode` targets control cubin/PTX compatibility.
 - [[CUDA-Features-Archive]] — toolkit feature availability can affect compiler and architecture target planning.
 - [[PTX-ISA]] — NVCC can generate PTX as the virtual GPU ISA output
 - [[Inline-PTX-Assembly]] — CUDA C++ can include inline PTX assembly accepted by NVCC

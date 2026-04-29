@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, PTX, ISA, compiler, virtual architecture
-**Related:** [[NVIDIA-CUDA]], [[NVCC]], [[NVRTC]], [[PTX-Compiler-APIs]], [[Inline-PTX-Assembly]], [[PTX-Interoperability]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Driver-API]], [[NVVM-IR]], [[libNVVM]], [[cuTile]]
-**Sources:** https://docs.nvidia.com/cuda/parallel-thread-execution/index.html, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html
+**Related:** [[NVIDIA-CUDA]], [[NVCC]], [[NVRTC]], [[PTX-Compiler-APIs]], [[Inline-PTX-Assembly]], [[PTX-Interoperability]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Turing-Compatibility-Guide]], [[CUDA-Driver-API]], [[NVVM-IR]], [[libNVVM]], [[cuTile]]
+**Sources:** https://docs.nvidia.com/cuda/parallel-thread-execution/index.html, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -31,7 +31,7 @@ PTX is central to custom compilers, runtime code generation, [[NVRTC]], [[PTX-Co
 - [[PTX-Compiler-APIs]] - compile PTX strings into GPU assembly code.
 - [[Inline-PTX-Assembly]] - guide for inserting PTX statements directly into CUDA C++.
 - [[PTX-Interoperability]] - ABI rules for PTX that links with other CUDA code.
-- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], and [[CUDA-Ampere-Compatibility-Guide]] - architecture compatibility guides explain why PTX is important for forward compatibility.
+- [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Ada-Compatibility-Guide]], [[CUDA-Ampere-Compatibility-Guide]], and [[CUDA-Turing-Compatibility-Guide]] - architecture compatibility guides explain why PTX is important for forward compatibility.
 - [[cuTile]] - Tile IR is a newer CUDA compiler target adjacent to PTX-level workflows.
 - [[NVVM-IR]] - lower-level compiler IR can be translated into PTX through [[libNVVM]].
 - [[CUDA-Binary-Utilities]] - tools such as cuobjdump and nvdisasm help inspect compiled CUDA code around the PTX/SASS boundary.

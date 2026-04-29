@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 13: CUDA Ada and Turing architecture guide completion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch13-20260429T063416Z`; local Git tag `codex-backup-overnight-pre-batch13-20260429T063416Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-tuning-guide/index.html, https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-tuning-guide/index.html
+
+**Gap analysis summary:**
+
+- Completed the current CUDA architecture guide family by adding Ada and Turing compatibility/tuning pages alongside the Blackwell, Hopper, and Ampere pages created in batch 12.
+- Kept these pages tied to current CUDA 13.2 docs rather than historical toolkit archives.
+- Updated CUDA compatibility, programming, best-practices, NVCC, PTX, feature archive, Ada architecture, and Turing architecture pages so multi-generation CUDA support is queryable.
+
+**Pages created (4 total):**
+
+- `content/wiki/CUDA-Ada-Compatibility-Guide.md`
+- `content/wiki/CUDA-Ada-Tuning-Guide.md`
+- `content/wiki/CUDA-Turing-Compatibility-Guide.md`
+- `content/wiki/CUDA-Turing-Tuning-Guide.md`
+
+**Pages updated:**
+
+- `content/wiki/CUDA-Compatibility.md`, `content/wiki/CUDA-Best-Practices-Guide.md`, and `content/wiki/CUDA-Programming-Guide.md` - added Ada/Turing architecture-guide links.
+- `content/wiki/NVCC.md` and `content/wiki/PTX-ISA.md` - added Ada/Turing `-gencode`, cubin, and PTX compatibility context.
+- `content/wiki/NVIDIA-Ada-Lovelace-Architecture.md` and `content/wiki/NVIDIA-Turing-Architecture.md` - connected architecture pages to their guide pages.
+- `content/wiki/CUDA-Features-Archive.md` - linked Ada/Turing guide pages as current-doc examples for older GPU generation support.
+- `content/index.md` - updated page count to 274 and indexed the four new CUDA guide pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 12: CUDA architecture compatibility, tuning, and cuFile API coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch12-20260429T063040Z`; local Git tag `codex-backup-overnight-pre-batch12-20260429T063040Z`
