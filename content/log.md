@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 52: AI Enterprise infrastructure support matrix
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch52-20260429T101347Z`; local Git tag `codex-backup-overnight-pre-batch52-20260429T101347Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/software/latest/infrastructure-software.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/support-matrix/, https://docs.nvidia.com/ai-enterprise/release-8/latest/support/support-matrix.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/support/support-matrix-8/8.0.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/overview/release-notes-8/8.0.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current NVIDIA AI Enterprise Infrastructure Support Matrix because compatibility validation was mentioned by software/lifecycle pages but not independently queryable in the wiki.
+- Kept the support matrix as one page rather than creating separate pages for every release, GPU architecture, platform family, OS, hypervisor, Kubernetes distribution, cloud provider, footnote, or component version row.
+- Connected the page to AI Enterprise, software catalog, lifecycle, quick start, certified systems, DGX/HGX/GB300 platforms, drivers, DOCA, BlueField, vGPU/MIG, Container Toolkit, Run:ai, Kubernetes operators, BCM, and deployment guides.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise-Software.md` - linked the software catalog to the infrastructure support matrix.
+- `content/wiki/NVIDIA-AI-Enterprise-Lifecycle-Policy.md` - connected lifecycle planning to release-specific compatibility checks.
+- `content/wiki/NVIDIA-AI-Enterprise-Quick-Start-Guide.md` - linked first-run setup to compatibility validation.
+- `content/index.md` - updated total page count to 427 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 51: AI Enterprise quick start guide
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch51-20260429T101150Z`; local Git tag `codex-backup-overnight-pre-batch51-20260429T101150Z`

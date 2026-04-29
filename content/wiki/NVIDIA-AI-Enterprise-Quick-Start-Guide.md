@@ -2,7 +2,7 @@
 
 **Type:** Getting Started Guide
 **Tags:** NVIDIA, AI Enterprise, quick start, onboarding, NGC, enterprise account, deployment, verification
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-Enterprise-Support-and-Services]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Certified-Systems]], [[NVIDIA-DGX]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-Enterprise-Support-and-Services]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Certified-Systems]], [[NVIDIA-DGX]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/release-7/7.4/getting-started/quick-start-guide.html, https://docs.nvidia.com/ai-enterprise/release-7/7.4/index.html, https://docs.nvidia.com/ai-enterprise/index.html
 **Last Updated:** 2026-04-29
 
@@ -37,6 +37,7 @@ This page is the first-run entry point. It connects account/licensing setup, NGC
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - parent product being onboarded.
 - [[NVIDIA-AI-Enterprise-Software]] - software catalog to browse after account activation.
+- [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]] - compatibility check for supported GPUs, platforms, operating systems, hypervisors, orchestration, and clouds.
 - [[NVIDIA-Enterprise-Licensing-Guide]] - entitlement, license activation, NLS, and license-server context.
 - [[NVIDIA-Enterprise-Support-and-Services]] - support portal and case path exposed through the enterprise account.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - software catalog, container registry, NGC API key, and artifact access path.

@@ -2,7 +2,7 @@
 
 **Type:** Policy
 **Tags:** NVIDIA, AI Enterprise, lifecycle, release branches, compatibility, support, EOL
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-Omniverse]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise-Security]], [[NVIDIA-AI-Software-for-Regulated-Environments]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-Omniverse]], [[NVIDIA-vGPU]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise-Security]], [[NVIDIA-AI-Software-for-Regulated-Environments]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/lifecycle/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,7 @@ Use this page when a question asks which AI Enterprise branch to deploy, whether
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - product suite governed by the lifecycle policy.
 - [[NVIDIA-AI-Enterprise-Software]] - software catalog whose application/infrastructure layers are governed by lifecycle branches.
+- [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]] - release-specific compatibility matrix for infrastructure software, GPUs, platforms, OS, hypervisors, orchestration, and clouds.
 - [[NVIDIA-Enterprise-Licensing-Guide]] - entitlement, support, and license duration context that should be checked alongside lifecycle branch policy.
 - [[NVIDIA-NIM]] - application software whose production and long-term branches matter for enterprise deployment.
 - [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], and [[NVIDIA-NIM-Operator]] - infrastructure and Kubernetes components whose versions must align.

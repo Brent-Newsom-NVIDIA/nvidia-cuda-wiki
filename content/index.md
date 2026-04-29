@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 426*
+*Total pages: 427*
 
 ---
 
@@ -269,6 +269,7 @@
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
 - [[NVIDIA-AI-Enterprise-Quick-Start-Guide]] — AI Enterprise onboarding guide for account activation, NGC access, first software install, and GPU/container verification
 - [[NVIDIA-AI-Enterprise-Software]] — AI Enterprise application-layer and infrastructure-layer software catalog with NGC and support-matrix context
+- [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]] — AI Enterprise compatibility matrix for infrastructure software, GPUs, platforms, OS, hypervisors, orchestration, and cloud
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] — AI Enterprise branch, compatibility, support, and EOL planning policy
 - [[NVIDIA-Enterprise-Licensing-Guide]] — AI Enterprise entitlement, per-GPU licensing, cloud marketplace, BYOL, support, and NVIDIA License System guidance
 - [[NVIDIA-Enterprise-Support-and-Services]] — enterprise support entitlement, support levels, support portal, RMA, value-add services, advisory services, and education
