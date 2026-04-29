@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 58: Nemotron 3 text reasoning models
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch58-20260429T104220Z`; local Git tag `codex-backup-overnight-pre-batch58-20260429T104220Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/, https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html, https://docs.nvidia.com/nemotron/latest/use-case-examples/Simple%20Nemotron-3-Nano%20Usage%20Example/README.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html, https://developer.nvidia.com/nemotron
+
+**Gap analysis summary:**
+
+- Added canonical pages for Nemotron 3 Nano and Nemotron 3 Super after verifying that each has current NVIDIA-authored docs and model surfaces beyond a single build.nvidia listing.
+- Kept text-only Nano, Super, Nano Omni, and Parse separate because current NVIDIA docs treat them as distinct durable model topics: efficient text reasoning, high-capacity text reasoning, omnimodal perception, and document parsing.
+- Avoided splitting individual Nemotron usage cookbook notebooks, coding-tool setup sections, training stages, or Megatron Bridge recipe sections into separate wiki pages.
+- Used build.nvidia cards as durable model signals and relied on current NVIDIA docs/blog pages for architecture, training, agent-tooling, and Megatron Bridge details.
+
+**Pages created (2 total):**
+
+- `content/wiki/Nemotron-3-Nano.md`
+- `content/wiki/Nemotron-3-Super.md`
+
+**Pages updated:**
+
+- `content/wiki/Nemotron.md` - connected the family hub to canonical Nano, Super, Nano Omni, and Parse pages.
+- `content/wiki/NeMo-Megatron-Bridge.md` - added current dedicated Nemotron 3 Nano and Super model docs.
+- `content/wiki/NeMo-AutoModel.md` and `content/wiki/NeMo-RL.md` - connected AutoModel/RL workflows to current Nemotron 3 reasoning models.
+- `content/wiki/NVIDIA-NIM.md` - linked the umbrella NIM graph to the new Nemotron 3 model pages.
+- `content/wiki/NVIDIA-Agent-Intelligence-Toolkit.md`, `content/wiki/NVIDIA-NemoClaw.md`, `content/wiki/NVIDIA-AI-Q-Blueprint.md`, `content/wiki/NVIDIA-Data-Flywheel-Blueprint.md`, and `content/wiki/NVIDIA-AI-Blueprints.md` - added agent and blueprint connections for Nano/Super model selection.
+- `content/index.md` - updated total page count to 434 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 57: Nemotron VLM and document parsing coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch57-20260429T103415Z`; local Git tag `codex-backup-overnight-pre-batch57-20260429T103415Z`

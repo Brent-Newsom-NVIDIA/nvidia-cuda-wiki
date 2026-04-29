@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI blueprints, reference workflows, NIM, NeMo, agents, build.nvidia
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-AI-Enterprise]], [[Nemotron]], [[NVIDIA-Brev]]
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-AI-Enterprise]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-Brev]]
 **Sources:** https://build.nvidia.com/blueprints, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/ace/tokkio/latest/overview/overview.html, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -26,7 +26,7 @@ Blueprints give developers starting points for production-oriented AI applicatio
 - [[Red-Hat-AI-Factory-with-NVIDIA]] is an OpenShift AI deployment foundation for validated NVIDIA Blueprints and agent workflows in a Red Hat environment.
 
 ### NVIDIA context
-Blueprints sit between NVIDIA developer samples and enterprise production platforms. They show how [[NVIDIA-NIM]], [[NeMo-Platform]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[Nemotron]], and [[NVIDIA-AI-Enterprise]] fit together in real application patterns.
+Blueprints sit between NVIDIA developer samples and enterprise production platforms. They show how [[NVIDIA-NIM]], [[NeMo-Platform]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[Nemotron]], current model choices such as [[Nemotron-3-Nano]], [[Nemotron-3-Super]], and [[Nemotron-3-Nano-Omni]], and [[NVIDIA-AI-Enterprise]] fit together in real application patterns.
 
 ### Wiki curation guidance
 Do not create one wiki page per blueprint listing. Create a page only when a blueprint is a durable NVIDIA-authored topic with its own stable docs, architecture, or ecosystem significance. Smaller or duplicate examples should be folded into the canonical topic page, such as [[Nemotron]], [[NVIDIA-Riva]], [[NVIDIA-Cosmos]], [[NeMo-Retriever]], or [[NVIDIA-AI-Q-Blueprint]].
@@ -48,7 +48,7 @@ Do not create one wiki page per blueprint listing. Create a page only when a blu
 - [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - durable Digital Human Blueprint for interactive avatar experiences.
 - [[NeMo-Platform]] - blueprints often use NeMo microservices for customization, evaluation, retrieval, and inference.
 - [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], and [[NeMo-Auditor]] - NeMo Platform services that turn blueprint workflows into data, adaptation, evaluation, and safety-audit loops.
-- [[Nemotron]] - current blueprints use Nemotron models for reasoning, speech, and agentic workflows.
+- [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], and [[Nemotron-3-Nano-Omni]] - current blueprints use Nemotron models for reasoning, speech, multimodal perception, and agentic workflows.
 - [[NVIDIA-Brev]] - some blueprints expose launchable cloud development paths through Brev.
 
 ## Source Excerpts

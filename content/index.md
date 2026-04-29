@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 432*
+*Total pages: 434*
 
 ---
 
@@ -506,6 +506,8 @@
 
 ### Large Language Models
 - [[Nemotron]] — NVIDIA model family for reasoning, safety, speech, OCR, retrieval, multimodal, and agentic AI workflows
+- [[Nemotron-3-Nano]] — efficient Nemotron 3 text reasoning model for agent steps, reasoning modes, and NeMo Megatron Bridge workflows
+- [[Nemotron-3-Super]] — high-capacity Nemotron 3 reasoning model for long-context, coding, planning, and complex agentic workflows
 - [[Nemotron-3-Nano-Omni]] — open omnimodal Nemotron 3 model and NIM for text, image, video, audio, document, and GUI reasoning
 - [[Nemotron-Parse]] — Nemotron document parser and NIM for text/table extraction, semantic classes, bounding boxes, and reading-order structure
 - [[NVLM]] — Frontier-class multimodal LLM (72B); dual-path NVLM-D/H/X architecture; competitive with GPT-4V

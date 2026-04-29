@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Blueprint, data flywheel, NeMo microservices, NIM, Nemotron, evaluation, fine-tuning
-**Related:** [[NVIDIA-AI-Blueprints]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Agent-Intelligence-Toolkit]]
-**Sources:** https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
+**Related:** [[NVIDIA-AI-Blueprints]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Agent-Intelligence-Toolkit]]
+**Sources:** https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -25,7 +25,7 @@ AI agents in production can drift, become expensive, or overuse larger models wh
 - Expose the workflow through APIs and deploy with Docker Compose or Kubernetes/Helm patterns.
 
 ### NVIDIA context
-The Data Flywheel Blueprint sits on top of [[NeMo-Platform]], [[NeMo-Evaluator]], [[NeMo-Customizer]], [[NVIDIA-NIM]], and [[Nemotron]] model families. It is especially relevant to [[NVIDIA-Agent-Intelligence-Toolkit]] and [[NVIDIA-AI-Enterprise]] because it turns agent operations into an ongoing optimization discipline instead of a one-time model deployment.
+The Data Flywheel Blueprint sits on top of [[NeMo-Platform]], [[NeMo-Evaluator]], [[NeMo-Customizer]], [[NVIDIA-NIM]], and [[Nemotron]] model families. It is especially relevant to [[NVIDIA-Agent-Intelligence-Toolkit]] and [[NVIDIA-AI-Enterprise]] because it turns agent operations into an ongoing optimization discipline instead of a one-time model deployment. Current Nemotron candidates such as [[Nemotron-3-Nano]] and [[Nemotron-3-Super]] are examples of the smaller/larger model tradeoffs a flywheel may evaluate.
 
 ## Connections
 - [[NVIDIA-AI-Blueprints]] - Data Flywheel is one of the durable NVIDIA-authored blueprint topics.
@@ -36,7 +36,7 @@ The Data Flywheel Blueprint sits on top of [[NeMo-Platform]], [[NeMo-Evaluator]]
 - [[NVIDIA-NIM]] - candidate models are deployed and evaluated through NIM-style microservices.
 - [[NIM-for-Large-Language-Models]] - LLM NIMs are common candidate deployments in data-flywheel optimization.
 - [[NVIDIA-NIM-Operator]] - enables repeatable Kubernetes deployment, scaling, and redeployment of NIM/NeMo services.
-- [[Nemotron]] - current blueprint material ties the workflow to NVIDIA/open model choices in the Nemotron ecosystem.
+- [[Nemotron]], [[Nemotron-3-Nano]], and [[Nemotron-3-Super]] - current blueprint material ties the workflow to NVIDIA/open model choices in the Nemotron ecosystem.
 - [[NVIDIA-AI-Enterprise]] - production governance, support, and lifecycle context for enterprise deployment.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - agent workflows need evaluation and optimization loops that the data flywheel formalizes.
 

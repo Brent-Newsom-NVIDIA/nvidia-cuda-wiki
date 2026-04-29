@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NemoClaw, OpenClaw, agents, sandboxing, OpenShell, Nemotron
-**Related:** [[NVIDIA-OpenShell]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]]
-**Sources:** https://docs.nvidia.com/nemoclaw/index.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model
+**Related:** [[NVIDIA-OpenShell]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]], [[Nemotron-3-Nano-Omni]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]]
+**Sources:** https://docs.nvidia.com/nemoclaw/index.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reasoning-in-a-single-efficient-open-model, https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -29,6 +29,7 @@ NemoClaw is a signpost for NVIDIA's agentic AI direction: [[Nemotron]] models, [
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - adjacent agent workflow toolkit.
 - [[Nemotron]] - NVIDIA open model family referenced by the NemoClaw docs.
 - [[Nemotron-3-Nano-Omni]] - current omnimodal Nemotron model referenced by NVIDIA for NemoClaw/OpenShell video reasoning workflows.
+- [[Nemotron-3-Super]] - current Nemotron usage cookbook includes OpenClaw setup with Nemotron 3 Super.
 - [[NVIDIA-NIM]] - model-serving path for NVIDIA-hosted or self-hosted agents.
 - [[NVIDIA-NeMo]] - broader lifecycle suite for building and optimizing AI agents.
 - [[NVIDIA-DGX-Spark]] - local GB10 system explicitly positioned for NemoClaw agent development.

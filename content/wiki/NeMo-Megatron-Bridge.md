@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, Megatron, Megatron Core, Hugging Face, LLM, VLM, checkpoint conversion, distributed training
-**Related:** [[NVIDIA-NeMo]], [[Megatron-LM]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Related:** [[NVIDIA-NeMo]], [[Megatron-LM]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,7 +18,8 @@ Large-model teams often need the usability and ecosystem reach of Hugging Face c
 - Bidirectional Hugging Face to Megatron conversion with verification and checkpoint integrity checks.
 - Training and customization paths for pretraining, SFT, LoRA, DoRA, PEFT, packed sequences, distillation, and mixed precision.
 - Parallelism-aware conversion and training for tensor, pipeline, virtual pipeline, context, expert, and data-parallel styles.
-- Supported model docs that include Llama, Qwen, DeepSeek, Mistral, Gemma, GPT-OSS, Nemotron/Nemotron Nano/Nemotron H, and multiple VLM families.
+- Supported model docs that include Llama, Qwen, DeepSeek, Mistral, Gemma, GPT-OSS, [[Nemotron-3-Nano]], [[Nemotron-3-Super]], Nemotron H/Nano variants, and multiple VLM families.
+- Dedicated Nemotron 3 Nano and Nemotron 3 Super pages cover Hugging Face/Megatron conversion, pretraining, fine-tuning, LoRA, and quantization workflows for the current Nemotron 3 text reasoning models.
 - Integration with [[NeMo-RL]] as a high-scale training backend and with [[NeMo-Export-Deploy]] for downstream inference export.
 
 ### NVIDIA context
@@ -34,12 +35,17 @@ Megatron Bridge is the current NVIDIA-authored bridge between open model checkpo
 - [[NeMo-Customizer]] and [[NeMo-Evaluator]] - managed customization and evaluation services adjacent to code-level training.
 - [[TensorRT-LLM]], [[vLLM]], and [[Triton-Inference-Server]] - downstream serving/export targets.
 - [[Nemotron]] - current docs list Nemotron/Nemotron Nano variants among supported NVIDIA model families.
+- [[Nemotron-3-Nano]] - current Megatron Bridge page for the 30B-A3B text reasoning model.
+- [[Nemotron-3-Super]] - current Megatron Bridge page for the 120B-A12B text reasoning model.
+- [[Nemotron-3-Nano-Omni]] - adjacent Nemotron 3 model, distinct from the text-only Nano/Super Bridge pages.
 - [[NVIDIA-AI-Enterprise]] - enterprise software context for NeMo training and deployment.
 
 ## Source Excerpts
 - NVIDIA docs describe Megatron Bridge as a NeMo Framework library for pretraining, SFT, LoRA, and Hugging Face/Megatron conversion.
-- Current docs list Nemotron and Llama-Nemotron model families in model support and RL acceleration context.
+- Current docs list Nemotron 3 Nano, Nemotron 3 Super, and Llama-Nemotron model families in model support and RL acceleration context.
 
 ## Resources
 - [Megatron Bridge Documentation](https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html)
+- [Nemotron 3 Nano in Megatron Bridge](https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html)
+- [Nemotron 3 Super in Megatron Bridge](https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html)
 - [NeMo RL Model Support](https://docs.nvidia.com/nemo/rl/latest/about/model-support.html)

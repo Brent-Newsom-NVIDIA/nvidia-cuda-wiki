@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, reinforcement learning, post-training, RLHF, GRPO, DPO, SFT, VLM, LLM, Ray
-**Related:** [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Related:** [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,7 +20,8 @@ Post-training is where teams align models for reasoning, preference, safety, too
 - High-scale acceleration through [[NeMo-Megatron-Bridge]] and Megatron-style training paths.
 - Generation/rollout backends using [[vLLM]] or Megatron-native inference.
 - Ray-based resource management and multi-GPU/multi-node execution.
-- Model support that includes current NVIDIA/Nemotron entries such as Llama-Nemotron-Super, Nemotron Nano v2, and Nemotron Nano v3.
+- Model support that includes current NVIDIA/Nemotron entries such as Llama-Nemotron-Super, Nemotron Nano v2, Nemotron Nano v3, and adjacent Nemotron 3 workflows.
+- NVIDIA's Nemotron 3 Super launch material describes multi-environment reinforcement learning using NeMo RL and NeMo Gym, connecting [[Nemotron-3-Super]] directly to the RL/post-training stack.
 
 ### NVIDIA context
 NeMo RL extends the NeMo stack beyond supervised customization into reinforcement learning and alignment. It is adjacent to [[NeMo-Customizer]] for managed fine-tuning, [[NeMo-Evaluator]] for measurement, and [[NeMo-Auditor]] for safety probing before deployment.
@@ -35,7 +36,7 @@ NeMo RL extends the NeMo stack beyond supervised customization into reinforcemen
 - [[NeMo-Auditor]] - safety audit layer for probing aligned or fine-tuned models.
 - [[Megatron-LM]] - distributed training lineage and scaling model behind large-model backends.
 - [[vLLM]] - rollout/generation backend used in current NeMo RL docs.
-- [[Nemotron]] - NVIDIA model family represented in current NeMo RL model support.
+- [[Nemotron]], [[Nemotron-3-Nano]], and [[Nemotron-3-Super]] - NVIDIA model family and current Nemotron 3 reasoning models represented in NeMo RL/post-training workflows.
 - [[NVIDIA-AI-Enterprise]] - enterprise software context for production NeMo workflows.
 
 ## Source Excerpts
