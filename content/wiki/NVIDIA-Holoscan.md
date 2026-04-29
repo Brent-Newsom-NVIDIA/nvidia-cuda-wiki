@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Medical Imaging, Edge AI, Real-time, Sensor Processing, Healthcare
-**Related:** [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/holoscan-sdk
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/holoscan-sdk, https://docs.nvidia.com/holoscan/index.html, https://docs.nvidia.com/holoscan/sdk-user-guide/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Holoscan is an AI sensor processing platform and SDK designed for building real-time, high-performance AI applications in medical devices, robotics, and industrial edge computing. It provides a streaming dataflow execution framework that pipelines sensor data acquisition, GPU-accelerated processing, AI inference, and visualization with deterministic, low-latency performance. Holoscan is the software foundation for NVIDIA's Clara Holoscan medical devices platform, enabling FDA-cleared AI-enabled medical instruments.
@@ -13,6 +13,8 @@ NVIDIA Holoscan is an AI sensor processing platform and SDK designed for buildin
 
 ### Purpose
 Holoscan solves the challenge of building real-time AI pipelines that process high-bandwidth sensor data (medical imaging, video, RF signals) with the ultra-low latency required for clinical and industrial applications. It provides a GXF (Graph Execution Framework) based dataflow model that minimizes data copies and maximizes GPU utilization for streaming sensor workloads.
+
+Current NVIDIA docs list Holoscan SDK v4.1.0 as the current Holoscan version and position Holoscan as an AI sensor processing platform spanning embedded, edge, and cloud deployments.
 
 ### Key Features
 - GXF (Graph Execution Framework): directed acyclic graph (DAG) model for composable sensor processing pipelines
@@ -50,6 +52,9 @@ Holoscan solves the challenge of building real-time AI pipelines that process hi
 - YAML for application graph configuration
 
 ## Connections
+- [[NVIDIA-Clara]] — Holoscan sits in Clara's medical-device and healthcare AI portfolio.
+- [[NVIDIA-Clara-Viz]] — visualization component adjacent to medical imaging applications built with Holoscan.
+- [[NVIDIA-MONAI-Toolkit]] — medical imaging models can feed Holoscan real-time applications.
 - [[TensorRT]] — Holoscan's inference operator uses TensorRT for optimized model execution
 - [[CV-CUDA]] — GPU image processing operators used within Holoscan preprocessing pipelines
 - [[NVIDIA-DALI]] — DALI can be used as a data augmentation backend within Holoscan pipelines

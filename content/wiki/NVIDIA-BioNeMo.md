@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, drug discovery, biology, biomolecular AI, protein, genomics, cheminformatics, NIM, life sciences
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Clara]], [[cuEquivariance]], [[NGC]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Clara]], [[NVIDIA-Parabricks]], [[cuEquivariance]], [[NGC]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/bionemo-framework/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA BioNeMo is a platform of GPU-accelerated AI models and frameworks purpose-built for computational biology, drug discovery, and life sciences research. It provides pre-trained biomolecular foundation models — covering protein structure prediction, molecular generation, virtual screening, and genomics — deployable as NIM microservices or fine-tunable via the BioNeMo Framework. BioNeMo enables pharmaceutical companies and research institutions to dramatically accelerate hit identification, lead optimization, and target discovery workflows using GPU computing.
@@ -24,6 +24,7 @@ Computational biology and drug discovery involve computationally intensive tasks
   - **EquiDock, ProteinMPNN, RoseTTAFold:** Additional structure prediction and design tools
   - **Single-Cell Models:** scGPT and Evo for genomics and single-cell RNA sequencing analysis
 - **BioNeMo Framework:** Python training and customization framework (analogous to NeMo for LLMs) for fine-tuning biomolecular models on proprietary assay data, structural databases, or custom compound libraries
+- **Current framework docs:** Clara docs point to the BioNeMo Training Framework documentation center for current framework material, including models, recipes, datasets, and API documentation.
 - **NIM Deployment:** All BioNeMo models are packaged as NIM microservices — deploy via `docker run`, call via REST API — integrating seamlessly into existing computational biology pipelines
 - **Virtual Screening Pipelines:** End-to-end GPU-accelerated pipelines combining structure prediction, docking, ADMET property filtering, and generative design
 - **cuEquivariance Integration:** GPU-accelerated equivariant operations (SO(3)/SE(3) symmetry) used in BioNeMo's structure-aware models for 10× speedup over CPU implementations
@@ -54,6 +55,7 @@ Computational biology and drug discovery involve computationally intensive tasks
 - [[NVIDIA-NIM]] — All BioNeMo models are deployed as NIM microservices with REST APIs
 - [[NVIDIA-NeMo]] — BioNeMo Framework shares architectural patterns with NeMo; NeMo Curator used for biomolecular data curation
 - [[NVIDIA-Clara]] — Clara is the broader NVIDIA healthcare platform; BioNeMo is the drug discovery / computational biology component
+- [[NVIDIA-Parabricks]] — genomics acceleration sibling within the Clara life sciences portfolio
 - [[NVIDIA-AI-Enterprise]] — BioNeMo available under AI Enterprise license for pharmaceutical production deployments
 - [[cuEquivariance]] — BioNeMo structure models use cuEquivariance for GPU-accelerated SO(3)/SE(3) equivariant neural network operations
 - [[NGC]] — BioNeMo model checkpoints, containers, and NIM images distributed via NGC

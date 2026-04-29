@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 214*
+*Total pages: 217*
 
 ---
 
@@ -215,6 +215,9 @@
 - [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
 - [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation
 - [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
+- [[NVIDIA-Parabricks]] — Clara genomics acceleration platform for next-generation sequencing pipelines
+- [[NVIDIA-Clara-Viz]] — Clara medical image visualization toolkit for 2D/3D imaging and pathology data
+- [[NVIDIA-MONAI-Toolkit]] — NVIDIA AI Enterprise-supported MONAI distribution for medical imaging AI development
 - [[NVIDIA-Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
 - [[NVIDIA-DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
 

@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 4: Clara healthcare and life sciences documentation expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch4-20260429T054137Z`; local Git tag `codex-backup-overnight-pre-batch4-20260429T054137Z`
+
+**Source URLs:** https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/clara/latest/index.html, https://docs.nvidia.com/clara-viz/index.html, https://docs.nvidia.com/clara/monai/overview.html, https://docs.nvidia.com/holoscan/index.html, https://docs.nvidia.com/holoscan/sdk-user-guide/index.html, https://docs.nvidia.com/bionemo-framework/latest/index.html
+
+**Gap analysis summary:**
+
+- Expanded Clara from a single broad healthcare page into connected pages for three canonical NVIDIA healthcare/life-sciences surfaces: Parabricks, Clara Viz, and NVIDIA MONAI Toolkit.
+- Updated existing Clara, BioNeMo, Holoscan, and AI Enterprise pages with current docs-hub links and cross-connections.
+- Kept BioNeMo information consolidated into the existing `NVIDIA-BioNeMo.md` page rather than creating a parallel BioNeMo Framework page.
+
+**Pages created (3 total):**
+
+- `content/wiki/NVIDIA-Parabricks.md`
+- `content/wiki/NVIDIA-Clara-Viz.md`
+- `content/wiki/NVIDIA-MONAI-Toolkit.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Clara.md` - connected Parabricks, Clara Viz, MONAI Toolkit, and current Clara docs hub structure.
+- `content/wiki/NVIDIA-Holoscan.md` - refreshed current Holoscan docs context and linked Clara imaging companions.
+- `content/wiki/NVIDIA-BioNeMo.md` - linked current BioNeMo framework docs and Parabricks as a Clara life-sciences sibling.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected MONAI Toolkit to enterprise healthcare AI.
+- `content/index.md` - updated page count to 217 and indexed the new Clara pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 3: CUDA core guides, PTX compiler docs, cuOpt service, and Cloudera certification reference
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch3-20260429T053624Z`; local Git tag `codex-backup-overnight-pre-batch3-20260429T053624Z`
