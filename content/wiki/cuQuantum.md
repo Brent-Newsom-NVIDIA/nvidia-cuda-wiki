@@ -2,12 +2,13 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Quantum Computing, Simulation, Tensor Networks, Scientific Computing
-**Related:** [[cuTENSOR]], [[cuStateVec]], [[cuBLAS]], [[NVIDIA-Warp]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Quantum]], [[CUDA-Q]], [[CUDA-QX]], [[cuTENSOR]], [[cuStateVec]], [[cuBLAS]], [[NVIDIA-Warp]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/solutions/quantum-computing/
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA cuQuantum is a GPU-accelerated SDK for quantum computing simulation, providing libraries and tools for state vector, tensor network, density matrix, Pauli propagation, and stabilizer circuit simulation. It delivers orders-of-magnitude speedups on key quantum problems (random circuits, Shor's algorithm, Variational Quantum Eigensolver) and integrates with major quantum frameworks (Qiskit, Cirq, PennyLane, Qibo) with zero code changes. It scales from single GPU to supercomputer-scale multi-node deployments.
+In the current [[NVIDIA-Quantum]] solution map, cuQuantum is the low-level simulation library family that complements [[CUDA-Q]] programming and [[CUDA-QX]] QEC/solver libraries.
 
 ## Detail
 
@@ -46,6 +47,9 @@ Quantum computers are not yet large enough to solve practical problems without c
 - C++ (low-level single/multi-GPU API)
 
 ## Connections
+- [[NVIDIA-Quantum]] - cuQuantum is part of the current NVIDIA Quantum solution map.
+- [[CUDA-Q]] - CUDA-Q uses cuQuantum as a GPU simulation backend.
+- [[CUDA-QX]] - CUDA-QX application libraries sit above CUDA-Q while cuQuantum provides simulation acceleration.
 - [[cuTENSOR]] — cuTensorNet builds on cuTENSOR for GPU-accelerated tensor network contractions
 - [[cuBLAS]] — cuQuantum uses cuBLAS for dense matrix operations in gate simulation
 - [[NVIDIA-Warp]] — both target scientific simulation; Warp for classical physics, cuQuantum for quantum simulation

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 283*
+*Total pages: 290*
 
 ---
 
@@ -85,9 +85,16 @@
 - [[NVIDIA-Warp]] — open-source Python framework for GPU-accelerated physics simulation with auto-diff
 - [[cuEquivariance]] — GPU-accelerated kernels for equivariant neural networks (drug discovery, materials science)
 - [[cuLitho]] — GPU-accelerated computational lithography (OPC, ILT) for semiconductor manufacturing
+- [[NVIDIA-Quantum]] — NVIDIA accelerated quantum computing platform for QPU, GPU, CUDA-Q, and NVQLink workflows
+- [[NVIDIA-NVQLink]] — realtime GPU-QPU integration architecture for calibration, QEC, and hybrid quantum workflows
+- [[CUDA-QX]] — CUDA-Q library collection for quantum error correction and quantum-classical solver workflows
+- [[CUDA-Q-Realtime]] — CUDA-Q realtime API and networking layer for NVQLink GPU-to-controller feedback loops
 - [[cuQuantum]] — GPU-accelerated quantum computing simulation (state vector, tensor network, density matrix)
 - [[cuStateVec]] — cuQuantum state-vector simulation component for quantum circuit workloads
 - [[CUDA-Q]] — hybrid quantum-classical computing platform with GPU simulation and QPU backend support
+- [[NVIDIA-Quantum-Cloud]] — cloud/API access path for running CUDA-Q projects on NVIDIA GPU systems
+- [[NVIDIA-Accelerated-Quantum-Center]] — NVAQC research facility integrating quantum hardware with NVIDIA AI supercomputing
+- [[NVIDIA-DGX-Quantum]] — queryable DGX Quantum architecture identity now redirected toward NVQLink as the current direction
 
 ### Security & Cryptography
 - [[cuPQC]] — GPU-accelerated post-quantum cryptography (Kyber, Dilithium, FALCON, SPHINCS+)

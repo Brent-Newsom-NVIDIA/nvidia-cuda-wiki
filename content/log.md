@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 16: NVIDIA accelerated quantum computing coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch16-20260429T065150Z`; local Git tag `codex-backup-overnight-pre-batch16-20260429T065150Z`
+
+**Source URLs:** https://www.nvidia.com/en-us/solutions/quantum-computing/, https://www.nvidia.com/en-us/solutions/quantum-computing/nvqlink/, https://nvidia.github.io/cudaqx/, https://nvidia.github.io/cuda-quantum/latest/using/cudaqx/cudaqx.html, https://nvidia.github.io/cuda-quantum/latest/using/realtime.html, https://nvidia.github.io/cuda-quantum/blogs/blog/2026/03/16/launching-cudaq-realtime/, https://www.nvidia.com/en-us/solutions/quantum-computing/accelerated-quantum-center/, https://www.nvidia.com/en-us/data-center/dgx-quantum/
+
+**Gap analysis summary:**
+
+- Added NVIDIA Quantum as the current platform-level page for NVIDIA accelerated quantum computing.
+- Added NVQLink as the current canonical GPU-QPU integration architecture, especially because the DGX Quantum en-US URL now redirects to NVQLink.
+- Added CUDA-QX and CUDA-Q Realtime as separate software pages because they have distinct current NVIDIA documentation and APIs.
+- Added Quantum Cloud, NVAQC, and DGX Quantum pages so cloud access, research-center, and DGX Quantum query terms are represented without confusing older DGX Quantum identity for the current NVQLink direction.
+- Disambiguated NVIDIA Quantum from NVIDIA Quantum InfiniBand.
+
+**Pages created (7 total):**
+
+- `content/wiki/NVIDIA-Quantum.md`
+- `content/wiki/NVIDIA-NVQLink.md`
+- `content/wiki/CUDA-QX.md`
+- `content/wiki/CUDA-Q-Realtime.md`
+- `content/wiki/NVIDIA-Quantum-Cloud.md`
+- `content/wiki/NVIDIA-Accelerated-Quantum-Center.md`
+- `content/wiki/NVIDIA-DGX-Quantum.md`
+
+**Pages updated:**
+
+- `content/wiki/CUDA-Q.md` - connected CUDA-Q to NVQLink, CUDA-QX, CUDA-Q Realtime, Quantum Cloud, and DGX Quantum.
+- `content/wiki/cuQuantum.md` and `content/wiki/cuPQC.md` - linked current NVIDIA Quantum solution context.
+- `content/wiki/NVIDIA-DGX-Cloud.md` - connected Quantum Cloud and CUDA-Q to cloud GPU contexts.
+- `content/wiki/NVIDIA-DGX.md` - added DGX Quantum as a queryable DGX architecture identity.
+- `content/wiki/NVIDIA-GB200-NVL72.md` and `content/wiki/NVIDIA-Blackwell-Architecture.md` - connected NVAQC/GB200 accelerated quantum research context.
+- `content/wiki/NVIDIA-Quantum-InfiniBand.md` - added disambiguation against the NVIDIA Quantum computing platform.
+- `content/index.md` - updated page count to 290 and indexed the seven new quantum pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 15: DGX personal systems and enterprise deployment coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch15-20260429T064319Z`; local Git tag `codex-backup-overnight-pre-batch15-20260429T064319Z`

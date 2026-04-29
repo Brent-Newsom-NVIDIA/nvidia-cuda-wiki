@@ -2,12 +2,13 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, InfiniBand, Networking, HPC, AI Networking, Quantum-2, NDR, HDR, Collective Offload
-**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-UFM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-UFM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]], [[NVIDIA-Quantum]], [[NVIDIA-Accelerated-Quantum-Center]]
 **Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://www.nvidia.com/en-us/networking/silicon-photonics/
 **Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Quantum InfiniBand is NVIDIA's line of high-performance InfiniBand switch silicon and switch systems designed for AI and HPC cluster interconnects. The Quantum-2 generation supports NDR (Next Data Rate) 400Gb/s per port InfiniBand with SHARP (Scalable Hierarchical Aggregation and Reduction Protocol) in-network computing for lossless all-reduce collective operations without host CPU involvement. NVIDIA InfiniBand is the dominant interconnect fabric in AI supercomputers, used in DGX SuperPODs and top HPC clusters worldwide.
+This is a networking product family, not the [[NVIDIA-Quantum]] quantum-computing platform. The name overlap is important for search and disambiguation.
 
 ## Detail
 
@@ -57,6 +58,8 @@ At hyperscale AI training, the interconnect between GPUs becomes the performance
 - [[NVIDIA-DOCA]] — DOCA/DOCA-OFED supplies the modern host and adapter software substrate for NVIDIA networking
 - [[NCCL]] — NCCL uses InfiniBand SHARP for accelerated collective communication
 - [[NVIDIA-DGX]] — DGX SuperPOD uses Quantum InfiniBand as the backbone interconnect
+- [[NVIDIA-Quantum]] - separate quantum-computing platform; linked here for disambiguation.
+- [[NVIDIA-Accelerated-Quantum-Center]] - NVAQC pairs quantum research with NVIDIA AI/HPC networking and GB200 infrastructure.
 
 ## Resources
 - [Quantum InfiniBand](https://www.nvidia.com/en-us/networking/quantum2/)

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, hardware, HPC, AI supercomputer, DGX, data center, training, infrastructure
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html, https://www.nvidia.com/en-us/data-center/dgx-support/)
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 - **DGX Station A100/H100:** Workstation-class systems for small-team or on-premises development
 - **DGX SuperPOD:** Multi-rack clusters of DGX nodes connected via InfiniBand NDR fabric; scales from ~20 to 1000s of nodes; used for pre-training frontier models; "AI data center in a box"
 - **DGX BasePOD:** prescriptive DGX reference architecture for enterprise AI infrastructure below SuperPOD scale
+- **DGX Quantum:** DGX-branded quantum-classical architecture identity; current en-US navigation redirects toward [[NVIDIA-NVQLink]]
 - **DGX Cloud:** NVIDIA-managed DGX infrastructure on Oracle Cloud, Azure, GCP, and AWS; per-node/per-hour rental of full DGX pods; includes NVIDIA AI Enterprise software
 - **DGX Enterprise Support:** support, infrastructure services, and training layer for DGX systems, BasePOD, and SuperPOD
 
@@ -69,6 +70,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 - [[NVIDIA-DGX-B300]] — current Blackwell Ultra DGX system page.
 - [[NVIDIA-DGX-Spark]] — compact personal Grace Blackwell AI computer for local development and agent work.
 - [[NVIDIA-DGX-Station]] — GB300 Grace Blackwell Ultra deskside AI supercomputer.
+- [[NVIDIA-DGX-Quantum]] — queryable DGX Quantum architecture page that points to current NVQLink direction.
 - [[NVIDIA-DGX-Enterprise-Support]] — support and services layer for DGX systems, BasePOD, and SuperPOD.
 - [[NVIDIA-GB300-NVL72]] — rack-scale Blackwell Ultra NVL72 system adjacent to DGX B300 deployments.
 - [[NVIDIA-Certified-Systems]] — certified partner systems extend validated NVIDIA infrastructure beyond DGX-branded platforms

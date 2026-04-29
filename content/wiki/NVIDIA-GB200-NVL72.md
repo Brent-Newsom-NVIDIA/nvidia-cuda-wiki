@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, Hardware, NVLink, Blackwell, Data Center, Rack-Scale, HPC, AI
-**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-B300]], [[NVLink]], [[NVIDIA-DGX]], [[NCCL]], [[NVIDIA-Grace-CPU]], [[NVIDIA-Hopper-Architecture]], [[TensorRT-LLM]], [[Megatron-LM]]
+**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-B300]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Quantum]], [[NVLink]], [[NVIDIA-DGX]], [[NCCL]], [[NVIDIA-Grace-CPU]], [[NVIDIA-Hopper-Architecture]], [[TensorRT-LLM]], [[Megatron-LM]]
 **Sources:** NVIDIA official product page (live fetch 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/gb300-nvl72/)
 **Last Updated:** 2026-04-29
 
@@ -66,6 +66,8 @@ Cloud service providers, hyperscalers, national labs, and enterprises running fr
 - [[NVIDIA-Blackwell-Architecture]] — built entirely on Blackwell B200 GPUs
 - [[NVIDIA-GB300-NVL72]] — Blackwell Ultra successor rack-scale NVL72 system.
 - [[NVIDIA-DGX-B300]] — current DGX Blackwell Ultra system direction.
+- [[NVIDIA-Accelerated-Quantum-Center]] - NVAQC uses GB200 NVL72-class systems for accelerated quantum computing research.
+- [[NVIDIA-DGX-Quantum]] - DGX Quantum architecture context for quantum-classical systems.
 - [[NVLink]] — 5th-gen NVLink provides the 130 TB/s all-to-all fabric
 - [[NVIDIA-Grace-CPU]] — 36 Grace CPUs paired via NVLink-C2C
 - [[NVIDIA-DGX]] — DGX GB200 is the branded version of this platform

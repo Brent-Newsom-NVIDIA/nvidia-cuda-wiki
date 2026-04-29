@@ -2,12 +2,13 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Post-Quantum Cryptography, Security, Cryptography, CUDA-X
-**Related:** [[NVCC]], [[NVRTC]], [[cuBLAS]], [[Thrust]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/cupqc
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Quantum]], [[NVCC]], [[NVRTC]], [[cuBLAS]], [[Thrust]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/cupqc, https://www.nvidia.com/en-us/solutions/quantum-computing/
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuPQC (CUDA Post-Quantum Cryptography) is an NVIDIA CUDA-X library providing GPU-accelerated implementations of post-quantum cryptographic (PQC) algorithms standardized or under evaluation by NIST. As quantum computers threaten to break current public-key cryptography (RSA, ECC), cuPQC enables organizations to perform high-throughput PQC operations — key generation, encapsulation/decapsulation, signing/verification — at GPU speeds, supporting the migration of security infrastructure to quantum-resistant algorithms.
+The current [[NVIDIA-Quantum]] page surfaces cuPQC alongside CUDA-Q, cuQuantum, and NVQLink as part of NVIDIA's broader quantum computing and quantum-safe security story.
 
 ## Detail
 
@@ -45,6 +46,7 @@ cuPQC addresses the massive computational cost of post-quantum cryptographic ope
 - Python bindings (planned/available via wrapper)
 
 ## Connections
+- [[NVIDIA-Quantum]] - cuPQC is listed in NVIDIA's current quantum solution map for quantum-safe security.
 - [[NVCC]] — cuPQC kernels compiled with NVCC for device-side execution
 - [[NVRTC]] — runtime compilation optionally used for dynamic algorithm selection
 - [[Thrust]] — Thrust primitives used internally for auxiliary GPU operations
