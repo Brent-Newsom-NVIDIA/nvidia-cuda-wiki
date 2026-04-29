@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, multimodal safety, content moderation, AI-generated image detection, deepfake detection, TensorRT, Triton
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NemoGuard-NIMs]], [[NeMo-Guardrails]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]]
+**Related:** [[NVIDIA-NIM]], [[Nemotron-3-Content-Safety]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NemoGuard-NIMs]], [[NeMo-Guardrails]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]]
 **Sources:** https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html, https://docs.nvidia.com/nim/multimodal-safety/latest/models.html
 **Last Updated:** 2026-04-29
 
@@ -20,12 +20,14 @@ Multimodal applications need safety checks for generated and uploaded visual con
 - Triton-accelerated container architecture.
 - Model artifact download/cache behavior and container security scan reports.
 - Applications include AI-generated image detection, social media moderation, phishing/deepfake detection, art/authenticity verification, and broader content moderation scenarios.
+- [[Nemotron-3-Content-Safety]] is the model-specific page for NVIDIA's current multimodal, multilingual content-safety moderator for prompt/image/response safety judgments.
 
 ### NVIDIA context
 This page complements text-oriented [[NVIDIA-NemoGuard-NIMs]] by covering visual/multimodal moderation. It is especially relevant near [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], and multimodal retrieval/extraction NIMs.
 
 ## Connections
 - [[NVIDIA-NIM]] - umbrella NIM microservices platform.
+- [[Nemotron-3-Content-Safety]] - NVIDIA model for multimodal, multilingual moderation of prompts, images, and responses.
 - [[NIM-for-Vision-Language-Models]] - multimodal understanding NIMs that may need safety checks.
 - [[NIM-for-Visual-Generative-AI]] - image generation/editing workflows that may need moderation.
 - [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] - visual extraction NIMs adjacent to multimodal moderation.

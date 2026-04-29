@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 88: Nemotron 3 Content Safety
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch88-20260429T123103Z`; local Git tag `codex-backup-overnight-pre-batch88-20260429T123103Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety, https://huggingface.co/nvidia/Nemotron-3-Content-Safety, https://huggingface.co/blog/nvidia/nemotron-3-content-safety
+
+**Gap analysis summary:**
+
+- Added a canonical page for the current NVIDIA-published Nemotron 3 Content Safety model after finding Build NVIDIA and NVIDIA Hugging Face model pages but no dedicated wiki page.
+- Kept it distinct from the existing Nemotron Content Safety Reasoning 4B page because this model is the multimodal/multilingual prompt-image-response moderator rather than the reasoning/custom-policy classifier.
+- Connected the page to Nemotron, NemoGuard NIMs, NeMo Guardrails, Multimodal Safety NIM, VLM NIMs, NIM, AI Enterprise, and adjacent content-safety guard models.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-3-Content-Safety.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NemoGuard-NIMs.md` - added the new multimodal content-safety model to current scope and connections.
+- `content/wiki/NeMo-Guardrails.md` - linked the model from guardrail safety-model context.
+- `content/wiki/NIM-for-Multimodal-Safety.md` - connected the model-specific safety page to the multimodal safety NIM family.
+- `content/wiki/NIM-for-Vision-Language-Models.md` - linked the model as a safety layer for VLM applications.
+- `content/wiki/NVIDIA-NIM.md` - connected the model into the NIM safety and guardrails graph.
+- `content/wiki/Nemotron.md` - converted existing Nemotron 3 Content Safety references into canonical wikilinks.
+- `content/index.md` - updated total page count to 463 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 87: Llama Nemotron text retrieval models
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch87-20260429T122609Z`; local Git tag `codex-backup-overnight-pre-batch87-20260429T122609Z`
