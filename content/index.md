@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 434*
+*Total pages: 435*
 
 ---
 
@@ -506,6 +506,7 @@
 
 ### Large Language Models
 - [[Nemotron]] — NVIDIA model family for reasoning, safety, speech, OCR, retrieval, multimodal, and agentic AI workflows
+- [[Nemotron-Training-Recipes]] — NVIDIA public recipe/cookbook stack for Nemotron 3 Nano and Super pretraining, SFT, RL, evaluation, and execution
 - [[Nemotron-3-Nano]] — efficient Nemotron 3 text reasoning model for agent steps, reasoning modes, and NeMo Megatron Bridge workflows
 - [[Nemotron-3-Super]] — high-capacity Nemotron 3 reasoning model for long-context, coding, planning, and complex agentic workflows
 - [[Nemotron-3-Nano-Omni]] — open omnimodal Nemotron 3 model and NIM for text, image, video, audio, document, and GUI reasoning

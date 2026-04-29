@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NeMo Platform, evaluation, benchmarks, metrics, LLM-as-a-judge, RAG evaluation, agent evaluation
-**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Customizer]], [[NeMo-Data-Designer]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Retriever]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-NIM]], [[Nemotron]], [[NeMo-Auditor]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html
+**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-Customizer]], [[NeMo-Data-Designer]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Retriever]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-NIM]], [[Nemotron]], [[NeMo-Auditor]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemotron/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -29,6 +29,7 @@ It is also the natural regression layer for models trained through [[NeMo-AutoMo
 ## Connections
 - [[NeMo-Platform]] - parent platform for evaluation APIs, jobs, and results.
 - [[NVIDIA-NeMo]] - broader model and agent lifecycle suite.
+- [[Nemotron-Training-Recipes]] - recipe-produced Nano3 and Super3 checkpoints need benchmark and regression evaluation before deployment.
 - [[NeMo-Customizer]] - fine-tuned models should be evaluated before deployment.
 - [[NeMo-Data-Designer]] - generated datasets can become evaluation inputs.
 - [[NeMo-AutoModel]], [[NeMo-RL]], and [[NeMo-Megatron-Bridge]] - framework tools whose outputs need benchmark and regression evaluation.

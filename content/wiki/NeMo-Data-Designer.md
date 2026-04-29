@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NeMo Platform, synthetic data, data generation, LLM, data design, agent data
-**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[NeMo-Curator]], [[NVIDIA-NIM]], [[Nemotron]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/quickstart.html
+**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[NeMo-Curator]], [[NVIDIA-NIM]], [[Nemotron]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/quickstart.html, https://docs.nvidia.com/nemotron/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -27,6 +27,7 @@ Data Designer is a source of task data for downstream [[NeMo-Customizer]] fine-t
 ## Connections
 - [[NeMo-Platform]] - parent microservices platform hosting Data Designer as a synthetic data service.
 - [[NVIDIA-NeMo]] - broader NeMo suite for the AI agent lifecycle.
+- [[Nemotron-Training-Recipes]] - low-level Nemotron recipe workflows can use curated or synthetic task data before customization and evaluation loops.
 - [[NeMo-Customizer]] - synthetic data can feed LoRA, SFT, DPO, and embedding customization jobs.
 - [[NeMo-Evaluator]] - generated datasets can be used for model, RAG, and agent evaluation.
 - [[NeMo-Safe-Synthesizer]] - complementary synthetic data service for private tabular data derived from sensitive originals.

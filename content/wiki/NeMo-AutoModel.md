@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, AutoModel, PyTorch, Hugging Face, LLM, VLM, training, fine-tuning, distributed training
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Run]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[Megatron-LM]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html, https://docs.nvidia.com/nemo/automodel/latest/launcher/nemo-run.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm/nvidia/nemotron.html, https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html
+**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-Run]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[Megatron-LM]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html, https://docs.nvidia.com/nemo/automodel/latest/launcher/nemo-run.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm/nvidia/nemotron.html, https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -28,6 +28,7 @@ AutoModel sits between open Hugging Face model ecosystems and NVIDIA's training/
 
 ## Connections
 - [[NVIDIA-NeMo]] - parent framework family for model training, post-training, evaluation, and deployment.
+- [[Nemotron-Training-Recipes]] - adjacent recipe/cookbook path for Nemotron training that uses Megatron Bridge and NeMo RL rather than AutoModel as its core low-level recipe engine.
 - [[NeMo-Run]] - job-launch path for AutoModel workloads across local, Docker, Slurm, and Kubernetes-style environments.
 - [[NeMo-RL]] - post-training library that can use AutoModel as a PyTorch training backend for Hugging Face models.
 - [[NeMo-Megatron-Bridge]] - higher-scale Megatron Core bridge/training path for large LLM/VLM models and checkpoint conversion.

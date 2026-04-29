@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 59: Nemotron training recipe stack
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch59-20260429T105032Z`; local Git tag `codex-backup-overnight-pre-batch59-20260429T105032Z`
+
+**Source URLs:** https://docs.nvidia.com/nemotron/latest/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/kit.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/package-readme.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/nemo-run.html, https://docs.nvidia.com/nemotron/latest/runspec/v1/spec.html, https://docs.nvidia.com/nemotron/latest/architecture/README.html, https://docs.nvidia.com/nemotron/latest/architecture/cli-architecture.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the durable Nemotron training/cookbook layer after finding current NVIDIA docs for Nano3 and Super3 recipes, Nemotron Kit, `nemo_runspec`, runspec metadata, NeMo-Run execution, CLI architecture, and the NVIDIA AI stack behind the recipes.
+- Kept individual recipe stages, `nemo_runspec` internals, W&B helpers, artifact-tracking details, and CLI files folded into the canonical recipe page rather than creating many small pages from one docs tree.
+- Treated the recipe docs as current/latest NVIDIA-authored material and did not use build.nvidia build cards for this batch.
+- Connected recipe coverage back to the existing model and NeMo pages so queries can move from model identity to training, post-training, execution, and evaluation context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-Training-Recipes.md`
+
+**Pages updated:**
+
+- `content/wiki/Nemotron.md` - connected the family hub to the public recipe/cookbook layer.
+- `content/wiki/Nemotron-3-Nano.md` - added Nano3 pretraining, SFT, RL, and public-data recipe context.
+- `content/wiki/Nemotron-3-Super.md` - added Super3 pretraining, two-stage SFT, multi-stage RL, and quantization recipe context.
+- `content/wiki/NVIDIA-NeMo.md`, `content/wiki/NeMo-Run.md`, `content/wiki/NeMo-Megatron-Bridge.md`, `content/wiki/NeMo-RL.md`, `content/wiki/NeMo-AutoModel.md`, `content/wiki/NeMo-Data-Designer.md`, and `content/wiki/NeMo-Evaluator.md` - linked the relevant NeMo stack components to the recipe page.
+- `content/index.md` - updated total page count to 435 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 58: Nemotron 3 text reasoning models
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch58-20260429T104220Z`; local Git tag `codex-backup-overnight-pre-batch58-20260429T104220Z`

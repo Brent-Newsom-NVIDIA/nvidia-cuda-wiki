@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, reinforcement learning, post-training, RLHF, GRPO, DPO, SFT, VLM, LLM, Ray
-**Related:** [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
+**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,6 +21,7 @@ Post-training is where teams align models for reasoning, preference, safety, too
 - Generation/rollout backends using [[vLLM]] or Megatron-native inference.
 - Ray-based resource management and multi-GPU/multi-node execution.
 - Model support that includes current NVIDIA/Nemotron entries such as Llama-Nemotron-Super, Nemotron Nano v2, Nemotron Nano v3, and adjacent Nemotron 3 workflows.
+- Current [[Nemotron-Training-Recipes]] docs use NeMo-RL for Nano3 GRPO/RLVR/RLHF/DPO alignment and Super3 multi-environment RLVR, SWE-RL, and RLHF stages.
 - NVIDIA's Nemotron 3 Super launch material describes multi-environment reinforcement learning using NeMo RL and NeMo Gym, connecting [[Nemotron-3-Super]] directly to the RL/post-training stack.
 
 ### NVIDIA context
@@ -28,6 +29,7 @@ NeMo RL extends the NeMo stack beyond supervised customization into reinforcemen
 
 ## Connections
 - [[NVIDIA-NeMo]] - parent suite for training, customization, post-training, and deployment.
+- [[Nemotron-Training-Recipes]] - public recipe surface that uses NeMo-RL for Nemotron RL/post-training stages.
 - [[NeMo-AutoModel]] - PyTorch backend path for broad Hugging Face model coverage.
 - [[NeMo-Megatron-Bridge]] - Megatron Core bridge/training path for larger models and high-throughput recipes.
 - [[NeMo-Run]] - experiment execution layer for repeatable local and cluster runs.
