@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 82: Ising Calibration 1 35B A3B
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch82-20260429T120827Z`; local Git tag `codex-backup-overnight-pre-batch82-20260429T120827Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/ising-calibration-1-35b-a3b/modelcard, https://build.nvidia.com/nvidia/ising-calibration-1-35b-a3b, https://huggingface.co/nvidia/Ising-Calibration-1-35B-A3B
+
+**Gap analysis summary:**
+
+- Added a canonical page for the NVIDIA-published Ising Calibration 1 35B A3B model after finding a current Build NVIDIA model card and no existing wiki page.
+- Treated this as a durable NVIDIA-authored model entry, not as a generic build-card scrape; skipped deprecated/partner build entries and kept the page scoped to the specific NVIDIA model card.
+- Connected the model to NVIDIA Quantum, CUDA-Q, NVQLink, CUDA-QX, NIM, VLM NIM context, Quantum Cloud, and NVAQC.
+
+**Pages created (1 total):**
+
+- `content/wiki/Ising-Calibration-1-35B-A3B.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Quantum.md` - connected the new Ising quantum calibration model.
+- `content/wiki/NIM-for-Vision-Language-Models.md` - linked the domain-specific VLM endpoint.
+- `content/wiki/NVIDIA-NIM.md` - linked the Build NVIDIA/NIM endpoint.
+- `content/index.md` - updated total page count to 456 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 81: ComputeEval
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch81-20260429T120542Z`; local Git tag `codex-backup-overnight-pre-batch81-20260429T120542Z`
