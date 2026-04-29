@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, reinforcement learning, post-training, RLHF, GRPO, DPO, SFT, VLM, LLM, Ray
-**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
+**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-Core]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -36,7 +36,8 @@ NeMo RL extends the NeMo stack beyond supervised customization into reinforcemen
 - [[NeMo-Customizer]] - managed customization service adjacent to code-level RL/post-training.
 - [[NeMo-Evaluator]] - evaluation layer for post-training regressions and quality checks.
 - [[NeMo-Auditor]] - safety audit layer for probing aligned or fine-tuned models.
-- [[Megatron-LM]] - distributed training lineage and scaling model behind large-model backends.
+- [[Megatron-Core]] - composable library behind the Megatron backend and scaling model.
+- [[Megatron-LM]] - reference implementation and distributed training lineage behind large-model backends.
 - [[vLLM]] - rollout/generation backend used in current NeMo RL docs.
 - [[Nemotron]], [[Nemotron-3-Nano]], and [[Nemotron-3-Super]] - NVIDIA model family and current Nemotron 3 reasoning models represented in NeMo RL/post-training workflows.
 - [[NVIDIA-AI-Enterprise]] - enterprise software context for production NeMo workflows.

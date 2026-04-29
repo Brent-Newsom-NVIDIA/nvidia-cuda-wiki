@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 63: Megatron Core
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch63-20260429T111313Z`; local Git tag `codex-backup-overnight-pre-batch63-20260429T111313Z`
+
+**Source URLs:** https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/parallelism-guide.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/models/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/moe.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/custom_fsdp.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/api-guide/index.html, https://developer.nvidia.com/megatron-core
+
+**Gap analysis summary:**
+
+- Added a canonical page for Megatron Core after current NVIDIA docs distinguished it from Megatron-LM and Megatron Bridge.
+- Kept API packages, feature guides, model classes, routing design docs, and individual parallelism subtopics folded into the single Megatron Core page rather than generating many pages from one docs tree.
+- Updated the Megatron/NeMo graph so Megatron Core is the library/API layer, Megatron-LM is the reference implementation, and NeMo Megatron Bridge is the conversion/training bridge.
+
+**Pages created (1 total):**
+
+- `content/wiki/Megatron-Core.md`
+
+**Pages updated:**
+
+- `content/wiki/Megatron-LM.md`, `content/wiki/NeMo-Megatron-Bridge.md`, `content/wiki/Nemotron-Training-Recipes.md`, `content/wiki/NVIDIA-NeMo.md`, and `content/wiki/NeMo-RL.md` - clarified Megatron Core vs Megatron-LM vs Bridge relationships.
+- `content/wiki/Transformer-Engine.md` and `content/wiki/NVIDIA-Optimized-Frameworks.md` - connected TE and NVIDIA PyTorch containers to Megatron Core.
+- `content/index.md` - updated total page count to 439 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 62: NVIDIA Optimized Frameworks containers
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch62-20260429T111001Z`; local Git tag `codex-backup-overnight-pre-batch62-20260429T111001Z`

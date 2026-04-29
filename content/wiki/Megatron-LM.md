@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Distributed Training, Transformer, Research, Pre-training
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
-**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
+**Related:** [[Megatron-Core]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
+**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
-Megatron-LM is NVIDIA's open-source research framework for efficient training of large transformer-based language models, developed by the NVIDIA Applied Deep Learning Research team. It pioneered the combination of tensor parallelism, pipeline parallelism, and data parallelism that enables training of models with hundreds of billions to trillions of parameters across thousands of NVIDIA GPUs. Current NeMo docs now place [[NeMo-Megatron-Bridge]] beside this lineage as the PyTorch-native bridge, conversion, and training layer for Hugging Face and Megatron Core workflows.
+Megatron-LM is NVIDIA's open-source reference implementation and lightweight training framework for efficient training of large transformer-based models. It pioneered the combination of tensor parallelism, pipeline parallelism, and data parallelism that enables training with hundreds of billions to trillions of parameters across thousands of NVIDIA GPUs. Current Megatron Core docs now distinguish Megatron-LM from [[Megatron-Core]]: Core is the composable library, while Megatron-LM is the end-to-end reference implementation and training entry point.
 
 ## Detail
 
@@ -31,6 +31,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 - Interleaved pipeline schedule for reduced pipeline bubble overhead
 - Checkpoint conversion utilities for downstream fine-tuning
 - Current NeMo ecosystem bridge through [[NeMo-Megatron-Bridge]] for Hugging Face/Megatron conversion, verification, recipes, and downstream export.
+- Reference implementation around [[Megatron-Core]], with preconfigured scripts and examples for large-scale model training.
 - BioNeMo recipe adjacency through [[BioNeMo-Recipes]], which documents megatron-FSDP style scaling for biological foundation model training examples.
 
 ### Use Cases
@@ -55,7 +56,8 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 - CUDA C++ for fused kernel extensions
 
 ## Connections
-- [[NVIDIA-NeMo]] — NeMo incorporates Megatron-LM's parallelism core as its distributed training backbone
+- [[Megatron-Core]] - composable library of transformer, parallelism, optimizer, dataset, checkpointing, and API building blocks used by Megatron-LM.
+- [[NVIDIA-NeMo]] — NeMo incorporates Megatron-family parallelism concepts as part of its distributed training backbone.
 - [[NeMo-Megatron-Bridge]] - current NeMo library for Hugging Face/Megatron conversion, high-scale recipes, and Megatron Core training paths.
 - [[NeMo-AutoModel]] - Hugging Face-compatible training path that complements Megatron-scale workflows.
 - [[NeMo-RL]] - post-training library that can use Megatron-style backends for larger models.
@@ -71,6 +73,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 
 ## Resources
 - [GitHub](https://github.com/NVIDIA/Megatron-LM)
+- [Megatron Core Developer Guide](https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html)
 - [Original Paper: Megatron-LM (2019)](https://arxiv.org/abs/1909.08053)
 - [Megatron-Turing NLG Paper](https://arxiv.org/abs/2201.11990)
 - [NVIDIA Blog: Megatron-LM](https://developer.nvidia.com/blog/scaling-language-model-training-to-a-trillion-parameters-using-megatron/)

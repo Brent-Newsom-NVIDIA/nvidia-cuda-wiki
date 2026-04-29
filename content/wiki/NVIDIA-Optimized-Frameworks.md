@@ -2,7 +2,7 @@
 
 **Type:** Container stack
 **Tags:** NVIDIA, optimized frameworks, deep learning containers, NGC, Docker, PyTorch, TensorFlow, JAX, CUDA, cuDNN, NCCL, DGX
-**Related:** [[NGC]], [[NVIDIA-Container-Toolkit]], [[PyTorch]], [[JAX]], [[TensorFlow-GPU]], [[Transformer-Engine]], [[cuDNN]], [[NCCL]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-DGX]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-GPU-Operator]], [[CUDA-Compatibility]]
+**Related:** [[NGC]], [[NVIDIA-Container-Toolkit]], [[PyTorch]], [[JAX]], [[TensorFlow-GPU]], [[Transformer-Engine]], [[Megatron-Core]], [[cuDNN]], [[NCCL]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-DGX]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-GPU-Operator]], [[CUDA-Compatibility]]
 **Sources:** https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html, https://docs.nvidia.com/deeplearning/frameworks/support-matrix/, https://docs.nvidia.com/deeplearning/frameworks/preparing-containers/index.html
 **Last Updated:** 2026-04-29
 
@@ -47,6 +47,7 @@ The usual path is:
 - [[NVIDIA-Container-Toolkit]] - runtime layer that exposes GPUs to the framework containers.
 - [[PyTorch]], [[JAX]], and [[TensorFlow-GPU]] - framework pages for the model-development APIs inside the containers.
 - [[Transformer-Engine]] - installed in supported NVIDIA PyTorch containers and used by current low-precision transformer workflows.
+- [[Megatron-Core]] - current installation docs recommend NVIDIA PyTorch containers for Megatron Core compatibility.
 - [[cuDNN]], [[NCCL]], [[TensorRT]], and [[NVIDIA-DALI]] - core acceleration libraries commonly bundled with framework containers.
 - [[NVIDIA-DGX]] - DGX systems use containers as the standard delivery pattern for deep learning frameworks.
 - [[NVIDIA-AI-Enterprise]] - enterprise software stack uses the same NGC/container distribution and support model.

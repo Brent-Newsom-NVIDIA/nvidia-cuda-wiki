@@ -2,7 +2,7 @@
 
 **Type:** Library
 **Tags:** NVIDIA, Transformer Engine, deep learning, transformer models, FP8, MXFP8, NVFP4, PyTorch, JAX, Hopper, Blackwell, low precision training
-**Related:** [[PyTorch]], [[JAX]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[Nemotron-Training-Recipes]], [[BioNeMo-Recipes]], [[Megatron-LM]], [[TensorRT-LLM]], [[TensorRT]], [[cuDNN]], [[NGC]]
+**Related:** [[PyTorch]], [[JAX]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[Nemotron-Training-Recipes]], [[BioNeMo-Recipes]], [[Megatron-Core]], [[Megatron-LM]], [[TensorRT-LLM]], [[TensorRT]], [[cuDNN]], [[NGC]]
 **Sources:** https://docs.nvidia.com/deeplearning/transformer-engine/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/installation.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/introduction/introduction.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/examples/fp8_primer.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/mxfp8/mxfp8.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/nvfp4/nvfp4.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/api/pytorch.html, https://docs.nvidia.com/deeplearning/transformer-engine/release-notes/index.html
 **Last Updated:** 2026-04-29
 
@@ -49,7 +49,7 @@ For NVIDIA users, the most common paths are:
 - [[NVIDIA-NeMo]], [[NeMo-AutoModel]], and [[NeMo-Megatron-Bridge]] - NVIDIA model training stack that uses TE-style acceleration for fused attention, FP8, and large-model recipes.
 - [[Nemotron-Training-Recipes]] - Nemotron recipe docs include FP8/NVFP4 quantization paths and rely on NeMo/Megatron training components adjacent to TE.
 - [[BioNeMo-Recipes]] - biological foundation model recipes use TE layers for accelerated AMPLIFY, ESM-2, Geneformer, and related examples.
-- [[Megatron-LM]] - related large-scale transformer-training lineage that benefits from TE-style fused and low-precision transformer kernels.
+- [[Megatron-Core]] and [[Megatron-LM]] - Megatron-family training layers that benefit from TE-style fused and low-precision transformer kernels.
 - [[TensorRT-LLM]], [[TensorRT]], and [[cuDNN]] - downstream inference/runtime and primitive libraries that complement TE's model-authoring and low-precision training paths.
 - [[NVIDIA-Optimized-Frameworks]] and [[NGC]] - distribution path for NVIDIA framework containers that include Transformer Engine.
 

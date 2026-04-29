@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 438*
+*Total pages: 439*
 
 ---
 
@@ -188,6 +188,7 @@
 - [[NVIDIA-NMT-NIM]] — Neural machine translation NIM for Riva Translate 1.6B and 36-language translation workflows
 - [[NVIDIA-Background-Noise-Removal-NIM]] — Maxine audio NIM for streaming and transactional background noise removal
 - [[NVIDIA-Agent-Intelligence-Toolkit]] — Framework-agnostic toolkit for agent workflows, profiling, evaluation, MCP, and A2A
+- [[Megatron-Core]] — composable NVIDIA library for large-scale LLM/MoE/multimodal training primitives and parallelism APIs
 - [[Megatron-LM]] — open-source framework for 3D-parallel LLM pre-training at trillion-parameter scale
 - [[TensorRT-LLM]] — LLM inference optimization: continuous batching, paged KV cache, FP8, TP/PP
 
