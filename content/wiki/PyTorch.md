@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
-**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
+**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -31,6 +31,7 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 
 ### Use Cases
 - Training large language models (LLMs) and vision transformers
+- Running NVIDIA-tested PyTorch environments through [[NVIDIA-Optimized-Frameworks]] containers from [[NGC]]
 - Computer vision model development (classification, detection, segmentation)
 - NLP and speech model research and production
 - Reinforcement learning environments
@@ -54,6 +55,7 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - CUDA C++ for custom kernel extensions via `torch.utils.cpp_extension`
 
 ## Connections
+- [[NVIDIA-Optimized-Frameworks]] - NVIDIA publishes optimized PyTorch container images with CUDA libraries, tools, and support-matrix versioning.
 - [[cuDNN]] — PyTorch uses cuDNN for all convolution, attention, and normalization primitives
 - [[cuBLAS]] — underlies all `torch.matmul` / `torch.nn.Linear` operations on GPU
 - [[NCCL]] — powers `torch.distributed` for multi-GPU all-reduce and collective operations

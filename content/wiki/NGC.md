@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -29,6 +29,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 
 ### Use Cases
 - Rapidly bootstrapping deep learning training and inference environments without manual CUDA/cuDNN installation
+- Pulling [[NVIDIA-Optimized-Frameworks]] containers for versioned PyTorch, TensorFlow, JAX, CUDA Deep Learning, and related framework environments
 - Deploying production inference servers with verified, optimized Triton Inference Server containers
 - Accessing pre-trained foundation models (LLMs, vision-language models, protein structure models) for fine-tuning or deployment
 - Pulling BioNeMo-related containers, model artifacts, and NIM assets for life-sciences model training and inference workflows
@@ -57,6 +58,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[NVIDIA-AI-Enterprise-Software]] — current AI Enterprise software catalog maps supported application and infrastructure components to NGC and documentation.
 - [[NVIDIA-NIM]] — All NIM containers are hosted in the NGC catalog and deployed via NGC credentials
 - [[NVIDIA-NGC-Catalog]] — public catalog surface for containers, models, Helm charts, and SDKs
+- [[NVIDIA-Optimized-Frameworks]] — deep learning framework containers are distributed through NGC and documented through NVIDIA's framework support matrix.
 - [[NVIDIA-TAO]] — TAO containers, pretrained CV models, and model artifacts are distributed through NGC.
 - [[Nemotron]] — NVIDIA model family whose downloadable and API-facing artifacts appear through NVIDIA model catalogs
 - [[NeMo-Platform]] — NeMo microservices rely on NGC credentials and NVIDIA-hosted artifacts

@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Machine Learning, Automatic Differentiation, JIT, Python, Scientific Computing
-**Related:** [[cuDNN]], [[cuBLAS]], [[NCCL]], [[CuPy]], [[PyTorch]], [[Transformer-Engine]], [[TensorFlow-GPU]]
-**Sources:** jax.readthedocs.io official documentation, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[cuBLAS]], [[NCCL]], [[CuPy]], [[PyTorch]], [[Transformer-Engine]], [[TensorFlow-GPU]]
+**Sources:** jax.readthedocs.io official documentation, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -36,6 +36,7 @@ JAX solves the problem of writing high-performance numerical code that is simult
 - Scientific computing: PDE solvers, molecular dynamics, quantum chemistry
 - Reinforcement learning environments requiring differentiable dynamics
 - Multi-host distributed training with explicit sharding control
+- Reproducible GPU environments through [[NVIDIA-Optimized-Frameworks]] containers and support-matrix versioning
 - Neural ODE and continuous-time model training
 - Transformer model training with NVIDIA [[Transformer-Engine]] JAX/Flax modules, including FP8, MXFP8, and NVFP4 recipe paths on supported NVIDIA GPUs
 
@@ -51,6 +52,7 @@ JAX solves the problem of writing high-performance numerical code that is simult
 - XLA HLO (intermediate representation, typically not user-facing)
 
 ## Connections
+- [[NVIDIA-Optimized-Frameworks]] - NVIDIA optimized framework containers provide a versioned path for JAX GPU environments where available.
 - [[cuDNN]] — XLA uses cuDNN for convolution and attention operations on NVIDIA GPUs
 - [[cuBLAS]] — XLA delegates GEMM operations to cuBLAS/cuBLASLt
 - [[NCCL]] — JAX's `pmap`/`shard_map` multi-device collectives use NCCL

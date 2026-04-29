@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 62: NVIDIA Optimized Frameworks containers
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch62-20260429T111001Z`; local Git tag `codex-backup-overnight-pre-batch62-20260429T111001Z`
+
+**Source URLs:** https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html, https://docs.nvidia.com/deeplearning/frameworks/support-matrix/, https://docs.nvidia.com/deeplearning/frameworks/preparing-containers/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical NVIDIA Optimized Frameworks page after finding current NVIDIA docs for deep learning framework containers, DGX/container preparation, the user guide, and the support matrix.
+- Kept PyTorch, TensorFlow, JAX, CUDA Deep Learning images, release tables, and individual container versions folded into the umbrella page because the docs tree is a shared framework-container surface rather than separate durable product pages.
+- Connected the page to NGC, Container Toolkit, DGX, AI Enterprise, PyTorch, JAX, TensorFlow, Transformer Engine, and core acceleration libraries so container/versioning questions can resolve into the correct source-of-truth page.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Optimized-Frameworks.md`
+
+**Pages updated:**
+
+- `content/wiki/PyTorch.md`, `content/wiki/JAX.md`, and `content/wiki/TensorFlow-GPU.md` - linked framework concept pages to NVIDIA's optimized container distribution layer.
+- `content/wiki/NGC.md`, `content/wiki/NVIDIA-Container-Toolkit.md`, `content/wiki/NVIDIA-DGX.md`, and `content/wiki/NVIDIA-AI-Enterprise.md` - connected registry, runtime, DGX, and enterprise context.
+- `content/wiki/Transformer-Engine.md` - connected TE's NGC/PyTorch-container install path to the framework-container page.
+- `content/index.md` - updated total page count to 438 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 61: Transformer Engine
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch61-20260429T110508Z`; local Git tag `codex-backup-overnight-pre-batch61-20260429T110508Z`
