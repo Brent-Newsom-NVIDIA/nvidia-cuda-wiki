@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI blueprints, reference workflows, NIM, NeMo, agents, build.nvidia
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
 **Sources:** https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
 **Last Updated:** 2026-04-29
 
@@ -34,6 +34,7 @@ Do not create one wiki page per blueprint listing. Create a page only when a blu
 - [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]] - retrieval NIMs commonly appear in RAG and agent blueprints.
 - [[NIM-for-Cosmos-Embed1]] - durable NIM for physical AI video search and dataset curation workflows referenced by blueprint-style applications.
 - [[NIM-for-Vision-Language-Models]] and [[NIM-for-Visual-Generative-AI]] - multimodal understanding and visual generation NIM families that can compose with blueprint workflows.
+- [[NVIDIA-NemoGuard-NIMs]] and [[NIM-for-Multimodal-Safety]] - safety NIM families that can moderate text and multimodal blueprint workflows.
 - [[NVIDIA-AI-Enterprise]] - enterprise blueprints map to NVIDIA-supported production AI software.
 - [[NVIDIA-AI-Q-Blueprint]] - durable AI Blueprint for enterprise research agents.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - durable AI Blueprint for continuous agent and model optimization.

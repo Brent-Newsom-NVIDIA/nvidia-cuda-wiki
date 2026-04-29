@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, visual generative AI, image generation, image editing, diffusion, 3D generation, multimodal AI
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-Cosmos]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NGC-Catalog]], [[TensorRT]], [[Triton-Inference-Server]]
-**Sources:** https://docs.nvidia.com/nim/visual-genai/latest/overview.html, https://docs.nvidia.com/nim/visual-genai/latest/index.html, https://docs.nvidia.com/nim/visual-genai/latest/getting-started.html
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Multimodal-Safety]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-Cosmos]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NGC-Catalog]], [[TensorRT]], [[Triton-Inference-Server]]
+**Sources:** https://docs.nvidia.com/nim/visual-genai/latest/overview.html, https://docs.nvidia.com/nim/visual-genai/latest/index.html, https://docs.nvidia.com/nim/visual-genai/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -28,6 +28,7 @@ Visual GenAI NIMs are part of the broader [[NVIDIA-NIM]] catalog and complement 
 ## Connections
 - [[NVIDIA-NIM]] - umbrella inference microservices platform.
 - [[NIM-for-Vision-Language-Models]] - companion multimodal understanding NIM family.
+- [[NIM-for-Multimodal-Safety]] - moderation NIM family for checking visual and multimodal content.
 - [[NIM-for-Cosmos-WFM]] - physical AI world model NIM family, separate from general visual generation.
 - [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for search and curation around visual datasets.
 - [[NVIDIA-Cosmos]] - broader world foundation model platform for physical AI.

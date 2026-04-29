@@ -2,9 +2,9 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NeMo, Guardrails, LLM Safety, AI Alignment, RAG, Dialogue Management, Colang
-**Related:** [[NVIDIA-NeMo]], [[Nemotron]], [[NVIDIA-NIM]], [[TensorRT-LLM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[NIM-for-Multimodal-Safety]], [[Nemotron]], [[NVIDIA-NIM]], [[TensorRT-LLM]], [[NVIDIA-AI-Enterprise]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/guardrail-catalog/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NeMo Guardrails is an open-source toolkit from NVIDIA for adding programmable safety, topic control, and behavioral guardrails to large language model (LLM) applications. It uses a custom domain-specific language called Colang to define rules that control what topics an LLM can discuss, how it should handle off-topic requests, what facts it must check against a knowledge base, and how it should respond to jailbreak attempts. NeMo Guardrails works with any LLM (OpenAI, Nemotron, Llama, etc.) and integrates with LangChain, providing lightweight runtime guardrails without fine-tuning.
@@ -21,6 +21,8 @@ Deploying LLMs in enterprise and consumer applications requires controlling mode
 - Dialog rails: control conversation flow (topic adherence, multi-turn dialogue management)
 - Retrieval rails: enforce RAG usage for factual grounding
 - Jailbreak detection: heuristic and LLM-based jailbreak attempt detection
+- Guardrail catalog: current docs include content safety, topic control, jailbreak protection, PII detection/masking, and grounding rails.
+- NemoGuard NIMs: [[NVIDIA-NemoGuard-NIMs]] provide deployable NIMs for content safety, topic control, and jailbreak detection.
 - LLM-agnostic: works with any LLM backend (OpenAI, HuggingFace, NIM, etc.)
 - LangChain integration: NeMo Guardrails as a LangChain runnable component
 - Fact-checking rail: automated fact verification against provided knowledge bases
@@ -50,6 +52,13 @@ Deploying LLMs in enterprise and consumer applications requires controlling mode
 
 ## Connections
 - [[NVIDIA-NeMo]] — NeMo Guardrails is part of the broader NeMo ecosystem
+- [[NeMo-Platform]] - platform deployment path for self-hosted NemoGuard NIMs and guardrail services.
+- [[NVIDIA-NemoGuard-NIMs]] - current specialized guardrail NIM family.
+- [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] - multilingual content-safety NIM used in current NeMo Platform tutorials.
+- [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]] - topic-control NIM for on-topic/off-topic classification.
+- [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] - earlier NemoGuard content-safety NIM lineage.
+- [[NVIDIA-NemoGuard-JailbreakDetect-NIM]] - jailbreak and prompt-injection detection NIM.
+- [[NIM-for-Multimodal-Safety]] - visual/multimodal moderation NIM family adjacent to text guardrails.
 - [[Nemotron]] — Guardrails applied to Nemotron-based enterprise deployments
 - [[NVIDIA-NIM]] — NIM microservices can be wrapped with NeMo Guardrails for controlled access
 - [[TensorRT-LLM]] — TensorRT-LLM provides the optimized inference backend that Guardrails wraps

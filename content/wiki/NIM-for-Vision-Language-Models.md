@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, VLM, vision-language model, multimodal AI, visual question answering, image understanding, video understanding, OpenAI-compatible
-**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NVIDIA-EAGLE]], [[Nemotron]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Visual-Generative-AI]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html
+**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NVIDIA-EAGLE]], [[Nemotron]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -32,6 +32,7 @@ This page bridges NVIDIA model families such as [[NVLM]], [[NVIDIA-EAGLE]], [[Ne
 - [[NIM-for-Cosmos-WFM]] - Cosmos WFM NIM covers Predict and Transfer; VLM docs cover Cosmos Reason.
 - [[NIM-for-Cosmos-Embed1]] - embedding NIM for video-text retrieval complements VLM reasoning.
 - [[NIM-for-Visual-Generative-AI]] - adjacent NIM family for image generation and editing models.
+- [[NIM-for-Multimodal-Safety]] - moderation NIM family for multimodal applications that understand or generate visual content.
 - [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] - Retriever extraction NIMs for document/video understanding pipelines.
 - [[NVIDIA-AI-Data-Platform]] - VLMs can reason over retrieved multimodal enterprise data.
 - [[TensorRT-LLM]] and [[Triton-Inference-Server]] - inference and serving stack for NIM deployments.

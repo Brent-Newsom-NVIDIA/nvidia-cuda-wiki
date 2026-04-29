@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NIM, LLM, generative AI, inference, vLLM, OpenAI-compatible API, Kubernetes, LoRA, model serving
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NGC]]
-**Sources:** https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html; https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NGC]]
+**Sources:** https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html; https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html; https://docs.nvidia.com/nim/llama-3-1-nemotron-safety-guard-8b/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,9 +16,14 @@ The current architecture uses a NIM orchestration layer, a profile/model-managem
 
 Deployment coverage includes local Docker, Helm/Kubernetes, KServe, OpenShift, Run:ai, cloud providers, air-gapped environments, multi-node deployments, vGPU deployments, and [[NVIDIA-NIM-Operator]]. Advanced features include LoRA, tool calling and MCP integration, custom logits processing, prompt embeddings, model signature verification, logging/observability, model-free NIM, model-specific NIMs, and support matrices for certified and day-zero NIMs.
 
+Safety-oriented LLM NIMs, including [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], and [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], build on the NIM for LLMs serving surface but are used as guardrail classifiers rather than general chat models.
+
 ## Connections
 - [[NVIDIA-NIM]] - NIM LLM is the LLM-specific NIM documentation surface.
 - [[NVIDIA-NIM-Operator]] - Kubernetes lifecycle management path for NIM LLM deployments.
+- [[NVIDIA-NemoGuard-NIMs]] - safety NIM family built around LLM and classify endpoints for guardrails.
+- [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], and [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] - guardrail classifiers that use NIM LLM serving patterns.
+- [[NVIDIA-NemoGuard-JailbreakDetect-NIM]] - jailbreak classifier companion with a classify endpoint.
 - [[TensorRT-LLM]] - adjacent LLM optimization backend in the NVIDIA inference stack.
 - [[Triton-Inference-Server]] - production serving layer adjacent to NIM and TensorRT-LLM workflows.
 - [[NVIDIA-Dynamo]] - large-scale/disaggregated serving platform adjacent to NIM LLM.
@@ -32,4 +37,3 @@ Deployment coverage includes local Docker, Helm/Kubernetes, KServe, OpenShift, R
 - "NIM Day 0"
 - "NIM Turbo"
 - "NIM Certified"
-

@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 27: NemoGuard and multimodal safety NIMs
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch27-20260429T075302Z`; local Git tag `codex-backup-overnight-pre-batch27-20260429T075302Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html, https://docs.nvidia.com/nim/llama-3-1-nemoguard-8b-topiccontrol/latest/index.html, https://docs.nvidia.com/nim/llama-3-1-nemoguard-8b-contentsafety/latest/index.html, https://docs.nvidia.com/nim/llama-3-1-nemotron-safety-guard-8b/latest/index.html, https://docs.nvidia.com/nim/nemoguard-jailbreakdetect/latest/index.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added first-class pages for current NVIDIA guardrail and safety NIM surfaces: NemoGuard NIMs, TopicControl, ContentSafety, Nemotron Safety Guard, JailbreakDetect, and Multimodal Safety.
+- Kept each guardrail NIM as its own wiki page because each has its own durable NVIDIA docs surface, endpoint behavior, use case, and query intent.
+- Connected text safety NIMs to NeMo Guardrails, NeMo Platform, NIM for LLMs, Nemotron, AI Enterprise, TensorRT, and Triton.
+- Connected Multimodal Safety to VLM, Visual GenAI, Retriever extraction NIMs, NeMo Guardrails, TensorRT, and Triton for visual moderation and generated-content safety.
+- Did not create separate pages for every prompt template, support matrix, hosted Try API, or tutorial code path.
+
+**Pages created (6 total):**
+
+- `content/wiki/NVIDIA-NemoGuard-NIMs.md`
+- `content/wiki/Llama-3.1-Nemotron-Safety-Guard-8B-NIM.md`
+- `content/wiki/Llama-3.1-NemoGuard-8B-TopicControl-NIM.md`
+- `content/wiki/Llama-3.1-NemoGuard-8B-ContentSafety-NIM.md`
+- `content/wiki/NVIDIA-NemoGuard-JailbreakDetect-NIM.md`
+- `content/wiki/NIM-for-Multimodal-Safety.md`
+
+**Pages updated:**
+
+- `content/wiki/NeMo-Guardrails.md` and `content/wiki/NeMo-Platform.md` - connected guardrail runtime and platform deployment to NemoGuard NIM pages.
+- `content/wiki/NVIDIA-NIM.md` - promoted safety and guardrail NIMs into the umbrella NIM graph.
+- `content/wiki/NIM-for-Large-Language-Models.md` - linked LLM-serving NIM patterns to guardrail classifier NIMs.
+- `content/wiki/NIM-for-Vision-Language-Models.md` and `content/wiki/NIM-for-Visual-Generative-AI.md` - linked multimodal and visual generation workflows to Multimodal Safety.
+- `content/wiki/Nemotron.md` and `content/wiki/NVIDIA-NeMo.md` - connected Nemotron/NeMo safety lineage to deployable guardrail NIMs.
+- `content/wiki/NVIDIA-AI-Enterprise.md` and `content/wiki/NVIDIA-AI-Blueprints.md` - connected enterprise and blueprint workflows to safety NIMs.
+- `content/wiki/TensorRT.md` and `content/wiki/Triton-Inference-Server.md` - connected safety NIMs to acceleration and serving layers.
+- `content/index.md` - updated page count to 343 and indexed the new safety NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 26: Speech and audio NIM microservices
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch26-20260429T074636Z`; local Git tag `codex-backup-overnight-pre-batch26-20260429T074636Z`

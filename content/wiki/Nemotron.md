@@ -2,8 +2,8 @@
 
 **Type:** Model
 **Tags:** NVIDIA, Nemotron, LLM, multimodal, speech, OCR, content safety, agentic AI, NIM
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
-**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron, https://docs.nvidia.com/nim/speech/latest/index.html
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
+**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/llama-3-1-nemotron-safety-guard-8b/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,7 @@ Nemotron gives NVIDIA a model family that can be trained and customized through 
 - **Agentic LLMs:** Nemotron 3 Super 120B-A12B and Nemotron 3 Nano 30B-A3B are MoE-oriented models positioned for reasoning, coding, long-context work, tool use, planning, and agentic workflows.
 - **Omnimodal reasoning:** Nemotron 3 Nano Omni 30B-A3B Reasoning appears in build.nvidia.com as an NVIDIA model that understands images, video, speech, and text.
 - **Content safety:** Nemotron 3 Content Safety is a multilingual, multimodal safety model for classifying unsafe prompts/images and responses, tied to [[NeMo-Guardrails]] use cases.
+- **NemoGuard safety NIMs:** [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] and [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] connect Nemotron safety datasets and models to deployable NIM guardrails.
 - **Speech:** current [[NVIDIA-Speech-NIM-Microservices]] docs frame ASR, TTS, and NMT NIMs around Nemotron speech model families, including Nemotron ASR Streaming.
 - **Document AI:** Nemotron OCR, table-structure, and page-elements models target extraction of text, layout, tables, charts, and document structure.
 - **Retrieval:** Llama Nemotron reranking and embedding models connect Nemotron to [[NeMo-Retriever]] and enterprise RAG workflows.
@@ -37,6 +38,8 @@ Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model e
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow layer for building agents on top of Nemotron and other models.
 - [[NeMo-Retriever]] - retrieval layer that uses NVIDIA embedding/reranking models related to Nemotron.
 - [[NeMo-Guardrails]] - safety and policy workflows can use Nemotron content-safety models.
+- [[NVIDIA-NemoGuard-NIMs]] - guardrail NIM family for safety, topic control, and jailbreak detection.
+- [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] and [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] - deployable content-safety NIMs in the Nemotron/NemoGuard lineage.
 - [[TensorRT-LLM]] - optimized inference backend for large language models on NVIDIA GPUs.
 - [[NVIDIA-NemoClaw]] - assistant stack that references open NVIDIA models such as Nemotron.
 

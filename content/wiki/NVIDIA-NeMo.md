@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo, generative AI, AI agents, LLM, speech, multimodal, training, microservices
-**Related:** [[NeMo-Platform]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html
+**Related:** [[NeMo-Platform]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-NemoGuard-NIMs]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,6 +20,7 @@ NeMo gives developers and enterprises a connected path for building, customizing
 - **[[NVIDIA-Agent-Intelligence-Toolkit]]:** Framework-agnostic workflow layer for agent development, profiling, evaluation, MCP, and A2A.
 - **[[NeMo-Retriever]]:** Multimodal extraction, embedding, indexing, retrieval, and reranking for enterprise RAG.
 - **[[NeMo-Guardrails]]:** Programmable safety, policy, and topical controls for LLMs and agents.
+- **[[NVIDIA-NemoGuard-NIMs]]:** Deployable guardrail NIMs for content safety, topic control, and jailbreak detection.
 - **[[NeMo-Curator]]:** GPU-accelerated data cleaning, filtering, and multimodal curation.
 - **Export/deploy:** Production deployment through [[TensorRT]], [[TensorRT-LLM]], [[vLLM]], [[Triton-Inference-Server]], and [[NVIDIA-NIM]].
 - **Speech NIM deployment:** current [[NVIDIA-Speech-NIM-Microservices]] docs package NeMo speech models into ASR, TTS, and NMT NIM containers.
@@ -32,6 +33,7 @@ NeMo is the lifecycle layer around NVIDIA's model, inference, and AI software po
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow and evaluation toolkit inside the NeMo family.
 - [[NeMo-Retriever]] - retrieval layer for enterprise RAG and multimodal data extraction.
 - [[NeMo-Guardrails]] - safety and policy controls for model and agent responses.
+- [[NVIDIA-NemoGuard-NIMs]] - specialized NIMs for NeMo Guardrails safety and policy checks.
 - [[NVIDIA-NIM]] - deployment and inference endpoint layer for NeMo-related models.
 - [[NVIDIA-Speech-NIM-Microservices]] - current docs collection for NeMo-backed ASR, TTS, and NMT NIMs.
 - [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] - deployable speech model microservices.
