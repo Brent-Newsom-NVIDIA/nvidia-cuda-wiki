@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 420*
+*Total pages: 421*
 
 ---
 
@@ -229,6 +229,7 @@
 - [[Isaac-ROS-FoundationStereo]] — stereo-depth foundation model and ROS 2 package for disparity/depth perception
 - [[NVIDIA-Isaac-GR00T]] — humanoid robotics foundation model platform and data pipeline for general-purpose robot skills
 - [[NVIDIA-Omniverse]] — OpenUSD-based 3D simulation and digital twin platform with RTX rendering
+- [[NVIDIA-Omniverse-Reference-Architectures]] — Omniverse architecture diagrams for RTX PRO industrial facility digital twins and technical requirements
 
 ### Healthcare & Edge AI
 - [[NVIDIA-Holoscan]] — real-time AI sensor processing SDK for medical devices and industrial edge computing

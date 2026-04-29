@@ -2,7 +2,7 @@
 
 **Type:** Reference Architecture
 **Tags:** NVIDIA, RTX PRO AI Factory, Enterprise Reference Architecture, RTX PRO 6000 Blackwell, Spectrum-X, BlueField-3, AI Enterprise
-**Related:** [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-Enterprise-AI-Factory]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Run-ai]], [[NVIDIA-vGPU]], [[NVIDIA-Omniverse]], [[NVIDIA-NetQ]]
+**Related:** [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-Enterprise-AI-Factory]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Run-ai]], [[NVIDIA-vGPU]], [[NVIDIA-Omniverse]], [[NVIDIA-Omniverse-Reference-Architectures]], [[NVIDIA-NetQ]]
 **Sources:** https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/overview.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/components.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/software.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/nvidia-certified-storage.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/prerequisites.html
 **Last Updated:** 2026-04-29
 
@@ -43,6 +43,7 @@ This page is the durable RTX PRO Enterprise RA page. Use [[NVIDIA-RTX-PRO-Server
 - [[NVIDIA-Run-ai]] - workload orchestration path in the RA software design.
 - [[NVIDIA-vGPU]] - virtualization path that matters for RTX PRO workloads.
 - [[NVIDIA-Omniverse]] - industrial and physical AI workload target for RTX PRO AI factories.
+- [[NVIDIA-Omniverse-Reference-Architectures]] - Omniverse industrial facility digital twin architecture that highlights RTX PRO hardware.
 - [[NVIDIA-NetQ]] - network visibility and troubleshooting tool in the RA software stack.
 
 ## Source Excerpts

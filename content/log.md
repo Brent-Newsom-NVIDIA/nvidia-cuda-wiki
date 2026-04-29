@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 46: Omniverse reference architecture coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch46-20260429T095632Z`; local Git tag `codex-backup-overnight-pre-batch46-20260429T095632Z`
+
+**Source URLs:** https://docs.omniverse.nvidia.com/arch-diagrams/latest/index.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/ref-arch-diagrams/factory-dt-diagram.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/common/technical-requirements.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current Omniverse Reference Architectures docs rather than splitting the single current RTX PRO industrial facility digital twin diagram and shared technical requirements into multiple wiki pages.
+- Connected Omniverse reference architecture coverage to Omniverse, RTX PRO Server, RTX PRO AI Factory, Isaac Sim, Cosmos, CloudXR, certified systems, DGX Cloud, drivers, AI Enterprise, and cloud deployment context.
+- Used NVIDIA Omniverse documentation as NVIDIA-authored source material; no build.nvidia cards were involved.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Omniverse-Reference-Architectures.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Omniverse.md` - connected current Omniverse architecture diagrams and technical requirements to the platform page.
+- `content/wiki/NVIDIA-RTX-PRO-Server.md` and `content/wiki/NVIDIA-RTX-PRO-AI-Factory.md` - linked RTX PRO infrastructure to the industrial digital twin architecture.
+- `content/wiki/NVIDIA-Isaac-Sim.md`, `content/wiki/NVIDIA-Cosmos.md`, and `content/wiki/NVIDIA-CloudXR.md` - connected robotics simulation, synthetic data/world models, and XR delivery references.
+- `content/index.md` - updated total page count to 421 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 45: AI Enterprise lifecycle, deployment, and security planning
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch45-20260429T095125Z`; local Git tag `codex-backup-overnight-pre-batch45-20260429T095125Z`

@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Simulation, 3D, USD, Digital Twin, Rendering, RTX, Collaboration
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-ACE]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html
+**Related:** [[NVIDIA-Omniverse-Reference-Architectures]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-ACE]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.omniverse.nvidia.com/arch-diagrams/latest/index.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/ref-arch-diagrams/factory-dt-diagram.html, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -36,6 +36,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - Building/infrastructure digital twin for facility management
 - Training AI models on photorealistic synthetic data
 - Physical AI video/world generation workflows with [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]]
+- Industrial facility digital twin workflows captured by [[NVIDIA-Omniverse-Reference-Architectures]], including geometry data, synthetic data, real-time operations data, RTX PRO hardware, and Isaac Sim robotics simulation.
 - Collaborative 3D design review across distributed teams
 
 ### Hardware Requirements
@@ -51,6 +52,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - USD Python API (`pxr` library)
 
 ## Connections
+- [[NVIDIA-Omniverse-Reference-Architectures]] - current Omniverse architecture diagrams and technical requirements for industrial digital twins.
 - [[NVIDIA-Isaac]] — umbrella robotics platform that uses Omniverse through Isaac Sim
 - [[NVIDIA-Isaac-Sim]] — robotics simulation application built on Omniverse Kit, OpenUSD, RTX, and PhysX
 - [[NVIDIA-Isaac-Lab]] — robot-learning workflows use Isaac Sim and Omniverse for simulation and validation
@@ -63,6 +65,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - [[NVIDIA-DRIVE-Sim]] - AV simulation workflows use Omniverse-style reconstruction and synthetic data context.
 - [[Earth-2]] - climate digital twin workflows use Omniverse as a visualization and simulation context.
 - [[NVIDIA-RTX-PRO-Server]] - enterprise RTX server platform for Omniverse, simulation, and digital twin workloads.
+- [[NVIDIA-RTX-PRO-AI-Factory]] - Enterprise RA hardware/software context for RTX PRO AI factory deployments.
 - [[NVIDIA-Warp]] — Warp GPU simulation kernels are used within Omniverse for physics and differentiable simulation
 - [[NVIDIA-Modulus]] — physics-ML models trained with Modulus can be integrated into Omniverse digital twins
 - [[TensorRT]] — AI models deployed within Omniverse applications use TensorRT for inference
