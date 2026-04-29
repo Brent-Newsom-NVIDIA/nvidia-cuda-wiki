@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Dynamo, inference, LLM serving, Kubernetes, NIM, disaggregated serving
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Grove]], [[KAI-Scheduler]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NIXL]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]]
-**Sources:** https://docs.nvidia.com/dynamo/index.html, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-data-platform/
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Grove]], [[KAI-Scheduler]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AIPerf]], [[NVIDIA-GenAI-Perf]], [[NIXL]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]]
+**Sources:** https://docs.nvidia.com/dynamo/index.html, https://docs.nvidia.com/aiperf/architecture-internals/architecture-of-ai-perf, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-data-platform/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,6 +20,7 @@ AI factories need inference services that can scale beyond a single process or s
 - Kubernetes installation and quickstart path for cluster deployments.
 - Designed to fit NVIDIA inference runtimes and model-serving workflows.
 - Relevant to large language model serving, disaggregation, and operational deployment.
+- AIPerf-style benchmarking is relevant for measuring distributed serving latency, throughput, GPU telemetry, and server metrics around Dynamo-style deployments.
 - Kubernetes multinode deployments can use [[NVIDIA-Grove]] and [[KAI-Scheduler]] for topology-aware pod placement, gang scheduling, and coordinated scaling.
 - [[NVIDIA-CMX]] positions Dynamo as the serving layer that can route requests with awareness of where reusable KV cache resides in a context-memory tier.
 
@@ -35,6 +36,8 @@ Dynamo is part of NVIDIA's fast-moving inference layer, bridging model-serving s
 - [[NIXL]] - disaggregated inference uses high-throughput transfer for KV cache and tensor movement.
 - [[TensorRT-LLM]] - optimized LLM engine commonly associated with NVIDIA inference serving.
 - [[Triton-Inference-Server]] - established NVIDIA inference server used across model modalities.
+- [[NVIDIA-AIPerf]] - current NVIDIA benchmark tool for load generation, latency/throughput measurement, GPU telemetry, and server metrics against inference endpoints.
+- [[NVIDIA-GenAI-Perf]] - older generative AI benchmark tool useful for legacy workflow lookup.
 - [[NVIDIA-DGX]] - representative infrastructure for large inference deployments.
 
 ## Source Excerpts

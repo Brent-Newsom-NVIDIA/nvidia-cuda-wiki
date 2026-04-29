@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 39: Triton and AIPerf benchmarking tools
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch39-20260429T091123Z`; local Git tag `codex-backup-overnight-pre-batch39-20260429T091123Z`
+
+**Source URLs:** https://docs.nvidia.com/aiperf/welcome-to-ai-perf-documentation, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/aiperf/getting-started/migrating-from-gen-ai-perf, https://docs.nvidia.com/aiperf/architecture-internals/architecture-of-ai-perf, https://docs.nvidia.com/nim/benchmarking/llm/latest/step-by-step.html, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/genai-perf/README.html, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/README.html, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/model_analyzer/README.html, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/model_navigator/README.html
+
+**Gap analysis summary:**
+
+- Added canonical pages for durable current NVIDIA benchmarking and Triton deployment-tool topics that were missing from the wiki: AIPerf, GenAI-Perf, Triton Performance Analyzer, Triton Model Analyzer, and Triton Model Navigator.
+- Treated GenAI-Perf as a phased-out/legacy workflow page because current NVIDIA docs point new benchmarking users to AIPerf.
+- Kept this as one page per durable tool and did not create separate pages for every benchmark tutorial, metric table, CLI flag, model example, or build.nvidia listing.
+- Connected the new tools into Triton Inference Server, NIM LLM benchmarking, NIM, TensorRT, TensorRT-LLM, Dynamo, and related inference pages.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-AIPerf.md`
+- `content/wiki/NVIDIA-GenAI-Perf.md`
+- `content/wiki/Triton-Performance-Analyzer.md`
+- `content/wiki/Triton-Model-Analyzer.md`
+- `content/wiki/Triton-Model-Navigator.md`
+
+**Pages updated:**
+
+- `content/wiki/Triton-Inference-Server.md` - promoted current performance and deployment tooling into the core Triton page.
+- `content/wiki/NIM-for-LLM-Benchmarking-Guide.md` and `content/wiki/NVIDIA-NIM.md` - updated benchmark references toward AIPerf while preserving GenAI-Perf migration context.
+- `content/wiki/TensorRT.md` and `content/wiki/TensorRT-LLM.md` - connected TensorRT/TensorRT-LLM deployment to Triton tooling and current benchmark tools.
+- `content/wiki/NVIDIA-Dynamo.md` - connected AIPerf-style benchmarking to scale-out inference serving.
+- `content/index.md` - updated page count to 397 and indexed the five new inference-tooling pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 38: NVIDIA TAO coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch38-20260429T090656Z`; local Git tag `codex-backup-overnight-pre-batch38-20260429T090656Z`

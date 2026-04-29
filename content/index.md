@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 392*
+*Total pages: 397*
 
 ---
 
@@ -186,6 +186,11 @@
 
 ### Inference Serving
 - [[Triton-Inference-Server]] — multi-framework AI model serving platform with dynamic batching and gRPC/REST
+- [[NVIDIA-AIPerf]] — Current NVIDIA tool for benchmarking OpenAI-compatible AI inference latency, throughput, and telemetry
+- [[NVIDIA-GenAI-Perf]] — Phased-out NVIDIA generative AI benchmarking tool retained for legacy workflow lookup
+- [[Triton-Performance-Analyzer]] — Triton CLI for inference latency/throughput measurement under configurable load
+- [[Triton-Model-Analyzer]] — Triton tool for model-configuration search, profiling, and deployment reports
+- [[Triton-Model-Navigator]] — Triton toolkit for export, conversion, correctness testing, profiling, and deployment preparation
 
 ### Physics & Scientific AI
 - [[NVIDIA-Modulus]] — physics-ML framework for PINNs, neural operators (FNO, DeepONet), CFD surrogates

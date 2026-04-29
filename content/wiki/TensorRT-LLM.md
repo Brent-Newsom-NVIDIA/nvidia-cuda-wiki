@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Inference, Optimization, Transformer, Generative AI, CUDA-X
-**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[NeMo-Export-Deploy]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html
+**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-AIPerf]], [[NVIDIA-GenAI-Perf]], [[Triton-Performance-Analyzer]], [[Triton-Model-Analyzer]], [[Triton-Model-Navigator]], [[NeMo-Export-Deploy]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/genai-perf/README.html, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -57,6 +57,9 @@ TensorRT-LLM solves the performance gap between raw LLM inference and hardware-o
 ## Connections
 - [[TensorRT]] — TensorRT-LLM is built on TensorRT's compilation and runtime infrastructure
 - [[Triton-Inference-Server]] — Triton's `tensorrtllm` backend wraps TRT-LLM for production serving
+- [[NVIDIA-AIPerf]] - current NVIDIA benchmarking tool for OpenAI-compatible LLM services backed by TensorRT-LLM or adjacent engines.
+- [[NVIDIA-GenAI-Perf]] - older Triton generative AI benchmark examples include TensorRT-LLM-backed serving.
+- [[Triton-Performance-Analyzer]], [[Triton-Model-Analyzer]], and [[Triton-Model-Navigator]] - Triton toolchain for measuring, tuning, and preparing served TensorRT/Triton models.
 - [[NeMo-Export-Deploy]] - current NeMo library that exports and deploys LLM/MM checkpoints through TensorRT-LLM, Triton, and related runtimes.
 - [[NeMo-Megatron-Bridge]] and [[NeMo-AutoModel]] - upstream NeMo training/checkpoint sources that can feed TensorRT-LLM deployment paths.
 - [[FlashInfer]] — FlashInfer attention kernels integrated as an optional attention backend
