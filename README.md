@@ -2,6 +2,12 @@
 
 A Quartz 4 static site backed by a curated, interlinked markdown knowledge base covering NVIDIA's public CUDA platform, libraries, hardware, and ecosystem tooling.
 
+## Quick links
+
+- Start here: [START-HERE.md](./START-HERE.md)
+- GitHub repo: [Brent-Newsom-NVIDIA/nvidia-cuda-wiki](https://github.com/Brent-Newsom-NVIDIA/nvidia-cuda-wiki)
+- Live Quartz site: [NVIDIA CUDA Knowledge Base](https://brent-newsom-nvidia.github.io/nvidia-cuda-wiki/)
+
 ## Content source
 
 - **Canonical vault:** `content/`
@@ -11,11 +17,13 @@ A Quartz 4 static site backed by a curated, interlinked markdown knowledge base 
 Canonical structure under `content/`:
 
 - `wiki/` - curated wiki pages (one per concept, library, hardware platform, etc.)
-- `raw/` - raw source material (articles, transcripts, notes) used to build wiki pages
 - `index.md` - Master Index, grouped by category
 - `log.md` - ingestion history
+- `AGENTS.md` - shared project-level agent instructions
 - `CLAUDE.md` - Claude-oriented agent instructions
 - `codex.md` - Codex-oriented agent instructions
+
+Source material does not need to live in the repo. New pages can be ingested from URLs, docs pages, PDFs, transcripts, and other user-provided sources.
 
 The older standalone `NVIDIA WIKI` desktop folder should be treated as a legacy/local copy unless it is explicitly resynced from `content/`. The repository is the source of truth.
 
@@ -45,7 +53,10 @@ The site is served at `http://localhost:8080` by default.
 
 ## Hosting
 
-Not yet configured. `baseUrl` in `quartz.config.ts` is set to a placeholder (`TODO-set-hosting-url.example.com`). Once the hosting destination is decided (GitHub Enterprise Pages or internal NVIDIA hosting are under consideration), update `baseUrl` as needed.
+Quartz is deployed with GitHub Pages.
+
+- Live site: [https://brent-newsom-nvidia.github.io/nvidia-cuda-wiki/](https://brent-newsom-nvidia.github.io/nvidia-cuda-wiki/)
+- Deployment workflow: [.github/workflows/deploy.yml](./.github/workflows/deploy.yml)
 
 ## Stack
 
