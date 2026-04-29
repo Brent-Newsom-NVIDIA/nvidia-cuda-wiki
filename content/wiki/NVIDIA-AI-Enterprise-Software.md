@@ -2,7 +2,7 @@
 
 **Type:** Software Catalog
 **Tags:** NVIDIA, AI Enterprise, software catalog, application layer, infrastructure layer, NGC, support matrix
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Enterprise-Support-and-Services]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Enterprise-Support-and-Services]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/software/latest/overview.html, https://docs.nvidia.com/ai-enterprise/software/latest/application-software.html, https://docs.nvidia.com/ai-enterprise/software/latest/infrastructure-software.html, https://docs.nvidia.com/ai-enterprise/index.html
 **Last Updated:** 2026-04-29
 
@@ -32,6 +32,7 @@ The software catalog is a map, not an installation guide. Use deployment-specifi
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - parent platform that includes this software catalog.
+- [[NVIDIA-AI-Enterprise-Quick-Start-Guide]] - account activation, NGC access, and first software installation path that leads into this catalog.
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] - defines release branches, support periods, and compatibility for software layers.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - catalog/distribution path for AI Enterprise application and infrastructure software.
 - [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[TensorRT]], and [[Triton-Inference-Server]] - core application-layer inference and model development components.

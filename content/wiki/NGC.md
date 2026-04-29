@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -52,6 +52,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software is licensed, distributed, and updated exclusively through NGC
+- [[NVIDIA-AI-Enterprise-Quick-Start-Guide]] — first-run path for enterprise account setup, NGC sign-in, API key use, and initial container access.
 - [[NVIDIA-AI-Enterprise-Software]] — current AI Enterprise software catalog maps supported application and infrastructure components to NGC and documentation.
 - [[NVIDIA-NIM]] — All NIM containers are hosted in the NGC catalog and deployed via NGC credentials
 - [[NVIDIA-NGC-Catalog]] — public catalog surface for containers, models, Helm charts, and SDKs

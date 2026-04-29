@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 51: AI Enterprise quick start guide
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch51-20260429T101150Z`; local Git tag `codex-backup-overnight-pre-batch51-20260429T101150Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/release-7/7.4/getting-started/quick-start-guide.html, https://docs.nvidia.com/ai-enterprise/release-7/7.4/index.html, https://docs.nvidia.com/ai-enterprise/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current NVIDIA AI Enterprise Quick Start Guide because onboarding, enterprise account activation, NGC access, and first verification were only implicit in the broader AI Enterprise pages.
+- Kept the quick-start guide as one page rather than splitting account creation, evaluation-account linking, NGC API keys, container pulls, bare-metal driver install, Container Toolkit verification, VMware licensing, Azure VMI activation, or deployment-type selection into separate pages.
+- Connected the guide to AI Enterprise, software catalog, licensing, enterprise support, NGC, certified systems, DGX exception handling, data center drivers, Container Toolkit, Base Command Manager, vGPU/NLS, bare-metal/VMware/cloud deployments, Omniverse, and Run:ai.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-AI-Enterprise-Quick-Start-Guide.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added quick start as the first-run onboarding surface.
+- `content/wiki/NVIDIA-AI-Enterprise-Software.md` - connected software catalog browsing to quick-start account/NGC setup.
+- `content/wiki/NGC.md` - linked NGC to the quick-start account, API key, and container-access flow.
+- `content/index.md` - updated total page count to 426 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 50: AI Enterprise software catalog
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch50-20260429T100841Z`; local Git tag `codex-backup-overnight-pre-batch50-20260429T100841Z`
