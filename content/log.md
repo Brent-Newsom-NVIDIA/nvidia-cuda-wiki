@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 75: Nsight Cloud
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch75-20260429T114938Z`; local Git tag `codex-backup-overnight-pre-batch75-20260429T114938Z`
+
+**Source URLs:** https://developer.nvidia.com/nsight-cloud, https://docs.nvidia.com/nsight-systems/UserGuide/#profiling-services-in-the-cloud, https://docs.nvidia.com/nsight-developer-tools/index.html, https://github.com/NVIDIA/cloud-native-stack
+
+**Gap analysis summary:**
+
+- Added a canonical Nsight Cloud page after finding NVIDIA's current Nsight Cloud product page and Nsight Systems cloud/Kubernetes profiling docs with no existing wiki page.
+- Folded Nsight Operator, Nsight Injector, Nsight Coordinator, and Nsight Streamer into the single Nsight Cloud page because the current public NVIDIA page treats them as components of Nsight Cloud rather than separate docs pages.
+- Connected Nsight Cloud to Nsight Systems, NGC, NVIDIA Cloud Native Technologies, GPU Operator, Network Operator, Container Toolkit, and Developer Program context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Cloud.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Systems.md` - connected cloud/Kubernetes sidecar profiling to Nsight Cloud.
+- `content/wiki/NGC.md` - connected NGC collections, containers, and Helm charts to Nsight Cloud distribution.
+- `content/wiki/NVIDIA-GPU-Operator.md` and `content/wiki/NVIDIA-Cloud-Native-Technologies.md` - linked Kubernetes GPU infrastructure to cloud-native profiling.
+- `content/index.md` - updated total page count to 450 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 74: Nsight Integration
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch74-20260429T114645Z`; local Git tag `codex-backup-overnight-pre-batch74-20260429T114645Z`

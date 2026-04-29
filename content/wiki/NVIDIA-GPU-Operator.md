@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, GPU, containers, operator, cloud-native, DevOps, infrastructure, K8s
-**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NGC]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[Nsight-Cloud]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NGC]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/gpu-operator.html
 **Last Updated:** 2026-04-29
 
@@ -50,6 +50,7 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 - [[NVIDIA-Cloud-Native-Technologies]] — cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and related deployment docs
 - [[NVIDIA-Network-Operator]] — complementary Kubernetes operator for NVIDIA networking, RDMA, SR-IOV, and DOCA-OFED.
 - [[NVIDIA-NIM-Operator]] — runs above GPU Operator to manage NIM/NeMo microservices once GPU resources are exposed to Kubernetes.
+- [[Nsight-Cloud]] - cloud-native profiling layer that can operate on Kubernetes clusters built on GPU Operator.
 - [[Red-Hat-AI-Factory-with-NVIDIA]] — OpenShift AI deployment guide that installs GPU Operator before NIM workloads.
 - [[NVIDIA-AI-Cluster-Runtime]] — validated runtime recipes include GPU Operator, drivers, kernels, and Kubernetes configuration.
 - [[KAI-Scheduler]] — schedules GPU workloads after GPU Operator exposes GPU resources.

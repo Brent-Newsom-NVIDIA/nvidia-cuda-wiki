@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[Nsight-Cloud]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -68,6 +68,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[Triton-Inference-Server]] — Official Triton containers updated monthly on NGC; primary distribution channel
 - [[NVIDIA-NeMo]] — NeMo framework containers and checkpoint models (GPT, BERT, Llama variants) hosted on NGC
 - [[TensorRT]] — TensorRT containers, model optimization pipelines, and ONNX model zoo distributed via NGC
+- [[Nsight-Cloud]] - Nsight Cloud collections, containers, and Helm charts are distributed through NGC for cloud-native profiling workflows.
 - [[NVIDIA-DGX-Spark]] - DGX Spark user guide includes NGC integration for local AI development.
 - [[NVIDIA-DGX-Station]] - DGX Station's preconfigured software stack is adjacent to NGC containers and AI software.
 - [[NVIDIA-Base-Command]] — Base Command Platform uses NGC containers and credentials for multi-node job scheduling
