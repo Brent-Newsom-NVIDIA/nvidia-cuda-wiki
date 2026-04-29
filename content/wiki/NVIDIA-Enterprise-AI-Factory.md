@@ -2,7 +2,7 @@
 
 **Type:** Strategy
 **Tags:** NVIDIA, enterprise AI factory, AI Enterprise, agentic AI, Blackwell, BlueField, Spectrum-X, certified systems, certified storage
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-Systems]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-Systems]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/technologies/rubin/
 **Last Updated:** 2026-04-29
 
@@ -16,7 +16,7 @@ An enterprise AI factory industrializes AI deployment inside a company's own inf
 
 ### Architecture themes
 - NVIDIA accelerated computing with Blackwell-class GPUs, CPUs, DPUs, and high-speed fabrics.
-- Current and next-generation platform pages extend that map to [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], and [[NVIDIA-Silicon-Photonics]].
+- Current and next-generation platform pages extend that map to [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], and [[NVIDIA-Silicon-Photonics]].
 - [[NVIDIA-BlueField-DPU]] for infrastructure acceleration, zero-trust style isolation, storage, networking, and security offload.
 - [[NVIDIA-Spectrum-X]] networking for Ethernet AI factory fabrics and inference latency control.
 - [[NVIDIA-Certified-Systems]] and [[NVIDIA-Certified-Storage]] for validated server and storage infrastructure.
@@ -33,6 +33,8 @@ This page is the strategic umbrella that connects [[NVIDIA-AI-Enterprise]], [[NV
 - [[NVIDIA-AI-Enterprise]] - software foundation for enterprise AI workloads, NIM, NeMo, operators, and support.
 - [[NVIDIA-Mission-Control]] - AI factory operations plane for large NVIDIA deployments.
 - [[NVIDIA-DGX-SuperPOD]] - on-premises AI supercomputing reference architecture that can anchor AI factory infrastructure.
+- [[NVIDIA-DGX-BasePOD]] - prescriptive DGX reference architecture for enterprise AI infrastructure.
+- [[NVIDIA-DGX-Enterprise-Support]] - support, onboarding, and administration services for DGX AI factories.
 - [[NVIDIA-DGX-B300]] - Blackwell Ultra DGX system path for AI factory deployments.
 - [[NVIDIA-GB300-NVL72]] - rack-scale Blackwell Ultra system for dense training and inference.
 - [[NVIDIA-Vera-Rubin]] - next-generation AI factory platform after Blackwell.

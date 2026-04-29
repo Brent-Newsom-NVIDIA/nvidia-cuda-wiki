@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 279*
+*Total pages: 283*
 
 ---
 
@@ -257,7 +257,11 @@
 ### Hardware Platforms
 - [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
 - [[NVIDIA-DGX-SuperPOD]] — Scale-out NVIDIA AI supercomputing reference architecture for AI factories
+- [[NVIDIA-DGX-BasePOD]] — Prescriptive enterprise DGX reference architecture for scalable AI infrastructure
 - [[NVIDIA-DGX-B300]] — Blackwell Ultra DGX system generation for AI factory training and inference deployments
+- [[NVIDIA-DGX-Spark]] — Compact GB10 Grace Blackwell desktop AI computer for local model and agent development
+- [[NVIDIA-DGX-Station]] — GB300 Grace Blackwell Ultra deskside AI supercomputer for large local AI workloads
+- [[NVIDIA-DGX-Enterprise-Support]] — DGX support, infrastructure services, and education services for production AI factories
 - [[NVIDIA-GB300-NVL72]] — Rack-scale Blackwell Ultra NVL72 system for dense large-model training and inference
 - [[NVIDIA-RTX-PRO-Server]] — RTX PRO Blackwell enterprise server platform for AI, rendering, simulation, and visualization
 - [[NVIDIA-Certified-Systems]] — partner systems validated by NVIDIA for enterprise AI and accelerated computing workloads

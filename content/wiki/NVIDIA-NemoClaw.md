@@ -2,12 +2,13 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NemoClaw, OpenClaw, agents, sandboxing, OpenShell, Nemotron
-**Related:** [[NVIDIA-OpenShell]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]]
-**Sources:** https://docs.nvidia.com/nemoclaw/index.html
+**Related:** [[NVIDIA-OpenShell]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]]
+**Sources:** https://docs.nvidia.com/nemoclaw/index.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/
 **Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA NemoClaw is an open source stack for running OpenClaw always-on assistants with NVIDIA agent infrastructure. The docs identify it as an early alpha preview that installs [[NVIDIA-OpenShell]], part of the NVIDIA agent toolkit stack, and can use open NVIDIA models such as [[Nemotron]].
+Current DGX Spark and DGX Station product pages position NemoClaw as a local agent-development stack for secure, always-on AI assistants on NVIDIA desktop AI systems.
 
 ## Detail
 
@@ -29,7 +30,8 @@ NemoClaw is a signpost for NVIDIA's agentic AI direction: [[Nemotron]] models, [
 - [[Nemotron]] - NVIDIA open model family referenced by the NemoClaw docs.
 - [[NVIDIA-NIM]] - model-serving path for NVIDIA-hosted or self-hosted agents.
 - [[NVIDIA-NeMo]] - broader lifecycle suite for building and optimizing AI agents.
+- [[NVIDIA-DGX-Spark]] - local GB10 system explicitly positioned for NemoClaw agent development.
+- [[NVIDIA-DGX-Station]] - larger GB300 deskside system explicitly positioned for NemoClaw agent development.
 
 ## Source Excerpts
 - NVIDIA's NemoClaw docs describe an alpha preview for running OpenClaw assistants with OpenShell and NVIDIA models.
-

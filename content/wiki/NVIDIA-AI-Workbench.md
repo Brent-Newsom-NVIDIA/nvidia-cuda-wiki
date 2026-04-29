@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, developer tools, IDE, data science, MLOps, Jupyter, containers, local development, project management
-**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[CUDA-Graphs]], [[NVIDIA-Base-Command]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[CUDA-Graphs]], [[NVIDIA-Base-Command]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -28,6 +28,7 @@ Data scientists routinely face environment management problems: Python package v
 
 ### Use Cases
 - Local development on NVIDIA RTX workstations for LLM fine-tuning, RAG prototyping, and inference testing
+- Local Grace Blackwell development on [[NVIDIA-DGX-Spark]] or larger deskside development on [[NVIDIA-DGX-Station]]
 - Sharing reproducible AI project environments with team members across different OS/hardware setups
 - Testing NIM microservices locally before deploying to production Kubernetes clusters
 - Data science teams standardizing development environments across Windows (with WSL2) and Linux
@@ -52,6 +53,8 @@ Data scientists routinely face environment management problems: Python package v
 - [[NVIDIA-AI-Enterprise]] — AI Workbench is part of the AI Enterprise platform, available with enterprise support
 - [[NVIDIA-Base-Command]] — Workbench serves as the local development companion to Base Command for large-scale cluster training
 - [[NVIDIA-NeMo]] — NeMo-based fine-tuning projects can be developed in Workbench and scaled to DGX clusters
+- [[NVIDIA-DGX-Spark]] - compact local system for AI Workbench projects and tutorials.
+- [[NVIDIA-DGX-Station]] - deskside system for larger local Workbench projects before data center deployment.
 
 ## Resources
 - [NVIDIA AI Workbench Page](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/)

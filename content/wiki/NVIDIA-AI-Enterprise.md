@@ -2,12 +2,13 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html)
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA AI Enterprise is a comprehensive, cloud-native AI software platform that provides enterprises with a commercially licensed, enterprise-supported distribution of NVIDIA's full AI stack. It bundles NIM inference microservices, NeMo training and customization tools, Triton Inference Server, RAPIDS accelerated data science, Morpheus cybersecurity AI, and the complete CUDA library ecosystem — all with enterprise SLAs, security patching, and 24x7 support. It serves as the "productized" tier of NVIDIA's developer tools, purpose-built for production, compliance, and regulated environments.
+Current DGX product pages also position AI Enterprise as part of the software path for [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], and DGX data center deployments.
 
 ## Detail
 
@@ -70,6 +71,11 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[Triton-Inference-Server]] — Triton is bundled with enterprise SLA; the primary model serving framework
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
+- [[NVIDIA-DGX]] — DGX systems ship with AI Enterprise software configurations; DGX SuperPOD runs AI Enterprise as standard
+- [[NVIDIA-DGX-Spark]] - local Grace Blackwell development system with an AI Enterprise evaluation/support path.
+- [[NVIDIA-DGX-Station]] - deskside GB300 development system preconfigured with NVIDIA AI software.
+- [[NVIDIA-DGX-BasePOD]] - BasePOD combines DGX infrastructure with AI Enterprise software for enterprise AI factories.
+- [[NVIDIA-DGX-Enterprise-Support]] - DGX support/services complement AI Enterprise support for production deployments.
 - [[NVIDIA-Run-ai]] — self-hosted GPU scheduling and workload orchestration included in current AI Enterprise guidance.
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
 - [[NVIDIA-Certified-Storage]] — validated storage layer for AI factory and AI Data Platform deployments.
@@ -82,7 +88,6 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[NVIDIA-Attestation]] — trust and integrity layer for confidential AI infrastructure
 - [[NVIDIA-GPU-Operator]] — GPU Operator is the recommended Kubernetes integration for deploying AI Enterprise in cloud-native environments
 - [[NVIDIA-DCGM]] — DCGM is bundled for GPU health monitoring, telemetry, and Prometheus integration in production
-- [[NVIDIA-DGX]] — DGX systems ship with AI Enterprise software configurations; DGX SuperPOD runs AI Enterprise as standard
 
 ## Resources
 - [NVIDIA AI Enterprise Product Page](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/)

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -60,6 +60,8 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[Triton-Inference-Server]] — Official Triton containers updated monthly on NGC; primary distribution channel
 - [[NVIDIA-NeMo]] — NeMo framework containers and checkpoint models (GPT, BERT, Llama variants) hosted on NGC
 - [[TensorRT]] — TensorRT containers, model optimization pipelines, and ONNX model zoo distributed via NGC
+- [[NVIDIA-DGX-Spark]] - DGX Spark user guide includes NGC integration for local AI development.
+- [[NVIDIA-DGX-Station]] - DGX Station's preconfigured software stack is adjacent to NGC containers and AI software.
 - [[NVIDIA-Base-Command]] — Base Command Platform uses NGC containers and credentials for multi-node job scheduling
 - [[NVIDIA-GPU-Operator]] — GPU Operator pulls NVIDIA driver, plugin, and toolkit containers from NGC (`nvcr.io/nvidia/`)
 - [[NVIDIA-Riva]] — Riva speech AI containers and pre-trained acoustic/language models distributed via NGC

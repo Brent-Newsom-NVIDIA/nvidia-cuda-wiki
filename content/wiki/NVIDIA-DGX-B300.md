@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DGX B300, Blackwell Ultra, DGX, GB300, AI factory, enterprise AI
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Mission-Control]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
-**Sources:** https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/dgx-superpod/
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Station]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Mission-Control]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
+**Sources:** https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/dgx-superpod/, https://www.nvidia.com/en-us/data-center/dgx-basepod/, https://www.nvidia.com/en-us/data-center/dgx-support/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,6 +17,7 @@ DGX B300 gives organizations a supported NVIDIA system path for Blackwell Ultra 
 ### Platform role
 - DGX-branded system path for Blackwell Ultra.
 - Related to [[NVIDIA-GB300-NVL72]] for rack-scale NVLink deployment.
+- Deployable within [[NVIDIA-DGX-BasePOD]] and [[NVIDIA-DGX-SuperPOD]]-style enterprise AI factory patterns.
 - Deployment target for [[NVIDIA-AI-Enterprise]], NIM, NeMo, Dynamo, and enterprise AI applications.
 - Operated in large deployments with [[NVIDIA-Mission-Control]], BaseOS, Base Command Manager, DCGM, and fabric/storage tools.
 
@@ -25,8 +26,11 @@ Use this page for the DGX product/system identity. Use [[NVIDIA-GB300-NVL72]] fo
 
 ## Connections
 - [[NVIDIA-DGX]] - DGX B300 is part of the DGX systems family.
+- [[NVIDIA-DGX-BasePOD]] - enterprise reference architecture path for DGX deployments.
+- [[NVIDIA-DGX-Enterprise-Support]] - support and services layer for DGX B300 operations.
 - [[NVIDIA-GB300-NVL72]] - rack-scale Blackwell Ultra system adjacent to DGX B300 deployments.
 - [[NVIDIA-DGX-SuperPOD]] - SuperPOD provides the scale-out AI factory pattern.
+- [[NVIDIA-DGX-Station]] - local GB300 deskside development counterpart.
 - [[NVIDIA-Blackwell-Architecture]] - Blackwell Ultra extends the Blackwell architecture family.
 - [[NVIDIA-Mission-Control]] - operations platform for current DGX/NVL72 environments.
 - [[NVIDIA-AI-Enterprise]] - production AI software stack for DGX systems.

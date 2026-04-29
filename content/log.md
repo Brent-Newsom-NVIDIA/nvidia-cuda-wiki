@@ -2,6 +2,38 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 15: DGX personal systems and enterprise deployment coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch15-20260429T064319Z`; local Git tag `codex-backup-overnight-pre-batch15-20260429T064319Z`
+
+**Source URLs:** https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://docs.nvidia.com/dgx/dgx-spark/, https://docs.nvidia.com/dgx/dgx-spark/system-overview.html, https://build.nvidia.com/spark, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html, https://www.nvidia.com/en-us/data-center/dgx-basepod/, https://www.nvidia.com/en-us/data-center/dgx-support/
+
+**Gap analysis summary:**
+
+- Added canonical pages for DGX Spark and DGX Station so current personal/deskside Grace Blackwell systems are not buried only inside the general DGX page.
+- Added DGX BasePOD as the missing enterprise DGX reference architecture between standalone DGX systems and DGX SuperPOD.
+- Added DGX Enterprise Support as the support/services counterpart to DGX systems, BasePOD, and SuperPOD operations.
+- Treated `build.nvidia.com/spark` as a living DGX Spark tutorial surface, not as a source for many separate build pages.
+
+**Pages created (4 total):**
+
+- `content/wiki/NVIDIA-DGX-Spark.md`
+- `content/wiki/NVIDIA-DGX-Station.md`
+- `content/wiki/NVIDIA-DGX-BasePOD.md`
+- `content/wiki/NVIDIA-DGX-Enterprise-Support.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-DGX.md` - expanded the DGX family graph around Spark, Station, BasePOD, and Enterprise Support.
+- `content/wiki/NVIDIA-DGX-SuperPOD.md` and `content/wiki/NVIDIA-DGX-B300.md` - connected BasePOD and Enterprise Support into the data center DGX path.
+- `content/wiki/NVIDIA-AI-Enterprise.md`, `content/wiki/NVIDIA-Mission-Control.md`, and `content/wiki/NVIDIA-BaseOS.md` - linked DGX personal, BasePOD, and operations software context.
+- `content/wiki/NVIDIA-AI-Workbench.md`, `content/wiki/NVIDIA-NemoClaw.md`, and `content/wiki/NVIDIA-OpenShell.md` - connected local DGX Spark/Station development and agent workflows.
+- `content/wiki/NVIDIA-Grace-CPU.md`, `content/wiki/NVIDIA-Blackwell-Architecture.md`, and `content/wiki/NGC.md` - connected Grace Blackwell desktop systems to architecture and software-stack context.
+- `content/wiki/NVIDIA-Enterprise-AI-Factory.md` - linked BasePOD and Enterprise Support into the AI factory strategy graph.
+- `content/index.md` - updated page count to 283 and indexed the four new DGX pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 14: NVIDIA AI for Media SDK expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch14-20260429T063653Z`; local Git tag `codex-backup-overnight-pre-batch14-20260429T063653Z`

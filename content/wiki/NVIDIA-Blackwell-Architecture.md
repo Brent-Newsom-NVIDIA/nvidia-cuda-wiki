@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Blackwell, B100, B200, GB200, NVLink 5, HBM3e, FP4, Tensor Core, AI superchip
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Blackwell-Tuning-Guide]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Blackwell-Tuning-Guide]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/blackwell-tuning-guide/index.html)
 **Last Updated:** 2026-04-29
 
@@ -65,6 +65,8 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 - [[NVIDIA-Hopper-Architecture]] — Blackwell succeeds Hopper; B200 replaces H100 as NVIDIA's flagship data center GPU
 - [[NVIDIA-Vera-Rubin]] — Vera Rubin is the next-generation platform after Blackwell.
 - [[NVIDIA-DGX]] — DGX B200 and GB200 NVL72 are the Blackwell-based DGX systems
+- [[NVIDIA-DGX-Spark]] — personal GB10 Grace Blackwell AI computer.
+- [[NVIDIA-DGX-Station]] — deskside GB300 Grace Blackwell Ultra system.
 - [[NVIDIA-DGX-B300]] — Blackwell Ultra DGX system generation.
 - [[NVIDIA-GB300-NVL72]] — Blackwell Ultra rack-scale NVL72 system.
 - [[NVIDIA-DGX-SuperPOD]] — Blackwell-based DGX clusters are part of the current AI factory scale-out story
