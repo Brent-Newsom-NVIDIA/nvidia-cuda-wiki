@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, CPU, HPC, Math Libraries, Arm, Grace, CUDA-X
-**Related:** [[cuBLAS]], [[cuFFT]], [[cuSOLVER]], [[cuSPARSE]], [[nvmath-python]]
+**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[cuBLAS]], [[cuFFT]], [[cuSOLVER]], [[cuSPARSE]], [[nvmath-python]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/nvpl
 **Last Updated:** 2026-04-09
 
@@ -49,6 +49,8 @@ NVPL addresses the need for CPU math libraries specifically tuned for NVIDIA's A
 
 ## Connections
 - [[cuBLAS]] — NVPL BLAS is the CPU-side companion to cuBLAS on Grace Hopper systems
+- [[NVIDIA-HPC-SDK]] - current HPC SDK documentation hub lists NVPL alongside CUDA math libraries.
+- [[NVIDIA-HPC-Compilers]] - compiler stack that links CPU/GPU math workflows in HPC applications.
 - [[cuFFT]] — NVPL FFT mirrors the cuFFT API for CPU-side transforms on Grace
 - [[cuSOLVER]] — NVPL LAPACK provides the CPU equivalents of cuSOLVER dense solvers
 - [[cuSPARSE]] — NVPL Sparse provides CPU sparse linear algebra complementing cuSPARSE

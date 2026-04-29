@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 469*
+*Total pages: 474*
 
 ---
 
@@ -123,6 +123,11 @@
 - [[CUDA-Best-Practices-Guide]] — practical CUDA performance guide covering APOD, profiling, memory, precision, and deployment
 - [[CUDA-Release-Notes]] — current CUDA Toolkit release notes for component versions, driver requirements, issues, and library updates
 - [[NVCC]] — NVIDIA CUDA Compiler Driver; compiles CUDA C/C++ for host and device
+- [[NVIDIA-HPC-SDK]] — NVIDIA HPC developer stack for compilers, CUDA programming models, libraries, tools, and containers
+- [[NVIDIA-HPC-Compilers]] — nvc, nvc++, nvfortran, and adjacent NVCC compiler docs for NVIDIA GPUs and Arm/x86 CPUs
+- [[CUDA-Fortran]] — NVIDIA Fortran extensions for explicit CUDA GPU programming through nvfortran
+- [[NVIDIA-OpenACC]] — NVIDIA HPC compiler implementation and guidance for OpenACC GPU offload
+- [[NVIDIA-Stdpar]] — NVIDIA stdpar path for C++ parallel algorithms and Fortran standard parallelism on GPUs
 - [[CUDA-GDB]] — GNU GDB-based GPU debugger for CUDA applications on Linux and QNX
 - [[NVRTC]] — NVIDIA Runtime Compilation library for JIT compilation of CUDA C++ at runtime
 - [[nvJitLink]] — CUDA 12 runtime device-code linker for JIT-linking PTX/cubin/LTOIR modules

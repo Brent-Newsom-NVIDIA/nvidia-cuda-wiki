@@ -2,6 +2,38 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 91: NVIDIA HPC SDK and compiler programming models
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch91-20260429T124248Z`; local Git tag `codex-backup-overnight-pre-batch91-20260429T124248Z`
+
+**Source URLs:** https://docs.nvidia.com/hpc-sdk/index.html, https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-user-guide/index.html, https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-ref-guide/index.html, https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html, https://docs.nvidia.com/hpc-sdk/compilers/openacc-gs/index.html
+
+**Gap analysis summary:**
+
+- Found multiple existing CUDA/library pages referencing NVIDIA HPC SDK concepts without canonical wiki pages for the SDK, compiler family, CUDA Fortran, NVIDIA's OpenACC implementation, or stdpar path.
+- Added one page per durable NVIDIA HPC SDK topic while keeping standards such as OpenACC/stdpar scoped to NVIDIA's compiler implementation.
+- Connected the new pages to CUDA, NVCC, libNVVM, NVPL, HPC-X, NGC, CUDA memory/compatibility concepts, and profiling tools.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-HPC-SDK.md`
+- `content/wiki/NVIDIA-HPC-Compilers.md`
+- `content/wiki/CUDA-Fortran.md`
+- `content/wiki/NVIDIA-OpenACC.md`
+- `content/wiki/NVIDIA-Stdpar.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-CUDA.md` - linked HPC SDK compiler/programming-model paths into the CUDA compiler stack.
+- `content/wiki/NVCC.md` - clarified that Fortran CUDA programming uses the HPC compiler path.
+- `content/wiki/libNVVM.md` - connected compiler backend context to HPC SDK programming models.
+- `content/wiki/NVPL.md` - linked CPU math libraries to the HPC SDK hub.
+- `content/wiki/NVIDIA-HPC-X.md` - linked HPC-X MPI into the HPC SDK communication-library context.
+- `content/wiki/NGC.md` - linked HPC SDK container/distribution context.
+- `content/index.md` - updated total page count to 474 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 90: cuQuantum component libraries
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch90-20260429T123849Z`; local Git tag `codex-backup-overnight-pre-batch90-20260429T123849Z`

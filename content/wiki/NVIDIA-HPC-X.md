@@ -2,7 +2,7 @@
 
 **Type:** Library
 **Tags:** NVIDIA, HPC-X, MPI, SHMEM, PGAS, UCX, UCC, HCOLL, SHARP, InfiniBand, Spectrum-X, NCCL
-**Related:** [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NCCL]], [[NVSHMEM]], [[GPUDirect-RDMA]]
+**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NCCL]], [[NVSHMEM]], [[GPUDirect-RDMA]]
 **Sources:** https://docs.nvidia.com/networking/display/hpcxv226; https://developer.nvidia.com/networking/hpc-x
 **Last Updated:** 2026-04-29
 
@@ -18,6 +18,8 @@ HPC-X is adjacent to, but distinct from, [[NCCL]] and [[NVSHMEM]]. NCCL is the d
 
 ## Connections
 - [[NVIDIA-Quantum-InfiniBand]] - HPC-X is optimized for Quantum InfiniBand networking and SHARP in-network computing.
+- [[NVIDIA-HPC-SDK]] - current HPC SDK docs list HPC-X MPI as the SDK's MPI communication library surface.
+- [[NVIDIA-HPC-Compilers]] - compilers and MPI wrappers often meet in HPC-X-style HPC build environments.
 - [[NVIDIA-Spectrum-X]] - HPC-X 2.26 is tested with Spectrum-X reference architecture 2.1 and includes Spectrum-X NCCL plugin documentation.
 - [[NVIDIA-ConnectX-InfiniBand]] - ConnectX adapters provide the RDMA transport hardware used by HPC-X libraries.
 - [[NVIDIA-DOCA]] - DOCA and DOCA-OFED provide the host/networking software substrate for newer NVIDIA network deployments.

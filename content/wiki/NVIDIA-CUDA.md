@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, GPU computing, CUDA Toolkit, programming model, software stack
-**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[NVCC]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
+**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[NVCC]], [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
 **Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -19,7 +19,7 @@ CUDA is the foundation beneath NVIDIA CUDA-X libraries, AI frameworks, HPC appli
 - **Installation and release tracking:** [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], and [[CUDA-Release-Notes]] cover setup, validation, component versions, and known issues.
 - **API layers:** [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Math-API]], [[CUDA-Debugger-API]], [[PTX-Compiler-APIs]], [[NVRTC]], and [[nvJitLink]].
 - **Python access:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], and [[CUPTI-Python]].
-- **Compiler path:** [[NVCC]], [[PTX-ISA]], [[CUDA-Tile-IR]], [[NVVM-IR]], [[libNVVM]], [[libdevice]], [[nvFatbin]], and [[CUDA-Binary-Utilities]].
+- **Compiler path:** [[NVCC]], [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[PTX-ISA]], [[CUDA-Tile-IR]], [[NVVM-IR]], [[libNVVM]], [[libdevice]], [[nvFatbin]], and [[CUDA-Binary-Utilities]].
 - **Libraries:** [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSOLVER]], [[cuSPARSE]], [[NPP]], [[nvJPEG]], [[cuDNN]], [[NCCL]], and newer device/distributed libraries such as [[cuBLASDx]], [[cuFFTDx]], [[cuBLASMp]], [[cuSOLVERMp]], and [[cuSPARSELt]].
 - **Deployment contexts:** [[CUDA-Compatibility]], [[CUDA-Demo-Suite]], [[CUDA-on-WSL]], [[CUDA-on-EFLOW]], [[CUDA-for-Tegra]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[GPUDirect-RDMA]], and [[GPU-Direct-Storage]].
 - **Architecture guidance:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], and [[NVIDIA-Turing-Architecture]] capture current and legacy tuning/compatibility context.
@@ -34,6 +34,9 @@ CUDA is the connective tissue for NVIDIA hardware generations from data center G
 - [[CUDA-Quick-Start-Guide]] - shortest setup and verification path for new CUDA environments.
 - [[CUDA-Release-Notes]] - current toolkit, component, driver, and library version information.
 - [[NVCC]] - the CUDA compiler driver is the main compilation front door for CUDA C++.
+- [[NVIDIA-HPC-SDK]] - NVIDIA SDK that packages HPC compilers, CUDA programming models, libraries, tools, and containers.
+- [[NVIDIA-HPC-Compilers]] - Fortran, C++, and C compilers for CUDA/OpenACC/OpenMP/stdpar HPC application development.
+- [[CUDA-Fortran]], [[NVIDIA-OpenACC]], and [[NVIDIA-Stdpar]] - HPC SDK programming model paths that generate CUDA-capable GPU code.
 - [[CUDA-Tile]] - NVIDIA's tile-based CUDA programming model for Tensor Core-oriented kernels.
 - [[cuTile]] - Python DSL implementation of CUDA Tile.
 - [[CUDA-Tile-IR]] - tile-oriented bytecode and virtual instruction set within the CUDA documentation family.
