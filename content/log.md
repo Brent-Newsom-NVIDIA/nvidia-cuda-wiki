@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 81: ComputeEval
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch81-20260429T120542Z`; local Git tag `codex-backup-overnight-pre-batch81-20260429T120542Z`
+
+**Source URLs:** https://github.com/NVIDIA/compute-eval, https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/, https://developer.nvidia.com/blog/benchmarking-llms-on-ai-generated-cuda-code-with-computeeval-2025-2/
+
+**Gap analysis summary:**
+
+- Added a canonical ComputeEval page after Nsight Copilot sourcing showed NVIDIA uses ComputeEval to benchmark CUDA task proficiency and no existing wiki page covered it.
+- Kept benchmark releases, model score tables, and individual LLM result rows inside the single ComputeEval page rather than creating per-release or per-model pages.
+- Connected ComputeEval to Nsight Copilot, CUDA, CCCL/CUDA libraries, NVTX region timing, CUPTI profiling, Nsight Compute `ncu` profiling, and NIM-hosted model evaluation.
+
+**Pages created (1 total):**
+
+- `content/wiki/ComputeEval.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Copilot.md` - linked ComputeEval as the CUDA task proficiency benchmark.
+- `content/wiki/Nsight-Compute.md`, `content/wiki/CUPTI.md`, and `content/wiki/NVTX.md` - connected profiler and annotation paths used by ComputeEval.
+- `content/wiki/NVIDIA-NIM.md` - linked ComputeEval to NIM-hosted model evaluation.
+- `content/index.md` - updated total page count to 455 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 80: Nsight Copilot
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch80-20260429T120252Z`; local Git tag `codex-backup-overnight-pre-batch80-20260429T120252Z`

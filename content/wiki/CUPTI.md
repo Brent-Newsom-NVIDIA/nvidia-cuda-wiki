@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** CUDA, NVIDIA, profiling, performance, tracing, hardware counters, tools API, instrumentation
-**Related:** [[Nsight-Compute]], [[Nsight-Systems]], [[NVTX]], [[NVIDIA-DCGM]], [[NVCC]], [[CUDA-Streams]], [[NVBit]]
+**Related:** [[Nsight-Compute]], [[Nsight-Systems]], [[NVTX]], [[ComputeEval]], [[NVIDIA-DCGM]], [[NVCC]], [[CUDA-Streams]], [[NVBit]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -55,6 +55,7 @@ This powers everything from Nsight Compute's roofline analysis to DCGM's Tensor 
 - [[Nsight-Compute]] — Nsight Compute is built on CUPTI; uses CUPTI's hardware counter collection for roofline analysis and kernel metrics
 - [[Nsight-Systems]] — Nsight Systems uses CUPTI Activity API for GPU timeline and API trace collection
 - [[NVTX]] - CUPTI supports recording traces of NVTX annotation calls.
+- [[ComputeEval]] - can use CUPTI profiling mode to measure kernel timing, memory transfers, and NVTX ranges for generated CUDA solutions.
 - [[NVIDIA-DCGM]] — DCGM profiling groups use CUPTI for Tensor Core and NVLink hardware counter collection in production
 - [[NVBit]] — NVBit complements CUPTI with binary instrumentation — CUPTI collects hardware metrics, NVBit injects custom instrumentation code into kernels
 - [[NVCC]] — NVCC compiles code with debug information that CUPTI uses for source-level counter correlation

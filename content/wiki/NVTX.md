@@ -2,7 +2,7 @@
 
 **Type:** Annotation API / developer tools library
 **Tags:** NVIDIA, NVTX, NVIDIA Tools Extension, profiling, tracing, annotations, markers, ranges, resource naming, Nsight Systems, Nsight Compute, Nsight Graphics, CUPTI, CUDA
-**Related:** [[Nsight-Developer-Tools]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[CUPTI]], [[NVIDIA-CUDA]], [[CUDA-Python]], [[Nsight-Python]], [[Nsight-JupyterLab-Extension]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[CUPTI]], [[ComputeEval]], [[NVIDIA-CUDA]], [[CUDA-Python]], [[Nsight-Python]], [[Nsight-JupyterLab-Extension]]
 **Sources:** https://nvidia.github.io/NVTX/, https://nvidia.github.io/NVTX/doxygen-c/html/index.html, https://nvidia.github.io/NVTX/python/
 **Last Updated:** 2026-04-29
 
@@ -25,6 +25,7 @@ NVTX supports Windows, Linux/POSIX-like platforms, and Android for CPU-side code
 - [[Nsight-Compute]] - can use NVTX ranges to focus deep-dive GPU performance analysis.
 - [[Nsight-Graphics]] - can use NVTX ranges to bound range profiling in graphics workflows.
 - [[CUPTI]] - supports recording traces of NVTX calls for custom tooling.
+- [[ComputeEval]] - uses NVTX region timing for benchmark sections around generated CUDA workloads.
 - [[Nsight-Python]] and [[Nsight-JupyterLab-Extension]] - Python and notebook workflows can benefit from NVTX-style range annotation.
 - [[NVIDIA-CUDA]] - CUDA Toolkit includes NVTX v3 and profiling tools that consume NVTX annotations.
 

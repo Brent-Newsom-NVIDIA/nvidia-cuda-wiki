@@ -2,7 +2,7 @@
 
 **Type:** Developer tool
 **Tags:** NVIDIA, Nsight, CUDA, AI assistant, code generation, code transformation, Nsight Compute, Visual Studio Code, NIM, CUDA optimization
-**Related:** [[Nsight-Developer-Tools]], [[Nsight-Compute]], [[Nsight-Visual-Studio-Code-Edition]], [[NVIDIA-NIM]], [[NVIDIA-CUDA]], [[PyTorch]], [[CUTLASS]], [[CUDA-Python]], [[TensorRT-LLM]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Compute]], [[Nsight-Visual-Studio-Code-Edition]], [[ComputeEval]], [[NVIDIA-NIM]], [[NVIDIA-CUDA]], [[PyTorch]], [[CUTLASS]], [[CUDA-Python]], [[TensorRT-LLM]], [[NVIDIA-Developer-Program]]
 **Sources:** https://developer.nvidia.com/nsight-copilot, https://developer.nvidia.com/tools-overview/nsight-compute/get-started
 **Last Updated:** 2026-04-29
 
@@ -16,7 +16,7 @@ The Visual Studio Code path is aimed at CUDA development inside the editor. NVID
 
 The Nsight Compute path brings Copilot into kernel profiling. NVIDIA's example workflow describes interactive guidance around an uncoalesced memory-access issue, which makes Copilot adjacent to the normal [[Nsight-Compute]] loop of collecting metrics, inspecting source/SASS correlation, and resolving CUDA performance bottlenecks.
 
-NVIDIA says Nsight Copilot is powered by [[NVIDIA-NIM]] microservices and benchmarked with ComputeEval for CUDA task proficiency. That makes it a bridge between NVIDIA's CUDA developer tools and NVIDIA's model-serving stack, rather than a standalone model catalog page.
+NVIDIA says Nsight Copilot is powered by [[NVIDIA-NIM]] microservices and benchmarked with [[ComputeEval]] for CUDA task proficiency. That makes it a bridge between NVIDIA's CUDA developer tools and NVIDIA's model-serving stack, rather than a standalone model catalog page.
 
 ## Current Status
 - Public NVIDIA developer page is available.
@@ -37,6 +37,7 @@ NVIDIA says Nsight Copilot is powered by [[NVIDIA-NIM]] microservices and benchm
 - [[Nsight-Visual-Studio-Code-Edition]] - VS Code development path where Nsight Copilot appears as a CUDA coding assistant.
 - [[Nsight-Compute]] - kernel profiler path where Nsight Copilot preview adds interactive performance guidance.
 - [[NVIDIA-NIM]] - NVIDIA says Nsight Copilot is powered by NIM microservices.
+- [[ComputeEval]] - NVIDIA benchmark framework used to measure CUDA task proficiency for AI coding systems.
 - [[NVIDIA-CUDA]] - primary programming target for Nsight Copilot assistance.
 - [[PyTorch]] - NVIDIA's public example shows converting a PyTorch operation into an optimized CUDA kernel.
 - [[CUTLASS]], [[CUDA-Python]], and [[TensorRT-LLM]] - common CUDA-heavy optimization contexts where CUDA-aware assistance can be useful, even though Nsight Copilot is not a replacement for profiling or correctness validation.
