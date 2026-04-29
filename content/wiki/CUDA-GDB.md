@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Debugger, Development Tools, CUDA Toolkit
-**Related:** [[NVCC]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[Nsight-Systems]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]]
+**Related:** [[NVCC]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[Nsight-Systems]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
 **Last Updated:** 2026-04-29
 
@@ -36,7 +36,7 @@ Debugging CUDA kernels requires inspecting state across thousands of parallel GP
 - NVIDIA GPU on Linux (x86-64) or QNX
 - CUDA Toolkit installed
 - Debug builds compiled with NVCC (-G flag for device debugging)
-- Does not support Windows natively (use Nsight Visual Studio Edition on Windows)
+- Does not support Windows natively (use Nsight Visual Studio Edition for Visual Studio workflows or Nsight Visual Studio Code Edition with supported remote/host setups)
 
 ### Language Bindings
 - C and C++ (CUDA source code)
@@ -47,6 +47,7 @@ Debugging CUDA kernels requires inspecting state across thousands of parallel GP
 - [[Compute-Sanitizer]] — Compute Sanitizer detects memory/race errors automatically; CUDA-GDB provides interactive debugging
 - [[Nsight-Compute]] — Nsight Compute profiles kernels; CUDA-GDB debugs kernel correctness
 - [[Nsight-Systems]] — Nsight Systems provides system-level profiling; CUDA-GDB provides low-level kernel debugging
+- [[Nsight-Visual-Studio-Code-Edition]] — VS Code CUDA debugging workflow that uses CUDA debugger components such as cuda-gdbserver for remote targets
 - [[Nsight-Visual-Studio-Edition]] — Windows IDE debugging/profiling path for CUDA developers
 - [[Nsight-Eclipse-Plugins]] — Eclipse-based IDE workflow for CUDA Linux development
 

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 447*
+*Total pages: 448*
 
 ---
 
@@ -148,6 +148,7 @@
 - [[Nsight-Perf-SDK]] — graphics profiling toolbox for collecting GPU metrics inside DirectX, Vulkan, and OpenGL applications
 - [[Nsight-Python]] — Python-first Nsight kernel profiling automation across kernel configurations
 - [[Nsight-Systems]] — system-wide CPU+GPU performance profiler and timeline visualizer
+- [[Nsight-Visual-Studio-Code-Edition]] — Visual Studio Code extension for CUDA language support and CUDA-aware debugging workflows
 - [[Nsight-Visual-Studio-Edition]] — Visual Studio integration for CUDA debugging, profiling, and GPU development on Windows
 - [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA Linux IDE development workflows
 

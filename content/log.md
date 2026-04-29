@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 73: Nsight Visual Studio Code Edition
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch73-20260429T114324Z`; local Git tag `codex-backup-overnight-pre-batch73-20260429T114324Z`
+
+**Source URLs:** https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/introduction/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/install-setup/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-debugger/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-control-gpu-execution/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-inspect-state/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical Nsight Visual Studio Code Edition page after finding current NVIDIA `latest` documentation and no existing wiki page.
+- Kept introduction, setup, local/remote debugging, CUDA debugger walkthroughs, GPU breakpoints, CUDA debugger views, WSL/Remote-SSH/container context, and cuda-gdbserver/QNX notes folded into one page.
+- Connected VS Code Edition to Visual Studio Edition, CUDA-GDB, Compute Sanitizer, Nsight Compute, Nsight Systems, NVCC, CUDA-on-WSL, and the Developer Program context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Visual-Studio-Code-Edition.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Visual-Studio-Edition.md` - clarified Visual Studio versus VS Code Nsight workflows.
+- `content/wiki/CUDA-GDB.md` - connected command-line and remote CUDA debugging context to Nsight VSCE.
+- `content/wiki/Nsight-Compute.md` and `content/wiki/Nsight-Systems.md` - linked profiling workflows to the VS Code debugger path.
+- `content/index.md` - updated total page count to 448 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 72: Nsight Perf SDK
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch72-20260429T114140Z`; local Git tag `codex-backup-overnight-pre-batch72-20260429T114140Z`
