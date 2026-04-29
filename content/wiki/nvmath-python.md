@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Python, Math, Linear Algebra, FFT, Random Numbers, Open Source
-**Related:** [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuDSS]], [[cuTENSOR]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuDSS]], [[cuTENSOR]]
+**Sources:** NVIDIA official documentation, https://nvidia.github.io/cuda-python/latest/, https://docs.nvidia.com/cuda/nvmath-python/
+**Last Updated:** 2026-04-29
 
 ## Summary
 nvmath-python is an open-source Python library that bridges the Python scientific ecosystem to NVIDIA's CUDA-X math libraries (cuBLAS, cuFFT, cuRAND, cuDSS, and more) through intuitive, Pythonic APIs. It supports host and device API modes, multi-GPU/multi-node scaling, and deep interoperability with NumPy, CuPy, PyTorch, RAPIDS, SciPy, and scikit-learn — delivering native CUDA-X performance without leaving Python.
@@ -13,6 +13,7 @@ nvmath-python is an open-source Python library that bridges the Python scientifi
 
 ### Purpose
 The Python scientific community relies on libraries like NumPy and SciPy, but these don't expose the full performance of NVIDIA's CUDA-X math libraries. nvmath-python closes this gap by providing first-class Python interfaces to GPU-native math primitives, enabling scientists and ML practitioners to scale workflows with minimal code changes and no C++ required.
+The current [[CUDA-Python]] hub lists nvmath-python as the Pythonic access layer for NVIDIA CPU and GPU math libraries.
 
 ### Key Features
 - Intuitive Pythonic APIs with customization options for advanced users
@@ -49,6 +50,8 @@ The Python scientific community relies on libraries like NumPy and SciPy, but th
 
 ## Connections
 - [[cuBLAS]] — nvmath-python wraps cuBLAS GEMM operations
+- [[CUDA-Python]] — umbrella that lists nvmath-python as a Python CUDA component.
+- [[cuda-core]] and [[cuda-bindings]] — adjacent CUDA Python layers for runtime/core access and low-level bindings.
 - [[cuFFT]] — nvmath-python wraps cuFFT transform operations
 - [[cuRAND]] — nvmath-python wraps cuRAND random number generation
 - [[cuDSS]] — nvmath-python wraps cuDSS sparse direct solver

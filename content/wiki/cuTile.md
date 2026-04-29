@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, cuTile, CUDA Tile, Python, DSL, GPU Programming, Tensor Cores, TMA
-**Related:** [[CUDA-Tile]], [[CUDA-Tile-IR]], [[NVIDIA-CUDA]], [[PyTorch]], [[CuPy]], [[Nsight-Compute]], [[PTX-ISA]], [[NVVM-IR]]
-**Sources:** https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://docs.nvidia.com/cuda/cutile-python/execution.html, https://docs.nvidia.com/cuda/cutile-python/interoperability.html, https://docs.nvidia.com/cuda/cutile-python/performance.html, https://docs.nvidia.com/cuda/cutile-python/compilation.html, https://developer.nvidia.com/cuda/tile
+**Related:** [[CUDA-Python]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[NVIDIA-CUDA]], [[PyTorch]], [[CuPy]], [[Nsight-Compute]], [[PTX-ISA]], [[NVVM-IR]]
+**Sources:** https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://docs.nvidia.com/cuda/cutile-python/execution.html, https://docs.nvidia.com/cuda/cutile-python/interoperability.html, https://docs.nvidia.com/cuda/cutile-python/performance.html, https://docs.nvidia.com/cuda/cutile-python/compilation.html, https://developer.nvidia.com/cuda/tile, https://nvidia.github.io/cuda-python/latest/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,9 +30,11 @@ Current cuTile Python documentation lists Linux x86_64, Linux aarch64, and Windo
 
 ### NVIDIA context
 cuTile is the user-facing Python layer of NVIDIA's larger [[CUDA-Tile]] direction. It belongs next to [[CUDA-Programming-Guide]], [[PTX-ISA]], and [[NVVM-IR]] in the wiki because it is a new way to express GPU work, but it should not be confused with the lower-level [[CUDA-Tile-IR]] specification itself.
+The current [[CUDA-Python]] hub also lists `cuda.tile` as the Python DSL for the CUDA Tile programming model.
 
 ## Connections
 - [[CUDA-Tile]] - umbrella NVIDIA programming model that cuTile implements in Python.
+- [[CUDA-Python]] - current NVIDIA hub that lists `cuda.tile` / cuTile among Python CUDA components.
 - [[CUDA-Tile-IR]] - lower-level bytecode/spec target used beneath cuTile.
 - [[NVIDIA-CUDA]] - cuTile is part of the current CUDA documentation family.
 - [[PyTorch]] - PyTorch tensors can be passed as array arguments to cuTile kernels.

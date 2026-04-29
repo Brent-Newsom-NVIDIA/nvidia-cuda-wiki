@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, GPU computing, CUDA Toolkit, programming model, software stack
-**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[NVCC]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
-**Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
+**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[NVCC]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
+**Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html, https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,7 @@ CUDA is the foundation beneath NVIDIA CUDA-X libraries, AI frameworks, HPC appli
 - **Programming model:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[CUDA-Tile]], [[cuTile]], [[Floating-Point-and-IEEE-754]], and architecture-specific tuning guidance.
 - **Installation and release tracking:** [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], and [[CUDA-Release-Notes]] cover setup, validation, component versions, and known issues.
 - **API layers:** [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Math-API]], [[CUDA-Debugger-API]], [[PTX-Compiler-APIs]], [[NVRTC]], and [[nvJitLink]].
+- **Python access:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], and [[CUPTI-Python]].
 - **Compiler path:** [[NVCC]], [[PTX-ISA]], [[CUDA-Tile-IR]], [[NVVM-IR]], [[libNVVM]], [[libdevice]], [[nvFatbin]], and [[CUDA-Binary-Utilities]].
 - **Libraries:** [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSOLVER]], [[cuSPARSE]], [[NPP]], [[nvJPEG]], [[cuDNN]], [[NCCL]], and newer device/distributed libraries such as [[cuBLASDx]], [[cuFFTDx]], [[cuBLASMp]], [[cuSOLVERMp]], and [[cuSPARSELt]].
 - **Deployment contexts:** [[CUDA-Compatibility]], [[CUDA-Demo-Suite]], [[CUDA-on-WSL]], [[CUDA-on-EFLOW]], [[CUDA-for-Tegra]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[GPUDirect-RDMA]], and [[GPU-Direct-Storage]].
@@ -38,6 +39,8 @@ CUDA is the connective tissue for NVIDIA hardware generations from data center G
 - [[CUDA-Tile-IR]] - tile-oriented bytecode and virtual instruction set within the CUDA documentation family.
 - [[CUDA-Runtime-API]] - the higher-level API most CUDA applications use directly.
 - [[CUDA-Driver-API]] - the lower-level API used by runtimes, frameworks, and advanced module loading workflows.
+- [[CUDA-Python]] - NVIDIA-maintained Python access layer for CUDA APIs and libraries.
+- [[cuda-core]] and [[cuda-bindings]] - Pythonic and low-level access to CUDA runtime/driver concepts.
 - [[PTX-ISA]] - virtual GPU ISA emitted by CUDA compiler paths and consumed by JIT/compiler tooling.
 - [[CUDA-Demo-Suite]] - CUDA validation utilities help confirm toolkit, driver, and GPU setup.
 - [[CUDA-on-EFLOW]] - edge Windows/Linux deployment guidance for CUDA container workloads.

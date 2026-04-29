@@ -2,7 +2,7 @@
 
 **Type:** Concept
 **Tags:** CUDA, NVIDIA, GPU, programming, kernel launch, latency, optimization, workflow, graph execution
-**Related:** [[CUDA-Streams]], [[NVIDIA-Hopper-Architecture]], [[TensorRT]], [[PyTorch]], [[NVRTC]]
+**Related:** [[CUDA-Streams]], [[CUDA-Python]], [[cuda-core]], [[NVIDIA-Hopper-Architecture]], [[TensorRT]], [[PyTorch]], [[NVRTC]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -40,12 +40,14 @@ In standard CUDA programming, each kernel launch, cudaMemcpy, or cudaMemset call
 ### Language Bindings / APIs
 - **CUDA C/C++:** Native `cudaGraph_t`, `cudaGraphExec_t`, `cudaStreamBeginCapture` APIs
 - **Python (PyTorch):** `torch.cuda.CUDAGraph`; `with torch.cuda.graph(g):` context manager; `torch.compile` automatically uses CUDA Graphs for static models
+- **Python (CUDA Python):** [[cuda-core]] includes CUDA graph classes and graph-building APIs.
 - **TensorRT:** TensorRT inference engine uses CUDA Graphs internally; `IExecutionContext::enqueueV3` leverages graphs
 - **CuPy:** `cupy.cuda.Graph` for capturing CuPy operations
 - **JAX:** JAX JIT compilation on CUDA can leverage CUDA Graphs for compiled kernels
 
 ## Connections
 - [[CUDA-Streams]] — CUDA Graphs are captured from streams and launched onto streams; stream dependencies govern execution ordering
+- [[CUDA-Python]] and [[cuda-core]] — CUDA graph construction and execution are exposed in NVIDIA's Pythonic CUDA core layer.
 - [[NVIDIA-Hopper-Architecture]] — Hopper introduced conditional graph nodes (hardware support for on-GPU branching in graphs)
 - [[TensorRT]] — TensorRT uses CUDA Graphs internally for low-latency inference; a key source of TensorRT's latency advantage
 - [[PyTorch]] — PyTorch 2.x `torch.compile` uses CUDA Graphs for eliminating Python overhead in model inference

@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, runtime API, GPU programming, CUDA Toolkit
-**Related:** [[NVIDIA-CUDA]], [[CUDA-Driver-API]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[NVRTC]], [[NVCC]]
-**Sources:** https://docs.nvidia.com/cuda/cuda-runtime-api/index.html
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Driver-API]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[NVRTC]], [[NVCC]]
+**Sources:** https://docs.nvidia.com/cuda/cuda-runtime-api/index.html, https://nvidia.github.io/cuda-python/cuda-core/latest/getting-started.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,14 +24,17 @@ The runtime API lets application developers express GPU work without manually ma
 
 ### NVIDIA context
 Frameworks and libraries often abstract the runtime API away, but the runtime remains central for custom CUDA extensions, performance-sensitive application code, and integration layers around [[PyTorch]], [[TensorRT]], [[NVIDIA-DALI]], and CUDA-X libraries.
+Python workflows can reach runtime-style functionality through [[cuda-core]] for higher-level objects or [[cuda-bindings]] for lower-level API parity.
 
 ## Connections
 - [[CUDA-Driver-API]] - provides lower-level control and can interoperate with runtime-created state.
 - [[CUDA-Streams]] - runtime stream APIs control ordering and overlap.
 - [[CUDA-Graphs]] - runtime graph APIs capture and replay repeated GPU work.
 - [[CUDA-Unified-Memory]] - managed memory is surfaced through runtime allocation and migration APIs.
+- [[CUDA-Python]] - Python umbrella for CUDA access.
+- [[cuda-core]] - Pythonic access to runtime-like CUDA devices, streams, memory, and graphs.
+- [[cuda-bindings]] - lower-level Python access to CUDA C APIs.
 - [[NVCC]] - compiled CUDA C++ typically uses runtime support for launches and device runtime services.
 
 ## Source Excerpts
 - NVIDIA's Runtime API reference separates runtime topics such as device management, memory management, streams, events, graphs, and interoperability.
-

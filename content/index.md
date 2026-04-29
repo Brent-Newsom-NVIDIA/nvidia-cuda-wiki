@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 292*
+*Total pages: 297*
 
 ---
 
@@ -76,7 +76,7 @@
 ### Parallel Algorithms
 - [[Thrust]] — GPU-accelerated C++ STL-compatible parallel algorithms (sort, scan, reduce, transform)
 - [[CUB]] — GPU cooperative primitives library: device/block/warp-level sort, scan, reduce, histogram
-- [[cuda-parallel]] — Python bindings for CUB/Thrust parallel algorithms with JIT-compiled user operators
+- [[cuda-compute]] — Python bindings for CCCL/CUB/Thrust-style host-callable parallel algorithms
 - [[NCCL]] — multi-GPU and multi-node collective communications (all-reduce, all-gather, broadcast)
 - [[NVSHMEM]] — GPU-cluster PGAS (Partitioned Global Address Space) communication via OpenSHMEM
 - [[NVIDIA-HPC-X]] — NVIDIA MPI, SHMEM, UCX, UCC, HCOLL, ClusterKit, and NCCL-RDMA-SHARP communications toolkit
@@ -127,6 +127,12 @@
 - [[CUDA-Demo-Suite]] — CUDA validation demos such as deviceQuery and bandwidthTest for checking GPU/toolkit setup
 - [[CUDA-Debugger-API]] — Low-level CUDA debugger integration API
 - [[CUDA-Cpp-Standard-Library]] — CUDA-capable C++ standard library facilities in the CCCL stack
+- [[CUDA-Python]] — NVIDIA umbrella for accessing CUDA from Python across core APIs, bindings, libraries, and profiling
+- [[cuda-core]] — Pythonic CUDA runtime/core interface for devices, streams, memory, graphs, compilation, and system inspection
+- [[cuda-bindings]] — Low-level Python bindings to CUDA C APIs
+- [[cuda-pathfinder]] — Python utilities for locating CUDA libraries, headers, tools, bitcode, and static libraries
+- [[cuda-compute]] — CCCL Python host-callable parallel algorithms such as reduce, scan, sort, and transform
+- [[cuda-coop]] — CCCL Python block/warp cooperative algorithms for Numba CUDA kernels
 - [[CUDA-Runtime-API]] — Higher-level CUDA API for devices, memory, streams, graphs, and launches
 - [[CUDA-Driver-API]] — Lower-level CUDA API for contexts, modules, memory, and explicit control
 - [[CUDA-Math-API]] — device-side math functions (sin, cos, exp, FP16/BF16 intrinsics) for CUDA kernels

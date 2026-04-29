@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Python, NumPy, Scientific Computing, Array Computing
-**Related:** [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSPARSE]], [[nvmath-python]], [[Thrust]], [[JAX]]
+**Related:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuda-compute]], [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSPARSE]], [[nvmath-python]], [[Thrust]], [[JAX]]
 **Sources:** cupy.dev official documentation
 **Last Updated:** 2026-04-09
 
@@ -52,6 +52,8 @@ CuPy eliminates the effort of rewriting NumPy-based scientific code for GPU exec
 - [[cuRAND]] — CuPy's `cupy.random` module uses cuRAND for random number generation
 - [[cuSPARSE]] — CuPy's `cupyx.scipy.sparse` matrix operations use cuSPARSE
 - [[nvmath-python]] — nvmath-python provides a higher-level Python interface to the same CUDA-X libraries
+- [[CUDA-Python]], [[cuda-core]], and [[cuda-bindings]] — NVIDIA-maintained Python CUDA layers that help standardize low-level CUDA access and interoperability.
+- [[cuda-compute]] — CCCL Python algorithms can operate on compatible Python GPU arrays.
 - [[Thrust]] — CuPy's sort and reduction primitives leverage Thrust-style algorithms internally
 - [[JAX]] — JAX uses a similar GPU array model; CuPy arrays interoperable via CUDA Array Interface
 

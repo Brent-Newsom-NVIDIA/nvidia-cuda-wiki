@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, Performance Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Systems]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
-**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/cutile-python/quickstart.html
+**Related:** [[Nsight-Systems]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-Python]], [[cuda-bindings]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -49,6 +49,7 @@ Writing a correct GPU kernel is only half the challenge — writing a fast one r
 - [[Nsight-Visual-Studio-Edition]] — Windows Visual Studio integration for CUDA debugging/profiling workflows
 - [[Nsight-Eclipse-Plugins]] — Eclipse-based IDE plugins for older CUDA Linux development workflows
 - [[NVCC]] — NVCC compiles the kernels that Nsight Compute then profiles
+- [[CUDA-Python]] and [[cuda-bindings]] — CUDA Python binding examples are documented as compatible with Nsight Compute profiling.
 - [[cuTile]] — NVIDIA's cuTile quickstart documents profiling cuTile Python kernels with `ncu`.
 - [[CUDA-GDB]] — CUDA-GDB debugs kernel correctness; Nsight Compute optimizes kernel performance
 - [[Compute-Sanitizer]] — Compute Sanitizer checks correctness; Nsight Compute analyzes performance

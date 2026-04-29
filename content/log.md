@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 18: CUDA Python ecosystem coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch18-20260429T070353Z`; local Git tag `codex-backup-overnight-pre-batch18-20260429T070353Z`
+
+**Source URLs:** https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://nvidia.github.io/cuda-python/latest/release.html, https://nvidia.github.io/cuda-python/cuda-core/latest/, https://nvidia.github.io/cuda-python/cuda-core/latest/getting-started.html, https://nvidia.github.io/cuda-python/cuda-core/latest/installation.html, https://nvidia.github.io/cuda-python/cuda-core/latest/interoperability.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html, https://nvidia.github.io/cuda-python/cuda-pathfinder/latest/, https://nvidia.github.io/cccl/python/compute, https://nvidia.github.io/cccl/python/coop.html
+
+**Gap analysis summary:**
+
+- Added the current NVIDIA CUDA Python umbrella and core component pages that were missing from the wiki.
+- Split Python CUDA access into `cuda.core` for Pythonic runtime/core workflows and `cuda.bindings` for low-level CUDA C API parity.
+- Added `cuda.pathfinder` for CUDA component discovery in Python packaging/deployment workflows.
+- Renamed the older `cuda-parallel` page to the current `cuda.compute` concept instead of creating a duplicate page for the same CCCL Python algorithm surface.
+- Added `cuda.coop` as the distinct cooperative block/warp algorithms page for Numba CUDA kernels.
+
+**Pages created (5 total):**
+
+- `content/wiki/CUDA-Python.md`
+- `content/wiki/cuda-core.md`
+- `content/wiki/cuda-bindings.md`
+- `content/wiki/cuda-pathfinder.md`
+- `content/wiki/cuda-coop.md`
+
+**Pages renamed/updated:**
+
+- `content/wiki/cuda-parallel.md` -> `content/wiki/cuda-compute.md` - updated to current `cuda.compute` naming and linked the old `cuda.parallel` term only as history/search context.
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-CUDA.md` - added CUDA Python and component map to the CUDA platform page.
+- `content/wiki/CUDA-Runtime-API.md`, `content/wiki/CUDA-Driver-API.md`, and `content/wiki/NVRTC.md` - linked Python access layers and runtime compilation context.
+- `content/wiki/CUDA-Cpp-Standard-Library.md` - updated CCCL Python connections from old `cuda.parallel` to `cuda.compute` and `cuda.coop`.
+- `content/wiki/CUPTI-Python.md`, `content/wiki/nvmath-python.md`, `content/wiki/cuTile.md`, `content/wiki/CuPy.md`, `content/wiki/CUDA-Graphs.md`, and `content/wiki/Nsight-Compute.md` - wired CUDA Python hub/component relationships.
+- `content/index.md` - updated page count to 297 and indexed the new CUDA Python component pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 17: CUDA Tile and cuTile separation
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch17-20260429T065740Z`; local Git tag `codex-backup-overnight-pre-batch17-20260429T065740Z`
