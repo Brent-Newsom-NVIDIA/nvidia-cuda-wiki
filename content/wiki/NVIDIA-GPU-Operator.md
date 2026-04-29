@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, GPU, containers, operator, cloud-native, DevOps, infrastructure, K8s
-**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NGC]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -55,7 +55,9 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 - [[NVIDIA-NVSentinel]] — uses GPU Operator/DCGM-based monitoring as part of Kubernetes fault detection and remediation.
 - [[NVIDIA-Container-Toolkit]] — GPU Operator manages the lifecycle of Container Toolkit installation on all cluster nodes
 - [[NVIDIA-DCGM]] — DCGM Exporter is a core component deployed by GPU Operator for GPU monitoring
+- [[NVIDIA-Enterprise-RA-Observability-Guide]] — Enterprise RA observability builds on GPU Operator-deployed DCGM Exporter in Kubernetes clusters.
 - [[NVIDIA-AI-Enterprise]] — GPU Operator is the recommended Kubernetes deployment mechanism for AI Enterprise
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] — AI Enterprise software RA lists GPU Operator as core infrastructure software.
 - [[NGC]] — GPU Operator container images are hosted on NGC (`nvcr.io/nvidia/gpu-operator`)
 - [[NVIDIA-DGX]] — GPU Operator with Base Command Manager (Kubernetes) manages DGX SuperPOD nodes
 

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Spectrum-X, Ethernet, AI Networking, RoCE, Lossless Ethernet, HPC Networking
-**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-Flow]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[OVS-DOCA]], [[NVIDIA-MLNX-EN]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-Flow]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[OVS-DOCA]], [[NVIDIA-MLNX-EN]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/silicon-photonics/
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,7 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - Host-side Spectrum-X Ethernet/RoCE configuration sits on current [[NVIDIA-DOCA-OFED]] and legacy [[NVIDIA-MLNX-EN]] concepts.
 - [[DOCA-Flow]] and [[DOCA-PCC]] are adjacent DOCA programming concepts for packet steering and programmable congestion behavior.
 - Current AI data/storage pages tie Spectrum-X to [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], and [[NVIDIA-CMX]] as the Ethernet fabric for accelerated enterprise storage and context-memory access
+- Current [[NVIDIA-Enterprise-Reference-Architectures]] use Spectrum-X across RTX PRO, HGX, and NVL72 AI factory designs.
 - Current silicon photonics material connects Spectrum-X-class Ethernet to optical networking for future AI factory fabrics
 
 ### Use Cases
@@ -65,6 +66,8 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - [[NVIDIA-STX]] — STX uses Spectrum-X Ethernet in AI-native storage and data platform reference architecture.
 - [[NVIDIA-CMX]] — CMX uses Spectrum-X for low-latency RDMA access to context memory and KV cache.
 - [[NVIDIA-AI-Data-Platform]] — AI Data Platform references Spectrum-X for accelerated storage and retrieval workflows.
+- [[NVIDIA-Enterprise-Reference-Architectures]] — current Enterprise RAs use Spectrum-X for AI factory compute and converged fabrics.
+- [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], and [[NVIDIA-NVL72-AI-Factory]] — hardware RAs that rely on Spectrum-X networking patterns.
 - [[NVIDIA-Silicon-Photonics]] — optical networking direction that complements next-generation Spectrum-X AI fabrics.
 - [[NVIDIA-Quantum-InfiniBand]] — Quantum IB is NVIDIA's InfiniBand platform; Spectrum-X is the Ethernet alternative
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX-7/8 NICs used with Spectrum-X for end-to-end acceleration

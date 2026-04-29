@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Run:ai, GPU orchestration, workload orchestration, Kubernetes, AI Enterprise, MLOps, AI factory
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Mission-Control]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-GPU-Operator]], [[KAI-Scheduler]], [[NVIDIA-Grove]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-GPU-Operator]], [[KAI-Scheduler]], [[NVIDIA-Grove]]
 **Sources:** https://docs.nvidia.com/run-ai/; https://docs.nvidia.com/run-ai/self-hosted/index.html; https://www.nvidia.com/en-us/software/run-ai/; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/overview-runai.html
 **Last Updated:** 2026-04-29
 
@@ -18,6 +18,9 @@ Run:ai also anchors open-source scheduling work. NVIDIA's product page links KAI
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - current AI Enterprise docs include self-hosted Run:ai in the enterprise software portfolio.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - current Enterprise RAs list Run:ai as part of the AI factory software stack.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA positions Kubernetes as the orchestration base beneath AI Enterprise workloads.
+- [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], and [[NVIDIA-NVL72-AI-Factory]] - hardware RA pages that include Run:ai in the software context.
 - [[NVIDIA-Mission-Control]] - Mission Control uses Run:ai as the Kubernetes AI workload orchestration layer.
 - [[NVIDIA-Base-Command-Manager]] - Mission Control guidance installs/coordinates Run:ai through BCM-managed flows.
 - [[NVIDIA-DGX-SuperPOD]] - Run:ai is used to schedule AI workloads into DGX clusters.
@@ -28,4 +31,3 @@ Run:ai also anchors open-source scheduling work. NVIDIA's product page links KAI
 ## Source Excerpts
 - "NVIDIA Run:ai accelerates AI operations with dynamic orchestration across the AI lifecycle."
 - "For on-premise and private cloud deployments."
-

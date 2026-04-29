@@ -2,7 +2,7 @@
 
 **Type:** Program
 **Tags:** NVIDIA, certified storage, AI factory, enterprise storage, GPUDirect Storage, AI Data Platform, storage partners
-**Related:** [[NVIDIA-Certified-Systems]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[GPU-Direct-Storage]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Cloud]]
+**Related:** [[NVIDIA-Certified-Systems]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[GPU-Direct-Storage]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Cloud]]
 **Sources:** https://www.nvidia.com/en-us/data-center/products/certified-storage/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html
 **Last Updated:** 2026-04-29
 
@@ -26,6 +26,8 @@ The Enterprise AI Factory design guide treats certified storage as a core part o
 ## Connections
 - [[NVIDIA-Certified-Systems]] - certified systems validate compute; certified storage validates the data layer.
 - [[NVIDIA-Enterprise-AI-Factory]] - AI factories need validated storage alongside compute, networking, software, and operations.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - current Enterprise RA pages include storage bandwidth and validation guidance.
+- [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], and [[NVIDIA-NVL72-AI-Factory]] - hardware RAs require storage that keeps pace with GPU-intensive workloads.
 - [[NVIDIA-AI-Data-Platform]] - special-purpose certification applies to AI Data Platform-style systems.
 - [[NVIDIA-STX]] - STX is adjacent to next-generation AI-native storage partner designs.
 - [[GPU-Direct-Storage]] - direct GPU/storage data paths are relevant to AI storage performance.

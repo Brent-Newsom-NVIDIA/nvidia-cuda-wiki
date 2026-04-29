@@ -2,7 +2,7 @@
 
 **Type:** Framework
 **Tags:** NVIDIA, DOCA, BlueField, ConnectX, SuperNIC, DPU, networking, storage, security, SDK, DOCA-Host, DOCA-OFED
-**Related:** [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-DPA]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[DOCA-App-Shield]], [[DOCA-Device-Emulation]], [[DOCA-SNAP]], [[OVS-DOCA]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-MLNX-EN]]
+**Related:** [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-DPA]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[DOCA-App-Shield]], [[DOCA-Device-Emulation]], [[DOCA-SNAP]], [[OVS-DOCA]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-MLNX-EN]]
 **Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started; https://docs.nvidia.com/doca/sdk/mlnx_ofed-to-doca-ofed-transition-guide/index.html; https://docs.nvidia.com/doca/sdk/general-support/index.html; https://docs.nvidia.com/doca/sdk/doca-telemetry-service-guide/index.html; https://docs.nvidia.com/doca/sdk/doca-app-shield/index.html; https://docs.nvidia.com/doca/sdk/doca-device-emulation/index.html; https://docs.nvidia.com/doca/sdk/doca-snap-services/index.html; https://docs.nvidia.com/doca/sdk/openvswitch-acceleration---ovs-in-doca/index.html; https://www.nvidia.com/en-us/data-center/ai-storage/cmx/
 **Last Updated:** 2026-04-29
 
@@ -40,6 +40,8 @@ Current [[NVIDIA-CMX]] material extends that story into context memory: DOCA Mem
 - [[NVIDIA-Network-Operator]] - Network Operator deploys and manages DOCA-OFED driver containers and related networking components in Kubernetes.
 - [[NVIDIA-DOCA-Platform-Framework]] - DPF orchestrates BlueField-accelerated services built on the DOCA software stack.
 - [[NVIDIA-Spectrum-X]] - DOCA 3.3.0 is tied to the Spectrum-X reference architecture 2.1 release stack.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - AI Enterprise software RA includes DOCA networking drivers in the infrastructure layer.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - Enterprise RA hardware designs rely on DOCA/BlueField/ConnectX networking software.
 - [[NVIDIA-STX]] - STX uses BlueField and software-defined infrastructure acceleration where DOCA is the relevant software layer.
 - [[NVIDIA-CMX]] - CMX references DOCA Memos for KV-cache sharing and context memory APIs.
 - [[NVIDIA-AI-Data-Platform]] - AI Data Platform depends on accelerated data movement and storage services that align with DOCA/BlueField.

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 405*
+*Total pages: 411*
 
 ---
 
@@ -266,6 +266,9 @@
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-Enterprise-Reference-Architectures]] — NVIDIA-authored Enterprise RA family for AI factory hardware, software, observability, and deployment patterns
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] — Full-stack AI Enterprise software RA for single-tenant production inference, fine-tuning, and RAG workloads
+- [[NVIDIA-Enterprise-RA-Observability-Guide]] — Observability guide for Enterprise RA dashboards, alerts, DCGM, NIM Operator, BCM, and NetQ telemetry
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
@@ -363,7 +366,9 @@
 - [[NVIDIA-DGX-Station]] — GB300 Grace Blackwell Ultra deskside AI supercomputer for large local AI workloads
 - [[NVIDIA-DGX-Enterprise-Support]] — DGX support, infrastructure services, and education services for production AI factories
 - [[NVIDIA-GB300-NVL72]] — Rack-scale Blackwell Ultra NVL72 system for dense large-model training and inference
+- [[NVIDIA-NVL72-AI-Factory]] — Enterprise RA for GB300 NVL72 rack-scale AI factories with Spectrum-X, Mission Control, and NVLink
 - [[NVIDIA-RTX-PRO-Server]] — RTX PRO Blackwell enterprise server platform for AI, rendering, simulation, and visualization
+- [[NVIDIA-RTX-PRO-AI-Factory]] — Enterprise RA for RTX PRO 6000 Blackwell Server Edition AI factories using the 2-8-5-200 pattern
 - [[NVIDIA-Certified-Systems]] — partner systems validated by NVIDIA for enterprise AI and accelerated computing workloads
 - [[NVIDIA-Data-Center-CPUs]] — NVIDIA data center CPU documentation covering Grace, Grace Hopper, and Grace Blackwell systems
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
@@ -375,6 +380,7 @@
 - [[NVIDIA-DRIVE-Sim]] — AV simulation and synthetic-data workflows using Cosmos, Omniverse, NuRec, and dataset curation
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
 - [[NVIDIA-HGX]] — Multi-GPU baseboard platform (8x SXM) for OEM servers; HGX B200, B300, Rubin NVL8 configurations
+- [[NVIDIA-HGX-AI-Factory]] — Enterprise RA for HGX B300 AI factories using the 2-8-9-800 pattern
 - [[NVIDIA-GB200-NVL4]] — Single-server 4x B200 + 2x Grace config; 1.3 TB coherent memory, ~6 kW, OEM ecosystem entry point
 
 ---

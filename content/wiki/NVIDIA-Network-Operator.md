@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, networking, RDMA, GPUDirect RDMA, DOCA-OFED, SR-IOV, CNI, IPAM, Spectrum-X
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[OVS-DOCA]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[OVS-DOCA]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-Reference-Architectures]], [[GPUDirect-RDMA]]
 **Sources:** https://docs.nvidia.com/networking/software/cloud-orchestration/index.html; https://docs.nvidia.com/networking/display/kubernetes2610/index.html
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,8 @@ For NVIDIA AI infrastructure, Network Operator matters because [[NCCL]], [[NVSHM
 - [[NVIDIA-BlueField-DPU]] - BlueField DPUs can be managed as part of accelerated Kubernetes networking environments.
 - [[NVIDIA-ConnectX-InfiniBand]] - ConnectX adapters provide the RDMA and RoCE hardware exposed by Network Operator.
 - [[NVIDIA-Spectrum-X]] - current docs include Spectrum-X NIC configuration paths for RA2.1-style clusters.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA lists Network Operator as core infrastructure software.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - current Enterprise RAs depend on Kubernetes networking for GPU scale-out fabrics.
 - [[GPUDirect-RDMA]] - Network Operator enables the RDMA plumbing used by GPUDirect workloads.
 
 ## Source Excerpts

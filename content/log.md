@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 42: Enterprise Reference Architecture coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch42-20260429T092611Z`; local Git tag `codex-backup-overnight-pre-batch42-20260429T092611Z`
+
+**Source URLs:** https://docs.nvidia.com/enterprise-reference-architectures/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/introduction.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/overview.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/components.html, https://docs.nvidia.com/enterprise-reference-architectures/rtx-pro-ai-factory/latest/software.html, https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/overview.html, https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/components.html, https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/software.html, https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory-with-gb300-nvl72-dual-plane-networking-architecture.pdf, https://docs.nvidia.com/ai-enterprise/reference-architecture/latest/index.html, https://docs.nvidia.com/ai-enterprise/reference-architecture/latest/platform-overview.html, https://docs.nvidia.com/ai-enterprise/reference-architecture/latest/software-stack.html, https://docs.nvidia.com/enterprise-reference-architectures/observability-guide.pdf
+
+**Gap analysis summary:**
+
+- Added missing current NVIDIA Enterprise Reference Architecture coverage: program hub, RTX PRO AI Factory, HGX AI Factory, NVL72 AI Factory, AI Enterprise Software RA, and Enterprise RA Observability Guide.
+- Kept build.nvidia out of this batch except as a discovery caution; the batch is based on current public NVIDIA docs/PDFs rather than individual user-published build cards.
+- Treated NVIDIA NIM with Run:ai and AI-Q Enterprise RA papers as update candidates for their existing canonical pages, not as new pages in this hardware/software/observability batch.
+- Connected the new pages into AI Enterprise, Enterprise AI Factory, Mission Control, RTX PRO Server, HGX, GB300 NVL72, DCGM, GPU Operator, NIM Operator, NetQ, Base Command Manager, certified systems/storage, Spectrum-X, BlueField, DOCA, Network Operator, and Run:ai.
+
+**Pages created (6 total):**
+
+- `content/wiki/NVIDIA-Enterprise-Reference-Architectures.md`
+- `content/wiki/NVIDIA-RTX-PRO-AI-Factory.md`
+- `content/wiki/NVIDIA-HGX-AI-Factory.md`
+- `content/wiki/NVIDIA-NVL72-AI-Factory.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Software-Reference-Architecture.md`
+- `content/wiki/NVIDIA-Enterprise-RA-Observability-Guide.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Enterprise-AI-Factory.md` - connected the strategy page to the current Enterprise RA program and hardware/software/observability pages.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added Software RA and observability relationships to the enterprise software page.
+- `content/wiki/NVIDIA-RTX-PRO-Server.md`, `content/wiki/NVIDIA-HGX.md`, and `content/wiki/NVIDIA-GB300-NVL72.md` - connected platform pages to their current Enterprise RAs.
+- `content/wiki/NVIDIA-Mission-Control.md`, `content/wiki/NVIDIA-Run-ai.md`, `content/wiki/NVIDIA-Base-Command-Manager.md`, `content/wiki/NVIDIA-GPU-Operator.md`, `content/wiki/NVIDIA-NIM-Operator.md`, `content/wiki/NVIDIA-DCGM.md`, and `content/wiki/NVIDIA-NetQ.md` - connected operations, orchestration, and telemetry pages to RA software/observability guidance.
+- `content/wiki/NVIDIA-Certified-Systems.md`, `content/wiki/NVIDIA-Certified-Storage.md`, `content/wiki/NVIDIA-Spectrum-X.md`, `content/wiki/NVIDIA-BlueField-DPU.md`, `content/wiki/NVIDIA-DOCA.md`, and `content/wiki/NVIDIA-Network-Operator.md` - connected validated infrastructure and networking pages to Enterprise RA designs.
+- `content/index.md` - updated page count to 411 and indexed the six new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 41: AI Workbench current concepts
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch41-20260429T092039Z`; local Git tag `codex-backup-overnight-pre-batch41-20260429T092039Z`

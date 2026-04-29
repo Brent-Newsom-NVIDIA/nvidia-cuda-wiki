@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NetQ, network operations, observability, telemetry, Cumulus Linux, Spectrum, NVLink, troubleshooting
-**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-DSX-Air]], [[NVIDIA-Mission-Control]], [[DOCA-Telemetry-Service]], [[OVS-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NVLink]]
+**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-DSX-Air]], [[NVIDIA-Mission-Control]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[DOCA-Telemetry-Service]], [[OVS-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NVLink]]
 **Sources:** https://docs.nvidia.com/networking-ethernet-software/; https://docs.nvidia.com/networking-ethernet-software/cumulus-netq-51/
 **Last Updated:** 2026-04-29
 
@@ -22,6 +22,7 @@ Current docs also list NVLink management material, including NetQ for NVLink, NV
 - [[NVIDIA-Cumulus-Linux]] - Cumulus Linux includes NetQ agent/CLI integration for operational health.
 - [[NVIDIA-DSX-Air]] - Air/DSX Air is the simulation companion for Cumulus and NetQ learning and validation.
 - [[NVIDIA-Mission-Control]] - Mission Control docs reference NetQ/NMX-style visibility for NVLink and network telemetry.
+- [[NVIDIA-Enterprise-RA-Observability-Guide]] - Enterprise RA observability guidance uses NetQ as the network telemetry source for dashboarding and alerting.
 - [[DOCA-Telemetry-Service]] - DTS is the DOCA-side telemetry service for DPU and network metrics.
 - [[OVS-DOCA]] - OVS-DOCA offloaded switching produces virtual networking state that network operations tools may need to validate.
 - [[NVIDIA-Spectrum-X]] - NetQ monitors Ethernet fabric state that matters to Spectrum-X AI networking.

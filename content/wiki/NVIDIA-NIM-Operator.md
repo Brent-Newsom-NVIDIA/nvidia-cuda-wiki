@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NIM Operator, Kubernetes, NIM, NeMo, inference, microservices, autoscaling, model cache, AI Enterprise
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
 **Sources:** https://docs.nvidia.com/nim-operator/latest/index.html; https://docs.nvidia.com/nim-operator/latest/quickstart.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html
 **Last Updated:** 2026-04-29
 
@@ -25,6 +25,8 @@ NVIDIA also documents advanced NIM Operator patterns for local caching, air-gapp
 - [[NeMo-Retriever-Reranking-NIM]] - reranking NIMs are a retrieval-domain NIM deployment target.
 - [[NVIDIA-GPU-Operator]] - GPU Operator provides GPU nodes and device exposure underneath NIM Operator workloads.
 - [[NVIDIA-AI-Enterprise]] - NIM Operator is part of the enterprise production deployment surface.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA includes NIM Operator in the infrastructure software layer.
+- [[NVIDIA-Enterprise-RA-Observability-Guide]] - observability guidance uses NIM Operator/NIM telemetry as part of AI factory dashboards.
 - [[NVIDIA-Dynamo]] - current NIM Operator docs include experimental Dynamo CRD support.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - production optimization workflows need repeatable NIM deployment and redeployment.
 
@@ -32,4 +34,3 @@ NVIDIA also documents advanced NIM Operator patterns for local caching, air-gapp
 - "deploy NVIDIA NIMs and NVIDIA NeMo microservices"
 - "`nimcaches.apps.nvidia.com`"
 - "`nimservices.apps.nvidia.com`"
-

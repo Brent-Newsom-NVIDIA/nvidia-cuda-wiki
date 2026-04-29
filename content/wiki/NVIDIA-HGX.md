@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, Hardware, HGX, Blackwell, Rubin, Data Center, SXM, Multi-GPU
-**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Vera-CPU]], [[NVLink]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX]], [[NCCL]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]]
-**Sources:** NVIDIA official product page (live fetch 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/hgx/, https://www.nvidia.com/en-us/data-center/technologies/rubin/)
+**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Vera-CPU]], [[NVLink]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-DGX]], [[NCCL]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]]
+**Sources:** NVIDIA official product page (live fetch 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/hgx/, https://www.nvidia.com/en-us/data-center/technologies/rubin/, https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -36,6 +36,7 @@ Provides a standardized, NVIDIA-validated multi-GPU baseboard that OEMs and ODMs
 - **2.6x** higher LLM training performance
 - **2x** attention (transformer) performance improvement
 - Current public materials connect HGX B300 and HGX Rubin NVL8 to Blackwell Ultra and Vera Rubin platform roadmaps rather than requiring separate wiki pages for every HGX baseboard variant.
+- The current [[NVIDIA-HGX-AI-Factory]] Enterprise RA turns HGX B300 into a 2-8-9-800 AI factory pattern with Spectrum-X, ConnectX-8, BlueField-3, AI Enterprise, Run:ai, and NetQ.
 
 ### Use Cases
 - Large language model training (up to multi-node scale)
@@ -56,6 +57,7 @@ HGX is the GPU baseboard; DGX is NVIDIA's complete turnkey system built around t
 - [[NVLink]] — 5th/6th-gen NVLink connects the 8 GPUs on each baseboard
 - [[NVIDIA-GB200-NVL72]] — rack-scale alternative using Grace Blackwell Superchips
 - [[NVIDIA-GB300-NVL72]] — Blackwell Ultra rack-scale counterpart to HGX B300.
+- [[NVIDIA-HGX-AI-Factory]] — Enterprise RA that uses HGX B300 systems as scalable AI factory nodes.
 - [[NVIDIA-DGX]] — NVIDIA's complete turnkey system using same GPU tech
 - [[NCCL]] — multi-GPU communications across HGX nodes
 - [[NVIDIA-ConnectX-InfiniBand]] — Quantum-X800 for inter-node networking
@@ -66,3 +68,4 @@ HGX is the GPU baseboard; DGX is NVIDIA's complete turnkey system built around t
 ## Resources
 - [Official HGX Page](https://www.nvidia.com/en-us/data-center/hgx/)
 - [Blackwell Architecture](https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/)
+- [NVIDIA HGX AI Factory](https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory/latest/index.html)

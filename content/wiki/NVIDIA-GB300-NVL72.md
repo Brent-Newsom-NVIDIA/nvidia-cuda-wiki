@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GB300 NVL72, Blackwell Ultra, rack-scale AI, NVLink, DGX, AI factory
-**Related:** [[NVIDIA-DGX-B300]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-Mission-Control]], [[NVLink]], [[NVIDIA-Enterprise-AI-Factory]]
-**Sources:** https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/hgx/
+**Related:** [[NVIDIA-DGX-B300]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVLink]], [[NVIDIA-Enterprise-AI-Factory]]
+**Sources:** https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/hgx/, https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory-with-gb300-nvl72-dual-plane-networking-architecture.pdf
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,7 @@ GB300 NVL72 targets AI factories that need rack-scale GPU memory, GPU-to-GPU ban
 - Rack-scale NVL72 system form factor built for large-scale AI.
 - Uses GB300 Blackwell Ultra generation GPUs and Grace CPU pairing.
 - Fits DGX B300, DGX SuperPOD, HGX B300, and OEM/ODM rack-scale system directions.
+- The [[NVIDIA-NVL72-AI-Factory]] Enterprise RA treats GB300 NVL72 as the rack-scale building block for 72-GPU scalable units and multi-rack Spectrum-X designs.
 - Requires an operations and software stack around [[NVIDIA-Mission-Control]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DGX-SuperPOD]], and AI factory networking/storage.
 
 ### NVIDIA context
@@ -29,6 +30,7 @@ Treat GB300 NVL72 as the canonical Blackwell Ultra rack-scale system page. Use [
 - [[NVIDIA-DGX-SuperPOD]] - GB300 NVL72 fits SuperPOD-scale AI factory designs.
 - [[NVIDIA-Blackwell-Architecture]] - GB300 is Blackwell Ultra, extending the Blackwell family.
 - [[NVIDIA-GB200-NVL72]] - predecessor rack-scale Blackwell NVL72 system.
+- [[NVIDIA-NVL72-AI-Factory]] - Enterprise RA for GB300 NVL72 rack-scale AI factory deployments.
 - [[NVIDIA-Mission-Control]] - operations layer for modern DGX/NVL72 environments.
 - [[NVLink]] - rack-scale NVLink is the defining interconnect.
 - [[NVIDIA-Enterprise-AI-Factory]] - enterprise AI factory guidance includes this class of validated infrastructure.
@@ -39,3 +41,4 @@ Treat GB300 NVL72 as the canonical Blackwell Ultra rack-scale system page. Use [
 ## Resources
 - [NVIDIA GB300 NVL72](https://www.nvidia.com/en-us/data-center/gb300-nvl72/)
 - [NVIDIA DGX B300](https://www.nvidia.com/en-us/data-center/dgx-b300/)
+- [NVIDIA NVL72 AI Factory PDF](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory-with-gb300-nvl72-dual-plane-networking-architecture.pdf)
