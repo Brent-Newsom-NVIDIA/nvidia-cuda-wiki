@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Math, Device Functions, Intrinsics, Development Tools, CUDA-X
-**Related:** [[NVCC]], [[NVRTC]], [[cuBLAS]], [[Thrust]], [[CUB]]
+**Related:** [[NVCC]], [[NVRTC]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[Thrust]], [[CUB]]
 **Sources:** NVIDIA official documentation, docs.nvidia.com/cuda/cuda-math-api
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 The CUDA Math API is a collection of GPU device-side mathematical functions available to CUDA C/C++ kernel code, providing hardware-accelerated implementations of standard single- and double-precision floating-point math functions (sin, cos, exp, log, sqrt, etc.), half-precision (FP16) and brain float (BF16) math, as well as intrinsic functions that trade accuracy for speed. These functions are compiled directly into GPU device code and execute at hardware-native speeds using NVIDIA's Special Function Units (SFUs) and FPUs, forming the mathematical foundation for all CUDA kernel programming.
@@ -49,6 +49,7 @@ The CUDA Math API provides the fundamental mathematical building blocks that all
 ## Connections
 - [[NVCC]] — CUDA Math API functions are compiled into device code by NVCC
 - [[NVRTC]] — runtime-compiled CUDA kernels access CUDA Math API via NVRTC compilation
+- [[Floating-Point-and-IEEE-754]] — numerical behavior guide for CUDA floating-point functions and FMA
 - [[cuBLAS]] — cuBLAS kernels internally use CUDA Math API for numerical operations
 - [[Thrust]] — Thrust device-side transforms and reductions use CUDA Math API functions
 - [[CUB]] — CUB cooperative primitives employ CUDA Math API for warp/block-level computations

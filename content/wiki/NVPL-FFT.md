@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, NVPL, FFT, CPU, Grace, Arm, HPC, Math Libraries
-**Related:** [[NVPL]], [[cuFFT]], [[NVIDIA-Grace-CPU]], [[cuBLAS]], [[nvmath-python]]
+**Related:** [[NVPL]], [[cuFFT]], [[cuFFTW]], [[NVIDIA-Grace-CPU]], [[cuBLAS]], [[nvmath-python]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-10
 
@@ -44,7 +44,7 @@ The NVIDIA Grace CPU in GH200 and GB200 systems features 72 Arm Neoverse V2 core
 
 ## Connections
 - [[NVPL]] — NVPL FFT is one component of the NVIDIA Performance Libraries suite (also BLAS, LAPACK, RAND)
-- [[cuFFT]] — cuFFT is the GPU counterpart; NVPL FFT is for the CPU side of Grace-based systems
+- [[cuFFT]] and [[cuFFTW]] — cuFFT/cuFFTW are the GPU-side CUDA FFT and FFTW-porting paths; NVPL FFT is for the CPU side of Grace-based systems
 - [[NVIDIA-Grace-CPU]] — NVPL FFT is specifically optimized for the Grace Neoverse V2 CPU architecture
 - [[nvmath-python]] — nvmath-python provides Python access to NVPL FFT for GPU-CPU heterogeneous workflows
 - [[cuBLAS]] — cuBLAS (GPU) + NVPL BLAS (CPU) together cover the full Grace Hopper compute hierarchy

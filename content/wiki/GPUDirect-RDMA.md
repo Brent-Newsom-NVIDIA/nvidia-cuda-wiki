@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RDMA, networking, InfiniBand, GPU, peer-to-peer, MPI, HPC, inter-node, zero-copy
-**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/)
+**Last Updated:** 2026-04-29
 
 ## Summary
 GPUDirect RDMA (Remote Direct Memory Access) is an NVIDIA technology that enables network adapters (InfiniBand HCAs or RDMA-capable NICs) to directly read from and write to GPU memory over a network — bypassing the CPU and system DRAM entirely. In distributed GPU computing, this eliminates the double-copy bottleneck (GPU→CPU→NIC for send; NIC→CPU→GPU for receive), enabling inter-node GPU memory transfers at near-theoretical network bandwidth with minimal CPU involvement. GPUDirect RDMA is a foundational technology for large-scale distributed AI training and HPC applications.
@@ -37,7 +37,7 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 - **PCIe Topology:** NIC and GPU must be on the same PCIe root complex (or connected via PCIe peer-to-peer bridge); some server BIOS settings disable PCIe P2P — must be enabled
 - **Linux:** `nvidia-peermem` kernel module (part of NVIDIA driver) enables GPU-to-NIC peer memory mapping
 - **CUDA:** CUDA 5.0+ for GPUDirect RDMA; CUDA 11.3+ for GPUDirect Async
-- **InfiniBand:** OpenFabrics (MLNX_OFED) 2.1+ or NVIDIA DOCA with RDMA support
+- **InfiniBand:** [[NVIDIA-DOCA-OFED]] or legacy [[NVIDIA-MLNX-OFED]] with RDMA support; Kubernetes exposure can be automated through [[NVIDIA-Network-Operator]]
 
 ### Language Bindings / APIs
 - **NCCL:** Transparent — NCCL uses GPUDirect RDMA automatically; `ncclAllReduce(sendBuf, recvBuf, count, ..., comm, stream)`
@@ -49,7 +49,15 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 ## Connections
 - [[NVLink]] — NVLink handles intra-node GPU-to-GPU communication; GPUDirect RDMA handles inter-node (between servers); both used together in large GPU clusters
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX HCAs are the primary network adapters implementing GPUDirect RDMA in NVIDIA's networking stack
+- [[NVIDIA-ConnectX-9]] — current SuperNIC generation that includes GPUDirect and RDMA capabilities in NVIDIA docs.
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU offloads RDMA network processing; BlueField-3 supports GPUDirect RDMA with DPU-accelerated NCCL flows
+- [[NVIDIA-DOCA]] — DOCA RDMA, DOCA-OFED, and GPUDirect support are part of the current NVIDIA networking software stack.
+- [[NVIDIA-DOCA-OFED]] — current Linux host-driver stack for GPU-aware RDMA paths.
+- [[DOCA-GPUNetIO]] — DOCA library that makes GPU packet processing and GPU-controlled networking explicit.
+- [[DOCA-RDMA]] — DOCA API for building RDMA applications on NVIDIA networking devices.
+- [[NVIDIA-MLNX-OFED]] — legacy standalone Linux OFED stack still found in older GPUDirect RDMA setups.
+- [[NVIDIA-Network-Operator]] — deploys the Kubernetes networking components required for GPUDirect RDMA workloads.
+- [[NVIDIA-HPC-X]] — provides MPI/SHMEM/UCX/UCC communication libraries that use GPU-aware RDMA paths.
 - [[NCCL]] — NCCL is the primary user of GPUDirect RDMA for distributed deep learning; provides AllReduce, AllGather over RDMA automatically
 - [[NVSHMEM]] — NVSHMEM extends GPUDirect RDMA into a PGAS programming model for GPU-to-GPU remote memory access from within GPU kernels
 - [[GPU-Direct-Storage]] — GPUDirect Storage extends the P2P concept to NVMe storage; GPU reads/writes storage without CPU staging

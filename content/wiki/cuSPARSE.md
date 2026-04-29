@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Sparse Matrix, Linear Algebra, Math, HPC, AI
-**Related:** [[cuBLAS]], [[cuSOLVER]], [[cuSPARSELt]], [[AmgX]], [[cuML]], [[CUTLASS]], [[NVIDIA-CUDA]]
+**Related:** [[cuBLAS]], [[cuSOLVER]], [[cuSPARSELt]], [[AmgX]], [[Incomplete-LU-Cholesky]], [[cuML]], [[CUTLASS]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-29
 
@@ -21,6 +21,7 @@ Many real-world problems in machine learning, physics simulation, and graph anal
 - Sparse matrix–dense matrix multiplication (SpMM) — 30–150x faster than CPU
 - Sparse matrix addition and multiplication
 - ILU0 and IC0 preconditioner support
+- [[Incomplete-LU-Cholesky]] guidance for GPU-accelerated preconditioned iterative methods
 - Generic high-performance APIs for flexible data types
 - **cuSPARSELt**: 2:4 structured sparsity via Sparse Tensor Cores (Ampere+), including pruning, compression, and activation function integration
 
@@ -46,6 +47,7 @@ Many real-world problems in machine learning, physics simulation, and graph anal
 - [[cuBLAS]] — dense counterpart; cuSPARSE for sparse, cuBLAS for dense
 - [[cuSOLVER]] — cuSOLVER's sparse module (cusolverSP) builds on cuSPARSE
 - [[cuSPARSELt]] — structured sparse matrix-matrix multiplication library for supported sparsity patterns
+- [[Incomplete-LU-Cholesky]] — guide for using cuSPARSE and cuBLAS in preconditioned iterative solvers
 - [[AmgX]] — AmgX uses cuSPARSE internally for sparse matrix operations
 - [[cuML]] — sparse ML kernels in cuML leverage cuSPARSE
 - [[CUTLASS]] — CUTLASS provides structured sparsity GEMM kernels complementing cuSPARSELt

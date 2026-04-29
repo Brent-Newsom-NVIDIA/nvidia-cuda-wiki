@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Physics, Scientific Computing, Neural PDE, PINN, Simulation
-**Related:** [[NVIDIA-Warp]], [[PhysicsNeMo]], [[PyTorch]], [[cuDNN]], [[Earth-2]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/modulus
+**Related:** [[NVIDIA-Warp]], [[PhysicsNeMo]], [[NIM-for-DoMINO-Automotive-Aero]], [[PyTorch]], [[cuDNN]], [[Earth-2]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/modulus, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-09
 
 ## Summary
@@ -25,11 +25,13 @@ Modulus addresses the computational bottleneck in traditional numerical simulati
 - Multi-GPU distributed training via PyTorch DDP/FSDP
 - Integration with NVIDIA Earth-2 for climate and weather modeling
 - PhysicsNeMo integration for large-scale geophysical AI
+- Automotive aerodynamics deployment adjacency through [[NIM-for-DoMINO-Automotive-Aero]]
 - Checkpointing, experiment tracking, and Hydra-based configuration
 - ONNX export and TensorRT deployment pathway
 
 ### Use Cases
 - Computational fluid dynamics (CFD) surrogate modeling for aerodynamics
+- Automotive external-aerodynamics surrogate inference through [[NIM-for-DoMINO-Automotive-Aero]]
 - Heat transfer and thermal management simulation
 - Structural mechanics and finite element analysis surrogates
 - Weather and climate forecasting with neural operators
@@ -51,6 +53,7 @@ Modulus addresses the computational bottleneck in traditional numerical simulati
 ## Connections
 - [[NVIDIA-Warp]] — Warp provides GPU-accelerated differentiable simulation kernels that complement Modulus workflows
 - [[PhysicsNeMo]] — PhysicsNeMo extends Modulus for large-scale geoscience and industrial physics AI
+- [[NIM-for-DoMINO-Automotive-Aero]] - PhysicsNeMo NIM for deployable automotive aerodynamic surrogate simulation.
 - [[Earth-2]] — Earth-2 platform uses Modulus-based models for AI weather/climate prediction
 - [[PyTorch]] — Modulus is built on PyTorch with custom physics-aware training loops
 - [[cuDNN]] — underpins convolution and attention operations within neural operator architectures

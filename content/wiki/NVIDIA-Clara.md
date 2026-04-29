@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, healthcare, medical imaging, genomics, drug discovery, AI, radiology, clinical AI, life sciences
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[TensorRT]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-Parabricks]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-Evo-2]], [[NIM-for-MSA-Search]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-MolMIM]], [[NIM-for-GenMol]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NVIDIA-Holoscan]], [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NGC]], [[TensorRT]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/clara/index.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/nim/medical/maisi/latest/overview.html, https://docs.nvidia.com/nim/medical/vista3d/latest/overview.html, https://docs.nvidia.com/nim/bionemo/msa-search/latest/overview.html, https://docs.nvidia.com/nim/bionemo/proteinmpnn/latest/overview.html, https://docs.nvidia.com/nim/bionemo/rfdiffusion/latest/overview.html, https://docs.nvidia.com/nim/bionemo/molmim/latest/overview.html, https://docs.nvidia.com/nim/bionemo/genmol/latest/overview.html, https://docs.nvidia.com/nim/bionemo/diffdock/latest/overview.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Clara is a healthcare AI computing platform that provides domain-specific frameworks, tools, and reference applications for medical imaging, genomics, drug discovery, and clinical AI. It is organized into several focused sub-platforms — Clara Imaging, Clara Parabricks (genomics), and Clara Holoscan (medical-grade edge AI) — each offering GPU-accelerated pipelines and pre-trained models tailored to clinical and life sciences workflows. Clara enables hospitals, medical device companies, and pharmaceutical researchers to develop, validate, and deploy AI-powered diagnostics and therapeutics.
@@ -17,12 +17,13 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 ### Key Features
 
 **Clara Imaging (Medical Imaging AI):**
-- **MONAI (Medical Open Network for AI):** Partnership framework (NVIDIA + King's College London) providing PyTorch-based tools for medical image segmentation, classification, and registration; widely adopted as the standard deep learning framework for radiology AI
+- **[[NVIDIA-MONAI-Toolkit]]:** NVIDIA AI Enterprise-supported MONAI development sandbox for medical imaging AI, including MONAI Core, MONAI Label, NVIDIA FLARE integration, and curated pretrained models.
+- **Medical imaging NIMs:** [[NIM-for-MAISI]] generates synthetic 3D CT images and annotation masks for research workflows, while [[NIM-for-VISTA-3D]] provides interactive 3D segmentation and annotation.
 - **MONAI Deploy:** MLOps framework for packaging, validating, and deploying medical imaging AI as MONAI Application Packages (MAPs) integrated with hospital PACS/VNA systems
 - **Pre-trained Segmentation Models:** AI models for organ segmentation (liver, lungs, kidneys, brain), lesion detection (lung nodules, liver tumors), and annotation (total body segmentation)
-- **3D Slicer Integration:** NVIDIA-accelerated 3D Slicer extension for interactive AI-assisted radiology workflows
+- **[[NVIDIA-Clara-Viz]]:** CUDA-based 2D/3D medical image visualization and digital pathology viewing.
 
-**Clara Parabricks (Genomics):**
+**[[NVIDIA-Parabricks]] (Genomics):**
 - **GPU-Accelerated Variant Calling:** Full GATK-compatible secondary analysis pipeline (alignment, duplicate marking, variant calling) running in 20–50 minutes on GPU vs 24–48 hours on CPU
 - **FASTA-to-VCF Pipeline:** End-to-end germline and somatic variant calling from raw sequencing reads
 - **Multi-GPU Scaling:** Linear scaling across multiple GPUs for large cohort studies
@@ -53,10 +54,18 @@ Healthcare AI development faces unique challenges: specialized data types (DICOM
 - **REST API:** MONAI Label server REST API for active learning annotation workflows
 
 ## Connections
-- [[NVIDIA-BioNeMo]] — BioNeMo is the drug discovery/computational biology layer of Clara; Clara encompasses BioNeMo + imaging + genomics
+- [[NVIDIA-Parabricks]] — genomics acceleration component of Clara for next-generation sequencing workflows.
+- [[NVIDIA-Clara-Viz]] — Clara visualization component for 2D/3D medical imaging and pathology.
+- [[NVIDIA-MONAI-Toolkit]] — enterprise-supported MONAI distribution for medical imaging AI development.
+- [[NIM-for-MAISI]] and [[NIM-for-VISTA-3D]] — current medical imaging NIMs for synthetic CT generation and 3D segmentation/annotation.
+- [[NVIDIA-BioNeMo]] and [[BioNeMo-Recipes]] — BioNeMo is the drug discovery/computational biology layer of Clara; recipes cover the current public training-reference implementation layer.
+- [[NIM-for-AlphaFold2]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], and [[NIM-for-Evo-2]] — representative BioNeMo NIMs for structure, interaction, and DNA sequence workflows.
+- [[NIM-for-MSA-Search]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-MolMIM]], [[NIM-for-GenMol]], and [[NIM-for-DiffDock]] — additional BioNeMo NIMs for sequence search, protein design, molecular generation, and docking.
+- [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] and [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIMs for atomistic modeling adjacent to drug discovery and materials workflows.
 - [[NVIDIA-Holoscan]] — Clara Holoscan became the NVIDIA Holoscan SDK; the real-time streaming AI platform for medical devices
 - [[NVIDIA-Riva]] — Riva provides speech AI for clinical documentation (ambient clinical intelligence use cases)
 - [[NVIDIA-AI-Enterprise]] — Clara workloads run under AI Enterprise license for regulated healthcare environments
+- [[NVIDIA-NIM]] - medical imaging, BioNeMo, and speech healthcare capabilities can be deployed as NIM microservices.
 - [[NGC]] — Clara containers, Parabricks, MONAI models, and reference applications distributed via NGC
 - [[TensorRT]] — TensorRT accelerates inference for MONAI segmentation models and Clara imaging pipelines
 

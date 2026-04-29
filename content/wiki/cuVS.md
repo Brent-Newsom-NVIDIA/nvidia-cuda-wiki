@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Vector Search, Approximate Nearest Neighbor, RAPIDS, AI, Open Source
-**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[cuBLAS]]
-**Sources:** NVIDIA official documentation (RAPIDS)
-**Last Updated:** 2026-04-09
+**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[cuBLAS]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]]
+**Sources:** NVIDIA official documentation (RAPIDS), https://www.nvidia.com/en-us/data-center/ai-data-platform/
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuVS is NVIDIA's GPU-accelerated vector search library providing world-class performance for approximate nearest neighbor (ANN) search via its CAGRA algorithm. Part of the RAPIDS ecosystem, it accelerates vector search operations critical to retrieval-augmented generation (RAG), recommendation systems, and semantic search at scale. It supports Python, C++, C, and Rust APIs.
@@ -23,6 +23,7 @@ Vector search (finding the most similar vectors in a large database) is foundati
 - Python, C++, C, and Rust APIs for broad ecosystem compatibility
 - cuDF integration for DataFrame-native vector search pipelines
 - Used as the backend for several vector database products
+- Referenced in current [[NVIDIA-AI-Data-Platform]] material as the GPU-accelerated vector search and data clustering layer for semantic search workloads
 
 ### Use Cases
 - Retrieval-Augmented Generation (RAG) for LLMs
@@ -51,6 +52,10 @@ Vector search (finding the most similar vectors in a large database) is foundati
 - [[cuGraph]] — cuVS and cuGraph are both used in recommendation and retrieval pipelines
 - [[TensorRT]] — TensorRT generates embeddings that cuVS then indexes and searches
 - [[cuBLAS]] — cuVS uses BLAS routines internally for distance computation
+- [[NeMo-Retriever]] — retrieval stacks use vector search and indexing to connect enterprise data to agents
+- [[NeMo-Retriever-Embedding-NIM]] — produces embeddings that vector search systems index and query.
+- [[NeMo-Retriever-Reranking-NIM]] — reranks candidates returned from vector or hybrid retrieval.
+- [[NVIDIA-AI-Data-Platform]] — AI Data Platform uses cuVS in its accelerated data retrieval and semantic search story
 
 ## Resources
 - [Official RAPIDS Page](https://developer.nvidia.com/rapids)

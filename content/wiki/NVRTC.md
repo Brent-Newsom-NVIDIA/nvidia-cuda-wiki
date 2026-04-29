@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Runtime Compilation, JIT, Development Tools, CUDA Toolkit
-**Related:** [[NVCC]], [[CUTLASS]], [[Thrust]], [[cuBLAS]]
-**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
-**Last Updated:** 2026-04-09
+**Related:** [[NVCC]], [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuda-compute]], [[CUTLASS]], [[Thrust]], [[cuBLAS]]
+**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://nvidia.github.io/cuda-python/cuda-core/latest/getting-started.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html, https://nvidia.github.io/cccl/python/compute
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVRTC (NVIDIA Runtime Compilation) is a CUDA library for just-in-time (JIT) compilation of CUDA C++ source code at application runtime. It accepts CUDA C++ source code as a character string and produces PTX (Parallel Thread eXecution) output that can be loaded and executed via the CUDA Driver API. NVRTC enables dynamic kernel specialization, plugin architectures, and scenarios where GPU kernels must be generated or customized at runtime.
@@ -40,9 +40,13 @@ NVCC compiles CUDA kernels ahead of time, but some applications need to generate
 - C (NVRTC API)
 - C++ (CUDA C++ dialect for compiled code)
 - Python (via CuPy and other Python wrappers)
+- CUDA Python components such as [[cuda-core]] and [[cuda-bindings]]
 
 ## Connections
 - [[NVCC]] — NVCC performs ahead-of-time compilation; NVRTC performs runtime (JIT) compilation of the same CUDA C++ language
+- [[CUDA-Python]] — Python CUDA workflows often need runtime compilation and module loading.
+- [[cuda-core]] and [[cuda-bindings]] — Python components that expose higher-level and lower-level runtime compilation workflows.
+- [[cuda-compute]] — CCCL Python algorithms may compile user-defined operations for device execution.
 - [[CUTLASS]] — CuTe DSL and CUTLASS use NVRTC for JIT kernel compilation
 - [[cuFFT]] — cuFFT uses NVRTC internally to generate specialized FFT kernels at runtime
 - [[cuDNN]] — cuDNN uses NVRTC for runtime kernel generation for optimal layer fusion

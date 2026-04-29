@@ -2,9 +2,9 @@
 
 **Type:** Model
 **Tags:** NVIDIA, VLM, Vision-Language, Multimodal, LLM, Computer Vision
-**Related:** [[NVIDIA-NeMo]], [[Nemotron]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[NVIDIA-EAGLE]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NeMo]], [[Nemotron]], [[TensorRT-LLM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-NV-CLIP]], [[NVIDIA-NIM]], [[NVIDIA-EAGLE]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVLM 1.0 is NVIDIA's family of open-source frontier-class multimodal large language models (MLLMs) that achieve performance competitive with GPT-4V and Claude 3.5 Sonnet on vision-language benchmarks. NVLM introduces a novel dual-path architecture (NVLM-D) combining decoder-only cross-attention and an NVLM-H hybrid design, allowing the model to excel at both image understanding and text-only tasks without the regression typical in multimodal fine-tuning. Released in September 2024, NVLM-D 72B is available on Hugging Face.
@@ -36,7 +36,7 @@ Most multimodal LLMs suffer from a trade-off: adding vision capability degrades 
 - NVLM-D 72B: multi-GPU (4x or 8x H100/A100 80GB) with tensor parallelism
 - Smaller variants: single A100 80GB
 - TensorRT-LLM optimization for optimized inference
-- Available via NIM for production deployment
+- Available through NIM-style production deployment paths; see [[NIM-for-Vision-Language-Models]] for the current NVIDIA VLM serving docs surface
 
 ### Language Bindings / APIs
 - Python (Hugging Face Transformers, NeMo framework)
@@ -49,7 +49,9 @@ Most multimodal LLMs suffer from a trade-off: adding vision capability degrades 
 - [[Nemotron]] — shares LLM backbone lineage with Nemotron model family
 - [[TensorRT-LLM]] — NVLM inference optimized via TensorRT-LLM
 - [[NVIDIA-EAGLE]] — EAGLE is another NVIDIA VLM; NVLM focuses on frontier scale
-- [[NVIDIA-NIM]] — NVLM available via NIM microservices
+- [[NIM-for-Vision-Language-Models]] - current NVIDIA NIM docs surface for VLM deployment, OpenAI-compatible APIs, observability, and model support.
+- [[NIM-for-NV-CLIP]] - multimodal embedding NIM for image/text retrieval workflows that complement VLM reasoning.
+- [[NVIDIA-NIM]] — umbrella inference microservices layer for deploying VLMs
 
 ## Resources
 - [NVLM Blog Post](https://developer.nvidia.com/blog/nvlm-1-0-open-source-frontier-class-multimodal-llms/)

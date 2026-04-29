@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Simulation, 3D, USD, Digital Twin, Rendering, RTX, Collaboration
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Omniverse-Reference-Architectures]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-ACE]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.omniverse.nvidia.com/arch-diagrams/latest/index.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/ref-arch-diagrams/factory-dt-diagram.html, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA Omniverse is an open platform for building and operating real-time 3D simulation and collaboration applications, built on the OpenUSD (Universal Scene Description) standard. It provides a compute platform for developing industrial digital twins, physically accurate simulations, and robot/autonomous vehicle training environments through a suite of SDKs, renderers, and simulation engines. Omniverse serves as the foundation layer for NVIDIA Isaac Sim and the broader industrial AI simulation ecosystem.
+NVIDIA Omniverse is an open platform for building and operating real-time 3D simulation and collaboration applications, built on the OpenUSD (Universal Scene Description) standard. It provides a compute platform for developing industrial digital twins, physically accurate simulations, and robot/autonomous vehicle training environments through a suite of SDKs, renderers, and simulation engines. Omniverse serves as the foundation layer for [[NVIDIA-Isaac-Sim]] and the broader industrial AI simulation ecosystem.
 
 ## Detail
 
@@ -22,7 +22,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - Replicator: synthetic data generation (SDG) framework with domain randomization for AI training
 - Nucleus: collaborative asset and scene management server
 - Omniverse Connectors: live sync plugins for Blender, Maya, 3ds Max, Revit, Unreal Engine
-- Audio2Face, Audio2Gesture: AI-driven facial animation and gesture synthesis
+- Audio2Face, Audio2Gesture: AI-driven facial animation and gesture synthesis; current NIM docs expose [[NIM-for-Audio2Face-3D]] for ARKit blendshape avatar animation
 - CloudXR: streaming of RTX-rendered content to XR devices
 - Python scripting via omni.ext extension system
 - Support for MaterialX, MDL (Material Definition Language) physically-based materials
@@ -31,10 +31,12 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 ### Use Cases
 - Industrial digital twin: factory simulation for robot workflow optimization
 - Autonomous vehicle (AV) synthetic data generation and scenario testing
-- Robotics simulation (Isaac Sim runs on Omniverse)
+- Robotics simulation through [[NVIDIA-Isaac-Sim]]
 - Virtual production and film/VFX real-time rendering pipelines
 - Building/infrastructure digital twin for facility management
 - Training AI models on photorealistic synthetic data
+- Physical AI video/world generation workflows with [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]]
+- Industrial facility digital twin workflows captured by [[NVIDIA-Omniverse-Reference-Architectures]], including geometry data, synthetic data, real-time operations data, RTX PRO hardware, and Isaac Sim robotics simulation.
 - Collaborative 3D design review across distributed teams
 
 ### Hardware Requirements
@@ -50,7 +52,20 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - USD Python API (`pxr` library)
 
 ## Connections
-- [[NVIDIA-Isaac]] — Isaac Sim is a robotics simulation application built on Omniverse
+- [[NVIDIA-Omniverse-Reference-Architectures]] - current Omniverse architecture diagrams and technical requirements for industrial digital twins.
+- [[NVIDIA-Isaac]] — umbrella robotics platform that uses Omniverse through Isaac Sim
+- [[NVIDIA-Isaac-Sim]] — robotics simulation application built on Omniverse Kit, OpenUSD, RTX, and PhysX
+- [[NVIDIA-Isaac-Lab]] — robot-learning workflows use Isaac Sim and Omniverse for simulation and validation
+- [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows use Omniverse/Cosmos simulation infrastructure
+- [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]] - world foundation models and deployable NIMs for synthetic physical AI video/world generation.
+- [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for searching and curating physical AI datasets.
+- [[NIM-for-Audio2Face-3D]] - deployable Audio2Face NIM for speech-to-facial animation in digital-human workflows.
+- [[NIM-for-Maxine-Audio2Face-2D]] - adjacent 2D portrait animation NIM.
+- [[NVIDIA-ACE]] - digital-human application layer that uses Audio2Face-style animation.
+- [[NVIDIA-DRIVE-Sim]] - AV simulation workflows use Omniverse-style reconstruction and synthetic data context.
+- [[Earth-2]] - climate digital twin workflows use Omniverse as a visualization and simulation context.
+- [[NVIDIA-RTX-PRO-Server]] - enterprise RTX server platform for Omniverse, simulation, and digital twin workloads.
+- [[NVIDIA-RTX-PRO-AI-Factory]] - Enterprise RA hardware/software context for RTX PRO AI factory deployments.
 - [[NVIDIA-Warp]] — Warp GPU simulation kernels are used within Omniverse for physics and differentiable simulation
 - [[NVIDIA-Modulus]] — physics-ML models trained with Modulus can be integrated into Omniverse digital twins
 - [[TensorRT]] — AI models deployed within Omniverse applications use TensorRT for inference

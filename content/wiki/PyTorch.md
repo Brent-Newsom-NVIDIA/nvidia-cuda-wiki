@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Megatron-LM]]
-**Sources:** NVIDIA official documentation, pytorch.org
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
+**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 PyTorch is an open-source deep learning framework developed by Meta AI and maintained by the PyTorch Foundation, distributed with NVIDIA CUDA support as first-class GPU acceleration. NVIDIA ships and maintains optimized CUDA-enabled PyTorch builds that leverage cuDNN, cuBLAS, NCCL, and other CUDA-X libraries under the hood. It is the dominant research and production framework for training and deploying neural networks, with native support for dynamic computation graphs, automatic differentiation, and distributed training across NVIDIA GPU clusters.
@@ -31,10 +31,13 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 
 ### Use Cases
 - Training large language models (LLMs) and vision transformers
+- Running NVIDIA-tested PyTorch environments through [[NVIDIA-Optimized-Frameworks]] containers from [[NGC]]
 - Computer vision model development (classification, detection, segmentation)
 - NLP and speech model research and production
 - Reinforcement learning environments
+- Robot policy training in [[NVIDIA-Isaac-Lab]] and humanoid foundation model workflows in [[NVIDIA-Isaac-GR00T]]
 - Scientific ML and physics-informed neural networks
+- Biological foundation model training through [[BioNeMo-Recipes]], including [[Transformer-Engine]]-backed PyTorch loops and FSDP-style scaling examples
 - Production inference via TorchServe or export to TensorRT
 - Multi-node distributed training on NVIDIA DGX/HGX clusters
 
@@ -52,14 +55,22 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - CUDA C++ for custom kernel extensions via `torch.utils.cpp_extension`
 
 ## Connections
+- [[NVIDIA-Optimized-Frameworks]] - NVIDIA publishes optimized PyTorch container images with CUDA libraries, tools, and support-matrix versioning.
 - [[cuDNN]] — PyTorch uses cuDNN for all convolution, attention, and normalization primitives
 - [[cuBLAS]] — underlies all `torch.matmul` / `torch.nn.Linear` operations on GPU
 - [[NCCL]] — powers `torch.distributed` for multi-GPU all-reduce and collective operations
+- [[NVSHMEM4Py]] — can create PyTorch tensors backed by NVSHMEM symmetric memory for distributed GPU communication workflows.
+- [[Nsight-Python]] — profiles Python GPU workloads and examples include PyTorch kernel regions.
+- [[CUDA-Python]] — NVIDIA Python CUDA component hub adjacent to PyTorch GPU workflows.
 - [[TensorRT]] — primary export target for optimized production inference from PyTorch models
 - [[NVIDIA-DALI]] — drop-in replacement for PyTorch DataLoader for GPU-accelerated data pipelines
+- [[Transformer-Engine]] - provides optimized PyTorch transformer modules, autocast-style low-precision recipes, and FP8/MXFP8/NVFP4 quantized tensor paths on NVIDIA GPUs.
 - [[CUTLASS]] — custom GEMM kernels can be integrated via PyTorch C++ extensions
 - [[Megatron-LM]] — built on top of PyTorch for large-scale LLM training
+- [[BioNeMo-Recipes]] — uses PyTorch training loops, FSDP-style scaling, and NVIDIA [[Transformer-Engine]] layers for biological foundation model recipes.
 - [[TensorRT-LLM]] — uses PyTorch models as source for optimized LLM deployment
+- [[NVIDIA-Isaac-Lab]] - robot learning policies are commonly authored and trained in PyTorch.
+- [[NVIDIA-Isaac-GR00T]] - GR00T-N model cards list PyTorch as the runtime integration path.
 
 ## Resources
 - [Official Site](https://pytorch.org)

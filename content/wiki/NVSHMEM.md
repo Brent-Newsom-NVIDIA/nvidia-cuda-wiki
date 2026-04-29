@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, PGAS, Distributed Computing, Multi-GPU, HPC, OpenSHMEM
-**Related:** [[NCCL]], [[cuFFT]], [[cuBLAS]], [[AmgX]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[NVSHMEM4Py]], [[NCCL]], [[NVIDIA-HPC-X]], [[GPUDirect-RDMA]], [[CUDA-Python]], [[cuda-core]], [[CuPy]], [[PyTorch]], [[cuFFT]], [[cuFFTMp]], [[cuBLAS]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[AmgX]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nvshmem/, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/index.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/interoperability.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVSHMEM is NVIDIA's implementation of the OpenSHMEM programming model for GPU clusters, providing a Partitioned Global Address Space (PGAS) interface that enables direct GPU-to-GPU communication without CPU orchestration. It supports GPU-initiated one-sided communication (puts/gets), fine-grained asynchronous data transfers, and interoperability with MPI. NVSHMEM4Py provides Python bindings with CuTe DSL support.
+NVSHMEM is NVIDIA's implementation of the OpenSHMEM programming model for GPU clusters, providing a Partitioned Global Address Space (PGAS) interface that enables direct GPU-to-GPU communication without CPU orchestration. It supports GPU-initiated one-sided communication (puts/gets), fine-grained asynchronous data transfers, and interoperability with MPI. [[NVSHMEM4Py]] provides the official Python language binding for NVSHMEM.
 
 ## Detail
 
@@ -23,8 +23,8 @@ Traditional multi-GPU programming models (MPI, NCCL) require CPU involvement to 
 - MPI interoperability for hybrid programming models
 - Compatible with OpenSHMEM implementations
 - Multi-architecture support: x86 and Arm processors
-- NVSHMEM4Py: Python bindings with CuTe DSL support (v0.3.0+)
-- Used by cuFFTMp for multi-node FFT communication
+- [[NVSHMEM4Py]]: official Python language binding with host APIs, Python device APIs, and CuPy/PyTorch interoperability.
+- Used by [[cuFFTMp]] for multi-node FFT communication
 
 ### Use Cases
 - Quantum chromodynamics (QCD) simulations via QUDA library
@@ -42,11 +42,16 @@ Traditional multi-GPU programming models (MPI, NCCL) require CPU involvement to 
 
 ### Language Bindings
 - C and C++ (primary API)
-- Python (NVSHMEM4Py with CuTe DSL support)
+- Python via [[NVSHMEM4Py]]
 
 ## Connections
 - [[NCCL]] — NCCL handles collective operations; NVSHMEM handles fine-grained point-to-point PGAS communication
-- [[cuFFT]] — cuFFTMp uses NVSHMEM for multi-node distributed FFT communication
+- [[NVSHMEM4Py]] — official Python binding for NVSHMEM, including symmetric memory and Python GPU library interoperability.
+- [[CUDA-Python]] and [[cuda-core]] — NVSHMEM4Py participates in the current Python CUDA stack and uses cuda-core concepts for device/stream setup.
+- [[NVIDIA-HPC-X]] — HPC-X includes SHMEM/PGAS communication libraries that sit near NVSHMEM's GPU-cluster programming model
+- [[GPUDirect-RDMA]] — NVSHMEM relies on GPU-aware RDMA paths for inter-node GPU communication
+- [[cuFFT]] and [[cuFFTMp]] — cuFFTMp uses NVSHMEM for multi-node distributed FFT communication
+- [[NVIDIA-Fortran-CUDA-Interfaces]] - current Fortran CUDA interfaces include NVSHMEM module/interface coverage.
 - [[cuBLAS]] — cuBLASMp multi-node linear algebra uses NVSHMEM for data movement
 - [[AmgX]] — AmgX multi-node solvers use NVSHMEM-like communication patterns
 

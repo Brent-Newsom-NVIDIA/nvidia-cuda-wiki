@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, intelligent video analytics, IVA, smart cities, edge AI, retail, safety, computer vision
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-TAO]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/ and https://docs.nvidia.com/tao/tao-toolkit/latest/index.html)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Metropolis is an application framework and partner ecosystem for building AI-powered intelligent video analytics (IVA) solutions for physical AI applications in retail, manufacturing, transportation, cities, and public safety. It provides an end-to-end platform spanning edge devices (Jetson), network appliances, and cloud/data center deployment — with pre-trained perception models, microservices for video ingestion and analytics, and a partner ecosystem of 750+ ISVs building Metropolis-enabled solutions. Metropolis is NVIDIA's primary platform for bringing AI perception from the cloud to the physical world.
@@ -17,13 +17,14 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 ### Key Features
 - **Video Analytics Microservices (VAS):** Metropolis microservices for video ingestion, multi-stream management, metadata output, and AI inference — architected for Kubernetes deployment
 - **Pre-Trained Perception Models:** PeopleNet (person detection), TrafficCamNet (vehicle detection), DashCamNet, FaceDetect, LicensePlateNet, and dozens of domain-specific models available on NGC
-- **TAO (Train, Adapt, Optimize) Toolkit:** GUI and CLI-based tool for transfer learning and fine-tuning Metropolis perception models on custom datasets without writing training code; exports TensorRT-optimized models
+- **[[NVIDIA-TAO]] (Train, Adapt, Optimize):** toolkit and services for transfer learning, fine-tuning, quantization, and deployment preparation for Metropolis perception models
 - **DeepStream Integration:** Built on top of NVIDIA DeepStream SDK for multi-stream GStreamer pipeline management; handles video decode, pre-processing, inference, and output in a unified pipeline
 - **Retail Analytics:** Shopper journey analysis, queue detection, heat maps, shrinkage detection, planogram compliance
 - **Manufacturing Quality Inspection:** Defect detection, assembly verification, safety compliance monitoring on factory floors
 - **Smart City / Traffic:** License plate recognition, vehicle counting, pedestrian safety, red light violation detection, parking management
 - **Partner Ecosystem:** 750+ Metropolis ISV partners building certified solutions; NVIDIA Metropolis Application Framework provides reference applications
 - **Cloud-to-Edge:** Unified deployment pipeline from cloud development/training to edge Jetson devices and on-premises servers
+- **Blueprint adjacency:** [[NVIDIA-Video-Search-and-Summarization-Blueprint]] adds a current NVIDIA-authored vision-agent blueprint for search, summarization, alert verification, and smart-city/warehouse examples.
 
 ### Use Cases
 - Retail loss prevention: AI-powered shrinkage detection with behavioral analysis and alert systems
@@ -48,7 +49,10 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 
 ## Connections
 - [[NVIDIA-DeepStream]] — DeepStream SDK is the foundational video analytics engine underpinning Metropolis pipelines
+- [[NVIDIA-TAO]] — model customization and optimization path for Metropolis vision models and datasets
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - current VSS blueprint for building vision agents and video analytics applications.
 - [[NVIDIA-Jetson-Platform]] — Jetson is the primary edge hardware platform for Metropolis edge deployments
+- [[NVIDIA-Jetson-Platform-Services]] - JPS provides Jetson-hosted services for video analytics, VLM, detection, and edge application APIs.
 - [[NVIDIA-AI-Enterprise]] — Metropolis microservices available under AI Enterprise for enterprise deployments
 - [[NGC]] — Pre-trained models, DeepStream containers, and TAO models distributed via NGC
 - [[Triton-Inference-Server]] — Metropolis inference can be served via Triton for multi-model deployments

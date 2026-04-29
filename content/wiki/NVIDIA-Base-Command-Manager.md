@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Base Command Manager, cluster management, AI factory, DGX, Bright Cluster Manager
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-BaseOS]], [[NVIDIA-Mission-Control]], [[NVIDIA-DCGM]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-BaseOS]], [[NVIDIA-Mission-Control]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-DCGM]]
 **Sources:** https://docs.nvidia.com/base-command-manager/index.html
 **Last Updated:** 2026-04-29
 
@@ -12,7 +12,7 @@ NVIDIA Base Command Manager is NVIDIA's cluster management documentation surface
 ## Detail
 
 ### Purpose
-AI factories need infrastructure lifecycle management: provisioning nodes, managing software images, monitoring cluster health, and operating large GPU systems. Base Command Manager provides the cluster-management layer historically connected to Bright Cluster Manager capabilities.
+AI factories need infrastructure lifecycle management: provisioning nodes, managing software images, monitoring cluster health, and operating large GPU systems. Base Command Manager provides the cluster-management layer historically connected to [[NVIDIA-Bright-Cluster-Manager]] capabilities.
 
 ### Key capabilities
 - Documentation for Base Command Manager 10 and 11.
@@ -25,11 +25,13 @@ Base Command Manager should be tracked separately from [[NVIDIA-Base-Command]] P
 
 ## Connections
 - [[NVIDIA-Base-Command]] - related name, but different workflow focus.
+- [[NVIDIA-Bright-Cluster-Manager]] - Bright documentation and cluster-management concepts sit adjacent to Base Command Manager.
 - [[NVIDIA-DGX-SuperPOD]] - large clusters need cluster management.
 - [[NVIDIA-BaseOS]] - operating-system layer for managed NVIDIA systems.
 - [[NVIDIA-Mission-Control]] - AI factory management platform that overlaps operational concerns.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA lists Base Command Manager as deployment and lifecycle software.
+- [[NVIDIA-Enterprise-RA-Observability-Guide]] - observability guide uses BCM metrics as one telemetry source.
 - [[NVIDIA-DCGM]] - GPU telemetry and diagnostics feed infrastructure operations.
 
 ## Source Excerpts
 - NVIDIA's Base Command Manager docs surface current Base Command Manager and Bright Cluster Manager documentation.
-

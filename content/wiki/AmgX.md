@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Linear Solver, Multigrid, HPC, CFD, Open Source
-**Related:** [[cuSPARSE]], [[cuSOLVER]], [[cuDSS]], [[NCCL]]
+**Related:** [[cuSPARSE]], [[cuSOLVER]], [[cuDSS]], [[Incomplete-LU-Cholesky]], [[NCCL]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 AmgX is NVIDIA's open-source GPU-accelerated linear solver library offering algebraic multigrid (AMG) methods, Krylov solvers, and various smoothers and preconditioners. It can accelerate the linear solver portion of HPC simulations by up to 10x, making it especially valuable for implicit unstructured methods in CFD, energy, physics, and nuclear safety applications.
@@ -45,6 +45,7 @@ Large-scale numerical simulations (CFD, reservoir simulation, plasma physics) sp
 - [[cuSPARSE]] — AmgX uses cuSPARSE internally for sparse matrix operations
 - [[cuSOLVER]] — cuSOLVER provides direct solvers; AmgX provides iterative/multigrid alternatives
 - [[cuDSS]] — cuDSS is the direct sparse solver complement to AmgX's iterative approach
+- [[Incomplete-LU-Cholesky]] — CUDA iterative-method guide covering preconditioning concepts adjacent to AmgX
 - [[NCCL]] — multi-GPU AmgX deployments use GPU communication libraries like NCCL
 
 ## Resources

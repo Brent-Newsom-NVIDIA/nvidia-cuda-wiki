@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Quantum Computing, Simulation, State Vector, cuQuantum
-**Related:** [[cuQuantum]], [[cuBLAS]], [[NCCL]]
-**Sources:** NVIDIA official documentation (stub — review and expand)
-**Last Updated:** 2026-04-21
+**Related:** [[cuQuantum]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[CUDA-Q]], [[CUDA-QX]], [[NVIDIA-Quantum]], [[cuBLAS]], [[NCCL]]
+**Sources:** https://docs.nvidia.com/cuda/cuquantum/latest/custatevec/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/
+**Last Updated:** 2026-04-29
 
 ## Summary
-cuStateVec is the state-vector simulation component of [[cuQuantum]]. It provides GPU-accelerated primitives for simulating quantum circuits via explicit representation of the 2^N-dimensional complex amplitude array, with optimized memory management, gate application kernels, measurement, sampling, and expectation-value evaluation. It integrates into major quantum frameworks (Qiskit, Cirq, PennyLane) to provide zero-code-change GPU acceleration.
+cuStateVec is the state-vector simulation component of [[cuQuantum]]. It provides GPU-accelerated primitives for simulating quantum circuits via explicit representation of the 2^N-dimensional complex amplitude array, with optimized memory management, gate application kernels, measurement, sampling, and expectation-value evaluation. It integrates into major quantum frameworks such as Qiskit, Cirq, and PennyLane to provide GPU acceleration, and it is packaged with the other current cuQuantum libraries inside [[cuQuantum-Appliance]].
 
 ## Detail
 
@@ -41,6 +41,11 @@ State-vector simulation is the canonical approach to classical simulation of qua
 
 ## Connections
 - [[cuQuantum]] — cuStateVec is the state-vector component of the cuQuantum SDK
+- [[cuTensorNet]] - sibling tensor-network simulation component for contractions, slicing, MPS workflows, and distributed tensor-network execution.
+- [[cuDensityMat]], [[cuPauliProp]], and [[cuStabilizer]] - sibling current cuQuantum libraries for analog dynamics, Pauli propagation, and stabilizer simulation.
+- [[cuQuantum-Appliance]] - containerized workflow that includes cuStateVec.
+- [[CUDA-Q]] - higher-level quantum programming platform that can use cuQuantum simulation backends.
+- [[NVIDIA-Quantum]] - platform context for accelerated quantum computing.
 - [[cuBLAS]] — cuStateVec uses cuBLAS for dense matrix operations in gate simulation
 - [[NCCL]] — multi-GPU cuStateVec uses NCCL for distributed state-vector operations
 

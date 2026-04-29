@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Data Loading, Image Processing, Deep Learning, Open Source, Training
-**Related:** [[cuDNN]], [[TensorRT]], [[nvComp]], [[CV-CUDA]], [[nvImageCodec]]
+**Related:** [[cuDNN]], [[TensorRT]], [[nvComp]], [[Megatron-Energon]], [[CV-CUDA]], [[nvImageCodec]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -44,6 +44,7 @@ Deep learning training pipelines often stall waiting for preprocessed batches fr
 ## Connections
 - [[CV-CUDA]] — CV-CUDA handles post-processing for inference; DALI handles pre-processing for training
 - [[nvComp]] — DALI can decompress compressed image/video data via nvComp integration
+- [[Megatron-Energon]] - complementary multimodal data loader for Megatron-scale WebDataset/JSONL data pipelines.
 - [[nvImageCodec]] — nvImageCodec provides codec plugins that DALI uses for image decode
 - [[TensorRT]] — DALI preprocessed data feeds into TensorRT inference pipelines
 - [[cuDNN]] — cuDNN consumes DALI-preprocessed tensors for model execution

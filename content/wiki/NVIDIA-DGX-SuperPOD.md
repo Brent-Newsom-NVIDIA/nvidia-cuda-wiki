@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DGX SuperPOD, AI supercomputer, cluster, data center, InfiniBand
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]]
-**Sources:** https://docs.nvidia.com/dgx-superpod/index.html, https://www.nvidia.com/en-us/data-center/dgx-superpod/
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
+**Sources:** https://docs.nvidia.com/dgx-superpod/index.html, https://www.nvidia.com/en-us/data-center/dgx-superpod/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/technologies/rubin/, https://docs.nvidia.com/dgx-basepod/index.html, https://www.nvidia.com/en-us/data-center/dgx-support/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -22,14 +22,24 @@ Frontier AI training and high-throughput enterprise AI workloads require more th
 
 ### NVIDIA context
 DGX SuperPOD is a major anchor for many wiki topics: [[NCCL]], [[NVIDIA-ConnectX-InfiniBand]], [[NVLink]], [[NVIDIA-BaseOS]], [[NVIDIA-DCGM]], [[NVIDIA-Base-Command-Manager]], and [[NVIDIA-Mission-Control]].
+Current AI factory guidance also makes storage and enterprise data access first-class design concerns, linking SuperPOD-scale compute to [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], and agentic AI infrastructure.
+[[NVIDIA-DGX-BasePOD]] is the smaller prescriptive enterprise reference architecture that often precedes or complements SuperPOD-scale deployments, while [[NVIDIA-DGX-Enterprise-Support]] covers support, onboarding, administration, and infrastructure services for SuperPOD operations.
 
 ## Connections
 - [[NVIDIA-DGX]] - DGX systems are the building blocks.
+- [[NVIDIA-DGX-BasePOD]] - BasePOD is the enterprise reference architecture below SuperPOD scale.
+- [[NVIDIA-DGX-Enterprise-Support]] - support/services layer for SuperPOD deployment and administration.
+- [[NVIDIA-DGX-B300]] - Blackwell Ultra DGX generation for current AI factory deployments.
+- [[NVIDIA-GB300-NVL72]] - rack-scale Blackwell Ultra NVL72 system in the DGX/SuperPOD direction.
+- [[NVIDIA-Vera-Rubin]] - next-generation platform for future SuperPOD-style AI factories.
+- [[NVIDIA-Enterprise-AI-Factory]] - enterprise AI factory guidance generalizes DGX/SuperPOD patterns into validated full-stack designs.
+- [[NVIDIA-Certified-Storage]] - validated storage is needed to feed large SuperPOD-scale workloads.
+- [[NVIDIA-AI-Data-Platform]] - data platform reference designs connect SuperPOD-scale compute to retrieval and agent data workflows.
 - [[NVIDIA-ConnectX-InfiniBand]] - high-performance networking for scale-out training.
+- [[NVIDIA-ConnectX-9]] - next-generation 1.6 Tb/s-class adapter for future AI factory fabrics.
 - [[NCCL]] - multi-node collectives are central to training at SuperPOD scale.
 - [[NVIDIA-BaseOS]] - validated OS layer for DGX infrastructure.
 - [[NVIDIA-Mission-Control]] - AI factory operations layer for large NVIDIA deployments.
 
 ## Source Excerpts
 - NVIDIA DGX SuperPOD docs provide the documentation entry point for NVIDIA's scalable AI supercomputing platform.
-

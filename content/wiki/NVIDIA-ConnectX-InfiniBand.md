@@ -1,10 +1,10 @@
 # NVIDIA ConnectX / InfiniBand
 
 **Type:** Technology
-**Tags:** NVIDIA, networking, InfiniBand, RDMA, HPC, data center, high performance networking, ConnectX, Ethernet
-**Related:** [[GPUDirect-RDMA]], [[NVLink]], [[NVIDIA-BlueField-DPU]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Tags:** NVIDIA, networking, InfiniBand, RDMA, HPC, data center, high performance networking, ConnectX, Ethernet, DOCA-OFED
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-MLNX-EN]], [[NVIDIA-WinOF-2]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVLink]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://developer.nvidia.com/networking, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/doca/sdk/mlnx_ofed-to-doca-ofed-transition-guide/index.html, https://docs.nvidia.com/networking/software/adapter-software/index.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://docs.nvidia.com/networking/display/connectx9supernic/introduction)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA ConnectX is a family of high-performance network adapters (HCAs — Host Channel Adapters) that provide InfiniBand and high-speed Ethernet connectivity for data centers, HPC clusters, and AI training infrastructure. ConnectX adapters are the dominant InfiniBand HCAs globally and are the standard networking choice for NVIDIA DGX SuperPOD and AI data center deployments, enabling the low-latency, high-bandwidth inter-node communication that large-scale distributed AI training requires. NVIDIA acquired Mellanox in 2020, making ConnectX, Quantum InfiniBand switches, and Spectrum Ethernet switches part of the NVIDIA networking portfolio.
@@ -24,6 +24,7 @@ Distributed AI training across multiple servers requires extremely low-latency, 
 | ConnectX-6 Dx | Ethernet only | 100/200 GbE | Smart offloads, VXLAN, hardware crypto |
 | ConnectX-7 | InfiniBand NDR / 400GbE | 400 Gb/s | PCIe Gen5, hardware packet pacing, NVIDIA DOCA |
 | ConnectX-8 | InfiniBand XDR / 800GbE | 800 Gb/s | Blackwell-generation; scheduled 2025 |
+| ConnectX-9 | InfiniBand / Ethernet SuperNIC | 1.6 Tb/s or dual 800 Gb/s | PCIe Gen6, CXL-ready, GPUDirect, storage/offload, current SuperNIC docs |
 
 **Key Capabilities:**
 - **RDMA (Remote Direct Memory Access):** Kernel-bypass DMA; NIC reads/writes host or GPU memory without CPU involvement; InfiniBand RC (Reliable Connected) QP; RoCE (RDMA over Converged Ethernet) for Ethernet networks
@@ -31,8 +32,9 @@ Distributed AI training across multiple servers requires extremely low-latency, 
 - **GPUDirect Async:** ConnectX-6+ feature allowing GPU kernels to directly trigger RDMA operations by writing to doorbell registers; true GPU-driven networking without CPU
 - **Quantum InfiniBand Switches:** NVIDIA's InfiniBand switch family; Quantum-2 (400 Gb/s NDR) with 64 ports per switch; fat-tree topologies for DGX SuperPOD; switch-based collectives (InfiniBand Sharp) for hardware-offloaded AllReduce
 - **InfiniBand Sharp (Scalable Hierarchical Aggregation Protocol):** In-network computing — AllReduce operations offloaded to the Quantum switch fabric; reduces network traffic for gradient synchronization by ~2× vs endpoint-based AllReduce
-- **NVIDIA DOCA SDK:** Software platform for programming ConnectX-7/8 and BlueField DPU networking features; replaces legacy MLNX_OFED programming model
-- **OpenFabrics Alliance (OFA) / MLNX_OFED:** OFED (OpenFabrics Enterprise Distribution) driver stack for InfiniBand; `mlx5` kernel driver; `ibverbs`, `rdmacm` user-space libraries
+- **NVIDIA DOCA SDK:** [[NVIDIA-DOCA]] and DOCA-Host provide the current host-side software stack for ConnectX and BlueField networking features, including [[NVIDIA-DOCA-OFED]]
+- **OpenFabrics Alliance (OFA) / MLNX_OFED:** [[NVIDIA-MLNX-OFED]] is the legacy standalone Linux OFED driver stack for InfiniBand; `mlx5` kernel driver; `ibverbs`, `rdmacm` user-space libraries
+- **Firmware and OS drivers:** [[NVIDIA-Firmware-Tools]] manages device firmware/configuration, [[NVIDIA-MLNX-EN]] covers legacy Ethernet-only Linux stacks, and [[NVIDIA-WinOF-2]] covers Windows hosts.
 
 ### Use Cases
 - Multi-node LLM training (hundreds to thousands of GPUs) on DGX SuperPOD with InfiniBand NDR fabric
@@ -45,19 +47,31 @@ Distributed AI training across multiple servers requires extremely low-latency, 
 ### Hardware Requirements / Compatibility
 - **Host Interface:** PCIe Gen3/4/5 x16 (model-dependent); ConnectX-7 uses PCIe Gen5
 - **OS:** Linux (MLNX_OFED driver for full InfiniBand; native `mlx5` kernel driver in Linux 5.x+); Windows Server (limited)
-- **Software Stack:** MLNX_OFED 5.x/6.x or NVIDIA DOCA; OpenMPI or MVAPICH2 with InfiniBand support; NCCL with `NCCL_IB_DISABLE=0`
+- **Software Stack:** [[NVIDIA-DOCA-OFED]], legacy [[NVIDIA-MLNX-OFED]] or [[NVIDIA-MLNX-EN]] when applicable, OpenMPI or MVAPICH2 with InfiniBand support, [[NVIDIA-HPC-X]], NCCL with `NCCL_IB_DISABLE=0`, [[NVIDIA-Firmware-Tools]], and Kubernetes networking via [[NVIDIA-Network-Operator]]
 - **InfiniBand Subnet Manager:** OpenSM or NVIDIA UFM (Unified Fabric Manager) for managing InfiniBand subnets
 
 ### Language Bindings / APIs
 - **NCCL:** Primary consumer; `NCCL_IB_HCA=mlx5_0:1` env variable selects specific ConnectX port; auto-configured in most cases
 - **libibverbs / rdmacm:** Low-level RDMA programming (InfiniBand verbs C API)
 - **UCX (Unified Communication X):** High-level RDMA transport library used by OpenMPI, Dask, and NIXL
-- **NVIDIA DOCA:** Modern Python/C++ SDK for programming advanced ConnectX/BlueField features
+- **NVIDIA DOCA:** modern SDK, runtime, drivers, tools, and services for programming advanced ConnectX/BlueField features
 
 ## Connections
+- [[NVIDIA-DOCA]] — DOCA-Host and DOCA-OFED are the current NVIDIA host software stack for ConnectX and BlueField networking.
+- [[NVIDIA-DOCA-OFED]] — current Linux host-driver stack for ConnectX InfiniBand, Ethernet, RoCE, and RDMA.
+- [[NVIDIA-MLNX-OFED]] — legacy standalone Linux OFED stack for ConnectX VPI deployments.
+- [[NVIDIA-MLNX-EN]] — legacy standalone Linux Ethernet/RoCE package for ConnectX EN deployments.
+- [[NVIDIA-WinOF-2]] — Windows host-driver package for ConnectX-4 Lx and newer adapters.
+- [[NVIDIA-Firmware-Tools]] — firmware, link, port, and low-level diagnostics for ConnectX adapters.
+- [[NVIDIA-ConnectX-9]] — generation-specific page for the current 1.6 Tb/s-class SuperNIC.
 - [[GPUDirect-RDMA]] — ConnectX HCAs implement GPUDirect RDMA by directly DMAing to/from NVIDIA GPU memory over PCIe
 - [[NVLink]] — NVLink handles intra-node GPU communication; ConnectX InfiniBand handles inter-node; both used in DGX SuperPOD
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU is a ConnectX adapter with an embedded ARM CPU for network function offloading; shares ASIC with ConnectX-7
+- [[NVIDIA-BlueField-4]] — next-generation DPU direction adjacent to ConnectX-9 and AI data platform networking.
+- [[NVIDIA-Silicon-Photonics]] — optical networking direction for next-generation AI factory fabrics.
+- [[NVIDIA-Network-Operator]] — exposes ConnectX RDMA, SR-IOV, and secondary-network capabilities to Kubernetes workloads.
+- [[NVIDIA-HPC-X]] — MPI/SHMEM/UCX/UCC toolkit optimized for ConnectX and NVIDIA fabrics.
+- [[NVIDIA-Rivermax]] — streaming SDK that supports ConnectX NICs for kernel-bypass media and data streaming.
 - [[NCCL]] — NCCL uses ConnectX InfiniBand (via `libnccl-net-ib`) for inter-node AllReduce in distributed training
 - [[NVIDIA-DGX]] — DGX H100 includes 8× ConnectX-7 (400 Gb/s NDR InfiniBand) NICs for multi-node cluster connectivity
 

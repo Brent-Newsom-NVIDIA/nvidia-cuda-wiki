@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, driver API, GPU programming, modules, contexts
-**Related:** [[NVIDIA-CUDA]], [[CUDA-Runtime-API]], [[PTX-ISA]], [[NVRTC]], [[nvJitLink]], [[PTX-Compiler-APIs]], [[nvFatbin]]
-**Sources:** https://docs.nvidia.com/cuda/cuda-driver-api/index.html
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Runtime-API]], [[CUDA-Python]], [[cuda-bindings]], [[cuda-core]], [[PTX-ISA]], [[NVRTC]], [[nvJitLink]], [[PTX-Compiler-APIs]], [[nvFatbin]]
+**Sources:** https://docs.nvidia.com/cuda/cuda-driver-api/index.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html, https://nvidia.github.io/cuda-python/cuda-core/latest/getting-started.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,9 +23,13 @@ Where the [[CUDA-Runtime-API]] optimizes for developer convenience, the Driver A
 
 ### NVIDIA context
 High-level NVIDIA software often relies on Driver API mechanisms even when end users never call them directly. It is especially relevant to [[TensorRT]], [[TensorRT-LLM]], [[Triton-Inference-Server]], custom CUDA language front ends, and dynamic kernel systems.
+In Python, [[cuda-bindings]] exposes driver-style APIs directly, while [[cuda-core]] wraps related concepts in higher-level Python objects.
 
 ## Connections
 - [[CUDA-Runtime-API]] - higher-level API that can interoperate with the driver API.
+- [[CUDA-Python]] - Python umbrella for NVIDIA CUDA access.
+- [[cuda-bindings]] - low-level Python API parity for CUDA host APIs.
+- [[cuda-core]] - higher-level Python objects for devices, contexts, modules, memory, and launches.
 - [[PTX-ISA]] - Driver API module loading can consume PTX for JIT compilation.
 - [[NVRTC]] - runtime-compiled CUDA code is commonly loaded through Driver API modules.
 - [[nvJitLink]] - linked device code can be loaded through Driver API flows.
@@ -33,4 +37,3 @@ High-level NVIDIA software often relies on Driver API mechanisms even when end u
 
 ## Source Excerpts
 - NVIDIA's Driver API reference includes context, module, memory, stream, event, graph, execution-control, and interoperability sections.
-

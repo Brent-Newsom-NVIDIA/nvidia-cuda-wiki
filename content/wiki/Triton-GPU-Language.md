@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** GPU, Python, kernel, compiler, custom ops, deep learning, open source, CUDA alternative, tiled programming
-**Related:** [[CUTLASS]], [[FlashInfer]], [[NVCC]], [[NVRTC]], [[cuDNN]], [[PyTorch]], [[NVIDIA-Blackwell-Architecture]]
-**Sources:** Triton official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[CUTLASS]], [[FlashInfer]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[NVCC]], [[NVRTC]], [[cuDNN]], [[PyTorch]], [[NVIDIA-Blackwell-Architecture]]
+**Sources:** Triton official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://developer.nvidia.com/cuda/tile
+**Last Updated:** 2026-04-29
 
 ## Summary
 Triton is an open-source GPU programming language and compiler developed by OpenAI that enables writing efficient custom GPU kernels in Python with performance competitive with hand-optimized CUDA C++ for many workloads. Triton uses a tiled programming model — operating on blocks of data rather than individual elements — and automates low-level optimizations (memory coalescing, shared memory management, vectorization, pipelining) that would require expert CUDA knowledge manually. Triton is the dominant method for writing custom deep learning operations, and is the primary kernel language for the PyTorch `torch.compile` pathway and many production ML kernels (FlashAttention-2, etc.).
@@ -50,9 +50,14 @@ Writing high-performance custom CUDA kernels requires expertise in warp scheduli
 - **AOT Compilation:** `triton.compile(kernel, signature="*fp16, *fp16, i32, ...")` for deployment without Python runtime
 - **PyTorch Integration:** Triton kernels callable as PyTorch autograd functions; used natively by `torch.compile`
 
+### NVIDIA context
+NVIDIA's CUDA Tile page lists a Triton-to-CUDA-Tile-IR backend as an ecosystem bridge. That makes [[CUDA-Tile-IR]] relevant to Triton even though Triton's primary language, documentation, and compiler stack remain separate from NVIDIA-authored docs.
+
 ## Connections
 - [[CUTLASS]] — CUTLASS provides hand-optimized GEMM and convolution kernels in CUDA C++; Triton provides a Python alternative with comparable performance for many patterns
 - [[FlashInfer]] — FlashInfer implements optimized attention kernels combining Triton and CUDA C++ for production vLLM/TRT-LLM deployments
+- [[CUDA-Tile-IR]] — NVIDIA lists a Triton-to-CUDA-Tile-IR backend as a bridge for targeting CUDA Tile IR.
+- [[CUDA-Tile]] and [[cuTile]] — adjacent tile-programming surfaces in the current NVIDIA CUDA ecosystem.
 - [[NVCC]] — NVCC compiles CUDA C++ kernels; Triton is an alternative that compiles through its own LLVM pipeline, producing PTX that can be loaded similarly
 - [[cuDNN]] — cuDNN provides pre-optimized convolution and attention; Triton enables custom implementations when cuDNN doesn't cover the desired operation
 - [[PyTorch]] — `torch.compile` (Inductor backend) generates and runs Triton kernels for PyTorch operations; deep integration

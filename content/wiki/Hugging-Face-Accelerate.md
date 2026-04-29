@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** Hugging Face, distributed training, GPU, multi-GPU, mixed precision, PyTorch, open source, MLOps
-**Related:** [[DeepSpeed]], [[NCCL]], [[PyTorch]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[Triton-GPU-Language]]
-**Sources:** Hugging Face official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[DeepSpeed]], [[NCCL]], [[PyTorch]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[Transformer-Engine]], [[BioNeMo-Recipes]], [[Triton-GPU-Language]]
+**Sources:** Hugging Face official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 Hugging Face Accelerate is an open-source Python library that abstracts distributed training and inference boilerplate, enabling PyTorch training scripts to run across single GPU, multi-GPU, multi-node, and mixed-precision settings with minimal code changes. Accelerate handles device placement, gradient synchronization, mixed-precision (FP16/BF16), gradient accumulation, and integration with distributed backends (PyTorch DDP, FSDP, DeepSpeed ZeRO) via a unified API — allowing researchers to write standard PyTorch and "accelerate" it for any scale. It is the training infrastructure layer underlying HuggingFace Transformers' `Trainer` class.
@@ -38,6 +38,7 @@ Writing distributed PyTorch training code that handles DDP, FSDP, DeepSpeed, mul
 - Training custom PyTorch models on GPU clusters without rewriting training loops for DDP
 - FSDP training for 7B–70B models where full model doesn't fit on a single GPU
 - Quick prototyping of distributed training ideas without full Megatron-LM or DeepSpeed integration effort
+- Running [[BioNeMo-Recipes]] such as [[Transformer-Engine]]-accelerated ESM-2 training through a Hugging Face Accelerate path
 - HuggingFace `Trainer` class uses Accelerate internally — understanding Accelerate explains `Trainer` internals
 - `peft` (Parameter Efficient Fine-Tuning) library integrates with Accelerate for LoRA/QLoRA multi-GPU fine-tuning
 
@@ -63,6 +64,8 @@ Writing distributed PyTorch training code that handles DDP, FSDP, DeepSpeed, mul
 - [[PyTorch]] — Accelerate is a thin PyTorch wrapper; fully compatible with `torch.autocast`, `torch.optim`, custom `nn.Module` subclasses
 - [[NVIDIA-NeMo]] — NeMo is NVIDIA's purpose-built LLM training framework; Accelerate targets general PyTorch users; both serve large-model training but with different abstraction levels
 - [[Megatron-LM]] — Megatron provides tensor/pipeline parallelism not in Accelerate; combined via Megatron-DeepSpeed or NeMo for frontier model training
+- [[Transformer-Engine]] - NVIDIA TE layers can be used inside Accelerate-managed PyTorch training loops when the model/recipe uses TE modules.
+- [[BioNeMo-Recipes]] — includes Accelerate-based recipe paths for biological foundation model training on NVIDIA GPUs.
 - [[Triton-GPU-Language]] — Custom Triton kernels integrate naturally with Accelerate-managed training through standard PyTorch autograd
 
 ## Resources

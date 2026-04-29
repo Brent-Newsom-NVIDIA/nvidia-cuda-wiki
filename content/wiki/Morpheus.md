@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Cybersecurity, AI, Streaming, Threat Detection, Open Source
-**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[NVIDIA-DALI]]
+**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[NVIDIA-DALI]], [[DOCA-App-Shield]], [[DOCA-Telemetry-Service]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -51,6 +51,8 @@ Security operations centers (SOCs) are overwhelmed by the volume and velocity of
 - [[cuML]] — Morpheus uses cuML models for anomaly detection and classification
 - [[cuGraph]] — Morpheus uses cuGraph for graph neural network-based fraud detection
 - [[TensorRT]] — Morpheus integrates with TensorRT for optimized inference via Triton
+- [[DOCA-App-Shield]] — App Shield can provide DPU-side host introspection data for security workflows.
+- [[DOCA-Telemetry-Service]] — DTS can provide infrastructure telemetry that may feed security analytics.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/morpheus-cybersecurity)

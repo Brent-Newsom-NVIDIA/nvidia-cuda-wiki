@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[cuDNN]], [[cuBLAS]], [[NCCL]], [[TensorRT]], [[JAX]], [[PyTorch]]
-**Sources:** tensorflow.org/install/gpu official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[cuBLAS]], [[NCCL]], [[TensorRT]], [[JAX]], [[PyTorch]]
+**Sources:** tensorflow.org/install/gpu official documentation, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/support-matrix/
+**Last Updated:** 2026-04-29
 
 ## Summary
 TensorFlow is Google's open-source machine learning framework, with GPU acceleration on NVIDIA hardware provided through tight integration with the CUDA toolkit, cuDNN, and cuBLAS. TensorFlow GPU enables training and inference of deep neural networks on NVIDIA GPUs using static computation graphs (tf.function with XLA compilation) and eager execution mode. While PyTorch has largely displaced TensorFlow in research, TensorFlow remains widely deployed in production systems and is the primary framework for TensorFlow Lite (mobile/edge) and TensorFlow Extended (TFX) MLOps pipelines.
@@ -31,6 +31,7 @@ TensorFlow GPU provides a mature, production-proven deep learning framework with
 
 ### Use Cases
 - Production ML model training in enterprise environments
+- Running TensorFlow in NVIDIA optimized framework containers with support-matrix controlled CUDA/cuDNN/TensorRT versions
 - TFX (TensorFlow Extended) MLOps pipelines
 - TensorFlow Lite model development (mobile/embedded deployment)
 - Recommendation systems and ranking models
@@ -51,6 +52,7 @@ TensorFlow GPU provides a mature, production-proven deep learning framework with
 - Java, JavaScript (TensorFlow.js), Swift (limited)
 
 ## Connections
+- [[NVIDIA-Optimized-Frameworks]] - NVIDIA optimized framework containers provide a versioned TensorFlow GPU environment through NGC.
 - [[cuDNN]] — TensorFlow uses cuDNN for all convolution, pooling, and RNN GPU primitives
 - [[cuBLAS]] — underlies all `tf.matmul` and dense layer operations on GPU
 - [[NCCL]] — powers `tf.distribute` multi-GPU and multi-node collective operations

@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, interconnect, multi-GPU, bandwidth, NVSwitch, data center, GPU communication, scale-up
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-DGX]], [[NVIDIA-Grace-CPU]], [[NCCL]], [[GPUDirect-RDMA]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX]], [[NVIDIA-Grace-CPU]], [[NVIDIA-Vera-CPU]], [[NCCL]], [[GPUDirect-RDMA]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/technologies/rubin/)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVLink is NVIDIA's proprietary high-speed, point-to-point GPU interconnect technology that provides dramatically higher bandwidth for GPU-to-GPU and GPU-to-CPU communication than PCIe. NVLink enables multi-GPU systems to function as a single high-bandwidth memory pool — critical for tensor parallelism in LLM training, all-reduce operations in distributed training, and large-model inference. Paired with NVSwitch (a fully non-blocking crossbar switch chip), NVLink scales to connect all GPUs in a DGX node with all-to-all bandwidth, making the entire GPU cluster's memory appear as a unified fast memory space.
@@ -24,6 +24,7 @@ PCIe Gen5 x16 provides ~64 GB/s bidirectional bandwidth for CPU-GPU communicatio
 | NVLink 3 | 2020 | 50 GB/s | 600 GB/s | A100 |
 | NVLink 4 | 2022 | 50 GB/s | 900 GB/s | H100 |
 | NVLink 5 | 2024 | 100 GB/s | 1800 GB/s | B200 |
+| NVLink 6 | Vera Rubin generation | Public NVIDIA Vera Rubin material | Platform-level | Vera Rubin NVL144 / Rubin platform |
 
 - **NVLink-C2C (Chip-to-Chip):** Variant used between Grace CPU and Hopper/Blackwell GPU in superchips (GH200, GB200); provides cache-coherent unified memory addressing; 900 GB/s
 
@@ -63,8 +64,11 @@ PCIe Gen5 x16 provides ~64 GB/s bidirectional bandwidth for CPU-GPU communicatio
 ## Connections
 - [[NVIDIA-Hopper-Architecture]] — NVLink 4 is integral to H100; NVSwitch 3 enables DGX H100 all-to-all fabric
 - [[NVIDIA-Blackwell-Architecture]] — NVLink 5 and NVSwitch 4 define the GB200 NVL72 rack-scale interconnect
+- [[NVIDIA-Vera-Rubin]] — Vera Rubin introduces NVLink 6 platform direction.
+- [[NVIDIA-GB300-NVL72]] — Blackwell Ultra NVL72 system continues rack-scale NVLink designs.
 - [[NVIDIA-DGX]] — All DGX systems since DGX-1 use NVLink + NVSwitch for GPU fabric
 - [[NVIDIA-Grace-CPU]] — NVLink-C2C connects Grace CPU to Hopper/Blackwell GPU with coherent bandwidth
+- [[NVIDIA-Vera-CPU]] — Vera CPU uses NVLink-C2C connectivity in Vera Rubin systems.
 - [[NCCL]] — NCCL is the primary CUDA communication library that exploits NVLink for GPU collectives
 - [[GPUDirect-RDMA]] — GPUDirect RDMA handles inter-node (InfiniBand) transfers; NVLink handles intra-node; both used together in multi-node distributed training
 

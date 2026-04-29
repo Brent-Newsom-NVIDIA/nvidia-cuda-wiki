@@ -2,9 +2,9 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Hopper, H100, H200, NVLink 4, HBM3, FP8, Transformer Engine, confidential computing, MIG
-**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-DGX]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[cuDNN]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-DGX]], [[CUDA-Hopper-Compatibility-Guide]], [[CUDA-Hopper-Tuning-Guide]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[Transformer-Engine]], [[TensorRT]], [[cuDNN]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/index.html)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Hopper is the GPU architecture launched in 2022 (H100) and extended in 2023 (H200), succeeding Ampere and preceding Blackwell. Named after computer science pioneer Grace Hopper, the architecture introduced the Transformer Engine with FP8 training support, 4th-generation NVLink at 900 GB/s, HBM3 memory, second-generation MIG (Multi-Instance GPU), and NVIDIA Confidential Computing with hardware TEE isolation. Hopper H100 became the dominant GPU for LLM training and inference globally in the 2023–2024 AI wave, with the H200 adding HBM3e for increased memory capacity and bandwidth.
@@ -27,7 +27,7 @@ The Transformer architecture's rapid scaling (from BERT 340M to GPT-3 175B to GP
 - **TDP:** 700W (H100 SXM5); 700W (H200 SXM)
 
 **Key Architectural Features:**
-- **Transformer Engine:** First NVIDIA GPU feature designed specifically for transformers; dynamically switches between FP8 and FP16/BF16 per tensor operation using a learned per-tensor scaling factor; requires NVIDIA's Transformer Engine library (used in NeMo, TensorRT-LLM, etc.)
+- **Transformer Engine:** First NVIDIA GPU feature designed specifically for transformers; dynamically switches between FP8 and FP16/BF16 per tensor operation using scaling metadata; current software support lives in [[Transformer-Engine]].
 - **FP8 Precision:** Hardware FP8 (E4M3 and E5M2 formats) in 4th-gen Tensor Cores; ~2× throughput of FP16 for training and inference
 - **GH200 Grace Hopper Superchip:** H100/H200 GPU + Grace CPU connected via NVLink-C2C at 900 GB/s; 96 GB HBM3e GPU + 480 GB LPDDR5X CPU; enables unified memory model for large models exceeding GPU VRAM
 - **Second-Gen MIG (Multi-Instance GPU):** Hardware partitioning of H100 into up to 7 isolated GPU instances, each with dedicated HBM, L2 cache, and SM slice; supports Confidential Computing isolation per MIG instance
@@ -53,16 +53,19 @@ The Transformer architecture's rapid scaling (from BERT 340M to GPT-3 175B to GP
 
 ### Language Bindings / APIs
 - Full backward compatibility with all Ampere (sm_80) CUDA code
-- **New APIs:** `cudaClusterDim` for thread block clusters; FP8 GEMM in cuBLAS; Transformer Engine Python/C++ API
-- **Transformer Engine:** `pip install transformer-engine`; integrates with PyTorch, JAX, PaddlePaddle
+- **New APIs:** `cudaClusterDim` for thread block clusters; FP8 GEMM in cuBLAS; [[Transformer-Engine]] Python/C++ API
+- **[[Transformer-Engine]]:** current docs support PyTorch and JAX integrations for FP8 and related low-precision recipes.
 - **MIG Management:** `nvidia-smi mig` CLI; NVML API for programmatic MIG configuration
 - **Confidential Computing:** NVIDIA CC Manager; attestation via NVIDIA OCSP service
 
 ## Connections
 - [[NVIDIA-Blackwell-Architecture]] — Hopper is the predecessor; B200 succeeds H100 as NVIDIA's flagship data center GPU
 - [[NVIDIA-DGX]] — DGX H100 and DGX H200 are the flagship Hopper-generation DGX systems
+- [[CUDA-Hopper-Compatibility-Guide]] — CUDA application binary compatibility guidance for Hopper.
+- [[CUDA-Hopper-Tuning-Guide]] — Hopper-specific CUDA performance tuning guidance.
 - [[NVLink]] — 4th-generation NVLink (900 GB/s) is a defining Hopper feature; NVSwitch 3.0 enables DGX H100 all-to-all bandwidth
 - [[NVIDIA-Grace-CPU]] — Grace CPU pairs with H100/H200 in GH200 superchip via NVLink-C2C
+- [[Transformer-Engine]] — software library that exposes FP8 transformer acceleration on Hopper-class GPUs.
 - [[TensorRT]] — TensorRT 9.x+ exploits H100 FP8 Tensor Cores and Transformer Engine for LLM inference
 - [[cuDNN]] — cuDNN 8.7+ implements Transformer Engine operations for H100 hardware
 
