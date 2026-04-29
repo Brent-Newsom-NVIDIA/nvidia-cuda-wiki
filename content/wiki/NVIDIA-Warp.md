@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Python, Physics Simulation, Differentiable Programming, Open Source, Robotics
-**Related:** [[cuBLAS]], [[cuSPARSE]], [[cuDNN]], [[CUTLASS]]
+**Related:** [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Omniverse]], [[cuBLAS]], [[cuSPARSE]], [[cuDNN]], [[CUTLASS]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -22,7 +22,7 @@ Physics simulation, robotics, and CAE workloads require GPU-accelerated computat
 - Native geometry primitives: triangle meshes, NanoVDB sparse volumes, hash grids, BVH
 - Sparse linear algebra: BSR and CSR matrix formats with CG and GMRES solvers
 - Finite Element Method (FEM) toolkit for differential equations
-- Integration with PyTorch, JAX, NVIDIA PhysicsNeMo, NVIDIA Omniverse
+- Integration with PyTorch, JAX, NVIDIA PhysicsNeMo, NVIDIA Omniverse, and Isaac Lab/Newton-oriented robotics workflows
 - Open source on GitHub
 
 ### Use Cases
@@ -45,6 +45,9 @@ Physics simulation, robotics, and CAE workloads require GPU-accelerated computat
 - CUDA (generated output from JIT compilation)
 
 ## Connections
+- [[NVIDIA-Isaac-Lab]] - Isaac Lab development docs describe Newton/Warp-oriented backend and renderer paths for robot learning.
+- [[NVIDIA-Isaac-Sim]] - adjacent high-fidelity simulation environment in the Isaac robotics stack.
+- [[NVIDIA-Omniverse]] - Warp integrates with Omniverse simulation and physical AI workflows.
 - [[cuBLAS]] — Warp tile-based programming uses cuBLAS-level GEMM capabilities via Tensor Cores
 - [[cuSPARSE]] — Warp's sparse linear algebra (BSR, CSR) complements cuSPARSE operations
 - [[cuDNN]] — Warp's PyTorch/JAX integration enables cuDNN-powered neural networks to interface with Warp simulations

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DGX Cloud, cloud AI, AI supercomputing, enterprise AI
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Base-Command]], [[NVIDIA-AI-Grid]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Base-Command]], [[NVIDIA-AI-Grid]], [[NVIDIA-NIM]], [[NVIDIA-Isaac-GR00T]]
 **Sources:** https://docs.nvidia.com/dgx-cloud/index.html, https://www.nvidia.com/en-us/data-center/dgx-cloud/
 **Last Updated:** 2026-04-29
 
@@ -29,7 +29,7 @@ DGX Cloud is part of the [[NVIDIA-AI-Grid]] story: workloads can run where infra
 - [[NVIDIA-AI-Enterprise]] - enterprise software stack used across DGX Cloud environments.
 - [[NVIDIA-Base-Command]] - AI development and job management layer historically tied to DGX Cloud.
 - [[NVIDIA-NIM]] - inference microservices can be deployed on NVIDIA cloud or self-hosted GPU infrastructure.
+- [[NVIDIA-Isaac-GR00T]] - humanoid robotics foundation model training can use DGX/DGX Cloud-style AI infrastructure.
 
 ## Source Excerpts
 - NVIDIA documentation and product pages position DGX Cloud as cloud-accessible NVIDIA AI supercomputing infrastructure.
-

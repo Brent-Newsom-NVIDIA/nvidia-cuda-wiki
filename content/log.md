@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 5: Isaac robotics and physical AI documentation expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch5-20260429T054623Z`; local Git tag `codex-backup-overnight-pre-batch5-20260429T054623Z`
+
+**Source URLs:** https://developer.nvidia.com/isaac/, https://docs.isaacsim.omniverse.nvidia.com/latest/index.html, https://isaac-sim.github.io/IsaacLab/develop/index.html, https://isaac-sim.github.io/IsaacLab/develop/source/overview/core-concepts/multi_backend_architecture.html, https://isaac-sim.github.io/IsaacLab/develop/source/overview/core-concepts/renderers.html, https://nvidia-isaac-ros.github.io/, https://nvidia-isaac-ros.github.io/releases/index.html, https://developer.nvidia.com/isaac/gr00t, https://huggingface.co/nvidia/GR00T-N1.6-3B
+
+**Gap analysis summary:**
+
+- Split durable Isaac subtopics out of the umbrella page: Isaac Sim, Isaac Lab, Isaac ROS, and Isaac GR00T each have enough current NVIDIA-authored public material to warrant one canonical wiki page.
+- Kept GR00T workflows and GR00T-N model variants consolidated into `NVIDIA-Isaac-GR00T.md` rather than creating separate pages for each model/build/workflow.
+- Treated build/model catalog style material as supporting evidence for the canonical topic page, consistent with the no-per-build-page rule.
+- Updated adjacent pages so robotics connections are queriable across Omniverse, Warp, Cosmos, Jetson, TensorRT, PyTorch, and DGX Cloud.
+
+**Pages created (4 total):**
+
+- `content/wiki/NVIDIA-Isaac-Sim.md`
+- `content/wiki/NVIDIA-Isaac-Lab.md`
+- `content/wiki/NVIDIA-Isaac-ROS.md`
+- `content/wiki/NVIDIA-Isaac-GR00T.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Isaac.md` - refreshed the umbrella Isaac page and linked the four durable subtopics.
+- `content/wiki/NVIDIA-Omniverse.md` - connected Omniverse to Isaac Sim, Isaac Lab, and GR00T simulation workflows.
+- `content/wiki/NVIDIA-Warp.md` - linked Isaac Lab and Newton/Warp-oriented robot-learning directions.
+- `content/wiki/NVIDIA-Cosmos.md` - connected Cosmos to Isaac Sim, Isaac Lab, and GR00T physical AI workflows.
+- `content/wiki/NVIDIA-Jetson-Platform.md` - connected Jetson deployment to Isaac ROS and GR00T.
+- `content/wiki/TensorRT.md` - linked robotics inference through Isaac ROS and Jetson.
+- `content/wiki/PyTorch.md` - linked robot policy training through Isaac Lab and GR00T.
+- `content/wiki/NVIDIA-DGX-Cloud.md` - linked DGX Cloud infrastructure to humanoid robotics foundation model training.
+- `content/index.md` - updated page count to 221 and indexed all four new Isaac pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 4: Clara healthcare and life sciences documentation expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch4-20260429T054137Z`; local Git tag `codex-backup-overnight-pre-batch4-20260429T054137Z`

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Drive-Platform]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
 **Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html
 **Last Updated:** 2026-04-29
 
@@ -22,7 +22,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - Cosmos Predict: video prediction models for generating future frames from current observations
 - Physical realism: models trained to respect physics, object permanence, and scene continuity
 - Open model weights available under NVIDIA Open Model License
-- Integration with NVIDIA Omniverse for synthetic data pipelines
+- Integration with NVIDIA Omniverse and [[NVIDIA-Isaac-Sim]] for synthetic data and physical AI simulation pipelines
 - High-resolution video generation (up to 1080p)
 
 ### Use Cases
@@ -48,7 +48,10 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 ## Connections
 - [[NVIDIA-Omniverse]] — Cosmos integrates with Omniverse Replicator for synthetic data pipelines
 - [[NVIDIA-Cosmos-Curator-LHA]] — Curator/LHA provides large-scale video analysis and curation workflows adjacent to Cosmos world models
-- [[NVIDIA-Isaac]] — Cosmos-generated data used for Isaac Lab robot policy training
+- [[NVIDIA-Isaac]] — umbrella robotics platform that consumes Cosmos-generated physical AI data
+- [[NVIDIA-Isaac-Sim]] — simulation environment that can combine 3D scenes with Cosmos-driven synthetic data workflows
+- [[NVIDIA-Isaac-Lab]] — robot-learning framework that can train policies using synthetic and simulated data
+- [[NVIDIA-Isaac-GR00T]] — humanoid robotics platform that uses Cosmos and GR00T data-generation workflows
 - [[NVIDIA-Drive-Platform]] — Cosmos used for autonomous vehicle scenario generation and sensor simulation
 - [[NVIDIA-NeMo]] — Cosmos models trained and fine-tuned within NeMo ecosystem
 - [[NVIDIA-NIM]] — Cosmos deployed via NIM microservices for enterprise access

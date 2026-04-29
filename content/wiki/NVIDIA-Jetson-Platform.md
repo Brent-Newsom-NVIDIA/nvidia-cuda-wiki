@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, edge AI, embedded, IoT, robotics, autonomous machines, Jetson, ARM, SoC
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
+**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -53,14 +53,16 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - **CUDA C/C++:** Full CUDA programming support with hardware-matched toolkit in JetPack
 - **Python:** CuPy, PyTorch (NVIDIA-built Jetson wheel), TensorRT Python API, DeepStream Python bindings
 - **TensorRT:** Primary inference optimization tool; generates DLA-compatible engine files for hardware accelerator
-- **ROS 2 / Isaac ROS:** NVIDIA-accelerated ROS 2 hardware-accelerated nodes (cuVS, Visual SLAM, nvblox) via Isaac ROS
+- **ROS 2 / Isaac ROS:** NVIDIA-accelerated ROS 2 hardware-accelerated nodes (cuVS, Visual SLAM, nvblox) via [[NVIDIA-Isaac-ROS]]
 - **Triton:** Triton Inference Server runs on Jetson for local multi-model serving
 - **GStreamer:** DeepStream pipelines run natively on Jetson with NVDEC/NVENC hardware acceleration
 
 ## Connections
 - [[NVIDIA-DeepStream]] — DeepStream runs natively on Jetson for multi-stream intelligent video analytics at the edge
 - [[NVIDIA-Metropolis]] — Metropolis edge deployments run on Jetson modules in smart city and retail use cases
-- [[NVIDIA-Isaac]] — Isaac ROS and Isaac Sim target Jetson as the primary robot compute platform
+- [[NVIDIA-Isaac]] — Isaac robotics workflows target Jetson as a primary robot compute platform
+- [[NVIDIA-Isaac-ROS]] — CUDA-accelerated ROS 2 package family for Jetson robot deployment
+- [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows reference Jetson AGX Thor for robot-side deployment
 - [[cuDLA]] — cuDLA provides the programming interface to Jetson's on-chip Deep Learning Accelerator hardware
 - [[NVIDIA-Drive-Platform]] — DRIVE Orin SoC shares architecture with Jetson Orin; automotive-grade variant
 - [[TensorRT]] — TensorRT is the primary inference optimization path on Jetson, including DLA target compilation

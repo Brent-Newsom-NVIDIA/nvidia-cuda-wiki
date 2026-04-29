@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[cuDNN]]
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -33,6 +33,7 @@ Moving deep learning models from training to production requires inference-time 
 - Large language model (LLM) inference in data center
 - Computer vision model deployment (object detection, segmentation, classification)
 - Edge and embedded AI (Jetson, IGX)
+- Robotics perception and manipulation inference through [[NVIDIA-Isaac-ROS]] and [[NVIDIA-Jetson-Platform]]
 - Automotive safety-critical systems (NVIDIA DRIVE AGX)
 - Conversational AI and speech recognition
 - Recommendation systems
@@ -56,6 +57,8 @@ Moving deep learning models from training to production requires inference-time 
 - [[CUTLASS]] — TensorRT uses CUTLASS-derived kernels for optimized GEMM
 - [[NCCL]] — multi-GPU TensorRT inference uses NCCL for tensor parallelism communication
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
+- [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.
+- [[NVIDIA-Jetson-Platform]] - common deployment target for TensorRT inference in embedded robotics.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/tensorrt)
