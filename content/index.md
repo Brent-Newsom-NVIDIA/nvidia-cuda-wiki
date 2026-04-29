@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 435*
+*Total pages: 436*
 
 ---
 
@@ -323,6 +323,7 @@
 ### AI Application Platforms
 - [[NVIDIA-AI-Aerial]] — Accelerated AI-RAN platform for 5G/6G wireless network development and simulation
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
+- [[BioNeMo-Recipes]] — NVIDIA reference implementations for scaling biological foundation model training with TransformerEngine and PyTorch
 - [[NIM-for-AlphaFold2]] — BioNeMo NIM for single-chain AlphaFold2 protein structure prediction and MSA workflows
 - [[NIM-for-AlphaFold2-Multimer]] — BioNeMo NIM for AlphaFold2 multimer protein-complex structure prediction
 - [[NIM-for-OpenFold2]] — BioNeMo NIM for OpenFold2 monomer protein structure prediction with optional MSAs/templates

@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 60: BioNeMo Recipes training layer
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch60-20260429T105936Z`; local Git tag `codex-backup-overnight-pre-batch60-20260429T105936Z`
+
+**Source URLs:** https://docs.nvidia.com/bionemo-framework/latest/index.html, https://docs.nvidia.com/bionemo-framework/latest/models/index.html, https://docs.nvidia.com/bionemo-framework/latest/models/amplify/, https://docs.nvidia.com/bionemo-framework/latest/models/ESM-2/, https://docs.nvidia.com/bionemo-framework/latest/models/ESM-2/pre-training/, https://docs.nvidia.com/bionemo-framework/latest/models/evo2/, https://docs.nvidia.com/bionemo-framework/latest/models/geneformer/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/recipes/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/amplify/amplify/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/esm2/esm2/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/geneformer/geneformer/
+
+**Gap analysis summary:**
+
+- Added one canonical page for BioNeMo Recipes after finding current NVIDIA docs that distinguish BioNeMo's platform/framework layer from its public reference implementations for biological foundation model training.
+- Kept AMPLIFY, ESM-2, Geneformer, CodonFM recipe variants, model conversion notes, notebook/tutorial material, and individual recipe folders folded into the single recipe page because they are subtopics of the current BioNeMo recipe tree and several originate from third-party model communities.
+- Did not use build.nvidia cards for this batch; existing durable BioNeMo NIM topics remain on their existing NIM pages.
+- Updated the surrounding platform graph so BioNeMo queries can move between framework, recipes, PyTorch/Accelerate/Megatron-style training, Clara, AI Enterprise, NGC, and BioNeMo NIM inference pages.
+
+**Pages created (1 total):**
+
+- `content/wiki/BioNeMo-Recipes.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-BioNeMo.md` - refreshed current Framework/Recipes/NIM positioning and model scope.
+- `content/wiki/PyTorch.md`, `content/wiki/Hugging-Face-Accelerate.md`, and `content/wiki/Megatron-LM.md` - connected relevant training stack components to BioNeMo Recipes.
+- `content/wiki/NGC.md`, `content/wiki/NVIDIA-Clara.md`, and `content/wiki/NVIDIA-AI-Enterprise.md` - connected platform/distribution/enterprise context to the new recipe page.
+- `content/index.md` - updated total page count to 436 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 59: Nemotron training recipe stack
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch59-20260429T105032Z`; local Git tag `codex-backup-overnight-pre-batch59-20260429T105032Z`

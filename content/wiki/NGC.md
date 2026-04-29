@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -31,6 +31,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - Rapidly bootstrapping deep learning training and inference environments without manual CUDA/cuDNN installation
 - Deploying production inference servers with verified, optimized Triton Inference Server containers
 - Accessing pre-trained foundation models (LLMs, vision-language models, protein structure models) for fine-tuning or deployment
+- Pulling BioNeMo-related containers, model artifacts, and NIM assets for life-sciences model training and inference workflows
 - Enterprise software distribution — NVIDIA AI Enterprise software delivered and licensed via NGC
 - Reproducible research and MLOps pipelines using pinned NGC container versions
 - Running GPU workloads on DGX, cloud GPU instances (A100, H100, H200, Blackwell B100/B200), or NVIDIA-certified servers
@@ -59,6 +60,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[NVIDIA-TAO]] — TAO containers, pretrained CV models, and model artifacts are distributed through NGC.
 - [[Nemotron]] — NVIDIA model family whose downloadable and API-facing artifacts appear through NVIDIA model catalogs
 - [[NeMo-Platform]] — NeMo microservices rely on NGC credentials and NVIDIA-hosted artifacts
+- [[NVIDIA-BioNeMo]] and [[BioNeMo-Recipes]] — BioNeMo models, containers, recipes, and NIM assets sit in the same NGC-centered distribution pattern.
 - [[NVIDIA-Dynamo]] — inference-serving stack that fits the NGC/NIM deployment ecosystem
 - [[Triton-Inference-Server]] — Official Triton containers updated monthly on NGC; primary distribution channel
 - [[NVIDIA-NeMo]] — NeMo framework containers and checkpoint models (GPT, BERT, Llama variants) hosted on NGC

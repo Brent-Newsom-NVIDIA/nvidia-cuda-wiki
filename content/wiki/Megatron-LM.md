@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Distributed Training, Transformer, Research, Pre-training
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
-**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[BioNeMo-Recipes]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
+**Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,6 +30,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 - Interleaved pipeline schedule for reduced pipeline bubble overhead
 - Checkpoint conversion utilities for downstream fine-tuning
 - Current NeMo ecosystem bridge through [[NeMo-Megatron-Bridge]] for Hugging Face/Megatron conversion, verification, recipes, and downstream export.
+- BioNeMo recipe adjacency through [[BioNeMo-Recipes]], which documents megatron-FSDP style scaling for biological foundation model training examples.
 
 ### Use Cases
 - Pre-training GPT/Llama/Nemotron-style decoder LLMs at scale
@@ -58,6 +59,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 - [[NeMo-AutoModel]] - Hugging Face-compatible training path that complements Megatron-scale workflows.
 - [[NeMo-RL]] - post-training library that can use Megatron-style backends for larger models.
 - [[NeMo-Export-Deploy]] - downstream export/deploy path for Megatron Bridge and Megatron-family checkpoints.
+- [[BioNeMo-Recipes]] - biological foundation model recipe layer that uses megatron-FSDP and TransformerEngine patterns for scaling PyTorch training.
 - [[NCCL]] — all cross-GPU collective communications (all-reduce, reduce-scatter, all-gather) use NCCL
 - [[PyTorch]] — Megatron-LM is built on top of PyTorch
 - [[CUTLASS]] — custom GEMM kernels optionally used for optimized matrix multiplications
