@@ -2,6 +2,27 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 67: NeMo Guardrails current docs refresh
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch67-20260429T113046Z`; local Git tag `codex-backup-overnight-pre-batch67-20260429T113046Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/guardrails/latest/index.html, https://docs.nvidia.com/nemo/guardrails/latest/about/overview.html, https://docs.nvidia.com/nemo/guardrails/latest/about/supported-llms.html, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/guardrail-catalog/index.html, https://docs.nvidia.com/nemo/guardrails/latest/integration/langchain/agent-middleware.html, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/caching/kv-cache-reuse.html, https://docs.nvidia.com/nemo/guardrails/latest/user-guides/tracing/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
+
+**Gap analysis summary:**
+
+- Refreshed the existing NeMo Guardrails page from current NVIDIA library and NeMo Platform docs instead of creating separate pages for the guardrail catalog, LangGraph/AgentMiddleware integration, tracing, API server, Colang, or KV cache reuse.
+- Added current coverage for library-versus-microservice deployment, portable YAML/Colang configuration, catalog rails, agentic security, provider support, observability, and NemoGuard NIM deployment/performance notes.
+- Connected Guardrails more explicitly to NeMo Platform, NemoGuard NIMs, NeMo Auditor/Evaluator, Agent Intelligence Toolkit, Nemotron, NIM for LLMs, and AI Blueprint safety contexts.
+
+**Pages created:** None.
+
+**Pages updated:**
+
+- `content/wiki/NeMo-Guardrails.md` - refreshed around current NeMo Guardrails Library and microservice docs.
+- `content/index.md` - updated the NeMo Guardrails index description.
+
+---
+
 ## 2026-04-29 - Overnight batch 66: NeMo Gym
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch66-20260429T112617Z`; local Git tag `codex-backup-overnight-pre-batch66-20260429T112617Z`

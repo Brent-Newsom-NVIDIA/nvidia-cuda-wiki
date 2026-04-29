@@ -605,7 +605,7 @@
 - [[NVIDIA-Warp-Advanced]] — Warp advanced features: FEM, NanoVDB volumes, differentiable rendering, Isaac Lab integration
 
 ### LLM Safety & Optimization
-- [[NeMo-Guardrails]] — Programmable LLM safety toolkit; Colang DSL; input/output/dialog/retrieval rails
+- [[NeMo-Guardrails]] — Programmable LLM and agent safety library/microservice with Colang, catalog rails, NemoGuard NIM integration, and LangChain/LangGraph hooks
 - [[NVIDIA-NemoGuard-NIMs]] — Guardrail NIM family for content safety, topic control, and jailbreak detection
 - [[Nemotron-Content-Safety-Reasoning-4B-Experimental-NIM]] — Day 0 NIM LLM safety classifier for content-safety reasoning and dialogue moderation
 - [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] — Multilingual content-safety NIM for user and bot message moderation
