@@ -2,7 +2,7 @@
 
 **Type:** Framework
 **Tags:** NVIDIA, DOCA, BlueField, ConnectX, SuperNIC, DPU, networking, storage, security, SDK, DOCA-Host, DOCA-OFED
-**Related:** [[NVIDIA-DOCA-OFED]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-MLNX-EN]]
+**Related:** [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-DPA]], [[DOCA-PCC]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-MLNX-EN]]
 **Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started; https://docs.nvidia.com/doca/sdk/mlnx_ofed-to-doca-ofed-transition-guide/index.html; https://docs.nvidia.com/doca/sdk/general-support/index.html; https://www.nvidia.com/en-us/data-center/ai-storage/cmx/
 **Last Updated:** 2026-04-29
 
@@ -16,7 +16,7 @@ DOCA consists of both an SDK and runtime environment. The BlueField software bun
 
 The current transition guide makes DOCA-Host the packaging surface for Linux host drivers. [[NVIDIA-DOCA-OFED]] is the `doca-ofed` profile for users who want MLNX_OFED-equivalent drivers and tools, while legacy [[NVIDIA-MLNX-OFED]] and [[NVIDIA-MLNX-EN]] remain relevant as standalone LTS lines and search terms.
 
-The SDK spans several infrastructure domains: RDMA and UCX/UCC communications, GPUDirect integration, ASAP2 switching, emulated VirtIO, P4, DPA access to NIC engines, inline crypto, App Shield runtime security, storage emulation and virtualization, compression, management, deployment, and provisioning. Public docs also list DOCA programming guides, reference applications, tools, services, API references, and driver documentation.
+The SDK spans several infrastructure domains: RDMA and UCX/UCC communications, GPUDirect integration, ASAP2 switching, emulated VirtIO, P4, DPA access to NIC engines, inline crypto, App Shield runtime security, storage emulation and virtualization, compression, management, deployment, and provisioning. Current first-class programming library pages now include [[DOCA-GPUNetIO]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-DPA]], and [[DOCA-PCC]].
 
 DOCA is especially important because it consolidates infrastructure offload into a single NVIDIA programming and operations surface. Instead of treating DPU firmware, host drivers, RDMA, storage virtualization, packet processing, crypto, telemetry, and Kubernetes networking as unrelated layers, DOCA provides the shared architecture underneath BlueField and ConnectX software features.
 Current [[NVIDIA-CMX]] material extends that story into context memory: DOCA Memos is described as the BlueField/CMX SDK surface for sharing KV cache across AI compute and data nodes.
@@ -25,6 +25,11 @@ Current [[NVIDIA-CMX]] material extends that story into context memory: DOCA Mem
 - [[NVIDIA-BlueField-DPU]] - DOCA is the primary software framework for programming BlueField DPUs and SuperNICs.
 - [[NVIDIA-BlueField-4]] - current STX/CMX direction uses BlueField-4 and DOCA-related software layers.
 - [[NVIDIA-DOCA-OFED]] - current DOCA-Host profile for Linux host networking drivers and tools.
+- [[DOCA-GPUNetIO]] - GPU-centric packet processing and GPU-initiated networking library.
+- [[DOCA-Flow]] - hardware-accelerated packet-processing pipe and flow steering library.
+- [[DOCA-RDMA]] - DOCA library for asynchronous RDMA operations over InfiniBand/RoCE.
+- [[DOCA-DPA]] - programming interface for BlueField Data Path Accelerator offload.
+- [[DOCA-PCC]] - programmable congestion-control API for Ethernet/RoCE fabrics.
 - [[NVIDIA-ConnectX-InfiniBand]] - DOCA-Host and DOCA-OFED provide host-side support for current ConnectX adapters.
 - [[NVIDIA-ConnectX-9]] - next-generation SuperNIC that fits the same NVIDIA networking software ecosystem.
 - [[NVIDIA-Network-Operator]] - Network Operator deploys and manages DOCA-OFED driver containers and related networking components in Kubernetes.

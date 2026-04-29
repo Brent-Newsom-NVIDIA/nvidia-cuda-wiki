@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Collective Communications, Distributed Training, Multi-GPU, HPC, RDMA
-**Related:** [[cuDNN]], [[TensorRT]], [[NVSHMEM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[GPUDirect-RDMA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Quantum-InfiniBand]], [[cuBLAS]], [[Thrust]]
+**Related:** [[cuDNN]], [[TensorRT]], [[NVSHMEM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NVIDIA-MLNX-OFED]], [[GPUDirect-RDMA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Quantum-InfiniBand]], [[cuBLAS]], [[Thrust]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -51,6 +51,8 @@ Distributed deep learning requires frequent synchronization of model gradients a
 - [[NVSHMEM]] — NVSHMEM is NCCL's complement: NCCL for collective ops, NVSHMEM for fine-grained PGAS communication
 - [[NVIDIA-HPC-X]] — HPC-X includes NCCL-RDMA-SHARP and Spectrum-X NCCL plugin material for NVIDIA fabrics
 - [[NVIDIA-DOCA-OFED]] — current Linux host networking stack for NCCL over InfiniBand or RoCE.
+- [[DOCA-GPUNetIO]] — current DOCA docs mention NCCL GIN transport enabled through GPUNetIO GPU communications.
+- [[DOCA-RDMA]] — DOCA RDMA is part of the adjacent NVIDIA RDMA application programming surface.
 - [[NVIDIA-MLNX-OFED]] — legacy standalone Linux OFED stack for older NCCL/RDMA deployments.
 - [[GPUDirect-RDMA]] — direct GPU-to-NIC data path used by NCCL for inter-node collectives.
 - [[NVIDIA-Spectrum-X]] — Spectrum-X is NVIDIA's Ethernet AI networking path for NCCL over RoCE environments

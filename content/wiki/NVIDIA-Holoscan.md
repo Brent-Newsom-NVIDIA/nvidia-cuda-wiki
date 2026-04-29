@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Medical Imaging, Edge AI, Real-time, Sensor Processing, Healthcare
-**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Rivermax]], [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
+**Related:** [[NVIDIA-Clara]], [[NVIDIA-Clara-Viz]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Rivermax]], [[DOCA-GPUNetIO]], [[GPUDirect-RDMA]], [[NVIDIA-DALI]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[CV-CUDA]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/holoscan-sdk, https://docs.nvidia.com/holoscan/index.html, https://docs.nvidia.com/holoscan/sdk-user-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -20,6 +20,7 @@ Current NVIDIA docs list Holoscan SDK v4.1.0 as the current Holoscan version and
 - GXF (Graph Execution Framework): directed acyclic graph (DAG) model for composable sensor processing pipelines
 - Native support for high-speed medical imaging interfaces: AJA Video capture, Emergent Vision, HDMI/SDI
 - GPU Direct integration for zero-copy data paths from capture cards and network interfaces to GPU
+- Current DOCA GPUNetIO docs list the Holoscan Advanced Network Operator as a GPUNetIO user for real-time edge AI data processing.
 - Built-in operators for video decoding, image processing, and AI inference
 - TensorRT and ONNX Runtime inference operator for low-latency model execution
 - Python and C++ operator APIs for custom algorithm development
@@ -56,6 +57,8 @@ Current NVIDIA docs list Holoscan SDK v4.1.0 as the current Holoscan version and
 - [[NVIDIA-Clara-Viz]] — visualization component adjacent to medical imaging applications built with Holoscan.
 - [[NVIDIA-MONAI-Toolkit]] — medical imaging models can feed Holoscan real-time applications.
 - [[NVIDIA-Rivermax]] — Rivermax provides accelerated media/data streaming paths for ST 2110 and high-throughput sensor ingest.
+- [[DOCA-GPUNetIO]] — GPU-centric packet processing and network ingest path listed in current NVIDIA docs for Holoscan-adjacent workloads.
+- [[GPUDirect-RDMA]] — direct NIC-to-GPU memory movement for real-time sensor/network ingest.
 - [[TensorRT]] — Holoscan's inference operator uses TensorRT for optimized model execution
 - [[CV-CUDA]] — GPU image processing operators used within Holoscan preprocessing pipelines
 - [[NVIDIA-DALI]] — DALI can be used as a data augmentation backend within Holoscan pipelines

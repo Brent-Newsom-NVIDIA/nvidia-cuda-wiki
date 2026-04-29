@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, MFT, firmware, networking, ConnectX, BlueField, Spectrum, mlxconfig, flint, mlxfwmanager, mlxlink
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-WinOF-2]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-PCC]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-WinOF-2]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]]
 **Sources:** https://docs.nvidia.com/networking/software/firmware-management/index.html; https://docs.nvidia.com/networking/display/mftv4350; https://docs.nvidia.com/networking/display/mftv4350/general-information; https://docs.nvidia.com/networking/display/mftv4350/changes-and-new-features
 **Last Updated:** 2026-04-29
 
@@ -21,6 +21,7 @@ For AI factory operations, MFT matters because firmware, link state, port type, 
 ## Connections
 - [[NVIDIA-DOCA]] - DOCA and DOCA-Host are the current umbrella software layers around NVIDIA networking drivers and tools.
 - [[NVIDIA-DOCA-OFED]] - current Linux host profile used with newer NVIDIA networking deployments.
+- [[DOCA-PCC]] - PCC enablement uses MFT-style `mlxconfig` settings.
 - [[NVIDIA-MLNX-OFED]] - legacy standalone LTS host stack that MFT can work alongside.
 - [[NVIDIA-WinOF-2]] - Windows driver package that uses MFT/WinMFT utilities for device and port configuration.
 - [[NVIDIA-ConnectX-InfiniBand]] - ConnectX adapters are primary MFT targets for firmware and device configuration.
@@ -32,4 +33,3 @@ For AI factory operations, MFT matters because firmware, link state, port type, 
 ## Source Excerpts
 - "The MFT tools do not provide cluster wide functionality."
 - "MFT v4.35.0 introduces support for the NVIDIA ConnectX-9 SuperNIC."
-

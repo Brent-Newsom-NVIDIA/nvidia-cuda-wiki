@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Inference, Data Transfer, Networking, LLM, KV Cache, CUDA-X
-**Related:** [[TensorRT-LLM]], [[Triton-Inference-Server]], [[GPU-Direct-Storage]], [[NCCL]], [[NVSHMEM]]
+**Related:** [[TensorRT-LLM]], [[Triton-Inference-Server]], [[GPU-Direct-Storage]], [[GPUDirect-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NCCL]], [[NVSHMEM]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/nixl
 **Last Updated:** 2026-04-09
 
@@ -19,6 +19,7 @@ NIXL addresses the data movement bottleneck in modern LLM serving, where prefill
 - GPU Direct RDMA: NIC-to-GPU transfers bypassing CPU for minimum latency
 - KV cache-optimized transfer patterns for disaggregated LLM inference
 - GPU-initiated transfers: allows GPU kernels to trigger data movement without CPU involvement
+- Current DOCA GPUNetIO docs list NIXL as a GPUNetIO-using application for inference transfer paths.
 - Memory registration and buffer management for pooled transfer efficiency
 - Asynchronous, stream-ordered operations for overlapping compute and communication
 - Integration with TensorRT-LLM for KV cache disaggregation
@@ -48,6 +49,9 @@ NIXL addresses the data movement bottleneck in modern LLM serving, where prefill
 - [[TensorRT-LLM]] — NIXL is the primary data transfer layer for TRT-LLM disaggregated inference
 - [[Triton-Inference-Server]] — Triton LLM serving uses NIXL for KV cache transfers in disaggregated deployments
 - [[GPU-Direct-Storage]] — NIXL leverages GDS for NVMe-to-GPU KV cache offload
+- [[GPUDirect-RDMA]] — NIXL uses GPU-aware network transfer paths for inter-node inference data movement.
+- [[DOCA-GPUNetIO]] — NVIDIA's GPUNetIO docs list NIXL as an application using GPU networking functions.
+- [[DOCA-RDMA]] — RDMA application primitives are adjacent to NIXL's UCX/RDMA backend story.
 - [[NCCL]] — NIXL complements NCCL; while NCCL handles collective training comms, NIXL handles point-to-point inference data movement
 - [[NVSHMEM]] — NVSHMEM handles symmetric memory for HPC; NIXL targets inference-specific transfer patterns
 

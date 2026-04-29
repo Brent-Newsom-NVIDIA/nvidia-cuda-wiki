@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RDMA, networking, InfiniBand, GPU, peer-to-peer, MPI, HPC, inter-node, zero-copy
-**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
+**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/)
 **Last Updated:** 2026-04-29
 
@@ -53,6 +53,8 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU offloads RDMA network processing; BlueField-3 supports GPUDirect RDMA with DPU-accelerated NCCL flows
 - [[NVIDIA-DOCA]] — DOCA RDMA, DOCA-OFED, and GPUDirect support are part of the current NVIDIA networking software stack.
 - [[NVIDIA-DOCA-OFED]] — current Linux host-driver stack for GPU-aware RDMA paths.
+- [[DOCA-GPUNetIO]] — DOCA library that makes GPU packet processing and GPU-controlled networking explicit.
+- [[DOCA-RDMA]] — DOCA API for building RDMA applications on NVIDIA networking devices.
 - [[NVIDIA-MLNX-OFED]] — legacy standalone Linux OFED stack still found in older GPUDirect RDMA setups.
 - [[NVIDIA-Network-Operator]] — deploys the Kubernetes networking components required for GPUDirect RDMA workloads.
 - [[NVIDIA-HPC-X]] — provides MPI/SHMEM/UCX/UCC communication libraries that use GPU-aware RDMA paths.

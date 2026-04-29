@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 21: DOCA programming library coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch21-20260429T071900Z`; local Git tag `codex-backup-overnight-pre-batch21-20260429T071900Z`
+
+**Source URLs:** https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/doca/sdk/doca-gpunetio/index.html, https://docs.nvidia.com/doca/sdk/doca-flow/index.html, https://docs.nvidia.com/doca/sdk/doca-rdma/index.html, https://docs.nvidia.com/doca/sdk/doca-dpa/index.html, https://docs.nvidia.com/doca/sdk/doca-pcc/index.html, https://docs.nvidia.com/doca/sdk/doca-pcc-application-guide/index.html, https://docs.nvidia.com/doca/sdk/changes-and-new-features/index.html
+
+**Gap analysis summary:**
+
+- Added first-class pages for the major current DOCA programming libraries that were previously only summarized inside `NVIDIA-DOCA`.
+- Kept each library on its own wiki page because each has a distinct current docs page and distinct query intent.
+- Added GPUNetIO as the CUDA/GPU networking bridge for GPUDirect RDMA, GPU-initiated networking, NIXL, NCCL, Aerial, Holoscan, and NVQLink.
+- Added Flow, RDMA, DPA, and PCC as separate packet-processing, memory-access, BlueField execution, and congestion-control concepts.
+- Did not create pages for individual demos, samples, or build.nvidia projects referenced by these docs.
+
+**Pages created (5 total):**
+
+- `content/wiki/DOCA-GPUNetIO.md`
+- `content/wiki/DOCA-Flow.md`
+- `content/wiki/DOCA-RDMA.md`
+- `content/wiki/DOCA-DPA.md`
+- `content/wiki/DOCA-PCC.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-DOCA.md` - promoted the DOCA programming libraries into the DOCA platform graph.
+- `content/wiki/NVIDIA-BlueField-DPU.md` - connected BlueField to DPA, Flow, RDMA, GPUNetIO, and PCC.
+- `content/wiki/GPUDirect-RDMA.md` and `content/wiki/NCCL.md` - linked GPUNetIO and DOCA RDMA where GPU/network data paths intersect.
+- `content/wiki/NIXL.md`, `content/wiki/NVIDIA-AI-Aerial.md`, `content/wiki/NVIDIA-Holoscan.md`, and `content/wiki/NVIDIA-NVQLink.md` - connected applications listed by NVIDIA's GPUNetIO docs.
+- `content/wiki/NVIDIA-Spectrum-X.md` and `content/wiki/NVIDIA-Firmware-Tools.md` - added PCC/Flow/firmware connections for Ethernet AI networking.
+- `content/index.md` - updated page count to 309 and indexed the DOCA library pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 20: NVIDIA networking host drivers and firmware tools
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch20-20260429T071137Z`; local Git tag `codex-backup-overnight-pre-batch20-20260429T071137Z`

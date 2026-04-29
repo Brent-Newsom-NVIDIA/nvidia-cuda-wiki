@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 304*
+*Total pages: 309*
 
 ---
 
@@ -366,6 +366,11 @@
 ## Networking
 
 - [[NVIDIA-DOCA]] — software framework for BlueField, SuperNIC, and ConnectX infrastructure offload, DOCA-Host, and DOCA-OFED
+- [[DOCA-GPUNetIO]] — GPU-centric network packet processing with GPUDirect RDMA and GPU-initiated networking
+- [[DOCA-Flow]] — hardware-accelerated packet-processing pipes, flow steering, actions, monitoring, and forwarding
+- [[DOCA-RDMA]] — DOCA API for asynchronous RDMA operations over InfiniBand or RoCE
+- [[DOCA-DPA]] — BlueField Data Path Accelerator programming model for communication-centric offloads
+- [[DOCA-PCC]] — programmable congestion-control API for BlueField/Ethernet/RoCE networking
 - [[NVIDIA-DOCA-OFED]] — current DOCA-Host Linux driver profile replacing standalone MLNX_OFED for NVIDIA networking
 - [[NVIDIA-MLNX-OFED]] — legacy standalone Linux VPI/RDMA stack for InfiniBand, Ethernet, and RoCE, now on 2024 LTS
 - [[NVIDIA-MLNX-EN]] — legacy standalone Linux Ethernet/RoCE driver package transitioning into DOCA-Host profiles

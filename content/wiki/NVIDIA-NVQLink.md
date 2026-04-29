@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, NVQLink, quantum computing, QPU, GPU-QPU, realtime, CUDA-Q, QEC, RDMA
-**Related:** [[NVIDIA-Quantum]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Holoscan]]
+**Related:** [[NVIDIA-Quantum]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[DOCA-GPUNetIO]], [[NVIDIA-Holoscan]]
 **Sources:** https://www.nvidia.com/en-us/solutions/quantum-computing/nvqlink/, https://developer.nvidia.com/blog/nvidia-nvqlink-architecture-integrates-accelerated-computing-with-quantum-processors/, https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing
 **Last Updated:** 2026-04-29
 
@@ -20,6 +20,7 @@ Large-scale quantum systems need fast classical processing during operation, esp
 - NVIDIA's current product page highlights up to 400 Gb/s GPU-QPU throughput and sub-4-microsecond FPGA-to-GPU-to-FPGA latency in the reference architecture.
 - Defines a realtime host, a quantum system controller, and a realtime interconnect.
 - Uses NVIDIA networking components such as ConnectX or BlueField in the realtime host path.
+- Current DOCA GPUNetIO docs list NVQLink as a GPU RoCE transceiver / Holoscan sensor bridge operator use case.
 
 ### Workloads
 - QPU calibration and control.
@@ -38,6 +39,7 @@ NVQLink should be treated as the current canonical page for GPU-QPU coupling. Th
 - [[NVIDIA-DGX-Quantum]] - earlier DGX Quantum identity has been superseded/redirected toward NVQLink.
 - [[NVIDIA-Accelerated-Quantum-Center]] - NVAQC uses GPU-QPU integration patterns in accelerated quantum research.
 - [[NVIDIA-ConnectX-InfiniBand]] and [[NVIDIA-BlueField-DPU]] - NVIDIA networking components fit the realtime host path.
+- [[DOCA-GPUNetIO]] - GPU network I/O layer listed by NVIDIA in connection with NVQLink-related operator work.
 
 ## Source Excerpts
 - NVIDIA's NVQLink page describes an open platform architecture for integrating QPUs with accelerated computing using realtime CUDA-Q APIs, with calibration and QEC as core control workloads.
