@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video conferencing, audio AI, video AI, real-time, cloud, SDKs, AR, noise cancellation
-**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Riva]], [[NVIDIA-Capture-SDK]], [[NVIDIA-CloudXR]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/maxine/ar/latest/index.html, https://docs.nvidia.com/maxine/vfx/latest/index.html, https://docs.nvidia.com/maxine/triton/latest/index.html)
+**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-Capture-SDK]], [[NVIDIA-CloudXR]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/maxine/ar/latest/index.html, https://docs.nvidia.com/maxine/vfx/latest/index.html, https://docs.nvidia.com/maxine/triton/latest/index.html, https://docs.nvidia.com/nim/maxine/bnr/latest/overview.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -18,6 +18,7 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
 - **Current docs surface:** NVIDIA docs now expose Maxine-style functionality under [[NVIDIA-AI-for-Media-SDKs]], with separate pages for [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]], and [[NVIDIA-Triton-AR-VFX-SDKs]].
 - **Audio Effects:**
   - **Noise Cancellation (RTX Voice):** Deep learning-based noise removal (background noise, keyboard clicks, HVAC) even in challenging acoustic environments
+  - **Background Noise Removal NIM:** [[NVIDIA-Background-Noise-Removal-NIM]] provides a deployable NIM for streaming and transactional audio cleanup
   - **Acoustic Echo Cancellation (AEC):** Remove speaker echo from microphone input for full-duplex audio
   - **Dereverb:** Remove room reverb for cleaner audio in untreated spaces
   - **Super Resolution (Audio):** Bandwidth extension — enhance narrow-band (8 kHz) audio to full-band (48 kHz) quality
@@ -58,8 +59,10 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
 
 ## Connections
 - [[NVIDIA-Riva]] — Maxine audio effects (noise cancellation) complement Riva ASR; together they form a complete voice + speech pipeline
+- [[NVIDIA-Speech-NIM-Microservices]] - current ASR/TTS/NMT NIM collection that can consume enhanced audio.
 - [[NVIDIA-AI-for-Media-SDKs]] — current docs hub for AI media SDKs.
 - [[NVIDIA-Audio-Effects-SDK]] — AFX audio effects SDK for echo cancellation, denoising, dereverb, speaker focus, studio voice, and voice font.
+- [[NVIDIA-Background-Noise-Removal-NIM]] - deployable Maxine-adjacent audio NIM for noise removal, speech intelligibility, and ASR preprocessing.
 - [[NVIDIA-Augmented-Reality-SDK]] — AR SDK for face/body tracking, eye contact, lip sync, and active speaker detection.
 - [[NVIDIA-Video-Effects-SDK]] — VFX SDK for green screen, blur, denoise, relighting, upscaling, and video super resolution.
 - [[NVIDIA-Triton-AR-VFX-SDKs]] — server-side Triton deployment path for AR/VFX features.

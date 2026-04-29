@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 332*
+*Total pages: 337*
 
 ---
 
@@ -165,6 +165,11 @@
 - [[NVIDIA-NeMo]] — Modular suite for AI agent lifecycle management, training, microservices, retrieval, and deployment
 - [[NeMo-Platform]] — NeMo microservices platform for synthetic data, customization, evaluation, guardrails, and inference
 - [[NeMo-Retriever]] — Multimodal extraction, embedding, indexing, retrieval, and reranking microservices for RAG
+- [[NVIDIA-Speech-NIM-Microservices]] — Current Speech NIM docs collection for ASR, TTS, and NMT microservices
+- [[NVIDIA-ASR-NIM]] — Speech-to-text NIM for Parakeet, Canary, Whisper, Conformer, and Nemotron ASR models
+- [[NVIDIA-TTS-NIM]] — Text-to-speech NIM for Magpie models, voices, emotional styles, and voice cloning
+- [[NVIDIA-NMT-NIM]] — Neural machine translation NIM for Riva Translate 1.6B and 36-language translation workflows
+- [[NVIDIA-Background-Noise-Removal-NIM]] — Maxine audio NIM for streaming and transactional background noise removal
 - [[NVIDIA-Agent-Intelligence-Toolkit]] — Framework-agnostic toolkit for agent workflows, profiling, evaluation, MCP, and A2A
 - [[Megatron-LM]] — open-source framework for 3D-parallel LLM pre-training at trillion-parameter scale
 - [[TensorRT-LLM]] — LLM inference optimization: continuous batching, paged KV cache, FP8, TP/PP

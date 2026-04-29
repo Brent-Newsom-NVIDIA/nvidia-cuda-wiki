@@ -2,8 +2,8 @@
 
 **Type:** SDK
 **Tags:** NVIDIA, AFX, audio effects, denoise, dereverb, echo cancellation, studio voice, voice font, Maxine
-**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Maxine]], [[NVIDIA-Riva]], [[NVIDIA-Video-Effects-SDK]], [[Triton-Inference-Server]], [[NVIDIA-RTX]]
-**Sources:** https://docs.nvidia.com/maxine/afx/latest/index.html
+**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Maxine]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-Riva]], [[NVIDIA-ASR-NIM]], [[NVIDIA-Video-Effects-SDK]], [[Triton-Inference-Server]], [[NVIDIA-RTX]]
+**Sources:** https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/maxine/bnr/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -27,10 +27,14 @@ Live audio often contains noise, room echo, low-bandwidth speech, and competing 
 ### Deployment notes
 NVIDIA's docs distinguish Windows SDK use for client-side integration and Linux SDK use for server-side, data center, or cloud deployments. The SDK includes sample applications, container guidance, effect parameter APIs, and multi-GPU support.
 
+[[NVIDIA-Background-Noise-Removal-NIM]] is the deployable NIM counterpart for background noise removal, with streaming and transactional modes for applications that want an API-backed audio cleanup service.
+
 ## Connections
 - [[NVIDIA-AI-for-Media-SDKs]] - docs umbrella for current media SDKs.
 - [[NVIDIA-Maxine]] - product/platform context for media AI effects.
+- [[NVIDIA-Background-Noise-Removal-NIM]] - NIM microservice for background noise removal and ASR preprocessing.
 - [[NVIDIA-Riva]] - speech AI pipelines can benefit from audio cleanup before ASR/TTS workflows.
+- [[NVIDIA-ASR-NIM]] - downstream speech recognition service that can benefit from cleaner audio.
 - [[NVIDIA-Video-Effects-SDK]] - companion video effects SDK.
 - [[Triton-Inference-Server]] - server-side deployment model adjacent to AI media SDK serving.
 - [[NVIDIA-RTX]] - RTX and data center GPUs provide acceleration targets.

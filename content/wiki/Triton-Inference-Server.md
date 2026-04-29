@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Inference, Serving, MLOps, Production, Framework
-**Related:** [[TensorRT]], [[TensorRT-LLM]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/triton-inference-server, https://docs.nvidia.com/maxine/triton/latest/index.html, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/visual-genai/latest/overview.html
+**Related:** [[TensorRT]], [[TensorRT-LLM]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/triton-inference-server, https://docs.nvidia.com/maxine/triton/latest/index.html, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/visual-genai/latest/overview.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html, https://docs.nvidia.com/nim/maxine/bnr/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -62,6 +62,8 @@ Triton solves the operational complexity of serving diverse AI models in product
 - [[NIM-for-Cosmos-Embed1]] - Cosmos embedding NIM follows the same production microservice pattern for API and health endpoints.
 - [[NIM-for-Vision-Language-Models]] - VLM NIMs use production container serving with optimized engines or vLLM fallback paths.
 - [[NIM-for-Visual-Generative-AI]] - Visual GenAI NIM docs name Triton as part of the high-performance inference stack.
+- [[NVIDIA-Speech-NIM-Microservices]] - current Speech NIM docs place Triton inside each ASR, TTS, and NMT container for scheduling, batching, and streaming.
+- [[NVIDIA-Background-Noise-Removal-NIM]] - BNR NIM docs name Triton as part of the audio enhancement inference stack.
 - [[FlashInfer]] — attention kernel library used by TensorRT-LLM backend within Triton
 - [[PyTorch]] — LibTorch backend enables direct serving of PyTorch models
 - [[NVIDIA-NeMo]] — NeMo-trained models are commonly deployed through Triton

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -61,6 +61,8 @@ Moving deep learning models from training to production requires inference-time 
 - [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] — extraction NIMs use TensorRT-backed NVIDIA inference acceleration.
 - [[NIM-for-Cosmos-WFM]] and [[NIM-for-Cosmos-Embed1]] — Cosmos NIM docs connect physical AI generation and embedding services to the NVIDIA inference stack.
 - [[NIM-for-Vision-Language-Models]] and [[NIM-for-Visual-Generative-AI]] — multimodal and visual generation NIMs use TensorRT/TensorRT-LLM where model profiles are available.
+- [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] — current Speech NIM docs package TensorRT/CUDA execution inside ASR, TTS, and NMT containers.
+- [[NVIDIA-Background-Noise-Removal-NIM]] — BNR docs name TensorRT as part of the audio cleanup NIM acceleration stack.
 - [[NIM-for-OpenFold3]] and [[NIM-for-Boltz2]] — BioNeMo NIMs whose docs reference TensorRT-backed production inference optimization.
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
 - [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.

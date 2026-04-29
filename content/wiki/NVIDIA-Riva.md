@@ -2,12 +2,12 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, speech AI, ASR, TTS, NLP, real-time, conversational AI, speech-to-text, text-to-speech
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html)
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA Riva is a GPU-accelerated SDK for building real-time, production-grade speech AI and multimodal conversational AI applications. It provides pre-trained and customizable pipelines for automatic speech recognition (ASR), text-to-speech synthesis (TTS), neural machine translation (NMT), and natural language processing (NLP) — all deployable as NIM microservices via gRPC or REST APIs. Riva delivers millisecond-latency speech AI suitable for call center automation, voice assistants, real-time transcription, and multilingual customer service.
+NVIDIA Riva is a GPU-accelerated SDK and speech AI platform for building real-time, production-grade speech and conversational AI applications. Current NIM-specific speech deployment docs have moved under [[NVIDIA-Speech-NIM-Microservices]], with separate [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] pages for the current maintained microservice surface.
 
 ## Detail
 
@@ -23,7 +23,8 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - **Canary Models:** Multi-lingual ASR and speech translation models for 4–50+ languages
 - **Custom Vocabulary & Acoustic Adaptation:** Domain-specific vocabulary injection (medical, legal, financial terminology) without full model retraining; acoustic model adaptation to new speakers or noise conditions
 - **Streaming & Offline Modes:** Real-time streaming ASR with configurable chunk sizes for low-latency applications; batch offline mode for maximum accuracy
-- **NIM Packaging:** All Riva models available as NIM microservices deployable via Docker/Kubernetes with OpenAI-compatible or gRPC speech APIs
+- **Current Speech NIM docs:** [[NVIDIA-Speech-NIM-Microservices]] is the maintained docs surface for Riva-lineage ASR, TTS, and NMT NIM deployments.
+- **NIM Packaging:** ASR, TTS, and NMT capabilities are deployable as NIM microservices via Docker or Helm with gRPC/HTTP APIs.
 - **Hardware-Optimized:** TensorRT-compiled models; optimized for Ampere and Hopper GPU Tensor Cores
 
 ### Use Cases
@@ -51,13 +52,16 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - **WebSocket:** Browser-compatible streaming via WebSocket proxy for web applications
 
 ## Connections
-- [[NVIDIA-NIM]] — Riva ASR and TTS models are packaged and deployed as NIM microservices
+- [[NVIDIA-NIM]] — Riva-lineage ASR, TTS, and NMT models are packaged and deployed as NIM microservices
+- [[NVIDIA-Speech-NIM-Microservices]] - current maintained docs collection for ASR, TTS, and NMT NIMs.
+- [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] - current speech microservice pages for transcription, synthesis, and translation.
 - [[NVIDIA-NeMo]] — NeMo is the training framework for customizing and fine-tuning Riva's acoustic, language, and TTS models
 - [[Triton-Inference-Server]] — Riva server is built on Triton; models are served via Triton inference engine
 - [[NVIDIA-AI-Enterprise]] — Riva is included in AI Enterprise with enterprise SLA and security support
 - [[NGC]] — Riva containers, pre-trained model checkpoints, and Helm charts distributed via NGC
 - [[NVIDIA-Maxine]] — Maxine uses Riva for the speech AI component (noise cancellation feeds into Riva ASR)
 - [[NVIDIA-Audio-Effects-SDK]] — audio cleanup can improve upstream audio quality before ASR or voice workflows.
+- [[NVIDIA-Background-Noise-Removal-NIM]] - deployable BNR audio cleanup NIM that can improve speech intelligibility and ASR accuracy.
 
 ## Resources
 - [NVIDIA Riva Developer Page](https://developer.nvidia.com/riva)

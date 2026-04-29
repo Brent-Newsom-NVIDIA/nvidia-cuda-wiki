@@ -2,9 +2,9 @@
 
 **Type:** Model
 **Tags:** NVIDIA, ASR, Speech Recognition, NeMo, CTC, RNN-T, Audio AI
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-Riva]], [[NVIDIA-Canary]], [[TensorRT-LLM]], [[NVIDIA-NIM]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-Canary]], [[TensorRT]], [[NVIDIA-NIM]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/speech/latest/asr/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 Parakeet is NVIDIA's family of state-of-the-art automatic speech recognition (ASR) models developed in collaboration with Apple, built on the NeMo framework. The Parakeet models achieve top-tier word error rates (WER) on standard English ASR benchmarks and are optimized for real-time and batch transcription workloads. They use CTC and RNN-T decoding architectures built on the FastConformer encoder, and are available as open-weight models on Hugging Face.
@@ -43,13 +43,14 @@ High-accuracy, low-latency automatic speech recognition is a critical building b
 - Python (NVIDIA NeMo: nemo.collections.asr)
 - NVIDIA Riva SDK (gRPC streaming API)
 - Hugging Face Transformers (AutoModelForCTC, pipeline)
-- NVIDIA NIM microservices for containerized deployment
+- [[NVIDIA-ASR-NIM]] microservices for containerized deployment through the current Speech NIM docs
 
 ## Connections
 - [[NVIDIA-NeMo]] — Parakeet is trained, fine-tuned, and served via the NeMo ASR collection
 - [[NVIDIA-Riva]] — Riva provides production streaming ASR deployment for Parakeet models
+- [[NVIDIA-Speech-NIM-Microservices]] and [[NVIDIA-ASR-NIM]] - current docs surface listing Parakeet CTC, TDT, and RNNT ASR NIM options.
 - [[NVIDIA-Canary]] — Canary is NVIDIA's multilingual complement to Parakeet's English-focused ASR
-- [[TensorRT-LLM]] — Parakeet encoder quantized and optimized for inference via TensorRT
+- [[TensorRT]] — Parakeet ASR NIM deployment uses TensorRT/Triton inference acceleration.
 - [[NVIDIA-NIM]] — Available as NIM containers for one-click ASR deployment
 
 ## Resources

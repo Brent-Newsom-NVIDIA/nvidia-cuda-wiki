@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 26: Speech and audio NIM microservices
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch26-20260429T074636Z`; local Git tag `codex-backup-overnight-pre-batch26-20260429T074636Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/bnr/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added the current NVIDIA Speech NIM documentation surface as a first-class page after verifying that older Riva ASR/TTS/NMT NIM docs have migrated to `docs.nvidia.com/nim/speech/latest`.
+- Added separate ASR, TTS, and NMT NIM pages because each is a durable current NVIDIA docs topic with distinct APIs, models, and query intent.
+- Added Background Noise Removal NIM from the Maxine NIM docs as a separate audio enhancement microservice rather than folding it into the broader Audio Effects SDK page.
+- Linked Speech NIMs to Riva, NeMo, Nemotron, Parakeet, Canary, NIM, TensorRT, Triton, AI Enterprise, ACE, and Maxine so speech model training, serving, and application workflows are queryable from multiple entry points.
+- Did not create pages for every ASR/TTS model variant, support matrix row, or build.nvidia Try API listing; those details remain summarized under the canonical NIM pages.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-Speech-NIM-Microservices.md`
+- `content/wiki/NVIDIA-ASR-NIM.md`
+- `content/wiki/NVIDIA-TTS-NIM.md`
+- `content/wiki/NVIDIA-NMT-NIM.md`
+- `content/wiki/NVIDIA-Background-Noise-Removal-NIM.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md` - promoted Speech NIM and BNR pages into the NIM model/microservice graph.
+- `content/wiki/NVIDIA-Riva.md` - pointed Riva-lineage ASR/TTS/NMT NIM coverage at the current Speech NIM docs.
+- `content/wiki/Parakeet-ASR.md` and `content/wiki/NVIDIA-Canary.md` - connected existing ASR model pages to current ASR NIM deployment docs.
+- `content/wiki/NVIDIA-Maxine.md` and `content/wiki/NVIDIA-Audio-Effects-SDK.md` - linked Background Noise Removal NIM to Maxine/audio cleanup workflows.
+- `content/wiki/Nemotron.md`, `content/wiki/NVIDIA-NeMo.md`, and `content/wiki/NVIDIA-ACE.md` - connected speech model families and digital-human speech workflows to current Speech NIM pages.
+- `content/wiki/TensorRT.md`, `content/wiki/Triton-Inference-Server.md`, and `content/wiki/NVIDIA-AI-Enterprise.md` - linked speech/audio NIMs to acceleration, serving, and enterprise deployment layers.
+- `content/index.md` - updated page count to 337 and indexed the new speech/audio NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 25: Cosmos, Earth-2, and multimodal NIM coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch25-20260429T073813Z`; local Git tag `codex-backup-overnight-pre-batch25-20260429T073813Z`
