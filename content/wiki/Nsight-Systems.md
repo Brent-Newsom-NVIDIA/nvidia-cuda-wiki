@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, System Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
-**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/nsight-python/index.html
+**Related:** [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -49,6 +49,7 @@ Before optimizing individual GPU kernels, developers need to understand the big 
 ## Connections
 - [[Nsight-Compute]] — Nsight Systems provides the high-level view; Nsight Compute provides per-kernel deep analysis
 - [[Nsight-Python]] — Python automation layer for Nsight-driven kernel profiling workflows.
+- [[Nsight-Deep-Learning-Designer]] - adjacent Nsight IDE for model-graph editing and TensorRT/ONNX Runtime inference profiling.
 - [[Nsight-Visual-Studio-Edition]] — Windows IDE integration for adjacent Nsight workflows
 - [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA IDE integration on Linux
 - [[NVCC]] — NVCC-compiled CUDA code is profiled by Nsight Systems

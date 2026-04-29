@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 69: Nsight Deep Learning Designer
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch69-20260429T113522Z`; local Git tag `codex-backup-overnight-pre-batch69-20260429T113522Z`
+
+**Source URLs:** https://developer.nvidia.com/nsight-dl-designer, https://developer.nvidia.com/nsight-dl-designer/getting-started, https://docs.nvidia.com/nsight-dl-designer/index.html, https://docs.nvidia.com/nsight-dl-designer/UserGuide/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical page for Nsight Deep Learning Designer after finding current NVIDIA developer and v2025.5 documentation with no existing wiki page.
+- Kept user guide, release notes/system requirements, host-target profiling, TAO activity guidance, PyTorch preview notes, ONNX editing, TensorRT/ONNX Runtime profiling, and export workflows folded into one page.
+- Connected DL Designer to the existing Nsight suite, TensorRT, TensorRT Model Optimizer, TensorRT for RTX, TAO, PyTorch, RTX, DriveOS, Jetson, and Developer Program context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Deep-Learning-Designer.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Compute.md` and `content/wiki/Nsight-Systems.md` - connected the Nsight tool family to DL Designer.
+- `content/wiki/TensorRT.md` - connected TensorRT profiling/export workflows to DL Designer.
+- `content/index.md` - updated total page count to 444 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 68: TensorRT for RTX
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch68-20260429T113306Z`; local Git tag `codex-backup-overnight-pre-batch68-20260429T113306Z`
