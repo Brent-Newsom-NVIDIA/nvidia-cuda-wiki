@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 299*
+*Total pages: 304*
 
 ---
 
@@ -366,6 +366,11 @@
 ## Networking
 
 - [[NVIDIA-DOCA]] — software framework for BlueField, SuperNIC, and ConnectX infrastructure offload, DOCA-Host, and DOCA-OFED
+- [[NVIDIA-DOCA-OFED]] — current DOCA-Host Linux driver profile replacing standalone MLNX_OFED for NVIDIA networking
+- [[NVIDIA-MLNX-OFED]] — legacy standalone Linux VPI/RDMA stack for InfiniBand, Ethernet, and RoCE, now on 2024 LTS
+- [[NVIDIA-MLNX-EN]] — legacy standalone Linux Ethernet/RoCE driver package transitioning into DOCA-Host profiles
+- [[NVIDIA-WinOF-2]] — Windows driver package for ConnectX-4 Lx and newer adapters, with current ConnectX-9 support
+- [[NVIDIA-Firmware-Tools]] — MFT firmware, configuration, and debug tools for NVIDIA adapters and switches
 - [[NVIDIA-Network-Operator]] — Kubernetes operator for NVIDIA networking, RDMA, GPUDirect RDMA, SR-IOV, secondary networks, and DOCA-OFED
 - [[NVIDIA-Cumulus-Linux]] — Linux-based Ethernet switch OS for NVIDIA Spectrum and Spectrum-X fabrics
 - [[NVIDIA-NetQ]] — network operations and observability tool set for Cumulus, Spectrum, NVLink, and data center fabrics

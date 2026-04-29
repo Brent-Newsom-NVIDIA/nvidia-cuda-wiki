@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 20: NVIDIA networking host drivers and firmware tools
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch20-20260429T071137Z`; local Git tag `codex-backup-overnight-pre-batch20-20260429T071137Z`
+
+**Source URLs:** https://docs.nvidia.com/networking/software/firmware-management/index.html, https://docs.nvidia.com/networking/display/mftv4350, https://docs.nvidia.com/networking/display/mftv4350/general-information, https://docs.nvidia.com/networking/display/mftv4350/changes-and-new-features, https://docs.nvidia.com/networking/software/adapter-software/index.html, https://docs.nvidia.com/doca/sdk/mlnx_ofed-to-doca-ofed-transition-guide/index.html, https://docs.nvidia.com/doca/sdk/general-support/index.html, https://docs.nvidia.com/doca/sdk/changes-and-new-features/index.html, https://docs.nvidia.com/networking/display/mlnxofedv24104140lts, https://docs.nvidia.com/networking/display/mlnxofedv24104140lts/introduction, https://docs.nvidia.com/networking/display/mlnxenv24104140lts, https://docs.nvidia.com/networking/display/mlnxenv24104140lts/features-overview-and-configuration, https://docs.nvidia.com/networking/display/nvidiawinof2documentationv26150000, https://docs.nvidia.com/networking/display/nvidiawinof2documentationv26150000/changes-and-new-features
+
+**Gap analysis summary:**
+
+- Added current NVIDIA networking firmware tooling instead of leaving `mst`, `mlxconfig`, `flint`, `mlxlink`, and WinMFT concepts buried in device pages.
+- Added DOCA-OFED as the current DOCA-Host replacement path for MLNX_OFED, with explicit links to Network Operator, ConnectX, BlueField, HPC-X, NCCL, and GPUDirect RDMA.
+- Added legacy MLNX_OFED and MLNX_EN as standalone LTS pages so older Linux networking runbooks remain queryable while still pointing users toward DOCA-Host/DOCA-OFED.
+- Added WinOF-2 as the Windows host-driver counterpart, using the current v26.1.50000 February 2026 GA docs and ConnectX-9 support.
+- Skipped build.nvidia content in this batch; the durable docs.nvidia category pages had the needed latest/current information.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-Firmware-Tools.md`
+- `content/wiki/NVIDIA-DOCA-OFED.md`
+- `content/wiki/NVIDIA-MLNX-OFED.md`
+- `content/wiki/NVIDIA-MLNX-EN.md`
+- `content/wiki/NVIDIA-WinOF-2.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-DOCA.md` - linked DOCA-Host, DOCA-OFED, and transition context to the broader DOCA page.
+- `content/wiki/NVIDIA-ConnectX-InfiniBand.md` and `content/wiki/NVIDIA-ConnectX-9.md` - connected current host drivers, firmware tooling, and Windows support.
+- `content/wiki/NVIDIA-BlueField-DPU.md` - updated host-driver language from legacy MLNX_OFED toward current DOCA-Host/DOCA-OFED.
+- `content/wiki/NVIDIA-Network-Operator.md` - linked DOCA-OFED as the managed Kubernetes driver surface.
+- `content/wiki/NVIDIA-HPC-X.md` - connected HPC-X to current and legacy RDMA host stacks.
+- `content/index.md` - updated page count to 304 and indexed the new networking host-software pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 19: CUDA Python profiling and communication wrappers
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch19-20260429T070807Z`; local Git tag `codex-backup-overnight-pre-batch19-20260429T070807Z`

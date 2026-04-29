@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, DPU, data processing unit, networking, offload, security, SmartNIC, BlueField, infrastructure
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-BlueField-4]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-NCX-Infra-Controller]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-BlueField-4]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-NCX-Infra-Controller]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/doca/sdk/index.html, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/networking/display/bluefieldbsp4140/troubleshooting-and-how-tos, https://docs.nvidia.com/networking/display/kubernetes2610/index.html, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/products/data-processing-unit/)
 **Last Updated:** 2026-04-29
 
@@ -48,16 +48,19 @@ Modern data center servers spend 20–30% of server CPU cycles on infrastructure
 - **OS (DPU):** Ubuntu 22.04 aarch64 on embedded ARM; Wind River Linux (real-time option); DOCA runs on DPU OS
 - **OS (Host):** Linux (Ubuntu/RHEL) for full DOCA integration; Windows Server (limited)
 - **Power:** 25–75W TDP (model-dependent)
-- **Driver:** MLNX_OFED 5.x+ on host; DOCA runtime on DPU OS
+- **Driver:** [[NVIDIA-DOCA-OFED]] / DOCA-Host on current Linux hosts; legacy [[NVIDIA-MLNX-OFED]] for older supported deployments; DOCA runtime on the DPU OS
 
 ### Language Bindings / APIs
 - **NVIDIA DOCA SDK:** [[NVIDIA-DOCA]] provides APIs, libraries, tools, services, drivers, and examples for packet processing, RDMA, DPA, storage, crypto, telemetry, management, and reference applications
+- **Host driver stack:** [[NVIDIA-DOCA-OFED]] is the current Linux host-driver profile for NVIDIA networking; BlueField-3 platforms must use DOCA-Host.
 - **DPDK:** BlueField supports DPDK for high-performance user-space networking
 - **Kubernetes:** [[NVIDIA-Network-Operator]] manages NVIDIA networking components in Kubernetes clusters, including DOCA-OFED driver containers and RDMA/GPUDirect networking resources
-- **CLI:** `mlxconfig`, `mst` tools for DPU management; `bfb-install` for DPU firmware and OS flashing
+- **CLI:** [[NVIDIA-Firmware-Tools]] commands such as `mlxconfig` and `mst` for device management; `bfb-install` for DPU firmware and OS flashing
 
 ## Connections
 - [[NVIDIA-DOCA]] — DOCA is the primary SDK, runtime, driver, and services framework for BlueField infrastructure offload.
+- [[NVIDIA-DOCA-OFED]] — current DOCA-Host Linux driver profile for BlueField/ConnectX host systems.
+- [[NVIDIA-Firmware-Tools]] — MFT provides low-level firmware and device configuration tools such as `mst` and `mlxconfig`.
 - [[NVIDIA-BlueField-4]] — generation-specific page for current STX/CMX and AI data platform DPU direction.
 - [[NVIDIA-DOCA-Platform-Framework]] — DPF provisions and orchestrates BlueField DPUs and DPU services in cloud environments.
 - [[NVIDIA-NCX-Infra-Controller]] — NCX Infra Controller uses DPU-enforced isolation for secure bare-metal lifecycle management.

@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, ConnectX-9, SuperNIC, InfiniBand, Ethernet, RDMA, AI networking, XDR, 1.6Tb/s
-**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-4]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Silicon-Photonics]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Enterprise-AI-Factory]]
-**Sources:** https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://docs.nvidia.com/networking/display/connectx9supernic/introduction, https://www.nvidia.com/en-us/networking/
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-WinOF-2]], [[NVIDIA-BlueField-4]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Silicon-Photonics]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Enterprise-AI-Factory]]
+**Sources:** https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://docs.nvidia.com/networking/display/connectx9supernic/introduction, https://www.nvidia.com/en-us/networking/, https://docs.nvidia.com/doca/sdk/changes-and-new-features/index.html, https://docs.nvidia.com/networking/display/mftv4350/changes-and-new-features, https://docs.nvidia.com/networking/display/nvidiawinof2documentationv26150000/changes-and-new-features
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,12 +20,16 @@ As AI systems scale into rack-level and multi-rack memory domains, network adapt
 - PCIe Gen 6 and CXL-ready host connectivity.
 - GPUDirect RDMA, GPU-initiated networking, MPI collectives, and storage acceleration.
 - Secure networking, virtualization, isolation, telemetry, and DOCA/driver integration.
+- First-GA current software support appears across [[NVIDIA-DOCA-OFED]] / DOCA-Host, [[NVIDIA-Firmware-Tools]] v4.35.0, and [[NVIDIA-WinOF-2]] v26.1.50000.
 
 ### NVIDIA context
 ConnectX-9 belongs under the existing [[NVIDIA-ConnectX-InfiniBand]] family page, but it is current enough to warrant a generation page because it anchors Vera Rubin, BlueField-4/STX, silicon photonics, and next-generation AI networking.
 
 ## Connections
 - [[NVIDIA-ConnectX-InfiniBand]] - family page for ConnectX adapters and InfiniBand/Ethernet networking.
+- [[NVIDIA-DOCA-OFED]] - current Linux host-driver stack with first-GA DOCA-Host support for ConnectX-9.
+- [[NVIDIA-Firmware-Tools]] - MFT v4.35.0 adds first-GA ConnectX-9 support for firmware/device workflows.
+- [[NVIDIA-WinOF-2]] - Windows driver line with first-GA ConnectX-9 and 1600G link-speed reporting support.
 - [[NVIDIA-BlueField-4]] - adjacent next-generation infrastructure processor for networking/storage offload.
 - [[NVIDIA-Spectrum-X]] - Ethernet AI fabric using NVIDIA NICs and switches.
 - [[NVIDIA-Silicon-Photonics]] - optical networking direction tied to next-generation high-bandwidth AI clusters.

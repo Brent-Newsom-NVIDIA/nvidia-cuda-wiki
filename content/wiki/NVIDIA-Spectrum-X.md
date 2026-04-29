@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Spectrum-X, Ethernet, AI Networking, RoCE, Lossless Ethernet, HPC Networking
-**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-EN]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/silicon-photonics/
 **Last Updated:** 2026-04-29
 
@@ -24,6 +24,7 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - Co-designed with ConnectX-7/8 NICs for end-to-end Ethernet AI acceleration
 - Compatible with standard 400GbE infrastructure and optics
 - Current NVIDIA docs tie Spectrum-X reference architecture 2.1 to [[NVIDIA-DOCA]] 3.3.0, [[NVIDIA-Cumulus-Linux]] 5.16, [[NVIDIA-HPC-X]] 2.26, and Network Operator Spectrum-X NIC configuration guidance
+- Host-side Spectrum-X Ethernet/RoCE configuration sits on current [[NVIDIA-DOCA-OFED]] and legacy [[NVIDIA-MLNX-EN]] concepts.
 - Current AI data/storage pages tie Spectrum-X to [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], and [[NVIDIA-CMX]] as the Ethernet fabric for accelerated enterprise storage and context-memory access
 - Current silicon photonics material connects Spectrum-X-class Ethernet to optical networking for future AI factory fabrics
 
@@ -51,6 +52,8 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - [[NVIDIA-Cumulus-Linux]] — Spectrum switches use Cumulus Linux as a current Ethernet switch OS validated in Spectrum-X RA2.1.
 - [[NVIDIA-Network-Operator]] — current Network Operator docs include Spectrum-X NIC configuration for Kubernetes clusters.
 - [[NVIDIA-DOCA]] — DOCA 3.3.0 is tested as part of Spectrum-X reference architecture 2.1.
+- [[NVIDIA-DOCA-OFED]] — current host-driver stack for Ethernet/RoCE networking in modern Spectrum-X deployments.
+- [[NVIDIA-MLNX-EN]] — legacy Ethernet/RoCE host package for older Spectrum Ethernet runbooks.
 - [[NVIDIA-HPC-X]] — HPC-X 2.26 is tested as part of Spectrum-X RA2.1 and includes Spectrum-X NCCL plugin guidance.
 - [[NVIDIA-NetQ]] — NetQ provides network operations visibility for Ethernet fabrics.
 - [[NVIDIA-DSX-Air]] — DSX Air supports simulation and validation of Cumulus/Spectrum designs.

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RDMA, networking, InfiniBand, GPU, peer-to-peer, MPI, HPC, inter-node, zero-copy
-**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
+**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-MLNX-OFED]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/)
 **Last Updated:** 2026-04-29
 
@@ -37,7 +37,7 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 - **PCIe Topology:** NIC and GPU must be on the same PCIe root complex (or connected via PCIe peer-to-peer bridge); some server BIOS settings disable PCIe P2P — must be enabled
 - **Linux:** `nvidia-peermem` kernel module (part of NVIDIA driver) enables GPU-to-NIC peer memory mapping
 - **CUDA:** CUDA 5.0+ for GPUDirect RDMA; CUDA 11.3+ for GPUDirect Async
-- **InfiniBand:** OpenFabrics/DOCA-OFED or [[NVIDIA-DOCA]] with RDMA support; Kubernetes exposure can be automated through [[NVIDIA-Network-Operator]]
+- **InfiniBand:** [[NVIDIA-DOCA-OFED]] or legacy [[NVIDIA-MLNX-OFED]] with RDMA support; Kubernetes exposure can be automated through [[NVIDIA-Network-Operator]]
 
 ### Language Bindings / APIs
 - **NCCL:** Transparent — NCCL uses GPUDirect RDMA automatically; `ncclAllReduce(sendBuf, recvBuf, count, ..., comm, stream)`
@@ -52,6 +52,8 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 - [[NVIDIA-ConnectX-9]] — current SuperNIC generation that includes GPUDirect and RDMA capabilities in NVIDIA docs.
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU offloads RDMA network processing; BlueField-3 supports GPUDirect RDMA with DPU-accelerated NCCL flows
 - [[NVIDIA-DOCA]] — DOCA RDMA, DOCA-OFED, and GPUDirect support are part of the current NVIDIA networking software stack.
+- [[NVIDIA-DOCA-OFED]] — current Linux host-driver stack for GPU-aware RDMA paths.
+- [[NVIDIA-MLNX-OFED]] — legacy standalone Linux OFED stack still found in older GPUDirect RDMA setups.
 - [[NVIDIA-Network-Operator]] — deploys the Kubernetes networking components required for GPUDirect RDMA workloads.
 - [[NVIDIA-HPC-X]] — provides MPI/SHMEM/UCX/UCC communication libraries that use GPU-aware RDMA paths.
 - [[NCCL]] — NCCL is the primary user of GPUDirect RDMA for distributed deep learning; provides AllReduce, AllGather over RDMA automatically
