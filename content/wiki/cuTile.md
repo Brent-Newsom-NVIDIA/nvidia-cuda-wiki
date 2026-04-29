@@ -1,59 +1,47 @@
-# cuTile / CUDA Tile IR
+# cuTile
 
 **Type:** Technology
-**Tags:** NVIDIA, cuTile, CUDA, Tile IR, GPU Programming, Compiler, Blackwell, CTA
-**Related:** [[NVCC]], [[PTX-ISA]], [[PTX-Interoperability]], [[CUTLASS]], [[TensorRT]], [[NVIDIA-Blackwell-Architecture]], [[cuda-parallel]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cuda/tile-ir/latest/index.html
+**Tags:** NVIDIA, cuTile, CUDA Tile, Python, DSL, GPU Programming, Tensor Cores, TMA
+**Related:** [[CUDA-Tile]], [[CUDA-Tile-IR]], [[NVIDIA-CUDA]], [[PyTorch]], [[CuPy]], [[Nsight-Compute]], [[PTX-ISA]], [[NVVM-IR]]
+**Sources:** https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://docs.nvidia.com/cuda/cutile-python/execution.html, https://docs.nvidia.com/cuda/cutile-python/interoperability.html, https://docs.nvidia.com/cuda/cutile-python/performance.html, https://docs.nvidia.com/cuda/cutile-python/compilation.html, https://developer.nvidia.com/cuda/tile
 **Last Updated:** 2026-04-29
 
 ## Summary
-cuTile (CUDA Tile IR) is a new intermediate representation and programming model introduced with the NVIDIA Blackwell GPU architecture and CUDA 12.x, designed to express tile-level parallelism for tensor and matrix operations. It provides a hierarchical tile abstraction that maps directly to the new Blackwell hardware features — including the Tensor Memory Accelerator (TMA) and warp-group-level matrix operations — enabling compilers and libraries like CUTLASS and TensorRT to generate highly optimized GEMM and attention kernels without requiring experts to hand-write low-level PTX.
+cuTile is NVIDIA's Python implementation of the [[CUDA-Tile]] programming model. It lets developers write tiled GPU kernels in a Python DSL while the toolchain targets advanced NVIDIA GPU hardware capabilities such as Tensor Cores and Tensor Memory Accelerators through [[CUDA-Tile-IR]].
 
 ## Detail
 
 ### Purpose
-Modern GPU tensor operations involve complex hierarchical tiling across thread blocks, warps, and individual threads — with explicit data movement between global, shared, and register memory at each level. Writing optimal kernels by hand requires deep expertise. cuTile/CUDA Tile IR provides a compiler-friendly intermediate representation that captures these tiling decisions cleanly, enabling automatic optimization and simplifying the generation of optimal code for new hardware features.
+cuTile is aimed at developers who need custom GPU kernels but do not want to manage per-thread SIMT details directly. A cuTile kernel is marked with `@ct.kernel` and launched from host code with `ct.launch()` over a logical grid of blocks. Inside the kernel, code loads tiles from global arrays, computes on immutable tile values, and stores output tiles back to global memory.
 
-The current Tile IR docs describe Tile IR as a portable, low-level tile virtual machine and instruction set that models the GPU as a tile-based processor. The documentation covers programming model, syntax, binary format, type system, semantics, memory model, operations, debug info, stability, and release notes.
+The cuTile execution model exposes block-level tile parallelism rather than individual CUDA threads. Scalar operations run serially, array/tile operations can be parallelized across the block by the compiler, and explicit synchronization inside a block is not exposed to the cuTile programmer.
 
-### Key Features
-- Hierarchical tile abstraction: expresses computation as nested tile operations at cluster, CTA, warp, and thread levels
-- TMA integration: seamless expression of Tensor Memory Accelerator bulk copy operations
-- Warp-group matrix multiply: Blackwell's new WGMMA instructions expressed at tile IR level
-- Compiler target: feeds into PTX/SASS code generation for Blackwell GPU
-- CUTLASS integration: CUTLASS 3.x uses cuTile IR concepts for Blackwell kernel templates
-- TensorRT backend: cuTile enables TensorRT to auto-generate Blackwell-optimized layers
-- Explicit memory hierarchy: programmer specifies data movement between memory levels declaratively
+### Key capabilities
+- Python-native tiled kernel authoring with `cuda.tile` APIs.
+- Kernel launch over 1D, 2D, or 3D grids using CUDA streams.
+- Tile operations for load/store, reductions, scans, matrix multiply, selection, math, bitwise, comparison, atomic, utility, metaprogramming, and autotuning workflows.
+- Interoperation with array objects such as [[PyTorch]] tensors and [[CuPy]] arrays through global array kernel arguments.
+- JIT specialization at launch time and ahead-of-time export to cubin or TileIR bytecode.
+- Inter-kernel interoperability with SIMT CUDA code in the same source/binary, with intra-kernel tile/SIMT mixing called out by NVIDIA as future support.
+- Profiling through [[Nsight-Compute]] similarly to SIMT CUDA kernels, with driver-version requirements for detailed statistics.
 
-### Use Cases
-- Writing high-performance GEMM and attention kernels for Blackwell
-- Compiler backend development for GPU languages (Triton, Mojo, custom DSLs)
-- CUTLASS-based custom operator development
-- TensorRT plugin authoring with Blackwell hardware acceleration
-- Research into GPU programming model abstractions
+### Requirements and packaging
+Current cuTile Python documentation lists Linux x86_64, Linux aarch64, and Windows x86_64 support; Python 3.10 through 3.13; NVIDIA driver r580 or later; and GPUs with compute capability 8.x, 10.x, 11.x, or 12.x. Systems can install `cuda-tile[tileiras]` to bring in the TileIR compiler package plus CUDA compiler/NVVM packages, or use `cuda-tile` with a system-wide CUDA Toolkit 13.1 or later.
 
-### Hardware Requirements / Compatibility
-- Primarily targets NVIDIA Blackwell architecture (B100, B200, GB200)
-- CUDA 12.4+ for full Tile IR and TMA support
-- Compatible with Hopper (H100) TMA and wgmma features
-- CUTLASS 3.x required for C++ Tile IR usage
-
-### Language Bindings / APIs
-- C++ (CUTLASS 3.x tile abstractions)
-- PTX (Tile IR lowers to PTX instructions)
-- Python (via Triton and nvcc-backed compilation pipelines)
-- Available as part of CUDA Toolkit
+### NVIDIA context
+cuTile is the user-facing Python layer of NVIDIA's larger [[CUDA-Tile]] direction. It belongs next to [[CUDA-Programming-Guide]], [[PTX-ISA]], and [[NVVM-IR]] in the wiki because it is a new way to express GPU work, but it should not be confused with the lower-level [[CUDA-Tile-IR]] specification itself.
 
 ## Connections
-- [[NVCC]] — NVCC compiles CUDA C++ including Tile IR-based code to PTX/SASS
-- [[PTX-ISA]] — PTX remains the virtual ISA layer adjacent to Tile IR compiler workflows
-- [[PTX-Interoperability]] — compiler authors need ABI awareness when moving between IRs and linkable CUDA code
-- [[CUTLASS]] — CUTLASS 3.x is the primary user-facing C++ library expressing cuTile concepts
-- [[TensorRT]] — TensorRT uses cuTile/Tile IR for Blackwell layer code generation
-- [[NVIDIA-Blackwell-Architecture]] — cuTile is designed around Blackwell's TMA and WGMMA hardware features
-- [[cuda-parallel]] — cuda-parallel Python library benefits from cuTile-optimized underlying kernels
+- [[CUDA-Tile]] - umbrella NVIDIA programming model that cuTile implements in Python.
+- [[CUDA-Tile-IR]] - lower-level bytecode/spec target used beneath cuTile.
+- [[NVIDIA-CUDA]] - cuTile is part of the current CUDA documentation family.
+- [[PyTorch]] - PyTorch tensors can be passed as array arguments to cuTile kernels.
+- [[CuPy]] - cuTile quickstart examples use CuPy arrays and streams.
+- [[Nsight-Compute]] - profiles cuTile kernels using normal CUDA profiling workflows.
+- [[PTX-ISA]] - cuTile/Tile IR sits adjacent to PTX and SIMT interoperability concerns.
+- [[NVVM-IR]] - CUDA Tile tooling depends on NVVM components in the CUDA compiler stack.
 
-## Resources
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
-- [CUTLASS 3.x Documentation](https://github.com/NVIDIA/cutlass/blob/main/media/docs/cutlass_3x_design.md)
-- [Blackwell Architecture Whitepaper](https://resources.nvidia.com/en-us-blackwell-architecture)
+## Source Excerpts
+- NVIDIA describes cuTile as a Python DSL and parallel programming model for NVIDIA GPUs that automatically uses advanced hardware capabilities such as Tensor Cores and Tensor Memory Accelerators.
+- The cuTile docs distinguish arrays stored in global memory from immutable tile values that exist inside kernel code.
+- The compilation docs describe JIT specialization at `ct.launch()` time and ahead-of-time export to cubin or TileIR bytecode.

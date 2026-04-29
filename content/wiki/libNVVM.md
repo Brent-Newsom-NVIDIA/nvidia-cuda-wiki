@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Compiler, IR, LLVM, Development Tools, CUDA-X
-**Related:** [[NVRTC]], [[NVCC]], [[nvJitLink]], [[CUDA-GDB]]
-**Sources:** NVIDIA official documentation, docs.nvidia.com/cuda/libnvvm-samples
+**Related:** [[NVVM-IR]], [[PTX-ISA]], [[NVRTC]], [[NVCC]], [[nvJitLink]], [[CUDA-Tile-IR]], [[cuTile]], [[CUDA-GDB]]
+**Sources:** NVIDIA official documentation, docs.nvidia.com/cuda/libnvvm-samples, https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html
 **Last Updated:** 2026-04-09
 
 ## Summary
@@ -48,6 +48,8 @@ libNVVM provides compiler and language tool developers with a stable API to the 
 - [[NVRTC]] — NVRTC provides a higher-level runtime compilation API that internally uses libNVVM for code generation
 - [[NVCC]] — NVCC's device-side compilation pipeline uses libNVVM as a core compilation step
 - [[nvJitLink]] — nvJitLink links the PTX/cubin output produced by libNVVM for runtime linking
+- [[CUDA-Tile-IR]] — tile-oriented compiler tooling sits adjacent to the NVVM/PTX compiler stack
+- [[cuTile]] — cuTile Python with TileIR tooling depends on CUDA compiler/NVVM packages
 - [[CUDA-GDB]] — debugging code compiled via libNVVM uses CUDA-GDB with PTX-level debugging
 
 ## Resources

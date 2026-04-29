@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 290*
+*Total pages: 292*
 
 ---
 
@@ -450,7 +450,9 @@
 ## Additional CUDA-X / Libraries
 
 ### GPU Programming Abstractions
-- [[cuTile]] — CUDA Tile IR: hierarchical tile programming model for Blackwell WGMMA/TMA kernel development
+- [[CUDA-Tile]] — NVIDIA tile-based CUDA programming model for Tensor Core-oriented kernels
+- [[CUDA-Tile-IR]] — Low-level CUDA Tile bytecode/specification and tile virtual instruction set
+- [[cuTile]] — Python DSL implementation of CUDA Tile for tiled GPU kernels
 
 ### CPU Math (Grace/Arm)
 - [[NVPL-FFT]] — NVPL FFT: FFTW3-compatible CPU FFT for NVIDIA Grace (Neoverse V2); SVE-optimized

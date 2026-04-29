@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 17: CUDA Tile and cuTile separation
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch17-20260429T065740Z`; local Git tag `codex-backup-overnight-pre-batch17-20260429T065740Z`
+
+**Source URLs:** https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/cutile-python/index.html, https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://docs.nvidia.com/cuda/cutile-python/execution.html, https://docs.nvidia.com/cuda/cutile-python/interoperability.html, https://docs.nvidia.com/cuda/cutile-python/performance.html, https://docs.nvidia.com/cuda/cutile-python/compilation.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/prog_model.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/syntax.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/semantics.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/memory_model.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/stability.html, https://docs.nvidia.com/cuda/tile-ir/latest/sections/release_notes.html
+
+**Gap analysis summary:**
+
+- Split the older mixed `cuTile / CUDA Tile IR` page into three durable concepts: CUDA Tile as the umbrella programming model, CUDA Tile IR as the low-level spec/bytecode target, and cuTile as the Python DSL.
+- Kept NVIDIA's CUDA Tile developer page as a high-signal umbrella source, not as a reason to create pages for every linked learning resource or sample project.
+- Updated compiler and programming-model connections so PTX, NVVM, CUDA programming, Triton, Nsight Compute, and Blackwell queries land on the right tile-related concept.
+
+**Pages created (2 total):**
+
+- `content/wiki/CUDA-Tile.md`
+- `content/wiki/CUDA-Tile-IR.md`
+
+**Pages updated:**
+
+- `content/wiki/cuTile.md` - rewrote as the Python DSL page and removed unsupported claims that treated it as the Tile IR spec itself.
+- `content/wiki/NVIDIA-CUDA.md` and `content/wiki/CUDA-Programming-Guide.md` - added CUDA Tile, cuTile, and Tile IR to the CUDA programming/compiler map.
+- `content/wiki/PTX-ISA.md` and `content/wiki/PTX-Interoperability.md` - connected Tile IR memory/interoperability context to PTX.
+- `content/wiki/NVVM-IR.md` and `content/wiki/libNVVM.md` - distinguished NVVM IR from CUDA Tile IR and linked cuTile package dependencies.
+- `content/wiki/Triton-GPU-Language.md` - linked NVIDIA's Triton-to-CUDA-Tile-IR ecosystem bridge.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md` and `content/wiki/Nsight-Compute.md` - added tile programming and profiling connections.
+- `content/index.md` - updated the GPU Programming Abstractions section and page count to 292.
+
+---
+
 ## 2026-04-29 - Overnight batch 16: NVIDIA accelerated quantum computing coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch16-20260429T065150Z`; local Git tag `codex-backup-overnight-pre-batch16-20260429T065150Z`
