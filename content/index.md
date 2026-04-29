@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 246*
+*Total pages: 254*
 
 ---
 
@@ -197,6 +197,7 @@
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
@@ -220,6 +221,8 @@
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
 ### Agent Platforms
+- [[NVIDIA-AI-Q-Blueprint]] — NVIDIA AI Blueprint for enterprise research agents with shallow/deep routing, retrieval, citations, and evaluation
+- [[NVIDIA-Data-Flywheel-Blueprint]] — NVIDIA AI Blueprint for continuously optimizing agents and models with production traffic, NeMo evaluation/customization, and NIM redeployment
 - [[NVIDIA-NemoClaw]] — Alpha stack for running OpenClaw assistants with NVIDIA OpenShell and Nemotron models
 - [[NVIDIA-OpenShell]] — Secure sandboxed runtime and policy layer for autonomous AI agents
 
@@ -238,6 +241,12 @@
 - [[NVIDIA-MONAI-Toolkit]] — NVIDIA AI Enterprise-supported MONAI distribution for medical imaging AI development
 - [[NVIDIA-Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
 - [[NVIDIA-DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
+
+### Enterprise Data & Storage Platforms
+- [[NVIDIA-AI-Data-Platform]] — Reference design for accelerating enterprise storage, retrieval, vector search, RAG, and agent data access
+- [[NVIDIA-STX]] — Modular AI-native storage reference architecture built around accelerated compute, BlueField, Spectrum-X, and AI software
+- [[NVIDIA-CMX]] — Context memory storage platform for long-context, multi-turn, and agentic inference KV-cache sharing
+- [[NVIDIA-Certified-Storage]] — Storage validation program for AI factory, AI Data Platform, training, inference, and KV-cache workloads
 
 ### Hardware Platforms
 - [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
@@ -429,4 +438,4 @@
 
 ## Strategies
 
-*(none yet)*
+- [[NVIDIA-Enterprise-AI-Factory]] — NVIDIA design-guide strategy for production enterprise AI factories across compute, networking, storage, software, security, and operations

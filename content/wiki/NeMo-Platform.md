@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo Platform, microservices, AI agents, synthetic data, fine-tuning, evaluation
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NeMo-Curator]], [[NVIDIA-Agent-Intelligence-Toolkit]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/latest/index.html
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NeMo-Curator]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Blueprints]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/latest/index.html, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/aiq-blueprint/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,7 +24,7 @@ Agentic AI systems need more than a model endpoint: they need data creation, cus
 - Local quickstart and Kubernetes deployment paths.
 
 ### NVIDIA context
-NeMo Platform is the operational/microservices side of [[NVIDIA-NeMo]], whereas NeMo Framework is the open-source training/development framework. It should be linked from pages about NIM, Retriever, Guardrails, and agent workflows.
+NeMo Platform is the operational/microservices side of [[NVIDIA-NeMo]], whereas NeMo Framework is the open-source training/development framework. It should be linked from pages about NIM, Retriever, Guardrails, agent workflows, AI blueprints, and data flywheel optimization.
 
 ## Connections
 - [[NVIDIA-NeMo]] - parent suite for agent lifecycle management.
@@ -32,7 +32,9 @@ NeMo Platform is the operational/microservices side of [[NVIDIA-NeMo]], whereas 
 - [[NeMo-Retriever]] - retrieval services for enterprise RAG and multimodal extraction.
 - [[NeMo-Guardrails]] - real-time protection and policy enforcement.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow layer for building and optimizing agents.
+- [[NVIDIA-AI-Q-Blueprint]] - blueprint that uses NeMo Agent Toolkit concepts with retrieval, evaluation, and deployment.
+- [[NVIDIA-Data-Flywheel-Blueprint]] - blueprint that uses NeMo Customizer, Evaluator, Datastore, Deployment Manager, Entity Store, and NIM Proxy.
+- [[NVIDIA-AI-Blueprints]] - catalog where NeMo microservices appear in current NVIDIA-authored application workflows.
 
 ## Source Excerpts
 - NVIDIA NeMo Platform docs describe microservices for synthetic data, customization, evaluation, guardrails, and inference.
-

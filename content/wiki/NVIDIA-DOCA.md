@@ -2,8 +2,8 @@
 
 **Type:** Framework
 **Tags:** NVIDIA, DOCA, BlueField, ConnectX, SuperNIC, DPU, networking, storage, security, SDK, DOCA-OFED
-**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
-**Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started
+**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
+**Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started; https://www.nvidia.com/en-us/data-center/ai-storage/cmx/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,6 +17,7 @@ DOCA consists of both an SDK and runtime environment. The BlueField software bun
 The SDK spans several infrastructure domains: RDMA and UCX/UCC communications, GPUDirect integration, ASAP2 switching, emulated VirtIO, P4, DPA access to NIC engines, inline crypto, App Shield runtime security, storage emulation and virtualization, compression, management, deployment, and provisioning. Public docs also list DOCA programming guides, reference applications, tools, services, API references, and driver documentation.
 
 DOCA is especially important because it consolidates infrastructure offload into a single NVIDIA programming and operations surface. Instead of treating DPU firmware, host drivers, RDMA, storage virtualization, packet processing, crypto, telemetry, and Kubernetes networking as unrelated layers, DOCA provides the shared architecture underneath BlueField and ConnectX software features.
+Current [[NVIDIA-CMX]] material extends that story into context memory: DOCA Memos is described as the BlueField/CMX SDK surface for sharing KV cache across AI compute and data nodes.
 
 ## Connections
 - [[NVIDIA-BlueField-DPU]] - DOCA is the primary software framework for programming BlueField DPUs and SuperNICs.
@@ -24,6 +25,9 @@ DOCA is especially important because it consolidates infrastructure offload into
 - [[NVIDIA-Network-Operator]] - Network Operator deploys and manages DOCA-OFED driver containers and related networking components in Kubernetes.
 - [[NVIDIA-DOCA-Platform-Framework]] - DPF orchestrates BlueField-accelerated services built on the DOCA software stack.
 - [[NVIDIA-Spectrum-X]] - DOCA 3.3.0 is tied to the Spectrum-X reference architecture 2.1 release stack.
+- [[NVIDIA-STX]] - STX uses BlueField and software-defined infrastructure acceleration where DOCA is the relevant software layer.
+- [[NVIDIA-CMX]] - CMX references DOCA Memos for KV-cache sharing and context memory APIs.
+- [[NVIDIA-AI-Data-Platform]] - AI Data Platform depends on accelerated data movement and storage services that align with DOCA/BlueField.
 - [[GPUDirect-RDMA]] - DOCA RDMA, UCX, and GPUDirect support form part of the GPU-to-network data path.
 - [[NVIDIA-HPC-X]] - HPC-X consumes UCX/UCC/SHARP-style networking capabilities that sit close to DOCA networking infrastructure.
 - [[NVIDIA-Rivermax]] - DOCA Rivermax exposes Rivermax streaming acceleration through DOCA APIs.

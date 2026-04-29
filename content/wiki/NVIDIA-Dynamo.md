@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Dynamo, inference, LLM serving, Kubernetes, NIM, disaggregated serving
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-Grove]], [[KAI-Scheduler]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NIXL]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]]
-**Sources:** https://docs.nvidia.com/dynamo/index.html
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Grove]], [[KAI-Scheduler]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NIXL]], [[NVIDIA-NeMo]], [[NVIDIA-DGX]]
+**Sources:** https://docs.nvidia.com/dynamo/index.html, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-data-platform/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,12 +21,15 @@ AI factories need inference services that can scale beyond a single process or s
 - Designed to fit NVIDIA inference runtimes and model-serving workflows.
 - Relevant to large language model serving, disaggregation, and operational deployment.
 - Kubernetes multinode deployments can use [[NVIDIA-Grove]] and [[KAI-Scheduler]] for topology-aware pod placement, gang scheduling, and coordinated scaling.
+- [[NVIDIA-CMX]] positions Dynamo as the serving layer that can route requests with awareness of where reusable KV cache resides in a context-memory tier.
 
 ### NVIDIA context
 Dynamo is part of NVIDIA's fast-moving inference layer, bridging model-serving systems and AI factory operations. It should be tracked alongside [[NVIDIA-NIM]], [[NIXL]], [[TensorRT-LLM]], and [[Triton-Inference-Server]] for current production inference architecture.
 
 ## Connections
 - [[NVIDIA-NIM]] - Dynamo complements NIM-based model deployment and serving.
+- [[NVIDIA-CMX]] - context memory storage layer for long-context inference and KV-cache reuse.
+- [[NVIDIA-AI-Data-Platform]] - AI Data Platform lists centralized cache for distributed inference with Dynamo as a reference workflow.
 - [[NVIDIA-Grove]] - Grove provides declarative Kubernetes orchestration for multi-component Dynamo inference systems.
 - [[KAI-Scheduler]] - KAI handles topology-aware and gang-scheduled placement for Grove/Dynamo deployments.
 - [[NIXL]] - disaggregated inference uses high-throughput transfer for KV cache and tensor movement.

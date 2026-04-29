@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI factory, cluster management, DGX, SuperPOD, orchestration, observability, recovery, GB200, GB300
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
 **Sources:** https://docs.nvidia.com/mission-control/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html
 **Last Updated:** 2026-04-28
 
@@ -11,6 +11,7 @@ NVIDIA Mission Control is NVIDIA's integrated AI factory management platform for
 
 ## Detail
 Mission Control turns a multi-rack AI system into something administrators can provision, operate, monitor, and recover in a coordinated way. The docs describe three main operational planes: a control plane for administration and services, a user access plane for Slurm and Run:ai driven workload submission, and a compute plane that executes GPU workloads on DGX or NVL72 resources.
+In the broader [[NVIDIA-Enterprise-AI-Factory]] picture, Mission Control is the operations companion to AI Enterprise software, validated compute, networking, and data/storage layers such as [[NVIDIA-AI-Data-Platform]] and [[NVIDIA-Certified-Storage]].
 
 ### Core platform role
 Mission Control is positioned as the operations layer for NVIDIA's AI factory model. Its job is not just to bring up hardware, but to keep large GPU environments usable at production scale by standardizing deployment, reducing downtime, and integrating cluster automation with observability and recovery.
@@ -35,6 +36,9 @@ As of docs accessed on 2026-04-28, the latest surfaced user-guide and release-no
 
 ## Connections
 - [[NVIDIA-DGX]] - Mission Control is the operations layer for current DGX B200/B300 and DGX GB200/GB300 deployments.
+- [[NVIDIA-Enterprise-AI-Factory]] - Mission Control is the operational control plane adjacent to enterprise AI factory reference designs.
+- [[NVIDIA-AI-Data-Platform]] - AI factory operations must account for data ingestion, retrieval, and context infrastructure.
+- [[NVIDIA-Certified-Storage]] - certified storage is part of the validated AI factory infrastructure Mission Control may operate around.
 - [[NVIDIA-Base-Command]] - BCM is the provisioning and cluster-management backbone inside Mission Control.
 - [[NVIDIA-Run-ai]] - Mission Control uses Run:ai for Kubernetes-native AI workload orchestration in supported DGX environments.
 - [[NVIDIA-UFM]] - UFM handles InfiniBand scale-out fabric management inside supported Mission Control deployments.

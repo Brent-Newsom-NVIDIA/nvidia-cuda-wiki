@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,6 +23,9 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - **NeMo Microservices (NeMo.ms):** Microservice-based LLMOps components: NeMo Curator (data curation), NeMo Customizer (LoRA/SFT/RLHF fine-tuning), NeMo Evaluator, and NeMo Guardrails (content safety)
 - **Flexible Licensing:** Licensed via NVIDIA License System (NLS); supports on-premises DGX and certified servers, VMware vSphere with vGPU, Red Hat OpenShift, bare metal, and all major public clouds (AWS, Azure, GCP, OCI Marketplace)
 - **Run:ai:** current AI Enterprise guidance includes [[NVIDIA-Run-ai]] self-hosted GPU scheduling and workload orchestration; SaaS remains a separate offering
+- **AI factory guidance:** current planning docs include [[NVIDIA-Enterprise-AI-Factory]] reference guidance for Blackwell systems, BlueField DPUs, Spectrum-X networking, certified storage, Kubernetes, Run:ai, DOCA, Dynamo-Triton, and AI Enterprise software.
+- **Blueprint and agent workflows:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], and [[NVIDIA-Data-Flywheel-Blueprint]] show how AI Enterprise software components become repeatable agent, retrieval, evaluation, and optimization workflows.
+- **AI data layer:** [[NVIDIA-AI-Data-Platform]] and [[NVIDIA-Certified-Storage]] connect AI Enterprise to retrieval, vector search, context, and storage designs for enterprise data.
 - **NVIDIA-Certified Systems:** Hardware certification program ensuring server platforms from Dell, HPE, Lenovo, Supermicro, etc. are validated and performance-benchmarked for AI Enterprise workloads
 - **Software-Defined GPU Partitioning:** Support for MIG (Multi-Instance GPU), vGPU, and [[NVIDIA-Cloud-Native-Technologies]] deployment patterns with enterprise licensing for multi-tenant deployments
 
@@ -54,6 +57,11 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 ## Connections
 - [[NGC]] — AI Enterprise software is exclusively distributed and licensed through NGC; NGC Private Registry supports enterprise isolation
 - [[NVIDIA-NIM]] — NIM microservices are the primary inference delivery mechanism within AI Enterprise
+- [[NVIDIA-AI-Blueprints]] — reference workflows for building applications from NIM, NeMo, Nemotron, and AI Enterprise components.
+- [[NVIDIA-AI-Q-Blueprint]] — enterprise research agent blueprint that uses the NVIDIA agent and retrieval stack.
+- [[NVIDIA-Data-Flywheel-Blueprint]] — continuous optimization blueprint using NeMo evaluation/customization and NIM candidate deployments.
+- [[NVIDIA-Enterprise-AI-Factory]] — design-guide framing for running AI Enterprise as part of production AI factory infrastructure.
+- [[NVIDIA-AI-Data-Platform]] — data-platform reference design that uses NVIDIA software for retrieval and agent data access.
 - [[NVIDIA-API-Documentation]] — public hosted API docs connect model endpoints to production application development
 - [[LLM-Inference-Quick-Start-Recipes]] — quick-start recipes show common LLM inference deployment paths on NVIDIA software
 - [[NeMo-Platform]] — NeMo Platform microservices provide customization, evaluation, guardrails, and inference workflows
@@ -64,6 +72,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
 - [[NVIDIA-Run-ai]] — self-hosted GPU scheduling and workload orchestration included in current AI Enterprise guidance.
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
+- [[NVIDIA-Certified-Storage]] — validated storage layer for AI factory and AI Data Platform deployments.
 - [[NVIDIA-Certified-for-Cloudera]] — enterprise data-platform reference material built around NVIDIA-certified infrastructure
 - [[NVIDIA-MONAI-Toolkit]] — healthcare imaging AI toolkit offered through NVIDIA AI Enterprise support paths
 - [[NVIDIA-Cloud-Native-Technologies]] — Kubernetes/container documentation anchors cloud-native AI Enterprise deployments
@@ -77,6 +86,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 ## Resources
 - [NVIDIA AI Enterprise Product Page](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/)
 - [AI Enterprise Documentation](https://docs.nvidia.com/ai-enterprise/latest/index.html)
+- [Enterprise AI Factory Design Guide](https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html)
 - [AI Enterprise on NGC](https://catalog.ngc.nvidia.com/enterprise)
 - [NVIDIA-Certified Systems](https://www.nvidia.com/en-us/data-center/products/nvidia-certified-systems/)
 - [NeMo Microservices](https://docs.nvidia.com/nemo-microservices/latest/index.html)

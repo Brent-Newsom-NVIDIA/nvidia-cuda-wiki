@@ -2,8 +2,8 @@
 
 **Type:** Model
 **Tags:** NVIDIA, Nemotron, LLM, multimodal, speech, OCR, content safety, agentic AI, NIM
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
-**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
+**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,6 +21,7 @@ Nemotron gives NVIDIA a model family that can be trained and customized through 
 - **Speech:** Nemotron ASR Streaming is an English streaming ASR model with punctuation/capitalization support and Riva integration.
 - **Document AI:** Nemotron OCR, table-structure, and page-elements models target extraction of text, layout, tables, charts, and document structure.
 - **Retrieval:** Llama Nemotron reranking and embedding models connect Nemotron to [[NeMo-Retriever]] and enterprise RAG workflows.
+- **Blueprint usage:** current [[NVIDIA-AI-Blueprints]] use Nemotron-related models in agent, voice, retrieval, and data-flywheel workflows, including [[NVIDIA-AI-Q-Blueprint]] and [[NVIDIA-Data-Flywheel-Blueprint]].
 
 ### NVIDIA context
 Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model endpoints, [[NVIDIA-Agent-Intelligence-Toolkit]] orchestrates workflows, [[NeMo-Retriever]] connects proprietary data, [[NeMo-Guardrails]] applies policy/safety, and [[NVIDIA-DGX-Cloud]] or self-hosted GPUs provide deployment infrastructure.
@@ -28,6 +29,9 @@ Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model e
 ## Connections
 - [[NVIDIA-NeMo]] - lifecycle suite for training, customizing, evaluating, and deploying Nemotron-related systems.
 - [[NVIDIA-NIM]] - hosted and self-hosted endpoint path for Nemotron models.
+- [[NVIDIA-AI-Blueprints]] - build.nvidia.com surfaces Nemotron-backed application blueprints without requiring one wiki page per build listing.
+- [[NVIDIA-AI-Q-Blueprint]] - AI-Q's current blueprint card lists Nemotron model options for enterprise research agents.
+- [[NVIDIA-Data-Flywheel-Blueprint]] - data flywheel workflows use open/NIM model choices in the Nemotron ecosystem for optimization experiments.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow layer for building agents on top of Nemotron and other models.
 - [[NeMo-Retriever]] - retrieval layer that uses NVIDIA embedding/reranking models related to Nemotron.
 - [[NeMo-Guardrails]] - safety and policy workflows can use Nemotron content-safety models.
@@ -44,4 +48,3 @@ Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model e
 - [Nemotron Developer Page](https://developer.nvidia.com/nemotron)
 - [Nemotron 3 Content Safety](https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard)
 - [Nemotron ASR Streaming](https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard)
-

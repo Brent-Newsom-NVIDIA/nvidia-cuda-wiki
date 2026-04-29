@@ -1,0 +1,48 @@
+# NVIDIA Enterprise AI Factory
+
+**Type:** Strategy
+**Tags:** NVIDIA, enterprise AI factory, AI Enterprise, agentic AI, Blackwell, BlueField, Spectrum-X, certified systems, certified storage
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-Systems]]
+**Sources:** https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html
+**Last Updated:** 2026-04-29
+
+## Summary
+NVIDIA Enterprise AI Factory is NVIDIA's reference-design concept for building single-tenant, enterprise-ready AI infrastructure with NVIDIA hardware, networking, storage, Kubernetes, and AI Enterprise software. The current design guide frames the AI factory as a co-designed environment for agentic AI, long-running agents, RAG, inference, customization, observability, security, and day-2 operations.
+
+## Detail
+
+### Purpose
+An enterprise AI factory industrializes AI deployment inside a company's own infrastructure and partner ecosystem. It combines accelerator capacity, high-speed networking, scalable storage, cloud-native operations, security, and model/application lifecycle software so enterprise teams can run AI as a production capability rather than a collection of prototypes.
+
+### Architecture themes
+- NVIDIA accelerated computing with Blackwell-class GPUs, CPUs, DPUs, and high-speed fabrics.
+- [[NVIDIA-BlueField-DPU]] for infrastructure acceleration, zero-trust style isolation, storage, networking, and security offload.
+- [[NVIDIA-Spectrum-X]] networking for Ethernet AI factory fabrics and inference latency control.
+- [[NVIDIA-Certified-Systems]] and [[NVIDIA-Certified-Storage]] for validated server and storage infrastructure.
+- [[NVIDIA-AI-Enterprise]] software, including NIM, NeMo, Dynamo-Triton, GPU Operator, Network Operator, DOCA, DPF, Run:ai, and observability components.
+- Kubernetes as the cloud-native control plane for agentic applications, model serving, scheduling, and lifecycle automation.
+
+### Agentic AI factory
+The design guide treats agentic AI as a shift from static model serving to long-running, stateful workflows. AI-Q-style agents use routing, persistent context, retrieval, evaluation, tracing, and tool execution. The AI factory becomes the control plane for deploying, monitoring, governing, and improving those agents over time.
+
+### NVIDIA context
+This page is the strategic umbrella that connects [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Run-ai]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], and [[NVIDIA-DCGM]].
+
+## Connections
+- [[NVIDIA-AI-Enterprise]] - software foundation for enterprise AI workloads, NIM, NeMo, operators, and support.
+- [[NVIDIA-Mission-Control]] - AI factory operations plane for large NVIDIA deployments.
+- [[NVIDIA-DGX-SuperPOD]] - on-premises AI supercomputing reference architecture that can anchor AI factory infrastructure.
+- [[NVIDIA-DGX-Cloud]] - cloud-accessible NVIDIA AI factory path for organizations that need hosted capacity.
+- [[NVIDIA-AI-Q-Blueprint]] - example long-running enterprise research agent in the AI factory guidance.
+- [[NVIDIA-AI-Data-Platform]] - optional data layer for ingestion, embedding, indexing, retrieval, and agent context.
+- [[NVIDIA-Certified-Storage]] - validated storage layer for AI factory data and model workflows.
+- [[NVIDIA-Certified-Systems]] - validated compute/system layer for enterprise AI factories.
+
+## Source Excerpts
+- NVIDIA's design guide frames AI factories as cost-effective, scalable, high-performing enterprise infrastructure built with NVIDIA-certified systems, certified storage, networking, and AI software.
+- The ecosystem architecture chapter describes Blackwell GPUs, BlueField DPUs, Spectrum-X networking, certified storage, AI Data Platform, Kubernetes, Run:ai, operators, DOCA, and Dynamo-Triton as AI factory components.
+
+## Resources
+- [Enterprise AI Factory Design Guide](https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html)
+- [Enterprise AI Factory Overview](https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html)
+- [Agentic AI in the Factory](https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html)

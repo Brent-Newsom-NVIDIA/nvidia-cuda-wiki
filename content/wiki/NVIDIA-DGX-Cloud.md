@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DGX Cloud, cloud AI, AI supercomputing, enterprise AI
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Base-Command]], [[NVIDIA-AI-Grid]], [[NVIDIA-NIM]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Fleet-Intelligence]], [[NVIDIA-Project-GPUd]], [[NVIDIA-Isaac-GR00T]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-AI-Grid]], [[NVIDIA-NIM]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Fleet-Intelligence]], [[NVIDIA-Project-GPUd]], [[NVIDIA-Isaac-GR00T]]
 **Sources:** https://docs.nvidia.com/dgx-cloud/index.html, https://www.nvidia.com/en-us/data-center/dgx-cloud/
 **Last Updated:** 2026-04-29
 
@@ -22,11 +22,15 @@ Not every organization can deploy a full AI supercomputer on premises, and many 
 
 ### NVIDIA context
 DGX Cloud is part of the [[NVIDIA-AI-Grid]] story: workloads can run where infrastructure, data locality, cost, and latency make the most sense.
+It is also a cloud-accessible AI factory path alongside on-premises [[NVIDIA-DGX-SuperPOD]], with [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], and storage/networking choices determining how training, inference, retrieval, and agent workflows are placed.
 
 ## Connections
 - [[NVIDIA-DGX]] - on-prem DGX systems are the hardware/platform counterpart.
 - [[NVIDIA-DGX-SuperPOD]] - large on-prem AI supercomputing reference architecture.
 - [[NVIDIA-AI-Enterprise]] - enterprise software stack used across DGX Cloud environments.
+- [[NVIDIA-Enterprise-AI-Factory]] - DGX Cloud is a hosted capacity option in the broader AI factory pattern.
+- [[NVIDIA-AI-Data-Platform]] - data access and retrieval design influence how DGX Cloud workloads connect to enterprise data.
+- [[NVIDIA-Certified-Storage]] - cloud partner and AI factory storage choices affect large-scale AI workload throughput.
 - [[NVIDIA-Base-Command]] - AI development and job management layer historically tied to DGX Cloud.
 - [[NVIDIA-NIM]] - inference microservices can be deployed on NVIDIA cloud or self-hosted GPU infrastructure.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - cloud partner software components support NVIDIA-powered AI cloud operations.

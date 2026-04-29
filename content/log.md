@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 10: AI blueprints, enterprise AI factory, and AI data platform expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch10-20260429T061032Z`; local Git tag `codex-backup-overnight-pre-batch10-20260429T061032Z`
+
+**Source URLs:** https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/products/certified-storage/, https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption
+
+**Gap analysis summary:**
+
+- Added canonical pages for durable NVIDIA-authored AI blueprint concepts while explicitly treating build.nvidia as a discovery/current-state source, not a reason to mirror every individual build listing.
+- Split out AI-Q and Data Flywheel as standalone pages because both have stable NVIDIA-authored blueprint cards and/or docs surfaces.
+- Added the Enterprise AI Factory strategy page from the current NVIDIA AI Enterprise design guide and connected it to AI Enterprise, DGX, Mission Control, AI data, certified systems, and certified storage.
+- Added AI Data Platform, STX, CMX, and NVIDIA-Certified Storage as the durable data/storage layer now appearing across NVIDIA AI factory materials.
+- Kept partner build listings and narrower blueprint examples folded into canonical pages rather than creating per-build wiki pages.
+
+**Pages created (8 total):**
+
+- `content/wiki/NVIDIA-AI-Blueprints.md`
+- `content/wiki/NVIDIA-AI-Q-Blueprint.md`
+- `content/wiki/NVIDIA-Data-Flywheel-Blueprint.md`
+- `content/wiki/NVIDIA-Enterprise-AI-Factory.md`
+- `content/wiki/NVIDIA-AI-Data-Platform.md`
+- `content/wiki/NVIDIA-STX.md`
+- `content/wiki/NVIDIA-CMX.md`
+- `content/wiki/NVIDIA-Certified-Storage.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected AI factory, AI Blueprint, AI Data Platform, and certified storage context.
+- `content/wiki/NVIDIA-Agent-Intelligence-Toolkit.md`, `content/wiki/NeMo-Platform.md`, `content/wiki/NeMo-Retriever.md`, `content/wiki/NVIDIA-NIM.md`, and `content/wiki/Nemotron.md` - linked AI-Q, Data Flywheel, blueprint curation, retrieval, model, and evaluation flows.
+- `content/wiki/NVIDIA-DGX-Cloud.md`, `content/wiki/NVIDIA-DGX-SuperPOD.md`, and `content/wiki/NVIDIA-Mission-Control.md` - connected enterprise AI factory and data/storage infrastructure.
+- `content/wiki/NVIDIA-BlueField-DPU.md`, `content/wiki/NVIDIA-Spectrum-X.md`, `content/wiki/NVIDIA-DOCA.md`, and `content/wiki/NVIDIA-Dynamo.md` - connected STX, CMX, AI Data Platform, context memory, and AI-native storage networking.
+- `content/wiki/cuVS.md`, `content/wiki/GPU-Direct-Storage.md`, `content/wiki/NVIDIA-Certified-Systems.md`, and `content/wiki/NVIDIA-Blackwell-Architecture.md` - linked vector search, storage validation, certified compute, and Blackwell compute into the AI data/factory layer.
+- `content/index.md` - updated page count to 254 and indexed the eight new AI blueprint, AI factory, and AI data/storage pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 9: AI cloud orchestration and NCX component expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch9-20260429T060541Z`; local Git tag `codex-backup-overnight-pre-batch9-20260429T060541Z`

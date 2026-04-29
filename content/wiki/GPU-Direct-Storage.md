@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Storage, I/O, HPC, AI Training, Direct I/O
-**Related:** [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-DGX-SuperPOD]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/certified-storage/
+**Last Updated:** 2026-04-29
 
 ## Summary
 GPU Direct Storage (GDS) is an NVIDIA technology that enables a direct data path between GPU memory and storage (NVMe SSDs, networked storage), bypassing the CPU and system memory bottleneck. This dramatically reduces latency and increases storage I/O bandwidth for GPU-accelerated workloads by allowing data to flow directly from storage to GPU (and vice versa) without CPU-mediated copies.
@@ -30,6 +30,7 @@ In traditional GPU workloads, data must travel from storage → CPU memory → G
 - Real-time video analytics
 - Database query acceleration on GPU
 - Large model weight loading for inference
+- AI factory storage validation and partner storage paths where [[NVIDIA-Certified-Storage]] and direct GPU data access prevent storage bottlenecks
 
 ### Hardware Requirements
 - NVIDIA GPU, Volta (V100) or newer
@@ -46,6 +47,9 @@ In traditional GPU workloads, data must travel from storage → CPU memory → G
 - [[cuDF]] — cuDF supports GDS-backed I/O for reading large datasets directly into GPU DataFrames
 - [[NVIDIA-DALI]] — DALI can use GDS for loading training images directly to GPU without CPU copies
 - [[cuBLAS]] — HPC workflows using cuBLAS benefit from GDS for loading matrix data from disk
+- [[NVIDIA-Certified-Storage]] — certified storage programs validate storage performance needed to keep GPUs fed.
+- [[NVIDIA-AI-Data-Platform]] — AI Data Platform depends on high-throughput data access for extraction, retrieval, and context workflows.
+- [[NVIDIA-DGX-SuperPOD]] — SuperPOD-scale clusters require storage designs that avoid starving accelerators.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/gpudirectstorage)
