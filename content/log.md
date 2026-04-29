@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 83: Ising Decoding
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch83-20260429T121211Z`; local Git tag `codex-backup-overnight-pre-batch83-20260429T121211Z`
+
+**Source URLs:** https://www.nvidia.com/en-us/solutions/quantum-computing/ising/, https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/, https://github.com/NVIDIA/Ising-Decoding, https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Fast, https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate
+
+**Gap analysis summary:**
+
+- Added a canonical Ising Decoding page after finding NVIDIA Ising, technical blog, GitHub training framework, and Hugging Face model cards for Fast and Accurate variants with no existing wiki page.
+- Combined Fast and Accurate checkpoints into one page because they are variants of the same NVIDIA Ising Decoding model domain, avoiding duplicate wiki pages for one conceptual topic.
+- Connected Ising Decoding to NVIDIA Quantum, CUDA-QX, CUDA-Q Realtime, NVQLink, Ising Calibration, cuQuantum, PyTorch, and NVAQC context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Ising-Decoding.md`
+
+**Pages updated:**
+
+- `content/wiki/Ising-Calibration-1-35B-A3B.md` - linked the sibling Ising model domain.
+- `content/wiki/NVIDIA-Quantum.md`, `content/wiki/CUDA-QX.md`, `content/wiki/CUDA-Q-Realtime.md`, and `content/wiki/NVIDIA-NVQLink.md` - connected QEC/realtime decoding paths.
+- `content/index.md` - updated total page count to 457 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 82: Ising Calibration 1 35B A3B
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch82-20260429T120827Z`; local Git tag `codex-backup-overnight-pre-batch82-20260429T120827Z`

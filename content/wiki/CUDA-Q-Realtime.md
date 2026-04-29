@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA-Q, cudaq-realtime, NVQLink, realtime, quantum control, QEC, GPU-QPU
-**Related:** [[CUDA-Q]], [[CUDA-QX]], [[NVIDIA-NVQLink]], [[NVIDIA-Quantum]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Holoscan]]
+**Related:** [[CUDA-Q]], [[CUDA-QX]], [[NVIDIA-NVQLink]], [[NVIDIA-Quantum]], [[Ising-Decoding]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Holoscan]]
 **Sources:** https://nvidia.github.io/cuda-quantum/latest/using/realtime.html, https://nvidia.github.io/cuda-quantum/blogs/blog/2026/03/16/launching-cudaq-realtime/, https://www.nvidia.com/en-us/solutions/quantum-computing/nvqlink/
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,7 @@ Use this page for the software/API layer. Use [[NVIDIA-NVQLink]] for the archite
 - [[CUDA-Q]] - CUDA-Q Realtime is part of the CUDA-Q platform.
 - [[NVIDIA-NVQLink]] - realtime library provides the programmable low-latency NVQLink path.
 - [[CUDA-QX]] - CUDA-Q QEC uses realtime decoding paths for active error correction.
+- [[Ising-Decoding]] - NVIDIA predecoder models are used in realtime QEC examples and latency-sensitive decoding workflows.
 - [[NVIDIA-BlueField-DPU]] and [[NVIDIA-ConnectX-InfiniBand]] - NVIDIA networking components used in realtime host designs.
 - [[NVIDIA-Holoscan]] - Holoscan Sensor Bridge is referenced as part of the high-bandwidth data-transfer layer.
 

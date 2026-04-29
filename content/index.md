@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 456*
+*Total pages: 457*
 
 ---
 
@@ -97,6 +97,7 @@
 - [[cuStateVec]] — cuQuantum state-vector simulation component for quantum circuit workloads
 - [[CUDA-Q]] — hybrid quantum-classical computing platform with GPU simulation and QPU backend support
 - [[Ising-Calibration-1-35B-A3B]] — NVIDIA quantum calibration VLM for analyzing QPU calibration experiment plots
+- [[Ising-Decoding]] — NVIDIA Ising QEC predecoder models and training framework for surface-code decoding
 - [[NVIDIA-Quantum-Cloud]] — cloud/API access path for running CUDA-Q projects on NVIDIA GPU systems
 - [[NVIDIA-Accelerated-Quantum-Center]] — NVAQC research facility integrating quantum hardware with NVIDIA AI supercomputing
 - [[NVIDIA-DGX-Quantum]] — queryable DGX Quantum architecture identity now redirected toward NVQLink as the current direction
@@ -548,7 +549,10 @@
 
 ### Multimodal
 - [[NVIDIA-ACE]] — Avatar Cloud Engine: AI microservices for interactive digital humans and NPCs (ASR+LLM+TTS+animation)
+
+### Quantum Models
 - [[Ising-Calibration-1-35B-A3B]] — NVIDIA Ising-family VLM for quantum calibration plot understanding
+- [[Ising-Decoding]] — NVIDIA Ising-family QEC predecoder models and training framework
 
 ### World Models
 - [[NVIDIA-Cosmos]] — World foundation model platform for physical AI; video generation for synthetic robotics/AV training data

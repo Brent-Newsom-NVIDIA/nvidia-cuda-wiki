@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, NVQLink, quantum computing, QPU, GPU-QPU, realtime, CUDA-Q, QEC, RDMA
-**Related:** [[NVIDIA-Quantum]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[DOCA-GPUNetIO]], [[NVIDIA-Holoscan]]
+**Related:** [[NVIDIA-Quantum]], [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[Ising-Decoding]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[DOCA-GPUNetIO]], [[NVIDIA-Holoscan]]
 **Sources:** https://www.nvidia.com/en-us/solutions/quantum-computing/nvqlink/, https://developer.nvidia.com/blog/nvidia-nvqlink-architecture-integrates-accelerated-computing-with-quantum-processors/, https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing
 **Last Updated:** 2026-04-29
 
@@ -36,6 +36,7 @@ NVQLink should be treated as the current canonical page for GPU-QPU coupling. Th
 - [[CUDA-Q]] - NVQLink is exposed through CUDA-Q realtime software paths.
 - [[CUDA-Q-Realtime]] - provides the low-latency networking/runtime API layer for NVQLink.
 - [[CUDA-QX]] - CUDA-Q QEC uses NVQLink for realtime decoder workflows.
+- [[Ising-Decoding]] - QEC predecoder models are an NVIDIA Ising workload for realtime GPU-QPU decoding.
 - [[NVIDIA-DGX-Quantum]] - earlier DGX Quantum identity has been superseded/redirected toward NVQLink.
 - [[NVIDIA-Accelerated-Quantum-Center]] - NVAQC uses GPU-QPU integration patterns in accelerated quantum research.
 - [[NVIDIA-ConnectX-InfiniBand]] and [[NVIDIA-BlueField-DPU]] - NVIDIA networking components fit the realtime host path.
