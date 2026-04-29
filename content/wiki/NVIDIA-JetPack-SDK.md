@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, JetPack, Jetson, edge AI, robotics, CUDA, TensorRT, Jetson Linux, developer tools
-**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-DeepStream]], [[TensorRT]]
-**Sources:** https://docs.nvidia.com/jetson/, https://docs.nvidia.com/jetson/archives/index.html, https://developer.nvidia.com/embedded/faq, https://developer.nvidia.com/blog/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/
+**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-DeepStream]], [[TensorRT]], [[Nsight-Graphics]]
+**Sources:** https://docs.nvidia.com/jetson/, https://docs.nvidia.com/jetson/archives/index.html, https://developer.nvidia.com/embedded/faq, https://developer.nvidia.com/blog/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/, https://developer.nvidia.com/nsight-graphics/get-started
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -44,6 +44,7 @@ JetPack turns Jetson modules and developer kits into usable edge AI development 
 - [[Isaac-ROS-FoundationStereo]] - Isaac ROS model support surfaced alongside JetPack 7.1 and Thor T4000 support in recent release notes.
 - [[NVIDIA-DeepStream]] - video AI SDK commonly deployed through JetPack on Jetson devices.
 - [[TensorRT]] - primary inference optimization runtime included in Jetson AI deployments.
+- [[Nsight-Graphics]] - current Nsight Graphics docs say it is bundled as part of the Jetson development suite in JetPack SDK.
 
 ## Source Excerpts
 - NVIDIA Jetson docs describe JetPack as the installer/software bundle for OS images, tools, libraries, APIs, samples, and documentation.

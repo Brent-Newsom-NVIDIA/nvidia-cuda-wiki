@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Nsight, Visual Studio, CUDA debugging, GPU development, Windows
-**Related:** [[Nsight-Compute]], [[Nsight-Systems]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]]
-**Sources:** https://docs.nvidia.com/nsight-visual-studio-edition/index.html
+**Related:** [[Nsight-Compute]], [[Nsight-Systems]], [[Nsight-Graphics]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]]
+**Sources:** https://docs.nvidia.com/nsight-visual-studio-edition/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,6 +17,7 @@ This page is useful when a user asks about CUDA development on Windows or Visual
 ## Connections
 - [[Nsight-Compute]] - kernel profiler for deeper performance analysis.
 - [[Nsight-Systems]] - system-wide profiler and timeline.
+- [[Nsight-Graphics]] - graphics debugger/profiler reachable through the broader Nsight developer tools family.
 - [[CUDA-GDB]] - Linux/QNX command-line CUDA debugger counterpart.
 - [[Compute-Sanitizer]] - correctness checking for CUDA applications.
 - [[NVCC]] - CUDA compiler used by Visual Studio CUDA projects.

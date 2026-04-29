@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 444*
+*Total pages: 445*
 
 ---
 
@@ -143,6 +143,7 @@
 - [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
 - [[Nsight-Deep-Learning-Designer]] — visual ONNX model design and inference profiling IDE with TensorRT/ONNX Runtime profilers
+- [[Nsight-Graphics]] — standalone graphics debugger/profiler for GPU Trace, frame capture, shaders, ray tracing, DRIVE, and Jetson
 - [[Nsight-Python]] — Python-first Nsight kernel profiling automation across kernel configurations
 - [[Nsight-Systems]] — system-wide CPU+GPU performance profiler and timeline visualizer
 - [[Nsight-Visual-Studio-Edition]] — Visual Studio integration for CUDA debugging, profiling, and GPU development on Windows

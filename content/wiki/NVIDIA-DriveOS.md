@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DriveOS, DRIVE, automotive, autonomous vehicles, safety, QNX, Linux, DriveWorks, TensorRT
-**Related:** [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-AGX-Thor]], [[NVIDIA-DriveWorks]], [[TensorRT]], [[cuDLA]], [[CUDA-for-Tegra]], [[Nsight-Systems]]
-**Sources:** https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/introduction/introduction.html, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-installation/requirements.html
+**Related:** [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-AGX-Thor]], [[NVIDIA-DriveWorks]], [[TensorRT]], [[cuDLA]], [[CUDA-for-Tegra]], [[Nsight-Systems]], [[Nsight-Graphics]]
+**Sources:** https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/introduction/introduction.html, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-installation/requirements.html, https://developer.nvidia.com/nsight-graphics/get-started
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -33,6 +33,7 @@ NVIDIA public pages state that DriveOS downloads require DRIVE AGX SDK Developer
 - [[cuDLA]] - automotive SoCs use GPU/DLA style acceleration for perception and inference paths.
 - [[CUDA-for-Tegra]] - DRIVE AGX is a Tegra-class integrated GPU platform with embedded CUDA considerations.
 - [[Nsight-Systems]] - developer tool used for profiling and debugging DRIVE software workloads.
+- [[Nsight-Graphics]] - current Nsight Graphics docs say it is bundled as part of DRIVE OS for DRIVE AGX development and deployment.
 
 ## Source Excerpts
 - NVIDIA DriveOS developer pages describe DriveOS as an automotive OS and SDK for AI inference, computer vision, graphics, safety, and security use cases.

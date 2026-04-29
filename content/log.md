@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 70: Nsight Graphics
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch70-20260429T113737Z`; local Git tag `codex-backup-overnight-pre-batch70-20260429T113737Z`
+
+**Source URLs:** https://developer.nvidia.com/nsight-graphics/get-started, https://docs.nvidia.com/nsight-graphics/ReleaseNotes/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical page for Nsight Graphics after finding current 2026.1 NVIDIA docs and no existing wiki page.
+- Kept Graphics Capture, GPU Trace, shader profiler/debugger, GPU crash dump inspection, SDK interfaces, release notes, system requirements, DRIVE, Jetson, tutorials, and feature lists folded into one page.
+- Connected Nsight Graphics to the Nsight suite, RTX/ray tracing, DRIVE OS, JetPack/Jetson, Developer Program, and CloudXR context. Left Nsight Aftermath and Nsight Perf SDK as separate future durable pages because NVIDIA lists them as separate products.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Graphics.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Compute.md`, `content/wiki/Nsight-Systems.md`, and `content/wiki/Nsight-Visual-Studio-Edition.md` - connected the Nsight tool family to Graphics.
+- `content/wiki/NVIDIA-RTX.md`, `content/wiki/NVIDIA-DriveOS.md`, and `content/wiki/NVIDIA-JetPack-SDK.md` - connected graphics/ray tracing, DRIVE, and Jetson contexts to Nsight Graphics.
+- `content/index.md` - updated total page count to 445 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 69: Nsight Deep Learning Designer
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch69-20260429T113522Z`; local Git tag `codex-backup-overnight-pre-batch69-20260429T113522Z`
