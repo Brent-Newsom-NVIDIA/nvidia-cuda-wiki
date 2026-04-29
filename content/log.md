@@ -2,6 +2,29 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 99: Nemotron 3 Ultra base model coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch99-20260429T131411Z`; local Git tag `codex-backup-overnight-pre-batch99-20260429T131411Z`
+
+**Source URLs:** https://docs.nvidia.com/nemotron/nightly/usage-cookbook/Nemotron-3-Ultra-Base/README.html, https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models, https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html
+
+**Gap analysis summary:**
+
+- Found that the wiki had Nemotron 3 Nano, Super, Omni, VoiceChat, and safety/speech/retrieval pages but no canonical page for Nemotron 3 Ultra.
+- Added a cautious Ultra page because current NVIDIA materials identify Ultra as the large Nemotron 3 reasoning/base-model direction; the page explicitly notes that current Ultra docs describe a base checkpoint and forthcoming full release, not a ready production assistant.
+- Connected Ultra to Nemotron, training/customization tools, NIM/inference context, Blackwell/NVFP4, and GB200 NVL72 benchmark context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-3-Ultra.md`
+
+**Pages updated:**
+
+- `content/wiki/Nemotron.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 98: NIM deployment guides for WSL2 and GKE
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch98-20260429T131035Z`; local Git tag `codex-backup-overnight-pre-batch98-20260429T131035Z`

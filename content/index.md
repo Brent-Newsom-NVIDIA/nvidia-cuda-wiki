@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 484*
+*Total pages: 485*
 
 ---
 
@@ -555,6 +555,7 @@
 - [[Nemotron-Training-Recipes]] — NVIDIA public recipe/cookbook stack for Nemotron 3 Nano and Super pretraining, SFT, RL, evaluation, and execution
 - [[Nemotron-3-Nano]] — efficient Nemotron 3 text reasoning model for agent steps, reasoning modes, and NeMo Megatron Bridge workflows
 - [[Nemotron-3-Super]] — high-capacity Nemotron 3 reasoning model for long-context, coding, planning, and complex agentic workflows
+- [[Nemotron-3-Ultra]] — largest Nemotron 3 base/forthcoming model direction for frontier open reasoning workflows
 - [[Nemotron-3-Nano-Omni]] — open omnimodal Nemotron 3 model and NIM for text, image, video, audio, document, and GUI reasoning
 - [[Nemotron-Parse]] — Nemotron document parser and NIM for text/table extraction, semantic classes, bounding boxes, and reading-order structure
 - [[NVLM]] — Frontier-class multimodal LLM (72B); dual-path NVLM-D/H/X architecture; competitive with GPT-4V
