@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 485*
+*Total pages: 486*
 
 ---
 
@@ -52,6 +52,7 @@
 - [[TensorRT-LLM]] — LLM inference optimization library with continuous batching, paged KV cache, FP8
 - [[Transformer-Engine]] — NVIDIA transformer acceleration library for PyTorch/JAX with FP8, MXFP8, and NVFP4 recipes
 - [[NVIDIA-Optimized-Frameworks]] — NVIDIA deep learning framework containers, user guide, and support matrix for PyTorch/TensorFlow/JAX environments
+- [[PyG]] — NVIDIA-optimized PyTorch Geometric container and graph neural network workflow for PyTorch, cuGraph, and PhysicsNeMo
 - [[CUTLASS]] — open-source C++ template library for custom high-performance GEMM on NVIDIA GPUs
 - [[FlashInfer]] — open-source GPU kernel toolkit for LLM inference (attention, batch decode, sampling)
 - [[NVIDIA-Deep-Learning-Performance]] — NVIDIA guidance for GPU deep learning performance, precision, Tensor Cores, and profiling

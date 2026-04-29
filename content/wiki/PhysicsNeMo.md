@@ -1,9 +1,9 @@
 # PhysicsNeMo
 
 **Type:** Technology
-**Tags:** CUDA, NVIDIA, GPU, Physics AI, Scientific Computing, Geoscience, Neural Operators, Simulation
-**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[NIM-for-Earth-2-CorrDiff]], [[NIM-for-Earth-2-FourCastNet]], [[NIM-for-DoMINO-Automotive-Aero]], [[PyTorch]], [[NVIDIA-Warp]], [[cuDNN]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
+**Tags:** CUDA, NVIDIA, GPU, Physics AI, Scientific Computing, Geoscience, Neural Operators, Simulation, PyG, GNN
+**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[NIM-for-Earth-2-CorrDiff]], [[NIM-for-Earth-2-FourCastNet]], [[NIM-for-DoMINO-Automotive-Aero]], [[PyTorch]], [[PyG]], [[NVIDIA-Warp]], [[cuDNN]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo, https://docs.nvidia.com/physicsnemo/latest/physicsnemo/examples/dgl_to_pyg_migration.html, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,6 +21,7 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - Data loaders for ERA5, CMIP6, and seismic datasets
 - Physics-constrained loss functions for atmospheric, oceanic, and subsurface domains
 - Built on PyTorch with Megatron-LM-style distribution for large model training
+- [[PyG]] / PyTorch Geometric backend support for current and new GNN-based models, with migration guidance from DGL graph objects
 - Integration with NVIDIA Earth-2 inference and visualization platform
 - Deployment adjacency with [[NIM-for-Earth-2-CorrDiff]] and [[NIM-for-Earth-2-FourCastNet]] for named Earth-2 inference microservices
 - Deployment adjacency with [[NIM-for-DoMINO-Automotive-Aero]] for automotive external-aerodynamics surrogate inference.
@@ -56,10 +57,12 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - [[NIM-for-DoMINO-Automotive-Aero]] - deployable PhysicsNeMo NIM for automotive aerodynamic surrogate prediction.
 - [[NVIDIA-Warp]] — Warp differentiable simulation can be used for adjoint-based data assimilation within PhysicsNeMo
 - [[PyTorch]] — PhysicsNeMo is built on PyTorch with distributed training extensions
+- [[PyG]] — PhysicsNeMo documentation recommends PyG for GNN backends and documents migration from DGL to PyG graph objects
 - [[NCCL]] — multi-node collective communications for distributed physics-ML training
 
 ## Resources
 - [NVIDIA PhysicsNeMo Developer Page](https://developer.nvidia.com/physicsnemo)
 - [GitHub](https://github.com/NVIDIA/physicsnemo)
 - [Documentation](https://docs.nvidia.com/physicsnemo/)
+- [Switching from DGL to PyTorch Geometric](https://docs.nvidia.com/physicsnemo/latest/physicsnemo/examples/dgl_to_pyg_migration.html)
 - [NVIDIA Earth-2](https://www.nvidia.com/en-us/high-performance-computing/earth-2/)
