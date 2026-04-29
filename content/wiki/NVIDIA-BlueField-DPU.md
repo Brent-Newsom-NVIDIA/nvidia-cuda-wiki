@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, DPU, data processing unit, networking, offload, security, SmartNIC, BlueField, infrastructure
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-ConnectX-InfiniBand]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-NCX-Infra-Controller]], [[NVIDIA-ConnectX-InfiniBand]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/doca/sdk/index.html, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/networking/display/bluefieldbsp4140/troubleshooting-and-how-tos, https://docs.nvidia.com/networking/display/kubernetes2610/index.html)
 **Last Updated:** 2026-04-29
 
@@ -56,6 +56,8 @@ Modern data center servers spend 20–30% of server CPU cycles on infrastructure
 
 ## Connections
 - [[NVIDIA-DOCA]] — DOCA is the primary SDK, runtime, driver, and services framework for BlueField infrastructure offload.
+- [[NVIDIA-DOCA-Platform-Framework]] — DPF provisions and orchestrates BlueField DPUs and DPU services in cloud environments.
+- [[NVIDIA-NCX-Infra-Controller]] — NCX Infra Controller uses DPU-enforced isolation for secure bare-metal lifecycle management.
 - [[NVIDIA-ConnectX-InfiniBand]] — BlueField is a ConnectX HCA with an embedded ARM processor; shares ASIC design; BF-3 uses ConnectX-7 NIC silicon
 - [[GPUDirect-RDMA]] — BlueField supports GPUDirect RDMA; BF-3 NCCL offload enables GPU communication coordinated by DPU
 - [[NVIDIA-Network-Operator]] — Kubernetes operator that deploys DOCA-OFED and RDMA networking resources for BlueField/ConnectX environments.

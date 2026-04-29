@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -22,6 +22,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - **API and recipe surface:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] document hosted/self-hosted API patterns for developers moving NVIDIA AI software into applications.
 - **NeMo Microservices (NeMo.ms):** Microservice-based LLMOps components: NeMo Curator (data curation), NeMo Customizer (LoRA/SFT/RLHF fine-tuning), NeMo Evaluator, and NeMo Guardrails (content safety)
 - **Flexible Licensing:** Licensed via NVIDIA License System (NLS); supports on-premises DGX and certified servers, VMware vSphere with vGPU, Red Hat OpenShift, bare metal, and all major public clouds (AWS, Azure, GCP, OCI Marketplace)
+- **Run:ai:** current AI Enterprise guidance includes [[NVIDIA-Run-ai]] self-hosted GPU scheduling and workload orchestration; SaaS remains a separate offering
 - **NVIDIA-Certified Systems:** Hardware certification program ensuring server platforms from Dell, HPE, Lenovo, Supermicro, etc. are validated and performance-benchmarked for AI Enterprise workloads
 - **Software-Defined GPU Partitioning:** Support for MIG (Multi-Instance GPU), vGPU, and [[NVIDIA-Cloud-Native-Technologies]] deployment patterns with enterprise licensing for multi-tenant deployments
 
@@ -61,6 +62,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[Triton-Inference-Server]] — Triton is bundled with enterprise SLA; the primary model serving framework
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
+- [[NVIDIA-Run-ai]] — self-hosted GPU scheduling and workload orchestration included in current AI Enterprise guidance.
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
 - [[NVIDIA-Certified-for-Cloudera]] — enterprise data-platform reference material built around NVIDIA-certified infrastructure
 - [[NVIDIA-MONAI-Toolkit]] — healthcare imaging AI toolkit offered through NVIDIA AI Enterprise support paths

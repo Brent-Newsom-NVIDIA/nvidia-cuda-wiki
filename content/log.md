@@ -2,6 +2,43 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 9: AI cloud orchestration and NCX component expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch9-20260429T060541Z`; local Git tag `codex-backup-overnight-pre-batch9-20260429T060541Z`
+
+**Source URLs:** https://docs.nvidia.com/run-ai/, https://docs.nvidia.com/run-ai/self-hosted/index.html, https://www.nvidia.com/en-us/software/run-ai/, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/overview-runai.html, https://docs.nvidia.com/ncx/index.html, https://github.com/kai-scheduler/KAI-Scheduler, https://docs.nvidia.com/cloud-functions/legacy/latest/cluster-management/kai-scheduler.html, https://docs.nvidia.com/dynamo/latest/kubernetes-deployment/multinode/topology-aware-scheduling, https://github.com/ai-dynamo/grove, https://docs.nvidia.com/fleet-intelligence/latest/index.html, https://github.com/NVIDIA/ncx-infra-controller-core, https://github.com/NVIDIA/aicr, https://github.com/NVIDIA/NVSentinel, https://github.com/NVIDIA/doca-platform, https://github.com/leptonai/gpud
+
+**Gap analysis summary:**
+
+- Split durable AI cloud infrastructure and orchestration components out of the broad NCX and Mission Control pages.
+- Added Run:ai as the canonical NVIDIA AI workload/GPU orchestration page, with KAI Scheduler and Grove as linked open-source scheduling/orchestration companions.
+- Added NCX component pages for Fleet Intelligence, NCX Infra Controller, AI Cluster Runtime, NVSentinel, DOCA Platform Framework, and Project GPUd.
+- Kept NVIDIA Run:ai Model Streamer folded into `NVIDIA-Run-ai.md` for now because this pass found it as a Run:ai product-page feature rather than a standalone current docs surface.
+- Treated Project GPUd carefully: the official NCX docs list it as NVIDIA Project GPUd, while the public repository is under LeptonAI; the page notes that context explicitly.
+
+**Pages created (9 total):**
+
+- `content/wiki/NVIDIA-Run-ai.md`
+- `content/wiki/KAI-Scheduler.md`
+- `content/wiki/NVIDIA-Grove.md`
+- `content/wiki/NVIDIA-Fleet-Intelligence.md`
+- `content/wiki/NVIDIA-NCX-Infra-Controller.md`
+- `content/wiki/NVIDIA-AI-Cluster-Runtime.md`
+- `content/wiki/NVIDIA-NVSentinel.md`
+- `content/wiki/NVIDIA-DOCA-Platform-Framework.md`
+- `content/wiki/NVIDIA-Project-GPUd.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Cloud-Accelerator-NCX.md` - linked each durable NCX component to its canonical page.
+- `content/wiki/NVIDIA-Dynamo.md` - connected Grove and KAI Scheduler to topology-aware multinode inference deployment.
+- `content/wiki/NVIDIA-AI-Enterprise.md` and `content/wiki/NVIDIA-Mission-Control.md` - linked Run:ai into enterprise AI and AI factory operations.
+- `content/wiki/NVIDIA-Cloud-Native-Technologies.md` and `content/wiki/NVIDIA-GPU-Operator.md` - linked AICR, KAI Scheduler, and NVSentinel into Kubernetes infrastructure context.
+- `content/wiki/NVIDIA-DCGM.md`, `content/wiki/NVIDIA-DGX-Cloud.md`, `content/wiki/NVIDIA-DOCA.md`, and `content/wiki/NVIDIA-BlueField-DPU.md` - connected telemetry, cloud fleet health, DPU orchestration, and infrastructure lifecycle pages.
+- `content/index.md` - updated page count to 246 and indexed the nine new AI cloud infrastructure pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 8: NVIDIA networking software and DOCA gap expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch8-20260429T060102Z`; local Git tag `codex-backup-overnight-pre-batch8-20260429T060102Z`

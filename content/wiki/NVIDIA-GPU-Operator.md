@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, GPU, containers, operator, cloud-native, DevOps, infrastructure, K8s
-**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -49,6 +49,9 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 ## Connections
 - [[NVIDIA-Cloud-Native-Technologies]] — cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and related deployment docs
 - [[NVIDIA-Network-Operator]] — complementary Kubernetes operator for NVIDIA networking, RDMA, SR-IOV, and DOCA-OFED.
+- [[NVIDIA-AI-Cluster-Runtime]] — validated runtime recipes include GPU Operator, drivers, kernels, and Kubernetes configuration.
+- [[KAI-Scheduler]] — schedules GPU workloads after GPU Operator exposes GPU resources.
+- [[NVIDIA-NVSentinel]] — uses GPU Operator/DCGM-based monitoring as part of Kubernetes fault detection and remediation.
 - [[NVIDIA-Container-Toolkit]] — GPU Operator manages the lifecycle of Container Toolkit installation on all cluster nodes
 - [[NVIDIA-DCGM]] — DCGM Exporter is a core component deployed by GPU Operator for GPU monitoring
 - [[NVIDIA-AI-Enterprise]] — GPU Operator is the recommended Kubernetes deployment mechanism for AI Enterprise

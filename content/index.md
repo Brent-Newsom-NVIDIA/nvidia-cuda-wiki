@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 237*
+*Total pages: 246*
 
 ---
 
@@ -197,6 +197,7 @@
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
 - [[NVIDIA-Base-Command-Manager]] — Cluster-management platform for provisioning and operating AI data center infrastructure
@@ -208,6 +209,14 @@
 - [[NVIDIA-Bright-Cluster-Manager]] — NVIDIA Bright cluster-management documentation for HPC and AI infrastructure
 - [[NVIDIA-Certification-Programs]] — NVIDIA certification documentation across systems, software, and partner validation programs
 - [[NVIDIA-Cloud-Accelerator-NCX]] — cloud accelerator documentation for validated NVIDIA AI infrastructure on cloud partners
+- [[KAI-Scheduler]] — open-source GPU-aware Kubernetes scheduler for large-scale AI workloads
+- [[NVIDIA-Grove]] — Kubernetes API for topology-aware, gang-scheduled, multi-component inference workloads
+- [[NVIDIA-Fleet-Intelligence]] — managed GPU fleet health monitoring and predictive failure signal service
+- [[NVIDIA-NCX-Infra-Controller]] — bare-metal lifecycle automation and secure multi-tenant GPU infrastructure management
+- [[NVIDIA-AI-Cluster-Runtime]] — validated NVIDIA-accelerated Kubernetes runtime recipes for reproducible AI clusters
+- [[NVIDIA-NVSentinel]] — Kubernetes-native GPU fault detection and remediation
+- [[NVIDIA-DOCA-Platform-Framework]] — BlueField DPU provisioning and service orchestration framework for cloud environments
+- [[NVIDIA-Project-GPUd]] — lightweight GPU telemetry, diagnostics, and issue-identification agent listed in NCX
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
 ### Agent Platforms

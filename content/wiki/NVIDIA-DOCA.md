@@ -2,7 +2,7 @@
 
 **Type:** Framework
 **Tags:** NVIDIA, DOCA, BlueField, ConnectX, SuperNIC, DPU, networking, storage, security, SDK, DOCA-OFED
-**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Network-Operator]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
+**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
 **Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started
 **Last Updated:** 2026-04-29
 
@@ -22,6 +22,7 @@ DOCA is especially important because it consolidates infrastructure offload into
 - [[NVIDIA-BlueField-DPU]] - DOCA is the primary software framework for programming BlueField DPUs and SuperNICs.
 - [[NVIDIA-ConnectX-InfiniBand]] - DOCA-Host and DOCA-OFED provide host-side support for current ConnectX adapters.
 - [[NVIDIA-Network-Operator]] - Network Operator deploys and manages DOCA-OFED driver containers and related networking components in Kubernetes.
+- [[NVIDIA-DOCA-Platform-Framework]] - DPF orchestrates BlueField-accelerated services built on the DOCA software stack.
 - [[NVIDIA-Spectrum-X]] - DOCA 3.3.0 is tied to the Spectrum-X reference architecture 2.1 release stack.
 - [[GPUDirect-RDMA]] - DOCA RDMA, UCX, and GPUDirect support form part of the GPU-to-network data path.
 - [[NVIDIA-HPC-X]] - HPC-X consumes UCX/UCC/SHARP-style networking capabilities that sit close to DOCA networking infrastructure.
@@ -30,4 +31,3 @@ DOCA is especially important because it consolidates infrastructure offload into
 ## Source Excerpts
 - "DOCA 3.3.0 is tested as part of Spectrum-X reference architecture release version 2.1."
 - "Network, storage, and security services are offloaded, accelerated, and isolated on BlueField."
-

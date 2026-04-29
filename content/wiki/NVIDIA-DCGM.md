@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, monitoring, telemetry, GPU, data center, health, Prometheus, Kubernetes, DevOps, observability
-**Related:** [[NVIDIA-GPU-Operator]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DGX]], [[Nsight-Systems]], [[CUPTI]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-GPU-Operator]], [[NVIDIA-NVSentinel]], [[NVIDIA-Fleet-Intelligence]], [[NVIDIA-Project-GPUd]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DGX]], [[Nsight-Systems]], [[CUPTI]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -56,6 +56,9 @@ In a data center with hundreds or thousands of GPUs, operators need visibility i
 
 ## Connections
 - [[NVIDIA-GPU-Operator]] — GPU Operator deploys and manages DCGM Exporter on all Kubernetes GPU nodes as part of its standard stack
+- [[NVIDIA-NVSentinel]] — Kubernetes-native fault remediation can use DCGM-provided GPU health signals.
+- [[NVIDIA-Fleet-Intelligence]] — managed fleet health and predictive failure signals sit above low-level DCGM telemetry.
+- [[NVIDIA-Project-GPUd]] — GPUd can detect GPU/fabric issues using DCGM-adjacent signals.
 - [[NVIDIA-Container-Toolkit]] — Container Toolkit enables DCGM to run in a container while accessing host GPU hardware
 - [[NVIDIA-DGX]] — DCGM is the standard monitoring tool for DGX systems; Base Command Manager integrates DCGM for cluster health
 - [[Nsight-Systems]] — Nsight Systems provides developer-level profiling traces; DCGM provides operations-level production monitoring
