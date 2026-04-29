@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 428*
+*Total pages: 429*
 
 ---
 
@@ -594,6 +594,7 @@
 ### LLM Safety & Optimization
 - [[NeMo-Guardrails]] — Programmable LLM safety toolkit; Colang DSL; input/output/dialog/retrieval rails
 - [[NVIDIA-NemoGuard-NIMs]] — Guardrail NIM family for content safety, topic control, and jailbreak detection
+- [[Nemotron-Content-Safety-Reasoning-4B-Experimental-NIM]] — Day 0 NIM LLM safety classifier for content-safety reasoning and dialogue moderation
 - [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] — Multilingual content-safety NIM for user and bot message moderation
 - [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]] — Topic-control NIM for keeping conversations within developer-defined boundaries
 - [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] — Content-safety NIM for harmful-content detection in LLM applications

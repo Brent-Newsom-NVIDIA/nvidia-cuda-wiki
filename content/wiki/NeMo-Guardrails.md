@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NeMo, Guardrails, LLM Safety, AI Alignment, RAG, Dialogue Management, Colang
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Auditor]], [[NeMo-Evaluator]], [[NVIDIA-NemoGuard-NIMs]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[NIM-for-Multimodal-Safety]], [[Nemotron]], [[NVIDIA-NIM]], [[TensorRT-LLM]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Auditor]], [[NeMo-Evaluator]], [[NVIDIA-NemoGuard-NIMs]], [[Nemotron-Content-Safety-Reasoning-4B-Experimental-NIM]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[NIM-for-Multimodal-Safety]], [[Nemotron]], [[NVIDIA-NIM]], [[TensorRT-LLM]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/guardrail-catalog/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
 **Last Updated:** 2026-04-29
 
@@ -57,6 +57,7 @@ Deploying LLMs in enterprise and consumer applications requires controlling mode
 - [[NeMo-Auditor]] - safety audit service for probing models before relying on runtime guardrails.
 - [[NeMo-Evaluator]] - evaluation service that complements guardrails with quality and benchmark measurement.
 - [[NVIDIA-NemoGuard-NIMs]] - current specialized guardrail NIM family.
+- [[Nemotron-Content-Safety-Reasoning-4B-Experimental-NIM]] - Day 0 content-safety reasoning classifier adjacent to guardrail safety flows.
 - [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] - multilingual content-safety NIM used in current NeMo Platform tutorials.
 - [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]] - topic-control NIM for on-topic/off-topic classification.
 - [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]] - earlier NemoGuard content-safety NIM lineage.

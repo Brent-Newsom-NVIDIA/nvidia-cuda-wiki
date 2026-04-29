@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 55: NIM LLM Day 0 safety model
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch55-20260429T102310Z`; local Git tag `codex-backup-overnight-pre-batch55-20260429T102310Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/release-notes.html, https://docs.nvidia.com/nim/large-language-models/latest/deployment/model-profiles-and-selection.html, https://docs.nvidia.com/nim/large-language-models/latest/day-0/index.html, https://docs.nvidia.com/nim/large-language-models/latest/day-0/support-matrix-day-0.html, https://docs.nvidia.com/nim/large-language-models/latest/day-0/get-started-nemotron-content-safety-reasoning-4b.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current docs.nvidia Day 0 NIM page for Nemotron Content Safety Reasoning 4B Experimental.
+- Kept Day 0, Certified, model profiles, tool calling, custom logits, and prompt-embedding details on the existing `NIM-for-Large-Language-Models` page rather than splitting the NIM LLM docs tree into many small pages.
+- Connected the new safety NIM to Nemotron, NemoGuard NIMs, NeMo Guardrails, NIM LLM, NVIDIA NIM, and the existing content-safety/topic-control/jailbreak NIM pages.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-Content-Safety-Reasoning-4B-Experimental-NIM.md`
+
+**Pages updated:**
+
+- `content/wiki/NIM-for-Large-Language-Models.md` - refreshed current 2.0.3 release, profile-selection, Day 0 support, and advanced serving details.
+- `content/wiki/NVIDIA-NemoGuard-NIMs.md` - added the Day 0 safety classifier to the guardrail NIM family.
+- `content/wiki/NeMo-Guardrails.md` - linked guardrail flows to the new safety classifier.
+- `content/wiki/Nemotron.md` - connected Nemotron safety model coverage to the new Day 0 NIM.
+- `content/wiki/NVIDIA-NIM.md` - linked the umbrella NIM graph to the new Day 0 safety NIM.
+- `content/index.md` - updated total page count to 429 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 54: Nemotron model-family refresh
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch54-20260429T101948Z`; local Git tag `codex-backup-overnight-pre-batch54-20260429T101948Z`
