@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 50: AI Enterprise software catalog
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch50-20260429T100841Z`; local Git tag `codex-backup-overnight-pre-batch50-20260429T100841Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/software/latest/overview.html, https://docs.nvidia.com/ai-enterprise/software/latest/application-software.html, https://docs.nvidia.com/ai-enterprise/software/latest/infrastructure-software.html, https://docs.nvidia.com/ai-enterprise/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current NVIDIA AI Enterprise Software documentation because the wiki had the AI Enterprise platform and lifecycle pages but not a dedicated queryable application-layer/infrastructure-layer software catalog.
+- Kept the software docs together as one page instead of creating separate pages for every table row, component category, release branch link, support-matrix entry, or infrastructure release-note link.
+- Connected the catalog to AI Enterprise, lifecycle, NGC, NIM, NeMo, Omniverse, Run:ai, TensorRT, Triton, PyTorch, Riva, TAO, DeepStream, Holoscan, Morpheus, drivers, DOCA, vGPU/MIG, Container Toolkit, Kubernetes operators, Base Command Manager, and Enterprise Support.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-AI-Enterprise-Software.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added the current software catalog as the supported component map.
+- `content/wiki/NVIDIA-AI-Enterprise-Lifecycle-Policy.md` - connected lifecycle branches to the software catalog they govern.
+- `content/wiki/NGC.md` - linked NGC to the AI Enterprise software catalog.
+- `content/index.md` - updated total page count to 425 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 49: Run:ai support and lifecycle coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch49-20260429T100639Z`; local Git tag `codex-backup-overnight-pre-batch49-20260429T100639Z`

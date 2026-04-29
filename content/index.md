@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 424*
+*Total pages: 425*
 
 ---
 
@@ -267,6 +267,7 @@
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-AI-Enterprise-Software]] — AI Enterprise application-layer and infrastructure-layer software catalog with NGC and support-matrix context
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] — AI Enterprise branch, compatibility, support, and EOL planning policy
 - [[NVIDIA-Enterprise-Licensing-Guide]] — AI Enterprise entitlement, per-GPU licensing, cloud marketplace, BYOL, support, and NVIDIA License System guidance
 - [[NVIDIA-Enterprise-Support-and-Services]] — enterprise support entitlement, support levels, support portal, RMA, value-add services, advisory services, and education

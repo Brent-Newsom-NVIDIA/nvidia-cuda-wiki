@@ -16,7 +16,7 @@ Current DGX product pages also position AI Enterprise as part of the software pa
 While NVIDIA's individual frameworks and libraries are freely available to developers, enterprises running AI in production need a supported, security-scanned, SLA-backed distribution they can rely on for mission-critical workloads. NVIDIA AI Enterprise fills this role: it is NVIDIA's commercial software platform analogous to how Red Hat Enterprise Linux relates to upstream Linux — taking battle-tested open and developer-tier software and wrapping it in the enterprise guarantees (support, CVE patching, compliance certification, roadmap access) required by finance, healthcare, government, and large-scale enterprise customers.
 
 ### Key Features
-- **Comprehensive Software Bundle:** NIM microservices, NeMo Framework (training, customization, guardrails, [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Megatron-Bridge]], and [[NeMo-Export-Deploy]]), Triton Inference Server, TensorRT, RAPIDS (cuDF, cuML, cuGraph), Morpheus (cybersecurity AI), NVIDIA DALI, and the full CUDA math/communication library stack
+- **Comprehensive Software Bundle:** [[NVIDIA-AI-Enterprise-Software]] catalogs the supported application and infrastructure layers: NIM microservices, NeMo Framework (training, customization, guardrails, [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Megatron-Bridge]], and [[NeMo-Export-Deploy]]), Triton Inference Server, TensorRT, RAPIDS (cuDF, cuML, cuGraph), Morpheus (cybersecurity AI), NVIDIA DALI, Omniverse, Run:ai, operators, drivers, vGPU, MIG, DOCA, Container Toolkit, and the full CUDA math/communication library stack
 - **Enterprise SLA & Support:** 24×7 enterprise-grade support with defined severity-based response SLAs; dedicated AI Enterprise support portal and escalation paths
 - **Security & CVE Management:** Continuous CVE scanning of all container images; rapid patching cadence; signed containers on NGC — critical for HIPAA, SOC 2, FedRAMP, and GDPR compliance environments
 - **NIM Microservices:** Full access to the NIM catalog — LLMs, embedding models, rerankers, vision-language, speech, safety/guardrails, medical imaging, physical AI, weather/climate, visual generation, audio/media enhancement, digital-human animation, biology, chemistry, atomistic modeling, and physics surrogate simulation — under enterprise license for on-premises, data-private deployment. Current pages include [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Speech-NIM-Microservices]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]], [[NIM-for-DoMINO-Automotive-Aero]], [[NVIDIA-NemoGuard-NIMs]], and [[NIM-for-MAISI]].
@@ -65,6 +65,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 
 ## Connections
 - [[NGC]] — AI Enterprise software is exclusively distributed and licensed through NGC; NGC Private Registry supports enterprise isolation
+- [[NVIDIA-AI-Enterprise-Software]] — current software catalog for application-layer and infrastructure-layer components.
 - [[NVIDIA-NIM]] — NIM microservices are the primary inference delivery mechanism within AI Enterprise
 - [[NIM-for-Large-Language-Models]] — LLM-specific NIM deployment and packaging surface, including NIM Certified.
 - [[NIM-for-LLM-Benchmarking-Guide]] — latency-throughput benchmarking guide for production LLM NIM validation.
@@ -132,6 +133,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [NVIDIA AI Enterprise Product Page](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/)
 - [AI Enterprise Documentation](https://docs.nvidia.com/ai-enterprise/latest/index.html)
 - [AI Enterprise Docs Hub](https://docs.nvidia.com/ai-enterprise/index.html)
+- [NVIDIA AI Enterprise Software](https://docs.nvidia.com/ai-enterprise/software/latest/overview.html)
 - [AI Enterprise Lifecycle Policy](https://docs.nvidia.com/ai-enterprise/lifecycle/latest/index.html)
 - [NVIDIA Enterprise Licensing Guide](https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/index.html)
 - [NVIDIA Enterprise Support and Services](https://docs.nvidia.com/enterprise-services/index.html)
