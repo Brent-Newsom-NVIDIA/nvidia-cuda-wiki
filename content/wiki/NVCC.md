@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Compiler, Development Tools, Build System, CUDA Toolkit
-**Related:** [[NVIDIA-CUDA]], [[NVRTC]], [[PTX-ISA]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[Floating-Point-and-IEEE-754]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[NVRTC]], [[PTX-ISA]], [[Inline-PTX-Assembly]], [[PTX-Interoperability]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[Floating-Point-and-IEEE-754]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
 **Last Updated:** 2026-04-29
 
@@ -42,7 +42,11 @@ CUDA programs contain mixed host and device code in the same source file — a s
 
 ## Connections
 - [[NVRTC]] — NVRTC provides runtime (JIT) CUDA compilation; NVCC provides ahead-of-time compilation
+- [[CUDA-Programming-Guide]] — programming guide covers CUDA compilation workflow and compatibility concepts
+- [[CUDA-Best-Practices-Guide]] — best-practices guide documents compiler switches and optimization considerations
 - [[PTX-ISA]] — NVCC can generate PTX as the virtual GPU ISA output
+- [[Inline-PTX-Assembly]] — CUDA C++ can include inline PTX assembly accepted by NVCC
+- [[PTX-Interoperability]] — PTX generated for linking with other CUDA code must follow ABI expectations
 - [[NVVM-IR]] — NVVM IR and compiler SDK components sit underneath CUDA compilation paths
 - [[libdevice]] — device-side bitcode library used by CUDA compiler flows
 - [[nvFatbin]] — runtime fatbin creation complements offline compiler-produced CUDA binaries

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, GPU computing, CUDA Toolkit, programming model, software stack
-**Related:** [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[NVCC]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
+**Related:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], [[CUDA-Release-Notes]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[NVCC]], [[CUDA-Graphs]], [[CUDA-Streams]], [[CUDA-Unified-Memory]], [[PTX-ISA]], [[CUDA-Demo-Suite]], [[CUDA-on-EFLOW]], [[Floating-Point-and-IEEE-754]], [[cuBLAS]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
 **Sources:** https://docs.nvidia.com/cuda/, https://docs.nvidia.com/cuda/doc/index.html
 **Last Updated:** 2026-04-29
 
@@ -15,7 +15,8 @@ NVIDIA CUDA is the core GPU computing platform and programming model for buildin
 CUDA is the foundation beneath NVIDIA CUDA-X libraries, AI frameworks, HPC applications, and many production inference and training systems. It provides the compiler, runtime, driver-level APIs, math and communication libraries, profiling/debugging tools, and GPU programming abstractions used by higher-level software such as [[PyTorch]], [[TensorRT]], [[TensorRT-LLM]], [[NVIDIA-NIM]], and [[NVIDIA-NeMo]].
 
 ### Current documentation scope
-- **Programming model:** [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], the CUDA Programming Guide, Best Practices Guide, [[Floating-Point-and-IEEE-754]], and architecture-specific tuning guidance.
+- **Programming model:** [[CUDA-Programming-Guide]], [[CUDA-Best-Practices-Guide]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[Floating-Point-and-IEEE-754]], and architecture-specific tuning guidance.
+- **Installation and release tracking:** [[CUDA-Quick-Start-Guide]], [[CUDA-Installation-Guide-Linux]], [[CUDA-Installation-Guide-Windows]], and [[CUDA-Release-Notes]] cover setup, validation, component versions, and known issues.
 - **API layers:** [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Math-API]], [[CUDA-Debugger-API]], [[PTX-Compiler-APIs]], [[NVRTC]], and [[nvJitLink]].
 - **Compiler path:** [[NVCC]], [[PTX-ISA]], [[NVVM-IR]], [[libNVVM]], [[libdevice]], [[nvFatbin]], and [[CUDA-Binary-Utilities]].
 - **Libraries:** [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSOLVER]], [[cuSPARSE]], [[NPP]], [[nvJPEG]], [[cuDNN]], [[NCCL]], and newer device/distributed libraries such as [[cuBLASDx]], [[cuFFTDx]], [[cuBLASMp]], [[cuSOLVERMp]], and [[cuSPARSELt]].
@@ -27,6 +28,10 @@ CUDA is the connective tissue for NVIDIA hardware generations from data center G
 
 ## Connections
 - [[NVIDIA-Blackwell-Architecture]] - latest architecture-specific CUDA compatibility and tuning docs live inside the CUDA documentation set.
+- [[CUDA-Programming-Guide]] - primary conceptual guide for CUDA programming model behavior.
+- [[CUDA-Best-Practices-Guide]] - performance and deployment companion guide.
+- [[CUDA-Quick-Start-Guide]] - shortest setup and verification path for new CUDA environments.
+- [[CUDA-Release-Notes]] - current toolkit, component, driver, and library version information.
 - [[NVCC]] - the CUDA compiler driver is the main compilation front door for CUDA C++.
 - [[CUDA-Runtime-API]] - the higher-level API most CUDA applications use directly.
 - [[CUDA-Driver-API]] - the lower-level API used by runtimes, frameworks, and advanced module loading workflows.

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -61,6 +61,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
+- [[NVIDIA-Certified-for-Cloudera]] — enterprise data-platform reference material built around NVIDIA-certified infrastructure
 - [[NVIDIA-Cloud-Native-Technologies]] — Kubernetes/container documentation anchors cloud-native AI Enterprise deployments
 - [[NVIDIA-MIG]] — GPU partitioning supports multi-tenant enterprise deployments
 - [[NVIDIA-vGPU]] — virtualization path for enterprise GPU access and CUDA-capable virtual environments

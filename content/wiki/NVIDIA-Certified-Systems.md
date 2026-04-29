@@ -2,7 +2,7 @@
 
 **Type:** Program
 **Tags:** NVIDIA, certified systems, hardware validation, AI Enterprise, servers, workstations, edge systems
-**Related:** [[NVIDIA-Certification-Programs]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Mission-Control]]
+**Related:** [[NVIDIA-Certification-Programs]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Mission-Control]]
 **Sources:** https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html, https://www.nvidia.com/en-us/data-center/products/certified-systems/
 **Last Updated:** 2026-04-29
 
@@ -14,8 +14,11 @@ NVIDIA positions certified systems as validated platforms for deploying high-per
 
 This page is the hardware validation companion to [[NVIDIA-Certification-Programs]], which covers the broader certification program area.
 
+NVIDIA-authored partner/reference material such as [[NVIDIA-Certified-for-Cloudera]] should link here when the deployment depends on certified hardware and validated system configurations.
+
 ## Connections
 - [[NVIDIA-Certification-Programs]] - broader certification documentation hub.
+- [[NVIDIA-Certified-for-Cloudera]] - partner reference/certification guidance for Cloudera Data Platform on NVIDIA infrastructure.
 - [[NVIDIA-AI-Enterprise]] - enterprise software stack commonly deployed on certified systems.
 - [[NVIDIA-HGX]] - OEM server platforms can be built around NVIDIA HGX designs.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - cloud partner architectures rely on validated infrastructure.

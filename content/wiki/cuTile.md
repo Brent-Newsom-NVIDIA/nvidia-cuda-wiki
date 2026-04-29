@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, cuTile, CUDA, Tile IR, GPU Programming, Compiler, Blackwell, CTA
-**Related:** [[NVCC]], [[CUTLASS]], [[TensorRT]], [[NVIDIA-Blackwell-Architecture]], [[cuda-parallel]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVCC]], [[PTX-ISA]], [[PTX-Interoperability]], [[CUTLASS]], [[TensorRT]], [[NVIDIA-Blackwell-Architecture]], [[cuda-parallel]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cuda/tile-ir/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuTile (CUDA Tile IR) is a new intermediate representation and programming model introduced with the NVIDIA Blackwell GPU architecture and CUDA 12.x, designed to express tile-level parallelism for tensor and matrix operations. It provides a hierarchical tile abstraction that maps directly to the new Blackwell hardware features — including the Tensor Memory Accelerator (TMA) and warp-group-level matrix operations — enabling compilers and libraries like CUTLASS and TensorRT to generate highly optimized GEMM and attention kernels without requiring experts to hand-write low-level PTX.
@@ -13,6 +13,8 @@ cuTile (CUDA Tile IR) is a new intermediate representation and programming model
 
 ### Purpose
 Modern GPU tensor operations involve complex hierarchical tiling across thread blocks, warps, and individual threads — with explicit data movement between global, shared, and register memory at each level. Writing optimal kernels by hand requires deep expertise. cuTile/CUDA Tile IR provides a compiler-friendly intermediate representation that captures these tiling decisions cleanly, enabling automatic optimization and simplifying the generation of optimal code for new hardware features.
+
+The current Tile IR docs describe Tile IR as a portable, low-level tile virtual machine and instruction set that models the GPU as a tile-based processor. The documentation covers programming model, syntax, binary format, type system, semantics, memory model, operations, debug info, stability, and release notes.
 
 ### Key Features
 - Hierarchical tile abstraction: expresses computation as nested tile operations at cluster, CTA, warp, and thread levels
@@ -44,6 +46,8 @@ Modern GPU tensor operations involve complex hierarchical tiling across thread b
 
 ## Connections
 - [[NVCC]] — NVCC compiles CUDA C++ including Tile IR-based code to PTX/SASS
+- [[PTX-ISA]] — PTX remains the virtual ISA layer adjacent to Tile IR compiler workflows
+- [[PTX-Interoperability]] — compiler authors need ABI awareness when moving between IRs and linkable CUDA code
 - [[CUTLASS]] — CUTLASS 3.x is the primary user-facing C++ library expressing cuTile concepts
 - [[TensorRT]] — TensorRT uses cuTile/Tile IR for Blackwell layer code generation
 - [[NVIDIA-Blackwell-Architecture]] — cuTile is designed around Blackwell's TMA and WGMMA hardware features

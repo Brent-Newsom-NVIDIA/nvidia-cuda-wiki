@@ -1,0 +1,25 @@
+# CUDA Programming Guide
+
+**Type:** Guide
+**Tags:** NVIDIA, CUDA, programming model, kernels, memory, streams, graphs, SIMT
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Runtime-API]], [[CUDA-Driver-API]], [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[CUDA-Best-Practices-Guide]], [[NVCC]]
+**Sources:** https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+**Last Updated:** 2026-04-29
+
+## Summary
+The CUDA Programming Guide is NVIDIA's core CUDA programming model reference. It explains how CUDA maps host and device code onto NVIDIA GPUs, including kernels, grids, thread blocks, memory spaces, streams, graphs, compilation, compatibility, and runtime behavior.
+
+## Detail
+This guide is the natural entry point for understanding CUDA C++ beyond installation. It sits above lower-level API references such as [[CUDA-Runtime-API]] and [[CUDA-Driver-API]], because it explains the programming concepts those APIs expose.
+
+The guide also connects many topic pages already in the wiki: [[CUDA-Streams]], [[CUDA-Graphs]], [[CUDA-Unified-Memory]], [[NVCC]], [[PTX-ISA]], memory hierarchy, synchronization, and architecture-specific behavior.
+
+## Connections
+- [[NVIDIA-CUDA]] - CUDA's top-level platform page.
+- [[CUDA-Runtime-API]] - API surface used by most CUDA programs.
+- [[CUDA-Driver-API]] - lower-level module, context, and memory control layer.
+- [[CUDA-Best-Practices-Guide]] - optimization companion to the programming guide.
+- [[NVCC]] - compiler path described in the programming guide.
+
+## Source Excerpts
+- NVIDIA's programming guide covers the CUDA programming model, programming interface, compilation workflow, runtime behavior, streams, graphs, and memory concepts.

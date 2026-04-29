@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, PTX, compiler API, JIT, runtime compilation
-**Related:** [[NVIDIA-CUDA]], [[PTX-ISA]], [[CUDA-Driver-API]], [[NVRTC]], [[nvJitLink]], [[CUDA-Compatibility]]
+**Related:** [[NVIDIA-CUDA]], [[PTX-ISA]], [[PTX-Interoperability]], [[CUDA-Driver-API]], [[NVRTC]], [[nvJitLink]], [[CUDA-Compatibility]]
 **Sources:** https://docs.nvidia.com/cuda/ptx-compiler-api/index.html
 **Last Updated:** 2026-04-29
 
@@ -26,6 +26,7 @@ These APIs are useful when deploying CUDA applications across managed fleets whe
 
 ## Connections
 - [[PTX-ISA]] - source input language for these APIs.
+- [[PTX-Interoperability]] - ABI and linking rules for PTX producers.
 - [[CUDA-Driver-API]] - loads compiled outputs.
 - [[NVRTC]] - can generate PTX from CUDA C++ strings before PTX compilation.
 - [[nvJitLink]] - can link compiled device code into larger modules.
@@ -33,4 +34,3 @@ These APIs are useful when deploying CUDA applications across managed fleets whe
 
 ## Source Excerpts
 - NVIDIA's guide describes PTX Compiler APIs as APIs for compiling PTX programs into GPU assembly code.
-

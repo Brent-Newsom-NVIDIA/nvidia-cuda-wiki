@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Optimization, Operations Research, Routing, Logistics, AI
-**Related:** [[cuBLAS]], [[cuGraph]], [[AmgX]], [[Thrust]]
+**Related:** [[NVIDIA-cuOpt-Managed-Service]], [[NVIDIA-API-Documentation]], [[cuBLAS]], [[cuGraph]], [[AmgX]], [[Thrust]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA cuOpt is a GPU-accelerated operations research optimization library providing real-time, AI-guided solutions for complex routing and logistics problems, including vehicle routing problems (VRP), fleet management, and supply chain optimization. It leverages GPU parallelism to explore solution spaces orders of magnitude faster than CPU solvers, enabling real-time re-routing and dynamic optimization for enterprises and simulation environments.
@@ -21,6 +21,7 @@ Operations research problems like the Vehicle Routing Problem (VRP) — determin
 - Real-time re-optimization for dynamic fleet management
 - AI-guided heuristics for exploring large solution spaces
 - REST API for cloud deployment and microservice integration
+- [[NVIDIA-cuOpt-Managed-Service]] for hosted/API usage, credentials, thin client, CLI, and routing-data workflows
 - Available via NVIDIA NGC containers and NVIDIA AI Enterprise
 - Python SDK for programmatic access
 - Integration with NVIDIA Omniverse for simulation-based optimization
@@ -45,6 +46,8 @@ Operations research problems like the Vehicle Routing Problem (VRP) — determin
 
 ## Connections
 - [[cuGraph]] — cuOpt uses graph-based algorithms for route network representation
+- [[NVIDIA-cuOpt-Managed-Service]] — hosted/service-oriented documentation for cuOpt optimization workloads
+- [[NVIDIA-API-Documentation]] — API reference surface for NVIDIA hosted services
 - [[AmgX]] — both cuOpt and AmgX are optimization-focused GPU libraries for different problem types
 - [[Thrust]] — cuOpt uses Thrust for parallel data structure manipulation
 - [[cuBLAS]] — cuOpt uses linear algebra routines for constraint satisfaction and cost matrix operations

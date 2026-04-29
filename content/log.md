@@ -2,6 +2,50 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 3: CUDA core guides, PTX compiler docs, cuOpt service, and Cloudera certification reference
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch3-20260429T053624Z`; local Git tag `codex-backup-overnight-pre-batch3-20260429T053624Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html, https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html, https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html, https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html, https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html, https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html, https://docs.nvidia.com/cuda/inline-ptx-assembly/index.html, https://docs.nvidia.com/cuda/ptx-writers-guide-to-interoperability/index.html, https://docs.nvidia.com/cuda/tile-ir/latest/index.html, https://docs.nvidia.com/cuopt/service/latest/index.html, https://docs.nvidia.com/cloudera/prod_certified-for-cloudera.html
+
+**Gap analysis summary:**
+
+- Filled remaining current CUDA documentation gaps from the docs hub: quick start, Linux/Windows install guides, programming guide, best-practices guide, release notes, inline PTX assembly, and PTX interoperability.
+- Updated the existing `cuTile` page from the current Tile IR docs instead of creating a duplicate Tile IR page.
+- Added a separate page for the cuOpt Managed Service because it is a distinct hosted/API workflow from the base cuOpt library page.
+- Added NVIDIA Certified for Cloudera as NVIDIA-authored certification/reference material, while noting that the source is older and should be treated as reference architecture material rather than a fast-moving product page.
+- Skipped NVIDIA DIGITS for this batch because the docs surface appears older and not aligned with the current/latest-docs rule.
+
+**Pages created (10 total):**
+
+### CUDA setup, programming, and release docs (6)
+- `content/wiki/CUDA-Quick-Start-Guide.md`
+- `content/wiki/CUDA-Installation-Guide-Linux.md`
+- `content/wiki/CUDA-Installation-Guide-Windows.md`
+- `content/wiki/CUDA-Programming-Guide.md`
+- `content/wiki/CUDA-Best-Practices-Guide.md`
+- `content/wiki/CUDA-Release-Notes.md`
+
+### PTX and compiler docs (2)
+- `content/wiki/Inline-PTX-Assembly.md`
+- `content/wiki/PTX-Interoperability.md`
+
+### Services and partner/reference docs (2)
+- `content/wiki/NVIDIA-cuOpt-Managed-Service.md`
+- `content/wiki/NVIDIA-Certified-for-Cloudera.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-CUDA.md` - linked the current CUDA setup, programming, best-practices, and release-note guide pages.
+- `content/wiki/NVCC.md` - connected compiler docs to the CUDA programming guide, best-practices guide, inline PTX, and PTX interoperability.
+- `content/wiki/PTX-ISA.md` and `content/wiki/PTX-Compiler-APIs.md` - connected PTX ISA and compiler API pages to inline PTX and interoperability guidance.
+- `content/wiki/cuTile.md` - refreshed from current Tile IR docs and linked PTX/compiler-adjacent pages.
+- `content/wiki/cuOpt.md` - linked the cuOpt Managed Service as the hosted/API counterpart.
+- `content/wiki/NVIDIA-Certified-Systems.md` and `content/wiki/NVIDIA-AI-Enterprise.md` - linked NVIDIA Certified for Cloudera as enterprise reference material.
+- `content/index.md` - updated page count to 214 and indexed all 10 new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 2: CUDA guides, AI platform docs, cloud-native infrastructure, and architecture coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch-20260429T052306Z`; local Git tag `codex-backup-overnight-pre-batch-20260429T052306Z`
