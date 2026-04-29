@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 480*
+*Total pages: 481*
 
 ---
 
@@ -27,6 +27,7 @@
 - [[cuBLASDx]] — Device-side BLAS-style operations for fusing dense linear algebra into CUDA kernels
 - [[cuBLASMp]] — Multi-process distributed dense linear algebra library with PBLAS-like APIs
 - [[cuFFT]] — GPU-accelerated Fast Fourier Transform library for 1D/2D/3D real and complex data
+- [[cuFFTW]] — FFTW3-compatible interface layer for porting FFTW applications to cuFFT
 - [[cuFFTDx]] — Device-side FFT library for fusing FFT operations into CUDA kernels
 - [[cuFFTMp]] — Distributed multi-process cuFFT library for 2D/3D multi-GPU, multi-node FFTs
 - [[cuRAND]] — GPU-accelerated random number generation library (pseudo and quasi-random, multiple distributions)

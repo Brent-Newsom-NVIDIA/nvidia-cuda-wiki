@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 95: cuFFTW FFTW-compatible cuFFT interface
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch95-20260429T125808Z`; local Git tag `codex-backup-overnight-pre-batch95-20260429T125808Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cufft/index.html, https://docs.nvidia.com/cuda/cufft/index.html#fftw-interface-to-cufft
+
+**Gap analysis summary:**
+
+- Found that the wiki had cuFFT, cuFFTDx, and cuFFTMp, while current NVIDIA cuFFT documentation says the cuFFT product consists of cuFFT and cuFFTW.
+- Added a focused cuFFTW page because NVIDIA documents it as a distinct FFTW3-compatible interface layer for porting existing FFTW applications to NVIDIA GPUs.
+- Connected cuFFTW to the existing cuFFT stack, NVPL FFT, CUDA, and Python/HPC math-library context without splitting the rest of the cuFFT manual into feature subpages.
+
+**Pages created (1 total):**
+
+- `content/wiki/cuFFTW.md`
+
+**Pages updated:**
+
+- `content/wiki/cuFFT.md` - linked cuFFTW as the FFTW-compatible cuFFT interface layer.
+- `content/wiki/NVPL-FFT.md` - connected CPU-side FFTW-compatible NVPL FFT to the GPU-side cuFFTW path.
+- `content/wiki/NVIDIA-CUDA.md` - connected cuFFTW into the CUDA library graph.
+- `content/index.md` - updated total page count to 481 and indexed cuFFTW.
+
+---
+
 ## 2026-04-29 - Overnight batch 94: cuBLASLt and cuBLASXt API coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch94-20260429T125446Z`; local Git tag `codex-backup-overnight-pre-batch94-20260429T125446Z`
