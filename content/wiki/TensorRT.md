@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-AIPerf]], [[Triton-Model-Navigator]], [[Triton-Model-Analyzer]], [[Triton-Performance-Analyzer]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Maxine-Audio2Face-2D]], [[NIM-for-Maxine-Eye-Contact]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NIM-for-DoMINO-Automotive-Aero]], [[NVIDIA-TAO]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
-**Sources:** NVIDIA official documentation, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/model_navigator/README.html, https://docs.nvidia.com/nim/benchmarking/llm/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[TensorRT-for-RTX]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-AIPerf]], [[Triton-Model-Navigator]], [[Triton-Model-Analyzer]], [[Triton-Performance-Analyzer]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Maxine-Audio2Face-2D]], [[NIM-for-Maxine-Eye-Contact]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NIM-for-DoMINO-Automotive-Aero]], [[NVIDIA-TAO]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-FoundationPose]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/index.html, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/model_navigator/README.html, https://docs.nvidia.com/nim/benchmarking/llm/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,7 +26,7 @@ Moving deep learning models from training to production requires inference-time 
 - **TensorRT Model Optimizer**: compression and quantization toolkit
 - **Triton Model Navigator**: export, conversion, correctness, profiling, and deployment-preparation workflow for TensorRT/Triton targets
 - **TensorRT Cloud**: automated engine generation for LLMs (limited access)
-- **TensorRT for RTX**: optimized for RTX/consumer GPUs with fast build times (<30s, <200MB)
+- **[[TensorRT-for-RTX]]**: optimized for RTX desktops, laptops, and workstations with AOT/JIT portable engines and fast local runtime compilation
 - Tripy: Pythonic frontend for TensorRT
 - Deployment via NVIDIA Triton Inference Server
 
@@ -57,6 +57,7 @@ Moving deep learning models from training to production requires inference-time 
 - [[cuBLAS]] — TensorRT uses cuBLAS for GEMM operations
 - [[CUTLASS]] — TensorRT uses CUTLASS-derived kernels for optimized GEMM
 - [[NCCL]] — multi-GPU TensorRT inference uses NCCL for tensor parallelism communication
+- [[TensorRT-for-RTX]] - RTX-focused TensorRT specialization for local PC/workstation AI inference with portable AOT/JIT engines.
 - [[NIM-for-Large-Language-Models]] — NIM LLM is the production LLM microservice layer adjacent to TensorRT/TensorRT-LLM.
 - [[NIM-for-LLM-Benchmarking-Guide]] — performance guide for measuring LLM services that often rely on NVIDIA optimized inference stacks.
 - [[NVIDIA-AIPerf]] - current benchmark tool for measuring OpenAI-compatible generative AI services that may use TensorRT/TensorRT-LLM.

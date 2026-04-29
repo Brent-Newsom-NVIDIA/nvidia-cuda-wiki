@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 68: TensorRT for RTX
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch68-20260429T113306Z`; local Git tag `codex-backup-overnight-pre-batch68-20260429T113306Z`
+
+**Source URLs:** https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/index.html, https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/architecture/architecture-overview.html, https://developer.nvidia.com/tensorrt-rtx
+
+**Gap analysis summary:**
+
+- Added a canonical page for TensorRT for RTX after finding current NVIDIA docs for TensorRT-RTX 1.4 and no existing wiki page.
+- Kept release notes, support matrix, install guides, ONNX conversion, native APIs, CUDA Graphs, runtime cache, CPU-only AOT, API capture/replay, and performance guidance folded into the single TensorRT-for-RTX page.
+- Connected the page to TensorRT, TensorRT Model Optimizer, RTX, Blackwell/Ada/Turing, CUDA Graphs, ChatRTX/local RTX AI, and adjacent TensorRT ecosystem pages while noting current integration boundaries.
+
+**Pages created (1 total):**
+
+- `content/wiki/TensorRT-for-RTX.md`
+
+**Pages updated:**
+
+- `content/wiki/TensorRT.md` - added TensorRT-for-RTX as an RTX-specific TensorRT specialization.
+- `content/wiki/NVIDIA-RTX.md` - connected RTX platform context to TensorRT-for-RTX.
+- `content/wiki/TensorRT-Model-Optimizer.md` - connected Model Optimizer quantized ONNX export to TensorRT-RTX.
+- `content/index.md` - updated total page count to 443 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 67: NeMo Guardrails current docs refresh
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch67-20260429T113046Z`; local Git tag `codex-backup-overnight-pre-batch67-20260429T113046Z`

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 442*
+*Total pages: 443*
 
 ---
 
@@ -42,6 +42,7 @@
 ### Deep Learning
 - [[cuDNN]] — GPU-accelerated primitives for deep neural networks (convolution, attention, pooling)
 - [[TensorRT]] — inference compiler, runtime, and model optimizer for production DNN deployment
+- [[TensorRT-for-RTX]] — RTX-focused TensorRT runtime with AOT/JIT portable engines for local PC and workstation AI inference
 - [[TensorRT-LLM]] — LLM inference optimization library with continuous batching, paged KV cache, FP8
 - [[Transformer-Engine]] — NVIDIA transformer acceleration library for PyTorch/JAX with FP8, MXFP8, and NVFP4 recipes
 - [[NVIDIA-Optimized-Frameworks]] — NVIDIA deep learning framework containers, user guide, and support matrix for PyTorch/TensorFlow/JAX environments

@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, TensorRT, Model Optimization, Quantization, Pruning, Distillation, LLM, Inference
-**Related:** [[TensorRT]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
-**Sources:** NVIDIA official documentation
+**Related:** [[TensorRT]], [[TensorRT-for-RTX]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[cuDNN]], [[NVIDIA-Blackwell-Architecture]]
+**Sources:** NVIDIA official documentation, https://nvidia.github.io/TensorRT-Model-Optimizer/, https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/architecture/architecture-overview.html
 **Last Updated:** 2026-04-10
 
 ## Summary
@@ -52,6 +52,7 @@ Deploying production AI models requires balancing accuracy, latency, throughput,
 
 ## Connections
 - [[TensorRT]] — TensorRT is the deployment backend; Model Optimizer prepares models for TensorRT
+- [[TensorRT-for-RTX]] - TensorRT-RTX can consume quantized ONNX models exported by Model Optimizer.
 - [[TensorRT-LLM]] — Model Optimizer exports directly to TRT-LLM optimized LLM checkpoints
 - [[NVIDIA-NIM]] — NIM containers use Model Optimizer-quantized models for maximum inference throughput
 - [[cuDNN]] — quantized operations execute via cuDNN INT8/FP8 Tensor Core paths
