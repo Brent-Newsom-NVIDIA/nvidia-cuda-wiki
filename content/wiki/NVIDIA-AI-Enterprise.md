@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html)
 **Last Updated:** 2026-04-29
 
@@ -19,10 +19,11 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - **Comprehensive Software Bundle:** NIM microservices, NeMo Framework (training, customization, guardrails), Triton Inference Server, TensorRT, RAPIDS (cuDF, cuML, cuGraph), Morpheus (cybersecurity AI), NVIDIA DALI, and the full CUDA math/communication library stack
 - **Enterprise SLA & Support:** 24×7 enterprise-grade support with defined severity-based response SLAs; dedicated AI Enterprise support portal and escalation paths
 - **Security & CVE Management:** Continuous CVE scanning of all container images; rapid patching cadence; signed containers on NGC — critical for HIPAA, SOC 2, FedRAMP, and GDPR compliance environments
-- **NIM Microservices:** Full access to the NIM catalog — LLMs, embedding models, rerankers, vision-language, speech, and biology models — under enterprise license for on-premises, data-private deployment
+- **NIM Microservices:** Full access to the NIM catalog — LLMs, embedding models, rerankers, vision-language, speech, and biology models — under enterprise license for on-premises, data-private deployment. Current pages include [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], and [[NeMo-Retriever-Reranking-NIM]].
 - **API and recipe surface:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] document hosted/self-hosted API patterns for developers moving NVIDIA AI software into applications.
 - **NeMo Microservices (NeMo.ms):** Microservice-based LLMOps components: NeMo Curator (data curation), NeMo Customizer (LoRA/SFT/RLHF fine-tuning), NeMo Evaluator, and NeMo Guardrails (content safety)
 - **Flexible Licensing:** Licensed via NVIDIA License System (NLS); supports on-premises DGX and certified servers, VMware vSphere with vGPU, Red Hat OpenShift, bare metal, and all major public clouds (AWS, Azure, GCP, OCI Marketplace)
+- **NIM Operator:** [[NVIDIA-NIM-Operator]] is the Kubernetes lifecycle manager for NIM and NeMo microservices in production clusters.
 - **Run:ai:** current AI Enterprise guidance includes [[NVIDIA-Run-ai]] self-hosted GPU scheduling and workload orchestration; SaaS remains a separate offering
 - **AI factory guidance:** current planning docs include [[NVIDIA-Enterprise-AI-Factory]] reference guidance for Blackwell systems, BlueField DPUs, Spectrum-X networking, certified storage, Kubernetes, Run:ai, DOCA, Dynamo-Triton, and AI Enterprise software.
 - **Blueprint and agent workflows:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], and [[NVIDIA-Data-Flywheel-Blueprint]] show how AI Enterprise software components become repeatable agent, retrieval, evaluation, and optimization workflows.
@@ -58,6 +59,9 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 ## Connections
 - [[NGC]] — AI Enterprise software is exclusively distributed and licensed through NGC; NGC Private Registry supports enterprise isolation
 - [[NVIDIA-NIM]] — NIM microservices are the primary inference delivery mechanism within AI Enterprise
+- [[NIM-for-Large-Language-Models]] — LLM-specific NIM deployment and packaging surface, including NIM Certified.
+- [[NVIDIA-NIM-Operator]] — Kubernetes operator for managing NIM and NeMo microservices at cluster scale.
+- [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]] — retrieval NIMs for enterprise RAG deployments.
 - [[NVIDIA-AI-Blueprints]] — reference workflows for building applications from NIM, NeMo, Nemotron, and AI Enterprise components.
 - [[NVIDIA-AI-Q-Blueprint]] — enterprise research agent blueprint that uses the NVIDIA agent and retrieval stack.
 - [[NVIDIA-Data-Flywheel-Blueprint]] — continuous optimization blueprint using NeMo evaluation/customization and NIM candidate deployments.

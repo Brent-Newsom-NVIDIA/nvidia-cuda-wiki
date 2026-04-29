@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 314*
+*Total pages: 320*
 
 ---
 
@@ -210,6 +210,12 @@
 ### AI Cloud & Software Platforms
 - [[NGC]] — NVIDIA GPU Cloud: curated hub of GPU-optimized containers, models, Helm charts, and SDKs
 - [[NVIDIA-NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
+- [[NIM-for-Large-Language-Models]] — production NIM family for LLM serving with Day 0, Turbo, and Certified offerings
+- [[NVIDIA-NIM-Operator]] — Kubernetes operator for NIM and NeMo microservice lifecycle, model caching, and autoscaling
+- [[NeMo-Retriever-Embedding-NIM]] — NIM microservice for text/image embeddings in semantic search and RAG workflows
+- [[NeMo-Retriever-Reranking-NIM]] — NIM microservice for reranking retrieved passages by query relevance
+- [[NIM-for-Image-OCR]] — NeMo Retriever OCR microservice for extracting text from images and visual document regions
+- [[NIM-for-Object-Detection]] — NeMo Retriever document object-detection NIM family for page, table, and chart elements
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack

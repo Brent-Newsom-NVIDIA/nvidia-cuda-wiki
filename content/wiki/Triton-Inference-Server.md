@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Inference, Serving, MLOps, Production, Framework
-**Related:** [[TensorRT]], [[TensorRT-LLM]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]]
+**Related:** [[TensorRT]], [[TensorRT-LLM]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/triton-inference-server, https://docs.nvidia.com/maxine/triton/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -54,6 +54,10 @@ Triton solves the operational complexity of serving diverse AI models in product
 ## Connections
 - [[TensorRT]] — primary high-performance backend for optimized CNN/Transformer inference
 - [[TensorRT-LLM]] — specialized backend for high-throughput LLM serving with in-flight batching
+- [[NIM-for-Large-Language-Models]] — NIM LLM sits above inference engines and exposes production LLM APIs.
+- [[NeMo-Retriever-Embedding-NIM]] — current docs name Triton as the serving layer for embedding NIM containers.
+- [[NeMo-Retriever-Reranking-NIM]] — current docs name Triton as the serving layer for reranking NIM containers.
+- [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] — Retriever extraction NIMs use the same NVIDIA inference serving stack.
 - [[FlashInfer]] — attention kernel library used by TensorRT-LLM backend within Triton
 - [[PyTorch]] — LibTorch backend enables direct serving of PyTorch models
 - [[NVIDIA-NeMo]] — NeMo-trained models are commonly deployed through Triton

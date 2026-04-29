@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI blueprints, reference workflows, NIM, NeMo, agents, build.nvidia
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
 **Sources:** https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,9 @@ Do not create one wiki page per blueprint listing. Create a page only when a blu
 
 ## Connections
 - [[NVIDIA-NIM]] - many blueprints rely on hosted or downloadable NIM model endpoints.
+- [[NIM-for-Large-Language-Models]] - LLM NIMs provide the self-hosted model serving path for many generative AI blueprints.
+- [[NVIDIA-NIM-Operator]] - Kubernetes deployment path for blueprint stacks that include NIM/NeMo microservices.
+- [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]] - retrieval NIMs commonly appear in RAG and agent blueprints.
 - [[NVIDIA-AI-Enterprise]] - enterprise blueprints map to NVIDIA-supported production AI software.
 - [[NVIDIA-AI-Q-Blueprint]] - durable AI Blueprint for enterprise research agents.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - durable AI Blueprint for continuous agent and model optimization.

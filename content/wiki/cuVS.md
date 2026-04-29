@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Vector Search, Approximate Nearest Neighbor, RAPIDS, AI, Open Source
-**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[cuBLAS]], [[NeMo-Retriever]], [[NVIDIA-AI-Data-Platform]]
+**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[cuBLAS]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]]
 **Sources:** NVIDIA official documentation (RAPIDS), https://www.nvidia.com/en-us/data-center/ai-data-platform/
 **Last Updated:** 2026-04-29
 
@@ -53,6 +53,8 @@ Vector search (finding the most similar vectors in a large database) is foundati
 - [[TensorRT]] — TensorRT generates embeddings that cuVS then indexes and searches
 - [[cuBLAS]] — cuVS uses BLAS routines internally for distance computation
 - [[NeMo-Retriever]] — retrieval stacks use vector search and indexing to connect enterprise data to agents
+- [[NeMo-Retriever-Embedding-NIM]] — produces embeddings that vector search systems index and query.
+- [[NeMo-Retriever-Reranking-NIM]] — reranks candidates returned from vector or hybrid retrieval.
 - [[NVIDIA-AI-Data-Platform]] — AI Data Platform uses cuVS in its accelerated data retrieval and semantic search story
 
 ## Resources

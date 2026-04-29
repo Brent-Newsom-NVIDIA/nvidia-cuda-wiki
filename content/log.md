@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 23: NIM Operator and NeMo Retriever NIM microservices
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch23-20260429T072901Z`; local Git tag `codex-backup-overnight-pre-batch23-20260429T072901Z`
+
+**Source URLs:** https://docs.nvidia.com/nim-operator/latest/index.html, https://docs.nvidia.com/nim-operator/latest/quickstart.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/nim-offerings.html, https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html
+
+**Gap analysis summary:**
+
+- Added NIM Operator as the Kubernetes lifecycle-management page for NIM and NeMo microservices.
+- Added NIM for Large Language Models as a distinct page because current docs split LLM NIM offerings, architecture, deployment, model-free/model-specific containers, LoRA, MCP/tool calling, observability, and operator deployment from the NIM umbrella.
+- Added NeMo Retriever Embedding and Reranking NIM pages so retrieval pipelines can distinguish embedding/search from passage reranking.
+- Added Image OCR and Object Detection NIM pages for current multimodal document extraction workflows involving tables, charts, infographics, page elements, and OCR.
+- Used latest/current `latest` docs where available and did not create pages for every build.nvidia model card or sample application.
+
+**Pages created (6 total):**
+
+- `content/wiki/NVIDIA-NIM-Operator.md`
+- `content/wiki/NIM-for-Large-Language-Models.md`
+- `content/wiki/NeMo-Retriever-Embedding-NIM.md`
+- `content/wiki/NeMo-Retriever-Reranking-NIM.md`
+- `content/wiki/NIM-for-Image-OCR.md`
+- `content/wiki/NIM-for-Object-Detection.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md` - promoted NIM Operator, NIM LLM, and Retriever NIM microservices into the NIM graph.
+- `content/wiki/NeMo-Retriever.md` - split extraction, embedding, and reranking into first-class related pages.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected enterprise deployment to NIM Operator and NIM Certified concepts.
+- `content/wiki/NVIDIA-GPU-Operator.md` - connected GPU node management to NIM Operator workloads.
+- `content/wiki/Triton-Inference-Server.md` and `content/wiki/TensorRT.md` - linked current NIM microservices to the named inference acceleration stack.
+- `content/wiki/cuVS.md` and `content/wiki/NVIDIA-AI-Data-Platform.md` - connected embedding/reranking/OCR/object detection to retrieval and vector-search workflows.
+- `content/wiki/NVIDIA-AI-Blueprints.md`, `content/wiki/NVIDIA-AI-Q-Blueprint.md`, and `content/wiki/NVIDIA-Data-Flywheel-Blueprint.md` - linked durable blueprint pages to NIM Operator and Retriever NIM components.
+- `content/index.md` - updated page count to 320 and indexed the new NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 22: DOCA services, storage virtualization, and OVS offload
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch22-20260429T072258Z`; local Git tag `codex-backup-overnight-pre-batch22-20260429T072258Z`

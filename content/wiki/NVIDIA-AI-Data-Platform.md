@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Data Platform, enterprise storage, RAG, retrieval, AI factory, BlueField, Spectrum-X, NIM, NeMo Retriever
-**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[cuVS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
+**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[cuVS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html
 **Last Updated:** 2026-04-29
 
@@ -33,6 +33,10 @@ The AI Data Platform is the data-side counterpart to [[NVIDIA-Enterprise-AI-Fact
 - [[NVIDIA-CMX]] - CMX provides context memory storage for long-context, multi-turn inference.
 - [[NVIDIA-Certified-Storage]] - certification validates storage for AI factory and AI Data Platform workloads.
 - [[NeMo-Retriever]] - retrieval microservices connect enterprise data to RAG and agents.
+- [[NeMo-Retriever-Embedding-NIM]] - embedding microservice for semantic search over enterprise data.
+- [[NeMo-Retriever-Reranking-NIM]] - reranking microservice for improving retrieved context quality.
+- [[NIM-for-Image-OCR]] - extracts text from visual document content for retrieval.
+- [[NIM-for-Object-Detection]] - detects tables, charts, infographics, and document elements for extraction.
 - [[NVIDIA-NIM]] - NIM provides inference microservices used by agents and retrieval workflows.
 - [[cuVS]] - GPU-accelerated vector search and indexing are part of the platform's retrieval story.
 - [[DOCA-SNAP]] - BlueField storage virtualization is a lower-level building block for accelerated data paths.

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -56,6 +56,9 @@ Moving deep learning models from training to production requires inference-time 
 - [[cuBLAS]] — TensorRT uses cuBLAS for GEMM operations
 - [[CUTLASS]] — TensorRT uses CUTLASS-derived kernels for optimized GEMM
 - [[NCCL]] — multi-GPU TensorRT inference uses NCCL for tensor parallelism communication
+- [[NIM-for-Large-Language-Models]] — NIM LLM is the production LLM microservice layer adjacent to TensorRT/TensorRT-LLM.
+- [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]] — current docs name TensorRT as part of the retrieval NIM acceleration stack.
+- [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] — extraction NIMs use TensorRT-backed NVIDIA inference acceleration.
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
 - [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.
 - [[NVIDIA-Jetson-Platform]] - common deployment target for TensorRT inference in embedded robotics.

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI-Q, AI Blueprint, agents, deep research, NeMo Agent Toolkit, Nemotron, RAG
-**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
+**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
 **Sources:** https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://build.nvidia.com/nvidia/aiq/blueprintcard
 **Last Updated:** 2026-04-29
 
@@ -31,7 +31,12 @@ AI-Q is a canonical bridge between [[NVIDIA-AI-Blueprints]] and the enterprise a
 - [[NVIDIA-AI-Blueprints]] - AI-Q is a durable NVIDIA-authored blueprint with a stable docs surface.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - NeMo Agent Toolkit is the workflow layer referenced by the AI-Q docs.
 - [[NeMo-Retriever]] - enterprise retrieval and RAG services can provide AI-Q data access.
+- [[NeMo-Retriever-Embedding-NIM]] - embedding NIM for indexing and querying enterprise knowledge.
+- [[NeMo-Retriever-Reranking-NIM]] - reranking NIM for improving citation and context relevance.
+- [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] - multimodal document extraction services for enterprise research corpora.
 - [[NVIDIA-NIM]] - AI-Q uses NVIDIA-hosted or self-hosted model endpoints for inference.
+- [[NIM-for-Large-Language-Models]] - LLM NIMs provide self-hosted model serving for agent workflows.
+- [[NVIDIA-NIM-Operator]] - Kubernetes lifecycle path for AI-Q deployments that use NIM/NeMo microservices.
 - [[Nemotron]] - Nemotron models are listed in AI-Q's current build.nvidia.com card.
 - [[NVIDIA-AI-Enterprise]] - enterprise deployment and support paths surround AI-Q production usage.
 - [[NVIDIA-Enterprise-AI-Factory]] - AI-Q is called out as a long-running agent pattern for enterprise AI factories.

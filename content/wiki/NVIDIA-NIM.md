@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, inference, microservices, LLM, AI, REST API, containers, production deployment, OpenAI-compatible
-**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NVIDIA-Brev]], [[NVIDIA-Cloud-Accelerator-NCX]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nim/index.html, https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/index.html
+**Related:** [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NVIDIA-Brev]], [[NVIDIA-Cloud-Accelerator-NCX]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Dynamo]], [[NVIDIA-CMX]], [[NIXL]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nim/index.html, https://docs.nvidia.com/nim-operator/latest/index.html, https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://build.nvidia.com/models, https://build.nvidia.com/blueprints, https://docs.nvidia.com/nemo/microservices/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,12 +16,14 @@ NIM packages model-specific inference runtimes, APIs, containers, and deployment
 
 ### Current scope
 - **Model APIs:** build.nvidia.com exposes free, partner, and downloadable model endpoints across chat, code, retrieval, speech, biology, image/video, safety, and multimodal use cases.
+- **LLM serving:** [[NIM-for-Large-Language-Models]] is the specific current docs surface for NIM Day 0, NIM Turbo, NIM Certified, model-free NIM, model-specific NIMs, LoRA, tool calling/MCP, and production LLM deployment.
+- **Kubernetes lifecycle:** [[NVIDIA-NIM-Operator]] manages NIM and NeMo microservices, model caches, services, pipelines, autoscaling, and air-gapped deployment patterns.
 - **Blueprints:** [[NVIDIA-AI-Blueprints]] use NIM as a reusable model-serving layer in application workflows such as [[NVIDIA-AI-Q-Blueprint]] and [[NVIDIA-Data-Flywheel-Blueprint]].
 - **API docs and recipes:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] provide developer-facing examples for hosted APIs and NIM-style inference workflows.
 - **Self-hosted inference:** NIM containers are delivered through NVIDIA catalog/registry workflows and can run on NVIDIA GPU infrastructure.
 - **Enterprise runtime:** NIM is part of [[NVIDIA-AI-Enterprise]] and receives production-grade runtime and security-update treatment.
 - **NeMo integration:** [[NeMo-Platform]] uses NIM targets and inference gateways for agent lifecycle workflows.
-- **Retriever integration:** [[NeMo-Retriever]] uses NIM microservices for embedding and reranking.
+- **Retriever integration:** [[NeMo-Retriever]] uses NIM microservices for embedding, reranking, OCR, and object/document extraction; see [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], and [[NIM-for-Object-Detection]].
 - **AI data and context:** [[NVIDIA-AI-Data-Platform]] uses NIM in retrieval/agent workflows, while [[NVIDIA-CMX]] and [[NVIDIA-Dynamo]] address large-scale context and inference-serving patterns around NIM deployments.
 - **Disaggregated serving:** [[NIXL]] and [[NVIDIA-Dynamo]] connect to newer large-model serving patterns such as KV-cache and tensor transfer.
 
@@ -35,6 +37,12 @@ NIM packages model-specific inference runtimes, APIs, containers, and deployment
 NIM is the practical deployment boundary between NVIDIA's model catalog and production applications. It links model development in [[NVIDIA-NeMo]], inference optimization in [[TensorRT-LLM]], serving in [[Triton-Inference-Server]], catalog distribution in [[NGC]], and enterprise support in [[NVIDIA-AI-Enterprise]].
 
 ## Connections
+- [[NIM-for-Large-Language-Models]] - LLM-specific NIM docs for production LLM serving.
+- [[NVIDIA-NIM-Operator]] - Kubernetes operator for NIM and NeMo microservice lifecycle management.
+- [[NeMo-Retriever-Embedding-NIM]] - embedding NIM for semantic search, RAG, and vector retrieval.
+- [[NeMo-Retriever-Reranking-NIM]] - reranking NIM for improving retrieved passage relevance.
+- [[NIM-for-Image-OCR]] - OCR NIM for extracting text from visual document regions.
+- [[NIM-for-Object-Detection]] - document object-detection NIMs for page, table, and graphic elements.
 - [[NVIDIA-AI-Enterprise]] - commercial enterprise software layer that includes supported NIM runtimes.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - distribution path for containers, models, and artifacts.
 - [[NVIDIA-AI-Blueprints]] - reference workflows that compose NIM with NeMo, Retriever, Nemotron, and deployment assets.
