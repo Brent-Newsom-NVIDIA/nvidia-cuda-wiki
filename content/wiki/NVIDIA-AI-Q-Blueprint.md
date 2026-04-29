@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI-Q, AI Blueprint, agents, deep research, NeMo Agent Toolkit, Nemotron, RAG
-**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Platform]], [[NeMo-Evaluator]], [[NeMo-Data-Designer]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
-**Sources:** https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://build.nvidia.com/nvidia/aiq/blueprintcard
+**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Platform]], [[NeMo-Evaluator]], [[NeMo-Data-Designer]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-RTX-PRO-AI-Factory]]
+**Sources:** https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://docs.nvidia.com/enterprise-reference-architectures/ai-q-research-agent-blueprint.pdf
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,6 +26,11 @@ AI-Q addresses a common enterprise agent problem: simple questions should stay f
 AI-Q includes quick-start, installation, architecture, customization, extension, REST API, evaluation, observability, Docker, and Kubernetes documentation. The Kubernetes docs describe Helm-based deployment, NGC image pull secrets, service access, and optional integration with a [[NVIDIA-RAG-Blueprint]] service.
 [[NeMo-Evaluator]] is the natural measurement layer for AI-Q-style research agents, while [[NeMo-Data-Designer]] can help create task-specific examples for evaluation or agent improvement.
 
+The Enterprise RA AI-Q paper adds a deployment and sizing view for AI-Q on NVIDIA Enterprise infrastructure. It shows AI-Q as an enterprise research assistant pattern that composes a reasoning LLM, a Nemotron model, retrieval services, document ingestion services, vector storage, Redis, tracing/profiling, and evaluation configuration. The example values keep ingestion, embedding, reranking, and RAG services explicit rather than hiding AI-Q behind a single opaque app container.
+
+### Sizing and operations
+The Enterprise RA paper frames AI-Q sizing differently from simple chat because deep research sessions can generate long reports and use large token budgets. It highlights scaling the reasoning model, Nemotron 49B, as a major lever for lowering latency, and it includes a profiler-agent configuration that queries tracing data and reports bottleneck/performance information.
+
 ### NVIDIA context
 AI-Q is a canonical bridge between [[NVIDIA-AI-Blueprints]] and the enterprise agent stack. It links [[NVIDIA-Agent-Intelligence-Toolkit]] workflow orchestration, [[NeMo-Retriever]] enterprise data access, [[NVIDIA-NIM]] model endpoints, [[Nemotron]] reasoning models, and [[NVIDIA-AI-Enterprise]] deployment patterns. In the [[NVIDIA-Enterprise-AI-Factory]] design guide, AI-Q-style agents are treated as long-running, inspectable, governable enterprise services.
 
@@ -47,12 +52,17 @@ AI-Q is a canonical bridge between [[NVIDIA-AI-Blueprints]] and the enterprise a
 - [[Nemotron]] - Nemotron models are listed in AI-Q's current build.nvidia.com card.
 - [[NVIDIA-AI-Enterprise]] - enterprise deployment and support paths surround AI-Q production usage.
 - [[NVIDIA-Enterprise-AI-Factory]] - AI-Q is called out as a long-running agent pattern for enterprise AI factories.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - Enterprise RA paper provides deployment, sizing, and operations context for AI-Q.
+- [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software stack underneath AI-Q Enterprise RA deployment.
+- [[NVIDIA-RTX-PRO-AI-Factory]] - RTX PRO 6000 class infrastructure appears in the AI-Q Enterprise RA sizing context.
 
 ## Source Excerpts
 - NVIDIA AI-Q docs describe a two-tier research architecture that keeps simple queries fast and reserves deep research for complex topics.
 - The build.nvidia.com card describes AI-Q as an NVIDIA Blueprint for agents that connect, retrieve, reason, and operate over enterprise data.
+- The Enterprise RA AI-Q paper adds deployment, sizing, profiler, and evaluation context for AI-Q research-agent workloads.
 
 ## Resources
 - [AI-Q Blueprint Docs](https://docs.nvidia.com/aiq-blueprint/latest/index.html)
 - [AI-Q Architecture Overview](https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html)
 - [AI-Q Blueprint Card](https://build.nvidia.com/nvidia/aiq/blueprintcard)
+- [AI-Q Research Agent Blueprint Enterprise RA PDF](https://docs.nvidia.com/enterprise-reference-architectures/ai-q-research-agent-blueprint.pdf)

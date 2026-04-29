@@ -256,7 +256,7 @@
 - [[NGC]] — NVIDIA GPU Cloud: curated hub of GPU-optimized containers, models, Helm charts, and SDKs
 - [[NVIDIA-NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
 - [[NIM-for-Large-Language-Models]] — production NIM family for LLM serving with Day 0, Turbo, and Certified offerings
-- [[NIM-for-LLM-Benchmarking-Guide]] — NIM guide for LLM latency, throughput, concurrency, and LoRA benchmark workflows
+- [[NIM-for-LLM-Benchmarking-Guide]] — NIM guide for LLM latency, throughput, concurrency, Run:ai sizing, and LoRA benchmark workflows
 - [[NVIDIA-NIM-Operator]] — Kubernetes operator for NIM and NeMo microservice lifecycle, model caching, and autoscaling
 - [[NeMo-Retriever-Embedding-NIM]] — NIM microservice for text/image embeddings in semantic search and RAG workflows
 - [[NIM-for-NV-CLIP]] — NIM microservice for multimodal text/image embeddings, semantic image search, and multimodal RAG
@@ -271,7 +271,7 @@
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] — Observability guide for Enterprise RA dashboards, alerts, DCGM, NIM Operator, BCM, and NetQ telemetry
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
-- [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
+- [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, Mission Control, and NIM LLM sizing workflows
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-AI-Workbench-Projects]] — AI Workbench Git/container project model for reproducible GPU development environments
 - [[NVIDIA-AI-Workbench-Locations]] — AI Workbench local and remote machine abstraction for project execution
@@ -297,7 +297,7 @@
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
 ### Agent Platforms
-- [[NVIDIA-AI-Q-Blueprint]] — NVIDIA AI Blueprint for enterprise research agents with shallow/deep routing, retrieval, citations, and evaluation
+- [[NVIDIA-AI-Q-Blueprint]] — NVIDIA AI Blueprint for enterprise research agents with retrieval, citations, evaluation, and Enterprise RA sizing context
 - [[NVIDIA-Data-Flywheel-Blueprint]] — NVIDIA AI Blueprint for continuously optimizing agents and models with production traffic, NeMo evaluation/customization, and NIM redeployment
 - [[NVIDIA-Video-Search-and-Summarization-Blueprint]] — NVIDIA AI Blueprint for vision agents, video search, summarization, and alert verification
 - [[NVIDIA-Tokkio-Digital-Human-Blueprint]] — NVIDIA AI Blueprint for interactive digital humans using ACE, speech, RAG/LLM, and avatar animation

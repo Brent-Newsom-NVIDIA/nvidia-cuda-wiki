@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 43: Enterprise RA application papers
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch43-20260429T093610Z`; local Git tag `codex-backup-overnight-pre-batch43-20260429T093610Z`
+
+**Source URLs:** https://docs.nvidia.com/enterprise-reference-architectures/nim-llm-with-run-ai-and-vanilla-kubernetes.pdf, https://docs.nvidia.com/enterprise-reference-architectures/ai-q-research-agent-blueprint.pdf
+
+**Gap analysis summary:**
+
+- Folded two current NVIDIA Enterprise RA application papers into existing canonical pages instead of creating duplicate paper-specific wiki pages.
+- Added NIM LLM with Run:ai scale/sizing context to the Run:ai, NIM LLM, NIM benchmarking, and NIM umbrella pages.
+- Added AI-Q Enterprise RA sizing, profiler, Nemotron, RAG, and RTX PRO infrastructure context to the existing AI-Q, Agent Intelligence Toolkit, RAG Blueprint, Nemotron, and Enterprise RA pages.
+- Kept the current docs/PDFs represented as sources and connections while avoiding a page per appendix, YAML file, benchmark table, deployment step, or build.nvidia listing.
+
+**Pages created (0 total):**
+
+- None. Existing canonical pages were updated.
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Run-ai.md` - added NIM LLM Enterprise RA scheduling, autoscaling, fractional-GPU, and multi-model packing context.
+- `content/wiki/NIM-for-Large-Language-Models.md`, `content/wiki/NIM-for-LLM-Benchmarking-Guide.md`, and `content/wiki/NVIDIA-NIM.md` - connected NIM LLM deployment/sizing to Run:ai, Enterprise RA, and Kubernetes software-stack guidance.
+- `content/wiki/NVIDIA-AI-Q-Blueprint.md` - added Enterprise RA deployment, sizing, profiler, evaluation, Nemotron, and RTX PRO context.
+- `content/wiki/NVIDIA-Agent-Intelligence-Toolkit.md`, `content/wiki/NVIDIA-RAG-Blueprint.md`, and `content/wiki/Nemotron.md` - connected AI-Q Enterprise RA sizing and model/retrieval dependencies.
+- `content/wiki/NVIDIA-Enterprise-Reference-Architectures.md` - documented that application-level RA papers are folded into canonical topic pages.
+- `content/index.md` - updated descriptions for Run:ai, NIM LLM Benchmarking, and AI-Q.
+
+---
+
 ## 2026-04-29 - Overnight batch 42: Enterprise Reference Architecture coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch42-20260429T092611Z`; local Git tag `codex-backup-overnight-pre-batch42-20260429T092611Z`

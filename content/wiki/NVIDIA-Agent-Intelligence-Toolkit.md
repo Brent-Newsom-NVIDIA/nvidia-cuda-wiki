@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo Agent Toolkit, AIQ, agents, workflows, observability, MCP, A2A
-**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-OpenShell]], [[Nemotron]], [[NVIDIA-Enterprise-AI-Factory]]
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-OpenShell]], [[Nemotron]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Enterprise-Reference-Architectures]]
 **Sources:** https://docs.nvidia.com/aiqtoolkit/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html
 **Last Updated:** 2026-04-29
 
@@ -23,12 +23,13 @@ Enterprise agent systems rarely live in one framework or one model endpoint. NeM
 - API server, UI, and command-line execution paths through the `nat` CLI/package.
 
 ### NVIDIA context
-The toolkit connects [[NVIDIA-NIM]] model endpoints, [[NeMo-Retriever]] data access, [[NeMo-Guardrails]] controls, and [[Nemotron]] reasoning models into composable agent workflows. [[NVIDIA-AI-Q-Blueprint]] is the clearest current blueprint example: it uses toolkit-style orchestration, shallow/deep research routing, evaluation, citations, and deployment assets as a long-running enterprise agent pattern.
+The toolkit connects [[NVIDIA-NIM]] model endpoints, [[NeMo-Retriever]] data access, [[NeMo-Guardrails]] controls, and [[Nemotron]] reasoning models into composable agent workflows. [[NVIDIA-AI-Q-Blueprint]] is the clearest current blueprint example: it uses toolkit-style orchestration, shallow/deep research routing, evaluation, citations, deployment assets, and Enterprise RA sizing/profiling patterns as a long-running enterprise agent pattern.
 
 ## Connections
 - [[NVIDIA-NeMo]] - NeMo is the parent suite for agent lifecycle management.
 - [[NVIDIA-NIM]] - NIMs provide model endpoints used by toolkit workflows.
 - [[NVIDIA-AI-Q-Blueprint]] - durable blueprint for enterprise research agents built around NeMo Agent Toolkit concepts.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - AI-Q Enterprise RA paper shows how toolkit-style agent workflows become sized infrastructure deployments.
 - [[NVIDIA-AI-Blueprints]] - blueprint catalog where toolkit-based agent examples are surfaced.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - evaluation and customization loop for continuously optimizing agent behavior and model choices.
 - [[NeMo-Retriever]] - retrieval services connect agents to enterprise data.

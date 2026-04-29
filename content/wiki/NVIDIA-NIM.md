@@ -16,7 +16,7 @@ NIM packages model-specific inference runtimes, APIs, containers, and deployment
 
 ### Current scope
 - **Model APIs:** build.nvidia.com exposes free, partner, and downloadable model endpoints across chat, code, retrieval, speech, biology, image/video, safety, and multimodal use cases.
-- **LLM serving:** [[NIM-for-Large-Language-Models]] is the specific current docs surface for NIM Day 0, NIM Turbo, NIM Certified, model-free NIM, model-specific NIMs, LoRA, tool calling/MCP, and production LLM deployment; [[NIM-for-LLM-Benchmarking-Guide]] and [[NVIDIA-AIPerf]] cover latency-throughput measurement.
+- **LLM serving:** [[NIM-for-Large-Language-Models]] is the specific current docs surface for NIM Day 0, NIM Turbo, NIM Certified, model-free NIM, model-specific NIMs, LoRA, tool calling/MCP, and production LLM deployment; [[NIM-for-LLM-Benchmarking-Guide]], [[NVIDIA-AIPerf]], and [[NVIDIA-Run-ai]] cover latency-throughput measurement, scheduling, and Enterprise RA sizing patterns.
 - **Kubernetes lifecycle:** [[NVIDIA-NIM-Operator]] manages NIM and NeMo microservices, model caches, services, pipelines, autoscaling, and air-gapped deployment patterns.
 - **Blueprints:** [[NVIDIA-AI-Blueprints]] use NIM as a reusable model-serving layer in application workflows such as [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], and [[NVIDIA-Tokkio-Digital-Human-Blueprint]].
 - **API docs and recipes:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] provide developer-facing examples for hosted APIs and NIM-style inference workflows.
@@ -47,6 +47,7 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 ## Connections
 - [[NIM-for-Large-Language-Models]] - LLM-specific NIM docs for production LLM serving.
 - [[NIM-for-LLM-Benchmarking-Guide]] - latency-throughput benchmarking guide for OpenAI-compatible LLM NIM deployments.
+- [[NVIDIA-Run-ai]] - Enterprise RA paper uses Run:ai to schedule, autoscale, and pack LLM NIM inference workloads.
 - [[NVIDIA-AIPerf]] - current NVIDIA tool for benchmarking OpenAI-compatible NIM LLM services.
 - [[NVIDIA-GenAI-Perf]] - older generative AI benchmark tool now useful mainly for migration and legacy workflows.
 - [[NVIDIA-NIM-Operator]] - Kubernetes operator for NIM and NeMo microservice lifecycle management.
@@ -128,3 +129,4 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 - [Build NVIDIA Models](https://build.nvidia.com/models)
 - [NeMo Platform Documentation](https://docs.nvidia.com/nemo/microservices/latest/index.html)
 - [NIM API Catalog](https://build.nvidia.com)
+- [NIM LLM with Run:ai Enterprise RA PDF](https://docs.nvidia.com/enterprise-reference-architectures/nim-llm-with-run-ai-and-vanilla-kubernetes.pdf)

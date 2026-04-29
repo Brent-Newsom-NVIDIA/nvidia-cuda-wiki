@@ -20,6 +20,7 @@ Enterprise RAs are meant to reduce the risk of building AI infrastructure from s
 - [[NVIDIA-NVL72-AI-Factory]] for GB300 NVL72 rack-scale systems with NVLink domains and Spectrum-X networking.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] for the common AI Enterprise software stack that runs across supported hardware.
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] for dashboarding, alerting, and telemetry across the RA stack.
+- Application-level Enterprise RA papers are folded into their canonical topic pages, such as [[NVIDIA-Run-ai]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], and [[NVIDIA-AI-Q-Blueprint]], rather than creating duplicate paper pages.
 
 ### NVIDIA context
 This page is the canonical program-level page. It should not absorb every deployment recipe, partner-endorsed design, PDF appendix, or build.nvidia example. Use the specific RA pages for durable NVIDIA-authored architecture documents, and use [[NVIDIA-Enterprise-AI-Factory]] for the broader strategy and planning concept.
@@ -39,6 +40,8 @@ This page is the canonical program-level page. It should not absorb every deploy
 - [[NVIDIA-Base-Command-Manager]] - cluster provisioning and management component used in deployment guidance.
 - [[NVIDIA-Run-ai]] - workload orchestration path in current AI Enterprise and RA materials.
 - [[NVIDIA-NetQ]] - network visibility and validation component used in RA software and observability guidance.
+- [[NVIDIA-AI-Q-Blueprint]] - application-level Enterprise RA paper for an enterprise research-agent deployment.
+- [[NIM-for-Large-Language-Models]] and [[NVIDIA-Run-ai]] - NIM LLM with Run:ai sizing paper is represented on the canonical NIM and orchestration pages.
 
 ## Source Excerpts
 - NVIDIA's docs hub says Enterprise RAs are for building AI factories that scale and groups the content into overview, hardware, software, observability, and deployment areas.

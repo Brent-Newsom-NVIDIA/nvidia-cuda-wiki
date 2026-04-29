@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Blueprint, RAG, retrieval augmented generation, NeMo Retriever, NIM, multimodal RAG, enterprise search
-**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NeMo-Retriever]], [[NeMo-Evaluator]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-NemoGuard-NIMs]], [[Nemotron]], [[cuVS]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NeMo-Retriever]], [[NeMo-Evaluator]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-NemoGuard-NIMs]], [[Nemotron]], [[cuVS]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]]
 **Sources:** https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/rag/latest/vlm-embed.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,7 @@ This page is the canonical wiki target for the durable RAG blueprint, not for ev
 - [[NVIDIA-AI-Blueprints]] - RAG Blueprint is one of the durable NVIDIA-authored blueprint topics.
 - [[NVIDIA-NIM]] and [[NVIDIA-NIM-Operator]] - blueprint deployments can use hosted or self-hosted NIM services and NIM Operator-managed Kubernetes deployment.
 - [[NVIDIA-AI-Q-Blueprint]] - AI-Q can use RAG Blueprint-style retrieval services as an enterprise knowledge source.
+- [[NVIDIA-Enterprise-Reference-Architectures]] - AI-Q Enterprise RA paper shows RAG services as part of a sized research-agent deployment.
 - [[NVIDIA-AI-Data-Platform]] - data-layer reference design for RAG, vector search, and enterprise agent data access.
 - [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], and [[NIM-for-Object-Detection]] - retrieval, embedding, reranking, and extraction services used by RAG workflows.
 - [[NeMo-Evaluator]] - evaluation service for RAG, retriever, and grounded-generation metrics.
