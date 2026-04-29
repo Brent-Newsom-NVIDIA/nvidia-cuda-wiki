@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 90: cuQuantum component libraries
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch90-20260429T123849Z`; local Git tag `codex-backup-overnight-pre-batch90-20260429T123849Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cuquantum/latest/, https://docs.nvidia.com/cuda/cuquantum/latest/cutensornet/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/cudensitymat/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/cupauliprop/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/custabilizer/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/appliance/overview.html
+
+**Gap analysis summary:**
+
+- Found that the wiki had [[cuQuantum]] and [[cuStateVec]], but current NVIDIA cuQuantum docs list distinct durable component libraries for tensor networks, analog quantum dynamics, Pauli propagation, stabilizer simulation, and the NGC appliance.
+- Added one page per current cuQuantum component/appliance topic instead of splitting examples or API subsections into extra pages.
+- Connected the new pages to NVIDIA Quantum, CUDA-Q, CUDA-QX, cuTENSOR, NGC/container infrastructure, NCCL, and the existing cuStateVec/cuQuantum pages.
+
+**Pages created (5 total):**
+
+- `content/wiki/cuTensorNet.md`
+- `content/wiki/cuDensityMat.md`
+- `content/wiki/cuPauliProp.md`
+- `content/wiki/cuStabilizer.md`
+- `content/wiki/cuQuantum-Appliance.md`
+
+**Pages updated:**
+
+- `content/wiki/cuQuantum.md` - converted component references into canonical wikilinks and added the appliance.
+- `content/wiki/cuStateVec.md` - refreshed sources and linked sibling cuQuantum component pages.
+- `content/wiki/NVIDIA-Quantum.md` - expanded the cuQuantum solution map.
+- `content/wiki/CUDA-Q.md` - linked CUDA-Q simulation backends to current cuQuantum components.
+- `content/wiki/CUDA-QX.md` - linked QEC/solver context to current cuQuantum libraries.
+- `content/wiki/cuTENSOR.md` - connected tensor algebra prerequisites to cuTensorNet and cuDensityMat.
+- `content/wiki/NGC.md` - linked the cuQuantum Appliance container workflow.
+- `content/index.md` - updated total page count to 469 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 89: Nemotron ASR Streaming
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch89-20260429T123423Z`; local Git tag `codex-backup-overnight-pre-batch89-20260429T123423Z`

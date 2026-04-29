@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, quantum computing, accelerated quantum supercomputing, QPU, CUDA-Q, NVQLink, CUDA-QX
-**Related:** [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[cuStateVec]], [[cuPQC]], [[NVIDIA-Ising]], [[Ising-Calibration-1-35B-A3B]], [[Ising-Decoding]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-Quantum-InfiniBand]]
+**Related:** [[CUDA-Q]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[cuQuantum]], [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[cuPQC]], [[NVIDIA-Ising]], [[Ising-Calibration-1-35B-A3B]], [[Ising-Decoding]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVIDIA-Accelerated-Quantum-Center]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-GB200-NVL72]], [[NVIDIA-Quantum-InfiniBand]]
 **Sources:** https://www.nvidia.com/en-us/solutions/quantum-computing/
 **Last Updated:** 2026-04-29
 
@@ -19,7 +19,7 @@ NVIDIA Quantum exists because practical quantum computing is not only a QPU prob
 - [[CUDA-Q]] - programming model and toolchain for hybrid CPU, GPU, and QPU workflows.
 - [[CUDA-QX]] - CUDA-Q library collection for QEC and quantum-classical solvers.
 - [[CUDA-Q-Realtime]] - realtime CUDA-Q networking/runtime API layer used with NVQLink.
-- [[cuQuantum]] - low-level GPU-accelerated quantum circuit simulation libraries and appliance.
+- [[cuQuantum]] - low-level GPU-accelerated quantum circuit simulation libraries and appliance, including [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], and [[cuQuantum-Appliance]].
 - [[cuPQC]] - GPU-accelerated post-quantum cryptography library.
 - [[NVIDIA-Ising]] - open AI model family for quantum processor calibration and QEC pre-decoding.
 - [[Ising-Calibration-1-35B-A3B]] - NVIDIA quantum calibration VLM for analyzing quantum calibration experiment plots.
@@ -36,6 +36,8 @@ Do not confuse this quantum-computing platform page with [[NVIDIA-Quantum-Infini
 - [[CUDA-Q-Realtime]] - realtime API path introduced for NVQLink workflows.
 - [[NVIDIA-NVQLink]] - current architecture for quantum-to-GPU realtime integration.
 - [[cuQuantum]] - simulation library family within the NVIDIA Quantum solution area.
+- [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], and [[cuStabilizer]] - current cuQuantum component libraries.
+- [[cuQuantum-Appliance]] - containerized cuQuantum simulation workflow for Qiskit and Cirq.
 - [[cuPQC]] - quantum-safe cryptography library surfaced from the same NVIDIA Quantum page.
 - [[NVIDIA-Ising]] - family-level page for NVIDIA's open quantum AI models.
 - [[Ising-Calibration-1-35B-A3B]] - NVIDIA Ising-family model endpoint for quantum calibration plot understanding.

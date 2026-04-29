@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA-QX, CUDA-Q, quantum computing, QEC, quantum solvers, GPU acceleration
-**Related:** [[CUDA-Q]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[NVIDIA-Quantum]], [[Ising-Decoding]], [[cuQuantum]], [[cuStateVec]], [[NVIDIA-Accelerated-Quantum-Center]]
+**Related:** [[CUDA-Q]], [[CUDA-Q-Realtime]], [[NVIDIA-NVQLink]], [[NVIDIA-Quantum]], [[Ising-Decoding]], [[cuQuantum]], [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[NVIDIA-Accelerated-Quantum-Center]]
 **Sources:** https://nvidia.github.io/cudaqx/, https://nvidia.github.io/cuda-quantum/latest/using/cudaqx/cudaqx.html, https://www.nvidia.com/en-us/solutions/quantum-computing/
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,8 @@ NVIDIA's current Quantum page describes CUDA-QX as the optimized library layer o
 - [[NVIDIA-NVQLink]] - NVQLink enables realtime QEC hardware loops for CUDA-QX QEC.
 - [[Ising-Decoding]] - NVIDIA predecoder models and training workflows target CUDA-Q QEC realtime decoding paths.
 - [[cuQuantum]] - simulation libraries complement CUDA-QX application libraries.
+- [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], and [[cuStabilizer]] - current cuQuantum component libraries adjacent to QEC and solver workflows.
+- [[cuQuantum-Appliance]] - containerized cuQuantum workflow for Qiskit and Cirq frontends.
 - [[NVIDIA-Quantum]] - CUDA-QX is a first-class solution on the NVIDIA Quantum page.
 - [[NVIDIA-Accelerated-Quantum-Center]] - NVAQC uses CUDA-Q to orchestrate quantum-classical systems; CUDA-QX provides higher-level QEC/solver libraries.
 

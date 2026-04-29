@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Tensor, Linear Algebra, Deep Learning, HPC, Math
-**Related:** [[cuBLAS]], [[cuDNN]], [[CUTLASS]], [[cuSOLVER]], [[nvmath-python]]
+**Related:** [[cuBLAS]], [[cuDNN]], [[CUTLASS]], [[cuSOLVER]], [[nvmath-python]], [[cuQuantum]], [[cuTensorNet]], [[cuDensityMat]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -46,6 +46,8 @@ Tensor contractions are the generalization of matrix multiplication to higher-di
 - [[cuDNN]] — cuDNN uses tensor operations internally; cuTENSOR provides the low-level primitive
 - [[CUTLASS]] — CUTLASS provides GEMM templates; cuTENSOR provides higher-level tensor contraction
 - [[nvmath-python]] — Python-accessible interface for cuTENSOR operations
+- [[cuTensorNet]] - current cuQuantum tensor-network component built on cuTENSOR.
+- [[cuDensityMat]] - current cuQuantum analog-dynamics component that lists cuTENSOR as a prerequisite.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/cutensor)

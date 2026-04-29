@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[Nsight-Cloud]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-TAO]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-BioNeMo]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[cuQuantum-Appliance]], [[Nsight-Cloud]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -15,7 +15,7 @@ NGC (NVIDIA GPU Cloud) is NVIDIA's centralized hub for GPU-optimized software, p
 Setting up a functional GPU computing environment — with correct CUDA versions, cuDNN, framework builds, and dependencies — is time-consuming and error-prone. NGC solves this by providing a curated catalog of pre-built, NVIDIA-tested containers and models that work out of the box on any NVIDIA GPU or cloud instance, dramatically reducing time-to-experiment and time-to-production. For enterprises, NGC also acts as the licensing and distribution layer for NVIDIA AI Enterprise software.
 
 ### Key Features
-- **Container Registry:** GPU-optimized Docker containers for PyTorch, TensorFlow, JAX, TensorRT, NeMo, Triton, RAPIDS, and dozens of other frameworks, hosted at `nvcr.io`
+- **Container Registry:** GPU-optimized Docker containers for PyTorch, TensorFlow, JAX, TensorRT, NeMo, Triton, RAPIDS, [[cuQuantum-Appliance]], and dozens of other frameworks, hosted at `nvcr.io`
 - **Model Catalog:** Pre-trained AI models spanning NLP, computer vision, speech, medical imaging, biology (protein structure, genomics), and generative AI
 - **Helm Charts:** Kubernetes-ready deployment charts for NVIDIA platforms (Triton, Riva, Metropolis, etc.)
 - **Software SDKs:** Direct downloads of NVIDIA SDKs and toolkits (cuDNN, TensorRT, Nsight, CUDA Toolkit, etc.)
@@ -60,6 +60,7 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 - [[NVIDIA-NGC-Catalog]] — public catalog surface for containers, models, Helm charts, and SDKs
 - [[NVIDIA-Optimized-Frameworks]] — deep learning framework containers are distributed through NGC and documented through NVIDIA's framework support matrix.
 - [[NVIDIA-TAO]] — TAO containers, pretrained CV models, and model artifacts are distributed through NGC.
+- [[cuQuantum-Appliance]] - NGC-distributed container workflow for Qiskit/Cirq quantum simulation on NVIDIA GPUs.
 - [[Nemotron]] — NVIDIA model family whose downloadable and API-facing artifacts appear through NVIDIA model catalogs
 - [[NeMo-Platform]] — NeMo microservices rely on NGC credentials and NVIDIA-hosted artifacts
 - [[NVIDIA-BioNeMo]] and [[BioNeMo-Recipes]] — BioNeMo models, containers, recipes, and NIM assets sit in the same NGC-centered distribution pattern.

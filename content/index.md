@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 464*
+*Total pages: 469*
 
 ---
 
@@ -96,6 +96,11 @@
 - [[CUDA-Q-Realtime]] — CUDA-Q realtime API and networking layer for NVQLink GPU-to-controller feedback loops
 - [[cuQuantum]] — GPU-accelerated quantum computing simulation (state vector, tensor network, density matrix)
 - [[cuStateVec]] — cuQuantum state-vector simulation component for quantum circuit workloads
+- [[cuTensorNet]] — cuQuantum tensor-network component for contraction paths, slicing, MPS workflows, and distributed execution
+- [[cuDensityMat]] — cuQuantum analog quantum dynamics solver library for states, operators, gradients, and time propagation
+- [[cuPauliProp]] — cuQuantum Pauli propagation library for Pauli-basis simulation, traces, truncation, and gradients
+- [[cuStabilizer]] — cuQuantum stabilizer simulation library for Pauli-frame Clifford circuits and DEM sampling
+- [[cuQuantum-Appliance]] — NGC container workflow for multi-GPU cuQuantum simulation with Qiskit and Cirq frontends
 - [[CUDA-Q]] — hybrid quantum-classical computing platform with GPU simulation and QPU backend support
 - [[Ising-Calibration-1-35B-A3B]] — NVIDIA quantum calibration VLM for analyzing QPU calibration experiment plots
 - [[Ising-Decoding]] — NVIDIA Ising QEC predecoder models and training framework for surface-code decoding

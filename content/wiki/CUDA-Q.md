@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Quantum Computing, Hybrid Quantum-Classical, Simulation, CUDA-X
-**Related:** [[NVIDIA-Quantum]], [[NVIDIA-NVQLink]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[cuQuantum]], [[cuStateVec]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVCC]], [[PyTorch]], [[cuBLAS]]
+**Related:** [[NVIDIA-Quantum]], [[NVIDIA-NVQLink]], [[CUDA-QX]], [[CUDA-Q-Realtime]], [[cuQuantum]], [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-Quantum-Cloud]], [[NVCC]], [[PyTorch]], [[cuBLAS]]
 **Sources:** NVIDIA official documentation, developer.nvidia.com/cuda-q, https://nvidia.github.io/cuda-quantum/latest/index.html, https://www.nvidia.com/en-us/solutions/quantum-computing/
 **Last Updated:** 2026-04-29
 
@@ -18,7 +18,7 @@ CUDA-Q solves the fragmented landscape of quantum programming by providing a sin
 - Unified C++ and Python programming model for hybrid quantum-classical algorithms
 - `cudaq::kernel` / `@cudaq.kernel` decorator for quantum kernel definition
 - Variational quantum eigensolver (VQE) and QAOA primitives
-- Quantum circuit simulation via cuQuantum backends (state vector, tensor network, density matrix)
+- Quantum circuit simulation via [[cuQuantum]] backends, including [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], and [[cuStabilizer]] component libraries.
 - Multi-QPU simulation: distribute quantum circuit shots across multiple GPUs
 - Hardware backends: IBM Quantum, IonQ, Quantinuum, OQC, and others via standard interface
 - Noise modeling for realistic quantum simulation
@@ -52,7 +52,9 @@ CUDA-Q solves the fragmented landscape of quantum programming by providing a sin
 - MLIR intermediate representation
 
 ## Connections
-- [[cuQuantum]] — CUDA-Q uses cuQuantum (cuStateVec, cuTensorNet) as its GPU simulation backends
+- [[cuQuantum]] — CUDA-Q uses cuQuantum as its GPU simulation backend family.
+- [[cuStateVec]], [[cuTensorNet]], [[cuDensityMat]], [[cuPauliProp]], and [[cuStabilizer]] - current cuQuantum simulation components.
+- [[cuQuantum-Appliance]] - containerized cuQuantum deployment path adjacent to CUDA-Q simulation workflows.
 - [[NVIDIA-Quantum]] - overall NVIDIA accelerated quantum computing platform.
 - [[NVIDIA-NVQLink]] - realtime GPU-QPU integration architecture exposed through CUDA-Q realtime APIs.
 - [[CUDA-QX]] - CUDA-Q library collection for quantum error correction and solver workflows.
