@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 54: Nemotron model-family refresh
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch54-20260429T101948Z`; local Git tag `codex-backup-overnight-pre-batch54-20260429T101948Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/microservices/latest/customizer/models/index.html, https://docs.nvidia.com/nemo/microservices/latest/fine-tune/models/llama-nemotron.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/models/embedding.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm/nvidia/nemotron.html, https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html
+
+**Gap analysis summary:**
+
+- Refreshed the existing `Nemotron` canonical page with current NVIDIA-authored model catalog, customization, training, embedding, and VLM serving coverage.
+- Did not create separate wiki pages for individual Nemotron model variants; Llama Nemotron, Nemotron 3, Minitron, Nemotron H, embedding, and Omni references were consolidated into the durable `Nemotron` page.
+- Used build.nvidia model cards only as durable current model signals and relied on docs.nvidia current docs for the main Customizer, AutoModel, and NIM support details.
+
+**Pages created (0 total):**
+
+- None.
+
+**Pages updated:**
+
+- `content/wiki/Nemotron.md` - updated current model directions, sources, and connections for Customizer, AutoModel, embedding, retrieval, and VLM NIM support.
+- `content/wiki/NeMo-Customizer.md` - added current Nemotron tested-model catalog and embedding customization coverage.
+- `content/wiki/NeMo-AutoModel.md` - added current Nemotron/Minitron model coverage details and resources.
+- `content/wiki/NIM-for-Vision-Language-Models.md` - clarified current Nemotron 3 Nano Omni support and support-matrix constraints.
+- `content/index.md` - refreshed the Nemotron index description.
+
+---
+
 ## 2026-04-29 - Overnight batch 53: NVIDIA vGPU for Compute
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch53-20260429T101550Z`; local Git tag `codex-backup-overnight-pre-batch53-20260429T101550Z`

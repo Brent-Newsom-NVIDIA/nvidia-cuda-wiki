@@ -3,7 +3,7 @@
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, VLM, vision-language model, multimodal AI, visual question answering, image understanding, video understanding, OpenAI-compatible
 **Related:** [[NVIDIA-NIM]], [[NVLM]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
+**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -15,7 +15,8 @@ NVIDIA NIM for Vision Language Models is the NIM documentation surface for self-
 Vision-language models let applications reason over images, diagrams, documents, video frames, and text together. NIM for VLMs packages those models behind production APIs so teams can deploy visual question answering, image summarization, chart/diagram interpretation, and multimodal assistant workflows on NVIDIA GPUs.
 
 ### Current scope
-- Current `latest` docs list models such as NVIDIA Nemotron 3 Nano Omni, Cosmos Reason2, Gemma, Qwen, Kimi, Mistral, and Nemotron-Parse variants.
+- Current `latest` support docs list models such as NVIDIA Nemotron 3 Nano Omni, Cosmos Reason2, Gemma, Qwen, Kimi, Mistral, and Nemotron-Parse variants.
+- NVIDIA Nemotron 3 Nano Omni is listed in the active VLM release stream; the support matrix calls out BF16 deployment profiles, 80GB-class disk footprint, compute capability requirements, and image/video input support.
 - OpenAI-compatible integration patterns plus NVIDIA extensions for multimodal requests.
 - Optimized TRT engines for supported GPU/model combinations and fallback vLLM paths for other supported NVIDIA GPUs.
 - Container distribution through NGC with model download/cache behavior and security scan reports.
@@ -43,8 +44,10 @@ This page bridges NVIDIA model families such as [[NVLM]], [[NVIDIA-EAGLE]], [[Ne
 ## Source Excerpts
 - NVIDIA docs describe NIM for VLMs as bringing state-of-the-art vision-language models to enterprise applications.
 - Current docs list image Q&A, image summarization, image description, and chart/diagram understanding as applications.
+- Current support docs list NVIDIA Nemotron 3 Nano Omni among supported VLM NIM models and note that VLM NIMs are not supported in NVIDIA vGPU environments.
 
 ## Resources
 - [NVIDIA NIM for VLMs Overview](https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html)
 - [NVIDIA NIM for VLMs Index](https://docs.nvidia.com/nim/vision-language-models/latest/index.html)
+- [NIM for VLMs Support Matrix](https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html)
 - [Get Started with NIM for VLMs](https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html)

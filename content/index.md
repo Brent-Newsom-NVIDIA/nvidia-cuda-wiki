@@ -504,7 +504,7 @@
 ## NVIDIA Model Families
 
 ### Large Language Models
-- [[Nemotron]] — NVIDIA's family of aligned LLMs (8B to 340B); Minitron distillation; reward models for synthetic data
+- [[Nemotron]] — NVIDIA model family for reasoning, safety, speech, OCR, retrieval, multimodal, and agentic AI workflows
 - [[NVLM]] — Frontier-class multimodal LLM (72B); dual-path NVLM-D/H/X architecture; competitive with GPT-4V
 - [[NVIDIA-EAGLE]] — Efficient multimodal LLMs (EAGLE2); context-aware tiling; synthetic data training pipeline
 

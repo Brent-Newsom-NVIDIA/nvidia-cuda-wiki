@@ -3,7 +3,7 @@
 **Type:** Library
 **Tags:** NVIDIA, NeMo, AutoModel, PyTorch, Hugging Face, LLM, VLM, training, fine-tuning, distributed training
 **Related:** [[NVIDIA-NeMo]], [[NeMo-Run]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[Megatron-LM]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html, https://docs.nvidia.com/nemo/automodel/latest/launcher/nemo-run.html
+**Sources:** https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/index.html, https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html, https://docs.nvidia.com/nemo/automodel/latest/launcher/nemo-run.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm.html, https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm/nvidia/nemotron.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,6 +17,7 @@ AutoModel lets teams keep Hugging Face-style model loading and checkpoint format
 ### Current scope
 - SFT, PEFT/LoRA, QLoRA, tool/function calling fine-tuning, sequence classification, QAT, knowledge distillation, and pretraining recipes.
 - LLM, VLM, omni-model, diffusion, and retrieval dataset support in the current docs surface.
+- Current LLM coverage includes `NemotronForCausalLM` for Nemotron 3, Nemotron 4, and Minitron; `NemotronHForCausalLM` for Nemotron Nano 9B/12B and Nemotron 3 Nano 30B-A3B; and Nemotron Flash coverage in the broader LLM table.
 - PyTorch-native parallelism using DTensor, FSDP2, pipeline parallelism, tensor/sequence/pipeline/data parallel strategies, and MegatronFSDP.
 - Hugging Face-compatible model loading and checkpoint output so trained checkpoints can stay interoperable.
 - Launch paths for local workstations, Slurm clusters, cloud/SkyPilot, and [[NeMo-Run]].
@@ -40,8 +41,11 @@ AutoModel sits between open Hugging Face model ecosystems and NVIDIA's training/
 ## Source Excerpts
 - NVIDIA docs describe AutoModel as a PyTorch SPMD training library for LLMs and VLMs with Hugging Face compatibility.
 - Current docs list SFT, PEFT, tool calling, VLM fine-tuning, diffusion fine-tuning, QAT, distillation, and pretraining workflows.
+- Current model coverage docs list Nemotron/Minitron architecture support and point Minitron users to Hugging Face-compatible fine-tuning recipes.
 
 ## Resources
 - [NeMo AutoModel Documentation](https://docs.nvidia.com/nemo/automodel/latest/index.html)
 - [About NeMo AutoModel](https://docs.nvidia.com/nemo/automodel/latest/about/index.html)
 - [NeMo AutoModel Key Features](https://docs.nvidia.com/nemo/automodel/latest/about/key-features.html)
+- [NeMo AutoModel LLM Coverage](https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm.html)
+- [NeMo AutoModel Nemotron/Minitron](https://docs.nvidia.com/nemo/automodel/latest/model-coverage/llm/nvidia/nemotron.html)
