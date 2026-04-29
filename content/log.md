@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 33: NeMo Platform microservices
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch33-20260429T083628Z`; local Git tag `codex-backup-overnight-pre-batch33-20260429T083628Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/quickstart.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/safe-synthesizer/about/index.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html
+
+**Gap analysis summary:**
+
+- Added first-class pages for current NVIDIA NeMo Platform microservices that were missing from the wiki: Data Designer, Customizer, Evaluator, Safe Synthesizer, and Auditor.
+- Kept each service as one canonical page because each has its own current NVIDIA docs surface, separate service intent, and distinct query target.
+- Connected Data Designer to synthetic dataset generation, Customizer to LoRA/SFT/DPO and embedding customization, Evaluator to LLM/RAG/retriever/agent measurement, Safe Synthesizer to private tabular data synthesis, and Auditor to safety vulnerability probing.
+- Folded the new services into existing pages for NeMo, NeMo Platform, Data Flywheel, AI-Q, RAG, Guardrails, NemoGuard NIMs, NeMo Curator, NIM, AI Blueprints, and AI Enterprise.
+- Continued to treat build.nvidia as discovery/supporting context rather than a reason to create pages for every individual build listing.
+
+**Pages created (5 total):**
+
+- `content/wiki/NeMo-Data-Designer.md`
+- `content/wiki/NeMo-Customizer.md`
+- `content/wiki/NeMo-Evaluator.md`
+- `content/wiki/NeMo-Safe-Synthesizer.md`
+- `content/wiki/NeMo-Auditor.md`
+
+**Pages updated:**
+
+- `content/wiki/NeMo-Platform.md` and `content/wiki/NVIDIA-NeMo.md` - promoted the five NeMo Platform services into the core NeMo lifecycle graph.
+- `content/wiki/NVIDIA-Data-Flywheel-Blueprint.md`, `content/wiki/NVIDIA-AI-Q-Blueprint.md`, and `content/wiki/NVIDIA-RAG-Blueprint.md` - connected data generation, customization, and evaluation services to blueprint workflows.
+- `content/wiki/NeMo-Guardrails.md` and `content/wiki/NVIDIA-NemoGuard-NIMs.md` - connected safety auditing and evaluation to guardrail runtime and safety NIMs.
+- `content/wiki/NeMo-Curator.md` - connected data curation to Data Designer, Customizer, Evaluator, and Safe Synthesizer.
+- `content/wiki/NVIDIA-NIM.md`, `content/wiki/NVIDIA-AI-Blueprints.md`, and `content/wiki/NVIDIA-AI-Enterprise.md` - connected the new microservices to the broader inference, blueprint, and enterprise software graphs.
+- `content/index.md` - updated page count to 369 and indexed the five new NeMo Platform service pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 32: NVIDIA Blueprint coverage for RAG, VSS, and Tokkio
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch32-20260429T082759Z`; local Git tag `codex-backup-overnight-pre-batch32-20260429T082759Z`

@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Data Curation, LLM, AI, NeMo, Open Source, Multimodal
-**Related:** [[cuDF]], [[Morpheus]], [[TensorRT]], [[NVIDIA-DALI]]
-**Sources:** NVIDIA official documentation (NeMo)
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[cuDF]], [[Morpheus]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-AI-Enterprise]]
+**Sources:** NVIDIA official documentation (NeMo), https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/safe-synthesizer/about/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NeMo Curator is a component of NVIDIA's NeMo framework that provides GPU-accelerated, pre-built pipelines for processing and curating multimodal training data at scale. It is designed to improve the performance of LLMs and agentic AI systems by enabling high-quality, large-scale data preparation — including deduplication, filtering, classification, and PII removal — using GPU acceleration for throughput that would be infeasible on CPU alone.
@@ -21,7 +21,7 @@ High-quality training data is one of the most important factors in LLM and AI mo
 - PII (Personally Identifiable Information) detection and redaction
 - Language identification and filtering
 - Multimodal data support (text, image-text pairs, and more)
-- Integration with NeMo ecosystem (NeMo Data Designer, Customizer, Evaluator)
+- Integration with the NeMo ecosystem, including [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], and [[NeMo-Safe-Synthesizer]]
 - Designed for agentic AI system development pipelines
 - Open-source with NVIDIA NGC container support
 
@@ -43,6 +43,12 @@ High-quality training data is one of the most important factors in LLM and AI mo
 - Available via NVIDIA NGC containers
 
 ## Connections
+- [[NVIDIA-NeMo]] - parent suite for data curation, model customization, evaluation, and deployment workflows
+- [[NeMo-Platform]] - microservices platform adjacent to Curator data preparation workflows
+- [[NeMo-Data-Designer]] - synthetic data generation service that complements curation of existing data
+- [[NeMo-Customizer]] - curated datasets can become customization inputs
+- [[NeMo-Evaluator]] - curated and generated datasets can become benchmark or regression-test inputs
+- [[NeMo-Safe-Synthesizer]] - private synthetic tabular data service for sensitive source data
 - [[cuDF]] — NeMo Curator uses cuDF for GPU-accelerated DataFrame operations in data processing pipelines
 - [[Morpheus]] — Morpheus handles security/streaming data; NeMo Curator handles training data curation
 - [[TensorRT]] — models trained on NeMo Curator-curated data are often deployed via TensorRT

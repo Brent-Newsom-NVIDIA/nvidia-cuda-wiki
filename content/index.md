@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 364*
+*Total pages: 369*
 
 ---
 
@@ -164,6 +164,11 @@
 ### Large Language Models & Speech
 - [[NVIDIA-NeMo]] — Modular suite for AI agent lifecycle management, training, microservices, retrieval, and deployment
 - [[NeMo-Platform]] — NeMo microservices platform for synthetic data, customization, evaluation, guardrails, and inference
+- [[NeMo-Data-Designer]] — NeMo Platform service for scalable synthetic dataset generation
+- [[NeMo-Customizer]] — NeMo Platform service for LoRA, SFT, DPO, and embedding model customization
+- [[NeMo-Evaluator]] — NeMo Platform service for model, RAG, retriever, and agent evaluation
+- [[NeMo-Safe-Synthesizer]] — NeMo Platform service for private synthetic tabular data generation
+- [[NeMo-Auditor]] — NeMo Platform early-access service for LLM safety audits
 - [[NeMo-Retriever]] — Multimodal extraction, embedding, indexing, retrieval, and reranking microservices for RAG
 - [[NVIDIA-Speech-NIM-Microservices]] — Current Speech NIM docs collection for ASR, TTS, and NMT microservices
 - [[NVIDIA-ASR-NIM]] — Speech-to-text NIM for Parakeet, Canary, Whisper, Conformer, and Nemotron ASR models

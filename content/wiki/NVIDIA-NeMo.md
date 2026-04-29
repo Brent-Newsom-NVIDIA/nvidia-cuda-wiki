@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo, generative AI, AI agents, LLM, speech, multimodal, training, microservices
-**Related:** [[NeMo-Platform]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-NemoGuard-NIMs]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
+**Related:** [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[NeMo-Auditor]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-NemoGuard-NIMs]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/safe-synthesizer/about/index.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,6 +16,7 @@ NeMo gives developers and enterprises a connected path for building, customizing
 
 ### Current architecture
 - **[[NeMo-Platform]]:** Microservices for synthetic data, customization, evaluation, guardrails, inference, RBAC, and observability.
+- **[[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], and [[NeMo-Auditor]]:** first-class NeMo Platform services for synthetic datasets, model adaptation, model/RAG/agent evaluation, private tabular synthesis, and safety audits.
 - **NeMo Framework:** Open-source framework for large-scale pretraining, post-training, reinforcement learning, multimodal models, and speech AI.
 - **[[NVIDIA-Agent-Intelligence-Toolkit]]:** Framework-agnostic workflow layer for agent development, profiling, evaluation, MCP, and A2A.
 - **[[NeMo-Retriever]]:** Multimodal extraction, embedding, indexing, retrieval, and reranking for enterprise RAG.
@@ -26,10 +27,15 @@ NeMo gives developers and enterprises a connected path for building, customizing
 - **Speech NIM deployment:** current [[NVIDIA-Speech-NIM-Microservices]] docs package NeMo speech models into ASR, TTS, and NMT NIM containers.
 
 ### NVIDIA context
-NeMo is the lifecycle layer around NVIDIA's model, inference, and AI software portfolio. [[Nemotron]] models can be trained/customized with NeMo components, served through [[NVIDIA-NIM]], connected to data via [[NeMo-Retriever]], protected by [[NeMo-Guardrails]], and orchestrated through [[NVIDIA-Agent-Intelligence-Toolkit]].
+NeMo is the lifecycle layer around NVIDIA's model, inference, and AI software portfolio. [[Nemotron]] models can be trained/customized with NeMo components, served through [[NVIDIA-NIM]], connected to data via [[NeMo-Retriever]], measured with [[NeMo-Evaluator]], protected by [[NeMo-Guardrails]], audited with [[NeMo-Auditor]], and orchestrated through [[NVIDIA-Agent-Intelligence-Toolkit]].
 
 ## Connections
 - [[NeMo-Platform]] - microservices platform for production agent lifecycle workflows.
+- [[NeMo-Data-Designer]] - synthetic dataset generation service for task and agent data.
+- [[NeMo-Customizer]] - model adaptation service for LoRA, SFT, DPO, and embedding customization.
+- [[NeMo-Evaluator]] - evaluation service for LLMs, RAG pipelines, retrievers, and agents.
+- [[NeMo-Safe-Synthesizer]] - private synthetic tabular data generation service.
+- [[NeMo-Auditor]] - early-access model safety audit service.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow and evaluation toolkit inside the NeMo family.
 - [[NeMo-Retriever]] - retrieval layer for enterprise RAG and multimodal data extraction.
 - [[NeMo-Guardrails]] - safety and policy controls for model and agent responses.

@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NIM, NemoGuard, NeMo Guardrails, content safety, topic control, jailbreak detection, AI safety
-**Related:** [[NeMo-Guardrails]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[NIM-for-Multimodal-Safety]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]]
-**Sources:** https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/guardrail-catalog/index.html
+**Related:** [[NeMo-Guardrails]], [[NeMo-Platform]], [[NeMo-Auditor]], [[NeMo-Evaluator]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]], [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]], [[Llama-3.1-NemoGuard-8B-ContentSafety-NIM]], [[NVIDIA-NemoGuard-JailbreakDetect-NIM]], [[NIM-for-Multimodal-Safety]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]]
+**Sources:** https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html, https://docs.nvidia.com/nemo/guardrails/latest/configure-rails/guardrail-catalog/index.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -27,6 +27,8 @@ NemoGuard NIMs sit at the intersection of [[NVIDIA-NIM]], [[NeMo-Guardrails]], [
 ## Connections
 - [[NeMo-Guardrails]] - runtime library and guardrail catalog that uses these models in input/output rail flows.
 - [[NeMo-Platform]] - deployment and inference gateway path for self-hosted NemoGuard NIMs.
+- [[NeMo-Auditor]] - safety audit service that can identify issues mitigated by NemoGuard NIMs and guardrails.
+- [[NeMo-Evaluator]] - evaluation service adjacent to safety scoring and regression checks.
 - [[NIM-for-Large-Language-Models]] - LLM-based guard NIMs use the NIM LLM serving surface.
 - [[Llama-3.1-Nemotron-Safety-Guard-8B-NIM]] - multilingual content safety NIM.
 - [[Llama-3.1-NemoGuard-8B-TopicControl-NIM]] - topic-control NIM for allowed/disallowed subjects.
