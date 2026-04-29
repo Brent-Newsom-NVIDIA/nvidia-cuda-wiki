@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 402*
+*Total pages: 405*
 
 ---
 
@@ -270,6 +270,9 @@
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
+- [[NVIDIA-AI-Workbench-Projects]] — AI Workbench Git/container project model for reproducible GPU development environments
+- [[NVIDIA-AI-Workbench-Locations]] — AI Workbench local and remote machine abstraction for project execution
+- [[NVIDIA-AI-Workbench-Applications]] — AI Workbench-managed web apps, processes, native apps, and Compose apps
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
 - [[NVIDIA-Base-Command-Manager]] — Cluster-management platform for provisioning and operating AI data center infrastructure
 - [[NVIDIA-BaseOS]] — Validated production operating system layer for DGX and AI factory environments

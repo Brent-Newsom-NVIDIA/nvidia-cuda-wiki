@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 41: AI Workbench current concepts
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch41-20260429T092039Z`; local Git tag `codex-backup-overnight-pre-batch41-20260429T092039Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-workbench/user-guide/latest/overview/introduction.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/project-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/location-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/application-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/quickstart/example-nim.html
+
+**Gap analysis summary:**
+
+- Refreshed the existing AI Workbench page from current NVIDIA docs instead of the older verified-knowledge summary.
+- Added canonical pages for the current Workbench concept docs: Projects, Locations, and Applications.
+- Connected Workbench to Brev, NIM, NGC, AI Blueprints, ChatRTX, DGX Spark/Station/Cloud, and AI Enterprise development workflows.
+- Avoided creating pages for every example project, walkthrough, config setting, installer path, or support matrix row.
+
+**Pages created (3 total):**
+
+- `content/wiki/NVIDIA-AI-Workbench-Projects.md`
+- `content/wiki/NVIDIA-AI-Workbench-Locations.md`
+- `content/wiki/NVIDIA-AI-Workbench-Applications.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Workbench.md` - updated summary, current concept model, sources, and connections.
+- `content/wiki/NVIDIA-Brev.md` - connected Brev to Workbench location provisioning.
+- `content/index.md` - updated page count to 405 and indexed the three new Workbench concept pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 40: Dynamo advanced serving components
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch40-20260429T091633Z`; local Git tag `codex-backup-overnight-pre-batch40-20260429T091633Z`

@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Brev, cloud GPUs, developer environments, launchables, prototyping
-**Related:** [[NVIDIA-API-Documentation]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Workbench]], [[NVIDIA-NIM]], [[NVIDIA-Developer-Program]], [[NVIDIA-Cloud-Functions]]
-**Sources:** https://developer.nvidia.com/brev
+**Related:** [[NVIDIA-API-Documentation]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Workbench]], [[NVIDIA-AI-Workbench-Locations]], [[NVIDIA-NIM]], [[NVIDIA-Developer-Program]], [[NVIDIA-Cloud-Functions]]
+**Sources:** https://developer.nvidia.com/brev, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/location-concept.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,6 +16,7 @@ In the NVIDIA wiki, Brev is a developer experience platform: it helps teams prot
 
 ## Connections
 - [[NVIDIA-AI-Workbench]] - another NVIDIA developer environment for portable GPU projects.
+- [[NVIDIA-AI-Workbench-Locations]] - current Workbench docs describe Brev integration for provisioning GPU cloud instances as locations.
 - [[NVIDIA-DGX-Cloud]] - cloud AI infrastructure path for larger workloads.
 - [[NVIDIA-NIM]] - hosted or self-hosted model endpoints can be prototyped from cloud GPU environments.
 - [[NVIDIA-API-Documentation]] - Brev environments can be used to test NVIDIA APIs.

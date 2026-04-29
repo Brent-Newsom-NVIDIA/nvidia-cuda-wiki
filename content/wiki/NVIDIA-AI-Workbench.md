@@ -1,26 +1,28 @@
 # NVIDIA AI Workbench
 
 **Type:** Platform
-**Tags:** NVIDIA, developer tools, IDE, data science, MLOps, Jupyter, containers, local development, project management
-**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[CUDA-Graphs]], [[NVIDIA-Base-Command]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Tags:** NVIDIA, developer tools, AI Workbench, projects, locations, applications, containers, Git, local development, remote development
+**Related:** [[NVIDIA-AI-Workbench-Projects]], [[NVIDIA-AI-Workbench-Locations]], [[NVIDIA-AI-Workbench-Applications]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-Brev]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-NeMo]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Base-Command]], [[NVIDIA-ChatRTX]]
+**Sources:** https://docs.nvidia.com/ai-workbench/user-guide/latest/overview/introduction.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/project-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/location-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/application-concept.html, https://docs.nvidia.com/ai-workbench/user-guide/latest/quickstart/example-nim.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA AI Workbench is a developer-focused tool for managing, versioning, and running AI and data science projects across local workstations, cloud instances, and remote GPU servers — with seamless environment reproduction via containers. It integrates with Jupyter, VS Code, and popular IDEs, and provides one-click access to NVIDIA NIM microservices and NGC resources, allowing data scientists to develop locally on RTX hardware and deploy to production data center infrastructure without environment inconsistencies. AI Workbench is NVIDIA's answer to the "works on my machine" problem in GPU-accelerated AI development.
+NVIDIA AI Workbench is NVIDIA's developer workflow for portable, reproducible full-stack GPU development environments. Current docs emphasize that it is not an IDE; it uses Git repositories, versioned project configuration, managed container builds, local/remote locations, and project applications so developers can clone a project, build the environment, and work against GPUs on a local machine, cloud instance, server, or workstation.
 
 ## Detail
 
 ### Purpose
-Data scientists routinely face environment management problems: Python package version conflicts, CUDA/driver incompatibilities, differences between local dev machines and production clusters, and difficulty sharing reproducible project environments with teammates. NVIDIA AI Workbench wraps project environments in containers (based on NGC images) and tracks them with Git, so a project developed on an NVIDIA RTX workstation can be cloned and run identically on a DGX cluster, AWS EC2 instance, or a colleague's laptop — with one command. It reduces "setup time" from hours to minutes for GPU AI projects.
+Data scientists and AI developers routinely face environment management problems: package drift, CUDA/driver mismatches, container setup friction, and differences between local and remote machines. NVIDIA AI Workbench treats the repository as the portable unit and uses containers plus host/user-specific runtime configuration to make a project movable across machines.
 
 ### Key Features
-- **Project Management:** Projects are Git repositories with a Workbench manifest (`.workbench/`) defining the container image, mounts, ports, and environment variables — fully reproducible and version-controlled
+- **[[NVIDIA-AI-Workbench-Projects]]:** Git repositories with Workbench configuration files such as `.project/spec.yaml`, build files, mounts, environment variables, and managed applications.
+- **[[NVIDIA-AI-Workbench-Locations]]:** local or remote machines where Workbench is installed and projects can be built/run.
+- **[[NVIDIA-AI-Workbench-Applications]]:** project-managed web apps, processes, native apps, and Compose applications.
 - **Container-Based Environments:** Each project runs in an NGC-based Docker container; Workbench handles container lifecycle (build, run, stop, rebuild) transparently — no Docker expertise required
-- **Multi-Location Compute:** Switch project execution between local workstation, remote SSH server, or cloud GPU instance with a dropdown — same code, same environment, different hardware
+- **Multi-Location Compute:** Move project execution between local workstation, remote SSH server, Brev cloud GPU instance, or other GPU machine with the same project configuration.
 - **Integrated Jupyter Lab:** Auto-launches JupyterLab inside the project container; accessible via browser or directly from VS Code
-- **VS Code Integration:** VS Code extension for NVIDIA AI Workbench allows editing code in VS Code while it runs in the GPU container
-- **NIM Integration:** One-click deployment and testing of NVIDIA NIM microservices from within Workbench; NIM containers pulled from NGC and exposed as local API endpoints
+- **VS Code and IDE Integration:** VS Code, Cursor, Windsurf, JupyterLab, RStudio, TensorBoard, and custom web apps can be used through Workbench-managed application definitions.
+- **NIM Integration:** Current example projects demonstrate building and deploying downloadable [[NVIDIA-NIM]] workflows inside Workbench.
 - **NGC Catalog Access:** Browse NGC containers and models from within Workbench; use NGC models as project dependencies
 - **System Snapshot:** Capture and share exact environment state (package versions, container layer hash) for experiment reproducibility
 - **Secret Management:** Secure handling of API keys and NGC credentials without committing them to Git
@@ -28,9 +30,11 @@ Data scientists routinely face environment management problems: Python package v
 
 ### Use Cases
 - Local development on NVIDIA RTX workstations for LLM fine-tuning, RAG prototyping, and inference testing
+- Reproducible [[NVIDIA-AI-Workbench-Projects]] for data science, RAG, fine-tuning, NIM, and blueprint workflows.
 - Local Grace Blackwell development on [[NVIDIA-DGX-Spark]] or larger deskside development on [[NVIDIA-DGX-Station]]
 - Sharing reproducible AI project environments with team members across different OS/hardware setups
 - Testing NIM microservices locally before deploying to production Kubernetes clusters
+- Packaging custom dashboards, JupyterLab, TensorBoard, backend services, and multi-container apps as [[NVIDIA-AI-Workbench-Applications]].
 - Data science teams standardizing development environments across Windows (with WSL2) and Linux
 - Onboarding new team members — clone a Workbench project and be running GPU code in minutes
 - Bridging dev → production: develop on Workbench locally, push to Base Command Platform for large-scale training
@@ -48,16 +52,26 @@ Data scientists routinely face environment management problems: Python package v
 - **REST API:** Internal API for VS Code extension and IDE integration
 
 ## Connections
+- [[NVIDIA-AI-Workbench-Projects]] - portable Git/container unit that Workbench manages.
+- [[NVIDIA-AI-Workbench-Locations]] - local and remote compute targets where projects run.
+- [[NVIDIA-AI-Workbench-Applications]] - project-managed runnable interfaces and services.
 - [[NGC]] — Workbench uses NGC as the source for all project base containers and model dependencies
 - [[NVIDIA-NIM]] — Workbench has native NIM integration for one-click local NIM deployment and testing
+- [[NVIDIA-Brev]] - Workbench integrates with Brev for cloud GPU instance provisioning and locations.
+- [[NVIDIA-AI-Blueprints]] - blueprint workflows can be packaged into project/application patterns.
 - [[NVIDIA-AI-Enterprise]] — AI Workbench is part of the AI Enterprise platform, available with enterprise support
 - [[NVIDIA-Base-Command]] — Workbench serves as the local development companion to Base Command for large-scale cluster training
 - [[NVIDIA-NeMo]] — NeMo-based fine-tuning projects can be developed in Workbench and scaled to DGX clusters
 - [[NVIDIA-DGX-Spark]] - compact local system for AI Workbench projects and tutorials.
 - [[NVIDIA-DGX-Station]] - deskside system for larger local Workbench projects before data center deployment.
+- [[NVIDIA-DGX-Cloud]] - remote/cloud GPU infrastructure target for scale-up development.
+- [[NVIDIA-ChatRTX]] - local RAG application with a Workbench customization path.
 
 ## Resources
 - [NVIDIA AI Workbench Page](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/)
 - [AI Workbench Documentation](https://docs.nvidia.com/ai-workbench/latest/index.html)
 - [AI Workbench Getting Started](https://docs.nvidia.com/ai-workbench/user-guide/latest/overview/introduction.html)
+- [AI Workbench Projects](https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/project-concept.html)
+- [AI Workbench Locations](https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/location-concept.html)
+- [AI Workbench Applications](https://docs.nvidia.com/ai-workbench/user-guide/latest/concepts/application-concept.html)
 - [Workbench Example Projects on GitHub](https://github.com/NVIDIA/workbench-example-hybrid-rag)
