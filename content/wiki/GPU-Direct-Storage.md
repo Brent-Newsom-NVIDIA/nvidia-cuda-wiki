@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Storage, I/O, HPC, AI Training, Direct I/O
-**Related:** [[cuFile-API]], [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-DGX-SuperPOD]]
+**Related:** [[cuFile-API]], [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[NVIDIA-DOCA]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-DGX-SuperPOD]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/gpudirect-storage/api-reference-guide/index.html, https://www.nvidia.com/en-us/data-center/products/certified-storage/
 **Last Updated:** 2026-04-29
 
@@ -48,6 +48,10 @@ In traditional GPU workloads, data must travel from storage → CPU memory → G
 - [[cuDF]] — cuDF supports GDS-backed I/O for reading large datasets directly into GPU DataFrames
 - [[NVIDIA-DALI]] — DALI can use GDS for loading training images directly to GPU without CPU copies
 - [[cuBLAS]] — HPC workflows using cuBLAS benefit from GDS for loading matrix data from disk
+- [[DOCA-SNAP]] — BlueField storage virtualization can present networked storage as local devices adjacent to direct GPU data paths.
+- [[DOCA-Device-Emulation]] — host-facing device emulation is the lower-level mechanism behind some BlueField storage services.
+- [[NVIDIA-DOCA]] — DOCA provides the BlueField software layer for storage, networking, and infrastructure offload.
+- [[NVIDIA-BlueField-DPU]] — BlueField accelerates storage and networking paths that can complement GDS.
 - [[NVIDIA-Certified-Storage]] — certified storage programs validate storage performance needed to keep GPUs fed.
 - [[NVIDIA-AI-Data-Platform]] — AI Data Platform depends on high-throughput data access for extraction, retrieval, and context workflows.
 - [[NVIDIA-DGX-SuperPOD]] — SuperPOD-scale clusters require storage designs that avoid starving accelerators.

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, attestation, confidential computing, NRAS, RIM, OCSP, security
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-OpenShell]], [[NVIDIA-DCGM]], [[NVIDIA-Data-Center-GPU-Drivers]]
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-OpenShell]], [[DOCA-App-Shield]], [[NVIDIA-DCGM]], [[NVIDIA-Data-Center-GPU-Drivers]]
 **Sources:** https://docs.nvidia.com/attestation/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,8 +28,8 @@ Attestation ties hardware trust to the AI software stack. It is relevant for reg
 - [[NVIDIA-Blackwell-Architecture]] - latest data center platforms continue the confidential AI direction.
 - [[NVIDIA-AI-Enterprise]] - enterprise AI deployments need security and compliance controls.
 - [[NVIDIA-OpenShell]] - agent runtime security is a separate but related trust boundary.
+- [[DOCA-App-Shield]] - App Shield inspects runtime host or VM state from the DPU side, complementing trust verification.
 - [[NVIDIA-Data-Center-GPU-Drivers]] - driver and platform state can be part of secure deployment posture.
 
 ## Source Excerpts
 - NVIDIA Attestation docs describe NRAS, RIM Service, and NVIDIA OCSP Service for integrity verification.
-

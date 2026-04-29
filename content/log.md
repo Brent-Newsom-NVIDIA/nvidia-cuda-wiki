@@ -2,6 +2,43 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 22: DOCA services, storage virtualization, and OVS offload
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch22-20260429T072258Z`; local Git tag `codex-backup-overnight-pre-batch22-20260429T072258Z`
+
+**Source URLs:** https://docs.nvidia.com/doca/sdk/doca-telemetry-service-guide/index.html, https://docs.nvidia.com/doca/sdk/doca-app-shield/index.html, https://docs.nvidia.com/doca/sdk/doca-device-emulation/index.html, https://docs.nvidia.com/doca/sdk/doca-snap-services/index.html, https://docs.nvidia.com/doca/sdk/doca-snap-4-service-guide/index.html, https://docs.nvidia.com/doca/sdk/doca-snap-virtio-fs-service-guide/index.html, https://docs.nvidia.com/doca/sdk/openvswitch-acceleration---ovs-in-doca/index.html, https://docs.nvidia.com/doca/sdk/ovs-doca-hardware-acceleration/index.html, https://docs.nvidia.com/doca/sdk/ovs-dpdk-hardware-acceleration/index.html
+
+**Gap analysis summary:**
+
+- Added current first-class DOCA service/offload pages that were missing after the programming-library batch: Telemetry Service, App Shield, Device Emulation, SNAP, and OVS-DOCA.
+- Kept one wiki page per durable NVIDIA documentation topic and avoided creating pages for individual samples, troubleshooting scenarios, or every possible build.nvidia tutorial.
+- Connected telemetry to DCGM, NetQ, Mission Control, Spectrum-X, Flow, and PCC so DPU/network metrics are queryable from both operations and programming angles.
+- Connected App Shield to Attestation and Morpheus as the DPU-side runtime security/forensics surface.
+- Connected Device Emulation and SNAP to BlueField storage virtualization, GPU Direct Storage, AI Data Platform, STX, and CMX.
+- Connected OVS-DOCA to DOCA Flow, Network Operator, Spectrum-X, and NetQ as the current Open vSwitch offload path.
+
+**Pages created (5 total):**
+
+- `content/wiki/DOCA-Telemetry-Service.md`
+- `content/wiki/DOCA-App-Shield.md`
+- `content/wiki/DOCA-Device-Emulation.md`
+- `content/wiki/DOCA-SNAP.md`
+- `content/wiki/OVS-DOCA.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-DOCA.md` - promoted current DOCA services and offload integrations into the DOCA platform graph.
+- `content/wiki/NVIDIA-BlueField-DPU.md` - connected BlueField to DTS, App Shield, Device Emulation, SNAP, and OVS-DOCA.
+- `content/wiki/DOCA-Flow.md` - linked OVS-DOCA and DTS as downstream packet-processing/offload consumers.
+- `content/wiki/NVIDIA-DOCA-Platform-Framework.md` - connected DPF to orchestrated BlueField services such as DTS, App Shield, Device Emulation, SNAP, and OVS-DOCA.
+- `content/wiki/GPU-Direct-Storage.md`, `content/wiki/NVIDIA-AI-Data-Platform.md`, `content/wiki/NVIDIA-STX.md`, and `content/wiki/NVIDIA-CMX.md` - connected SNAP to storage virtualization and AI-native storage/context-memory designs.
+- `content/wiki/NVIDIA-Attestation.md` and `content/wiki/Morpheus.md` - connected App Shield security introspection to trust and cybersecurity analytics.
+- `content/wiki/NVIDIA-DCGM.md`, `content/wiki/NVIDIA-NetQ.md`, and `content/wiki/NVIDIA-Mission-Control.md` - connected DTS to AI factory observability.
+- `content/wiki/NVIDIA-Network-Operator.md` and `content/wiki/NVIDIA-Spectrum-X.md` - linked OVS-DOCA as a current accelerated networking/offload path.
+- `content/index.md` - updated page count to 314 and indexed the new DOCA service/offload pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 21: DOCA programming library coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch21-20260429T071900Z`; local Git tag `codex-backup-overnight-pre-batch21-20260429T071900Z`

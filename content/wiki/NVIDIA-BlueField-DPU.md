@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, DPU, data processing unit, networking, offload, security, SmartNIC, BlueField, infrastructure
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-DPA]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-PCC]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-BlueField-4]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-NCX-Infra-Controller]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-DPA]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[DOCA-App-Shield]], [[DOCA-Device-Emulation]], [[DOCA-SNAP]], [[OVS-DOCA]], [[NVIDIA-Firmware-Tools]], [[NVIDIA-BlueField-4]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-NCX-Infra-Controller]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVIDIA-Network-Operator]], [[NVIDIA-Rivermax]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/doca/sdk/index.html, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/networking/display/bluefieldbsp4140/troubleshooting-and-how-tos, https://docs.nvidia.com/networking/display/kubernetes2610/index.html, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/products/data-processing-unit/)
 **Last Updated:** 2026-04-29
 
@@ -25,12 +25,13 @@ Modern data center servers spend 20–30% of server CPU cycles on infrastructure
 | BlueField-4 | Next-gen NVIDIA networking | Public STX/CMX material | AI data/storage class | [[NVIDIA-STX]], [[NVIDIA-CMX]], context memory, AI-native storage |
 
 **Core Capabilities:**
-- **Networking Offloads:** Open vSwitch (OVS-DOCA/DPDK), VXLAN/Geneve tunneling, BGP routing, firewall (conntrack, ACL), rate limiting — all run on BlueField ARM cores without touching server CPU
+- **Networking Offloads:** Open vSwitch through [[OVS-DOCA]], VXLAN/Geneve tunneling, BGP routing, firewall (conntrack, ACL), rate limiting, and hardware packet steering through [[DOCA-Flow]]
 - **Storage Offloads:** NVMe-oF target (GPU-Direct Storage integration), RAID, compression (LZ4, zstd hardware engine on BF-3), encryption (AES-256 hardware engine)
-- **Security:** Hardware-enforced tenant isolation; cryptographic attestation of DPU and host; secure boot chain independent of server OS; intrusion detection via RegEx pattern matching engine (BF-2+)
-- **Telemetry Engine (BF-3):** BlueField-3 includes a dedicated telemetry accelerator for line-rate packet analysis and metrics collection without CPU overhead
-- **SNAP (Software-Defined NVMe/VirtIO):** Emulates NVMe and VirtIO devices to VMs running on the server; enables storage virtualization with DPU-managed back-end
-- **DOCA SDK:** [[NVIDIA-DOCA]] is the software framework for programming BlueField and SuperNIC infrastructure services; current DOCA docs include SDK, runtime, DOCA-Host, DOCA-OFED, reference applications, tools, services, driver documentation, and libraries such as [[DOCA-DPA]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-GPUNetIO]], and [[DOCA-PCC]]
+- **Security:** Hardware-enforced tenant isolation; cryptographic attestation of DPU and host; secure boot chain independent of server OS; DPU-side host introspection through [[DOCA-App-Shield]]
+- **Telemetry Engine (BF-3):** BlueField-3 includes a telemetry accelerator for packet analysis and metrics collection; [[DOCA-Telemetry-Service]] exposes BlueField/host/network metrics to observability stacks
+- **SNAP (Software-Defined NVMe/VirtIO):** [[DOCA-SNAP]] emulates NVMe, virtio-blk, and virtio-fs devices to hosts and VMs; enables storage virtualization with a DPU-managed backend
+- **Device Emulation:** [[DOCA-Device-Emulation]] provides lower-level APIs for emulating host-facing PCIe devices from BlueField software
+- **DOCA SDK:** [[NVIDIA-DOCA]] is the software framework for programming BlueField and SuperNIC infrastructure services; current DOCA docs include SDK, runtime, DOCA-Host, DOCA-OFED, reference applications, tools, services, driver documentation, and libraries/services such as [[DOCA-DPA]], [[DOCA-Flow]], [[DOCA-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[DOCA-App-Shield]], [[DOCA-Device-Emulation]], [[DOCA-SNAP]], and [[OVS-DOCA]]
 - **Arm Neoverse N2 Cores (BF-3):** 16× ARM Neoverse N2 @ 2 GHz; 16+ GB LPDDR5 on-DPU memory; runs a full Ubuntu or Wind River Linux OS independently of server host
 - **NCCL Offload (BF-3):** BlueField-3 + DOCA-NCCL enables in-network AllReduce and collective offloading for AI training; reduces server CPU burden for communication coordination
 - **AI-native storage direction:** current NVIDIA STX and CMX pages position BlueField-4-class DPUs as storage/context processors for [[NVIDIA-STX]], [[NVIDIA-CMX]], and [[NVIDIA-AI-Data-Platform]] designs.
@@ -65,6 +66,11 @@ Modern data center servers spend 20–30% of server CPU cycles on infrastructure
 - [[DOCA-RDMA]] — RDMA API for memory access over InfiniBand/RoCE on BlueField/ConnectX.
 - [[DOCA-GPUNetIO]] — GPU-centric packet processing that can use BlueField DMA and GPUDirect paths.
 - [[DOCA-PCC]] — programmable congestion-control API accelerated by BlueField-3.
+- [[DOCA-Telemetry-Service]] — DOCA service for collecting and exporting BlueField, host, network, RDMA, and DCGM-adjacent metrics.
+- [[DOCA-App-Shield]] — DPU-side host and VM introspection API for runtime security and forensics.
+- [[DOCA-Device-Emulation]] — PCIe device emulation framework for host-facing BlueField services.
+- [[DOCA-SNAP]] — BlueField storage virtualization services for NVMe, virtio-blk, and virtio-fs.
+- [[OVS-DOCA]] — DOCA-backed Open vSwitch datapath offload for virtualized networking.
 - [[NVIDIA-Firmware-Tools]] — MFT provides low-level firmware and device configuration tools such as `mst` and `mlxconfig`.
 - [[NVIDIA-BlueField-4]] — generation-specific page for current STX/CMX and AI data platform DPU direction.
 - [[NVIDIA-DOCA-Platform-Framework]] — DPF provisions and orchestrates BlueField DPUs and DPU services in cloud environments.

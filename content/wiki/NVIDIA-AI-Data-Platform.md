@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Data Platform, enterprise storage, RAG, retrieval, AI factory, BlueField, Spectrum-X, NIM, NeMo Retriever
-**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[cuVS]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
+**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[cuVS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,9 @@ The AI Data Platform is the data-side counterpart to [[NVIDIA-Enterprise-AI-Fact
 - [[NeMo-Retriever]] - retrieval microservices connect enterprise data to RAG and agents.
 - [[NVIDIA-NIM]] - NIM provides inference microservices used by agents and retrieval workflows.
 - [[cuVS]] - GPU-accelerated vector search and indexing are part of the platform's retrieval story.
+- [[DOCA-SNAP]] - BlueField storage virtualization is a lower-level building block for accelerated data paths.
+- [[DOCA-Device-Emulation]] - emulated host-facing storage devices connect BlueField services to existing OS and hypervisor drivers.
+- [[GPU-Direct-Storage]] - direct GPU storage access complements AI Data Platform throughput and retrieval goals.
 - [[NVIDIA-BlueField-DPU]] - BlueField accelerates data access, storage paths, and secure scaling.
 - [[NVIDIA-BlueField-4]] - BlueField-4 is the current DPU generation tied to STX/CMX data platform designs.
 - [[NVIDIA-ConnectX-9]] - next-generation SuperNIC for high-bandwidth AI data movement.

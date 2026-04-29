@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 309*
+*Total pages: 314*
 
 ---
 
@@ -371,6 +371,11 @@
 - [[DOCA-RDMA]] — DOCA API for asynchronous RDMA operations over InfiniBand or RoCE
 - [[DOCA-DPA]] — BlueField Data Path Accelerator programming model for communication-centric offloads
 - [[DOCA-PCC]] — programmable congestion-control API for BlueField/Ethernet/RoCE networking
+- [[DOCA-Telemetry-Service]] — DOCA service for BlueField, host, network, Prometheus, and OpenTelemetry metrics
+- [[DOCA-App-Shield]] — DPU-side host and VM memory introspection API for intrusion detection and forensics
+- [[DOCA-Device-Emulation]] — DOCA subsystem for emulating host-facing PCIe devices from BlueField software
+- [[DOCA-SNAP]] — BlueField storage virtualization services for NVMe, virtio-blk, and virtio-fs emulation
+- [[OVS-DOCA]] — DOCA-backed Open vSwitch datapath offload using DOCA Flow on BlueField/NVIDIA NICs
 - [[NVIDIA-DOCA-OFED]] — current DOCA-Host Linux driver profile replacing standalone MLNX_OFED for NVIDIA networking
 - [[NVIDIA-MLNX-OFED]] — legacy standalone Linux VPI/RDMA stack for InfiniBand, Ethernet, and RoCE, now on 2024 LTS
 - [[NVIDIA-MLNX-EN]] — legacy standalone Linux Ethernet/RoCE driver package transitioning into DOCA-Host profiles

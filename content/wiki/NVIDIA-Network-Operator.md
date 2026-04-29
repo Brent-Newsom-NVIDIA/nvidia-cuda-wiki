@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, networking, RDMA, GPUDirect RDMA, DOCA-OFED, SR-IOV, CNI, IPAM, Spectrum-X
-**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]]
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[OVS-DOCA]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[GPUDirect-RDMA]]
 **Sources:** https://docs.nvidia.com/networking/software/cloud-orchestration/index.html; https://docs.nvidia.com/networking/display/kubernetes2610/index.html
 **Last Updated:** 2026-04-29
 
@@ -21,6 +21,7 @@ For NVIDIA AI infrastructure, Network Operator matters because [[NCCL]], [[NVSHM
 ## Connections
 - [[NVIDIA-DOCA]] - Network Operator manages DOCA-OFED driver containers and related host networking software.
 - [[NVIDIA-DOCA-OFED]] - Network Operator's managed NVIDIA host-driver surface for RDMA, RoCE, and GPUDirect networking.
+- [[OVS-DOCA]] - accelerated Open vSwitch deployments use the same BlueField/NIC and representor foundation that Kubernetes networking must manage.
 - [[NVIDIA-GPU-Operator]] - complementary Kubernetes operator for GPU lifecycle and GPU resource exposure.
 - [[NVIDIA-Cloud-Native-Technologies]] - cloud-native hub page for Kubernetes GPU and networking deployment patterns.
 - [[NVIDIA-BlueField-DPU]] - BlueField DPUs can be managed as part of accelerated Kubernetes networking environments.

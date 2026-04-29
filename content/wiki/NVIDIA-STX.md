@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, STX, AI storage, BlueField-4, Spectrum-X, AI Data Platform, context memory, AI factory
-**Related:** [[NVIDIA-AI-Data-Platform]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]], [[NVIDIA-DOCA]], [[NVIDIA-Enterprise-AI-Factory]]
+**Related:** [[NVIDIA-AI-Data-Platform]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[DOCA-SNAP]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]], [[NVIDIA-DOCA]], [[NVIDIA-Enterprise-AI-Factory]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption
 **Last Updated:** 2026-04-29
 
@@ -32,6 +32,8 @@ STX should be linked whenever the wiki discusses next-generation AI factory stor
 - [[NVIDIA-AI-Data-Platform]] - STX is a foundation for AI-native data platform reference designs.
 - [[NVIDIA-CMX]] - CMX is the context-memory storage platform connected to STX.
 - [[NVIDIA-Certified-Storage]] - storage partners and certified storage are adjacent to STX deployment paths.
+- [[DOCA-SNAP]] - SNAP is the DOCA storage virtualization service family below STX-style storage systems.
+- [[GPU-Direct-Storage]] - direct GPU storage paths complement STX's goal of AI-native data movement.
 - [[NVIDIA-BlueField-DPU]] - BlueField is the DPU foundation for STX acceleration and offload.
 - [[NVIDIA-BlueField-4]] - current BlueField generation named in STX/CMX public material.
 - [[NVIDIA-ConnectX-9]] - next-generation adapter direction for high-bandwidth AI data fabrics.

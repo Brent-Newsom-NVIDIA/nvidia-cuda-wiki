@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Spectrum-X, Ethernet, AI Networking, RoCE, Lossless Ethernet, HPC Networking
-**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-Flow]], [[DOCA-PCC]], [[NVIDIA-MLNX-EN]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-OFED]], [[DOCA-Flow]], [[DOCA-PCC]], [[DOCA-Telemetry-Service]], [[OVS-DOCA]], [[NVIDIA-MLNX-EN]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/silicon-photonics/
 **Last Updated:** 2026-04-29
 
@@ -56,6 +56,8 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - [[NVIDIA-DOCA-OFED]] — current host-driver stack for Ethernet/RoCE networking in modern Spectrum-X deployments.
 - [[DOCA-Flow]] — packet-processing and flow steering layer relevant to Ethernet AI networking.
 - [[DOCA-PCC]] — programmable congestion-control API for Ethernet/RoCE fabrics.
+- [[DOCA-Telemetry-Service]] — DPU/network telemetry service for observability across Ethernet AI fabrics.
+- [[OVS-DOCA]] — Open vSwitch datapath offload path for virtualized Ethernet environments on NVIDIA NICs/DPUs.
 - [[NVIDIA-MLNX-EN]] — legacy Ethernet/RoCE host package for older Spectrum Ethernet runbooks.
 - [[NVIDIA-HPC-X]] — HPC-X 2.26 is tested as part of Spectrum-X RA2.1 and includes Spectrum-X NCCL plugin guidance.
 - [[NVIDIA-NetQ]] — NetQ provides network operations visibility for Ethernet fabrics.

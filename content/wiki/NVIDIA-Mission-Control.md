@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI factory, cluster management, DGX, SuperPOD, orchestration, observability, recovery, GB200, GB300
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-DCGM]], [[DOCA-Telemetry-Service]], [[NVLink]], [[NVIDIA-GPU-Operator]]
 **Sources:** https://docs.nvidia.com/mission-control/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html; https://www.nvidia.com/en-us/data-center/gb300-nvl72/
 **Last Updated:** 2026-04-28
 
@@ -50,6 +50,7 @@ As of docs accessed on 2026-04-28, the latest surfaced user-guide and release-no
 - [[NVIDIA-NetQ]] - NetQ/NMX-style network and NVLink visibility connects Mission Control to fabric operations.
 - [[NVIDIA-AI-Enterprise]] - Mission Control complements AI Enterprise by focusing on day-2 cluster operations and integrated infrastructure management.
 - [[NVIDIA-DCGM]] - DCGM provides GPU telemetry that fits into Mission Control's broader observability model.
+- [[DOCA-Telemetry-Service]] - DTS provides DPU/network telemetry that complements GPU and fabric observability.
 - [[NVLink]] - Mission Control's NetQ/NMX components extend operations into NVLink fabrics and partition-aware telemetry.
 - [[NVIDIA-GPU-Operator]] - Mission Control relies on Kubernetes-hosted services, making GPU Operator part of the surrounding GPU software stack.
 

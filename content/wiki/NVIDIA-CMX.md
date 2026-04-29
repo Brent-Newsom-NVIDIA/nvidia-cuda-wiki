@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, CMX, context memory storage, KV cache, long-context inference, BlueField-4, DOCA, Spectrum-X, Dynamo
-**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[DOCA-SNAP]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/
 **Last Updated:** 2026-04-29
 
@@ -30,6 +30,8 @@ CMX is the context-memory building block inside [[NVIDIA-STX]] and [[NVIDIA-AI-D
 - [[NVIDIA-STX]] - STX is the broader modular AI storage reference architecture that includes CMX context memory.
 - [[NVIDIA-AI-Data-Platform]] - AI Data Platform uses storage and context infrastructure such as CMX to support agentic workloads.
 - [[NVIDIA-Dynamo]] - Dynamo is the serving layer NVIDIA describes as making CMX context storage usable across the pod.
+- [[DOCA-SNAP]] - SNAP is adjacent to BlueField-based storage virtualization and NVMe services.
+- [[GPU-Direct-Storage]] - direct GPU storage paths complement CMX context and KV-cache movement.
 - [[NVIDIA-BlueField-DPU]] - BlueField provides storage, networking, integrity, encryption, and offload capabilities.
 - [[NVIDIA-BlueField-4]] - CMX public material names BlueField-4 as the context memory storage processor.
 - [[NVIDIA-ConnectX-9]] - high-bandwidth networking direction for AI data and context movement.
