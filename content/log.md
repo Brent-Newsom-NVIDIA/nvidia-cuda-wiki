@@ -2,6 +2,20 @@
 
 ---
 
+## 2026-04-28 - Ingested NVIDIA Mission Control docs into a consolidated wiki page
+
+**Source URLs:** https://docs.nvidia.com/mission-control/index.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html, https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html, https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Mission-Control.md` - consolidated Mission Control page covering platform role, built-in workload management, observability, resiliency, and power-aware operations
+
+**Pages updated:**
+
+- `content/index.md` - added Mission Control under AI Cloud & Software Platforms and refreshed page count/date
+
+---
+
 ## 2026-04-10 — NVL72, HGX added; NVL4 investigated
 
 - Added `NVIDIA-GB200-NVL72.md` — live fetch from nvidia.com/en-us/data-center/gb200-nvl72/

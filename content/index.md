@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
-*Last updated: 2026-04-10*
-*Total pages: 135*
+*Last updated: 2026-04-28*
+*Total pages: 140*
 
 ---
 
@@ -144,6 +144,7 @@
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
+- [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
 ### AI Application Platforms
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
