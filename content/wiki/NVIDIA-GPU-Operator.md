@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, GPU, containers, operator, cloud-native, DevOps, infrastructure, K8s
-**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NGC]], [[NVIDIA-DGX]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Cluster-Runtime]], [[KAI-Scheduler]], [[NVIDIA-NVSentinel]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NGC]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/gpu-operator.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,7 +23,7 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 - **MIG Manager:** Automates MIG (Multi-Instance GPU) configuration on H100/A100 nodes; partition GPUs into MIG instances based on `ClusterPolicy` spec
 - **GPU Sharing (MPS/MIG):** Supports time-slicing, MIG partitioning, and MPS-based GPU sharing for multi-tenant environments
 - **Validator:** Deploys test pods to validate correct driver, toolkit, and device plugin configuration before marking nodes ready
-- **OCP/OpenShift Support:** Certified for Red Hat OpenShift; integrates with OpenShift node tuning and special resource operators
+- **OCP/OpenShift Support:** Certified for Red Hat OpenShift; integrates with OpenShift node tuning and special resource operators. The [[Red-Hat-AI-Factory-with-NVIDIA]] guide uses GPU Operator as the core OpenShift enablement step for AI workloads.
 - **Air-Gap Support:** Mirroring support for disconnected environments — pull all operator images to a private registry
 
 ### Use Cases
@@ -50,6 +50,7 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 - [[NVIDIA-Cloud-Native-Technologies]] — cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and related deployment docs
 - [[NVIDIA-Network-Operator]] — complementary Kubernetes operator for NVIDIA networking, RDMA, SR-IOV, and DOCA-OFED.
 - [[NVIDIA-NIM-Operator]] — runs above GPU Operator to manage NIM/NeMo microservices once GPU resources are exposed to Kubernetes.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] — OpenShift AI deployment guide that installs GPU Operator before NIM workloads.
 - [[NVIDIA-AI-Cluster-Runtime]] — validated runtime recipes include GPU Operator, drivers, kernels, and Kubernetes configuration.
 - [[KAI-Scheduler]] — schedules GPU workloads after GPU Operator exposes GPU resources.
 - [[NVIDIA-NVSentinel]] — uses GPU Operator/DCGM-based monitoring as part of Kubernetes fault detection and remediation.
@@ -63,6 +64,7 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 
 ## Resources
 - [GPU Operator Documentation](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html)
+- [GPU Operator in Red Hat AI Factory with NVIDIA](https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/gpu-operator.html)
 - [GPU Operator GitHub](https://github.com/NVIDIA/gpu-operator)
 - [GPU Operator Helm Chart](https://helm.ngc.nvidia.com/nvidia)
 - [GPU Operator with MIG](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-operator-mig.html)

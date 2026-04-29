@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Inference, Optimization, Transformer, Generative AI, CUDA-X
-**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-AIPerf]], [[NVIDIA-GenAI-Perf]], [[Triton-Performance-Analyzer]], [[Triton-Model-Analyzer]], [[Triton-Model-Navigator]], [[NeMo-Export-Deploy]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/genai-perf/README.html, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html
+**Related:** [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-AIPerf]], [[NVIDIA-GenAI-Perf]], [[Triton-Performance-Analyzer]], [[Triton-Model-Analyzer]], [[Triton-Model-Navigator]], [[NeMo-Export-Deploy]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[FlashInfer]], [[NVIDIA-NeMo]], [[Megatron-LM]], [[cuDNN]], [[CUTLASS]], [[NIXL]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/tensorrt-llm, https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/genai-perf/README.html, https://docs.nvidia.com/aiperf/getting-started/profiling-with-ai-perf, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/apidocs/nemo_export/nemo_export.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,6 +30,7 @@ TensorRT-LLM solves the performance gap between raw LLM inference and hardware-o
 - Python Model Definition API for building custom LLM engines
 - Triton Inference Server backend for production serving
 - NeMo Export-Deploy path for exporting NeMo, AutoModel, Megatron Bridge, and Hugging Face checkpoints into TensorRT-LLM deployment flows.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] lists TensorRT-LLM as one of the engines that can power NIM inference microservices in the OpenShift AI stack.
 
 ### Use Cases
 - Production LLM API serving (ChatGPT-style applications)
@@ -62,6 +63,7 @@ TensorRT-LLM solves the performance gap between raw LLM inference and hardware-o
 - [[Triton-Performance-Analyzer]], [[Triton-Model-Analyzer]], and [[Triton-Model-Navigator]] - Triton toolchain for measuring, tuning, and preparing served TensorRT/Triton models.
 - [[NeMo-Export-Deploy]] - current NeMo library that exports and deploys LLM/MM checkpoints through TensorRT-LLM, Triton, and related runtimes.
 - [[NeMo-Megatron-Bridge]] and [[NeMo-AutoModel]] - upstream NeMo training/checkpoint sources that can feed TensorRT-LLM deployment paths.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide where NIM may be powered by TensorRT-LLM.
 - [[FlashInfer]] — FlashInfer attention kernels integrated as an optional attention backend
 - [[CUTLASS]] — custom GEMM and attention kernels in TRT-LLM use CUTLASS templates
 - [[NVIDIA-NeMo]] — NeMo-trained LLMs are exported and deployed via TRT-LLM

@@ -2,8 +2,8 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NIM Operator, Kubernetes, NIM, NeMo, inference, microservices, autoscaling, model cache, AI Enterprise
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
-**Sources:** https://docs.nvidia.com/nim-operator/latest/index.html; https://docs.nvidia.com/nim-operator/latest/quickstart.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
+**Sources:** https://docs.nvidia.com/nim-operator/latest/index.html; https://docs.nvidia.com/nim-operator/latest/quickstart.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html; https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-ai-workloads-nim-operator.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,6 +16,8 @@ The operator is especially important because NIM and NeMo microservices are usua
 
 NVIDIA also documents advanced NIM Operator patterns for local caching, air-gapped environments, resource quotas, validation webhooks, KServe support, Dynamic Resource Allocation, multi-node NIM deployment, experimental Dynamo CRDs, and experimental Kata Containers isolation. In the wiki graph, NIM Operator sits beside [[NVIDIA-GPU-Operator]] and above individual NIM pages such as [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], and [[NeMo-Retriever-Reranking-NIM]].
 
+The [[Red-Hat-AI-Factory-with-NVIDIA]] deployment guide uses NIM Operator on OpenShift to manage `NIMCache` model persistence and `NIMService` deployment. Its example path also connects NIM Operator to KServe-style deployment and OpenShift AI model discovery.
+
 ## Connections
 - [[NVIDIA-NIM]] - NIM Operator is the Kubernetes lifecycle manager for NIM microservices.
 - [[NIM-for-Large-Language-Models]] - current NIM LLM docs include a NIM Operator deployment path.
@@ -24,6 +26,7 @@ NVIDIA also documents advanced NIM Operator patterns for local caching, air-gapp
 - [[NeMo-Retriever-Embedding-NIM]] - embedding NIMs are a retrieval-domain NIM deployment target.
 - [[NeMo-Retriever-Reranking-NIM]] - reranking NIMs are a retrieval-domain NIM deployment target.
 - [[NVIDIA-GPU-Operator]] - GPU Operator provides GPU nodes and device exposure underneath NIM Operator workloads.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide that uses NIMCache, NIMService, NIMPipeline, and KServe patterns.
 - [[NVIDIA-AI-Enterprise]] - NIM Operator is part of the enterprise production deployment surface.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - software RA includes NIM Operator in the infrastructure software layer.
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] - observability guidance uses NIM Operator/NIM telemetry as part of AI factory dashboards.
@@ -34,3 +37,4 @@ NVIDIA also documents advanced NIM Operator patterns for local caching, air-gapp
 - "deploy NVIDIA NIMs and NVIDIA NeMo microservices"
 - "`nimcaches.apps.nvidia.com`"
 - "`nimservices.apps.nvidia.com`"
+- NVIDIA's Red Hat AI Factory guide deploys standalone NIM resources as `NIMService` custom resources.

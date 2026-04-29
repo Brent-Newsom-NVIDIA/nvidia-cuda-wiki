@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 411*
+*Total pages: 412*
 
 ---
 
@@ -269,6 +269,7 @@
 - [[NVIDIA-Enterprise-Reference-Architectures]] — NVIDIA-authored Enterprise RA family for AI factory hardware, software, observability, and deployment patterns
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] — Full-stack AI Enterprise software RA for single-tenant production inference, fine-tuning, and RAG workloads
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] — Observability guide for Enterprise RA dashboards, alerts, DCGM, NIM Operator, BCM, and NetQ telemetry
+- [[Red-Hat-AI-Factory-with-NVIDIA]] — NVIDIA AI Enterprise deployment guide for Red Hat OpenShift AI with NIM, GPU Operator, Network Operator, and NIM Operator
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, Mission Control, and NIM LLM sizing workflows

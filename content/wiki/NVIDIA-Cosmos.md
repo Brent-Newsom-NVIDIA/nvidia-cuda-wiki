@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
+**Related:** [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[Red-Hat-AI-Factory-with-NVIDIA]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -65,6 +65,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - [[NVIDIA-DRIVE-Sim]] - current DRIVE Sim material centers Cosmos world models, Cosmos Transfer/Predict, and AV synthetic data.
 - [[NVIDIA-NeMo]] — Cosmos models trained and fine-tuned within NeMo ecosystem
 - [[NVIDIA-NIM]] — Cosmos deployed via NIM microservices for enterprise access
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide that calls out Cosmos as a physical AI model family.
 
 ## Resources
 - [Cosmos Developer Page](https://developer.nvidia.com/cosmos)

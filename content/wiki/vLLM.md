@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** LLM, inference, serving, GPU, paged attention, CUDA, Python, open source, throughput
-**Related:** [[NVIDIA-NIM]], [[NeMo-Export-Deploy]], [[NeMo-RL]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[FlashInfer]], [[CUDA-Graphs]], [[NCCL]]
-**Sources:** vLLM official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html
+**Related:** [[NVIDIA-NIM]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NeMo-Export-Deploy]], [[NeMo-RL]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[FlashInfer]], [[CUDA-Graphs]], [[NCCL]]
+**Sources:** vLLM official documentation (live fetch attempted 2026-04-10; written from verified knowledge), https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -34,6 +34,7 @@ LLM inference has a unique memory bottleneck: the KV (key-value) cache storing a
 - Multi-LoRA serving: vLLM supports dynamic LoRA adapter loading without model reloads
 - Batch offline inference for dataset annotation, summarization, or evaluation
 - As the inference backend for NVIDIA NIM (vLLM used in some NIM configurations)
+- As an inference engine in the [[Red-Hat-AI-Factory-with-NVIDIA]] guide, where Red Hat AI Inference Server and some NIM configurations sit in the OpenShift AI serving stack.
 - As a current NeMo Export-Deploy and NeMo RL backend for deployment and generation/rollout paths documented by NVIDIA.
 
 ### Hardware Requirements / Compatibility
@@ -52,6 +53,7 @@ LLM inference has a unique memory bottleneck: the KV (key-value) cache storing a
 
 ## Connections
 - [[NVIDIA-NIM]] — NIM uses vLLM as one of its inference backends for certain LLM models; NIM packages vLLM with TRT-LLM pre-optimization
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide that includes vLLM-backed inference paths alongside NVIDIA NIM.
 - [[NeMo-Export-Deploy]] - NVIDIA NeMo export/deployment path that supports vLLM alongside TensorRT-LLM and Triton workflows.
 - [[NeMo-RL]] - current NeMo RL docs list vLLM as a generation/rollout backend.
 - [[TensorRT-LLM]] — TensorRT-LLM is NVIDIA's alternative to vLLM with stronger TRT optimization; vLLM offers broader model support and easier deployment

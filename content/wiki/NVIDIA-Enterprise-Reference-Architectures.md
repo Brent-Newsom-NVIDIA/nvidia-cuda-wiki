@@ -2,8 +2,8 @@
 
 **Type:** Reference Architecture Program
 **Tags:** NVIDIA, Enterprise Reference Architecture, AI factory, certified systems, Spectrum-X, AI Enterprise, Kubernetes
-**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Run-ai]], [[NVIDIA-NetQ]]
-**Sources:** https://docs.nvidia.com/enterprise-reference-architectures/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/introduction.html
+**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Run-ai]], [[NVIDIA-NetQ]]
+**Sources:** https://docs.nvidia.com/enterprise-reference-architectures/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/index.html, https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,6 +20,7 @@ Enterprise RAs are meant to reduce the risk of building AI infrastructure from s
 - [[NVIDIA-NVL72-AI-Factory]] for GB300 NVL72 rack-scale systems with NVLink domains and Spectrum-X networking.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] for the common AI Enterprise software stack that runs across supported hardware.
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] for dashboarding, alerting, and telemetry across the RA stack.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] as the OpenShift-specific AI Enterprise deployment track adjacent to the RA family.
 - Application-level Enterprise RA papers are folded into their canonical topic pages, such as [[NVIDIA-Run-ai]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], and [[NVIDIA-AI-Q-Blueprint]], rather than creating duplicate paper pages.
 
 ### NVIDIA context
@@ -32,6 +33,7 @@ This page is the canonical program-level page. It should not absorb every deploy
 - [[NVIDIA-NVL72-AI-Factory]] - GB300 NVL72 rack-scale AI factory architecture.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - consistent software stack for production AI workloads.
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] - monitoring and alerting guide for RA environments.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide for AI Enterprise and NIM on Red Hat infrastructure.
 - [[NVIDIA-AI-Enterprise]] - supported software suite that anchors the RA stack.
 - [[NVIDIA-Certified-Systems]] - validated servers are the compute foundation for Enterprise RAs.
 - [[NVIDIA-Certified-Storage]] - validated storage is part of the production AI factory design.
@@ -51,3 +53,4 @@ This page is the canonical program-level page. It should not absorb every deploy
 - [NVIDIA Enterprise Reference Architectures](https://docs.nvidia.com/enterprise-reference-architectures/index.html)
 - [Enterprise Reference Architecture Overview](https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/index.html)
 - [Introducing NVIDIA Enterprise Reference Architectures](https://docs.nvidia.com/enterprise-reference-architectures/white-paper/latest/introduction.html)
+- [Red Hat AI Factory with NVIDIA Deployment Guide](https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/index.html)

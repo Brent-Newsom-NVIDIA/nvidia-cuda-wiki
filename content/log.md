@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 44: Red Hat AI Factory with NVIDIA
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch44-20260429T094143Z`; local Git tag `codex-backup-overnight-pre-batch44-20260429T094143Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/index.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/platform-overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/prerequisites.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/software-overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/network-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/gpu-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-ai-workloads-nim-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-nvidia-nim-redhat.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for the current NVIDIA-authored Red Hat AI Factory with NVIDIA deployment guide instead of creating separate wiki pages for the overview, prerequisites, operator install steps, NIM deployment steps, or OpenShift AI Playground workflow.
+- Connected the guide to AI Enterprise, Enterprise AI Factory, Enterprise RA/software RA, NIM, NIM Operator, GPU Operator, Network Operator, Dynamo, NIXL, vLLM, TensorRT-LLM, certified systems/storage, RTX PRO AI Factory, Blueprints, Agent Toolkit, Nemotron, and Cosmos.
+- Treated Red Hat/OpenShift concepts as deployment context, not as a reason to create non-NVIDIA topic pages.
+- Kept build.nvidia out of this batch; the source set is current docs.nvidia.com content last updated April 15, 2026.
+
+**Pages created (1 total):**
+
+- `content/wiki/Red-Hat-AI-Factory-with-NVIDIA.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md`, `content/wiki/NVIDIA-Enterprise-AI-Factory.md`, `content/wiki/NVIDIA-Enterprise-Reference-Architectures.md`, and `content/wiki/NVIDIA-AI-Enterprise-Software-Reference-Architecture.md` - connected the Red Hat/OpenShift deployment track to the broader NVIDIA AI factory graph.
+- `content/wiki/NVIDIA-NIM.md`, `content/wiki/NIM-for-Large-Language-Models.md`, and `content/wiki/NVIDIA-NIM-Operator.md` - added OpenShift AI, Helm, NIM Operator, KServe, NIMCache, NIMService, and Gen AI Studio context.
+- `content/wiki/NVIDIA-GPU-Operator.md` and `content/wiki/NVIDIA-Network-Operator.md` - connected GPU/network operator roles in the Red Hat AI Factory deployment.
+- `content/wiki/NVIDIA-Dynamo.md`, `content/wiki/NIXL.md`, `content/wiki/vLLM.md`, and `content/wiki/TensorRT-LLM.md` - connected distributed inference and inference-engine references from the guide.
+- `content/wiki/NVIDIA-Certified-Systems.md`, `content/wiki/NVIDIA-Certified-Storage.md`, and `content/wiki/NVIDIA-RTX-PRO-AI-Factory.md` - connected prerequisites and example certified hardware/storage guidance.
+- `content/wiki/NVIDIA-Agent-Intelligence-Toolkit.md`, `content/wiki/NVIDIA-AI-Blueprints.md`, `content/wiki/Nemotron.md`, and `content/wiki/NVIDIA-Cosmos.md` - connected agent/model/application references from the guide.
+- `content/index.md` - updated total page count to 412 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 43: Enterprise RA application papers
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch43-20260429T093610Z`; local Git tag `codex-backup-overnight-pre-batch43-20260429T093610Z`

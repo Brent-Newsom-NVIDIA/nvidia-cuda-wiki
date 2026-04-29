@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Inference, Data Transfer, Networking, LLM, KV Cache, CUDA-X
-**Related:** [[NVIDIA-Dynamo]], [[Dynamo-Disaggregated-Serving]], [[Dynamo-KV-Block-Manager]], [[Dynamo-KV-Cache-Aware-Routing]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[GPU-Direct-Storage]], [[GPUDirect-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NCCL]], [[NVSHMEM]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/nixl, https://docs.nvidia.com/dynamo/design-docs/disaggregated-serving, https://docs.nvidia.com/dynamo/latest/components/kvbm
+**Related:** [[NVIDIA-Dynamo]], [[Dynamo-Disaggregated-Serving]], [[Dynamo-KV-Block-Manager]], [[Dynamo-KV-Cache-Aware-Routing]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[GPU-Direct-Storage]], [[GPUDirect-RDMA]], [[DOCA-GPUNetIO]], [[DOCA-RDMA]], [[NCCL]], [[NVSHMEM]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/nixl, https://docs.nvidia.com/dynamo/design-docs/disaggregated-serving, https://docs.nvidia.com/dynamo/latest/components/kvbm, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/network-operator.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,6 +24,7 @@ NIXL addresses the data movement bottleneck in modern LLM serving, where prefill
 - Asynchronous, stream-ordered operations for overlapping compute and communication
 - Integration with TensorRT-LLM for KV cache disaggregation
 - Integration with [[NVIDIA-Dynamo]] for disaggregated serving, [[Dynamo-KV-Block-Manager]] tiered KV cache memory, and KV cache movement between prefill/decode workers.
+- NVIDIA's [[Red-Hat-AI-Factory-with-NVIDIA]] guide references NIXL as the transfer library used by llm-d and Dynamo-oriented distributed inference paths.
 - Support for CPU offload (GPU-to-DRAM) for extended KV cache capacity
 - Support for NVMe offload via GPU Direct Storage for very large KV cache pools
 - Multi-GPU and multi-node topologies
@@ -51,6 +52,7 @@ NIXL addresses the data movement bottleneck in modern LLM serving, where prefill
 - [[Dynamo-Disaggregated-Serving]] - NIXL moves KV cache between prefill and decode workers.
 - [[Dynamo-KV-Block-Manager]] - KVBM uses NIXL as the transfer/storage layer for KV cache tiers.
 - [[Dynamo-KV-Cache-Aware-Routing]] - routing and cache locality rely on fast transfer and reuse paths.
+- [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide that names NIXL in the distributed inference networking context.
 - [[TensorRT-LLM]] — NIXL is the primary data transfer layer for TRT-LLM disaggregated inference
 - [[Triton-Inference-Server]] — Triton LLM serving uses NIXL for KV cache transfers in disaggregated deployments
 - [[GPU-Direct-Storage]] — NIXL leverages GDS for NVMe-to-GPU KV cache offload
