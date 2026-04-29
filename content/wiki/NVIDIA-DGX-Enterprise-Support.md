@@ -2,7 +2,7 @@
 
 **Type:** Service
 **Tags:** NVIDIA, DGX, enterprise support, infrastructure services, education services, AI factory operations
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-Mission-Control]], [[NVIDIA-BaseOS]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DCGM]], [[NVIDIA-Data-Center-GPU-Drivers]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-Enterprise-Support-and-Services]], [[NVIDIA-Mission-Control]], [[NVIDIA-BaseOS]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DCGM]], [[NVIDIA-Data-Center-GPU-Drivers]]
 **Sources:** https://www.nvidia.com/en-us/data-center/dgx-support/
 **Last Updated:** 2026-04-29
 
@@ -21,7 +21,7 @@ DGX infrastructure is not just hardware; it is a production AI factory platform 
 - Education services and courses covering DGX systems administration, DGX BasePOD administration, DGX SuperPOD administration, and AI infrastructure and operations.
 
 ### NVIDIA context
-This page is the service counterpart to the DGX hardware and software pages. It belongs next to [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Mission-Control]], [[NVIDIA-BaseOS]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DCGM]], and [[NVIDIA-Data-Center-GPU-Drivers]] because supportability and operations are part of the full NVIDIA AI factory story.
+This page is the DGX-specific service counterpart to the broader [[NVIDIA-Enterprise-Support-and-Services]] page. It belongs next to [[NVIDIA-DGX]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Mission-Control]], [[NVIDIA-BaseOS]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-DCGM]], and [[NVIDIA-Data-Center-GPU-Drivers]] because supportability and operations are part of the full NVIDIA AI factory story.
 
 ## Connections
 - [[NVIDIA-DGX]] - support/services apply across the DGX platform.
@@ -29,6 +29,7 @@ This page is the service counterpart to the DGX hardware and software pages. It 
 - [[NVIDIA-DGX-SuperPOD]] - SuperPOD onboarding and administration are covered by the support/services program.
 - [[NVIDIA-AI-Enterprise]] - enterprise software support complements DGX hardware and infrastructure support.
 - [[NVIDIA-Enterprise-Licensing-Guide]] - AI Enterprise subscription and perpetual licensing define which support services are included or upgraded.
+- [[NVIDIA-Enterprise-Support-and-Services]] - broad support entitlement, support portal, RMA, value-add services, advisory services, and education guide.
 - [[NVIDIA-Mission-Control]] - operational software for AI factories that may be supported as part of DGX deployments.
 - [[NVIDIA-BaseOS]] - validated OS layer for DGX operations.
 - [[NVIDIA-Base-Command-Manager]] - cluster management layer in many DGX BasePOD/SuperPOD deployments.

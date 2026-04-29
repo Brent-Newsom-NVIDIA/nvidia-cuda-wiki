@@ -2,7 +2,7 @@
 
 **Type:** Licensing Guide
 **Tags:** NVIDIA, AI Enterprise, licensing, NLS, subscription, cloud marketplace, BYOL, support
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[NVIDIA-vGPU]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-NGC-Catalog]], [[NGC]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Support-and-Services]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[NVIDIA-vGPU]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-Certified-Systems]], [[NVIDIA-NGC-Catalog]], [[NGC]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html, https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/license-system.html
 **Last Updated:** 2026-04-29
 
@@ -28,10 +28,11 @@ AI Enterprise licensing determines whether a deployment is correctly entitled be
 The NVIDIA License System (NLS) is required only when using NVIDIA vGPU for Compute drivers included with AI Enterprise. NLS provides license usage monitoring and reporting through Cloud License Service (CLS) instances hosted on the NVIDIA Licensing Portal or Delegated License Service (DLS) instances hosted on-premises.
 
 ### NVIDIA context
-Use this page for licensing, entitlement, NLS, cloud marketplace, BYOL, and support-included-in-license questions. Use [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] for support windows and branch policy, and use the deployment pages for installation.
+Use this page for licensing, entitlement, NLS, cloud marketplace, BYOL, and support-included-in-license questions. Use [[NVIDIA-Enterprise-Support-and-Services]] for support portal, cases, RMA, support levels, and professional services; use [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] for support windows and branch policy.
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - product being licensed and entitled.
+- [[NVIDIA-Enterprise-Support-and-Services]] - support entitlement, support levels, support case, RMA, portal, and professional services companion.
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] - support windows and branch maintenance referenced by licensing support terms.
 - [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], and [[NVIDIA-AI-Enterprise-Cloud-Deployment]] - deployment paths that require entitlement planning.
 - [[NVIDIA-vGPU]] - NLS is required only for vGPU for Compute drivers included with AI Enterprise.
@@ -48,3 +49,4 @@ Use this page for licensing, entitlement, NLS, cloud marketplace, BYOL, and supp
 - [NVIDIA Enterprise Licensing Guide](https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/index.html)
 - [NVIDIA AI Enterprise Licensing](https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html)
 - [NVIDIA License System](https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/license-system.html)
+- [NVIDIA Enterprise Support and Services](https://docs.nvidia.com/enterprise-services/index.html)

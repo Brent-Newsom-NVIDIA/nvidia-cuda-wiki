@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 48: Enterprise Support and Services coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch48-20260429T100405Z`; local Git tag `codex-backup-overnight-pre-batch48-20260429T100405Z`
+
+**Source URLs:** https://docs.nvidia.com/enterprise-services/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-support-overview/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-support-details/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/value-add-support-services/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/support-resources-and-requests/index.html, https://docs.nvidia.com/enterprise-support-and-services-user-guide/nvidia-enterprise-services/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for NVIDIA Enterprise Support and Services because the wiki had DGX-specific support and AI Enterprise licensing, but not the broader support entitlement, portal, RMA, value-add support, advisory-services, and education-services guide.
+- Kept the user guide as one wiki page rather than splitting Business Standard/Critical, support portal, RMA, TAM, Site Reliability Engineer, education, or advisory-services sections into separate pages.
+- Connected the support/services page to AI Enterprise, licensing, DGX support, NGC, vGPU/NLS, drivers, certified systems, and reference architectures.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Enterprise-Support-and-Services.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added support/services as the support entitlement and operations companion to licensing.
+- `content/wiki/NVIDIA-Enterprise-Licensing-Guide.md` - linked support-included licensing to the support/services guide.
+- `content/wiki/NVIDIA-DGX-Enterprise-Support.md` - distinguished the DGX-specific service page from the broader enterprise support guide.
+- `content/index.md` - updated total page count to 423 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 47: AI Enterprise licensing guidance
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch47-20260429T095921Z`; local Git tag `codex-backup-overnight-pre-batch47-20260429T095921Z`
