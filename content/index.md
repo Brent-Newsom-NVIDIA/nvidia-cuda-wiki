@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 226*
+*Total pages: 230*
 
 ---
 
@@ -237,6 +237,10 @@
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
 - [[NVIDIA-Jetson-Thor]] — Blackwell-generation Jetson platform for physical AI and humanoid robotics
 - [[NVIDIA-Drive-Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
+- [[NVIDIA-DRIVE-AGX-Thor]] — DRIVE AGX Thor developer platform for autonomous vehicle and cockpit AI development
+- [[NVIDIA-DriveOS]] — Automotive operating system and SDK foundation for DRIVE AGX platforms
+- [[NVIDIA-DriveWorks]] — DRIVE SDK modules and tools for AV sensor abstraction, calibration, image, point-cloud, and egomotion workflows
+- [[NVIDIA-DRIVE-Sim]] — AV simulation and synthetic-data workflows using Cosmos, Omniverse, NuRec, and dataset curation
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
 - [[NVIDIA-HGX]] — Multi-GPU baseboard platform (8x SXM) for OEM servers; HGX B200, B300, Rubin NVL8 configurations
 - [[NVIDIA-GB200-NVL4]] — Single-server 4x B200 + 2x Grace config; 1.3 TB coherent memory, ~6 kW, OEM ecosystem entry point

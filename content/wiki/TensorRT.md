@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]]
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-09
 
@@ -59,6 +59,8 @@ Moving deep learning models from training to production requires inference-time 
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
 - [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.
 - [[NVIDIA-Jetson-Platform]] - common deployment target for TensorRT inference in embedded robotics.
+- [[NVIDIA-DriveOS]] - current DriveOS 7.0.3 public docs list TensorRT 10.10.10 for DRIVE OS.
+- [[NVIDIA-DRIVE-AGX-Thor]] - DRIVE AGX Thor uses TensorRT for automotive AI inference pipelines.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/tensorrt)

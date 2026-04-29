@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, DLA, Deep Learning Accelerator, Embedded, Automotive, Jetson, CUDA-X
-**Related:** [[cuDNN]], [[TensorRT]], [[NVCC]], [[NVIDIA-Isaac]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]]
+**Related:** [[cuDNN]], [[TensorRT]], [[NVCC]], [[NVIDIA-Isaac]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** NVIDIA official documentation, docs.nvidia.com/cuda/cuda-for-tegra-appnote
 **Last Updated:** 2026-04-09
 
@@ -52,6 +52,8 @@ cuDLA solves the integration challenge of using DLA alongside CUDA GPU compute. 
 - [[NVIDIA-Jetson-Platform]] - Jetson platforms expose DLA hardware on supported SoCs.
 - [[NVIDIA-JetPack-SDK]] - bundles the Jetson software stack used with DLA-capable devices.
 - [[NVIDIA-Jetson-Linux]] - OS/BSP foundation for DLA device support and driver integration.
+- [[NVIDIA-DriveOS]] - automotive software stack for DRIVE AGX inference and accelerator development.
+- [[NVIDIA-DRIVE-AGX-Thor]] - current DRIVE platform adjacent to DLA/accelerator planning, with Orin-era DLA concepts still relevant.
 
 ## Resources
 - [cuDLA Documentation](https://docs.nvidia.com/cuda/cuda-for-tegra-appnote/index.html)

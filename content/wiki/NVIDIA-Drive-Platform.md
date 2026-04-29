@@ -1,13 +1,13 @@
 # NVIDIA DRIVE Platform
 
 **Type:** Platform
-**Tags:** NVIDIA, autonomous vehicles, AV, automotive, ADAS, self-driving, robotics, DRIVE Orin, DRIVE Thor
-**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Omniverse]], [[NVIDIA-Isaac]], [[TensorRT]], [[cuDLA]], [[NVIDIA-Hopper-Architecture]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Tags:** NVIDIA, autonomous vehicles, AV, automotive, ADAS, self-driving, robotics, DRIVE AGX, DriveOS, DriveWorks, DRIVE Sim, DRIVE Thor
+**Related:** [[NVIDIA-DRIVE-AGX-Thor]], [[NVIDIA-DriveOS]], [[NVIDIA-DriveWorks]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-Cosmos]], [[NVIDIA-Omniverse]], [[TensorRT]], [[cuDLA]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Jetson-Platform]]
+**Sources:** https://developer.nvidia.com/drive, https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/drive-sim
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA DRIVE is an end-to-end platform for autonomous vehicle (AV) and advanced driver assistance system (ADAS) development, spanning in-vehicle compute hardware (DRIVE Orin, DRIVE Thor), software SDKs (DRIVE OS, DRIVE AV, DRIVE IX), simulation (DRIVE Sim on Omniverse), and data management (DRIVE Constellation). DRIVE provides automakers, Tier 1 suppliers, and AV startups with the full stack required to develop, train, validate, and deploy automated driving software from ADAS Level 2+ to full autonomy (Level 4/5). NVIDIA DRIVE is adopted by 300+ automotive partners.
+NVIDIA DRIVE is NVIDIA's end-to-end autonomous vehicle and automotive AI platform spanning in-vehicle compute, operating system, middleware, sensor processing, AI acceleration, simulation, data generation, and developer programs. Current public material centers the stack around [[NVIDIA-DRIVE-AGX-Thor]] hardware, [[NVIDIA-DriveOS]] 7.x software, [[NVIDIA-DriveWorks]] AV middleware, and [[NVIDIA-DRIVE-Sim]] workflows using [[NVIDIA-Cosmos]], NuRec, Omniverse, and synthetic data generation. The DRIVE platform should be treated as a family hub, not as a dumping ground for each SDK document or hardware SKU.
 
 ## Detail
 
@@ -16,53 +16,55 @@ Building autonomous vehicles requires solving perception, prediction, planning, 
 
 ### Key Features
 
-**DRIVE Hardware (SoCs):**
-- **DRIVE Orin:** Automotive-grade SoC with 254 TOPS AI performance; 12-core ARM Cortex-A78AE CPU, Ampere GPU, 2× DLA, 2× PVA; ISO 26262 ASIL-B/D certified; powers current-generation ADAS and roboaxi platforms
-- **DRIVE Thor:** Next-generation centralized vehicle compute SoC combining former DRIVE and infotainment compute into one chip; 2000 TOPS; targets 2025+ model year vehicles with L2+ to L4 autonomy
-- **DRIVE Hyperion:** Reference sensor and compute architecture blueprint for Level 4 AV — defines the sensor suite (cameras, radars, lidars) and compute platform for AV development
+**DRIVE hardware and development platforms:**
+- **[[NVIDIA-DRIVE-AGX-Thor]]:** current DRIVE AGX developer platform for bench and in-vehicle AV development, with Thor SoC, Blackwell-class GPU, automotive I/O, DriveOS 7.x, DriveWorks, CUDA, TensorRT, NvMedia, and NvStreams.
+- **DRIVE AGX Orin:** prior/continuing automotive development platform for ADAS and AV workloads.
+- **DRIVE AGX SDK Developer Program:** gated software-release access path for full DRIVE SDK downloads and tools.
 
 **DRIVE Software Stack:**
-- **DRIVE OS:** Automotive-grade real-time OS layer with QNX hypervisor support; deterministic scheduling, functional safety separation
-- **DRIVE AV (Autonomous Vehicle Stack):** Modular software components for perception (camera, radar, lidar fusion), prediction (motion forecasting), and planning (path planning, behavior prediction)
-- **DriveWorks SDK:** CUDA-accelerated library of automotive algorithms — sensor processing, camera calibration, egomotion, point cloud processing, traffic sign recognition
-- **DRIVE IX (Driver/Occupant Experience):** AI SDK for interior sensing — driver monitoring (DMS), occupant monitoring (OMS), gesture recognition, gaze tracking
+- **[[NVIDIA-DriveOS]]:** automotive operating system and SDK layer for DRIVE AGX platforms, including Linux/QNX application OS support, virtualization, bootloaders, diagnostics, CUDA, TensorRT, cuDNN, NvMedia, NvStreams, and tools.
+- **[[NVIDIA-DriveWorks]]:** AV middleware and algorithm SDK for sensor abstraction, image processing, point-cloud processing, calibration, egomotion, samples, and tools.
+- **CUDA / TensorRT / cuDNN / NvMedia / NvStreams:** core acceleration, media, and communication components in the DRIVE stack.
 
 **DRIVE Development Tools:**
-- **DRIVE Sim (on Omniverse):** Physically-based synthetic data generation and closed-loop simulation in NVIDIA Omniverse; test 1000s of scenario miles virtually for every real test mile
-- **DRIVE Constellation:** Hardware-in-the-loop (HIL) simulation using two-server architecture — one server runs DRIVE Orin, another renders sensor data; enables real hardware testing without physical road driving
-- **DRIVE Map (Maps & Localization):** HD map and localization framework
+- **[[NVIDIA-DRIVE-Sim]]:** AV simulation and synthetic-data workflows using Cosmos world foundation models, NuRec neural reconstruction, Cosmos Transfer/Predict, physical AI datasets, and Omniverse-style simulation.
+- **NVIDIA DRIVE documentation:** public and gated docs for DRIVE AGX hardware, DriveOS releases, DriveWorks, TensorRT, cuDNN, and developer tools.
+- **Nsight developer tools:** profiling and graphics/debugging tools exposed through DRIVE documentation.
 
 ### Use Cases
 - Level 2+ ADAS: adaptive cruise control, lane centering, automatic emergency braking using DRIVE Orin
-- Level 4 robotaxi platforms (Waymo, WeRide, and others) using DRIVE Orin or DRIVE Thor
+- Level 4 robotaxi and autonomous fleet development using DRIVE AGX Orin or DRIVE AGX Thor
 - Automotive OEM development: BMW, Mercedes-Benz, Volvo, and others using DRIVE for next-gen autonomous features
 - Truck platooning and logistics automation (Torc Robotics, Plus.ai)
-- Training perception models on synthetic data from DRIVE Sim, then validating on DRIVE Orin hardware
+- Training perception models on synthetic data from [[NVIDIA-DRIVE-Sim]], then validating on DRIVE AGX hardware
 - Driver monitoring systems (DMS) for regulatory-required attention monitoring
 
 ### Hardware Requirements / Compatibility
-- **DRIVE Orin DevKit:** Development hardware for software teams; connects to standard camera/lidar/radar sensors
-- **Automotive Grade:** DRIVE Orin operates at -40°C to 105°C junction temperature; AEC-Q100 Grade 2 automotive qualification
-- **DRIVE Thor:** Production SoC for 2025+ vehicles; supports multi-domain consolidation (ADAS + IVI)
-- **CUDA/TensorRT:** Full CUDA 11.x compatibility; TensorRT for DLA and GPU inference compilation
+- **DRIVE AGX Thor:** current public developer platform with bench and in-vehicle development SKUs.
+- **DriveOS 7.0.3:** current public DriveOS 7.x documentation branch surfaced for DRIVE AGX Thor.
+- **CUDA/TensorRT:** public DRIVE docs list CUDA Toolkit 12.8 and TensorRT 10.10.10 for DriveOS 7.0.3.
+- **Development access:** full SDK download access requires DRIVE AGX SDK Developer Program membership.
 
 ### Language Bindings / APIs
-- **DriveWorks C++ API:** Primary SDK interface for ADAS algorithm development
-- **Python:** Python bindings for DriveWorks sensor processing and visualization
-- **ROS 2:** DriveWorks ROS 2 bridge for AV stack integration with ROS-based middleware
-- **CUDA:** Direct CUDA programming for custom perception algorithms on DRIVE Orin GPU
-- **OpenCV, PCL:** Standard CV and point cloud libraries with DRIVE hardware acceleration
+- **DriveWorks C++ APIs:** primary AV middleware and algorithm interface.
+- **DriveOS APIs:** platform APIs for OS, virtualization, sensor/media, diagnostics, and development workflows.
+- **CUDA/TensorRT/cuDNN:** GPU and inference acceleration APIs.
+- **NvMedia and NvStreams:** media and data-movement components used in DRIVE platform software.
 
 ## Connections
-- [[NVIDIA-Jetson-Platform]] — Jetson and DRIVE share Orin SoC architecture; Jetson is the edge/robotics variant, DRIVE is the automotive-grade variant
-- [[NVIDIA-Omniverse]] — DRIVE Sim is built on Omniverse for physically-based synthetic data generation and closed-loop simulation
-- [[NVIDIA-Isaac]] — Isaac robotics platform shares software concepts with DRIVE; both target autonomous machine perception
-- [[TensorRT]] — All DRIVE inference models are compiled with TensorRT for maximum SoC performance
-- [[cuDLA]] — DRIVE Orin DLA is programmed via cuDLA for energy-efficient always-on perception tasks
+- [[NVIDIA-DRIVE-AGX-Thor]] - current DRIVE AGX developer platform for AV and cockpit AI development.
+- [[NVIDIA-DriveOS]] - automotive OS and SDK foundation for DRIVE AGX.
+- [[NVIDIA-DriveWorks]] - sensor, calibration, image, point-cloud, and egomotion SDK layer.
+- [[NVIDIA-DRIVE-Sim]] - AV simulation and synthetic-data generation workflow.
+- [[NVIDIA-Cosmos]] - world foundation model platform used by current DRIVE Sim workflows.
+- [[NVIDIA-Omniverse]] - simulation substrate and NuRec/scene reconstruction context for AV workflows.
+- [[TensorRT]] - inference optimization layer used in DriveOS and DRIVE AGX.
+- [[cuDLA]] - DLA/accelerator programming concept relevant to DRIVE SoC inference planning.
+- [[NVIDIA-Jetson-Platform]] - adjacent embedded platform family for non-automotive robotics and edge AI.
 
 ## Resources
 - [NVIDIA DRIVE Platform](https://developer.nvidia.com/drive)
-- [DRIVE Orin](https://www.nvidia.com/en-us/self-driving-cars/drive-orin/)
-- [DriveWorks SDK Documentation](https://developer.nvidia.com/docs/drive/driveworks/latest/index.html)
-- [DRIVE Sim on Omniverse](https://developer.nvidia.com/drive/drive-sim)
-- [DRIVE Safety](https://www.nvidia.com/en-us/self-driving-cars/safety/)
+- [DRIVE AGX Developer Kits](https://developer.nvidia.com/drive/agx)
+- [NVIDIA DRIVE Documentation](https://developer.nvidia.com/drive/documentation)
+- [NVIDIA DriveOS SDK](https://developer.nvidia.com/driveworks)
+- [NVIDIA DRIVE Sim](https://developer.nvidia.com/drive/drive-sim)

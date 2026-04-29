@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Jetson Thor, Jetson AGX Thor, Jetson T5000, Jetson T4000, Blackwell, physical AI, robotics, edge AI, JetPack
-**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-MIG]]
+**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-MIG]], [[NVIDIA-DRIVE-AGX-Thor]]
 **Sources:** https://developer.nvidia.com/embedded/develop/hardware, https://developer.nvidia.com/embedded/buy-jetson, https://developer.nvidia.com/blog/?p=104879, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/
 **Last Updated:** 2026-04-29
 
@@ -34,6 +34,7 @@ Jetson Thor is the deployment endpoint for NVIDIA's current physical AI stack. I
 - [[NVIDIA-Isaac-ROS]] - ROS 2 acceleration stack for Jetson robot deployment.
 - [[NVIDIA-Blackwell-Architecture]] - Thor uses Blackwell-generation GPU technology.
 - [[NVIDIA-MIG]] - Thor brings Multi-Instance GPU style isolation into the Jetson physical AI platform.
+- [[NVIDIA-DRIVE-AGX-Thor]] - automotive Thor counterpart for DRIVE AGX development.
 
 ## Source Excerpts
 - NVIDIA developer pages position Jetson Thor modules as physical AI and robotics platforms with up to 2070 FP4 TFLOPS and 128 GB memory.

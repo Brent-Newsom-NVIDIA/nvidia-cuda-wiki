@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 7: DRIVE autonomous vehicle platform expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch7-20260429T055544Z`; local Git tag `codex-backup-overnight-pre-batch7-20260429T055544Z`
+
+**Source URLs:** https://developer.nvidia.com/drive, https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/driveworks, https://developer.nvidia.com/drive/drive-sim, https://developer.nvidia.com/blog/?p=105444, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/introduction/introduction.html, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-installation/requirements.html, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/embedded-software-components/DRIVE_AGX_SoC/DriveWorks/DriveWorks_SDK/migration/index.html, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/embedded-software-components/DRIVE_AGX_SoC/DriveWorks/DriveWorks_SDK/modules/sensors/index.html
+
+**Gap analysis summary:**
+
+- Split four durable DRIVE topics out of the broad DRIVE platform page: DriveOS, DriveWorks, DRIVE AGX Thor, and DRIVE Sim.
+- Kept DRIVE AGX Thor bench/in-vehicle SKUs consolidated into one hardware/platform page.
+- Kept NuRec, Cosmos Transfer/Predict, and DRIVE Sim data-generation workflows consolidated into the DRIVE Sim page for now, rather than creating pages for each AV simulation sub-workflow.
+- Skipped DRIVE Hyperion in this batch because the public page surfaced by search was older and not clearly the current/latest reference architecture.
+
+**Pages created (4 total):**
+
+- `content/wiki/NVIDIA-DriveOS.md`
+- `content/wiki/NVIDIA-DriveWorks.md`
+- `content/wiki/NVIDIA-DRIVE-AGX-Thor.md`
+- `content/wiki/NVIDIA-DRIVE-Sim.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Drive-Platform.md` - refreshed the DRIVE hub and linked DriveOS, DriveWorks, DRIVE AGX Thor, and DRIVE Sim.
+- `content/wiki/NVIDIA-Cosmos.md` and `content/wiki/NVIDIA-Omniverse.md` - connected current AV simulation and synthetic-data workflows.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md`, `content/wiki/TensorRT.md`, `content/wiki/CUDA-for-Tegra.md`, and `content/wiki/cuDLA.md` - connected DRIVE AGX Thor, DriveOS, and DriveWorks to core acceleration topics.
+- `content/index.md` - updated page count to 230 and indexed all four new DRIVE pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 6: Jetson edge software and Thor hardware expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch6-20260429T055023Z`; local Git tag `codex-backup-overnight-pre-batch6-20260429T055023Z`

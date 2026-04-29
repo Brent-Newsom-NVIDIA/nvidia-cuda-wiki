@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
 **Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html
 **Last Updated:** 2026-04-29
 
@@ -53,6 +53,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - [[NVIDIA-Isaac-Lab]] — robot-learning framework that can train policies using synthetic and simulated data
 - [[NVIDIA-Isaac-GR00T]] — humanoid robotics platform that uses Cosmos and GR00T data-generation workflows
 - [[NVIDIA-Drive-Platform]] — Cosmos used for autonomous vehicle scenario generation and sensor simulation
+- [[NVIDIA-DRIVE-Sim]] - current DRIVE Sim material centers Cosmos world models, Cosmos Transfer/Predict, and AV synthetic data.
 - [[NVIDIA-NeMo]] — Cosmos models trained and fine-tuned within NeMo ecosystem
 - [[NVIDIA-NIM]] — Cosmos deployed via NIM microservices for enterprise access
 
