@@ -2,7 +2,7 @@
 
 **Type:** Strategy
 **Tags:** NVIDIA, enterprise AI factory, AI Enterprise, agentic AI, Blackwell, BlueField, Spectrum-X, certified systems, certified storage
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-Systems]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-AI-Factory-for-Government]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], [[NVIDIA-NVL72-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-Systems]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ai-factory-overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/agentic-ai-in-the-factory.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://docs.nvidia.com/enterprise-reference-architectures/index.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/technologies/rubin/
 **Last Updated:** 2026-04-29
 
@@ -17,6 +17,7 @@ An enterprise AI factory industrializes AI deployment inside a company's own inf
 ### Architecture themes
 - NVIDIA accelerated computing with Blackwell-class GPUs, CPUs, DPUs, and high-speed fabrics.
 - [[NVIDIA-Enterprise-Reference-Architectures]] translate the strategy into concrete hardware, software, observability, and deployment patterns such as [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-HGX-AI-Factory]], and [[NVIDIA-NVL72-AI-Factory]].
+- [[NVIDIA-AI-Factory-for-Government]] extends the AI factory concept into government, sovereign, FedRAMP High-equivalent, and high-assurance environments.
 - [[Red-Hat-AI-Factory-with-NVIDIA]] is the OpenShift AI deployment track for a co-engineered Red Hat/NVIDIA AI factory stack.
 - Current and next-generation platform pages extend that map to [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-4]], and [[NVIDIA-Silicon-Photonics]].
 - [[NVIDIA-BlueField-DPU]] for infrastructure acceleration, zero-trust style isolation, storage, networking, and security offload.
@@ -36,6 +37,7 @@ This page is the strategic umbrella that connects [[NVIDIA-AI-Enterprise]], [[NV
 - [[NVIDIA-Enterprise-Reference-Architectures]] - concrete NVIDIA-authored AI factory design patterns.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - common AI Enterprise software stack for production AI workloads.
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] - cross-cutting telemetry, dashboard, and alerting guidance for Enterprise RAs.
+- [[NVIDIA-AI-Factory-for-Government]] - government and regulated-environment AI factory reference design.
 - [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI implementation path for enterprise AI factory workloads.
 - [[NVIDIA-RTX-PRO-AI-Factory]] - RTX PRO 6000 Blackwell Enterprise RA for air-cooled enterprise workloads.
 - [[NVIDIA-HGX-AI-Factory]] - HGX B300 Enterprise RA for training, inference, analytics, and HPC workloads.

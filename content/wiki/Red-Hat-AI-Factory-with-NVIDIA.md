@@ -2,7 +2,7 @@
 
 **Type:** Deployment Guide
 **Tags:** NVIDIA, Red Hat AI Factory, AI Enterprise, OpenShift AI, NIM, Kubernetes, AI factory, OpenShift, agentic AI
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-Dynamo]], [[NIXL]], [[vLLM]], [[TensorRT-LLM]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[Nemotron]], [[NVIDIA-Cosmos]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[GPUDirect-RDMA]], [[GPU-Direct-Storage]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Enterprise-Reference-Architectures]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-AI-Software-for-Regulated-Environments]], [[NVIDIA-AI-Enterprise-Security]], [[NVIDIA-RTX-PRO-AI-Factory]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-Dynamo]], [[NIXL]], [[vLLM]], [[TensorRT-LLM]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[Nemotron]], [[NVIDIA-Cosmos]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Spectrum-X]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[GPUDirect-RDMA]], [[GPU-Direct-Storage]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/index.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/platform-overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/prerequisites.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/software-overview.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/network-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/gpu-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-ai-workloads-nim-operator.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-nvidia-nim-redhat.html
 **Last Updated:** 2026-04-29
 
@@ -28,9 +28,12 @@ The guide belongs in the same graph as [[NVIDIA-Enterprise-AI-Factory]] and the 
 
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - supported NVIDIA software suite that anchors the Red Hat AI Factory deployment.
+- [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] - branch and compatibility planning for the AI Enterprise/OpenShift stack.
+- [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]] and [[NVIDIA-AI-Enterprise-Cloud-Deployment]] - adjacent installation paths for physical and cloud infrastructure.
 - [[NVIDIA-Enterprise-AI-Factory]] - broader NVIDIA AI factory strategy that this OpenShift deployment pattern operationalizes.
 - [[NVIDIA-Enterprise-Reference-Architectures]] - adjacent NVIDIA-authored AI factory RA family.
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] - generic AI Enterprise software stack comparable to the OpenShift-specific guide.
+- [[NVIDIA-AI-Software-for-Regulated-Environments]] and [[NVIDIA-AI-Enterprise-Security]] - regulated and security context for hardened Red Hat/OpenShift deployments.
 - [[NVIDIA-RTX-PRO-AI-Factory]] - cited by the prerequisites as an example certified hardware reference architecture.
 - [[NVIDIA-NIM]] - model-serving microservice layer used for AI workloads in the guide.
 - [[NIM-for-Large-Language-Models]] - LLM-specific NIM deployment surface behind the Helm, KServe, and NIM Operator examples.

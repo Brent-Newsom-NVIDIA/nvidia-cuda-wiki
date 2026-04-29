@@ -2,6 +2,41 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 45: AI Enterprise lifecycle, deployment, and security planning
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch45-20260429T095125Z`; local Git tag `codex-backup-overnight-pre-batch45-20260429T095125Z`
+
+**Source URLs:** https://docs.nvidia.com/ai-enterprise/index.html, https://docs.nvidia.com/ai-enterprise/lifecycle/latest/index.html, https://docs.nvidia.com/ai-enterprise/deployment/bare-metal/latest/overview.html, https://docs.nvidia.com/ai-enterprise/deployment/vmware/latest/overview.html, https://docs.nvidia.com/ai-enterprise/deployment/cloud/latest/overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-reference-design-for-government-white-paper/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-reference-design-for-government-white-paper/latest/overview.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-software-regulated-environments-white-paper/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-enterprise-security-white-paper/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/planning-resource/optimizing-vm-configuration-ai-inference/latest/introduction.html
+
+**Gap analysis summary:**
+
+- Added durable pages for current AI Enterprise planning surfaces that were visible from the AI Enterprise docs hub but missing from the wiki: lifecycle policy, bare-metal deployment, VMware deployment, cloud deployment, government reference design, regulated-environment software, AI Enterprise security, and topology-aware VM optimization.
+- Kept each source document as one wiki page and did not split individual deployment steps, appendices, branch tables, or white-paper sections into separate pages.
+- Updated the AI Enterprise, Enterprise AI Factory, Enterprise RA/software RA, Red Hat AI Factory, and vGPU pages so the new deployment/security/lifecycle topics are reachable from existing canonical pages.
+- Preserved NVIDIA context first and avoided creating generic Red Hat, VMware, AWS, Azure, GCP, FedRAMP, or KVM pages from mentions in the NVIDIA docs.
+
+**Pages created (8 total):**
+
+- `content/wiki/NVIDIA-AI-Enterprise-Lifecycle-Policy.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Bare-Metal-Deployment.md`
+- `content/wiki/NVIDIA-AI-Enterprise-VMware-Deployment.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Cloud-Deployment.md`
+- `content/wiki/NVIDIA-AI-Factory-for-Government.md`
+- `content/wiki/NVIDIA-AI-Software-for-Regulated-Environments.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Security.md`
+- `content/wiki/Optimizing-VM-Configuration-for-AI-Inference.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Enterprise.md` - added lifecycle, deployment, security, regulated-environment, and government AI factory connections.
+- `content/wiki/NVIDIA-Enterprise-AI-Factory.md` and `content/wiki/NVIDIA-Enterprise-Reference-Architectures.md` - connected government AI factory reference design to AI factory/RA context.
+- `content/wiki/NVIDIA-AI-Enterprise-Software-Reference-Architecture.md` - linked the lifecycle and installation-path pages as operational companions to the software RA.
+- `content/wiki/Red-Hat-AI-Factory-with-NVIDIA.md` - linked lifecycle/security/regulatory and adjacent bare-metal/cloud deployment paths.
+- `content/wiki/NVIDIA-vGPU.md` - connected VMware AI Enterprise deployment and VM topology optimization.
+- `content/index.md` - updated total page count to 420 and indexed the eight new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 44: Red Hat AI Factory with NVIDIA
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch44-20260429T094143Z`; local Git tag `codex-backup-overnight-pre-batch44-20260429T094143Z`

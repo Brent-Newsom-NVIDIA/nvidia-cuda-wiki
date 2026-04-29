@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 412*
+*Total pages: 420*
 
 ---
 
@@ -266,9 +266,16 @@
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
+- [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] — AI Enterprise branch, compatibility, support, and EOL planning policy
+- [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]] — AI Enterprise installation guide for physical servers, drivers, Docker, Kubernetes, and GPUDirect Storage
+- [[NVIDIA-AI-Enterprise-VMware-Deployment]] — AI Enterprise deployment guide for VMware vSphere, vGPU, ESXi, vCenter, and AI Enterprise VMs
+- [[NVIDIA-AI-Enterprise-Cloud-Deployment]] — AI Enterprise deployment guide for AWS, Azure, Google Cloud, OCI, Alibaba, Tencent, VMIs, managed Kubernetes, and OpenShift
 - [[NVIDIA-Enterprise-Reference-Architectures]] — NVIDIA-authored Enterprise RA family for AI factory hardware, software, observability, and deployment patterns
 - [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]] — Full-stack AI Enterprise software RA for single-tenant production inference, fine-tuning, and RAG workloads
 - [[NVIDIA-Enterprise-RA-Observability-Guide]] — Observability guide for Enterprise RA dashboards, alerts, DCGM, NIM Operator, BCM, and NetQ telemetry
+- [[NVIDIA-AI-Enterprise-Security]] — AI Enterprise security white paper for branch strategy, container security, NIM microservices, and software delivery
+- [[NVIDIA-AI-Software-for-Regulated-Environments]] — AI Enterprise regulated-environment white paper for government-ready software and hardened/minimal containers
+- [[NVIDIA-AI-Factory-for-Government]] — Government AI factory reference design for secure, compliant, agentic, and sovereign AI deployments
 - [[Red-Hat-AI-Factory-with-NVIDIA]] — NVIDIA AI Enterprise deployment guide for Red Hat OpenShift AI with NIM, GPU Operator, Network Operator, and NIM Operator
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
 - [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
@@ -296,6 +303,7 @@
 - [[NVIDIA-DOCA-Platform-Framework]] — BlueField DPU provisioning and service orchestration framework for cloud environments
 - [[NVIDIA-Project-GPUd]] — lightweight GPU telemetry, diagnostics, and issue-identification agent listed in NCX
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
+- [[Optimizing-VM-Configuration-for-AI-Inference]] — NVIDIA white paper for topology-aware VM configuration on HGX systems for near bare-metal AI inference performance
 
 ### Agent Platforms
 - [[NVIDIA-AI-Q-Blueprint]] — NVIDIA AI Blueprint for enterprise research agents with retrieval, citations, evaluation, and Enterprise RA sizing context
