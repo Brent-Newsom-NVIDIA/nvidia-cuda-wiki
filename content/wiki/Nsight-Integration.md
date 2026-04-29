@@ -2,7 +2,7 @@
 
 **Type:** Visual Studio extension / Nsight launcher
 **Tags:** NVIDIA, Nsight, Visual Studio, Nsight Integration, Nsight Compute, Nsight Graphics, Nsight Systems, developer tools, profiling, debugging
-**Related:** [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Graphics]], [[Nsight-Systems]], [[Nsight-Visual-Studio-Code-Edition]], [[NVIDIA-CUDA]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Graphics]], [[Nsight-Systems]], [[Nsight-Visual-Studio-Code-Edition]], [[NVIDIA-CUDA]], [[NVIDIA-Developer-Program]]
 **Sources:** https://docs.nvidia.com/nsight-vs-integration/index.html, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html, https://docs.nvidia.com/nsight-vs-integration/release-notes/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
 **Last Updated:** 2026-04-29
 

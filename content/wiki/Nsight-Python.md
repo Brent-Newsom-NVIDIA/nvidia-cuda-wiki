@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Nsight, Python, Profiling, CUDA, Performance, Kernel Analysis
-**Related:** [[CUDA-Python]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]], [[NVIDIA-CUDA]]
+**Related:** [[Nsight-Developer-Tools]], [[CUDA-Python]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nsight-python/index.html, https://docs.nvidia.com/nsight-python/overview/quickstart.html, https://developer.nvidia.com/nsight-python, https://nvidia.github.io/cuda-python/latest/
 **Last Updated:** 2026-04-29
 

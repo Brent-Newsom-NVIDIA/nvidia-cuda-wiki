@@ -2,6 +2,29 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 76: Nsight Developer Tools
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch76-20260429T115205Z`; local Git tag `codex-backup-overnight-pre-batch76-20260429T115205Z`
+
+**Source URLs:** https://docs.nvidia.com/nsight-developer-tools/index.html, https://developer.nvidia.com/tools-overview, https://developer.nvidia.com/tools-tutorials
+
+**Gap analysis summary:**
+
+- Added a canonical suite-level Nsight Developer Tools page after finding current NVIDIA docs and overview pages with no existing wiki page.
+- Kept this as a hub that routes users to the individual Nsight pages instead of duplicating product details already covered elsewhere.
+- Noted current NVIDIA overview items that remain future gap candidates: Nsight Copilot, Nsight Tools JupyterLab Extension, NVTX, Compute Sanitizer API, and legacy-tool pages.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Developer-Tools.md`
+
+**Pages updated:**
+
+- Existing Nsight tool pages were updated with a backlink to `[[Nsight-Developer-Tools]]`.
+- `content/index.md` - updated total page count to 451 and indexed the new hub page.
+
+---
+
 ## 2026-04-29 - Overnight batch 75: Nsight Cloud
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch75-20260429T114938Z`; local Git tag `codex-backup-overnight-pre-batch75-20260429T114938Z`

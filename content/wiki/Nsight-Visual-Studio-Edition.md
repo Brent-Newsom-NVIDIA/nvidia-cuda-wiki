@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Nsight, Visual Studio, CUDA debugging, GPU development, Windows
-**Related:** [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[Nsight-Graphics]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[Nsight-Graphics]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nsight-visual-studio-edition/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html
 **Last Updated:** 2026-04-29
 

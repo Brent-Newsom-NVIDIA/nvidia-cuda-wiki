@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Nsight, Eclipse, CUDA debugging, IDE, Docker, remote debugging
-**Related:** [[CUDA-GDB]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[NVIDIA-CUDA]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Developer-Tools]], [[CUDA-GDB]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[NVIDIA-CUDA]], [[Compute-Sanitizer]]
 **Sources:** https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html, https://docs.nvidia.com/cuda/nsightee-plugins-install-guide/index.html
 **Last Updated:** 2026-04-29
 

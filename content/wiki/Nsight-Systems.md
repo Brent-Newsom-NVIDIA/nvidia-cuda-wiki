@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, System Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Cloud]], [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Cloud]], [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer, https://developer.nvidia.com/nsight-graphics/get-started, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html, https://developer.nvidia.com/nsight-cloud, https://docs.nvidia.com/nsight-systems/UserGuide/#profiling-services-in-the-cloud
 **Last Updated:** 2026-04-29
 

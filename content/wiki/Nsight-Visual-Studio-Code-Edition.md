@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Nsight, Visual Studio Code, CUDA debugging, GPU development, cuda-gdb, cuda-gdbserver, remote debugging, WSL, containers
-**Related:** [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]], [[CUDA-Installation-Guide-Windows]], [[CUDA-on-WSL]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[NVCC]], [[NVIDIA-CUDA]], [[CUDA-Installation-Guide-Windows]], [[CUDA-on-WSL]], [[NVIDIA-Developer-Program]]
 **Sources:** https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/introduction/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/install-setup/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-debugger/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-control-gpu-execution/index.html, https://docs.nvidia.com/nsight-visual-studio-code-edition/latest/cuda-inspect-state/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
 **Last Updated:** 2026-04-29
 

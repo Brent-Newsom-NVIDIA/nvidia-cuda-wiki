@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, Performance Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Python]], [[Nsight-Systems]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-Python]], [[cuda-bindings]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Python]], [[Nsight-Systems]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-Python]], [[cuda-bindings]], [[cuTile]], [[CUDA-GDB]], [[Compute-Sanitizer]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/cuda/cutile-python/quickstart.html, https://nvidia.github.io/cuda-python/cuda-bindings/latest/overview.html, https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer, https://docs.nvidia.com/nsight-developer-tools/index.html, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html
 **Last Updated:** 2026-04-29
 

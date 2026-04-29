@@ -2,7 +2,7 @@
 
 **Type:** Cloud-native profiling toolkit
 **Tags:** NVIDIA, Nsight, Nsight Cloud, Nsight Operator, Nsight Streamer, Kubernetes, containers, Helm, NGC, Nsight Systems, profiling
-**Related:** [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[NGC]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[NGC]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Developer-Program]]
 **Sources:** https://developer.nvidia.com/nsight-cloud, https://docs.nvidia.com/nsight-systems/UserGuide/#profiling-services-in-the-cloud, https://docs.nvidia.com/nsight-developer-tools/index.html, https://github.com/NVIDIA/cloud-native-stack
 **Last Updated:** 2026-04-29
 

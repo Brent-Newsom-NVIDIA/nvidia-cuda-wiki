@@ -2,7 +2,7 @@
 
 **Type:** Developer tool / IDE
 **Tags:** NVIDIA, Nsight, deep learning, ONNX, TensorRT, ONNX Runtime, profiling, model design, inference, TAO, PyTorch, Jetson Thor, DriveOS
-**Related:** [[Nsight-Compute]], [[Nsight-Systems]], [[TensorRT]], [[TensorRT-Model-Optimizer]], [[TensorRT-for-RTX]], [[NVIDIA-TAO]], [[PyTorch]], [[NVIDIA-RTX]], [[NVIDIA-DriveOS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Compute]], [[Nsight-Systems]], [[TensorRT]], [[TensorRT-Model-Optimizer]], [[TensorRT-for-RTX]], [[NVIDIA-TAO]], [[PyTorch]], [[NVIDIA-RTX]], [[NVIDIA-DriveOS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Developer-Program]]
 **Sources:** https://developer.nvidia.com/nsight-dl-designer, https://developer.nvidia.com/nsight-dl-designer/getting-started, https://docs.nvidia.com/nsight-dl-designer/index.html, https://docs.nvidia.com/nsight-dl-designer/UserGuide/index.html
 **Last Updated:** 2026-04-29
 

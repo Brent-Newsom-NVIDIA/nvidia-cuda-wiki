@@ -2,7 +2,7 @@
 
 **Type:** SDK / crash analysis tool
 **Tags:** NVIDIA, Nsight, Aftermath, GPU crash dump, mini-dump, D3D12, DirectX Raytracing, Vulkan, Vulkan Raytracing, TDR, graphics debugging
-**Related:** [[Nsight-Graphics]], [[Nsight-Systems]], [[NVIDIA-RTX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Graphics]], [[Nsight-Systems]], [[NVIDIA-RTX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-Developer-Program]]
 **Sources:** https://developer.nvidia.com/nvidia-aftermath, https://developer.nvidia.com/nsight-aftermath/getting-started, https://docs.nvidia.com/nsight-aftermath/SDK/index.html, https://docs.nvidia.com/nsight-aftermath/ReleaseNotes/index.html
 **Last Updated:** 2026-04-29
 

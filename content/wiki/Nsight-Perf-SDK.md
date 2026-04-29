@@ -2,7 +2,7 @@
 
 **Type:** SDK / graphics profiling toolbox
 **Tags:** NVIDIA, Nsight, Perf SDK, graphics profiling, DirectX, Vulkan, OpenGL, GPU metrics, HUD, timeline, HTML report, CI/CD, Ampere, Blackwell
-**Related:** [[Nsight-Graphics]], [[Nsight-Systems]], [[Nsight-Aftermath-SDK]], [[NVIDIA-RTX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Developer-Program]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-Graphics]], [[Nsight-Systems]], [[Nsight-Aftermath-SDK]], [[NVIDIA-RTX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Ampere-Architecture]], [[NVIDIA-Developer-Program]]
 **Sources:** https://developer.nvidia.com/nsight-perf-sdk, https://developer.nvidia.com/nsight-perfsdk/getting-started/release-note-v2025.5, https://developer.nvidia.com/perfworks, https://docs.nvidia.com/nsight-developer-tools/index.html
 **Last Updated:** 2026-04-29
 
