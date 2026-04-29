@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI-Q, AI Blueprint, agents, deep research, NeMo Agent Toolkit, Nemotron, RAG
-**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
-**Sources:** https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://build.nvidia.com/nvidia/aiq/blueprintcard
+**Related:** [[NVIDIA-AI-Blueprints]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[Nemotron]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]]
+**Sources:** https://docs.nvidia.com/aiq-blueprint/latest/index.html, https://docs.nvidia.com/aiq-blueprint/latest/architecture/overview.html, https://docs.nvidia.com/aiq-blueprint/latest/deployment/kubernetes.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://build.nvidia.com/nvidia/aiq/blueprintcard
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -20,6 +20,7 @@ AI-Q addresses a common enterprise agent problem: simple questions should stay f
 - A clarifier can add human-in-the-loop planning before deeper research.
 - A deep researcher runs multi-phase investigation with planning, retrieval, and citation handling.
 - The system is implemented as a graph-style workflow and documented as compatible with NeMo Agent Toolkit concepts.
+- [[NIM-for-NV-CLIP]] is relevant when AI-Q-style research workflows need multimodal text/image retrieval rather than text-only embedding.
 
 ### Deployment and customization
 AI-Q includes quick-start, installation, architecture, customization, extension, REST API, evaluation, observability, Docker, and Kubernetes documentation. The Kubernetes docs describe Helm-based deployment, NGC image pull secrets, service access, and optional integration with an NVIDIA RAG Blueprint service.
@@ -32,6 +33,7 @@ AI-Q is a canonical bridge between [[NVIDIA-AI-Blueprints]] and the enterprise a
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - NeMo Agent Toolkit is the workflow layer referenced by the AI-Q docs.
 - [[NeMo-Retriever]] - enterprise retrieval and RAG services can provide AI-Q data access.
 - [[NeMo-Retriever-Embedding-NIM]] - embedding NIM for indexing and querying enterprise knowledge.
+- [[NIM-for-NV-CLIP]] - multimodal text/image embedding NIM for research corpora with visual assets.
 - [[NeMo-Retriever-Reranking-NIM]] - reranking NIM for improving citation and context relevance.
 - [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] - multimodal document extraction services for enterprise research corpora.
 - [[NVIDIA-NIM]] - AI-Q uses NVIDIA-hosted or self-hosted model endpoints for inference.

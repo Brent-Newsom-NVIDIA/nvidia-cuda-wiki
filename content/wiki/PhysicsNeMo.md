@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Physics AI, Scientific Computing, Geoscience, Neural Operators, Simulation
-**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[NIM-for-Earth-2-CorrDiff]], [[NIM-for-Earth-2-FourCastNet]], [[PyTorch]], [[NVIDIA-Warp]], [[cuDNN]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html
+**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[NIM-for-Earth-2-CorrDiff]], [[NIM-for-Earth-2-FourCastNet]], [[NIM-for-DoMINO-Automotive-Aero]], [[PyTorch]], [[NVIDIA-Warp]], [[cuDNN]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,6 +23,7 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - Built on PyTorch with Megatron-LM-style distribution for large model training
 - Integration with NVIDIA Earth-2 inference and visualization platform
 - Deployment adjacency with [[NIM-for-Earth-2-CorrDiff]] and [[NIM-for-Earth-2-FourCastNet]] for named Earth-2 inference microservices
+- Deployment adjacency with [[NIM-for-DoMINO-Automotive-Aero]] for automotive external-aerodynamics surrogate inference.
 - Multi-modal training support (combining observational + simulation data)
 - Checkpoint compatibility with Modulus training pipelines
 
@@ -32,6 +33,7 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - Subsurface reservoir simulation with neural operators
 - Ocean current and sea surface temperature forecasting
 - Climate downscaling (coarse-to-fine resolution enhancement)
+- Automotive external-aerodynamics surrogate simulation through [[NIM-for-DoMINO-Automotive-Aero]]
 - Carbon capture and storage (CCS) subsurface modeling
 - Tsunami and flood early warning systems
 
@@ -51,6 +53,7 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - [[Earth-2]] — Earth-2 climate AI platform uses PhysicsNeMo for training its weather/climate models
 - [[NIM-for-Earth-2-CorrDiff]] - deployable CorrDiff NIM for high-resolution weather downscaling.
 - [[NIM-for-Earth-2-FourCastNet]] - deployable FourCastNet NIM for global medium-range forecasting.
+- [[NIM-for-DoMINO-Automotive-Aero]] - deployable PhysicsNeMo NIM for automotive aerodynamic surrogate prediction.
 - [[NVIDIA-Warp]] — Warp differentiable simulation can be used for adjoint-based data assimilation within PhysicsNeMo
 - [[PyTorch]] — PhysicsNeMo is built on PyTorch with distributed training extensions
 - [[NCCL]] — multi-node collective communications for distributed physics-ML training

@@ -2,8 +2,8 @@
 
 **Type:** Model
 **Tags:** NVIDIA, VLM, Vision-Language, Multimodal, LLM, Computer Vision
-**Related:** [[NVIDIA-NeMo]], [[Nemotron]], [[TensorRT-LLM]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-NIM]], [[NVIDIA-EAGLE]]
-**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
+**Related:** [[NVIDIA-NeMo]], [[Nemotron]], [[TensorRT-LLM]], [[NIM-for-Vision-Language-Models]], [[NIM-for-NV-CLIP]], [[NVIDIA-NIM]], [[NVIDIA-EAGLE]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -50,6 +50,7 @@ Most multimodal LLMs suffer from a trade-off: adding vision capability degrades 
 - [[TensorRT-LLM]] — NVLM inference optimized via TensorRT-LLM
 - [[NVIDIA-EAGLE]] — EAGLE is another NVIDIA VLM; NVLM focuses on frontier scale
 - [[NIM-for-Vision-Language-Models]] - current NVIDIA NIM docs surface for VLM deployment, OpenAI-compatible APIs, observability, and model support.
+- [[NIM-for-NV-CLIP]] - multimodal embedding NIM for image/text retrieval workflows that complement VLM reasoning.
 - [[NVIDIA-NIM]] — umbrella inference microservices layer for deploying VLMs
 
 ## Resources

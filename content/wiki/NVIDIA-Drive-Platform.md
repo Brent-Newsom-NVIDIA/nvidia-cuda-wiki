@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, autonomous vehicles, AV, automotive, ADAS, self-driving, robotics, DRIVE AGX, DriveOS, DriveWorks, DRIVE Sim, DRIVE Thor
-**Related:** [[NVIDIA-DRIVE-AGX-Thor]], [[NVIDIA-DriveOS]], [[NVIDIA-DriveWorks]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-Cosmos]], [[NVIDIA-Omniverse]], [[TensorRT]], [[cuDLA]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Jetson-Platform]]
-**Sources:** https://developer.nvidia.com/drive, https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/drive-sim
+**Related:** [[NVIDIA-DRIVE-AGX-Thor]], [[NVIDIA-DriveOS]], [[NVIDIA-DriveWorks]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-Cosmos]], [[NVIDIA-Omniverse]], [[NIM-for-DoMINO-Automotive-Aero]], [[TensorRT]], [[cuDLA]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Jetson-Platform]]
+**Sources:** https://developer.nvidia.com/drive, https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/driveworks, https://developer.nvidia.com/drive/drive-sim, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -28,6 +28,7 @@ Building autonomous vehicles requires solving perception, prediction, planning, 
 
 **DRIVE Development Tools:**
 - **[[NVIDIA-DRIVE-Sim]]:** AV simulation and synthetic-data workflows using Cosmos world foundation models, NuRec neural reconstruction, Cosmos Transfer/Predict, physical AI datasets, and Omniverse-style simulation.
+- **[[NIM-for-DoMINO-Automotive-Aero]]:** adjacent PhysicsNeMo NIM for automotive external-aerodynamics surrogate simulation during vehicle design optimization.
 - **NVIDIA DRIVE documentation:** public and gated docs for DRIVE AGX hardware, DriveOS releases, DriveWorks, TensorRT, cuDNN, and developer tools.
 - **Nsight developer tools:** profiling and graphics/debugging tools exposed through DRIVE documentation.
 
@@ -37,6 +38,7 @@ Building autonomous vehicles requires solving perception, prediction, planning, 
 - Automotive OEM development: BMW, Mercedes-Benz, Volvo, and others using DRIVE for next-gen autonomous features
 - Truck platooning and logistics automation (Torc Robotics, Plus.ai)
 - Training perception models on synthetic data from [[NVIDIA-DRIVE-Sim]], then validating on DRIVE AGX hardware
+- Accelerating automotive external-aerodynamics studies with [[NIM-for-DoMINO-Automotive-Aero]] as a design-time surrogate model
 - Driver monitoring systems (DMS) for regulatory-required attention monitoring
 
 ### Hardware Requirements / Compatibility
@@ -58,6 +60,7 @@ Building autonomous vehicles requires solving perception, prediction, planning, 
 - [[NVIDIA-DRIVE-Sim]] - AV simulation and synthetic-data generation workflow.
 - [[NVIDIA-Cosmos]] - world foundation model platform used by current DRIVE Sim workflows.
 - [[NVIDIA-Omniverse]] - simulation substrate and NuRec/scene reconstruction context for AV workflows.
+- [[NIM-for-DoMINO-Automotive-Aero]] - design-time automotive aerodynamics NIM adjacent to vehicle engineering and simulation.
 - [[TensorRT]] - inference optimization layer used in DriveOS and DRIVE AGX.
 - [[cuDLA]] - DLA/accelerator programming concept relevant to DRIVE SoC inference planning.
 - [[NVIDIA-Jetson-Platform]] - adjacent embedded platform family for non-automotive robotics and edge AI.

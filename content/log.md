@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 31: NIM benchmarking, NV-CLIP, and DoMINO
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch31-20260429T081843Z`; local Git tag `codex-backup-overnight-pre-batch31-20260429T081843Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/benchmarking/llm/latest/overview.html, https://docs.nvidia.com/nim/benchmarking/llm/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nvclip/latest/index.html, https://docs.nvidia.com/nim/nvclip/latest/getting-started.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/index.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/prerequisites.html
+
+**Gap analysis summary:**
+
+- Added the current NVIDIA NIM LLM Benchmarking Guide as a first-class guide page because it has a durable latest docs surface and separate query intent from the LLM NIM deployment page.
+- Added the current NVIDIA NV-CLIP NIM page for multimodal text/image embeddings, semantic image search, and multimodal RAG; connected it to Retriever, VLM, NVLM, AI Data Platform, AI-Q, AI Enterprise, TensorRT, and Triton.
+- Added the current NVIDIA PhysicsNeMo DoMINO Automotive Aero NIM page for automotive external-aerodynamics surrogate simulation; connected it to PhysicsNeMo, Modulus, DRIVE, AI Enterprise, TensorRT, and Triton.
+- Treated build.nvidia-style hosted cards as supporting discovery only; this batch did not create pages from individual build listings or repeated builds.
+- Kept each created page scoped to one durable NVIDIA docs topic, and merged related context into existing pages instead of creating duplicate topic pages.
+
+**Pages created (3 total):**
+
+- `content/wiki/NIM-for-LLM-Benchmarking-Guide.md`
+- `content/wiki/NIM-for-NV-CLIP.md`
+- `content/wiki/NIM-for-DoMINO-Automotive-Aero.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md` - promoted LLM benchmarking, NV-CLIP, and DoMINO into the NIM catalog graph.
+- `content/wiki/NIM-for-Large-Language-Models.md` - linked the LLM benchmarking guide into deployment and production-readiness context.
+- `content/wiki/NeMo-Retriever.md`, `content/wiki/NeMo-Retriever-Embedding-NIM.md`, `content/wiki/NIM-for-Vision-Language-Models.md`, `content/wiki/NVLM.md`, `content/wiki/NVIDIA-AI-Data-Platform.md`, and `content/wiki/NVIDIA-AI-Q-Blueprint.md` - connected NV-CLIP to multimodal embedding, retrieval, RAG, and agent workflows.
+- `content/wiki/PhysicsNeMo.md`, `content/wiki/NVIDIA-Modulus.md`, `content/wiki/NVIDIA-Drive-Platform.md`, and `content/wiki/NVIDIA-DRIVE-AGX-Thor.md` - connected DoMINO Automotive Aero to physics-ML, vehicle design, and automotive simulation context.
+- `content/wiki/NVIDIA-AI-Enterprise.md`, `content/wiki/TensorRT.md`, and `content/wiki/Triton-Inference-Server.md` - connected the new guide/microservices to enterprise support, acceleration, and serving layers.
+- `content/index.md` - updated page count to 361 and indexed the three new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 30: ALCHEMI and expanded BioNeMo NIMs
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch30-20260429T081149Z`; local Git tag `codex-backup-overnight-pre-batch30-20260429T081149Z`

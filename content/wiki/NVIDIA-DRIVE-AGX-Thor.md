@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DRIVE AGX Thor, DRIVE, automotive, Blackwell, DriveOS, autonomous vehicles, ADAS, edge AI
-**Related:** [[NVIDIA-Drive-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DriveWorks]], [[NVIDIA-Blackwell-Architecture]], [[TensorRT]], [[CUDA-for-Tegra]], [[cuDLA]]
-**Sources:** https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/blog/?p=105444, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/introduction/introduction.html
+**Related:** [[NVIDIA-Drive-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DriveWorks]], [[NVIDIA-Blackwell-Architecture]], [[NIM-for-DoMINO-Automotive-Aero]], [[TensorRT]], [[CUDA-for-Tegra]], [[cuDLA]]
+**Sources:** https://developer.nvidia.com/drive/agx, https://developer.nvidia.com/drive/documentation, https://developer.nvidia.com/blog/?p=105444, https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-linux-sdk/introduction/introduction.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,13 +23,14 @@ DRIVE AGX Thor gives automotive developers a reference compute platform for test
 - DriveOS LLM SDK and TensorRT 10 integration are public blog signals for low-latency in-vehicle and AV AI development.
 
 ### NVIDIA context
-DRIVE AGX Thor is the automotive counterpart to [[NVIDIA-Jetson-Thor]]: both bring Thor/Blackwell-era edge AI into physical systems, but DRIVE targets automotive safety, software, sensors, and development-program workflows.
+DRIVE AGX Thor is the automotive counterpart to [[NVIDIA-Jetson-Thor]]: both bring Thor/Blackwell-era edge AI into physical systems, but DRIVE targets automotive safety, software, sensors, and development-program workflows. [[NIM-for-DoMINO-Automotive-Aero]] is adjacent as a design-time automotive aerodynamics surrogate NIM rather than an on-vehicle DRIVE runtime component.
 
 ## Connections
 - [[NVIDIA-Drive-Platform]] - parent autonomous vehicle platform.
 - [[NVIDIA-DriveOS]] - current operating system and SDK foundation for DRIVE AGX Thor.
 - [[NVIDIA-DriveWorks]] - AV middleware and algorithm SDK used on DRIVE AGX platforms.
 - [[NVIDIA-Blackwell-Architecture]] - Thor uses Blackwell-class GPU capabilities.
+- [[NIM-for-DoMINO-Automotive-Aero]] - automotive design/simulation NIM adjacent to DRIVE vehicle-development workflows.
 - [[TensorRT]] - inference optimization layer in DriveOS and DRIVE AGX Thor AI pipelines.
 - [[CUDA-for-Tegra]] - DRIVE AGX Thor is a Tegra-class embedded platform with integrated GPU behavior.
 - [[cuDLA]] - DLA/accelerator concepts are part of DRIVE automotive inference planning, especially for Orin-era platforms.

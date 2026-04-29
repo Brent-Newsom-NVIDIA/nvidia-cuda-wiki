@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, VLM, vision-language model, multimodal AI, visual question answering, image understanding, video understanding, OpenAI-compatible
-**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NVIDIA-EAGLE]], [[Nemotron]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
+**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,11 +23,12 @@ Vision-language models let applications reason over images, diagrams, documents,
 - Hardware/software setup in current docs includes NVIDIA AI Enterprise licensing, NVIDIA drivers, Docker, and CUDA 13.0 guidance.
 
 ### NVIDIA context
-This page bridges NVIDIA model families such as [[NVLM]], [[NVIDIA-EAGLE]], [[Nemotron]], and Cosmos Reason models into the production [[NVIDIA-NIM]] graph. It is also the current docs home for Cosmos Reason NIMs, while [[NIM-for-Cosmos-WFM]] covers Cosmos Predict/Transfer world generation.
+This page bridges NVIDIA model families such as [[NVLM]], [[NVIDIA-EAGLE]], [[Nemotron]], and Cosmos Reason models into the production [[NVIDIA-NIM]] graph. It is also the current docs home for Cosmos Reason NIMs, while [[NIM-for-Cosmos-WFM]] covers Cosmos Predict/Transfer world generation. For multimodal retrieval, [[NIM-for-NV-CLIP]] is the adjacent embedding NIM; VLM NIMs reason over visual inputs, while NV-CLIP embeds text/images for search and RAG.
 
 ## Connections
 - [[NVIDIA-NIM]] - umbrella inference microservices platform.
 - [[NVLM]] and [[NVIDIA-EAGLE]] - NVIDIA multimodal model families adjacent to the VLM NIM surface.
+- [[NIM-for-NV-CLIP]] - multimodal embedding NIM for text/image retrieval before VLM reasoning.
 - [[Nemotron]] - current VLM docs include Nemotron-branded multimodal and parsing models.
 - [[NIM-for-Cosmos-WFM]] - Cosmos WFM NIM covers Predict and Transfer; VLM docs cover Cosmos Reason.
 - [[NIM-for-Cosmos-Embed1]] - embedding NIM for video-text retrieval complements VLM reasoning.

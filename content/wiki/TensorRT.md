@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Inference, Optimization, LLM, AI
-**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Maxine-Audio2Face-2D]], [[NIM-for-Maxine-Eye-Contact]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[cuDNN]], [[cuBLAS]], [[CUTLASS]], [[NCCL]], [[NIM-for-Large-Language-Models]], [[NIM-for-LLM-Benchmarking-Guide]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Maxine-Audio2Face-2D]], [[NIM-for-Maxine-Eye-Contact]], [[NIM-for-Maxine-Active-Speaker-Detection]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-MAISI]], [[NIM-for-VISTA-3D]], [[NIM-for-OpenFold3]], [[NIM-for-Boltz2]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]], [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]], [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]], [[NIM-for-DoMINO-Automotive-Aero]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DriveOS]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/benchmarking/llm/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/physicsnemo/domino-automotive-aero/latest/overview.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 TensorRT is NVIDIA's ecosystem of inference compilers, runtimes, and model optimization tools that deliver low latency and high throughput for production deep learning inference. It can accelerate inference by up to 36x over CPU-only platforms through quantization, layer/tensor fusion, and kernel tuning. TensorRT-LLM extends this specifically to large language model serving, delivering up to 8x speedups for models like GPT-J.
@@ -57,7 +57,8 @@ Moving deep learning models from training to production requires inference-time 
 - [[CUTLASS]] — TensorRT uses CUTLASS-derived kernels for optimized GEMM
 - [[NCCL]] — multi-GPU TensorRT inference uses NCCL for tensor parallelism communication
 - [[NIM-for-Large-Language-Models]] — NIM LLM is the production LLM microservice layer adjacent to TensorRT/TensorRT-LLM.
-- [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]] — current docs name TensorRT as part of the retrieval NIM acceleration stack.
+- [[NIM-for-LLM-Benchmarking-Guide]] — performance guide for measuring LLM services that often rely on NVIDIA optimized inference stacks.
+- [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], and [[NeMo-Retriever-Reranking-NIM]] — current docs name TensorRT as part of the retrieval and NV-CLIP NIM acceleration stack.
 - [[NIM-for-Image-OCR]] and [[NIM-for-Object-Detection]] — extraction NIMs use TensorRT-backed NVIDIA inference acceleration.
 - [[NIM-for-Cosmos-WFM]] and [[NIM-for-Cosmos-Embed1]] — Cosmos NIM docs connect physical AI generation and embedding services to the NVIDIA inference stack.
 - [[NIM-for-Vision-Language-Models]] and [[NIM-for-Visual-Generative-AI]] — multimodal and visual generation NIMs use TensorRT/TensorRT-LLM where model profiles are available.
@@ -70,6 +71,7 @@ Moving deep learning models from training to production requires inference-time 
 - [[NIM-for-OpenFold3]] and [[NIM-for-Boltz2]] — BioNeMo NIMs whose docs reference TensorRT-backed production inference optimization.
 - [[NIM-for-RFdiffusion]] and [[NIM-for-DiffDock]] — BioNeMo design/docking NIMs adjacent to TensorRT-optimized scientific AI inference.
 - [[NIM-for-ALCHEMI-Batched-Geometry-Relaxation]] and [[NIM-for-ALCHEMI-Batched-Molecular-Dynamics]] — ALCHEMI NIMs package MLIP inference into atomistic modeling services.
+- [[NIM-for-DoMINO-Automotive-Aero]] - PhysicsNeMo automotive aerodynamics NIM adjacent to optimized inference deployment.
 - [[FlashInfer]] — FlashInfer provides complementary attention kernels used alongside TensorRT-LLM
 - [[NVIDIA-Isaac-ROS]] - robot perception packages can use TensorRT-optimized models on NVIDIA edge hardware.
 - [[NVIDIA-Jetson-Platform]] - common deployment target for TensorRT inference in embedded robotics.

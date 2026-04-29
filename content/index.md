@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 358*
+*Total pages: 361*
 
 ---
 
@@ -183,6 +183,7 @@
 - [[Earth-2]] — AI-powered Earth climate digital twin; km-scale weather forecasting with neural operators
 - [[NIM-for-Earth-2-CorrDiff]] — Earth-2 NIM for weather downscaling and diffusion correction
 - [[NIM-for-Earth-2-FourCastNet]] — Earth-2 NIM for global short- to medium-range AI weather forecasting
+- [[NIM-for-DoMINO-Automotive-Aero]] — PhysicsNeMo NIM for automotive external-aerodynamics surrogate simulation
 
 ### Robotics & Simulation
 - [[NVIDIA-Isaac]] — robotics development platform: Isaac Sim, Isaac Lab, Isaac ROS, Isaac Perceptor
@@ -218,8 +219,10 @@
 - [[NGC]] — NVIDIA GPU Cloud: curated hub of GPU-optimized containers, models, Helm charts, and SDKs
 - [[NVIDIA-NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
 - [[NIM-for-Large-Language-Models]] — production NIM family for LLM serving with Day 0, Turbo, and Certified offerings
+- [[NIM-for-LLM-Benchmarking-Guide]] — NIM guide for LLM latency, throughput, concurrency, and LoRA benchmark workflows
 - [[NVIDIA-NIM-Operator]] — Kubernetes operator for NIM and NeMo microservice lifecycle, model caching, and autoscaling
 - [[NeMo-Retriever-Embedding-NIM]] — NIM microservice for text/image embeddings in semantic search and RAG workflows
+- [[NIM-for-NV-CLIP]] — NIM microservice for multimodal text/image embeddings, semantic image search, and multimodal RAG
 - [[NeMo-Retriever-Reranking-NIM]] — NIM microservice for reranking retrieved passages by query relevance
 - [[NIM-for-Image-OCR]] — NeMo Retriever OCR microservice for extracting text from images and visual document regions
 - [[NIM-for-Object-Detection]] — NeMo Retriever document object-detection NIM family for page, table, and chart elements
