@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 440*
+*Total pages: 441*
 
 ---
 
@@ -190,6 +190,7 @@
 - [[NVIDIA-Agent-Intelligence-Toolkit]] — Framework-agnostic toolkit for agent workflows, profiling, evaluation, MCP, and A2A
 - [[NVIDIA-Resiliency-Extension]] — NVRx fault-tolerance, restart, checkpointing, and straggler-detection package for distributed PyTorch training
 - [[Megatron-Core]] — composable NVIDIA library for large-scale LLM/MoE/multimodal training primitives and parallelism APIs
+- [[Megatron-Energon]] — Megatron multimodal data loader for WebDataset/JSONL, blending, distributed loading, and resumable training data iteration
 - [[Megatron-LM]] — open-source framework for 3D-parallel LLM pre-training at trillion-parameter scale
 - [[TensorRT-LLM]] — LLM inference optimization: continuous batching, paged KV cache, FP8, TP/PP
 

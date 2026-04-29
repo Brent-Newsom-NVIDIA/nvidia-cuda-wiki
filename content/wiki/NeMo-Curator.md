@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Data Curation, LLM, AI, NeMo, Open Source, Multimodal
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[cuDF]], [[Morpheus]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[Megatron-Energon]], [[cuDF]], [[Morpheus]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (NeMo), https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/safe-synthesizer/about/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html
 **Last Updated:** 2026-04-29
 
@@ -49,6 +49,7 @@ High-quality training data is one of the most important factors in LLM and AI mo
 - [[NeMo-Customizer]] - curated datasets can become customization inputs
 - [[NeMo-Evaluator]] - curated and generated datasets can become benchmark or regression-test inputs
 - [[NeMo-Safe-Synthesizer]] - private synthetic tabular data service for sensitive source data
+- [[Megatron-Energon]] - downstream multimodal data loader for WebDataset/JSONL-style training data after curation.
 - [[cuDF]] — NeMo Curator uses cuDF for GPU-accelerated DataFrame operations in data processing pipelines
 - [[Morpheus]] — Morpheus handles security/streaming data; NeMo Curator handles training data curation
 - [[TensorRT]] — models trained on NeMo Curator-curated data are often deployed via TensorRT

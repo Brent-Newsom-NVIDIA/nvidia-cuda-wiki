@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, Megatron Core, MCore, Megatron-LM, LLM training, distributed training, tensor parallelism, pipeline parallelism, expert parallelism, context parallelism, FP8, MoE
-**Related:** [[Megatron-LM]], [[NeMo-Megatron-Bridge]], [[NVIDIA-Resiliency-Extension]], [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-RL]], [[Nemotron-Training-Recipes]], [[Transformer-Engine]], [[NVIDIA-Optimized-Frameworks]], [[PyTorch]], [[NCCL]], [[TensorRT-LLM]], [[TensorRT-Model-Optimizer]], [[DeepSpeed]]
-**Sources:** https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/parallelism-guide.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/models/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/moe.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/custom_fsdp.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/api-guide/index.html, https://developer.nvidia.com/megatron-core, https://nvidia.github.io/nvidia-resiliency-ext/
+**Related:** [[Megatron-LM]], [[Megatron-Energon]], [[NeMo-Megatron-Bridge]], [[NVIDIA-Resiliency-Extension]], [[NVIDIA-NeMo]], [[NeMo-AutoModel]], [[NeMo-RL]], [[Nemotron-Training-Recipes]], [[Transformer-Engine]], [[NVIDIA-Optimized-Frameworks]], [[PyTorch]], [[NCCL]], [[TensorRT-LLM]], [[TensorRT-Model-Optimizer]], [[DeepSpeed]]
+**Sources:** https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/parallelism-guide.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/megatron_energon.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/models/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/moe.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/custom_fsdp.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/api-guide/index.html, https://developer.nvidia.com/megatron-core, https://nvidia.github.io/nvidia-resiliency-ext/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -27,6 +27,7 @@ This wiki keeps Megatron Core separate because current NVIDIA docs give it its o
 - MoE features including expert parallelism, routing work, and support for architectures such as Mixtral, DeepSeek, and Qwen MoE-style models.
 - Multimodal and hybrid-model support, including vision/multimodal models and state-space or Mamba-style components in the API tree.
 - Distributed checkpointing, datasets, high-performance dataloaders, inference components, quantization hooks, tokenizers, and API-level model building blocks.
+- Multimodal data-loading adjacency through [[Megatron-Energon]], which current Megatron Core docs expose as a feature page.
 - Resiliency ecosystem adjacency through [[NVIDIA-Resiliency-Extension]] for fault tolerance, restart, checkpointing, and straggler detection around long-running training jobs.
 
 ### Installation and runtime
@@ -47,6 +48,7 @@ Do not create separate wiki pages for every Megatron Core API package, routing d
 - [[Nemotron-Training-Recipes]] - public Nemotron recipe stack that uses Megatron Bridge and Megatron Core concepts for pretraining and SFT.
 - [[Transformer-Engine]] - low-precision transformer acceleration library integrated with Megatron Core.
 - [[NVIDIA-Resiliency-Extension]] - job-level resiliency package adjacent to Megatron-scale distributed training.
+- [[Megatron-Energon]] - multimodal dataloader for large-scale Megatron training data pipelines.
 - [[NVIDIA-Optimized-Frameworks]] - container distribution path recommended by current Megatron Core installation docs.
 - [[PyTorch]] and [[NCCL]] - core framework and communication layers underneath Megatron Core.
 - [[TensorRT-LLM]] and [[TensorRT-Model-Optimizer]] - downstream optimization and serving paths for models trained with Megatron-family stacks.

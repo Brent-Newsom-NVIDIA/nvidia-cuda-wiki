@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, LLM, Distributed Training, Transformer, Research, Pre-training
-**Related:** [[Megatron-Core]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
+**Related:** [[Megatron-Core]], [[Megatron-Energon]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Export-Deploy]], [[BioNeMo-Recipes]], [[Transformer-Engine]], [[PyTorch]], [[NCCL]], [[cuDNN]], [[CUTLASS]], [[TensorRT-LLM]], [[FlashInfer]]
 **Sources:** NVIDIA official documentation, github.com/NVIDIA/Megatron-LM, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
 **Last Updated:** 2026-04-29
 
@@ -57,6 +57,7 @@ Megatron-LM addresses the fundamental challenge of training neural network model
 
 ## Connections
 - [[Megatron-Core]] - composable library of transformer, parallelism, optimizer, dataset, checkpointing, and API building blocks used by Megatron-LM.
+- [[Megatron-Energon]] - multimodal data loader used with Megatron-scale training jobs.
 - [[NVIDIA-NeMo]] — NeMo incorporates Megatron-family parallelism concepts as part of its distributed training backbone.
 - [[NeMo-Megatron-Bridge]] - current NeMo library for Hugging Face/Megatron conversion, high-scale recipes, and Megatron Core training paths.
 - [[NeMo-AutoModel]] - Hugging Face-compatible training path that complements Megatron-scale workflows.

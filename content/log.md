@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 65: Megatron Energon
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch65-20260429T112250Z`; local Git tag `codex-backup-overnight-pre-batch65-20260429T112250Z`
+
+**Source URLs:** https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/megatron_energon.html, https://nvidia.github.io/Megatron-Energon/, https://nvidia.github.io/Megatron-Energon/basic/quickstart.html, https://nvidia.github.io/Megatron-Energon/basic/data_prep.html, https://github.com/NVIDIA/Megatron-Energon
+
+**Gap analysis summary:**
+
+- Added a canonical page for Megatron Energon after finding current NVIDIA docs that treat it as Megatron's multimodal data loader.
+- Kept quickstart tutorials, data preparation, WebDataset/JSONL formats, packing/grouping/joining, CLI utilities, and API modules folded into the single page rather than creating subpages from the docs tree.
+- Connected Energon to Megatron Core, Megatron-LM, NeMo, DALI, NeMo Curator, and training resiliency/container context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Megatron-Energon.md`
+
+**Pages updated:**
+
+- `content/wiki/Megatron-Core.md`, `content/wiki/Megatron-LM.md`, and `content/wiki/NVIDIA-NeMo.md` - connected Megatron/NeMo training stack pages to Energon.
+- `content/wiki/NVIDIA-DALI.md` and `content/wiki/NeMo-Curator.md` - linked complementary data-loading and data-curation layers.
+- `content/index.md` - updated total page count to 441 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 64: NVIDIA Resiliency Extension
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch64-20260429T111806Z`; local Git tag `codex-backup-overnight-pre-batch64-20260429T111806Z`
