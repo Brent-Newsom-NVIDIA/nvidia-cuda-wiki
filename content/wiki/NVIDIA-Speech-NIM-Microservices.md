@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NIM, speech AI, ASR, TTS, NMT, Nemotron, Riva, CUDA, TensorRT, Triton
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[Nemotron-ASR-Streaming]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html, https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html
 **Last Updated:** 2026-04-29
 
@@ -15,7 +15,7 @@ NVIDIA Speech NIM Microservices are GPU-accelerated Docker containers for buildi
 Speech applications often need transcription, speech synthesis, and translation as separate scaling units. Speech NIM packages each capability as a container with a Nemotron model family, the NVIDIA inference stack, and unified gRPC/HTTP APIs so applications call the NIM service rather than model internals.
 
 ### Current scope
-- ASR NIM converts streaming or buffered audio into transcripts.
+- ASR NIM converts streaming or buffered audio into transcripts, including model-specific endpoints such as [[Nemotron-ASR-Streaming]].
 - TTS NIM synthesizes speech audio from text.
 - NMT NIM translates text between supported languages.
 - Each NIM is an independent Docker container, so applications deploy only the microservices they need.
@@ -28,6 +28,7 @@ This page is the current canonical wiki entry for the post-migration Speech NIM 
 
 ## Connections
 - [[NVIDIA-ASR-NIM]] - speech-to-text NIM for Parakeet, Canary, Conformer, Whisper, and Nemotron ASR models.
+- [[Nemotron-ASR-Streaming]] - current Nemotron English streaming ASR model surfaced through Build NVIDIA and Speech NIM.
 - [[NVIDIA-TTS-NIM]] - text-to-speech NIM for Magpie TTS models and voice workflows.
 - [[NVIDIA-NMT-NIM]] - neural machine translation NIM for Riva Translate 1.6B.
 - [[NVIDIA-Riva]] - broader NVIDIA speech AI platform and historical docs lineage.

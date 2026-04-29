@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 463*
+*Total pages: 464*
 
 ---
 
@@ -542,6 +542,7 @@
 - [[NVIDIA-EAGLE]] — Efficient multimodal LLMs (EAGLE2); context-aware tiling; synthetic data training pipeline
 
 ### Speech & Audio
+- [[Nemotron-ASR-Streaming]] — NVIDIA English streaming ASR model with cache-aware FastConformer-RNNT architecture
 - [[Parakeet-ASR]] — State-of-the-art English ASR (0.6B–1.1B); FastConformer encoder; CTC/RNN-T/TDT decoding
 - [[NVIDIA-Canary]] — Multilingual ASR + speech translation (EN/ES/DE/FR); encoder-decoder; Canary-1B
 - [[NVIDIA-Fugatto]] — Generative audio transformer: text-to-audio, voice transformation, compositional sound generation

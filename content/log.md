@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 89: Nemotron ASR Streaming
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch89-20260429T123423Z`; local Git tag `codex-backup-overnight-pre-batch89-20260429T123423Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming, https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
+
+**Gap analysis summary:**
+
+- Added a canonical page for the current NVIDIA-published Nemotron ASR Streaming model after finding a Build NVIDIA model card and no dedicated wiki page.
+- Kept it separate from the ASR NIM service page because this page covers the specific 600M-parameter English streaming ASR model and its cache-aware FastConformer-RNNT architecture.
+- Connected the model to ASR NIM, Speech NIM Microservices, Riva, Nemotron, NeMo, Tokkio/ACE voice workflows, audio cleanup/enhancement NIMs, Triton, and TensorRT.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nemotron-ASR-Streaming.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-ASR-NIM.md` - linked the model-specific ASR page from ASR NIM current scope.
+- `content/wiki/NVIDIA-Speech-NIM-Microservices.md` - connected the model to the broader Speech NIM surface.
+- `content/wiki/NVIDIA-Riva.md` - linked the current Riva/Speech NIM streaming ASR model.
+- `content/wiki/Nemotron.md` - linked Nemotron ASR Streaming from the speech-model context.
+- `content/wiki/NVIDIA-NIM.md` - connected the model into the speech/media NIM graph.
+- `content/index.md` - updated total page count to 464 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 88: Nemotron 3 Content Safety
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch88-20260429T123103Z`; local Git tag `codex-backup-overnight-pre-batch88-20260429T123103Z`
