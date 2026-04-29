@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 482*
+*Total pages: 484*
 
 ---
 
@@ -298,6 +298,8 @@
 - [[NIM-for-Large-Language-Models]] — production NIM family for LLM serving with Day 0, Turbo, and Certified offerings
 - [[NIM-for-LLM-Benchmarking-Guide]] — NIM guide for LLM latency, throughput, concurrency, Run:ai sizing, and LoRA benchmark workflows
 - [[NVIDIA-NIM-Operator]] — Kubernetes operator for NIM and NeMo microservice lifecycle, model caching, and autoscaling
+- [[NVIDIA-NIM-on-GKE]] — Google Kubernetes Engine deployment guide for NIM microservices
+- [[NVIDIA-NIM-on-WSL2]] — RTX Windows/WSL2 local deployment guide for downloadable NIM containers
 - [[NeMo-Retriever-Embedding-NIM]] — NIM microservice for text/image embeddings in semantic search and RAG workflows
 - [[Llama-Nemotron-Embed-1B-v2]] — NVIDIA text embedding model for multilingual long-document QA retrieval
 - [[NIM-for-NV-CLIP]] — NIM microservice for multimodal text/image embeddings, semantic image search, and multimodal RAG

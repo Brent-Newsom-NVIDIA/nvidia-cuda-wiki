@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NIM Operator, Kubernetes, NIM, NeMo, inference, microservices, autoscaling, model cache, AI Enterprise
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-on-GKE]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-GPU-Operator]], [[Red-Hat-AI-Factory-with-NVIDIA]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software-Reference-Architecture]], [[NVIDIA-Enterprise-RA-Observability-Guide]], [[NVIDIA-Dynamo]], [[NVIDIA-Data-Flywheel-Blueprint]]
 **Sources:** https://docs.nvidia.com/nim-operator/latest/index.html; https://docs.nvidia.com/nim-operator/latest/quickstart.html; https://docs.nvidia.com/nim/large-language-models/latest/deployment/kubernetes-deployment/nim-operator-deployment.html; https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/deploy-ai-workloads-nim-operator.html
 **Last Updated:** 2026-04-29
 
@@ -21,6 +21,7 @@ The [[Red-Hat-AI-Factory-with-NVIDIA]] deployment guide uses NIM Operator on Ope
 ## Connections
 - [[NVIDIA-NIM]] - NIM Operator is the Kubernetes lifecycle manager for NIM microservices.
 - [[NIM-for-Large-Language-Models]] - current NIM LLM docs include a NIM Operator deployment path.
+- [[NVIDIA-NIM-on-GKE]] - cloud-specific GKE deployment guide adjacent to operator-managed NIM patterns.
 - [[NeMo-Platform]] - NIM Operator can deploy NeMo Customizer, Evaluator, Guardrails, Data Store, and Entity Store.
 - [[NeMo-Retriever]] - retrieval microservices can be deployed through NIM Operator patterns.
 - [[NeMo-Retriever-Embedding-NIM]] - embedding NIMs are a retrieval-domain NIM deployment target.

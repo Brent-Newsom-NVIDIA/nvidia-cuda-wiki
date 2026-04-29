@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, containers, Docker, Kubernetes, GPU, runtime, DevOps, cloud-native, nvidia-docker
-**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-GPU-Operator]], [[NGC]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-GPU-Operator]], [[NGC]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-NIM]], [[NVIDIA-NIM-on-WSL2]], [[NVIDIA-NIM-on-GKE]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -55,6 +55,8 @@ Before NVIDIA Container Toolkit, running GPU code in Docker required either bund
 - [[NVIDIA-AI-Enterprise]] — Container Toolkit is a prerequisite for all AI Enterprise software deployments
 - [[NVIDIA-DCGM]] — DCGM runs in a container managed by GPU Operator; Container Toolkit provides GPU access to the DCGM container
 - [[NVIDIA-NIM]] — NIM microservices are Docker/container-based; Container Toolkit is required for GPU-accelerated NIM deployment
+- [[NVIDIA-NIM-on-WSL2]] - manual setup uses Container Toolkit and CDI to expose GPUs to Podman containers inside WSL2.
+- [[NVIDIA-NIM-on-GKE]] - GKE deployment relies on the broader NVIDIA GPU container runtime stack underneath Kubernetes workloads.
 
 ## Resources
 - [NVIDIA Container Toolkit Documentation](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html)

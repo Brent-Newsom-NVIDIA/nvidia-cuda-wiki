@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 98: NIM deployment guides for WSL2 and GKE
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch98-20260429T131035Z`; local Git tag `codex-backup-overnight-pre-batch98-20260429T131035Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/wsl2/latest/index.html, https://docs.nvidia.com/nim/wsl2/latest/getting-started.html, https://docs.nvidia.com/nim/cloud/gke/latest/index.html, https://docs.nvidia.com/nim/cloud/gke/latest/overview.html, https://docs.nvidia.com/nim/cloud/gke/latest/hardware.html
+
+**Gap analysis summary:**
+
+- Found current NVIDIA deployment guides for NIM on WSL2 and NIM on Google Kubernetes Engine that were not represented as canonical wiki pages.
+- Added one page per deployment guide/topic rather than splitting the WSL2 installer, port-forwarding, benchmarking, or GKE hardware table into separate pages.
+- Connected the new pages to NIM, NIM LLM, NIM Operator, CUDA on WSL, Container Toolkit, GPU Operator, AI Workbench, cloud-native/Kubernetes, and AI Enterprise cloud deployment context.
+
+**Pages created (2 total):**
+
+- `content/wiki/NVIDIA-NIM-on-WSL2.md`
+- `content/wiki/NVIDIA-NIM-on-GKE.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md`
+- `content/wiki/NVIDIA-NIM-Operator.md`
+- `content/wiki/NIM-for-Large-Language-Models.md`
+- `content/wiki/CUDA-on-WSL.md`
+- `content/wiki/NVIDIA-Container-Toolkit.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Cloud-Deployment.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 97: Nemotron 3 VoiceChat model
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch97-20260429T130545Z`; local Git tag `codex-backup-overnight-pre-batch97-20260429T130545Z`

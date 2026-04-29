@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, WSL, Windows, Linux, developer workflow
-**Related:** [[NVIDIA-CUDA]], [[CUDA-Compatibility]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[PyTorch]], [[TensorRT]]
+**Related:** [[NVIDIA-CUDA]], [[CUDA-Compatibility]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-NIM-on-WSL2]], [[PyTorch]], [[TensorRT]]
 **Sources:** https://docs.nvidia.com/cuda/wsl-user-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -26,10 +26,10 @@ CUDA on WSL is important for workstation developers working with [[PyTorch]], [[
 ## Connections
 - [[NVIDIA-Data-Center-GPU-Drivers]] - driver support determines what CUDA workloads can run.
 - [[NVIDIA-Container-Toolkit]] - enables GPU containers in supported WSL workflows.
+- [[NVIDIA-NIM-on-WSL2]] - NIM-specific WSL2 deployment path for RTX Windows systems.
 - [[CUDA-Compatibility]] - driver/toolkit compatibility remains relevant under WSL.
 - [[PyTorch]] - common CUDA-on-WSL development framework.
 - [[TensorRT]] - inference development can start on Windows workstations using Linux tooling.
 
 ## Source Excerpts
 - NVIDIA's CUDA on WSL guide covers GPU support, Linux setup, known limitations, and container-runtime issues.
-

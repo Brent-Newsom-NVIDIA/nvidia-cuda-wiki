@@ -2,7 +2,7 @@
 
 **Type:** Deployment Guide
 **Tags:** NVIDIA, AI Enterprise, cloud, AWS, Azure, Google Cloud, OCI, Alibaba Cloud, Tencent Cloud, Kubernetes, VMI
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-vGPU]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-Enterprise-Licensing-Guide]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-NIM]], [[NVIDIA-NIM-on-GKE]], [[NVIDIA-NGC-Catalog]], [[NGC]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-vGPU]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[Red-Hat-AI-Factory-with-NVIDIA]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/deployment/cloud/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -34,6 +34,7 @@ Use this page for AI Enterprise in public clouds. Use [[NVIDIA-DGX-Cloud]] for N
 - [[NVIDIA-DGX-Cloud]] - NVIDIA cloud AI supercomputing platform adjacent to CSP deployment.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - validated cloud partner infrastructure context.
 - [[NVIDIA-NIM]], [[NGC]], and [[NVIDIA-NGC-Catalog]] - AI Enterprise application software and containers used in cloud deployments.
+- [[NVIDIA-NIM-on-GKE]] - NIM-specific Google Kubernetes Engine deployment guide.
 - [[NVIDIA-Container-Toolkit]] and [[NVIDIA-GPU-Operator]] - container/Kubernetes enablement components.
 - [[NVIDIA-vGPU]] - virtualization layer relevant to cloud GPU instances.
 - [[Red-Hat-AI-Factory-with-NVIDIA]] - OpenShift AI deployment guide when Red Hat AI Factory is the cloud/Kubernetes target.
