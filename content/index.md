@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 460*
+*Total pages: 462*
 
 ---
 
@@ -282,8 +282,10 @@
 - [[NIM-for-LLM-Benchmarking-Guide]] — NIM guide for LLM latency, throughput, concurrency, Run:ai sizing, and LoRA benchmark workflows
 - [[NVIDIA-NIM-Operator]] — Kubernetes operator for NIM and NeMo microservice lifecycle, model caching, and autoscaling
 - [[NeMo-Retriever-Embedding-NIM]] — NIM microservice for text/image embeddings in semantic search and RAG workflows
+- [[Llama-Nemotron-Embed-1B-v2]] — NVIDIA text embedding model for multilingual long-document QA retrieval
 - [[NIM-for-NV-CLIP]] — NIM microservice for multimodal text/image embeddings, semantic image search, and multimodal RAG
 - [[NeMo-Retriever-Reranking-NIM]] — NIM microservice for reranking retrieved passages by query relevance
+- [[Llama-Nemotron-Rerank-1B-v2]] — NVIDIA text reranker for multilingual and cross-lingual retrieval pipelines
 - [[NIM-for-Image-OCR]] — NeMo Retriever OCR microservice for extracting text from images and visual document regions
 - [[NIM-for-Object-Detection]] — NeMo Retriever document object-detection NIM family for page, table, and chart elements
 - [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows

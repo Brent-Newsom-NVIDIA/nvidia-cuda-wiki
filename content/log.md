@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 87: Llama Nemotron text retrieval models
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch87-20260429T122609Z`; local Git tag `codex-backup-overnight-pre-batch87-20260429T122609Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/llama-nemotron-embed-1b-v2/modelcard, https://build.nvidia.com/nvidia/llama-nemotron-embed-1b-v2, https://huggingface.co/nvidia/llama-nemotron-embed-1b-v2, https://build.nvidia.com/nvidia/llama-nemotron-rerank-1b-v2/modelcard, https://build.nvidia.com/nvidia/llama-nemotron-rerank-1b-v2, https://huggingface.co/nvidia/llama-nemotron-rerank-1b-v2
+
+**Gap analysis summary:**
+
+- Added canonical pages for the current NVIDIA-published text embedding and text reranking Llama Nemotron 1B v2 models after finding current Build NVIDIA model cards and no existing wiki pages.
+- Kept the text models separate from the visual-document VL pages because they are distinct model cards and serve distinct text retrieval/reranking workflows.
+- Connected the pair to NeMo Retriever, Embedding/Reranking NIMs, Nemotron, NeMo Customizer, NIM, RAG blueprints, AI-Q, AI Data Platform, cuVS, TensorRT, and Triton.
+
+**Pages created (2 total):**
+
+- `content/wiki/Llama-Nemotron-Embed-1B-v2.md`
+- `content/wiki/Llama-Nemotron-Rerank-1B-v2.md`
+
+**Pages updated:**
+
+- `content/wiki/NeMo-Retriever-Embedding-NIM.md` - linked the text embedding model alongside the VL embedding model.
+- `content/wiki/NeMo-Retriever-Reranking-NIM.md` - linked the text reranker alongside the VL reranker.
+- `content/wiki/NeMo-Retriever.md` - added model-specific text retrieval and reranking coverage.
+- `content/wiki/NVIDIA-NIM.md` - connected the text model pair into the NIM/Retriever graph.
+- `content/wiki/Nemotron.md` - linked the Llama Nemotron text retrieval model pair.
+- `content/wiki/NeMo-Customizer.md` - linked Llama Nemotron Embed 1B v2 from the embedding customization context.
+- `content/wiki/Llama-Nemotron-Embed-VL-1B-v2.md` and `content/wiki/Llama-Nemotron-Rerank-VL-1B-v2.md` - cross-linked text and visual-document retrieval counterparts.
+- `content/wiki/NVIDIA-RAG-Blueprint.md` - added text retrieval/reranking model links beside existing multimodal retrieval coverage.
+- `content/index.md` - updated total page count to 462 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 86: Llama Nemotron Embed VL 1B v2
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch86-20260429T122059Z`; local Git tag `codex-backup-overnight-pre-batch86-20260429T122059Z`

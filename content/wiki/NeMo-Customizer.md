@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NeMo Platform, fine-tuning, customization, LoRA, SFT, DPO, embedding models, NIM
-**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Nemotron]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NeMo-Platform]], [[NVIDIA-NeMo]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[Nemotron]], [[NeMo-Retriever-Embedding-NIM]], [[Llama-Nemotron-Embed-1B-v2]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-AI-Enterprise]]
 **Sources:** https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/models/index.html, https://docs.nvidia.com/nemo/microservices/latest/fine-tune/models/llama-nemotron.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/models/embedding.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -19,7 +19,7 @@ Production AI systems often need task-specific behavior, domain terminology, too
 - Full SFT customization jobs that create new model entities with customized weights.
 - DPO customization and embedding model customization workflows in current docs.
 - Model catalog support for Llama, Llama Nemotron, Phi, Qwen, Mistral, GPT-OSS, and embedding models.
-- Current tested [[Nemotron]] coverage includes Llama 3.1 Nemotron Nano 8B v1, NVIDIA Nemotron Nano 9B v2, NVIDIA Nemotron 3 Nano 30B-A3B BF16, NVIDIA Nemotron 3 Super 120B-A12B BF16, and Llama Nemotron Embedding 1B v2.
+- Current tested [[Nemotron]] coverage includes Llama 3.1 Nemotron Nano 8B v1, NVIDIA Nemotron Nano 9B v2, NVIDIA Nemotron 3 Nano 30B-A3B BF16, NVIDIA Nemotron 3 Super 120B-A12B BF16, and [[Llama-Nemotron-Embed-1B-v2]].
 - Llama Nemotron model specifications include default names, NGC or Hugging Face URIs, NIM deployment references, token limits, training options, and GPU recommendations for LoRA or all-weights fine-tuning.
 - Training dataset formatting, model entity management, job management, metrics checks, and throughput optimization guidance.
 - Deployment handoff through NeMo Platform model deployment services and [[NVIDIA-NIM]].
@@ -37,7 +37,7 @@ For code-level training and post-training, [[NeMo-AutoModel]], [[NeMo-RL]], and 
 - [[NeMo-Export-Deploy]] - framework checkpoint export/deploy path downstream of customization.
 - [[NVIDIA-NIM]] and [[NIM-for-Large-Language-Models]] - deployment target for customized LLM outputs.
 - [[Nemotron]] - NVIDIA model family listed in current customization catalogs.
-- [[NeMo-Retriever-Embedding-NIM]] - embedding model customization connects to retrieval quality and RAG workflows.
+- [[NeMo-Retriever-Embedding-NIM]] and [[Llama-Nemotron-Embed-1B-v2]] - embedding model customization connects to retrieval quality and RAG workflows.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - blueprint loop that uses customization to improve candidate models.
 - [[NVIDIA-AI-Enterprise]] - enterprise support context for NeMo Platform services.
 
