@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, NVSentinel, Kubernetes, GPU monitoring, fault remediation, GPU health, DCGM, operations
-**Related:** [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]], [[NVIDIA-Fleet-Intelligence]], [[NVIDIA-Project-GPUd]], [[NVIDIA-AI-Cluster-Runtime]]
+**Related:** [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]], [[NVIDIA-Fleet-Intelligence]], [[NVIDIA-Project-GPUd]], [[NVIDIA-Resiliency-Extension]], [[NVIDIA-AI-Cluster-Runtime]]
 **Sources:** https://docs.nvidia.com/ncx/index.html; https://github.com/NVIDIA/NVSentinel
 **Last Updated:** 2026-04-29
 
@@ -20,9 +20,9 @@ This page should answer questions about Kubernetes-native GPU break/fix automati
 - [[NVIDIA-DCGM]] - DCGM provides GPU health data consumed by remediation systems.
 - [[NVIDIA-Fleet-Intelligence]] - Fleet Intelligence provides managed fleet health signals adjacent to NVSentinel.
 - [[NVIDIA-Project-GPUd]] - GPUd is a lightweight GPU telemetry agent adjacent to NVSentinel's remediation layer.
+- [[NVIDIA-Resiliency-Extension]] - job-level resiliency layer that complements NVSentinel's Kubernetes node/fault remediation.
 - [[NVIDIA-AI-Cluster-Runtime]] - AICR standardizes the cluster runtime under health/remediation tools.
 
 ## Source Excerpts
 - "GPU Fault Detection and Remediation for Kubernetes"
 - "cordoning faulty nodes, draining workloads, and triggering break-fix workflows"
-

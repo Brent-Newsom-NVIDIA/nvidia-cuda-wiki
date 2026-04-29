@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 64: NVIDIA Resiliency Extension
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch64-20260429T111806Z`; local Git tag `codex-backup-overnight-pre-batch64-20260429T111806Z`
+
+**Source URLs:** https://nvidia.github.io/nvidia-resiliency-ext/, https://github.com/NVIDIA/nvidia-resiliency-ext, https://docs.nvidia.com/nemo/megatron-bridge/latest/training/resiliency.html, https://docs.nvidia.com/mission-control/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for NVIDIA Resiliency Extension (NVRx) after finding current NVIDIA-authored docs and Megatron Bridge integration docs for fault-tolerant distributed training.
+- Kept fault tolerance, in-process restart, async/local checkpointing, straggler detection, distributed logging, examples, and API sections folded into the canonical NVRx page rather than creating subpages from the same docs tree.
+- Connected NVRx to Megatron Bridge, Megatron Core, NeMo RL, Nemotron recipes, Mission Control, DGX, NVSentinel, and fleet-health context so job-level resiliency is distinct from node/fleet remediation.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVIDIA-Resiliency-Extension.md`
+
+**Pages updated:**
+
+- `content/wiki/Megatron-Core.md`, `content/wiki/NeMo-Megatron-Bridge.md`, `content/wiki/NeMo-RL.md`, `content/wiki/NVIDIA-NeMo.md`, and `content/wiki/Nemotron-Training-Recipes.md` - connected NVRx to large-model training workflows.
+- `content/wiki/NVIDIA-Mission-Control.md`, `content/wiki/NVIDIA-DGX.md`, and `content/wiki/NVIDIA-NVSentinel.md` - connected NVRx to AI factory, DGX, and operations/resiliency context.
+- `content/index.md` - updated total page count to 440 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 63: Megatron Core
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch63-20260429T111313Z`; local Git tag `codex-backup-overnight-pre-batch63-20260429T111313Z`

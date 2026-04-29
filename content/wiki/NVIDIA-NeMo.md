@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo, generative AI, AI agents, LLM, speech, multimodal, training, microservices
-**Related:** [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[NeMo-Auditor]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-NemoGuard-NIMs]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[Megatron-Core]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]], [[Nemotron-Training-Recipes]]
+**Related:** [[NeMo-Platform]], [[NeMo-Data-Designer]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Safe-Synthesizer]], [[NeMo-Auditor]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Megatron-Bridge]], [[NeMo-Export-Deploy]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-NemoGuard-NIMs]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Resiliency-Extension]], [[Megatron-Core]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]], [[Nemotron-Training-Recipes]]
 **Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/microservices/latest/data-designer/index.html, https://docs.nvidia.com/nemo/microservices/latest/customizer/index.html, https://docs.nvidia.com/nemo/microservices/latest/evaluator/index.html, https://docs.nvidia.com/nemo/microservices/latest/safe-synthesizer/about/index.html, https://docs.nvidia.com/nemo/microservices/latest/audit/index.html, https://docs.nvidia.com/nemo/automodel/latest/index.html, https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/run/latest/index.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/export-deploy/latest/index.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html, https://docs.nvidia.com/nemotron/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nemo/microservices/26.3.0/guardrails/tutorials/deploy-nemoguard-nims.html
 **Last Updated:** 2026-04-29
 
@@ -52,6 +52,7 @@ NeMo is the lifecycle layer around NVIDIA's model, inference, and AI software po
 - [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-NMT-NIM]] - deployable speech model microservices.
 - [[Megatron-Core]] - composable Megatron library used across high-scale model training stacks.
 - [[Megatron-LM]] - Megatron reference implementation for large-model training and parallelism.
+- [[NVIDIA-Resiliency-Extension]] - fault-tolerance and checkpointing layer incorporated by current Megatron Bridge resiliency docs.
 - [[TensorRT-LLM]] - production inference optimization path for NeMo-trained LLMs.
 - [[Nemotron]] - NVIDIA model family closely tied to NeMo development and deployment workflows.
 - [[Nemotron-Training-Recipes]] - recipe-level view of how NeMo components train and post-train current Nemotron models.

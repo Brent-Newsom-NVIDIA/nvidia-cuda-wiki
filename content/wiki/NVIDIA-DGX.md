@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, hardware, HPC, AI supercomputer, DGX, data center, training, infrastructure
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-DGX-BasePOD]], [[NVIDIA-DGX-B300]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-Quantum]], [[NVIDIA-DGX-Enterprise-Support]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Optimized-Frameworks]], [[NVIDIA-Resiliency-Extension]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-Licensing-Guide]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/products/workstations/dgx-spark/, https://www.nvidia.com/en-us/products/workstations/dgx-station/, https://docs.nvidia.com/dgx-basepod/index.html, https://www.nvidia.com/en-us/data-center/dgx-support/, https://docs.nvidia.com/deeplearning/frameworks/index.html)
 **Last Updated:** 2026-04-29
 
@@ -84,6 +84,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 - [[NVIDIA-MIG]] — partitions supported DGX GPUs for isolated multi-tenant workloads
 - [[NVIDIA-GPU-Operator]] — GPU Operator provisions Kubernetes on DGX SuperPOD nodes
 - [[NVIDIA-Optimized-Frameworks]] — DGX systems commonly run NVIDIA deep learning framework containers from NGC.
+- [[NVIDIA-Resiliency-Extension]] — long-running DGX training jobs can use NVRx for job-level fault tolerance and restart patterns.
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software included with DGX systems for production AI workloads
 - [[NVIDIA-Enterprise-Licensing-Guide]] — explains DGX software bundle treatment for Hopper systems and separate AI Enterprise licensing for Blackwell DGX systems
 

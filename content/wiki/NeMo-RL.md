@@ -2,7 +2,7 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, reinforcement learning, post-training, RLHF, GRPO, DPO, SFT, VLM, LLM, Ray
-**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[Megatron-Core]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-NeMo]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-Megatron-Bridge]], [[NeMo-Run]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[NeMo-Auditor]], [[NVIDIA-Resiliency-Extension]], [[Megatron-Core]], [[Megatron-LM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NIM]], [[NVIDIA-AI-Enterprise]]
 **Sources:** https://docs.nvidia.com/nemo/rl/latest/about/overview.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/
 **Last Updated:** 2026-04-29
 
@@ -33,6 +33,7 @@ NeMo RL extends the NeMo stack beyond supervised customization into reinforcemen
 - [[NeMo-AutoModel]] - PyTorch backend path for broad Hugging Face model coverage.
 - [[NeMo-Megatron-Bridge]] - Megatron Core bridge/training path for larger models and high-throughput recipes.
 - [[NeMo-Run]] - experiment execution layer for repeatable local and cluster runs.
+- [[NVIDIA-Resiliency-Extension]] - job-level resiliency package adjacent to long-running RL/post-training workloads.
 - [[NeMo-Customizer]] - managed customization service adjacent to code-level RL/post-training.
 - [[NeMo-Evaluator]] - evaluation layer for post-training regressions and quality checks.
 - [[NeMo-Auditor]] - safety audit layer for probing aligned or fine-tuned models.
