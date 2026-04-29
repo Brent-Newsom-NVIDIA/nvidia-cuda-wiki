@@ -2,8 +2,8 @@
 
 **Type:** Model / NIM microservice
 **Tags:** NVIDIA, Nemotron, LLM, reasoning, agentic AI, MoE, Mamba, NIM, NeMo, Megatron Bridge, training recipes
-**Related:** [[Nemotron]], [[Nemotron-Training-Recipes]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[TensorRT-LLM]], [[vLLM]], [[Megatron-LM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]]
-**Sources:** https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard; https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/README.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/sft.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html; https://docs.nvidia.com/nemotron/latest/use-case-examples/Simple%20Nemotron-3-Nano%20Usage%20Example/README.html; https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/; https://developer.nvidia.com/nemotron
+**Related:** [[Nemotron]], [[Nemotron-Training-Recipes]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Gym]], [[NeMo-Run]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[TensorRT-LLM]], [[vLLM]], [[Megatron-LM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]]
+**Sources:** https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard; https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/README.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/sft.html; https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html; https://docs.nvidia.com/nemo/gym/latest/index.html; https://docs.nvidia.com/nemotron/latest/use-case-examples/Simple%20Nemotron-3-Nano%20Usage%20Example/README.html; https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/; https://developer.nvidia.com/nemotron
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -40,7 +40,7 @@ Use this page for the text-only Nemotron 3 Nano reasoning model. Use [[Nemotron-
 - [[Nemotron-3-Super]] - larger complementary reasoning model for complex multi-step planning.
 - [[Nemotron-3-Nano-Omni]] - separate omnimodal model for image/video/audio/document/UI understanding.
 - [[NVIDIA-NIM]] and [[NIM-for-Large-Language-Models]] - model serving and deployment context for LLM NIMs.
-- [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Data-Designer]], and [[NeMo-Evaluator]] - training, conversion, post-training, data, and evaluation stack around Nemotron models.
+- [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Gym]], [[NeMo-Data-Designer]], and [[NeMo-Evaluator]] - training, conversion, post-training, rollout collection, data, and evaluation stack around Nemotron models.
 - [[NVIDIA-Agent-Intelligence-Toolkit]] - agent workflow layer that can use Nemotron model endpoints.
 - [[TensorRT-LLM]], [[vLLM]], and [[Megatron-LM]] - inference and training ecosystem adjacent to Nemotron 3 Nano.
 - [[NVIDIA-AI-Q-Blueprint]] and [[NVIDIA-Data-Flywheel-Blueprint]] - enterprise agent and model-optimization workflows where efficient Nemotron models are relevant.

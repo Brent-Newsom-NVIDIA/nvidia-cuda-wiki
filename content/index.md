@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 441*
+*Total pages: 442*
 
 ---
 
@@ -178,6 +178,7 @@
 - [[NeMo-Auditor]] — NeMo Platform early-access service for LLM safety audits
 - [[NeMo-AutoModel]] — Hugging Face-compatible NeMo training library for LLM, VLM, diffusion, and fine-tuning workflows
 - [[NeMo-RL]] — NeMo post-training library for reinforcement learning and alignment workflows
+- [[NeMo-Gym]] — NeMo RL environment and rollout-collection library for verifiable agent training data
 - [[NeMo-Run]] — NeMo experiment configuration, execution, and management tool for local, cluster, and cloud runs
 - [[NeMo-Megatron-Bridge]] — NeMo library for Hugging Face and Megatron conversion, verification, and high-scale training
 - [[NeMo-Export-Deploy]] — NeMo export and deployment library for TensorRT-LLM, vLLM, Triton, and Ray Serve paths

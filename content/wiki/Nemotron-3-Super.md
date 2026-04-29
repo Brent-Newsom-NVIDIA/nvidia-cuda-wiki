@@ -2,8 +2,8 @@
 
 **Type:** Model / NIM microservice
 **Tags:** NVIDIA, Nemotron, LLM, reasoning, agentic AI, coding, long context, MoE, Mamba, NVFP4, NIM, NeMo, training recipes
-**Related:** [[Nemotron]], [[Nemotron-Training-Recipes]], [[Nemotron-3-Nano]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NemoClaw]], [[NVIDIA-OpenShell]], [[TensorRT-LLM]], [[vLLM]], [[Megatron-LM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]]
-**Sources:** https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard; https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/; https://docs.nvidia.com/nemotron/latest/nemotron/super3/README.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/sft.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html; https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html; https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html; https://developer.nvidia.com/nemotron
+**Related:** [[Nemotron]], [[Nemotron-Training-Recipes]], [[Nemotron-3-Nano]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Gym]], [[NeMo-Run]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NemoClaw]], [[NVIDIA-OpenShell]], [[TensorRT-LLM]], [[vLLM]], [[Megatron-LM]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]]
+**Sources:** https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard; https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/; https://docs.nvidia.com/nemotron/latest/nemotron/super3/README.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/sft.html; https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html; https://docs.nvidia.com/nemo/gym/latest/index.html; https://docs.nvidia.com/nemotron/latest/usage-cookbook/Nemotron-3-Super/OpenScaffoldingResources/README.html; https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html; https://developer.nvidia.com/nemotron
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,7 +23,7 @@ Nemotron 3 Super targets the high-capacity side of agentic AI: tasks where the m
 - The model is distributed through build.nvidia.com and Hugging Face, and NVIDIA describes it as packaged as [[NVIDIA-NIM]].
 
 ### Training and tooling
-NVIDIA's technical blog says Super was pretrained on 25T tokens, underwent supervised fine-tuning over a larger post-training corpus, and was post-trained with multi-environment reinforcement learning using [[NeMo-RL]] and NeMo Gym. The same material points to [[NeMo-Data-Designer]], [[NeMo-Evaluator]], and open recipes for reproducibility.
+NVIDIA's technical blog says Super was pretrained on 25T tokens, underwent supervised fine-tuning over a larger post-training corpus, and was post-trained with multi-environment reinforcement learning using [[NeMo-RL]] and [[NeMo-Gym]]. The same material points to [[NeMo-Data-Designer]], [[NeMo-Evaluator]], and open recipes for reproducibility.
 
 [[NeMo-Megatron-Bridge]] has a current Nemotron 3 Super page for Hugging Face/Megatron conversion, pretraining examples, full-parameter fine-tuning, LoRA, PTQ/QAT quantization, and exporting quantized checkpoints back to Hugging Face. Current Bridge docs call out B200/NVFP4-oriented training paths and expert-parallel MoE settings for large-scale work.
 
@@ -40,7 +40,7 @@ Use this page for the Super reasoning model. Use [[Nemotron-3-Nano]] for the sma
 - [[Nemotron-3-Nano]] - complementary smaller Nemotron 3 reasoning model for targeted agent steps.
 - [[Nemotron-3-Nano-Omni]] - omnimodal Nemotron model for multimodal perception before or beside Super planning.
 - [[NVIDIA-NIM]] and [[NIM-for-Large-Language-Models]] - deployment and serving context for LLM NIMs.
-- [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Data-Designer]], and [[NeMo-Evaluator]] - training, post-training, synthetic-data, conversion, and evaluation stack around the model.
+- [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Gym]], [[NeMo-Data-Designer]], and [[NeMo-Evaluator]] - training, post-training, rollout collection, synthetic-data, conversion, and evaluation stack around the model.
 - [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NemoClaw]], and [[NVIDIA-OpenShell]] - agent runtime/tooling context for Nemotron-powered workflows.
 - [[TensorRT-LLM]], [[vLLM]], and [[Megatron-LM]] - inference and large-model training ecosystem around Super.
 - [[NVIDIA-AI-Q-Blueprint]] - enterprise research-agent pattern where high-capacity reasoning models are important scaling levers.

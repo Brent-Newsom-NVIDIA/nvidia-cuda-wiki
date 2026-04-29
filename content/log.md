@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 66: NeMo Gym
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch66-20260429T112617Z`; local Git tag `codex-backup-overnight-pre-batch66-20260429T112617Z`
+
+**Source URLs:** https://docs.nvidia.com/nemo/gym/latest/index.html, https://docs.nvidia.com/nemo/gym/latest/about/overview.html, https://docs.nvidia.com/nemo/gym/latest/about/concepts/index.html, https://docs.nvidia.com/nemo/gym/latest/about/ecosystem.html, https://docs.nvidia.com/nemo/gym/latest/data/index.html, https://docs.nvidia.com/nemo/gym/latest/environment-tutorials/index.html, https://docs.nvidia.com/nemo/gym/latest/training-tutorials/index.html, https://docs.nvidia.com/nemo/gym/latest/reference/index.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for NeMo Gym after finding current NVIDIA docs for RL environments, rollout collection, server components, data formats, training tutorials, and Nemotron model recipes.
+- Kept agent/model/resources server pages, environment tutorials, training tutorials, API reference, model recipes, and FAQ content folded into the single NeMo Gym page rather than creating many subpages from one docs tree.
+- Connected NeMo Gym to NeMo RL, Nemotron training recipes, Nemotron 3 Nano/Super, NeMo Data Designer, NeMo Evaluator, NIM/vLLM/PyTorch, and the broader NeMo graph.
+
+**Pages created (1 total):**
+
+- `content/wiki/NeMo-Gym.md`
+
+**Pages updated:**
+
+- `content/wiki/NeMo-RL.md`, `content/wiki/NVIDIA-NeMo.md`, and `content/wiki/Nemotron-Training-Recipes.md` - connected NeMo Gym to RL/post-training and rollout infrastructure.
+- `content/wiki/Nemotron-3-Nano.md` and `content/wiki/Nemotron-3-Super.md` - linked model recipe and post-training references back to the new canonical NeMo Gym page.
+- `content/index.md` - updated total page count to 442 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 65: Megatron Energon
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch65-20260429T112250Z`; local Git tag `codex-backup-overnight-pre-batch65-20260429T112250Z`
