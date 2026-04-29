@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Machine Learning, Automatic Differentiation, JIT, Python, Scientific Computing
-**Related:** [[cuDNN]], [[cuBLAS]], [[NCCL]], [[CuPy]], [[PyTorch]], [[TensorFlow-GPU]]
-**Sources:** jax.readthedocs.io official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[cuDNN]], [[cuBLAS]], [[NCCL]], [[CuPy]], [[PyTorch]], [[Transformer-Engine]], [[TensorFlow-GPU]]
+**Sources:** jax.readthedocs.io official documentation, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 JAX is an open-source Python library developed by Google DeepMind for high-performance numerical computing and machine learning, with GPU acceleration via CUDA. It provides composable function transformations — `jit` (XLA compilation), `grad` (automatic differentiation), `vmap` (vectorization), and `pmap`/`shard_map` (parallelization) — that transform pure Python/NumPy functions into highly optimized GPU code via the XLA (Accelerated Linear Algebra) compiler. JAX is increasingly popular for ML research due to its functional programming model and efficient GPU/TPU execution.
@@ -37,6 +37,7 @@ JAX solves the problem of writing high-performance numerical code that is simult
 - Reinforcement learning environments requiring differentiable dynamics
 - Multi-host distributed training with explicit sharding control
 - Neural ODE and continuous-time model training
+- Transformer model training with NVIDIA [[Transformer-Engine]] JAX/Flax modules, including FP8, MXFP8, and NVFP4 recipe paths on supported NVIDIA GPUs
 
 ### Hardware Requirements
 - NVIDIA GPU with CUDA Compute Capability 5.2+ (Maxwell minimum)
@@ -55,6 +56,7 @@ JAX solves the problem of writing high-performance numerical code that is simult
 - [[NCCL]] — JAX's `pmap`/`shard_map` multi-device collectives use NCCL
 - [[CuPy]] — CuPy and JAX arrays interoperable via CUDA Array Interface for zero-copy exchange
 - [[PyTorch]] — JAX and PyTorch coexist in many research workflows; DLPack enables tensor sharing
+- [[Transformer-Engine]] — NVIDIA TE supports JAX alongside PyTorch, exposing Flax modules and recipe-aware low-precision autocast.
 - [[TensorFlow-GPU]] — TensorFlow and JAX both use XLA as a compilation backend on GPU
 
 ## Resources

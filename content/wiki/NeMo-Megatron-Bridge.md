@@ -2,8 +2,8 @@
 
 **Type:** Library
 **Tags:** NVIDIA, NeMo, Megatron, Megatron Core, Hugging Face, LLM, VLM, checkpoint conversion, distributed training
-**Related:** [[NVIDIA-NeMo]], [[Megatron-LM]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-AI-Enterprise]]
-**Sources:** https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html
+**Related:** [[NVIDIA-NeMo]], [[Megatron-LM]], [[Transformer-Engine]], [[Nemotron-Training-Recipes]], [[NeMo-AutoModel]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-Export-Deploy]], [[NeMo-Customizer]], [[NeMo-Evaluator]], [[TensorRT-LLM]], [[vLLM]], [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[Nemotron-3-Nano-Omni]], [[NVIDIA-AI-Enterprise]]
+**Sources:** https://docs.nvidia.com/nemo/megatron-bridge/latest/index.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3.html, https://docs.nvidia.com/nemo/megatron-bridge/latest/models/llm/nemotron3-super.html, https://docs.nvidia.com/nemo/rl/latest/about/model-support.html, https://docs.nvidia.com/nemo/rl/latest/about/backends.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -29,6 +29,7 @@ Megatron Bridge is the current NVIDIA-authored bridge between open model checkpo
 ## Connections
 - [[NVIDIA-NeMo]] - parent framework family for training, customization, evaluation, and deployment.
 - [[Megatron-LM]] - distributed transformer-training lineage and Megatron ecosystem adjacency.
+- [[Transformer-Engine]] - low-precision transformer acceleration library adjacent to Bridge's mixed-precision and high-scale training paths.
 - [[Nemotron-Training-Recipes]] - public recipe surface that uses Bridge for Nemotron pretraining and supervised fine-tuning.
 - [[NeMo-AutoModel]] - Hugging Face-compatible PyTorch training path; Megatron Bridge covers higher-scale Megatron Core conversion and recipes.
 - [[NeMo-RL]] - current RL docs use Megatron Bridge for optimal acceleration on top model families.

@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 61: Transformer Engine
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch61-20260429T110508Z`; local Git tag `codex-backup-overnight-pre-batch61-20260429T110508Z`
+
+**Source URLs:** https://docs.nvidia.com/deeplearning/transformer-engine/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/installation.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/introduction/introduction.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/examples/fp8_primer.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/mxfp8/mxfp8.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/features/low_precision_training/nvfp4/nvfp4.html, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/api/pytorch.html, https://docs.nvidia.com/deeplearning/transformer-engine/release-notes/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical page for NVIDIA Transformer Engine after finding it referenced across BioNeMo Recipes, NeMo/AutoModel, Megatron, Hopper, Blackwell, and PyTorch pages without a first-class wiki target.
+- Used current release 2.14 docs and release notes, including PyTorch/JAX support, FP8, MXFP8, NVFP4, NGC/PyPI installation paths, quantized tensor APIs, fused attention, CPU offload, and precision debug tooling.
+- Kept individual API classes, recipes, tutorials, and release-note bullets folded into the single Transformer Engine page rather than creating subpages for every low-precision mode or framework binding.
+
+**Pages created (1 total):**
+
+- `content/wiki/Transformer-Engine.md`
+
+**Pages updated:**
+
+- `content/wiki/BioNeMo-Recipes.md`, `content/wiki/PyTorch.md`, `content/wiki/JAX.md`, `content/wiki/Megatron-LM.md`, `content/wiki/NeMo-AutoModel.md`, `content/wiki/NeMo-Megatron-Bridge.md`, and `content/wiki/Nemotron-Training-Recipes.md` - connected training stack pages to Transformer Engine.
+- `content/wiki/NVIDIA-Hopper-Architecture.md` and `content/wiki/NVIDIA-Blackwell-Architecture.md` - linked hardware Transformer Engine language to the current software library page.
+- `content/wiki/NGC.md` - connected TE to NVIDIA framework container distribution.
+- `content/index.md` - updated total page count to 437 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 60: BioNeMo Recipes training layer
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch60-20260429T105936Z`; local Git tag `codex-backup-overnight-pre-batch60-20260429T105936Z`

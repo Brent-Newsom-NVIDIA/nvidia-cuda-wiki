@@ -1,13 +1,13 @@
 # BioNeMo Recipes
 
 **Type:** Reference implementation
-**Tags:** NVIDIA, BioNeMo, biological foundation models, drug discovery, training recipes, TransformerEngine, PyTorch, FSDP, FP8, life sciences
-**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[PyTorch]], [[Hugging-Face-Accelerate]], [[Megatron-LM]], [[NVIDIA-NeMo]], [[NIM-for-Evo-2]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]]
+**Tags:** NVIDIA, BioNeMo, biological foundation models, drug discovery, training recipes, Transformer Engine, PyTorch, FSDP, FP8, life sciences
+**Related:** [[NVIDIA-BioNeMo]], [[NVIDIA-Clara]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Transformer-Engine]], [[PyTorch]], [[Hugging-Face-Accelerate]], [[Megatron-LM]], [[NVIDIA-NeMo]], [[NIM-for-Evo-2]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], [[NIM-for-DiffDock]]
 **Sources:** https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/recipes/, https://docs.nvidia.com/bionemo-framework/latest/models/index.html, https://docs.nvidia.com/bionemo-framework/latest/models/amplify/, https://docs.nvidia.com/bionemo-framework/latest/models/ESM-2/, https://docs.nvidia.com/bionemo-framework/latest/models/ESM-2/pre-training/, https://docs.nvidia.com/bionemo-framework/latest/models/evo2/, https://docs.nvidia.com/bionemo-framework/latest/models/geneformer/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/amplify/amplify/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/esm2/esm2/, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/geneformer/geneformer/
 **Last Updated:** 2026-04-29
 
 ## Summary
-BioNeMo Recipes is NVIDIA's public reference-implementation layer for scaling biological foundation model training on NVIDIA GPUs. Current docs position it beside the BioNeMo Framework: instead of being a broad batteries-included training framework, the recipes provide optimized model checkpoints, TransformerEngine-based model implementations, and self-contained PyTorch training examples that researchers can adapt for biological AI workloads.
+BioNeMo Recipes is NVIDIA's public reference-implementation layer for scaling biological foundation model training on NVIDIA GPUs. Current docs position it beside the BioNeMo Framework: instead of being a broad batteries-included training framework, the recipes provide optimized model checkpoints, [[Transformer-Engine]]-based model implementations, and self-contained PyTorch training examples that researchers can adapt for biological AI workloads.
 
 ## Detail
 
@@ -17,7 +17,7 @@ The latest BioNeMo docs note that the documentation is being refactored while NV
 [[NVIDIA-BioNeMo]] remains the platform page for the broader life-sciences ecosystem, including BioNeMo Framework and BioNeMo NIMs. This page focuses on the training and reference-code layer.
 
 ### What the recipes provide
-- Hugging Face-compatible `PreTrainedModel` classes that use NVIDIA TransformerEngine layers internally.
+- Hugging Face-compatible `PreTrainedModel` classes that use NVIDIA [[Transformer-Engine]] layers internally.
 - Self-contained Docker recipe directories with training scripts, pinned dependencies, test contracts, and example multi-node launch material.
 - Recipe coverage for PyTorch-native training loops, [[Hugging-Face-Accelerate]], PyTorch Lightning, FSDP2, and megatron-FSDP style scaling.
 - Training-feature examples around BF16, FP8, MXFP8, sequence packing/THD input format, context parallelism, checkpoint conversion, and Hugging Face checkpoint import/export.
@@ -40,6 +40,7 @@ BioNeMo Recipes separates reusable models from runnable recipes:
 - [[NVIDIA-Clara]] - healthcare and life-sciences umbrella that includes BioNeMo, Parabricks, MONAI, and medical imaging AI.
 - [[NVIDIA-AI-Enterprise]] - enterprise support and production software context for BioNeMo and NIM deployment.
 - [[NGC]] - distribution channel for NVIDIA containers, model assets, and private-registry workflows used around BioNeMo.
+- [[Transformer-Engine]] - NVIDIA library providing TE layers, FP8/MXFP8/NVFP4 recipes, and optimized transformer building blocks used by BioNeMo Recipes.
 - [[PyTorch]] - primary deep learning framework underneath the recipe training loops.
 - [[Hugging-Face-Accelerate]] - one of the recipe execution paths for distributed PyTorch training.
 - [[Megatron-LM]] - adjacent NVIDIA scaling lineage for large transformer training and megatron-FSDP style patterns.
@@ -47,7 +48,7 @@ BioNeMo Recipes separates reusable models from runnable recipes:
 - [[NIM-for-Evo-2]], [[NIM-for-ProteinMPNN]], [[NIM-for-RFdiffusion]], and [[NIM-for-DiffDock]] - inference-service pages for durable BioNeMo/NIM topics that are separate from recipe code.
 
 ## Source Excerpts
-- NVIDIA docs describe BioNeMo Recipes as reference implementations for scaling biological foundation model training with TransformerEngine and FSDP.
+- NVIDIA docs describe BioNeMo Recipes as reference implementations for scaling biological foundation model training with Transformer Engine and FSDP.
 - Current BioNeMo Framework model docs list AMPLIFY, ESM-2, Evo2, and Geneformer as available models.
 - Recipe docs distinguish model packages from self-contained training recipes and document Docker/test/benchmark expectations.
 

@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
-**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/
+**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
+**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -36,7 +36,7 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - Reinforcement learning environments
 - Robot policy training in [[NVIDIA-Isaac-Lab]] and humanoid foundation model workflows in [[NVIDIA-Isaac-GR00T]]
 - Scientific ML and physics-informed neural networks
-- Biological foundation model training through [[BioNeMo-Recipes]], including TransformerEngine-backed PyTorch loops and FSDP-style scaling examples
+- Biological foundation model training through [[BioNeMo-Recipes]], including [[Transformer-Engine]]-backed PyTorch loops and FSDP-style scaling examples
 - Production inference via TorchServe or export to TensorRT
 - Multi-node distributed training on NVIDIA DGX/HGX clusters
 
@@ -62,9 +62,10 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - [[CUDA-Python]] — NVIDIA Python CUDA component hub adjacent to PyTorch GPU workflows.
 - [[TensorRT]] — primary export target for optimized production inference from PyTorch models
 - [[NVIDIA-DALI]] — drop-in replacement for PyTorch DataLoader for GPU-accelerated data pipelines
+- [[Transformer-Engine]] - provides optimized PyTorch transformer modules, autocast-style low-precision recipes, and FP8/MXFP8/NVFP4 quantized tensor paths on NVIDIA GPUs.
 - [[CUTLASS]] — custom GEMM kernels can be integrated via PyTorch C++ extensions
 - [[Megatron-LM]] — built on top of PyTorch for large-scale LLM training
-- [[BioNeMo-Recipes]] — uses PyTorch training loops, FSDP-style scaling, and NVIDIA TransformerEngine layers for biological foundation model recipes.
+- [[BioNeMo-Recipes]] — uses PyTorch training loops, FSDP-style scaling, and NVIDIA [[Transformer-Engine]] layers for biological foundation model recipes.
 - [[TensorRT-LLM]] — uses PyTorch models as source for optimized LLM deployment
 - [[NVIDIA-Isaac-Lab]] - robot learning policies are commonly authored and trained in PyTorch.
 - [[NVIDIA-Isaac-GR00T]] - GR00T-N model cards list PyTorch as the runtime integration path.

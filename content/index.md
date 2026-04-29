@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 436*
+*Total pages: 437*
 
 ---
 
@@ -43,6 +43,7 @@
 - [[cuDNN]] — GPU-accelerated primitives for deep neural networks (convolution, attention, pooling)
 - [[TensorRT]] — inference compiler, runtime, and model optimizer for production DNN deployment
 - [[TensorRT-LLM]] — LLM inference optimization library with continuous batching, paged KV cache, FP8
+- [[Transformer-Engine]] — NVIDIA transformer acceleration library for PyTorch/JAX with FP8, MXFP8, and NVFP4 recipes
 - [[CUTLASS]] — open-source C++ template library for custom high-performance GEMM on NVIDIA GPUs
 - [[FlashInfer]] — open-source GPU kernel toolkit for LLM inference (attention, batch decode, sampling)
 - [[NVIDIA-Deep-Learning-Performance]] — NVIDIA guidance for GPU deep learning performance, precision, Tensor Cores, and profiling
@@ -323,7 +324,7 @@
 ### AI Application Platforms
 - [[NVIDIA-AI-Aerial]] — Accelerated AI-RAN platform for 5G/6G wireless network development and simulation
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
-- [[BioNeMo-Recipes]] — NVIDIA reference implementations for scaling biological foundation model training with TransformerEngine and PyTorch
+- [[BioNeMo-Recipes]] — NVIDIA reference implementations for scaling biological foundation model training with Transformer Engine and PyTorch
 - [[NIM-for-AlphaFold2]] — BioNeMo NIM for single-chain AlphaFold2 protein structure prediction and MSA workflows
 - [[NIM-for-AlphaFold2-Multimer]] — BioNeMo NIM for AlphaFold2 multimer protein-complex structure prediction
 - [[NIM-for-OpenFold2]] — BioNeMo NIM for OpenFold2 monomer protein structure prediction with optional MSAs/templates

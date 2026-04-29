@@ -2,8 +2,8 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Blackwell, B100, B200, GB200, NVLink 5, HBM3e, FP4, Tensor Core, AI superchip
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Accelerated-Quantum-Center]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Blackwell-Tuning-Guide]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/blackwell-tuning-guide/index.html, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/tile-ir/latest/sections/stability.html)
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-Spark]], [[NVIDIA-DGX-Station]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Accelerated-Quantum-Center]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Blackwell-Tuning-Guide]], [[CUDA-Tile]], [[CUDA-Tile-IR]], [[cuTile]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[Transformer-Engine]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/blackwell-tuning-guide/index.html, https://developer.nvidia.com/cuda/tile, https://docs.nvidia.com/cuda/tile-ir/latest/sections/stability.html, https://docs.nvidia.com/deeplearning/transformer-engine/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -27,7 +27,7 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 
 **New Architectural Features:**
 - **FP4 Tensor Cores:** First NVIDIA architecture with hardware FP4 support; enables 2× the throughput of FP8 for LLM inference with acceptable accuracy via quantization-aware training
-- **2nd-Generation Transformer Engine:** Dynamically manages FP8/FP4 precision per layer with micro-tensor scaling; maintains model quality while maximizing compute throughput
+- **2nd-Generation Transformer Engine:** Dynamically manages FP8/FP4 precision per layer with micro-tensor scaling; current [[Transformer-Engine]] docs expose MXFP8 and NVFP4 software recipes for Blackwell-class devices.
 - **Decompression Engine:** Hardware-accelerated database query decompression for accelerated analytics (LZ4, snappy, deflate); enables GPU-accelerated database workloads without CPU preprocessing
 - **RAS Engine:** Dedicated Reliability, Availability, and Serviceability engine for production-grade error detection and correction; enables predictive maintenance and live job migration
 - **5th-Generation NVSwitch:** New NVSwitch generation enabling all-to-all bandwidth in GB200 NVL72 at 57.6 TB/s aggregate switching bandwidth
@@ -57,9 +57,9 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 
 ### Language Bindings / APIs
 - Blackwell is fully backward-compatible with all CUDA code targeting sm_80 (Ampere) and sm_90 (Hopper)
-- **New APIs:** FP4 GEMM APIs in cuBLAS; micro-tensor scaling APIs in Transformer Engine; Decompression Engine APIs
+- **New APIs:** FP4 GEMM APIs in cuBLAS; micro-tensor scaling APIs in [[Transformer-Engine]]; Decompression Engine APIs
 - **TensorRT:** Auto-exploits FP4 and FP6 precision modes on Blackwell via updated calibration
-- **PyTorch:** Blackwell support in PyTorch 2.3+; FP4 training support via TransformerEngine
+- **PyTorch:** Blackwell support in PyTorch 2.3+; FP4/NVFP4 training support via [[Transformer-Engine]]
 
 ## Connections
 - [[NVIDIA-Hopper-Architecture]] — Blackwell succeeds Hopper; B200 replaces H100 as NVIDIA's flagship data center GPU
@@ -80,6 +80,7 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 - [[CUDA-Tile]], [[CUDA-Tile-IR]], and [[cuTile]] — current NVIDIA tile-programming surfaces include Blackwell targets for Tensor Core-oriented kernels.
 - [[NVLink]] — NVLink 5 is a defining Blackwell feature; NVSwitch 4 enables GB200 NVL72 rack-scale connectivity
 - [[NVIDIA-Grace-CPU]] — Grace CPU pairs with B200 in GB200 superchip via NVLink-C2C
+- [[Transformer-Engine]] — current software layer for FP8, MXFP8, and NVFP4 transformer recipes on Hopper/Blackwell-era GPUs.
 - [[TensorRT]] — TensorRT exploits Blackwell FP4/FP6 precision and new Tensor Core capabilities for maximum throughput
 - [[CUDA-Graphs]] — CUDA Graphs optimizations align with Blackwell's pipelining capabilities for LLM inference
 - [[CUDA-Compatibility]] — Blackwell CUDA compatibility and tuning guidance are part of current CUDA documentation

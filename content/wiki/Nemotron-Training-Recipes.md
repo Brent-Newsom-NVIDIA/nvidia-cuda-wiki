@@ -2,8 +2,8 @@
 
 **Type:** Workflow
 **Tags:** NVIDIA, Nemotron, training recipes, LLM training, post-training, SFT, RL, Megatron Bridge, NeMo RL, NeMo Run, nemo_runspec
-**Related:** [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-AutoModel]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[Megatron-LM]], [[TensorRT-LLM]], [[vLLM]], [[NVIDIA-NIM]]
-**Sources:** https://docs.nvidia.com/nemotron/latest/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/kit.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/package-readme.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/nemo-run.html, https://docs.nvidia.com/nemotron/latest/runspec/v1/spec.html, https://docs.nvidia.com/nemotron/latest/architecture/README.html, https://docs.nvidia.com/nemotron/latest/architecture/cli-architecture.html
+**Related:** [[Nemotron]], [[Nemotron-3-Nano]], [[Nemotron-3-Super]], [[NVIDIA-NeMo]], [[NeMo-Megatron-Bridge]], [[NeMo-RL]], [[NeMo-Run]], [[NeMo-AutoModel]], [[NeMo-Data-Designer]], [[NeMo-Evaluator]], [[Megatron-LM]], [[Transformer-Engine]], [[TensorRT-LLM]], [[vLLM]], [[NVIDIA-NIM]]
+**Sources:** https://docs.nvidia.com/nemotron/latest/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/README.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/pretrain.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/sft.html, https://docs.nvidia.com/nemotron/latest/nemotron/nano3/rl.html, https://docs.nvidia.com/nemotron/latest/nemotron/super3/rl/index.html, https://docs.nvidia.com/nemotron/latest/nemotron/kit.html, https://docs.nvidia.com/nemotron/latest/nemotron/nvidia-stack.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/package-readme.html, https://docs.nvidia.com/nemotron/latest/nemo_runspec/nemo-run.html, https://docs.nvidia.com/nemotron/latest/runspec/v1/spec.html, https://docs.nvidia.com/nemotron/latest/architecture/README.html, https://docs.nvidia.com/nemotron/latest/architecture/cli-architecture.html, https://docs.nvidia.com/deeplearning/transformer-engine/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -53,7 +53,7 @@ Key recipe points:
 - Stage 1 SFT uses a two-stage loss procedure: token-level output loss first, then sample-level normalization so long outputs do not dominate the batch.
 - Super continues MTP during SFT with a scaled auxiliary loss to preserve speculative-decoding and multi-step prediction benefits.
 - Stage 2 RL uses [[NeMo-RL]] across a larger alignment plan: multi-environment RLVR, SWE-RL for software-engineering tasks, and RLHF with a generative reward model.
-- The recipe surface also includes evaluation and quantization, including FP8 and NVFP4 paths in current docs.
+- The recipe surface also includes evaluation and quantization, including FP8 and NVFP4 paths adjacent to [[Transformer-Engine]] in current NVIDIA low-precision training docs.
 
 ### Operational reading
 For NVIDIA users, this page is the queryable bridge between model identity and how NVIDIA says to reproduce or adapt the models. The model pages answer "what is Nano/Super?"; this page answers "what public NVIDIA recipe stack trains, post-trains, evaluates, and runs those models?"
@@ -70,6 +70,7 @@ For NVIDIA users, this page is the queryable bridge between model identity and h
 - [[NeMo-Data-Designer]] - synthetic-data service adjacent to recipe-driven fine-tuning and evaluation loops.
 - [[NeMo-Evaluator]] - benchmark and regression layer for models produced by recipes.
 - [[Megatron-LM]] - distributed training lineage behind Megatron Core and Bridge scaling concepts.
+- [[Transformer-Engine]] - NVIDIA low-precision transformer library that explains the FP8/MXFP8/NVFP4 precision layer behind current training stacks.
 - [[TensorRT-LLM]], [[vLLM]], and [[NVIDIA-NIM]] - downstream serving paths for trained or post-trained models.
 
 ## Source Excerpts
