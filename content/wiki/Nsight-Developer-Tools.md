@@ -2,7 +2,7 @@
 
 **Type:** Developer tools suite
 **Tags:** NVIDIA, Nsight, developer tools, CUDA, profiling, debugging, correctness, graphics, cloud, IDE, SDK
-**Related:** [[NVIDIA-CUDA]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[Nsight-Cloud]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Integration]], [[Nsight-JupyterLab-Extension]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Aftermath-SDK]], [[Nsight-Perf-SDK]], [[Nsight-Eclipse-Plugins]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[CUPTI]], [[CUDA-Debugger-API]], [[NVIDIA-Developer-Program]]
+**Related:** [[NVIDIA-CUDA]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Graphics]], [[Nsight-Cloud]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Integration]], [[Nsight-JupyterLab-Extension]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Aftermath-SDK]], [[Nsight-Perf-SDK]], [[Nsight-Eclipse-Plugins]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[CUPTI]], [[NVTX]], [[CUDA-Debugger-API]], [[NVIDIA-Developer-Program]]
 **Sources:** https://docs.nvidia.com/nsight-developer-tools/index.html, https://developer.nvidia.com/tools-overview, https://developer.nvidia.com/tools-tutorials
 **Last Updated:** 2026-04-29
 
@@ -18,9 +18,9 @@ For development and debugging, use [[Nsight-Visual-Studio-Edition]] for Microsof
 
 For notebook and Python workflows, use [[Nsight-JupyterLab-Extension]] to profile notebook cells with Nsight Systems or Nsight Compute, and [[Nsight-Python]] for Python-first profiling automation.
 
-For APIs and SDKs, related pages include [[CUPTI]] for profiler/tracer construction, [[CUDA-Debugger-API]] for debugger integration, [[Nsight-Aftermath-SDK]] for graphics crash dump collection, and [[Nsight-Perf-SDK]] for in-application graphics performance metrics.
+For APIs and SDKs, related pages include [[CUPTI]] for profiler/tracer construction, [[NVTX]] for application ranges and annotations, [[CUDA-Debugger-API]] for debugger integration, [[Nsight-Aftermath-SDK]] for graphics crash dump collection, and [[Nsight-Perf-SDK]] for in-application graphics performance metrics.
 
-The current NVIDIA overview also lists Nsight Copilot, NVTX, Compute Sanitizer API, and legacy tools. Those should be added as separate wiki pages only when current NVIDIA-authored public docs justify a canonical page.
+The current NVIDIA overview also lists Nsight Copilot, Compute Sanitizer API, and legacy tools. Those should be added as separate wiki pages only when current NVIDIA-authored public docs justify a canonical page.
 
 ## Connections
 - [[Nsight-Systems]] - high-level system profiler and recommended first stop for profiling.
@@ -30,7 +30,7 @@ The current NVIDIA overview also lists Nsight Copilot, NVTX, Compute Sanitizer A
 - [[Nsight-Visual-Studio-Edition]], [[Nsight-Visual-Studio-Code-Edition]], and [[Nsight-Eclipse-Plugins]] - IDE-oriented CUDA development/debugging paths.
 - [[Nsight-Integration]] - Visual Studio bridge to standalone Nsight tools.
 - [[Nsight-JupyterLab-Extension]] - notebook-cell profiling workflow for Nsight Systems and Nsight Compute.
-- [[CUDA-GDB]], [[Compute-Sanitizer]], [[CUPTI]], and [[CUDA-Debugger-API]] - lower-level CUDA debugger, correctness, tracing, and integration APIs.
+- [[CUDA-GDB]], [[Compute-Sanitizer]], [[CUPTI]], [[NVTX]], and [[CUDA-Debugger-API]] - lower-level CUDA debugger, correctness, annotation, tracing, and integration APIs.
 - [[NVIDIA-Developer-Program]] - support, tutorials, forums, downloads, and developer access for Nsight tools.
 
 ## Resources

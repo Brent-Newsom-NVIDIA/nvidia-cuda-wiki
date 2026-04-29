@@ -2,6 +2,31 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 78: NVTX
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch78-20260429T115704Z`; local Git tag `codex-backup-overnight-pre-batch78-20260429T115704Z`
+
+**Source URLs:** https://nvidia.github.io/NVTX/, https://nvidia.github.io/NVTX/doxygen-c/html/index.html, https://nvidia.github.io/NVTX/python/
+
+**Gap analysis summary:**
+
+- Added a canonical NVTX page after finding current NVIDIA GitHub Pages documentation and no existing wiki page.
+- Kept C/C++ header-only v3 usage, Python package usage, markers, ranges, resource naming/tracking, supported tools, CUDA Toolkit distribution, platform limits, and GPU-code limitation in one page.
+- Connected NVTX to Nsight Developer Tools, Nsight Systems, Nsight Compute, Nsight Graphics, CUPTI, CUDA, Nsight Python, and JupyterLab profiling context.
+
+**Pages created (1 total):**
+
+- `content/wiki/NVTX.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Developer-Tools.md` - promoted NVTX from future gap candidate to linked page.
+- `content/wiki/Nsight-Systems.md`, `content/wiki/Nsight-Compute.md`, and `content/wiki/Nsight-Graphics.md` - linked profiler support for NVTX ranges.
+- `content/wiki/CUPTI.md` - connected CUPTI tracing support for NVTX calls.
+- `content/index.md` - updated total page count to 453 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 77: Nsight JupyterLab Extension
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch77-20260429T115417Z`; local Git tag `codex-backup-overnight-pre-batch77-20260429T115417Z`
