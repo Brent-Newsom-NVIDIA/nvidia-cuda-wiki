@@ -2,7 +2,7 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, HPC SDK, compiler, nvc, nvc++, nvfortran, CUDA, OpenACC, OpenMP, stdpar, Fortran, C, C++
-**Related:** [[NVIDIA-HPC-SDK]], [[CUDA-Fortran]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[NVIDIA-CUDA]], [[NVCC]], [[libNVVM]], [[NVVM-IR]], [[PTX-ISA]], [[CUDA-Unified-Memory]], [[Nsight-Compute]], [[Nsight-Systems]]
+**Related:** [[NVIDIA-HPC-SDK]], [[CUDA-Fortran]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[NVIDIA-CUDA]], [[NVCC]], [[libNVVM]], [[NVVM-IR]], [[PTX-ISA]], [[CUDA-Unified-Memory]], [[Nsight-Compute]], [[Nsight-Systems]]
 **Sources:** https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-user-guide/index.html, https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-ref-guide/index.html, https://docs.nvidia.com/hpc-sdk/index.html
 **Last Updated:** 2026-04-29
 
@@ -29,6 +29,7 @@ Large HPC applications rarely move to GPUs through CUDA C++ alone. The NVIDIA HP
 ## Connections
 - [[NVIDIA-HPC-SDK]] - parent SDK documentation surface.
 - [[CUDA-Fortran]] - explicit Fortran CUDA programming model compiled by `nvfortran`.
+- [[NVIDIA-Fortran-CUDA-Interfaces]] - Fortran modules and interfaces for CUDA library calls.
 - [[NVIDIA-OpenACC]] - directive-based GPU offload path supported by `nvc`, `nvc++`, and `nvfortran`.
 - [[NVIDIA-Stdpar]] - C++ and Fortran standard parallelism path in NVIDIA compilers.
 - [[NVCC]] - CUDA C/C++ compiler driver adjacent to the HPC compiler family.

@@ -2,7 +2,7 @@
 
 **Type:** Programming Model
 **Tags:** NVIDIA, OpenACC, HPC SDK, GPU offload, compiler directives, Fortran, C, C++, CUDA
-**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-Stdpar]], [[NVIDIA-CUDA]], [[CUDA-Unified-Memory]], [[CUDA-Compatibility]], [[CUDA-Graphs]], [[Nsight-Systems]], [[Nsight-Compute]]
+**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[CUDA-Fortran]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[NVIDIA-Stdpar]], [[NVIDIA-CUDA]], [[CUDA-Unified-Memory]], [[CUDA-Compatibility]], [[CUDA-Graphs]], [[Nsight-Systems]], [[Nsight-Compute]]
 **Sources:** https://docs.nvidia.com/hpc-sdk/compilers/openacc-gs/index.html, https://docs.nvidia.com/hpc-sdk/compilers/hpc-compilers-user-guide/index.html, https://docs.nvidia.com/hpc-sdk/index.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,7 @@ This page is intentionally about NVIDIA's OpenACC implementation in the HPC SDK,
 - [[NVIDIA-HPC-SDK]] - distribution and documentation hub.
 - [[NVIDIA-HPC-Compilers]] - compiler family that implements OpenACC.
 - [[CUDA-Fortran]] - explicit Fortran CUDA model that can interoperate with OpenACC workflows.
+- [[NVIDIA-Fortran-CUDA-Interfaces]] - documents how OpenACC host code can pass device pointers to CUDA library calls.
 - [[NVIDIA-Stdpar]] - standard-language parallelism path that can interoperate with OpenACC data directives.
 - [[NVIDIA-CUDA]] - GPU runtime and toolkit layer underneath OpenACC offload.
 - [[CUDA-Unified-Memory]] - memory mode used by OpenACC guidance.

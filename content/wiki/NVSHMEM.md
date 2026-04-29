@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, PGAS, Distributed Computing, Multi-GPU, HPC, OpenSHMEM
-**Related:** [[NVSHMEM4Py]], [[NCCL]], [[NVIDIA-HPC-X]], [[GPUDirect-RDMA]], [[CUDA-Python]], [[cuda-core]], [[CuPy]], [[PyTorch]], [[cuFFT]], [[cuBLAS]], [[AmgX]]
+**Related:** [[NVSHMEM4Py]], [[NCCL]], [[NVIDIA-HPC-X]], [[GPUDirect-RDMA]], [[CUDA-Python]], [[cuda-core]], [[CuPy]], [[PyTorch]], [[cuFFT]], [[cuFFTMp]], [[cuBLAS]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[AmgX]]
 **Sources:** NVIDIA official documentation, https://docs.nvidia.com/nvshmem/, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/index.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/interoperability.html
 **Last Updated:** 2026-04-29
 
@@ -24,7 +24,7 @@ Traditional multi-GPU programming models (MPI, NCCL) require CPU involvement to 
 - Compatible with OpenSHMEM implementations
 - Multi-architecture support: x86 and Arm processors
 - [[NVSHMEM4Py]]: official Python language binding with host APIs, Python device APIs, and CuPy/PyTorch interoperability.
-- Used by cuFFTMp for multi-node FFT communication
+- Used by [[cuFFTMp]] for multi-node FFT communication
 
 ### Use Cases
 - Quantum chromodynamics (QCD) simulations via QUDA library
@@ -50,7 +50,8 @@ Traditional multi-GPU programming models (MPI, NCCL) require CPU involvement to 
 - [[CUDA-Python]] and [[cuda-core]] — NVSHMEM4Py participates in the current Python CUDA stack and uses cuda-core concepts for device/stream setup.
 - [[NVIDIA-HPC-X]] — HPC-X includes SHMEM/PGAS communication libraries that sit near NVSHMEM's GPU-cluster programming model
 - [[GPUDirect-RDMA]] — NVSHMEM relies on GPU-aware RDMA paths for inter-node GPU communication
-- [[cuFFT]] — cuFFTMp uses NVSHMEM for multi-node distributed FFT communication
+- [[cuFFT]] and [[cuFFTMp]] — cuFFTMp uses NVSHMEM for multi-node distributed FFT communication
+- [[NVIDIA-Fortran-CUDA-Interfaces]] - current Fortran CUDA interfaces include NVSHMEM module/interface coverage.
 - [[cuBLAS]] — cuBLASMp multi-node linear algebra uses NVSHMEM for data movement
 - [[AmgX]] — AmgX multi-node solvers use NVSHMEM-like communication patterns
 

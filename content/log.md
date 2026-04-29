@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 92: cuFFTMp and Fortran CUDA interfaces
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch92-20260429T124816Z`; local Git tag `codex-backup-overnight-pre-batch92-20260429T124816Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/cufftmp/index.html, https://docs.nvidia.com/hpc-sdk/compilers/fortran-cuda-interfaces/frontmatter.html, https://docs.nvidia.com/hpc-sdk/compilers/fortran-cuda-interfaces/iface-introduction.html, https://docs.nvidia.com/hpc-sdk/index.html
+
+**Gap analysis summary:**
+
+- Found existing references to cuFFTMp and Fortran CUDA library interfaces without dedicated wiki pages.
+- Added canonical pages for the distributed cuFFT multi-process library and NVIDIA's Fortran interfaces for CUDA libraries.
+- Connected the new pages to HPC SDK, CUDA Fortran, OpenACC, CUDA math libraries, NVSHMEM, NVTX, nvmath-python, and the core CUDA page.
+
+**Pages created (2 total):**
+
+- `content/wiki/cuFFTMp.md`
+- `content/wiki/NVIDIA-Fortran-CUDA-Interfaces.md`
+
+**Pages updated:**
+
+- `content/wiki/cuFFT.md` - converted cuFFTMp references into canonical wikilinks.
+- `content/wiki/NVSHMEM.md` - linked cuFFTMp and Fortran interface coverage.
+- `content/wiki/nvmath-python.md` - linked distributed FFT coverage.
+- `content/wiki/NVIDIA-HPC-SDK.md` - linked cuFFTMp, NVTX, and Fortran CUDA interfaces.
+- `content/wiki/CUDA-Fortran.md` - linked CUDA library interface documentation.
+- `content/wiki/NVIDIA-HPC-Compilers.md` - linked Fortran CUDA library interfaces.
+- `content/wiki/NVIDIA-OpenACC.md` - linked OpenACC host-data CUDA library usage.
+- `content/wiki/NVIDIA-CUDA.md` - connected distributed FFT and Fortran interface coverage.
+- `content/index.md` - updated total page count to 476 and indexed the new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 91: NVIDIA HPC SDK and compiler programming models
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch91-20260429T124248Z`; local Git tag `codex-backup-overnight-pre-batch91-20260429T124248Z`

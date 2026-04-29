@@ -2,12 +2,12 @@
 
 **Type:** Programming Model
 **Tags:** NVIDIA, CUDA, Fortran, HPC SDK, nvfortran, GPU programming, CUDA Runtime API
-**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[NVIDIA-CUDA]], [[NVCC]], [[CUDA-Programming-Guide]], [[CUDA-Runtime-API]], [[CUDA-Unified-Memory]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[libNVVM]], [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSPARSE]]
+**Related:** [[NVIDIA-HPC-SDK]], [[NVIDIA-HPC-Compilers]], [[NVIDIA-Fortran-CUDA-Interfaces]], [[NVIDIA-CUDA]], [[NVCC]], [[CUDA-Programming-Guide]], [[CUDA-Runtime-API]], [[CUDA-Unified-Memory]], [[NVIDIA-OpenACC]], [[NVIDIA-Stdpar]], [[libNVVM]], [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuSPARSE]]
 **Sources:** https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html, https://docs.nvidia.com/hpc-sdk/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
-CUDA Fortran is NVIDIA's Fortran programming model for CUDA GPUs, delivered through `nvfortran` in [[NVIDIA-HPC-SDK]]. It is a small set of Fortran extensions built on the CUDA computing architecture, giving Fortran developers explicit control over GPU device memory, kernels/subroutines, host-to-device transfers, pinned memory, asynchronous transfers, runtime APIs, and CUDA library interfaces.
+CUDA Fortran is NVIDIA's Fortran programming model for CUDA GPUs, delivered through `nvfortran` in [[NVIDIA-HPC-SDK]]. It is a small set of Fortran extensions built on the CUDA computing architecture, giving Fortran developers explicit control over GPU device memory, kernels/subroutines, host-to-device transfers, pinned memory, asynchronous transfers, runtime APIs, and CUDA library interfaces documented separately in [[NVIDIA-Fortran-CUDA-Interfaces]].
 
 ## Detail
 
@@ -31,6 +31,7 @@ CUDA Fortran is part of the HPC SDK compiler stack. It sits beside CUDA C++/[[NV
 ## Connections
 - [[NVIDIA-HPC-SDK]] - distribution and documentation hub for CUDA Fortran.
 - [[NVIDIA-HPC-Compilers]] - `nvfortran` compiler context.
+- [[NVIDIA-Fortran-CUDA-Interfaces]] - CUDA library modules/interfaces used from Fortran code.
 - [[NVIDIA-CUDA]] - CUDA computing architecture and runtime underneath CUDA Fortran.
 - [[CUDA-Runtime-API]] - CUDA Fortran exposes runtime API interfaces.
 - [[CUDA-Unified-Memory]] - managed/unified memory concepts appear in CUDA Fortran and adjacent HPC compiler docs.

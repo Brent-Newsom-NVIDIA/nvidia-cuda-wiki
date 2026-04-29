@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Python, Math, Linear Algebra, FFT, Random Numbers, Open Source
-**Related:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuBLAS]], [[cuFFT]], [[cuRAND]], [[cuDSS]], [[cuTENSOR]]
+**Related:** [[CUDA-Python]], [[cuda-core]], [[cuda-bindings]], [[cuBLAS]], [[cuFFT]], [[cuFFTMp]], [[cuRAND]], [[cuDSS]], [[cuTENSOR]]
 **Sources:** NVIDIA official documentation, https://nvidia.github.io/cuda-python/latest/, https://docs.nvidia.com/cuda/nvmath-python/
 **Last Updated:** 2026-04-29
 
@@ -28,7 +28,7 @@ The current [[CUDA-Python]] hub lists nvmath-python as the Pythonic access layer
 
 ### Supported Operations
 - **Dense Linear Algebra (GEMM)**: wraps cuBLAS and cuBLASDx
-- **Fast Fourier Transforms**: wraps cuFFT, cuFFTDx, cuFFTMp (C2C, C2R, R2C)
+- **Fast Fourier Transforms**: wraps [[cuFFT]], [[cuFFTDx]], [[cuFFTMp]] (C2C, C2R, R2C)
 - **Random Number Generation**: wraps cuRAND (pseudo and quasi-random + distributions)
 - **Sparse Linear Algebra**: wraps cuDSS for direct sparse linear system solving
 
@@ -53,6 +53,7 @@ The current [[CUDA-Python]] hub lists nvmath-python as the Pythonic access layer
 - [[CUDA-Python]] — umbrella that lists nvmath-python as a Python CUDA component.
 - [[cuda-core]] and [[cuda-bindings]] — adjacent CUDA Python layers for runtime/core access and low-level bindings.
 - [[cuFFT]] — nvmath-python wraps cuFFT transform operations
+- [[cuFFTMp]] - distributed FFT support documented as part of nvmath-python FFT coverage.
 - [[cuRAND]] — nvmath-python wraps cuRAND random number generation
 - [[cuDSS]] — nvmath-python wraps cuDSS sparse direct solver
 - [[cuTENSOR]] — tensor operations available via nvmath-python interfaces
