@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html
+**Related:** [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -19,6 +19,9 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - Cosmos Tokenizer: high-compression discrete and continuous video/image tokenizers for efficient video generation
 - Cosmos Transfer: conditioned video generation from input signals (optical flow, depth, segmentation masks) for simulation-to-real transfer
 - Cosmos Curator/LHA: [[NVIDIA-Cosmos-Curator-LHA]] documentation covers video understanding and curation workflows for large-scale physical AI datasets.
+- Cosmos WFM NIM: [[NIM-for-Cosmos-WFM]] deploys Cosmos-Predict1 and Cosmos-Transfer2.5 world foundation models through NIM containers and APIs.
+- Cosmos Embed1 NIM: [[NIM-for-Cosmos-Embed1]] generates joint video-text embeddings for dataset search, semantic deduplication, and physical AI retrieval.
+- Cosmos Reason NIMs: current [[NIM-for-Vision-Language-Models]] docs host Cosmos Reason1/Reason2 serving details.
 - Cosmos Predict: video prediction models for generating future frames from current observations
 - Physical realism: models trained to respect physics, object permanence, and scene continuity
 - Open model weights available under NVIDIA Open Model License
@@ -47,6 +50,10 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 
 ## Connections
 - [[NVIDIA-Omniverse]] — Cosmos integrates with Omniverse Replicator for synthetic data pipelines
+- [[NIM-for-Cosmos-WFM]] - deployable NIM surface for Cosmos Predict and Transfer world models.
+- [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for Cosmos video search and dataset curation.
+- [[NIM-for-Vision-Language-Models]] - current docs surface for Cosmos Reason VLM NIMs.
+- [[NIM-for-Visual-Generative-AI]] - adjacent visual generation NIM family, distinct from physical AI world models.
 - [[NVIDIA-Cosmos-Curator-LHA]] — Curator/LHA provides large-scale video analysis and curation workflows adjacent to Cosmos world models
 - [[NVIDIA-Isaac]] — umbrella robotics platform that consumes Cosmos-generated physical AI data
 - [[NVIDIA-Isaac-Sim]] — simulation environment that can combine 3D scenes with Cosmos-driven synthetic data workflows

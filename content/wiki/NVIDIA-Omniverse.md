@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Simulation, 3D, USD, Digital Twin, Rendering, RTX, Collaboration
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-DRIVE-Sim]], [[Earth-2]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -35,6 +35,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - Virtual production and film/VFX real-time rendering pipelines
 - Building/infrastructure digital twin for facility management
 - Training AI models on photorealistic synthetic data
+- Physical AI video/world generation workflows with [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]]
 - Collaborative 3D design review across distributed teams
 
 ### Hardware Requirements
@@ -54,7 +55,10 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - [[NVIDIA-Isaac-Sim]] — robotics simulation application built on Omniverse Kit, OpenUSD, RTX, and PhysX
 - [[NVIDIA-Isaac-Lab]] — robot-learning workflows use Isaac Sim and Omniverse for simulation and validation
 - [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows use Omniverse/Cosmos simulation infrastructure
+- [[NVIDIA-Cosmos]] and [[NIM-for-Cosmos-WFM]] - world foundation models and deployable NIMs for synthetic physical AI video/world generation.
+- [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for searching and curating physical AI datasets.
 - [[NVIDIA-DRIVE-Sim]] - AV simulation workflows use Omniverse-style reconstruction and synthetic data context.
+- [[Earth-2]] - climate digital twin workflows use Omniverse as a visualization and simulation context.
 - [[NVIDIA-RTX-PRO-Server]] - enterprise RTX server platform for Omniverse, simulation, and digital twin workloads.
 - [[NVIDIA-Warp]] — Warp GPU simulation kernels are used within Omniverse for physics and differentiable simulation
 - [[NVIDIA-Modulus]] — physics-ML models trained with Modulus can be integrated into Omniverse digital twins

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 326*
+*Total pages: 332*
 
 ---
 
@@ -176,6 +176,8 @@
 - [[NVIDIA-Modulus]] — physics-ML framework for PINNs, neural operators (FNO, DeepONet), CFD surrogates
 - [[PhysicsNeMo]] — large-scale geoscience physics-AI training (weather, seismic, reservoir simulation)
 - [[Earth-2]] — AI-powered Earth climate digital twin; km-scale weather forecasting with neural operators
+- [[NIM-for-Earth-2-CorrDiff]] — Earth-2 NIM for weather downscaling and diffusion correction
+- [[NIM-for-Earth-2-FourCastNet]] — Earth-2 NIM for global short- to medium-range AI weather forecasting
 
 ### Robotics & Simulation
 - [[NVIDIA-Isaac]] — robotics development platform: Isaac Sim, Isaac Lab, Isaac ROS, Isaac Perceptor
@@ -267,6 +269,10 @@
 - [[NVIDIA-Capture-SDK]] — capture and stream SDKs for desktop/session capture and NVIDIA media workflows
 - [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
 - [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation
+- [[NIM-for-Cosmos-WFM]] — Cosmos WFM NIM for text/image/video-to-world and video transfer workflows
+- [[NIM-for-Cosmos-Embed1]] — Cosmos Embed1 NIM for joint video-text embeddings and physical AI video retrieval
+- [[NIM-for-Vision-Language-Models]] — VLM NIM family for multimodal reasoning, image understanding, and visual assistants
+- [[NIM-for-Visual-Generative-AI]] — Visual GenAI NIM family for image generation, image editing, and 3D asset generation
 - [[NVIDIA-Jetson-Platform-Services]] — Jetson edge AI microservice layer for video analytics, VLM, detection, storage, and APIs
 - [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
 - [[NVIDIA-Parabricks]] — Clara genomics acceleration platform for next-generation sequencing pipelines

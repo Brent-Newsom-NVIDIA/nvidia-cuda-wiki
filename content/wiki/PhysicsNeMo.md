@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Physics AI, Scientific Computing, Geoscience, Neural Operators, Simulation
-**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[PyTorch]], [[NVIDIA-Warp]], [[cuDNN]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Modulus]], [[Earth-2]], [[NIM-for-Earth-2-CorrDiff]], [[NIM-for-Earth-2-FourCastNet]], [[PyTorch]], [[NVIDIA-Warp]], [[cuDNN]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/physicsnemo, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 PhysicsNeMo (formerly part of Modulus) is NVIDIA's open-source framework specifically designed for large-scale physics AI model training for geoscience, subsurface modeling, and industrial physics applications. It extends the NVIDIA Modulus physics-ML ecosystem with specialized architectures, datasets, and training workflows for Earth science domains including seismic imaging, weather modeling, reservoir simulation, and ocean dynamics. PhysicsNeMo is the framework powering NVIDIA's Earth-2 climate AI initiative's large-scale model training.
@@ -22,6 +22,7 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 - Physics-constrained loss functions for atmospheric, oceanic, and subsurface domains
 - Built on PyTorch with Megatron-LM-style distribution for large model training
 - Integration with NVIDIA Earth-2 inference and visualization platform
+- Deployment adjacency with [[NIM-for-Earth-2-CorrDiff]] and [[NIM-for-Earth-2-FourCastNet]] for named Earth-2 inference microservices
 - Multi-modal training support (combining observational + simulation data)
 - Checkpoint compatibility with Modulus training pipelines
 
@@ -48,6 +49,8 @@ PhysicsNeMo addresses the need for scalable, production-grade training of very l
 ## Connections
 - [[NVIDIA-Modulus]] — PhysicsNeMo is the geoscience-focused evolution of the Modulus framework
 - [[Earth-2]] — Earth-2 climate AI platform uses PhysicsNeMo for training its weather/climate models
+- [[NIM-for-Earth-2-CorrDiff]] - deployable CorrDiff NIM for high-resolution weather downscaling.
+- [[NIM-for-Earth-2-FourCastNet]] - deployable FourCastNet NIM for global medium-range forecasting.
 - [[NVIDIA-Warp]] — Warp differentiable simulation can be used for adjoint-based data assimilation within PhysicsNeMo
 - [[PyTorch]] — PhysicsNeMo is built on PyTorch with distributed training extensions
 - [[NCCL]] — multi-node collective communications for distributed physics-ML training

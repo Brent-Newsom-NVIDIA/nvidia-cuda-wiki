@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 25: Cosmos, Earth-2, and multimodal NIM coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch25-20260429T073813Z`; local Git tag `codex-backup-overnight-pre-batch25-20260429T073813Z`
+
+**Source URLs:** https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos/latest/index.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/earth-2/corrdiff/latest/overview.html, https://docs.nvidia.com/nim/earth-2/fourcastnet/latest/overview.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/visual-genai/latest/overview.html, https://docs.nvidia.com/nim/visual-genai/latest/index.html
+
+**Gap analysis summary:**
+
+- Added current first-class NIM pages for Cosmos WFM, Cosmos Embed1, Earth-2 CorrDiff, Earth-2 FourCastNet, Vision Language Models, and Visual Generative AI.
+- Kept Cosmos WFM, Cosmos Embed1, Earth-2 weather models, VLM serving, and Visual GenAI as distinct pages because each has its own current NVIDIA documentation surface and query intent.
+- Linked Cosmos WFM and Cosmos Embed1 into Cosmos, Omniverse, Isaac, Cosmos Curator, AI Data Platform, NIM, TensorRT, and Triton instead of splitting individual model cards or build.nvidia listings into many pages.
+- Linked Earth-2 CorrDiff and FourCastNet into Earth-2, PhysicsNeMo, Modulus, NIM, AI Enterprise, and Omniverse so climate AI deployment is queryable from both science and serving angles.
+- Added VLM and Visual GenAI NIMs as durable category pages while avoiding separate pages for every individual model listed in current VLM/Visual GenAI docs or build.nvidia.
+
+**Pages created (6 total):**
+
+- `content/wiki/NIM-for-Cosmos-WFM.md`
+- `content/wiki/NIM-for-Cosmos-Embed1.md`
+- `content/wiki/NIM-for-Earth-2-CorrDiff.md`
+- `content/wiki/NIM-for-Earth-2-FourCastNet.md`
+- `content/wiki/NIM-for-Vision-Language-Models.md`
+- `content/wiki/NIM-for-Visual-Generative-AI.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-NIM.md` - promoted physical AI, Earth-2, VLM, and Visual GenAI NIM categories into the NIM graph.
+- `content/wiki/NVIDIA-Cosmos.md` and `content/wiki/NVIDIA-Cosmos-Curator-LHA.md` - linked Cosmos generation, embedding, and video curation workflows.
+- `content/wiki/Earth-2.md` and `content/wiki/PhysicsNeMo.md` - connected named Earth-2 NIMs to climate AI training and inference.
+- `content/wiki/NVIDIA-AI-Data-Platform.md` and `content/wiki/NVIDIA-AI-Blueprints.md` - connected physical AI video search, multimodal reasoning, and visual generation to data/blueprint workflows without over-ingesting build.nvidia listings.
+- `content/wiki/NVLM.md` - connected NVIDIA VLM model coverage to the current NIM for VLM deployment surface.
+- `content/wiki/TensorRT.md`, `content/wiki/Triton-Inference-Server.md`, and `content/wiki/NVIDIA-AI-Enterprise.md` - linked the new NIM categories to serving, acceleration, and enterprise deployment layers.
+- `content/wiki/NVIDIA-Omniverse.md` and `content/wiki/NVIDIA-Isaac.md` - connected physical AI simulation and robotics workflows to Cosmos NIM generation and embedding pages.
+- `content/index.md` - updated page count to 332 and indexed the new NIM pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 24: BioNeMo NIM structure and sequence models
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch24-20260429T073330Z`; local Git tag `codex-backup-overnight-pre-batch24-20260429T073330Z`

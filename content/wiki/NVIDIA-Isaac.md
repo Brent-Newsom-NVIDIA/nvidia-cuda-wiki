@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Robotics, Simulation, ROS, Perception, Edge AI, Physical AI
-**Related:** [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[TensorRT]]
-**Sources:** https://developer.nvidia.com/isaac/, https://docs.isaacsim.omniverse.nvidia.com/latest/index.html, https://isaac-sim.github.io/IsaacLab/develop/index.html, https://nvidia-isaac-ros.github.io/, https://developer.nvidia.com/isaac/gr00t
+**Related:** [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Warp]], [[NVIDIA-Omniverse]], [[TensorRT]]
+**Sources:** https://developer.nvidia.com/isaac/, https://docs.isaacsim.omniverse.nvidia.com/latest/index.html, https://isaac-sim.github.io/IsaacLab/develop/index.html, https://nvidia-isaac-ros.github.io/, https://developer.nvidia.com/isaac/gr00t, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,7 +21,7 @@ Isaac addresses the sim-to-real gap in robotics by combining photorealistic GPU 
 - [[NVIDIA-Isaac-GR00T]]: humanoid robot foundation model platform and data pipelines for general-purpose robot skills
 - Isaac Perceptor: stereo depth, visual odometry, 3D object detection, semantic segmentation for autonomous mobile robots (AMR)
 - Isaac Manipulator: cuRobo GPU-accelerated motion planning, grasp pose estimation, dexterous manipulation
-- Synthetic data generation with Isaac Sim, Replicator, Cosmos, and domain randomization
+- Synthetic data generation with Isaac Sim, Replicator, Cosmos, [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], and domain randomization
 - RTX ray tracing for photorealistic rendering of simulated environments
 - Import support for URDF, MJCF, USD robot descriptions
 - OpenUSD-based scene composition and asset management
@@ -54,6 +54,8 @@ Isaac addresses the sim-to-real gap in robotics by combining photorealistic GPU 
 - [[NVIDIA-Isaac-ROS]] - deployment-side ROS 2 acceleration package family.
 - [[NVIDIA-Isaac-GR00T]] - humanoid robotics foundation model and data-pipeline platform.
 - [[NVIDIA-Cosmos]] - world foundation models and synthetic data workflows for physical AI.
+- [[NIM-for-Cosmos-WFM]] - deployable Cosmos Predict/Transfer models for world/video generation workflows.
+- [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for robotics dataset search, deduplication, and curation.
 - [[NVIDIA-Jetson-Platform]] - primary NVIDIA edge compute family for robot deployment.
 - [[NVIDIA-Omniverse]] - Isaac Sim is built on Omniverse Kit, RTX, and OpenUSD.
 - [[NVIDIA-Warp]] - GPU simulation and differentiable physics technology adjacent to Isaac Lab and Newton workflows.
