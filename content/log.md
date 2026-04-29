@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 71: Nsight Aftermath SDK
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch71-20260429T113955Z`; local Git tag `codex-backup-overnight-pre-batch71-20260429T113955Z`
+
+**Source URLs:** https://developer.nvidia.com/nvidia-aftermath, https://developer.nvidia.com/nsight-aftermath/getting-started, https://docs.nvidia.com/nsight-aftermath/SDK/index.html, https://docs.nvidia.com/nsight-aftermath/ReleaseNotes/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical page for Nsight Aftermath SDK after finding current NVIDIA docs and no existing wiki page.
+- Kept GPU crash dump creation/analysis, crash dump monitor/viewer, SDK code samples, event markers, release notes, limitations, system requirements, and graphics API coverage folded into one page.
+- Connected Aftermath to Nsight Graphics, Nsight Systems, RTX, modern GPU architecture context, and Developer Program support. Kept it separate from Nsight Graphics because NVIDIA lists it as a separate SDK/product.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Aftermath-SDK.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Graphics.md` - connected graphics crash dump inspection to Aftermath.
+- `content/wiki/NVIDIA-RTX.md` - connected RTX graphics crash diagnosis to Aftermath.
+- `content/index.md` - updated total page count to 446 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 70: Nsight Graphics
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch70-20260429T113737Z`; local Git tag `codex-backup-overnight-pre-batch70-20260429T113737Z`

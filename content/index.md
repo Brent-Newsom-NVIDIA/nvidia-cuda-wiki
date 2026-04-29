@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 445*
+*Total pages: 446*
 
 ---
 
@@ -141,6 +141,7 @@
 - [[CUDA-Driver-API]] — Lower-level CUDA API for contexts, modules, memory, and explicit control
 - [[CUDA-Math-API]] — device-side math functions (sin, cos, exp, FP16/BF16 intrinsics) for CUDA kernels
 - [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
+- [[Nsight-Aftermath-SDK]] — SDK for collecting and analyzing GPU crash mini-dumps from D3D12/Vulkan applications
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
 - [[Nsight-Deep-Learning-Designer]] — visual ONNX model design and inference profiling IDE with TensorRT/ONNX Runtime profilers
 - [[Nsight-Graphics]] — standalone graphics debugger/profiler for GPU Trace, frame capture, shaders, ray tracing, DRIVE, and Jetson
