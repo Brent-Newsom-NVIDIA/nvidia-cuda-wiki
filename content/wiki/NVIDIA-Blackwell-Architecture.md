@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Blackwell, B100, B200, GB200, NVLink 5, HBM3e, FP4, Tensor Core, AI superchip
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]]
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-DGX]], [[NVIDIA-DGX-SuperPOD]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -70,6 +70,7 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 - [[CUDA-Graphs]] — CUDA Graphs optimizations align with Blackwell's pipelining capabilities for LLM inference
 - [[CUDA-Compatibility]] — Blackwell CUDA compatibility and tuning guidance are part of current CUDA documentation
 - [[NVIDIA-Attestation]] — confidential computing and platform integrity are part of modern NVIDIA data center deployments
+- [[NVIDIA-Jetson-Thor]] - brings Blackwell-generation GPU capabilities into Jetson physical AI systems.
 
 ## Resources
 - [Blackwell Architecture](https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/)

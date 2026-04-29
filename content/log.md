@@ -2,6 +2,38 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 6: Jetson edge software and Thor hardware expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch6-20260429T055023Z`; local Git tag `codex-backup-overnight-pre-batch6-20260429T055023Z`
+
+**Source URLs:** https://docs.nvidia.com/jetson/, https://docs.nvidia.com/jetson/archives/index.html, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/AR/JetsonSoftwareArchitecture.html, https://developer.nvidia.com/embedded/faq, https://developer.nvidia.com/embedded/develop/hardware, https://developer.nvidia.com/embedded/buy-jetson, https://developer.nvidia.com/blog/?p=104879, https://developer.nvidia.com/blog/accelerate-ai-inference-for-edge-and-robotics-with-nvidia-jetson-t4000-and-nvidia-jetpack-7-1/, https://docs.nvidia.com/vpi/4.0/index.html, https://docs.nvidia.com/vpi/4.0/architecture.html, https://docs.nvidia.com/vpi/release_notes.html, https://docs.nvidia.com/jetson/jps/, https://docs.nvidia.com/jetson/jps/moj-overview.html
+
+**Gap analysis summary:**
+
+- Split durable Jetson software topics out of the broad Jetson page: JetPack SDK, Jetson Linux, VPI, and Jetson Platform Services.
+- Added one consolidated Jetson Thor page covering Thor/T5000/T4000 current-generation hardware instead of creating separate pages for each SKU.
+- Updated the existing Jetson page to reflect Thor/JetPack 7/Jetson Linux 38.x while keeping Orin/JetPack 6 distinctions visible.
+- Kept TensorRT Edge-LLM and Video Codec SDK 7.1 signals folded into JetPack/Thor context for now rather than creating pages without a stable docs surface in the wiki.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-JetPack-SDK.md`
+- `content/wiki/NVIDIA-Jetson-Linux.md`
+- `content/wiki/NVIDIA-Jetson-Thor.md`
+- `content/wiki/NVIDIA-VPI.md`
+- `content/wiki/NVIDIA-Jetson-Platform-Services.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Jetson-Platform.md` - refreshed current Thor/Orin positioning and linked JetPack, Jetson Linux, VPI, JPS, and Jetson Thor.
+- `content/wiki/CUDA-for-Tegra.md` and `content/wiki/cuDLA.md` - connected embedded CUDA/DLA guidance to JetPack, Jetson Linux, and Jetson Thor.
+- `content/wiki/NVIDIA-DeepStream.md` and `content/wiki/NVIDIA-Metropolis.md` - linked Jetson Platform Services and VPI into edge video AI workflows.
+- `content/wiki/NVIDIA-Isaac-ROS.md` and `content/wiki/NVIDIA-Isaac-GR00T.md` - connected robotics deployment and humanoid model workflows to JetPack and Jetson Thor.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md` and `content/wiki/NVIDIA-MIG.md` - connected Blackwell/MIG concepts to Jetson Thor.
+- `content/index.md` - updated page count to 226 and indexed all five new Jetson pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 5: Isaac robotics and physical AI documentation expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch5-20260429T054623Z`; local Git tag `codex-backup-overnight-pre-batch5-20260429T054623Z`

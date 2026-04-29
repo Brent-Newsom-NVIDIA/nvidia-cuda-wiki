@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, intelligent video analytics, IVA, smart cities, edge AI, retail, safety, computer vision
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
+**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-10
 
@@ -49,6 +49,7 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 ## Connections
 - [[NVIDIA-DeepStream]] — DeepStream SDK is the foundational video analytics engine underpinning Metropolis pipelines
 - [[NVIDIA-Jetson-Platform]] — Jetson is the primary edge hardware platform for Metropolis edge deployments
+- [[NVIDIA-Jetson-Platform-Services]] - JPS provides Jetson-hosted services for video analytics, VLM, detection, and edge application APIs.
 - [[NVIDIA-AI-Enterprise]] — Metropolis microservices available under AI Enterprise for enterprise deployments
 - [[NGC]] — Pre-trained models, DeepStream containers, and TAO models distributed via NGC
 - [[Triton-Inference-Server]] — Metropolis inference can be served via Triton for multi-model deployments

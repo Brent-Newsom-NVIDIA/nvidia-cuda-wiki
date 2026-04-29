@@ -1,22 +1,23 @@
 # NVIDIA Jetson Platform
 
 **Type:** Platform
-**Tags:** NVIDIA, edge AI, embedded, IoT, robotics, autonomous machines, Jetson, ARM, SoC
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Tags:** NVIDIA, edge AI, embedded, IoT, robotics, autonomous machines, Jetson, JetPack, Jetson Linux, Blackwell, ARM, SoC
+**Related:** [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-VPI]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
+**Sources:** https://docs.nvidia.com/jetson/, https://developer.nvidia.com/embedded/develop/hardware, https://developer.nvidia.com/embedded/faq, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/AR/JetsonSoftwareArchitecture.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA Jetson is a family of embedded AI computing modules and developer kits that bring GPU-accelerated AI inference to edge devices, robots, autonomous machines, and IoT systems. Jetson modules combine ARM-based CPUs, NVIDIA GPU cores, deep learning accelerators (DLA), video encode/decode engines, and high-speed I/O in a compact, power-efficient SoC — running from 5W to 60W. Jetson runs NVIDIA JetPack (Ubuntu-based Linux) and supports the full CUDA and TensorRT software stack, making it a genuine edge extension of NVIDIA's data center AI platform.
+NVIDIA Jetson is the embedded AI computing platform for robots, autonomous machines, intelligent cameras, industrial systems, and physical AI devices. It combines NVIDIA GPUs, Arm CPUs, accelerators, video/camera hardware, high-speed I/O, [[NVIDIA-JetPack-SDK]], and [[NVIDIA-Jetson-Linux]] into production modules and developer kits. Current NVIDIA public material positions [[NVIDIA-Jetson-Thor]] as the Blackwell-generation physical AI platform while Jetson Orin remains the broad production family for many JetPack 6 deployments.
 
 ## Detail
 
 ### Purpose
-AI inference workloads are increasingly needed at the edge — in robots, cameras, drones, industrial machines, and embedded devices — where cloud connectivity is unreliable, latency is critical, or data privacy prevents cloud offload. Jetson provides the compute density to run complex neural networks (object detection, segmentation, pose estimation, speech recognition) locally at edge power budgets (5–60W) with the same CUDA/TensorRT programming model used in data centers, avoiding dual-stack development.
+AI inference workloads are increasingly needed at the edge — in robots, cameras, drones, industrial machines, and embedded devices — where cloud connectivity is unreliable, latency is critical, or data privacy prevents cloud offload. Jetson provides the compute density to run complex neural networks locally, from compact Orin deployments to Thor-class physical AI systems, with the same CUDA/TensorRT programming model used in data centers.
 
 ### Key Features
 
-**Jetson Module Family (current generation: Orin):**
+**Current and major Jetson families:**
+- **[[NVIDIA-Jetson-Thor]] / Jetson T5000 and T4000:** Blackwell-generation physical AI modules for humanoid robotics, high-end edge AI, and real-time multimodal workloads.
 - **Jetson Orin Nano (4/8 GB):** 20–40 TOPS AI performance; 5–10W; lowest-cost Orin for volume edge deployments
 - **Jetson Orin NX (8/16 GB):** 70–100 TOPS; 10–20W; mid-range performance for smart cameras and compact robots
 - **Jetson AGX Orin (32/64 GB):** 200–275 TOPS; 15–60W; top-tier Orin for autonomous machines and industrial robots
@@ -26,13 +27,16 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - **Jetson Xavier NX / AGX Xavier:** 15–32 TOPS; previous-gen for existing robot fleets
 - **Jetson Nano / TX2:** Legacy; suitable for lightweight inference tasks
 
-**Key Hardware Features:**
-- **NVIDIA GPU Cores:** Ampere (Orin) architecture GPU; 1024 CUDA cores (AGX Orin) for TensorRT, CUDA, and OpenGL
-- **DLA (Deep Learning Accelerator):** Dedicated fixed-function hardware for efficient inference without using GPU; 2× DLA engines per Orin; runs TensorRT DLA-compiled models
-- **PVA (Programmable Vision Accelerator):** Signal processing and computer vision operations
+**Key hardware/software features:**
+- **NVIDIA GPU cores:** Ampere-class GPU on Orin and Blackwell-generation GPU on Jetson Thor for CUDA, TensorRT, graphics, and generative AI workloads.
+- **DLA / accelerators:** DLA on supported Orin/Xavier platforms and newer Thor-era accelerators for power-efficient perception and AI pipelines.
+- **PVA (Programmable Vision Accelerator):** signal processing and computer vision operations; VPI 4.0 highlights PVA as part of Thor/Orin vision acceleration.
 - **NVDEC/NVENC:** Hardware video decode (H.264/H.265/VP9/AV1) and encode for camera pipelines
-- **Memory Bandwidth:** 204 GB/s (AGX Orin 64 GB) — unified CPU+GPU memory architecture; no PCIe transfer overhead
-- **JetPack SDK:** Ubuntu 20.04/22.04-based OS with CUDA, TensorRT, cuDNN, DeepStream, OpenCV, VPI (Vision Programming Interface), Isaac ROS preinstalled
+- **MIG on Thor:** Multi-Instance GPU style partitioning for isolated mixed-criticality robot workloads.
+- **JetPack SDK:** [[NVIDIA-JetPack-SDK]] bundles Jetson Linux, CUDA-X, TensorRT, cuDNN, VPI, DeepStream, samples, tools, and documentation.
+- **Jetson Linux:** [[NVIDIA-Jetson-Linux]] provides the kernel, bootloader, drivers, firmware, flashing, root filesystem, and BSP layer.
+- **VPI:** [[NVIDIA-VPI]] exposes CPU, CUDA, PVA, VIC, and OFA-backed computer vision/image processing algorithms where supported.
+- **JPS:** [[NVIDIA-Jetson-Platform-Services]] provides modular edge AI services for video analytics, VLM, detection, storage, and APIs.
 
 ### Use Cases
 - Mobile robots and AMRs (Autonomous Mobile Robots): real-time navigation, obstacle avoidance, and manipulation planning
@@ -44,13 +48,14 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - Smart NVRs and edge video analytics with DeepStream for multi-camera processing
 
 ### Hardware Requirements / Compatibility
-- **Carrier Boards:** NVIDIA-designed Jetson developer kits (reference carriers); wide ecosystem of 3rd-party carrier boards (Auvidea, Connect Tech, Seeed Studio)
-- **Form Factor:** Jetson modules use SO-DIMM-like 260-pin connector (Nano, NX) or custom 699-pin connector (AGX); OEM designs integrate modules into custom hardware
-- **JetPack:** JetPack 5.x (Ubuntu 20.04, Jetson AGX Orin/Xavier); JetPack 6.x (Ubuntu 22.04, Orin series)
-- **Power:** 5–60W depending on module and NVPModel power mode configuration
+- **Carrier boards:** NVIDIA developer kits use reference carriers; production modules require customer or partner carrier-board integration.
+- **JetPack 7 / Jetson Linux 38.x:** current Thor-focused stack using Ubuntu 24.04/kernel 6.8-era direction in NVIDIA public docs.
+- **JetPack 6 / Jetson Linux 36.x:** production Jetson Orin stack; Jetson Linux 38.4 docs explicitly direct Orin users to 36.4.4.
+- **JetPack 5:** sustaining mode for Jetson Orin/Xavier families.
+- **Power:** ranges from low-power Orin Nano/NX deployments through Thor-class 40-130W physical AI systems.
 
 ### Language Bindings / APIs
-- **CUDA C/C++:** Full CUDA programming support with hardware-matched toolkit in JetPack
+- **CUDA C/C++:** Full CUDA programming support with hardware-matched toolkit in [[NVIDIA-JetPack-SDK]]
 - **Python:** CuPy, PyTorch (NVIDIA-built Jetson wheel), TensorRT Python API, DeepStream Python bindings
 - **TensorRT:** Primary inference optimization tool; generates DLA-compatible engine files for hardware accelerator
 - **ROS 2 / Isaac ROS:** NVIDIA-accelerated ROS 2 hardware-accelerated nodes (cuVS, Visual SLAM, nvblox) via [[NVIDIA-Isaac-ROS]]
@@ -58,6 +63,11 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - **GStreamer:** DeepStream pipelines run natively on Jetson with NVDEC/NVENC hardware acceleration
 
 ## Connections
+- [[NVIDIA-Jetson-Thor]] — Blackwell-generation Jetson platform for physical AI and humanoid robotics.
+- [[NVIDIA-JetPack-SDK]] — software stack for Jetson modules and developer kits.
+- [[NVIDIA-Jetson-Linux]] — OS/BSP layer underlying JetPack and Jetson deployments.
+- [[NVIDIA-VPI]] — computer vision/image processing library that targets Jetson GPU and dedicated vision hardware.
+- [[NVIDIA-Jetson-Platform-Services]] — edge AI microservice layer for Jetson video/VLM/analytics applications.
 - [[NVIDIA-DeepStream]] — DeepStream runs natively on Jetson for multi-stream intelligent video analytics at the edge
 - [[NVIDIA-Metropolis]] — Metropolis edge deployments run on Jetson modules in smart city and retail use cases
 - [[NVIDIA-Isaac]] — Isaac robotics workflows target Jetson as a primary robot compute platform
@@ -69,7 +79,7 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 
 ## Resources
 - [Jetson Developer Page](https://developer.nvidia.com/embedded/jetson-modules)
-- [JetPack SDK](https://developer.nvidia.com/embedded/jetpack)
-- [Jetson Orin Specifications](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/)
-- [Jetson Software Documentation](https://docs.nvidia.com/jetson/archives/r36.0/index.html)
-- [Isaac ROS](https://developer.nvidia.com/isaac-ros)
+- [Jetson Software Documentation](https://docs.nvidia.com/jetson/)
+- [Jetson Hardware Lineup](https://developer.nvidia.com/embedded/develop/hardware)
+- [Jetson Linux 38.4 Developer Guide](https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/)
+- [Jetson FAQ](https://developer.nvidia.com/embedded/faq)

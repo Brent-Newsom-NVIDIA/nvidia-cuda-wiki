@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 221*
+*Total pages: 226*
 
 ---
 
@@ -128,6 +128,9 @@
 - [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA Linux IDE development workflows
 
 ### Embedded & Edge
+- [[NVIDIA-JetPack-SDK]] — Jetson software stack bundling Jetson Linux, CUDA-X, AI frameworks, samples, tools, and docs
+- [[NVIDIA-Jetson-Linux]] — Jetson OS/BSP layer with kernel, bootloader, drivers, flashing, and platform bring-up docs
+- [[NVIDIA-VPI]] — Vision Programming Interface for CPU/CUDA/PVA/VIC/OFA-backed computer vision and image processing
 - [[cuDLA]] — CUDA API for programming NVIDIA DLA (Deep Learning Accelerator) on Jetson/DRIVE SoCs
 - [[CUDA-for-Tegra]] — CUDA guidance for Tegra integrated GPU platforms including Jetson and DRIVE
 - [[CUDA-on-WSL]] — CUDA support for Linux GPU development inside Windows Subsystem for Linux 2
@@ -218,6 +221,7 @@
 - [[NVIDIA-Capture-SDK]] — capture and stream SDKs for desktop/session capture and NVIDIA media workflows
 - [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
 - [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation
+- [[NVIDIA-Jetson-Platform-Services]] — Jetson edge AI microservice layer for video analytics, VLM, detection, storage, and APIs
 - [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
 - [[NVIDIA-Parabricks]] — Clara genomics acceleration platform for next-generation sequencing pipelines
 - [[NVIDIA-Clara-Viz]] — Clara medical image visualization toolkit for 2D/3D imaging and pathology data
@@ -231,6 +235,7 @@
 - [[NVIDIA-Certified-Systems]] — partner systems validated by NVIDIA for enterprise AI and accelerated computing workloads
 - [[NVIDIA-Data-Center-CPUs]] — NVIDIA data center CPU documentation covering Grace, Grace Hopper, and Grace Blackwell systems
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
+- [[NVIDIA-Jetson-Thor]] — Blackwell-generation Jetson platform for physical AI and humanoid robotics
 - [[NVIDIA-Drive-Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
 - [[NVIDIA-HGX]] — Multi-GPU baseboard platform (8x SXM) for OEM servers; HGX B200, B300, Rubin NVL8 configurations

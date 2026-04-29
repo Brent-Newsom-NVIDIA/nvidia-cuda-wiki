@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, Tegra, Jetson, DRIVE, embedded, edge AI
-**Related:** [[NVIDIA-CUDA]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Drive-Platform]], [[cuDLA]], [[CUDA-Unified-Memory]], [[NVIDIA-DeepStream]]
+**Related:** [[NVIDIA-CUDA]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Drive-Platform]], [[cuDLA]], [[CUDA-Unified-Memory]], [[NVIDIA-DeepStream]]
 **Sources:** https://docs.nvidia.com/cuda/cuda-for-tegra-appnote/index.html
 **Last Updated:** 2026-04-29
 
@@ -26,6 +26,9 @@ CUDA for Tegra connects the core CUDA platform to [[NVIDIA-Jetson-Platform]] edg
 
 ## Connections
 - [[NVIDIA-Jetson-Platform]] - primary developer platform for embedded CUDA on Tegra.
+- [[NVIDIA-JetPack-SDK]] - bundles CUDA and CUDA-X components for Jetson deployments.
+- [[NVIDIA-Jetson-Linux]] - OS/BSP layer where CUDA on Tegra applications run.
+- [[NVIDIA-Jetson-Thor]] - current Blackwell-generation Jetson platform for physical AI workloads.
 - [[NVIDIA-Drive-Platform]] - DRIVE SoCs use related embedded GPU concepts.
 - [[cuDLA]] - DLA and CUDA often coexist in Jetson/DRIVE inference pipelines.
 - [[CUDA-Unified-Memory]] - memory behavior differs between integrated and discrete GPUs.
@@ -33,4 +36,3 @@ CUDA for Tegra connects the core CUDA platform to [[NVIDIA-Jetson-Platform]] edg
 
 ## Source Excerpts
 - NVIDIA's CUDA for Tegra note covers memory architecture, unified memory, synchronization, EGL interoperability, and unsupported-feature considerations.
-

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, DLA, Deep Learning Accelerator, Embedded, Automotive, Jetson, CUDA-X
-**Related:** [[cuDNN]], [[TensorRT]], [[NVCC]], [[NVIDIA-Isaac]]
+**Related:** [[cuDNN]], [[TensorRT]], [[NVCC]], [[NVIDIA-Isaac]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]]
 **Sources:** NVIDIA official documentation, docs.nvidia.com/cuda/cuda-for-tegra-appnote
 **Last Updated:** 2026-04-09
 
@@ -49,6 +49,9 @@ cuDLA solves the integration challenge of using DLA alongside CUDA GPU compute. 
 - [[TensorRT]] — TensorRT compiles DLA loadables (`.nv_dla_loadable`) consumed by cuDLA
 - [[NVCC]] — cuDLA API calls compiled as part of CUDA applications via NVCC
 - [[NVIDIA-Isaac]] — Isaac ROS inference pipelines on Jetson Orin can route appropriate layers to DLA via cuDLA
+- [[NVIDIA-Jetson-Platform]] - Jetson platforms expose DLA hardware on supported SoCs.
+- [[NVIDIA-JetPack-SDK]] - bundles the Jetson software stack used with DLA-capable devices.
+- [[NVIDIA-Jetson-Linux]] - OS/BSP foundation for DLA device support and driver integration.
 
 ## Resources
 - [cuDLA Documentation](https://docs.nvidia.com/cuda/cuda-for-tegra-appnote/index.html)

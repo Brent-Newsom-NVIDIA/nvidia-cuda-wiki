@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Isaac, ROS 2, robotics, CUDA, Jetson, perception, SLAM, NITROS, edge AI
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Jetson-Platform]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-DeepStream]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Thor]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-DeepStream]]
 **Sources:** https://nvidia-isaac-ros.github.io/, https://nvidia-isaac-ros.github.io/releases/index.html, https://developer.nvidia.com/isaac/
 **Last Updated:** 2026-04-29
 
@@ -34,6 +34,8 @@ Isaac ROS makes NVIDIA acceleration usable inside the ROS 2 ecosystem. It connec
 - [[NVIDIA-Isaac]] - parent robotics platform for Isaac ROS packages and reference workflows.
 - [[NVIDIA-Isaac-Sim]] - simulation environment that integrates with ROS 2 and Isaac ROS for hardware-in-the-loop testing.
 - [[NVIDIA-Jetson-Platform]] - primary edge deployment hardware family for Isaac ROS robot stacks.
+- [[NVIDIA-JetPack-SDK]] - JetPack version compatibility governs Isaac ROS deployment on Jetson.
+- [[NVIDIA-Jetson-Thor]] - current physical AI edge platform surfaced in recent Isaac ROS release signals.
 - [[TensorRT]] - optimizes perception and AI models used in robotics inference.
 - [[Triton-Inference-Server]] - optional serving layer for multi-model robot perception deployments.
 - [[NVIDIA-DeepStream]] - adjacent video AI pipeline stack for camera-heavy edge workloads.

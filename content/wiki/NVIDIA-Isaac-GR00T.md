@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, Isaac, GR00T, humanoid robotics, robot foundation models, VLA, physical AI, Cosmos, Jetson Thor
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Cosmos]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-DGX-Cloud]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Cosmos]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DGX-Cloud]]
 **Sources:** https://developer.nvidia.com/isaac/gr00t, https://developer.nvidia.com/isaac/, https://huggingface.co/nvidia/GR00T-N1.6-3B
 **Last Updated:** 2026-04-29
 
@@ -38,6 +38,7 @@ GR00T is a physical AI model platform rather than a single robot. It links [[NVI
 - [[NVIDIA-Isaac-Sim]] - validates trained policies in physically based simulation before deployment.
 - [[NVIDIA-Cosmos]] - provides world foundation model and synthetic-data capabilities used in physical AI pipelines.
 - [[NVIDIA-Jetson-Platform]] - deployment family for robot-side NVIDIA compute, including Jetson AGX Thor references.
+- [[NVIDIA-Jetson-Thor]] - Blackwell-generation Jetson platform for humanoid robot deployment.
 - [[NVIDIA-DGX-Cloud]] - cloud training infrastructure path for large robotics foundation models.
 
 ## Source Excerpts

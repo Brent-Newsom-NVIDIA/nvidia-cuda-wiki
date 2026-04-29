@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, MIG, Multi-Instance GPU, partitioning, data center, Kubernetes
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Jetson-Thor]]
 **Sources:** https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -30,7 +30,7 @@ MIG is a critical AI factory capability for [[NVIDIA-DGX]], Kubernetes clusters,
 - [[NVIDIA-DGX]] - supported DGX systems can use MIG for multi-tenant utilization.
 - [[NVIDIA-Hopper-Architecture]] - Hopper GPUs support MIG capabilities for data center partitioning.
 - [[NVIDIA-Blackwell-Architecture]] - Blackwell systems continue the AI factory utilization story.
+- [[NVIDIA-Jetson-Thor]] - NVIDIA public Jetson Thor material surfaces MIG as an embedded physical AI isolation feature.
 
 ## Source Excerpts
 - NVIDIA's MIG guide covers partitioning supported GPUs into isolated instances with dedicated compute and memory resources.
-
