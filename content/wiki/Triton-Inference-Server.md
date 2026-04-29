@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Inference, Serving, MLOps, Production, Framework
-**Related:** [[TensorRT]], [[TensorRT-LLM]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/triton-inference-server
-**Last Updated:** 2026-04-09
+**Related:** [[TensorRT]], [[TensorRT-LLM]], [[cuDNN]], [[PyTorch]], [[NVIDIA-NeMo]], [[FlashInfer]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/triton-inference-server, https://docs.nvidia.com/maxine/triton/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Triton Inference Server is an open-source, production-grade model serving platform that enables organizations to deploy AI models from any framework at scale on NVIDIA GPUs, CPUs, and other hardware. It supports simultaneous deployment of multiple models, dynamic batching, model ensembles, and provides a standardized HTTP/gRPC inference protocol. Triton is framework-agnostic, supporting TensorRT, ONNX Runtime, PyTorch (TorchScript/Eager), TensorFlow, JAX, OpenVINO, and custom C++/Python backends.
@@ -58,6 +58,8 @@ Triton solves the operational complexity of serving diverse AI models in product
 - [[PyTorch]] — LibTorch backend enables direct serving of PyTorch models
 - [[NVIDIA-NeMo]] — NeMo-trained models are commonly deployed through Triton
 - [[cuDNN]] — used by PyTorch and TensorFlow backends for DNN primitive acceleration
+- [[NVIDIA-Triton-AR-VFX-SDKs]] — media AI guide that uses Triton for AR/VFX SDK server deployments.
+- [[NVIDIA-Augmented-Reality-SDK]] and [[NVIDIA-Video-Effects-SDK]] — AR/VFX features can be served through Triton-enabled SDK paths.
 
 ## Resources
 - [NVIDIA Triton Developer Page](https://developer.nvidia.com/triton-inference-server)

@@ -1,0 +1,42 @@
+# NVIDIA Audio Effects SDK
+
+**Type:** SDK
+**Tags:** NVIDIA, AFX, audio effects, denoise, dereverb, echo cancellation, studio voice, voice font, Maxine
+**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Maxine]], [[NVIDIA-Riva]], [[NVIDIA-Video-Effects-SDK]], [[Triton-Inference-Server]], [[NVIDIA-RTX]]
+**Sources:** https://docs.nvidia.com/maxine/afx/latest/index.html
+**Last Updated:** 2026-04-29
+
+## Summary
+NVIDIA Audio Effects SDK (AFX SDK) provides GPU-accelerated, real-time audio effects for broadcast, conferencing, telepresence, and media applications. Current docs list acoustic echo cancellation, audio super-resolution, denoising, dereverb, speaker focus, studio voice, and voice font effects.
+
+## Detail
+
+### Purpose
+Live audio often contains noise, room echo, low-bandwidth speech, and competing speakers. AFX gives developers packaged AI effects that can be integrated into client or server applications without building each speech-enhancement model from scratch.
+
+### Current effects
+- Acoustic echo cancellation.
+- Audio super-resolution for higher-frequency speech reconstruction.
+- Background noise suppression/denoising.
+- Room echo removal/dereverb.
+- Combined denoise plus dereverb.
+- Speaker focus.
+- Studio Voice.
+- Voice Font.
+
+### Deployment notes
+NVIDIA's docs distinguish Windows SDK use for client-side integration and Linux SDK use for server-side, data center, or cloud deployments. The SDK includes sample applications, container guidance, effect parameter APIs, and multi-GPU support.
+
+## Connections
+- [[NVIDIA-AI-for-Media-SDKs]] - docs umbrella for current media SDKs.
+- [[NVIDIA-Maxine]] - product/platform context for media AI effects.
+- [[NVIDIA-Riva]] - speech AI pipelines can benefit from audio cleanup before ASR/TTS workflows.
+- [[NVIDIA-Video-Effects-SDK]] - companion video effects SDK.
+- [[Triton-Inference-Server]] - server-side deployment model adjacent to AI media SDK serving.
+- [[NVIDIA-RTX]] - RTX and data center GPUs provide acceleration targets.
+
+## Source Excerpts
+- NVIDIA's AFX SDK docs list real-time audio effects including echo cancellation, audio super-resolution, denoising, dereverb, speaker focus, studio voice, and voice font.
+
+## Resources
+- [NVIDIA Audio Effects SDK](https://docs.nvidia.com/maxine/afx/latest/index.html)

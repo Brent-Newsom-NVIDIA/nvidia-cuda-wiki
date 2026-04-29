@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video conferencing, audio AI, video AI, real-time, cloud, SDKs, AR, noise cancellation
-**Related:** [[NVIDIA-Riva]], [[NVIDIA-Capture-SDK]], [[NVIDIA-CloudXR]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Related:** [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]], [[NVIDIA-Triton-AR-VFX-SDKs]], [[NVIDIA-Riva]], [[NVIDIA-Capture-SDK]], [[NVIDIA-CloudXR]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/maxine/ar/latest/index.html, https://docs.nvidia.com/maxine/vfx/latest/index.html, https://docs.nvidia.com/maxine/triton/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -15,6 +15,7 @@ NVIDIA Maxine is a platform of GPU-accelerated AI SDKs for enhancing real-time a
 Video conferencing quality is degraded by background noise, poor lighting, camera shake, low resolution, and lack of eye contact. Maxine provides a set of neural network-based AI effects that address these problems in real time (under 30 ms latency) using GPU acceleration. Rather than requiring each application vendor to train and optimize their own AI effects, Maxine packages state-of-the-art models as SDK libraries that can be integrated into existing video pipelines in days. Maxine also enables cloud-side AI enhancement for platforms that process video server-side.
 
 ### Key Features
+- **Current docs surface:** NVIDIA docs now expose Maxine-style functionality under [[NVIDIA-AI-for-Media-SDKs]], with separate pages for [[NVIDIA-Audio-Effects-SDK]], [[NVIDIA-Augmented-Reality-SDK]], [[NVIDIA-Video-Effects-SDK]], and [[NVIDIA-Triton-AR-VFX-SDKs]].
 - **Audio Effects:**
   - **Noise Cancellation (RTX Voice):** Deep learning-based noise removal (background noise, keyboard clicks, HVAC) even in challenging acoustic environments
   - **Acoustic Echo Cancellation (AEC):** Remove speaker echo from microphone input for full-duplex audio
@@ -57,6 +58,11 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
 
 ## Connections
 - [[NVIDIA-Riva]] — Maxine audio effects (noise cancellation) complement Riva ASR; together they form a complete voice + speech pipeline
+- [[NVIDIA-AI-for-Media-SDKs]] — current docs hub for AI media SDKs.
+- [[NVIDIA-Audio-Effects-SDK]] — AFX audio effects SDK for echo cancellation, denoising, dereverb, speaker focus, studio voice, and voice font.
+- [[NVIDIA-Augmented-Reality-SDK]] — AR SDK for face/body tracking, eye contact, lip sync, and active speaker detection.
+- [[NVIDIA-Video-Effects-SDK]] — VFX SDK for green screen, blur, denoise, relighting, upscaling, and video super resolution.
+- [[NVIDIA-Triton-AR-VFX-SDKs]] — server-side Triton deployment path for AR/VFX features.
 - [[NVIDIA-Capture-SDK]] — capture SDKs sit near Maxine media processing pipelines
 - [[NVIDIA-CloudXR]] — CloudXR uses adjacent streaming and RTX media delivery concepts
 - [[NVIDIA-AI-Enterprise]] — Maxine is available under AI Enterprise licensing for commercial ISV deployments
@@ -66,7 +72,7 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
 
 ## Resources
 - [NVIDIA Maxine Developer Page](https://developer.nvidia.com/maxine)
-- [Maxine SDK Documentation](https://docs.nvidia.com/deeplearning/maxine/index.html)
-- [Maxine Audio SDK](https://docs.nvidia.com/deeplearning/maxine/audio-effects-sdk/index.html)
-- [Maxine Video Effects SDK](https://docs.nvidia.com/deeplearning/maxine/vfx-sdk/index.html)
+- [NVIDIA AI for Media SDKs](https://docs.nvidia.com/maxine/index.html)
+- [NVIDIA Audio Effects SDK](https://docs.nvidia.com/maxine/afx/latest/index.html)
+- [NVIDIA Video Effects SDK](https://docs.nvidia.com/maxine/vfx/latest/index.html)
 - [Maxine on NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/maxine)

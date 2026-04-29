@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RTX, Ray Tracing, Real-Time Rendering, Tensor Cores, DXR, Vulkan, Gaming
-**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-Omniverse]], [[TensorRT]]
-**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/
+**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Omniverse]], [[TensorRT]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/maxine/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -56,6 +56,7 @@ Physically accurate lighting simulation (ray tracing) produces dramatically more
 - [[NVIDIA-Turing-Architecture]] — Turing introduced the original RTX hardware ray tracing generation
 - [[NVIDIA-CloudXR]] — CloudXR streams RTX-rendered XR workloads from GPU servers to clients
 - [[NVIDIA-Capture-SDK]] — capture SDKs are adjacent to RTX remote visualization and media streaming workflows
+- [[NVIDIA-AI-for-Media-SDKs]] — RTX GPUs accelerate AI media effects for audio, video, and AR workflows.
 - [[NVIDIA-Omniverse]] — Omniverse uses RTX-accelerated path tracing for photorealistic USD rendering
 - [[TensorRT]] — Tensor Cores serve both TensorRT inference and RTX DLSS AI workloads
 

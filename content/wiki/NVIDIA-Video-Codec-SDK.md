@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Video, Encoding, Decoding, NVENC, NVDEC, Media
-**Related:** [[NVIDIA-DALI]], [[CV-CUDA]], [[NPP]], [[NVIDIA-Optical-Flow-SDK]], [[nvImageCodec]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-DALI]], [[CV-CUDA]], [[NPP]], [[NVIDIA-Optical-Flow-SDK]], [[nvImageCodec]], [[NVIDIA-Video-Effects-SDK]], [[NVIDIA-AI-for-Media-SDKs]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/maxine/vfx/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Video Codec SDK is a comprehensive set of APIs providing hardware-accelerated video encode (NVENC) and decode (NVDEC) on NVIDIA GPUs for Windows and Linux. It supports H.264, HEVC (H.265), and AV1 encoding, and decoding for MPEG-2, VC-1, H.264, H.265, VP8, VP9, and AV1. On Blackwell GPUs it achieves up to 8K240 FPS with multiple hardware encoding engines, enabling faster-than-real-time video processing at all scales.
@@ -51,6 +51,8 @@ Software video codecs consume substantial CPU resources and cannot achieve real-
 - [[NPP]] — NPP processes raw decoded frames from NVDEC for further signal processing
 - [[NVIDIA-Optical-Flow-SDK]] — Optical Flow SDK builds on decoded frames from Video Codec SDK
 - [[nvImageCodec]] — nvImageCodec handles image codecs; Video Codec SDK handles video codecs
+- [[NVIDIA-Video-Effects-SDK]] — video effects can sit between decode/capture and encode in media pipelines.
+- [[NVIDIA-AI-for-Media-SDKs]] — AI media SDK hub for adjacent video enhancement workflows.
 
 ## Resources
 - [Official Page](https://developer.nvidia.com/nvidia-video-codec-sdk)

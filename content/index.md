@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 274*
+*Total pages: 279*
 
 ---
 
@@ -232,6 +232,11 @@
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
+- [[NVIDIA-AI-for-Media-SDKs]] — Current docs hub for NVIDIA audio, video, AR, and Triton-enabled media AI SDKs
+- [[NVIDIA-Audio-Effects-SDK]] — AFX SDK for echo cancellation, denoise, dereverb, speaker focus, studio voice, and voice font
+- [[NVIDIA-Augmented-Reality-SDK]] — AR SDK for face/body tracking, landmarks, eye contact, lip sync, and active speaker detection
+- [[NVIDIA-Video-Effects-SDK]] — VFX SDK for AI green screen, blur, upscale, webcam denoise, relighting, and video super resolution
+- [[NVIDIA-Triton-AR-VFX-SDKs]] — Triton-enabled server deployment path for AR and VFX SDK features
 - [[NVIDIA-Capture-SDK]] — capture and stream SDKs for desktop/session capture and NVIDIA media workflows
 - [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
 - [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation

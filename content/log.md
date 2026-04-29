@@ -2,6 +2,38 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 14: NVIDIA AI for Media SDK expansion
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch14-20260429T063653Z`; local Git tag `codex-backup-overnight-pre-batch14-20260429T063653Z`
+
+**Source URLs:** https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/maxine/ar/latest/index.html, https://docs.nvidia.com/maxine/vfx/latest/index.html, https://docs.nvidia.com/maxine/triton/latest/index.html
+
+**Gap analysis summary:**
+
+- Added the current NVIDIA AI for Media SDKs docs hub and split its durable SDK components into canonical wiki pages.
+- Created separate pages for Audio Effects SDK, Augmented Reality SDK, Video Effects SDK, and Triton-enabled AR/VFX SDK serving because each has its own current NVIDIA docs surface.
+- Updated Maxine so older Maxine terminology and current AI-for-Media docs resolve into the same media AI graph.
+- Linked media SDKs into Triton, RTX, Capture SDK, Video Codec SDK, and Riva speech/audio workflows.
+
+**Pages created (5 total):**
+
+- `content/wiki/NVIDIA-AI-for-Media-SDKs.md`
+- `content/wiki/NVIDIA-Audio-Effects-SDK.md`
+- `content/wiki/NVIDIA-Augmented-Reality-SDK.md`
+- `content/wiki/NVIDIA-Video-Effects-SDK.md`
+- `content/wiki/NVIDIA-Triton-AR-VFX-SDKs.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Maxine.md` - linked current AI for Media SDKs docs and component SDK pages.
+- `content/wiki/Triton-Inference-Server.md` - connected Triton-enabled AR/VFX SDK serving.
+- `content/wiki/NVIDIA-RTX.md` and `content/wiki/NVIDIA-Video-Codec-SDK.md` - connected RTX and codec/video pipelines to AI media effects.
+- `content/wiki/NVIDIA-Riva.md` - linked Audio Effects SDK as an upstream speech/audio cleanup companion.
+- `content/wiki/NVIDIA-Capture-SDK.md` - connected capture workflows to AI media processing.
+- `content/index.md` - updated page count to 279 and indexed the five new AI media SDK pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 13: CUDA Ada and Turing architecture guide completion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch13-20260429T063416Z`; local Git tag `codex-backup-overnight-pre-batch13-20260429T063416Z`

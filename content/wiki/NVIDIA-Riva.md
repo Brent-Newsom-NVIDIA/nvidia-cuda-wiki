@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, speech AI, ASR, TTS, NLP, real-time, conversational AI, speech-to-text, text-to-speech
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Riva is a GPU-accelerated SDK for building real-time, production-grade speech AI and multimodal conversational AI applications. It provides pre-trained and customizable pipelines for automatic speech recognition (ASR), text-to-speech synthesis (TTS), neural machine translation (NMT), and natural language processing (NLP) — all deployable as NIM microservices via gRPC or REST APIs. Riva delivers millisecond-latency speech AI suitable for call center automation, voice assistants, real-time transcription, and multilingual customer service.
@@ -57,6 +57,7 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - [[NVIDIA-AI-Enterprise]] — Riva is included in AI Enterprise with enterprise SLA and security support
 - [[NGC]] — Riva containers, pre-trained model checkpoints, and Helm charts distributed via NGC
 - [[NVIDIA-Maxine]] — Maxine uses Riva for the speech AI component (noise cancellation feeds into Riva ASR)
+- [[NVIDIA-Audio-Effects-SDK]] — audio cleanup can improve upstream audio quality before ASR or voice workflows.
 
 ## Resources
 - [NVIDIA Riva Developer Page](https://developer.nvidia.com/riva)
