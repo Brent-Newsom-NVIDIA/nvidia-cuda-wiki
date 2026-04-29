@@ -2,6 +2,37 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 32: NVIDIA Blueprint coverage for RAG, VSS, and Tokkio
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch32-20260429T082759Z`; local Git tag `codex-backup-overnight-pre-batch32-20260429T082759Z`
+
+**Source URLs:** https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/rag/latest/vlm-embed.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/vss/latest/adding-workflows.html, https://docs.nvidia.com/vss/latest/vss-agent/VSS-Agent-Overview.html, https://docs.nvidia.com/ace/tokkio/latest/overview/overview.html, https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://github.com/NVIDIA-AI-Blueprints/digital-human
+
+**Gap analysis summary:**
+
+- Added first-class pages for durable NVIDIA-authored blueprint docs that were missing from the wiki: RAG Blueprint, Video Search and Summarization (VSS), and Tokkio Digital Human.
+- Treated each blueprint as one canonical topic page and did not create separate pages for every workflow, deployment profile, sub-blueprint, release note, or build.nvidia listing.
+- Connected RAG Blueprint to NIM, NIM Operator, AI-Q, AI Data Platform, NeMo Retriever, NV-CLIP, VLMs, NemoGuard, Nemotron, cuVS, and AI Enterprise.
+- Connected VSS to Metropolis, DeepStream, Cosmos, Cosmos Embed1, VLM NIMs, AI Data Platform, NIM, Triton, TensorRT, Jetson, and AI Enterprise.
+- Connected Tokkio to ACE, Audio2Face-3D, Riva/Speech NIMs, NIM LLMs, RAG Blueprint, Omniverse, and AI Enterprise.
+
+**Pages created (3 total):**
+
+- `content/wiki/NVIDIA-RAG-Blueprint.md`
+- `content/wiki/NVIDIA-Video-Search-and-Summarization-Blueprint.md`
+- `content/wiki/NVIDIA-Tokkio-Digital-Human-Blueprint.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-AI-Blueprints.md` and `content/wiki/NVIDIA-NIM.md` - promoted the new durable blueprints into the umbrella blueprint and NIM graphs.
+- `content/wiki/NVIDIA-AI-Q-Blueprint.md`, `content/wiki/NVIDIA-AI-Data-Platform.md`, and `content/wiki/NeMo-Retriever.md` - connected RAG Blueprint to enterprise retrieval and agent workflows.
+- `content/wiki/NVIDIA-DeepStream.md`, `content/wiki/NVIDIA-Metropolis.md`, `content/wiki/NVIDIA-Cosmos.md`, `content/wiki/NIM-for-Cosmos-Embed1.md`, and `content/wiki/NIM-for-Vision-Language-Models.md` - connected VSS to video analytics, Cosmos, embeddings, and VLM reasoning.
+- `content/wiki/NVIDIA-ACE.md`, `content/wiki/NIM-for-Audio2Face-3D.md`, `content/wiki/NVIDIA-Riva.md`, and `content/wiki/NVIDIA-Speech-NIM-Microservices.md` - connected Tokkio to digital-human, speech, and avatar-animation workflows.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected all three new blueprint pages to the enterprise-supported software graph.
+- `content/index.md` - updated page count to 364 and indexed the three new blueprint pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 31: NIM benchmarking, NV-CLIP, and DoMINO
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch31-20260429T081843Z`; local Git tag `codex-backup-overnight-pre-batch31-20260429T081843Z`

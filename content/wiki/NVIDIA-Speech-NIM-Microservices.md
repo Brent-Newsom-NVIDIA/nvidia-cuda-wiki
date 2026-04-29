@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NIM, speech AI, ASR, TTS, NMT, Nemotron, Riva, CUDA, TensorRT, Triton
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
-**Sources:** https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[Nemotron]], [[Parakeet-ASR]], [[NVIDIA-Canary]], [[NVIDIA-ACE]], [[NVIDIA-Maxine]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Container-Toolkit]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]]
+**Sources:** https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/about/how-it-works.html, https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -19,6 +19,7 @@ Speech applications often need transcription, speech synthesis, and translation 
 - TTS NIM synthesizes speech audio from text.
 - NMT NIM translates text between supported languages.
 - Each NIM is an independent Docker container, so applications deploy only the microservices they need.
+- Digital-human workflows such as [[NVIDIA-Tokkio-Digital-Human-Blueprint]] can combine ASR/TTS speech services with LLM/RAG and avatar animation.
 - NIM containers package NVIDIA Triton Inference Server, TensorRT/CUDA execution, batching, streaming, model-profile selection, and gRPC/HTTP endpoints.
 - Docker and Helm deployment paths are covered in the current docs, along with NGC access, model caching, observability, support matrices, APIs, and performance references.
 
@@ -32,6 +33,7 @@ This page is the current canonical wiki entry for the post-migration Speech NIM 
 - [[NVIDIA-Riva]] - broader NVIDIA speech AI platform and historical docs lineage.
 - [[NIM-for-Maxine-Studio-Voice]] - Maxine audio enhancement NIM that can improve speech inputs for ASR and media workflows.
 - [[NIM-for-Audio2Face-3D]] - digital-human animation NIM that consumes speech audio in avatar pipelines.
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - digital-human blueprint that composes speech, LLM/RAG, animation, and rendering.
 - [[NVIDIA-ACE]] and [[NVIDIA-Maxine]] - application layers that combine speech services with media and digital-human animation.
 - [[NVIDIA-NeMo]] - training and customization framework for speech models used by Speech NIMs.
 - [[Nemotron]] - speech docs describe each Speech NIM as serving a Nemotron model family.

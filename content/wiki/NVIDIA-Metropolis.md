@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, intelligent video analytics, IVA, smart cities, edge AI, retail, safety, computer vision
-**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-DeepStream]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[Triton-Inference-Server]], [[TensorRT]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/vss/latest/)
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Metropolis is an application framework and partner ecosystem for building AI-powered intelligent video analytics (IVA) solutions for physical AI applications in retail, manufacturing, transportation, cities, and public safety. It provides an end-to-end platform spanning edge devices (Jetson), network appliances, and cloud/data center deployment — with pre-trained perception models, microservices for video ingestion and analytics, and a partner ecosystem of 750+ ISVs building Metropolis-enabled solutions. Metropolis is NVIDIA's primary platform for bringing AI perception from the cloud to the physical world.
@@ -24,6 +24,7 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 - **Smart City / Traffic:** License plate recognition, vehicle counting, pedestrian safety, red light violation detection, parking management
 - **Partner Ecosystem:** 750+ Metropolis ISV partners building certified solutions; NVIDIA Metropolis Application Framework provides reference applications
 - **Cloud-to-Edge:** Unified deployment pipeline from cloud development/training to edge Jetson devices and on-premises servers
+- **Blueprint adjacency:** [[NVIDIA-Video-Search-and-Summarization-Blueprint]] adds a current NVIDIA-authored vision-agent blueprint for search, summarization, alert verification, and smart-city/warehouse examples.
 
 ### Use Cases
 - Retail loss prevention: AI-powered shrinkage detection with behavioral analysis and alert systems
@@ -48,6 +49,7 @@ Cameras are ubiquitous, but extracting actionable intelligence from video at sca
 
 ## Connections
 - [[NVIDIA-DeepStream]] — DeepStream SDK is the foundational video analytics engine underpinning Metropolis pipelines
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - current VSS blueprint for building vision agents and video analytics applications.
 - [[NVIDIA-Jetson-Platform]] — Jetson is the primary edge hardware platform for Metropolis edge deployments
 - [[NVIDIA-Jetson-Platform-Services]] - JPS provides Jetson-hosted services for video analytics, VLM, detection, and edge application APIs.
 - [[NVIDIA-AI-Enterprise]] — Metropolis microservices available under AI Enterprise for enterprise deployments

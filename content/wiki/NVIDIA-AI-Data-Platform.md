@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Data Platform, enterprise storage, RAG, retrieval, AI factory, BlueField, Spectrum-X, NIM, NeMo Retriever
-**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NIM]], [[cuVS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
-**Sources:** https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/visual-genai/latest/overview.html
+**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NIM]], [[cuVS]], [[DOCA-SNAP]], [[DOCA-Device-Emulation]], [[GPU-Direct-Storage]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
+**Sources:** https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/visual-genai/latest/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,6 +16,8 @@ Agentic AI depends on fresh, private, multimodal enterprise data. NVIDIA AI Data
 
 ### Reference workflows
 - Multimodal agentic RAG over PDFs, graphics, audio, and text.
+- Reference RAG deployment patterns through [[NVIDIA-RAG-Blueprint]].
+- Video search and summarization workflows through [[NVIDIA-Video-Search-and-Summarization-Blueprint]].
 - Text/image embedding and semantic image retrieval through [[NIM-for-NV-CLIP]].
 - Video search, summarization, and Q&A over live or archived media.
 - Physical AI video search and curation using embeddings from [[NIM-for-Cosmos-Embed1]].
@@ -35,6 +37,8 @@ The AI Data Platform is the data-side counterpart to [[NVIDIA-Enterprise-AI-Fact
 - [[NVIDIA-STX]] - STX is a modular AI-native storage reference architecture tied to AI Data Platform designs.
 - [[NVIDIA-CMX]] - CMX provides context memory storage for long-context, multi-turn inference.
 - [[NVIDIA-Certified-Storage]] - certification validates storage for AI factory and AI Data Platform workloads.
+- [[NVIDIA-RAG-Blueprint]] - deployable RAG reference workflow for enterprise retrieval over private data.
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - video search/summarization blueprint over live and archived media.
 - [[NeMo-Retriever]] - retrieval microservices connect enterprise data to RAG and agents.
 - [[NeMo-Retriever-Embedding-NIM]] - embedding microservice for semantic search over enterprise data.
 - [[NIM-for-NV-CLIP]] - multimodal embedding NIM for image/text retrieval and semantic image search.

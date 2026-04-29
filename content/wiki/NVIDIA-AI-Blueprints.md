@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI blueprints, reference workflows, NIM, NeMo, agents, build.nvidia
-**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
-**Sources:** https://build.nvidia.com/blueprints, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
+**Related:** [[NVIDIA-NIM]], [[NIM-for-Large-Language-Models]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NemoGuard-NIMs]], [[NIM-for-Multimodal-Safety]], [[NVIDIA-AI-Enterprise]], [[NeMo-Platform]], [[Nemotron]], [[NVIDIA-Brev]]
+**Sources:** https://build.nvidia.com/blueprints, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/ace/tokkio/latest/overview/overview.html, https://build.nvidia.com/nvidia/aiq/blueprintcard, https://build.nvidia.com/nvidia/build-an-enterprise-data-flywheel/modelcard, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -16,7 +16,10 @@ Blueprints give developers starting points for production-oriented AI applicatio
 
 ### Current scope
 - Agent workflows such as [[NVIDIA-AI-Q-Blueprint]] for enterprise research and deep research.
+- Retrieval workflows such as [[NVIDIA-RAG-Blueprint]] for enterprise RAG, multimodal retrieval, evaluation, and guardrails.
 - Continuous model and agent optimization workflows such as [[NVIDIA-Data-Flywheel-Blueprint]].
+- Video intelligence workflows such as [[NVIDIA-Video-Search-and-Summarization-Blueprint]] for vision agents, search, summarization, and alert verification.
+- Digital-human workflows such as [[NVIDIA-Tokkio-Digital-Human-Blueprint]] for avatar-based customer-service and enterprise assistant experiences.
 - Domain application examples across voice agents, healthcare agents, retail assistants, telecom, warehouse operations, financial data, and physical AI data search.
 - Physical AI and multimodal workflows can use [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], and [[NIM-for-Visual-Generative-AI]] without turning every build.nvidia listing into its own wiki page.
 - Deployment paths that can include build.nvidia.com endpoints, [[NVIDIA-Brev]] cloud environments, NGC artifacts, Docker Compose, or Kubernetes/Helm depending on the blueprint.
@@ -36,8 +39,11 @@ Do not create one wiki page per blueprint listing. Create a page only when a blu
 - [[NIM-for-Vision-Language-Models]] and [[NIM-for-Visual-Generative-AI]] - multimodal understanding and visual generation NIM families that can compose with blueprint workflows.
 - [[NVIDIA-NemoGuard-NIMs]] and [[NIM-for-Multimodal-Safety]] - safety NIM families that can moderate text and multimodal blueprint workflows.
 - [[NVIDIA-AI-Enterprise]] - enterprise blueprints map to NVIDIA-supported production AI software.
+- [[NVIDIA-RAG-Blueprint]] - durable RAG Blueprint for enterprise retrieval, multimodal RAG, and knowledge-grounded generation.
 - [[NVIDIA-AI-Q-Blueprint]] - durable AI Blueprint for enterprise research agents.
 - [[NVIDIA-Data-Flywheel-Blueprint]] - durable AI Blueprint for continuous agent and model optimization.
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - durable VSS Blueprint for vision agents and video analytics.
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - durable Digital Human Blueprint for interactive avatar experiences.
 - [[NeMo-Platform]] - blueprints often use NeMo microservices for customization, evaluation, retrieval, and inference.
 - [[Nemotron]] - current blueprints use Nemotron models for reasoning, speech, and agentic workflows.
 - [[NVIDIA-Brev]] - some blueprints expose launchable cloud development paths through Brev.

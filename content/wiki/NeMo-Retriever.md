@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo Retriever, RAG, retrieval, embedding, reranking, multimodal data extraction
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
-**Sources:** https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/aiq-blueprint/latest/index.html
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/aiq-blueprint/latest/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,13 +23,14 @@ Enterprise RAG and agent systems need to connect models to proprietary data with
 - Enterprise privacy and deployment model consistent with self-hosted NVIDIA AI stacks.
 
 ### NVIDIA context
-NeMo Retriever is a central bridge between enterprise data and NVIDIA agent systems. It connects [[NVIDIA-NIM]] model endpoints, [[NVIDIA-Agent-Intelligence-Toolkit]] workflows, [[Nemotron]] reasoning models, [[NVIDIA-AI-Data-Platform]] reference workflows, and vector-search acceleration.
+NeMo Retriever is a central bridge between enterprise data and NVIDIA agent systems. It connects [[NVIDIA-NIM]] model endpoints, [[NVIDIA-Agent-Intelligence-Toolkit]] workflows, [[Nemotron]] reasoning models, [[NVIDIA-AI-Data-Platform]] reference workflows, [[NVIDIA-RAG-Blueprint]] deployments, and vector-search acceleration.
 
 ## Connections
 - [[NVIDIA-NeMo]] - Retriever is part of the NeMo suite.
 - [[NeMo-Platform]] - platform-level deployment and lifecycle management for NeMo services.
 - [[NVIDIA-NIM]] - Retriever components are delivered as NIM-style microservices.
 - [[NVIDIA-NIM-Operator]] - Kubernetes deployment and lifecycle management path for NIM/NeMo microservices.
+- [[NVIDIA-RAG-Blueprint]] - reference RAG workflow that composes Retriever-style extraction, embedding, retrieval, and generation.
 - [[NeMo-Retriever-Embedding-NIM]] - embedding microservice for semantic search and RAG.
 - [[NIM-for-NV-CLIP]] - multimodal text/image embedding NIM for semantic image search and multimodal RAG.
 - [[NeMo-Retriever-Reranking-NIM]] - reranking microservice for improving candidate context relevance.

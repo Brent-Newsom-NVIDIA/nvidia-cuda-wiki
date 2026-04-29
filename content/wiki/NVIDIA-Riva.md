@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, speech AI, ASR, TTS, NLP, real-time, conversational AI, speech-to-text, text-to-speech
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html)
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NVIDIA-NMT-NIM]], [[NVIDIA-Background-Noise-Removal-NIM]], [[NIM-for-Maxine-Studio-Voice]], [[NIM-for-Audio2Face-3D]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[Triton-Inference-Server]], [[NGC]], [[NVIDIA-Maxine]], [[NVIDIA-Audio-Effects-SDK]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://docs.nvidia.com/maxine/afx/latest/index.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/speech/latest/asr/index.html, https://docs.nvidia.com/nim/speech/latest/tts/index.html, https://docs.nvidia.com/nim/speech/latest/nmt/index.html, https://docs.nvidia.com/nim/maxine/studio-voice/latest/overview.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,6 +30,7 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 ### Use Cases
 - Call center automation: real-time ASR transcription + intent classification for agent assist and self-service IVR
 - Voice assistant and chatbot voice interfaces with low-latency speech I/O
+- Digital-human speech pipelines such as [[NVIDIA-Tokkio-Digital-Human-Blueprint]]
 - Real-time meeting transcription and captioning for accessibility
 - Multilingual customer service with NMT for real-time translation in contact centers
 - Medical transcription: clinical-domain ASR with medical vocabulary and speaker diarization for multi-speaker clinical notes
@@ -64,6 +65,7 @@ Building speech AI from scratch requires assembling acoustic models, language mo
 - [[NVIDIA-Background-Noise-Removal-NIM]] - deployable BNR audio cleanup NIM that can improve speech intelligibility and ASR accuracy.
 - [[NIM-for-Maxine-Studio-Voice]] - deployable speech enhancement NIM for low-quality, noisy, or reverberant source audio.
 - [[NIM-for-Audio2Face-3D]] - digital-human animation NIM that can consume Riva/TTS-style speech audio.
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - digital-human blueprint that uses speech services as part of a real-time avatar pipeline.
 
 ## Resources
 - [NVIDIA Riva Developer Page](https://developer.nvidia.com/riva)

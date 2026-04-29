@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, Audio2Face-3D, A2F-3D, ACE, digital human, facial animation, ARKit blendshapes, emotion, CUDA, TensorRT
-**Related:** [[NVIDIA-NIM]], [[NVIDIA-ACE]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Omniverse]], [[NVIDIA-Maxine]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-TTS-NIM]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]], [[NGC]]
-**Sources:** https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/support-matrix.html
+**Related:** [[NVIDIA-NIM]], [[NVIDIA-ACE]], [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Omniverse]], [[NVIDIA-Maxine]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-TTS-NIM]], [[NVIDIA-Riva]], [[NVIDIA-NeMo]], [[NVIDIA-AI-Enterprise]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-CUDA]], [[NGC]]
+**Sources:** https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/support-matrix.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,10 +26,11 @@ Audio2Face-3D NIM gives digital-human systems a deployable service for speech-to
 - Current docs state that one Audio2Face-3D instance does not provide multi-GPU support; scale-out uses multiple instances and external routing.
 
 ### NVIDIA context
-Audio2Face-3D is the 3D avatar animation half of the Audio2Face story. It links [[NVIDIA-ACE]] digital humans, [[NVIDIA-Omniverse]] rendering/simulation workflows, speech services such as [[NVIDIA-TTS-NIM]], and [[NVIDIA-NIM]] deployment practices.
+Audio2Face-3D is the 3D avatar animation half of the Audio2Face story. It links [[NVIDIA-ACE]] digital humans, [[NVIDIA-Tokkio-Digital-Human-Blueprint]] workflows, [[NVIDIA-Omniverse]] rendering/simulation workflows, speech services such as [[NVIDIA-TTS-NIM]], and [[NVIDIA-NIM]] deployment practices.
 
 ## Connections
 - [[NVIDIA-ACE]] - Audio2Face-3D is a core digital-human component in ACE workflows.
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - Tokkio uses Audio2Face-3D in its animation pipeline.
 - [[NIM-for-Maxine-Audio2Face-2D]] - companion portrait-animation NIM for 2D animated output.
 - [[NVIDIA-Omniverse]] - 3D avatar and rendering workflows can consume facial animation outputs.
 - [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-TTS-NIM]], and [[NVIDIA-Riva]] - speech services provide audio inputs for digital-human animation pipelines.

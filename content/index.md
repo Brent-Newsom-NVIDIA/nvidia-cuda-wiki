@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 361*
+*Total pages: 364*
 
 ---
 
@@ -230,6 +230,7 @@
 - [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
 - [[NVIDIA-AI-Blueprints]] — NVIDIA-authored reference workflows for building AI applications on NIM, NeMo, Nemotron, and NVIDIA AI software
+- [[NVIDIA-RAG-Blueprint]] — NVIDIA AI Blueprint for enterprise retrieval augmented generation, multimodal RAG, evaluation, and guardrails
 - [[NVIDIA-Run-ai]] — NVIDIA AI workload and GPU orchestration platform for Kubernetes, AI Enterprise, and Mission Control workflows
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
@@ -255,6 +256,8 @@
 ### Agent Platforms
 - [[NVIDIA-AI-Q-Blueprint]] — NVIDIA AI Blueprint for enterprise research agents with shallow/deep routing, retrieval, citations, and evaluation
 - [[NVIDIA-Data-Flywheel-Blueprint]] — NVIDIA AI Blueprint for continuously optimizing agents and models with production traffic, NeMo evaluation/customization, and NIM redeployment
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] — NVIDIA AI Blueprint for vision agents, video search, summarization, and alert verification
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] — NVIDIA AI Blueprint for interactive digital humans using ACE, speech, RAG/LLM, and avatar animation
 - [[NVIDIA-NemoClaw]] — Alpha stack for running OpenClaw assistants with NVIDIA OpenShell and Nemotron models
 - [[NVIDIA-OpenShell]] — Secure sandboxed runtime and policy layer for autonomous AI agents
 

@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, ACE, NPC, Avatar, Digital Human, Speech AI, Animation, Gaming, Simulation
-**Related:** [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Maxine]], [[NVIDIA-Omniverse]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]]
-**Sources:** NVIDIA official documentation, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html
+**Related:** [[NVIDIA-Tokkio-Digital-Human-Blueprint]], [[NVIDIA-Riva]], [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], [[NVIDIA-TTS-NIM]], [[NIM-for-Audio2Face-3D]], [[NIM-for-Maxine-Audio2Face-2D]], [[NVIDIA-Maxine]], [[NVIDIA-Omniverse]], [[NVIDIA-NIM]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-NeMo]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/ace/tokkio/latest/overview/overview.html, https://docs.nvidia.com/ace/tokkio/latest/overview/architecture.html, https://docs.nvidia.com/nim/speech/latest/index.html, https://docs.nvidia.com/nim/digital-human/a2f-3d/latest/index.html, https://docs.nvidia.com/ace/audio2face-3d-microservice/latest/text/getting-started/overview.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -17,6 +17,7 @@ Traditional game NPCs use scripted dialog trees that feel rigid and limited. ACE
 ### Key Features
 - ASR microservice: real-time speech-to-text via Riva Parakeet models
 - TTS microservice: expressive neural text-to-speech via Riva
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] is the current NVIDIA-authored digital-human reference workflow that assembles ACE Controller, RAG/LLM knowledge sources, speech, animation, and rendering services.
 - Current [[NVIDIA-Speech-NIM-Microservices]] docs split ASR, TTS, and NMT into deployable NIM containers that can feed ACE-style digital human pipelines
 - LLM microservice: NIM-hosted LLM for conversational intelligence and intent understanding
 - Audio2Face: real-time facial animation driven by audio/phoneme input, including [[NIM-for-Audio2Face-3D]] for ARKit blendshape output and [[NIM-for-Maxine-Audio2Face-2D]] for portrait animation.
@@ -48,6 +49,7 @@ Traditional game NPCs use scripted dialog trees that feel rigid and limited. ACE
 - Python SDK for pipeline orchestration
 
 ## Connections
+- [[NVIDIA-Tokkio-Digital-Human-Blueprint]] - current Digital Human blueprint built from ACE-style services.
 - [[NVIDIA-Riva]] — ACE uses Riva for ASR and TTS in the speech pipeline
 - [[NVIDIA-Speech-NIM-Microservices]], [[NVIDIA-ASR-NIM]], and [[NVIDIA-TTS-NIM]] - current speech NIM docs for deployable ASR/TTS services.
 - [[NIM-for-Audio2Face-3D]] - current Digital Human NIM for speech-to-facial animation and emotion-driven expressions.
@@ -55,6 +57,7 @@ Traditional game NPCs use scripted dialog trees that feel rigid and limited. ACE
 - [[NVIDIA-Maxine]] — Maxine handles video/audio enhancement; ACE uses Maxine for avatar video quality
 - [[NVIDIA-Omniverse]] — ACE avatars rendered in Omniverse for USD-based digital human pipelines
 - [[NVIDIA-NIM]] — all ACE microservices deploy as NIM containers
+- [[NVIDIA-RAG-Blueprint]] - RAG workflow that can provide grounded knowledge for digital human responses.
 - [[NVIDIA-NeMo]] — NeMo models (LLM + Riva) underpin ACE conversational AI
 
 ## Resources

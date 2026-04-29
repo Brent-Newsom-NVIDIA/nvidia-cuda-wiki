@@ -2,8 +2,8 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, Cosmos Embed1, embeddings, video retrieval, physical AI, multimodal search, RAG, dataset curation
-**Related:** [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Cosmos-Curator-LHA]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Cloud-Functions]], [[cuVS]], [[CV-CUDA]], [[NVIDIA-Video-Codec-SDK]], [[TensorRT]], [[Triton-Inference-Server]]
-**Sources:** https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/index.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/configuration.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/performance.html
+**Related:** [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NVIDIA-Cosmos-Curator-LHA]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Cloud-Functions]], [[cuVS]], [[CV-CUDA]], [[NVIDIA-Video-Codec-SDK]], [[TensorRT]], [[Triton-Inference-Server]]
+**Sources:** https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/vss/latest/adding-workflows.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/index.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/configuration.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/performance.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,11 +23,12 @@ Physical AI workflows need searchable video data before they can curate, train, 
 - Current release notes identify the 224p Cosmos-Embed1 variant with 256-dimensional output vectors.
 
 ### NVIDIA context
-Cosmos Embed1 complements [[NIM-for-Cosmos-WFM]] by making physical-world video datasets searchable. It also connects Cosmos video search to [[NeMo-Retriever]], [[NVIDIA-AI-Data-Platform]], and [[cuVS]] where embeddings become retrieval indexes for RAG, data curation, and agentic video understanding.
+Cosmos Embed1 complements [[NIM-for-Cosmos-WFM]] by making physical-world video datasets searchable. It also connects Cosmos video search to [[NeMo-Retriever]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], and [[cuVS]] where embeddings become retrieval indexes for RAG, data curation, and agentic video understanding.
 
 ## Connections
 - [[NVIDIA-Cosmos]] - parent physical AI and world model platform.
 - [[NIM-for-Cosmos-WFM]] - generation NIM for Cosmos Predict and Transfer models.
+- [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - VSS uses video embeddings for natural-language video search workflows.
 - [[NVIDIA-Cosmos-Curator-LHA]] - curation workflow that can use embeddings for video understanding.
 - [[NeMo-Retriever]] and [[NeMo-Retriever-Embedding-NIM]] - adjacent NVIDIA retrieval microservice stack.
 - [[NVIDIA-AI-Data-Platform]] - enterprise data platform for retrieval, video search, and RAG.
