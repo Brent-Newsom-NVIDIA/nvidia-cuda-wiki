@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUPTI, Python, profiling, CUDA, observability
-**Related:** [[CUDA-Python]], [[CUPTI]], [[Nsight-Systems]], [[Nsight-Compute]], [[NVIDIA-CUDA]], [[PyTorch]], [[TensorRT]]
-**Sources:** https://docs.nvidia.com/cupti-python/, https://nvidia.github.io/cuda-python/latest/
+**Related:** [[CUDA-Python]], [[CUPTI]], [[Nsight-Python]], [[Nsight-Systems]], [[Nsight-Compute]], [[NVIDIA-CUDA]], [[PyTorch]], [[TensorRT]]
+**Sources:** https://docs.nvidia.com/cupti-python/, https://nvidia.github.io/cuda-python/latest/, https://docs.nvidia.com/nsight-python/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -25,6 +25,7 @@ CUPTI Python complements user-facing profilers like [[Nsight-Systems]] and [[Nsi
 ## Connections
 - [[CUPTI]] - underlying CUDA Profiling Tools Interface.
 - [[CUDA-Python]] - umbrella for NVIDIA Python CUDA components.
+- [[Nsight-Python]] - higher-level Python profiling automation in the CUDA Python ecosystem.
 - [[Nsight-Systems]] - system profiler built around CUDA activity visibility.
 - [[Nsight-Compute]] - kernel profiler that uses lower-level profiling concepts.
 - [[PyTorch]] - Python GPU framework where custom profiling can be valuable.

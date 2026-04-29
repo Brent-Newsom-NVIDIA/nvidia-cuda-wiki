@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Megatron-LM]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
+**Related:** [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Megatron-LM]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
 **Sources:** NVIDIA official documentation, pytorch.org
 **Last Updated:** 2026-04-09
 
@@ -56,6 +56,9 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - [[cuDNN]] — PyTorch uses cuDNN for all convolution, attention, and normalization primitives
 - [[cuBLAS]] — underlies all `torch.matmul` / `torch.nn.Linear` operations on GPU
 - [[NCCL]] — powers `torch.distributed` for multi-GPU all-reduce and collective operations
+- [[NVSHMEM4Py]] — can create PyTorch tensors backed by NVSHMEM symmetric memory for distributed GPU communication workflows.
+- [[Nsight-Python]] — profiles Python GPU workloads and examples include PyTorch kernel regions.
+- [[CUDA-Python]] — NVIDIA Python CUDA component hub adjacent to PyTorch GPU workflows.
 - [[TensorRT]] — primary export target for optimized production inference from PyTorch models
 - [[NVIDIA-DALI]] — drop-in replacement for PyTorch DataLoader for GPU-accelerated data pipelines
 - [[CUTLASS]] — custom GEMM kernels can be integrated via PyTorch C++ extensions

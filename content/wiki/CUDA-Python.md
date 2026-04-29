@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, Python, GPU Programming, CUDA Toolkit, Developer Tools
-**Related:** [[NVIDIA-CUDA]], [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]]
-**Sources:** https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://nvidia.github.io/cuda-python/latest/release.html
+**Related:** [[NVIDIA-CUDA]], [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]]
+**Sources:** https://developer.nvidia.com/cuda/python, https://nvidia.github.io/cuda-python/latest/, https://nvidia.github.io/cuda-python/latest/release.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/index.html, https://docs.nvidia.com/nsight-python/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
-CUDA Python is NVIDIA's umbrella for accessing the CUDA platform from Python. The current documentation splits the ecosystem into components such as [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], and [[CUPTI-Python]].
+CUDA Python is NVIDIA's umbrella for accessing the CUDA platform from Python. The current documentation splits the ecosystem into components such as [[cuda-core]], [[cuda-bindings]], [[cuda-pathfinder]], [[cuda-compute]], [[cuda-coop]], [[cuTile]], [[nvmath-python]], [[NVSHMEM4Py]], [[Nsight-Python]], and [[CUPTI-Python]].
 
 ## Detail
 
@@ -22,6 +22,8 @@ Python is central to AI, HPC, data science, and engineering workflows, but produ
 - [[cuda-coop]] - cooperative block/warp algorithms for use inside Numba CUDA kernels.
 - [[cuTile]] - Python DSL for the [[CUDA-Tile]] programming model.
 - [[nvmath-python]] - Pythonic access to NVIDIA math libraries.
+- [[NVSHMEM4Py]] - Python binding for [[NVSHMEM]] distributed GPU communication.
+- [[Nsight-Python]] - Python automation layer for Nsight kernel profiling workflows.
 - [[CUPTI-Python]] - Python-facing profiling interface around CUPTI concepts.
 
 ### NVIDIA context
@@ -35,6 +37,8 @@ CUDA Python is the connective layer between [[NVIDIA-CUDA]] and Python GPU libra
 - [[cuda-compute]] and [[cuda-coop]] - CCCL Python algorithm surfaces.
 - [[cuTile]] - tile-programming DSL listed from the CUDA Python hub.
 - [[nvmath-python]] - Python access to NVIDIA math libraries.
+- [[NVSHMEM4Py]] - Pythonic access to NVSHMEM PGAS communication.
+- [[Nsight-Python]] - Python-first Nsight profiling automation.
 - [[CUPTI-Python]] - profiling and tracing for Python CUDA applications.
 
 ## Source Excerpts

@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 19: CUDA Python profiling and communication wrappers
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch19-20260429T070807Z`; local Git tag `codex-backup-overnight-pre-batch19-20260429T070807Z`
+
+**Source URLs:** https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/index.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/overview.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/python/interoperability.html, https://docs.nvidia.com/nvshmem/api/api/language_bindings/index.html, https://docs.nvidia.com/nvshmem/release-notes-install-guide/install-guide/nvshmem4py-install-proc.html, https://docs.nvidia.com/nsight-python/index.html, https://docs.nvidia.com/nsight-python/overview/quickstart.html, https://developer.nvidia.com/nsight-python, https://nvidia.github.io/cuda-python/latest/
+
+**Gap analysis summary:**
+
+- Added NVSHMEM4Py as the official Python binding for NVSHMEM rather than leaving it buried inside the NVSHMEM page.
+- Added Nsight Python as the Python-first profiling automation layer listed from the current CUDA Python hub.
+- Kept Numba CUDA and third-party framework docs as context only, since the batch is limited to definitely NVIDIA-authored pages.
+
+**Pages created (2 total):**
+
+- `content/wiki/NVSHMEM4Py.md`
+- `content/wiki/Nsight-Python.md`
+
+**Pages updated:**
+
+- `content/wiki/CUDA-Python.md` - completed the CUDA Python hub graph with NVSHMEM4Py and Nsight Python.
+- `content/wiki/NVSHMEM.md` - promoted NVSHMEM4Py to a first-class related page.
+- `content/wiki/Nsight-Compute.md`, `content/wiki/Nsight-Systems.md`, and `content/wiki/CUPTI-Python.md` - connected Nsight Python to NVIDIA profiling workflows.
+- `content/wiki/CuPy.md` and `content/wiki/PyTorch.md` - linked NVSHMEM4Py/Nsight Python Python GPU interoperability context.
+- `content/index.md` - updated page count to 299 and indexed the two new pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 18: CUDA Python ecosystem coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch18-20260429T070353Z`; local Git tag `codex-backup-overnight-pre-batch18-20260429T070353Z`

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 297*
+*Total pages: 299*
 
 ---
 
@@ -79,6 +79,7 @@
 - [[cuda-compute]] — Python bindings for CCCL/CUB/Thrust-style host-callable parallel algorithms
 - [[NCCL]] — multi-GPU and multi-node collective communications (all-reduce, all-gather, broadcast)
 - [[NVSHMEM]] — GPU-cluster PGAS (Partitioned Global Address Space) communication via OpenSHMEM
+- [[NVSHMEM4Py]] — Official Python binding for NVSHMEM symmetric memory, put/get, collectives, and interoperability
 - [[NVIDIA-HPC-X]] — NVIDIA MPI, SHMEM, UCX, UCC, HCOLL, ClusterKit, and NCCL-RDMA-SHARP communications toolkit
 
 ### Scientific & Physics
@@ -138,6 +139,7 @@
 - [[CUDA-Math-API]] — device-side math functions (sin, cos, exp, FP16/BF16 intrinsics) for CUDA kernels
 - [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
+- [[Nsight-Python]] — Python-first Nsight kernel profiling automation across kernel configurations
 - [[Nsight-Systems]] — system-wide CPU+GPU performance profiler and timeline visualizer
 - [[Nsight-Visual-Studio-Edition]] — Visual Studio integration for CUDA debugging, profiling, and GPU development on Windows
 - [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA Linux IDE development workflows
