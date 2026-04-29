@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 72: Nsight Perf SDK
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch72-20260429T114140Z`; local Git tag `codex-backup-overnight-pre-batch72-20260429T114140Z`
+
+**Source URLs:** https://developer.nvidia.com/nsight-perf-sdk, https://developer.nvidia.com/nsight-perfsdk/getting-started/release-note-v2025.5, https://developer.nvidia.com/perfworks, https://docs.nvidia.com/nsight-developer-tools/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical page for Nsight Perf SDK after finding current NVIDIA developer docs and no existing wiki page.
+- Kept realtime HUD, GPU Periodic Sampler, timeline viewer, HTML report generation, in-application metrics, CI/CD perf gates, release notes, limitations, and PerfWorks replacement context folded into one page.
+- Connected Perf SDK to Nsight Graphics, Nsight Systems, Nsight Aftermath SDK, RTX, Ampere/Blackwell architecture context, and Developer Program support.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Perf-SDK.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Graphics.md` - connected Graphics profiling workflows to Perf SDK.
+- `content/wiki/NVIDIA-RTX.md` - connected RTX graphics performance metrics to Perf SDK.
+- `content/index.md` - updated total page count to 447 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 71: Nsight Aftermath SDK
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch71-20260429T113955Z`; local Git tag `codex-backup-overnight-pre-batch71-20260429T113955Z`

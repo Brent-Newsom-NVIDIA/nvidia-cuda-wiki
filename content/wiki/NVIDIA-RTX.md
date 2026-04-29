@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RTX, Ray Tracing, Real-Time Rendering, Tensor Cores, DXR, Vulkan, Gaming
-**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Omniverse]], [[TensorRT]], [[TensorRT-for-RTX]], [[Nsight-Graphics]], [[Nsight-Aftermath-SDK]]
-**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/index.html, https://developer.nvidia.com/nsight-graphics/get-started, https://developer.nvidia.com/nvidia-aftermath
+**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-AI-for-Media-SDKs]], [[NVIDIA-Omniverse]], [[TensorRT]], [[TensorRT-for-RTX]], [[Nsight-Graphics]], [[Nsight-Aftermath-SDK]], [[Nsight-Perf-SDK]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/maxine/index.html, https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/index.html, https://developer.nvidia.com/nsight-graphics/get-started, https://developer.nvidia.com/nvidia-aftermath, https://developer.nvidia.com/nsight-perf-sdk
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -62,6 +62,7 @@ Physically accurate lighting simulation (ray tracing) produces dramatically more
 - [[TensorRT-for-RTX]] - RTX-focused TensorRT runtime for local AI inference across RTX desktops, laptops, and workstations.
 - [[Nsight-Graphics]] - debugging/profiling tool for RTX graphics, ray tracing, GPU Trace, shaders, and frame capture.
 - [[Nsight-Aftermath-SDK]] - crash-dump SDK for diagnosing GPU exceptions and TDRs in D3D12/Vulkan RTX applications.
+- [[Nsight-Perf-SDK]] - in-application GPU performance metric SDK for DirectX, Vulkan, and OpenGL graphics workloads.
 
 ## Resources
 - [RTX Developer Page](https://developer.nvidia.com/rtx)

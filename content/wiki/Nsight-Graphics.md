@@ -2,8 +2,8 @@
 
 **Type:** Developer tool / graphics profiler
 **Tags:** NVIDIA, Nsight, graphics debugging, GPU Trace, Graphics Capture, shader profiler, shader debugger, Direct3D, Vulkan, OpenGL, DirectX Raytracing, Vulkan Raytracing, RTX, DRIVE, Jetson
-**Related:** [[Nsight-Aftermath-SDK]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Visual-Studio-Edition]], [[NVIDIA-RTX]], [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-DriveOS]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Developer-Program]], [[NVIDIA-CloudXR]]
-**Sources:** https://developer.nvidia.com/nsight-graphics/get-started, https://docs.nvidia.com/nsight-graphics/ReleaseNotes/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html, https://developer.nvidia.com/nsight-aftermath/getting-started
+**Related:** [[Nsight-Aftermath-SDK]], [[Nsight-Perf-SDK]], [[Nsight-Systems]], [[Nsight-Compute]], [[Nsight-Visual-Studio-Edition]], [[NVIDIA-RTX]], [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-DriveOS]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Developer-Program]], [[NVIDIA-CloudXR]]
+**Sources:** https://developer.nvidia.com/nsight-graphics/get-started, https://docs.nvidia.com/nsight-graphics/ReleaseNotes/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html, https://developer.nvidia.com/nsight-aftermath/getting-started, https://developer.nvidia.com/nsight-perf-sdk
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -30,6 +30,7 @@ NVIDIA also distributes it in automotive and edge stacks: current get-started do
 
 ## Connections
 - [[Nsight-Aftermath-SDK]] - SDK for collecting GPU crash mini-dumps that can be inspected in the graphics debugging workflow.
+- [[Nsight-Perf-SDK]] - in-application graphics performance metric collection SDK adjacent to GPU Trace workflows.
 - [[Nsight-Systems]] - system-level profiler often paired with Nsight Graphics for end-to-end graphics and ray tracing performance analysis.
 - [[Nsight-Compute]] - CUDA kernel profiler for compute-heavy graphics, neural rendering, and GPU workloads adjacent to Graphics.
 - [[Nsight-Visual-Studio-Edition]] - Visual Studio Nsight integration path on Windows.
