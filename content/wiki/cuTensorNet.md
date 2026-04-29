@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, CUDA, cuQuantum, quantum simulation, tensor networks, cuTENSOR, HPC
-**Related:** [[cuQuantum]], [[cuStateVec]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[CUDA-Q]], [[CUDA-QX]], [[NVIDIA-Quantum]], [[cuTENSOR]], [[NCCL]]
+**Related:** [[cuQuantum]], [[cuStateVec]], [[cuDensityMat]], [[cuPauliProp]], [[cuStabilizer]], [[cuQuantum-Appliance]], [[CUDA-Q]], [[CUDA-QX]], [[NVIDIA-Quantum]], [[cuTENSOR]], [[cuTENSORMg]], [[cuTENSORMp]], [[NCCL]]
 **Sources:** https://docs.nvidia.com/cuda/cuquantum/latest/cutensornet/index.html, https://docs.nvidia.com/cuda/cuquantum/latest/
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,7 @@ cuTensorNet is the cuQuantum component for tensor-network simulation, while [[cu
 - [[CUDA-Q]] - higher-level quantum programming stack that can use cuQuantum simulation backends.
 - [[NVIDIA-Quantum]] - solution area where cuQuantum fits beside CUDA-Q, CUDA-QX, NVQLink, and Quantum Cloud.
 - [[cuTENSOR]] - tensor algebra foundation used by cuTensorNet.
+- [[cuTENSORMg]] and [[cuTENSORMp]] - adjacent multi-GPU and distributed tensor contraction support in the cuTENSOR family.
 - [[NCCL]] - distributed GPU communication layer relevant for multi-GPU/multi-node simulation.
 
 ## Resources

@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 476*
+*Total pages: 478*
 
 ---
 
@@ -33,6 +33,8 @@
 - [[cuSPARSE]] — GPU-accelerated sparse matrix linear algebra (SpMV, SpMM, preconditioners)
 - [[cuSPARSELt]] — Structured sparse matrix-matrix multiplication library for Tensor Core sparse acceleration
 - [[cuTENSOR]] — GPU-accelerated tensor contraction, reduction, and elementwise operations
+- [[cuTENSORMg]] — cuTENSOR single-process multi-GPU tensor operation support
+- [[cuTENSORMp]] — cuTENSOR multi-process distributed tensor contraction support
 - [[cuDSS]] — GPU-accelerated direct sparse solver for very sparse linear systems
 - [[AmgX]] — GPU-accelerated algebraic multigrid and Krylov solver library (open source)
 - [[Incomplete-LU-Cholesky]] — CUDA whitepaper guidance for preconditioned iterative solvers using cuSPARSE and cuBLAS
