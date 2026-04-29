@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, System Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
-**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer, https://developer.nvidia.com/nsight-graphics/get-started
+**Related:** [[Nsight-Compute]], [[Nsight-Python]], [[Nsight-Deep-Learning-Designer]], [[Nsight-Graphics]], [[Nsight-Integration]], [[Nsight-Visual-Studio-Code-Edition]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Sources:** NVIDIA official documentation (docs.nvidia.com/cuda), https://docs.nvidia.com/nsight-python/index.html, https://developer.nvidia.com/nsight-dl-designer, https://developer.nvidia.com/nsight-graphics/get-started, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -51,6 +51,7 @@ Before optimizing individual GPU kernels, developers need to understand the big 
 - [[Nsight-Python]] — Python automation layer for Nsight-driven kernel profiling workflows.
 - [[Nsight-Deep-Learning-Designer]] - adjacent Nsight IDE for model-graph editing and TensorRT/ONNX Runtime inference profiling.
 - [[Nsight-Graphics]] - graphics profiling/debugging companion for ray tracing, GPU Trace, and frame-level analysis.
+- [[Nsight-Integration]] - Visual Studio extension can launch Nsight Systems activities from the Visual Studio Nsight menu.
 - [[Nsight-Visual-Studio-Code-Edition]] - VS Code CUDA debugging workflow adjacent to Nsight profiling workflows.
 - [[Nsight-Visual-Studio-Edition]] — Windows IDE integration for adjacent Nsight workflows
 - [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA IDE integration on Linux

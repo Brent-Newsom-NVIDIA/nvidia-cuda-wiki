@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 74: Nsight Integration
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch74-20260429T114645Z`; local Git tag `codex-backup-overnight-pre-batch74-20260429T114645Z`
+
+**Source URLs:** https://docs.nvidia.com/nsight-vs-integration/index.html, https://docs.nvidia.com/nsight-vs-integration/getting-started/index.html, https://docs.nvidia.com/nsight-vs-integration/release-notes/index.html, https://docs.nvidia.com/nsight-developer-tools/index.html
+
+**Gap analysis summary:**
+
+- Added a canonical Nsight Integration page after finding current NVIDIA 2026.1 docs and no existing wiki page.
+- Kept Visual Studio extension behavior, standalone tool discovery, Nsight menu launch flow, project-property propagation, VSE migration context, release-note support changes, and Visual Studio 2026 support in one page.
+- Connected Integration to Nsight Visual Studio Edition, Nsight Compute, Nsight Graphics, Nsight Systems, VS Code Edition, CUDA, and Developer Program context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-Integration.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Visual-Studio-Edition.md` - clarified the relationship between VSE and Integration.
+- `content/wiki/Nsight-Compute.md`, `content/wiki/Nsight-Graphics.md`, and `content/wiki/Nsight-Systems.md` - linked standalone tools back to Visual Studio Nsight Integration.
+- `content/index.md` - updated total page count to 449 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 73: Nsight Visual Studio Code Edition
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch73-20260429T114324Z`; local Git tag `codex-backup-overnight-pre-batch73-20260429T114324Z`
