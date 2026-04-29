@@ -2,6 +2,30 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 77: Nsight JupyterLab Extension
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch77-20260429T115417Z`; local Git tag `codex-backup-overnight-pre-batch77-20260429T115417Z`
+
+**Source URLs:** https://developer.nvidia.com/tools-overview/nsight-jupyterlab, https://docs.nvidia.com/nsight-systems/UserGuide/#profiling-within-jupyterlab, https://developer.nvidia.com/tools-overview/nsight-compute/get-started, https://pypi.org/project/jupyterlab-nvidia-nsight/
+
+**Gap analysis summary:**
+
+- Added a canonical Nsight JupyterLab Extension page after finding current NVIDIA developer, Nsight Systems, and Nsight Compute references with no existing wiki page.
+- Kept JupyterLab cell profiling, Nsight Systems and Nsight Compute integration, profiler GUI-in-notebook behavior, magic commands, and PyPI installation in one page.
+- Connected the page to Nsight Developer Tools, Nsight Systems, Nsight Compute, Nsight Python, CUDA Python, CUPTI, CUDA, and Developer Program context.
+
+**Pages created (1 total):**
+
+- `content/wiki/Nsight-JupyterLab-Extension.md`
+
+**Pages updated:**
+
+- `content/wiki/Nsight-Developer-Tools.md` - promoted the JupyterLab extension from future gap candidate to linked page.
+- `content/wiki/Nsight-Systems.md`, `content/wiki/Nsight-Compute.md`, and `content/wiki/Nsight-Python.md` - connected notebook profiling workflows.
+- `content/index.md` - updated total page count to 452 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 76: Nsight Developer Tools
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch76-20260429T115205Z`; local Git tag `codex-backup-overnight-pre-batch76-20260429T115205Z`

@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Nsight, Python, Profiling, CUDA, Performance, Kernel Analysis
-**Related:** [[Nsight-Developer-Tools]], [[CUDA-Python]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]], [[NVIDIA-CUDA]]
+**Related:** [[Nsight-Developer-Tools]], [[Nsight-JupyterLab-Extension]], [[CUDA-Python]], [[Nsight-Compute]], [[Nsight-Systems]], [[CUPTI-Python]], [[PyTorch]], [[CuPy]], [[NVIDIA-CUDA]]
 **Sources:** https://docs.nvidia.com/nsight-python/index.html, https://docs.nvidia.com/nsight-python/overview/quickstart.html, https://developer.nvidia.com/nsight-python, https://nvidia.github.io/cuda-python/latest/
 **Last Updated:** 2026-04-29
 
@@ -29,6 +29,7 @@ Nsight Python fills a different niche from [[Nsight-Compute]] and [[Nsight-Syste
 - [[CUDA-Python]] - current CUDA Python hub lists Nsight Python.
 - [[Nsight-Compute]] - Nsight Python includes a collector for Nsight Compute-style kernel metrics.
 - [[Nsight-Systems]] - adjacent Nsight profiler for system-wide timelines.
+- [[Nsight-JupyterLab-Extension]] - adjacent notebook workflow for profiling selected JupyterLab cells.
 - [[CUPTI-Python]] - lower-level Python profiling/trace interface around CUPTI concepts.
 - [[PyTorch]] and [[CuPy]] - common Python GPU workloads that Nsight Python can profile.
 - [[NVIDIA-CUDA]] - parent CUDA platform and performance tooling ecosystem.

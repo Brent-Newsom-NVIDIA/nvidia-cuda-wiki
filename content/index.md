@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 451*
+*Total pages: 452*
 
 ---
 
@@ -148,6 +148,7 @@
 - [[Nsight-Deep-Learning-Designer]] — visual ONNX model design and inference profiling IDE with TensorRT/ONNX Runtime profilers
 - [[Nsight-Graphics]] — standalone graphics debugger/profiler for GPU Trace, frame capture, shaders, ray tracing, DRIVE, and Jetson
 - [[Nsight-Integration]] — Visual Studio extension that launches standalone Nsight Compute, Graphics, and Systems activities
+- [[Nsight-JupyterLab-Extension]] — JupyterLab extension for profiling notebook cells with Nsight Systems and Nsight Compute
 - [[Nsight-Perf-SDK]] — graphics profiling toolbox for collecting GPU metrics inside DirectX, Vulkan, and OpenGL applications
 - [[Nsight-Python]] — Python-first Nsight kernel profiling automation across kernel configurations
 - [[Nsight-Systems]] — system-wide CPU+GPU performance profiler and timeline visualizer
