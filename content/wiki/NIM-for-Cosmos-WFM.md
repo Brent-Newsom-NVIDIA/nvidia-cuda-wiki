@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, Cosmos, world foundation models, physical AI, video generation, synthetic data, robotics, autonomous vehicles
-**Related:** [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NIM]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Omniverse]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NGC-Catalog]], [[TensorRT]], [[TensorRT-LLM]], [[Triton-Inference-Server]]
+**Related:** [[NVIDIA-Cosmos]], [[NIM-for-Cosmos-Reason]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-NIM]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Omniverse]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NGC-Catalog]], [[TensorRT]], [[TensorRT-LLM]], [[Triton-Inference-Server]]
 **Sources:** https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos/latest/index.html, https://docs.nvidia.com/nim/cosmos/latest/support-matrix.html
 **Last Updated:** 2026-04-29
 
@@ -27,6 +27,7 @@ Cosmos WFM NIM is the deployable microservice counterpart to [[NVIDIA-Cosmos]]. 
 
 ## Connections
 - [[NVIDIA-Cosmos]] - parent world foundation model platform.
+- [[NIM-for-Cosmos-Reason]] - companion Cosmos VLM NIM family for image/video/text reasoning.
 - [[NIM-for-Cosmos-Embed1]] - companion NIM for joint video-text embeddings and physical-world video retrieval.
 - [[NIM-for-Vision-Language-Models]] - current VLM NIM docs host Cosmos Reason NIM documentation.
 - [[NIM-for-Visual-Generative-AI]] - adjacent NIM family for image and visual generative AI models.

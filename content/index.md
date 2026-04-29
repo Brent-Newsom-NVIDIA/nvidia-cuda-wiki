@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 429*
+*Total pages: 430*
 
 ---
 
@@ -353,6 +353,7 @@
 - [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
 - [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation
 - [[NIM-for-Cosmos-WFM]] — Cosmos WFM NIM for text/image/video-to-world and video transfer workflows
+- [[NIM-for-Cosmos-Reason]] — Cosmos Reason VLM NIM family for image, video, and text reasoning
 - [[NIM-for-Cosmos-Embed1]] — Cosmos Embed1 NIM for joint video-text embeddings and physical AI video retrieval
 - [[NIM-for-Vision-Language-Models]] — VLM NIM family for multimodal reasoning, image understanding, and visual assistants
 - [[NIM-for-Visual-Generative-AI]] — Visual GenAI NIM family for image generation, image editing, and 3D asset generation

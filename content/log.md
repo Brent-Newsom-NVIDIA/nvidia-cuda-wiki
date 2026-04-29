@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 56: Cosmos Reason VLM NIM
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch56-20260429T103027Z`; local Git tag `codex-backup-overnight-pre-batch56-20260429T103027Z`
+
+**Source URLs:** https://docs.nvidia.com/cosmos/latest/cosmos_nim.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/cosmos-reason2/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html, https://docs.nvidia.com/nim/vision-language-models/latest/fine-tune-model.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html
+
+**Gap analysis summary:**
+
+- Added one canonical page for Cosmos Reason because current NVIDIA Cosmos docs explicitly route Cosmos Reason1/Reason2 to NVIDIA NIM for VLMs, while the wiki previously only mentioned it inside the broader Cosmos and VLM pages.
+- Kept Cosmos Reason as a single durable topic rather than creating separate pages for Reason1, Reason2 2B, Reason2 8B, API examples, support-matrix rows, or model cards.
+- Connected Cosmos Reason to Cosmos WFM, Cosmos Embed1, VLM NIMs, VSS, AI Data Platform, NIM, AI Enterprise, TensorRT-LLM, and Triton.
+
+**Pages created (1 total):**
+
+- `content/wiki/NIM-for-Cosmos-Reason.md`
+
+**Pages updated:**
+
+- `content/wiki/NIM-for-Vision-Language-Models.md` - added Cosmos Reason as the canonical Cosmos VLM NIM page and summarized Reason2 support constraints.
+- `content/wiki/NIM-for-Cosmos-WFM.md` - separated Cosmos world generation from Cosmos Reason VLM serving.
+- `content/wiki/NIM-for-Cosmos-Embed1.md` - linked video embeddings to Cosmos Reason VLM reasoning workflows.
+- `content/wiki/NVIDIA-Cosmos.md` - linked Cosmos platform coverage to the new Cosmos Reason page.
+- `content/index.md` - updated total page count to 430 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 55: NIM LLM Day 0 safety model
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch55-20260429T102310Z`; local Git tag `codex-backup-overnight-pre-batch55-20260429T102310Z`

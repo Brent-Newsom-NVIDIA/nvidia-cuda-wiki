@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Omniverse]], [[NVIDIA-Omniverse-Reference-Architectures]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[Red-Hat-AI-Factory-with-NVIDIA]]
-**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/ref-arch-diagrams/factory-dt-diagram.html
+**Related:** [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Reason]], [[NIM-for-Cosmos-Embed1]], [[NIM-for-Vision-Language-Models]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NVIDIA-Omniverse]], [[NVIDIA-Omniverse-Reference-Architectures]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-Drive-Platform]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[Red-Hat-AI-Factory-with-NVIDIA]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html, https://docs.nvidia.com/cosmos/latest/cosmos_nim.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/cosmos/latest/introduction.html, https://docs.nvidia.com/nim/cosmos-embed1/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/ai-enterprise/deployment/red-hat-ai-factory/latest/overview.html, https://docs.omniverse.nvidia.com/arch-diagrams/latest/ref-arch-diagrams/factory-dt-diagram.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -21,7 +21,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - Cosmos Curator/LHA: [[NVIDIA-Cosmos-Curator-LHA]] documentation covers video understanding and curation workflows for large-scale physical AI datasets.
 - Cosmos WFM NIM: [[NIM-for-Cosmos-WFM]] deploys Cosmos-Predict1 and Cosmos-Transfer2.5 world foundation models through NIM containers and APIs.
 - Cosmos Embed1 NIM: [[NIM-for-Cosmos-Embed1]] generates joint video-text embeddings for dataset search, semantic deduplication, and physical AI retrieval.
-- Cosmos Reason NIMs: current [[NIM-for-Vision-Language-Models]] docs host Cosmos Reason1/Reason2 serving details.
+- Cosmos Reason NIMs: [[NIM-for-Cosmos-Reason]] covers Cosmos Reason1/Reason2 VLM reasoning, with current serving details hosted under [[NIM-for-Vision-Language-Models]].
 - VSS blueprint adjacency: [[NVIDIA-Video-Search-and-Summarization-Blueprint]] uses Cosmos VLM and video embedding concepts for video understanding, search, and reports.
 - Cosmos Predict: video prediction models for generating future frames from current observations
 - Physical realism: models trained to respect physics, object permanence, and scene continuity
@@ -53,6 +53,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - [[NVIDIA-Omniverse]] — Cosmos integrates with Omniverse Replicator for synthetic data pipelines
 - [[NVIDIA-Omniverse-Reference-Architectures]] - industrial facility digital twin architecture uses Omniverse and Cosmos for synthetic data variations.
 - [[NIM-for-Cosmos-WFM]] - deployable NIM surface for Cosmos Predict and Transfer world models.
+- [[NIM-for-Cosmos-Reason]] - Cosmos VLM NIM family for image/video/text reasoning.
 - [[NIM-for-Cosmos-Embed1]] - video-text embedding NIM for Cosmos video search and dataset curation.
 - [[NIM-for-Vision-Language-Models]] - current docs surface for Cosmos Reason VLM NIMs.
 - [[NVIDIA-Video-Search-and-Summarization-Blueprint]] - video search/summarization blueprint that uses Cosmos models for video understanding and embeddings.
