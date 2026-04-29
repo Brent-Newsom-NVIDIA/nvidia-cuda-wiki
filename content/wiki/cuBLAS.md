@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Linear Algebra, BLAS, Math, HPC, AI
-**Related:** [[cuSOLVER]], [[cuSPARSE]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]]
+**Related:** [[cuSOLVER]], [[cuBLASDx]], [[cuBLASMp]], [[cuSPARSE]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuBLAS is NVIDIA's GPU-accelerated library implementing all 152 standard Basic Linear Algebra Subprograms (BLAS) routines for NVIDIA GPUs. It covers Level 1 (vector-vector), Level 2 (matrix-vector), and Level 3 (matrix-matrix) operations, with optimized support for Tensor Cores and mixed/low-precision arithmetic. It is the foundational building block for GPU-accelerated AI and HPC numerical computing.
@@ -46,6 +46,8 @@ cuBLAS solves the problem of accelerating dense linear algebra workloads by offl
 
 ## Connections
 - [[cuSOLVER]] — builds on cuBLAS for linear solvers and decompositions
+- [[cuBLASDx]] — device-side BLAS-style operations for fused CUDA kernels
+- [[cuBLASMp]] — distributed dense linear algebra extension for multi-process GPU systems
 - [[cuSPARSE]] — sparse counterpart to cuBLAS dense operations
 - [[cuTENSOR]] — extends dense algebra to arbitrary tensor contractions
 - [[CUTLASS]] — open-source GEMM templates that complement cuBLAS

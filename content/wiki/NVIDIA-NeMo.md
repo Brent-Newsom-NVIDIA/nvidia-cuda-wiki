@@ -1,64 +1,48 @@
 # NVIDIA NeMo
 
-**Type:** Technology
-**Tags:** CUDA, NVIDIA, GPU, LLM, Speech, NLP, Framework, Generative AI, Training
-**Related:** [[NeMo-Curator]], [[Megatron-LM]], [[TensorRT-LLM]], [[PyTorch]], [[cuDNN]], [[NCCL]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/nemo
-**Last Updated:** 2026-04-09
+**Type:** Platform
+**Tags:** NVIDIA, NeMo, generative AI, AI agents, LLM, speech, multimodal, training, microservices
+**Related:** [[NeMo-Platform]], [[NeMo-Curator]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NVIDIA-NIM]], [[Megatron-LM]], [[TensorRT-LLM]], [[Nemotron]]
+**Sources:** https://docs.nvidia.com/nemo/index.html, https://docs.nvidia.com/nemo-framework/index.html, https://docs.nvidia.com/nemo/microservices/latest/index.html, https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
-NVIDIA NeMo is an open-source, scalable framework for building, customizing, and deploying large language models (LLMs), multimodal models, and speech AI systems. It provides a modular, configuration-driven approach to training foundation models at scale, with built-in support for multi-node distributed training on NVIDIA GPU clusters. NeMo is the primary NVIDIA framework for LLM pre-training, fine-tuning (SFT, RLHF, DPO), and speech model development, and serves as the upstream training stack for models deployed via TensorRT-LLM.
+NVIDIA NeMo is now best understood as a modular software suite for managing the AI agent lifecycle, not only as a training framework. Current NVIDIA docs organize NeMo across microservices, framework libraries, agent tooling, retrieval, guardrails, data curation, evaluation, customization, deployment, and blueprints.
 
 ## Detail
 
 ### Purpose
-NeMo addresses the complexity of training large foundation models by providing production-grade, modular building blocks for LLM and speech AI workflows. It abstracts away distributed training infrastructure while exposing fine-grained control over parallelism strategies, making it suitable for both research exploration and production-scale model development on NVIDIA DGX/HGX clusters.
+NeMo gives developers and enterprises a connected path for building, customizing, evaluating, protecting, deploying, and optimizing generative AI and agentic systems. It spans open-source training components, production microservices, and workflow tooling.
 
-### Key Features
-- Modular NeMo Collections: LLM, Multimodal, ASR (Automatic Speech Recognition), TTS (Text-to-Speech)
-- Built on PyTorch Lightning with Megatron-LM parallelism integration
-- Support for tensor parallelism, pipeline parallelism, sequence parallelism, and expert parallelism (for MoE models)
-- Full fine-tuning and parameter-efficient fine-tuning (PEFT): LoRA, P-Tuning, Prompt Tuning, Adapter
-- RLHF (Reinforcement Learning from Human Feedback) and DPO (Direct Preference Optimization) pipelines
-- Supports Llama, Mixtral, Nemotron, Falcon, GPT variants, and custom architectures
-- Automatic Mixed Precision (AMP): FP16, BF16, FP8 on Hopper/Blackwell
-- Streamer-based data loading and online dataset mixing for trillion-token training runs
-- Experiment Manager with automatic checkpointing, logging (WandB, TensorBoard), and resumability
-- Native integration with NeMo Curator for data preparation
-- NeMo Guardrails sub-project for LLM safety and alignment
-- Inference export to TensorRT-LLM for production deployment
+### Current architecture
+- **[[NeMo-Platform]]:** Microservices for synthetic data, customization, evaluation, guardrails, inference, RBAC, and observability.
+- **NeMo Framework:** Open-source framework for large-scale pretraining, post-training, reinforcement learning, multimodal models, and speech AI.
+- **[[NVIDIA-Agent-Intelligence-Toolkit]]:** Framework-agnostic workflow layer for agent development, profiling, evaluation, MCP, and A2A.
+- **[[NeMo-Retriever]]:** Multimodal extraction, embedding, indexing, retrieval, and reranking for enterprise RAG.
+- **[[NeMo-Guardrails]]:** Programmable safety, policy, and topical controls for LLMs and agents.
+- **[[NeMo-Curator]]:** GPU-accelerated data cleaning, filtering, and multimodal curation.
+- **Export/deploy:** Production deployment through [[TensorRT]], [[TensorRT-LLM]], [[vLLM]], [[Triton-Inference-Server]], and [[NVIDIA-NIM]].
 
-### Use Cases
-- Pre-training LLMs from scratch (GPT, Llama, Nemotron architectures) at billion-to-trillion parameter scale
-- Supervised fine-tuning (SFT) and instruction tuning of LLMs
-- RLHF/DPO alignment training
-- Domain adaptation of foundation models (medical, legal, code, etc.)
-- Training automatic speech recognition (ASR) models (Conformer, FastConformer, Canary)
-- Text-to-speech (TTS) synthesis model training
-- Multimodal model training (vision-language models)
-
-### Hardware Requirements
-- NVIDIA GPU with CUDA Compute Capability 7.0+ (Volta/V100 minimum)
-- A100 (Ampere) or H100 (Hopper) strongly recommended for BF16/FP8 training
-- Multi-GPU / multi-node: NVLink + InfiniBand for large-scale runs
-- DGX A100, DGX H100, or DGX B200 clusters for production pre-training
-- CUDA 11.8 minimum; CUDA 12.x recommended
-
-### Language Bindings
-- Python (primary)
-- YAML/Hydra configuration for experiments
-- REST API for NeMo Guardrails
+### NVIDIA context
+NeMo is the lifecycle layer around NVIDIA's model, inference, and AI software portfolio. [[Nemotron]] models can be trained/customized with NeMo components, served through [[NVIDIA-NIM]], connected to data via [[NeMo-Retriever]], protected by [[NeMo-Guardrails]], and orchestrated through [[NVIDIA-Agent-Intelligence-Toolkit]].
 
 ## Connections
-- [[NeMo-Curator]] — upstream data curation pipeline that feeds into NeMo training workflows
-- [[Megatron-LM]] — NeMo uses Megatron-LM's distributed training core for model and pipeline parallelism
-- [[TensorRT-LLM]] — downstream deployment target; NeMo-trained models exported for optimized inference
-- [[PyTorch]] — NeMo is built on PyTorch and PyTorch Lightning
-- [[NCCL]] — underpins all distributed collective communications during multi-GPU/multi-node training
-- [[cuDNN]] — used by PyTorch backend for attention and convolution primitives within NeMo
+- [[NeMo-Platform]] - microservices platform for production agent lifecycle workflows.
+- [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow and evaluation toolkit inside the NeMo family.
+- [[NeMo-Retriever]] - retrieval layer for enterprise RAG and multimodal data extraction.
+- [[NeMo-Guardrails]] - safety and policy controls for model and agent responses.
+- [[NVIDIA-NIM]] - deployment and inference endpoint layer for NeMo-related models.
+- [[Megatron-LM]] - distributed training lineage for large models and parallelism.
+- [[TensorRT-LLM]] - production inference optimization path for NeMo-trained LLMs.
+- [[Nemotron]] - NVIDIA model family closely tied to NeMo development and deployment workflows.
+
+## Source Excerpts
+- NVIDIA NeMo docs describe NeMo as a modular suite for managing the AI agent lifecycle.
+- Current NeMo docs list microservices, framework, agent toolkit, Retriever, Guardrails, Curator, RL, AutoModel, and deployment components.
 
 ## Resources
-- [NVIDIA NeMo Developer Page](https://developer.nvidia.com/nemo)
-- [NeMo Documentation](https://docs.nvidia.com/nemo-framework/user-guide/latest/)
-- [GitHub](https://github.com/NVIDIA/NeMo)
-- [NVIDIA NGC NeMo Container](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nemo)
+- [NVIDIA NeMo Documentation](https://docs.nvidia.com/nemo/index.html)
+- [NeMo Framework Documentation](https://docs.nvidia.com/nemo-framework/index.html)
+- [NeMo Platform Documentation](https://docs.nvidia.com/nemo/microservices/latest/index.html)
+- [NeMo Agent Toolkit](https://docs.nvidia.com/nemo/agent-toolkit/latest/index.html)
+

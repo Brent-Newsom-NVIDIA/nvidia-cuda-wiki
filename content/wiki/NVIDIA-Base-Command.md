@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, MLOps, cluster management, HPC, training, multi-GPU, job scheduling, DGX, LLMOps
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-AI-Workbench]], [[Megatron-LM]], [[NCCL]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-AI-Workbench]], [[Megatron-LM]], [[NCCL]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Base Command Platform (BCP) is a cloud-native, enterprise MLOps platform for managing, scheduling, and orchestrating large-scale AI training workloads on NVIDIA DGX infrastructure and NVIDIA-Certified servers. It provides job scheduling, dataset and model versioning, team resource management, experiment tracking, and cluster health monitoring — built specifically for the demands of multi-node, multi-GPU AI training at the DGX SuperPOD scale. BCP is the production MLOps layer for enterprises running large foundation model training or industrial AI at scale.
@@ -49,6 +49,10 @@ Training large AI models (LLMs, multimodal foundation models, scientific AI) req
 
 ## Connections
 - [[NVIDIA-DGX]] — BCP is the primary software platform for managing DGX SuperPOD and DGX cloud deployments
+- [[NVIDIA-DGX-Cloud]] — cloud deployment target for Base Command Platform workflows
+- [[NVIDIA-DGX-SuperPOD]] — on-prem scale-out AI supercomputing platform managed by Base Command workflows
+- [[NVIDIA-Base-Command-Manager]] — infrastructure cluster-management companion to Base Command Platform
+- [[NVIDIA-BaseOS]] — validated OS layer underneath managed NVIDIA AI infrastructure
 - [[NVIDIA-AI-Enterprise]] — Base Command is part of the AI Enterprise software portfolio for enterprise MLOps
 - [[NGC]] — BCP jobs run NGC containers; model and dataset artifacts stored alongside NGC private registry
 - [[NVIDIA-AI-Workbench]] — Workbench is the local development companion; jobs are typically developed in Workbench and scaled via BCP

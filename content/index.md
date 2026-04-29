@@ -1,13 +1,13 @@
 # NVIDIA Wiki — Master Index
 
-*Last updated: 2026-04-28*
-*Total pages: 140*
+*Last updated: 2026-04-29*
+*Total pages: 182*
 
 ---
 
 ## Concepts
 
-*(none yet)*
+- [[NVIDIA-AI-Grid]] — Distributed AI infrastructure concept for workload placement across cloud, data center, and edge locations
 
 ## People
 
@@ -21,10 +21,15 @@
 
 ### Math & Linear Algebra
 - [[cuBLAS]] — GPU-accelerated BLAS library: all 152 standard routines, Tensor Core GEMM, multi-GPU
+- [[cuBLASDx]] — Device-side BLAS-style operations for fusing dense linear algebra into CUDA kernels
+- [[cuBLASMp]] — Multi-process distributed dense linear algebra library with PBLAS-like APIs
 - [[cuFFT]] — GPU-accelerated Fast Fourier Transform library for 1D/2D/3D real and complex data
+- [[cuFFTDx]] — Device-side FFT library for fusing FFT operations into CUDA kernels
 - [[cuRAND]] — GPU-accelerated random number generation library (pseudo and quasi-random, multiple distributions)
 - [[cuSOLVER]] — GPU-accelerated dense and sparse direct linear solvers and eigensolvers
+- [[cuSOLVERMp]] — Distributed-memory dense linear solver and eigensolver library with ScaLAPACK-like APIs
 - [[cuSPARSE]] — GPU-accelerated sparse matrix linear algebra (SpMV, SpMM, preconditioners)
+- [[cuSPARSELt]] — Structured sparse matrix-matrix multiplication library for Tensor Core sparse acceleration
 - [[cuTENSOR]] — GPU-accelerated tensor contraction, reduction, and elementwise operations
 - [[cuDSS]] — GPU-accelerated direct sparse solver for very sparse linear systems
 - [[AmgX]] — GPU-accelerated algebraic multigrid and Krylov solver library (open source)
@@ -59,6 +64,8 @@
 - [[nvImageCodec]] — unified GPU-accelerated image codec library (JPEG, JPEG2000, TIFF, WebP, PNG)
 - [[cuCIM]] — GPU-accelerated image processing with scikit-image compatible API (RAPIDS)
 - [[nvJPEG]] — GPU-accelerated JPEG encoding/decoding; batch decode backend for DALI and nvImageCodec
+- [[nvJPEG2000]] — CUDA-accelerated JPEG2000 encode/decode library
+- [[nvTIFF]] — CUDA-accelerated TIFF encode/decode library
 
 ### Parallel Algorithms
 - [[Thrust]] — GPU-accelerated C++ STL-compatible parallel algorithms (sort, scan, reduce, transform)
@@ -72,6 +79,7 @@
 - [[cuEquivariance]] — GPU-accelerated kernels for equivariant neural networks (drug discovery, materials science)
 - [[cuLitho]] — GPU-accelerated computational lithography (OPC, ILT) for semiconductor manufacturing
 - [[cuQuantum]] — GPU-accelerated quantum computing simulation (state vector, tensor network, density matrix)
+- [[cuStateVec]] — cuQuantum state-vector simulation component for quantum circuit workloads
 - [[CUDA-Q]] — hybrid quantum-classical computing platform with GPU simulation and QPU backend support
 
 ### Security & Cryptography
@@ -81,11 +89,23 @@
 - [[cuEST]] — GPU-accelerated RF signal processing for electronic warfare and spectrum monitoring
 
 ### Development Tools
+- [[NVIDIA-CUDA]] — Core NVIDIA GPU computing platform, toolkit, programming model, libraries, and tools
 - [[NVCC]] — NVIDIA CUDA Compiler Driver; compiles CUDA C/C++ for host and device
 - [[CUDA-GDB]] — GNU GDB-based GPU debugger for CUDA applications on Linux and QNX
 - [[NVRTC]] — NVIDIA Runtime Compilation library for JIT compilation of CUDA C++ at runtime
 - [[nvJitLink]] — CUDA 12 runtime device-code linker for JIT-linking PTX/cubin/LTOIR modules
 - [[libNVVM]] — LLVM-based NVVM IR to PTX compiler backend; enables custom GPU language compilers
+- [[NVVM-IR]] — LLVM-based intermediate representation for CUDA GPU compiler front ends
+- [[libdevice]] — Device-side bitcode library used by CUDA compiler flows for GPU math and utilities
+- [[PTX-ISA]] — NVIDIA virtual GPU instruction set used by CUDA compiler and JIT workflows
+- [[PTX-Compiler-APIs]] — Toolkit APIs for compiling PTX strings into GPU assembly code
+- [[nvFatbin]] — Runtime CUDA fatbin creation API for packaging cubin, PTX, and LTO-IR variants
+- [[CUDA-Binary-Utilities]] — cuobjdump, nvdisasm, cu++filt, and nvprune tools for CUDA binaries
+- [[CUDA-Compile-Time-Advisor]] — ctadvisor tool for analyzing and reducing CUDA C++ compile time
+- [[CUDA-Debugger-API]] — Low-level CUDA debugger integration API
+- [[CUDA-Cpp-Standard-Library]] — CUDA-capable C++ standard library facilities in the CCCL stack
+- [[CUDA-Runtime-API]] — Higher-level CUDA API for devices, memory, streams, graphs, and launches
+- [[CUDA-Driver-API]] — Lower-level CUDA API for contexts, modules, memory, and explicit control
 - [[CUDA-Math-API]] — device-side math functions (sin, cos, exp, FP16/BF16 intrinsics) for CUDA kernels
 - [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
@@ -93,16 +113,22 @@
 
 ### Embedded & Edge
 - [[cuDLA]] — CUDA API for programming NVIDIA DLA (Deep Learning Accelerator) on Jetson/DRIVE SoCs
+- [[CUDA-for-Tegra]] — CUDA guidance for Tegra integrated GPU platforms including Jetson and DRIVE
+- [[CUDA-on-WSL]] — CUDA support for Linux GPU development inside Windows Subsystem for Linux 2
 
 ### Inference & Data Transfer
 - [[NIXL]] — NVIDIA Inference Xfer Library; high-throughput KV cache and tensor transfer for LLM serving
+- [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform for local, VM, and Kubernetes deployment paths
 
 ---
 
 ## NVIDIA Frameworks
 
 ### Large Language Models & Speech
-- [[NVIDIA-NeMo]] — open-source framework for LLM/speech pre-training, fine-tuning (SFT, RLHF, DPO)
+- [[NVIDIA-NeMo]] — Modular suite for AI agent lifecycle management, training, microservices, retrieval, and deployment
+- [[NeMo-Platform]] — NeMo microservices platform for synthetic data, customization, evaluation, guardrails, and inference
+- [[NeMo-Retriever]] — Multimodal extraction, embedding, indexing, retrieval, and reranking microservices for RAG
+- [[NVIDIA-Agent-Intelligence-Toolkit]] — Framework-agnostic toolkit for agent workflows, profiling, evaluation, MCP, and A2A
 - [[Megatron-LM]] — open-source framework for 3D-parallel LLM pre-training at trillion-parameter scale
 - [[TensorRT-LLM]] — LLM inference optimization: continuous batching, paged KV cache, FP8, TP/PP
 
@@ -126,7 +152,9 @@
 ## Partner / Ecosystem Libraries
 
 ### Python GPU Computing
+- [[PyTorch]] — CUDA-accelerated deep learning framework backed by cuDNN, cuBLAS, NCCL, and TensorRT export paths
 - [[CuPy]] — NumPy/SciPy-compatible GPU array library backed by cuBLAS, cuFFT, cuRAND, cuSPARSE
+- [[cuPyNumeric]] — NumPy API implementation on Legate for CPU, GPU, and multi-node scaling
 - [[JAX]] — composable function transformations (jit, grad, vmap, pmap) with XLA GPU compilation
 - [[TensorFlow-GPU]] — Google's deep learning framework with CUDA/cuDNN/XLA GPU acceleration
 - [[Dask]] — Python parallel/distributed computing; scales RAPIDS GPU workflows across multi-GPU clusters
@@ -141,12 +169,23 @@
 ### AI Cloud & Software Platforms
 - [[NGC]] — NVIDIA GPU Cloud: curated hub of GPU-optimized containers, models, Helm charts, and SDKs
 - [[NVIDIA-NIM]] — Inference Microservices: production-ready AI inference containers with OpenAI-compatible REST API
+- [[NVIDIA-Dynamo]] — NVIDIA inference-serving platform adjacent to NIM and disaggregated serving workflows
+- [[NVIDIA-AIStore]] — Distributed storage stack tailored for AI workloads and elastic clusters
 - [[NVIDIA-AI-Enterprise]] — End-to-end enterprise AI software suite with SLA support covering the full NVIDIA stack
 - [[NVIDIA-AI-Workbench]] — Unified developer environment for GPU projects with one-click environment management and multi-location compute
 - [[NVIDIA-Base-Command]] — AI training cluster management platform for DGX systems: job scheduling, dataset versioning, experiment tracking
+- [[NVIDIA-Base-Command-Manager]] — Cluster-management platform for provisioning and operating AI data center infrastructure
+- [[NVIDIA-BaseOS]] — Validated production operating system layer for DGX and AI factory environments
+- [[NVIDIA-DGX-Cloud]] — Cloud-accessible NVIDIA AI supercomputing platform
+- [[NVIDIA-Cloud-Functions]] — NVIDIA cloud/API delivery surface for hosted AI functions and services
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
+### Agent Platforms
+- [[NVIDIA-NemoClaw]] — Alpha stack for running OpenClaw assistants with NVIDIA OpenShell and Nemotron models
+- [[NVIDIA-OpenShell]] — Secure sandboxed runtime and policy layer for autonomous AI agents
+
 ### AI Application Platforms
+- [[NVIDIA-AI-Aerial]] — Accelerated AI-RAN platform for 5G/6G wireless network development and simulation
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
@@ -156,6 +195,7 @@
 
 ### Hardware Platforms
 - [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
+- [[NVIDIA-DGX-SuperPOD]] — Scale-out NVIDIA AI supercomputing reference architecture for AI factories
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
 - [[NVIDIA-Drive-Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
@@ -174,6 +214,7 @@
 
 ## CUDA Concepts
 
+- [[CUDA-Compatibility]] — Driver/toolkit compatibility rules for CUDA applications in managed deployments
 - [[CUDA-Graphs]] — Capture GPU operation sequences as a graph for single-submission replay; eliminates per-kernel CPU launch overhead
 - [[CUDA-Unified-Memory]] — Single-pointer CPU+GPU memory with hardware-managed demand paging; GH200 enables coherent access at NVLink bandwidth
 - [[CUDA-Streams]] — Sequences of ordered GPU operations enabling concurrent kernel execution and compute/transfer overlap
@@ -185,10 +226,15 @@
 
 ## Infrastructure & DevOps
 
+- [[NVIDIA-Data-Center-GPU-Drivers]] — Data center GPU driver release notes and deployment documentation
+- [[NVIDIA-MIG]] — Multi-Instance GPU partitioning for isolated slices of supported data center GPUs
+- [[NVIDIA-vGPU]] — Virtual GPU software and CUDA support for GPU-accelerated virtualized environments
+- [[NVIDIA-Attestation]] — Attestation suite for confidential computing and platform integrity verification
 - [[NVIDIA-GPU-Operator]] — Kubernetes operator automating NVIDIA driver, Container Toolkit, DCGM, MIG Manager, and device plugin lifecycle
 - [[NVIDIA-Container-Toolkit]] — Container runtime hook enabling GPU access from Docker/containerd/Podman without driver bundling in images
 - [[NVIDIA-DCGM]] — Data Center GPU Manager: cluster telemetry, health monitoring, diagnostics, and Prometheus metrics for GPU fleets
 - [[CUPTI]] — CUDA Profiling Tools Interface: low-level API for hardware counters, activity tracing, and CUDA API callbacks used by Nsight tools
+- [[CUPTI-Python]] — Python-facing CUPTI profiling and tracing documentation for CUDA applications
 - [[NVBit]] — Open-source binary instrumentation framework for custom GPU analysis tools without source code (NVlabs research tool)
 
 ---

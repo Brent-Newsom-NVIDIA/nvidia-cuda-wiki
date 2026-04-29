@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA AI Enterprise is a comprehensive, cloud-native AI software platform that provides enterprises with a commercially licensed, enterprise-supported distribution of NVIDIA's full AI stack. It bundles NIM inference microservices, NeMo training and customization tools, Triton Inference Server, RAPIDS accelerated data science, Morpheus cybersecurity AI, and the complete CUDA library ecosystem — all with enterprise SLAs, security patching, and 24x7 support. It serves as the "productized" tier of NVIDIA's developer tools, purpose-built for production, compliance, and regulated environments.
@@ -51,9 +51,15 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 ## Connections
 - [[NGC]] — AI Enterprise software is exclusively distributed and licensed through NGC; NGC Private Registry supports enterprise isolation
 - [[NVIDIA-NIM]] — NIM microservices are the primary inference delivery mechanism within AI Enterprise
+- [[NeMo-Platform]] — NeMo Platform microservices provide customization, evaluation, guardrails, and inference workflows
+- [[NeMo-Retriever]] — enterprise RAG and data-retrieval microservices connect proprietary data to AI applications
+- [[NVIDIA-Agent-Intelligence-Toolkit]] — agent workflow, profiling, evaluation, MCP, and A2A toolkit in the NeMo family
 - [[Triton-Inference-Server]] — Triton is bundled with enterprise SLA; the primary model serving framework
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
+- [[NVIDIA-MIG]] — GPU partitioning supports multi-tenant enterprise deployments
+- [[NVIDIA-vGPU]] — virtualization path for enterprise GPU access and CUDA-capable virtual environments
+- [[NVIDIA-Attestation]] — trust and integrity layer for confidential AI infrastructure
 - [[NVIDIA-GPU-Operator]] — GPU Operator is the recommended Kubernetes integration for deploying AI Enterprise in cloud-native environments
 - [[NVIDIA-DCGM]] — DCGM is bundled for GPU health monitoring, telemetry, and Prometheus integration in production
 - [[NVIDIA-DGX]] — DGX systems ship with AI Enterprise software configurations; DGX SuperPOD runs AI Enterprise as standard

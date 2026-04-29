@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, GPU, containers, model registry, software catalog, cloud, MLOps, NGC
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-NGC-Catalog]], [[Nemotron]], [[NeMo-Platform]], [[NVIDIA-Dynamo]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-GPU-Operator]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NGC (NVIDIA GPU Cloud) is NVIDIA's centralized hub for GPU-optimized software, providing a curated catalog of pre-built containers, pre-trained AI models, Helm charts, and SDKs. It eliminates the friction of configuring GPU computing environments by delivering containers that are NVIDIA-tested, CVE-scanned, and refreshed monthly across the full CUDA software stack. NGC serves both individual developers and enterprises, including as the primary distribution channel for NVIDIA AI Enterprise software.
@@ -53,6 +53,10 @@ Setting up a functional GPU computing environment — with correct CUDA versions
 ## Connections
 - [[NVIDIA-AI-Enterprise]] — AI Enterprise software is licensed, distributed, and updated exclusively through NGC
 - [[NVIDIA-NIM]] — All NIM containers are hosted in the NGC catalog and deployed via NGC credentials
+- [[NVIDIA-NGC-Catalog]] — public catalog surface for containers, models, Helm charts, and SDKs
+- [[Nemotron]] — NVIDIA model family whose downloadable and API-facing artifacts appear through NVIDIA model catalogs
+- [[NeMo-Platform]] — NeMo microservices rely on NGC credentials and NVIDIA-hosted artifacts
+- [[NVIDIA-Dynamo]] — inference-serving stack that fits the NGC/NIM deployment ecosystem
 - [[Triton-Inference-Server]] — Official Triton containers updated monthly on NGC; primary distribution channel
 - [[NVIDIA-NeMo]] — NeMo framework containers and checkpoint models (GPT, BERT, Llama variants) hosted on NGC
 - [[TensorRT]] — TensorRT containers, model optimization pipelines, and ONNX model zoo distributed via NGC

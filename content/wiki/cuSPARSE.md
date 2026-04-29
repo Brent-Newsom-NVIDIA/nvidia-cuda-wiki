@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Sparse Matrix, Linear Algebra, Math, HPC, AI
-**Related:** [[cuBLAS]], [[cuSOLVER]], [[AmgX]], [[cuML]], [[CUTLASS]]
+**Related:** [[cuBLAS]], [[cuSOLVER]], [[cuSPARSELt]], [[AmgX]], [[cuML]], [[CUTLASS]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuSPARSE is NVIDIA's GPU-accelerated library providing linear algebra routines optimized for sparse matrices, delivering 30–150x speedups over CPU-only alternatives for SpMM operations. It supports multiple sparse formats (COO, CSR, CSC, Blocked CSR) and covers sparse vector, matrix-vector, and matrix-matrix operations. The companion cuSPARSELt library extends this with 2:4 structured sparsity acceleration via Sparse Tensor Cores on Ampere and later GPUs.
@@ -45,6 +45,7 @@ Many real-world problems in machine learning, physics simulation, and graph anal
 ## Connections
 - [[cuBLAS]] — dense counterpart; cuSPARSE for sparse, cuBLAS for dense
 - [[cuSOLVER]] — cuSOLVER's sparse module (cusolverSP) builds on cuSPARSE
+- [[cuSPARSELt]] — structured sparse matrix-matrix multiplication library for supported sparsity patterns
 - [[AmgX]] — AmgX uses cuSPARSE internally for sparse matrix operations
 - [[cuML]] — sparse ML kernels in cuML leverage cuSPARSE
 - [[CUTLASS]] — CUTLASS provides structured sparsity GEMM kernels complementing cuSPARSELt

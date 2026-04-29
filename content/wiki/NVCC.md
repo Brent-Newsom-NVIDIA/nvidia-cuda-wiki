@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Compiler, Development Tools, Build System, CUDA Toolkit
-**Related:** [[NVRTC]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
+**Related:** [[NVIDIA-CUDA]], [[NVRTC]], [[PTX-ISA]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVCC (NVIDIA CUDA Compiler Driver) is the primary compiler for CUDA applications, bundled with the CUDA Toolkit. It accepts CUDA C/C++ source files containing both host (CPU) and device (GPU) code, separates them, and coordinates compilation using the host C++ compiler for CPU code and NVIDIA's PTX assembler/optimizer for GPU code. NVCC is the entry point for building any application that uses CUDA.
@@ -42,6 +42,12 @@ CUDA programs contain mixed host and device code in the same source file — a s
 
 ## Connections
 - [[NVRTC]] — NVRTC provides runtime (JIT) CUDA compilation; NVCC provides ahead-of-time compilation
+- [[PTX-ISA]] — NVCC can generate PTX as the virtual GPU ISA output
+- [[NVVM-IR]] — NVVM IR and compiler SDK components sit underneath CUDA compilation paths
+- [[libdevice]] — device-side bitcode library used by CUDA compiler flows
+- [[nvFatbin]] — runtime fatbin creation complements offline compiler-produced CUDA binaries
+- [[CUDA-Binary-Utilities]] — inspect and manipulate CUDA binary artifacts produced by compiler workflows
+- [[CUDA-Compile-Time-Advisor]] — analyzes CUDA C++ compilation-time costs
 - [[CUDA-GDB]] — NVCC compiles debug builds that CUDA-GDB then debugs
 - [[Compute-Sanitizer]] — Compute Sanitizer instruments NVCC-compiled binaries for error detection
 - [[Nsight-Compute]] — Nsight Compute profiles NVCC-compiled CUDA kernels

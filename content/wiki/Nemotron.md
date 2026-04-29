@@ -1,60 +1,47 @@
 # Nemotron
 
 **Type:** Model
-**Tags:** NVIDIA, LLM, Nemotron, NLP, Generative AI, RLHF, Alignment
-**Related:** [[NVIDIA-NeMo]], [[TensorRT-LLM]], [[NVIDIA-NIM]], [[Megatron-LM]], [[NVIDIA-AI-Enterprise]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Tags:** NVIDIA, Nemotron, LLM, multimodal, speech, OCR, content safety, agentic AI, NIM
+**Related:** [[NVIDIA-NeMo]], [[NVIDIA-NIM]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[NeMo-Retriever]], [[NeMo-Guardrails]], [[TensorRT-LLM]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-NemoClaw]]
+**Sources:** https://build.nvidia.com/models, https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard, https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard, https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard, https://developer.nvidia.com/nemotron
+**Last Updated:** 2026-04-29
 
 ## Summary
-Nemotron is NVIDIA's family of large language models designed for enterprise and research use, built with alignment techniques including reinforcement learning from human feedback (RLHF) and SteerLM. The family spans a range of parameter counts — from small on-device models to frontier-class 340B models — and includes both base and instruct-tuned variants optimized for instruction following, reasoning, and dialogue. Nemotron models serve as the backbone for NVIDIA's AI assistant and enterprise NLP products, and are available via NVIDIA NIM and the NGC catalog.
+Nemotron is NVIDIA's family of open and hosted AI models for agentic reasoning, instruction following, safety, retrieval, speech, OCR, and multimodal workflows. The latest build.nvidia.com listings show Nemotron moving beyond earlier Nemotron-4/Minitron LLMs into Nemotron 3 MoE reasoning models, content-safety models, ASR, OCR, voice chat, and Retriever-adjacent embedding/reranking models.
 
 ## Detail
 
 ### Purpose
-Enterprises need high-quality, customizable LLMs that can be fine-tuned, deployed at scale, and aligned to specific business tasks without relying solely on closed-source API models. Nemotron fills this need by providing open-weight frontier-class LLMs that can be fine-tuned with NeMo, quantized with TensorRT-LLM, and deployed via NIM microservices.
+Nemotron gives NVIDIA a model family that can be trained and customized through [[NVIDIA-NeMo]], deployed through [[NVIDIA-NIM]], optimized on NVIDIA GPUs, and used as the reasoning/model layer for enterprise agents and AI applications.
 
-### Key Features
-- Multiple model sizes: Nemotron-3 (8B), Nemotron-4 (15B, 340B), Minitron (4B, 8B distilled variants)
-- Alignment via RLHF and SteerLM for controllable behavior
-- Minitron pruning-and-distillation approach for efficient smaller models without full retraining
-- Nemotron-4 340B: frontier-class instruct and reward model
-- Reward model variants for use as judges in synthetic data pipelines
-- Available as base, instruct, and reward model variants
-- Trained on large multilingual datasets; strong coding and reasoning capabilities
-- Fully open-weight: downloadable via Hugging Face and NGC
+### Current model directions
+- **Agentic LLMs:** Nemotron 3 Super 120B-A12B and Nemotron 3 Nano 30B-A3B are MoE-oriented models positioned for reasoning, coding, long-context work, tool use, planning, and agentic workflows.
+- **Omnimodal reasoning:** Nemotron 3 Nano Omni 30B-A3B Reasoning appears in build.nvidia.com as an NVIDIA model that understands images, video, speech, and text.
+- **Content safety:** Nemotron 3 Content Safety is a multilingual, multimodal safety model for classifying unsafe prompts/images and responses, tied to [[NeMo-Guardrails]] use cases.
+- **Speech:** Nemotron ASR Streaming is an English streaming ASR model with punctuation/capitalization support and Riva integration.
+- **Document AI:** Nemotron OCR, table-structure, and page-elements models target extraction of text, layout, tables, charts, and document structure.
+- **Retrieval:** Llama Nemotron reranking and embedding models connect Nemotron to [[NeMo-Retriever]] and enterprise RAG workflows.
 
-### Use Cases
-- Enterprise chatbots and virtual assistants
-- Synthetic data generation for downstream LLM training
-- Reward modeling and preference data labeling
-- Code generation and developer tooling
-- Document summarization and knowledge extraction
-- Fine-tuning base for domain-specific applications
-
-### Hardware Requirements / Compatibility
-- Nemotron-3 8B / Minitron 4B: single A100/H100 80GB GPU
-- Nemotron-4 15B: 1–2x A100/H100
-- Nemotron-4 340B: multi-GPU (8x H100 minimum for inference); tensor parallelism via TensorRT-LLM
-- Deployable on DGX H100, DGX B200, cloud A100/H100 instances
-- Supported on NVIDIA Jetson for smaller Minitron variants (INT4/INT8 quantized)
-
-### Language Bindings / APIs
-- Python (NeMo framework, Hugging Face Transformers)
-- NVIDIA NIM REST API (OpenAI-compatible)
-- TensorRT-LLM for optimized inference
-- Available on Hugging Face Hub (nvidia/nemotron-*)
-- NGC model registry
+### NVIDIA context
+Nemotron is central to NVIDIA's agentic AI stack: [[NVIDIA-NIM]] exposes model endpoints, [[NVIDIA-Agent-Intelligence-Toolkit]] orchestrates workflows, [[NeMo-Retriever]] connects proprietary data, [[NeMo-Guardrails]] applies policy/safety, and [[NVIDIA-DGX-Cloud]] or self-hosted GPUs provide deployment infrastructure.
 
 ## Connections
-- [[NVIDIA-NeMo]] — NeMo framework used for Nemotron pre-training, SFT, and RLHF alignment
-- [[TensorRT-LLM]] — deployment optimization engine for Nemotron inference
-- [[NVIDIA-NIM]] — Nemotron available as NIM microservice containers
-- [[Megatron-LM]] — Nemotron-4 340B trained using Megatron-LM for 3D parallelism
-- [[NVIDIA-AI-Enterprise]] — Nemotron models included in NVAIE software suite
+- [[NVIDIA-NeMo]] - lifecycle suite for training, customizing, evaluating, and deploying Nemotron-related systems.
+- [[NVIDIA-NIM]] - hosted and self-hosted endpoint path for Nemotron models.
+- [[NVIDIA-Agent-Intelligence-Toolkit]] - workflow layer for building agents on top of Nemotron and other models.
+- [[NeMo-Retriever]] - retrieval layer that uses NVIDIA embedding/reranking models related to Nemotron.
+- [[NeMo-Guardrails]] - safety and policy workflows can use Nemotron content-safety models.
+- [[TensorRT-LLM]] - optimized inference backend for large language models on NVIDIA GPUs.
+- [[NVIDIA-NemoClaw]] - assistant stack that references open NVIDIA models such as Nemotron.
+
+## Source Excerpts
+- build.nvidia.com lists recent NVIDIA-published Nemotron models across reasoning, safety, speech, OCR, retrieval, and multimodal categories.
+- NVIDIA's Nemotron 3 Content Safety model card identifies a multilingual multimodal safety model for prompts, images, and responses.
+- NVIDIA's Nemotron ASR Streaming card describes a 600M-parameter English streaming ASR model.
 
 ## Resources
+- [Build NVIDIA Models](https://build.nvidia.com/models)
 - [Nemotron Developer Page](https://developer.nvidia.com/nemotron)
-- [Nemotron-4 340B Blog](https://developer.nvidia.com/blog/nemotron-4-340b/)
-- [Minitron Blog](https://developer.nvidia.com/blog/minitron-efficient-llm-compression/)
-- [NGC Model Catalog](https://catalog.ngc.nvidia.com/models)
+- [Nemotron 3 Content Safety](https://build.nvidia.com/nvidia/nemotron-3-content-safety/modelcard)
+- [Nemotron ASR Streaming](https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard)
+
