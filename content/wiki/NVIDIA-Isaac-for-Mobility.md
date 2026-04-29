@@ -2,7 +2,7 @@
 
 **Type:** Reference Architecture
 **Tags:** NVIDIA, Isaac, Isaac ROS, robotics, mobility, AMR, Jetson Thor, navigation, mapping, localization, Perceptor
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-NITROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Isaac-Sim]], [[TensorRT]], [[NVIDIA-VPI]]
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-AprilTag]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-NITROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-Isaac-Sim]], [[TensorRT]], [[NVIDIA-VPI]]
 **Sources:** https://nvidia-isaac-ros.github.io/reference_workflows/isaac_for_mobility/index.html, https://nvidia-isaac-ros.github.io/concepts/scene_reconstruction/nvblox/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -22,8 +22,9 @@ Isaac for Mobility is the current landing point for NVIDIA's AMR mobility workfl
 ### Key capabilities
 - Mobility workflow identity for AMR perception, mapping, localization, and navigation.
 - Integration point for [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-nvblox]] 3D reconstruction, and 2D costmaps for path planning.
-- Stereo-depth and perception components, including [[Isaac-ROS-FoundationStereo]] where deep stereo disparity is useful.
-- DNN perception components such as [[Isaac-ROS-DNN-Inference]] and [[Isaac-ROS-Object-Detection]] for robot scene understanding.
+- Stereo-depth and perception components, including [[Isaac-ROS-DNN-Stereo-Depth]] and [[Isaac-ROS-FoundationStereo]] where deep stereo disparity is useful.
+- DNN perception components such as [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], and [[Isaac-ROS-Image-Segmentation]] for robot scene understanding.
+- Camera ingest and preprocessing through [[Isaac-ROS-SIPL-Camera]] and [[Isaac-ROS-Image-Pipeline]].
 - [[Isaac-ROS-NITROS]] as the accelerated transport layer under high-throughput perception graphs.
 - Jetson-focused deployment path, especially current [[NVIDIA-Jetson-Thor]] and Jetson/JetPack compatibility signals in Isaac ROS release notes.
 - Simulation and validation path through [[NVIDIA-Isaac-Sim]] and ROS 2 integration.
@@ -37,9 +38,14 @@ Isaac for Mobility is the mobile-robot counterpart to [[NVIDIA-Isaac-for-Manipul
 - [[Isaac-ROS-Visual-SLAM]] - cuVSLAM odometry and SLAM for mobile robot pose tracking.
 - [[Isaac-ROS-Visual-Global-Localization]] - cuVGL relocalization/global localization for known environments.
 - [[Isaac-ROS-nvblox]] - maps depth/LiDAR observations into 3D reconstruction and navigation costmaps.
+- [[Isaac-ROS-DNN-Stereo-Depth]] - deep stereo disparity and depth package family for navigation depth.
 - [[Isaac-ROS-FoundationStereo]] - deep stereo disparity model for deriving depth from RGB stereo cameras.
 - [[Isaac-ROS-DNN-Inference]] - DNN inference infrastructure for robot perception.
 - [[Isaac-ROS-Object-Detection]] - object detection package family for AMR scene understanding.
+- [[Isaac-ROS-Image-Segmentation]] - semantic segmentation package family for AMR scene understanding.
+- [[Isaac-ROS-Image-Pipeline]] - accelerated camera preprocessing layer.
+- [[Isaac-ROS-AprilTag]] - fiducial detection package useful for calibration/localization workflows.
+- [[Isaac-ROS-SIPL-Camera]] - current SIPL/CoE camera ingest package for Jetson Thor-era systems.
 - [[Isaac-ROS-NITROS]] - accelerated message transport for Isaac ROS perception graphs.
 - [[NVIDIA-Jetson-Platform]] - primary robot-edge deployment family for Isaac ROS mobility workloads.
 - [[NVIDIA-Jetson-Thor]] - current Thor-focused optimization target referenced by the latest docs.

@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, edge AI, embedded, IoT, robotics, autonomous machines, Jetson, JetPack, Jetson Linux, Blackwell, ARM, SoC
-**Related:** [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-VPI]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
+**Related:** [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[NVIDIA-Jetson-Linux]], [[NVIDIA-VPI]], [[NVIDIA-Jetson-Platform-Services]], [[NVIDIA-DeepStream]], [[NVIDIA-Metropolis]], [[NVIDIA-Isaac]], [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-AprilTag]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[Isaac-ROS-nvblox]], [[Isaac-ROS-FoundationStereo]], [[NVIDIA-Isaac-GR00T]], [[cuDLA]], [[NVIDIA-Drive-Platform]], [[TensorRT]]
 **Sources:** https://docs.nvidia.com/jetson/, https://developer.nvidia.com/embedded/develop/hardware, https://developer.nvidia.com/embedded/faq, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/, https://docs.nvidia.com/jetson/archives/r38.4/DeveloperGuide/AR/JetsonSoftwareArchitecture.html
 **Last Updated:** 2026-04-29
 
@@ -58,7 +58,7 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - **CUDA C/C++:** Full CUDA programming support with hardware-matched toolkit in [[NVIDIA-JetPack-SDK]]
 - **Python:** CuPy, PyTorch (NVIDIA-built Jetson wheel), TensorRT Python API, DeepStream Python bindings
 - **TensorRT:** Primary inference optimization tool; generates DLA-compatible engine files for hardware accelerator
-- **ROS 2 / Isaac ROS:** NVIDIA-accelerated ROS 2 nodes and reference workflows through [[NVIDIA-Isaac-ROS]], including [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-nvblox]], and [[Isaac-ROS-FoundationStereo]]
+- **ROS 2 / Isaac ROS:** NVIDIA-accelerated ROS 2 nodes and reference workflows through [[NVIDIA-Isaac-ROS]], including [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-Object-Detection]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-Compression]], [[Isaac-ROS-SIPL-Camera]], [[NVIDIA-Isaac-for-Manipulation]], [[NVIDIA-Isaac-for-Mobility]], [[Isaac-ROS-nvblox]], and [[Isaac-ROS-FoundationStereo]]
 - **Triton:** Triton Inference Server runs on Jetson for local multi-model serving
 - **GStreamer:** DeepStream pipelines run natively on Jetson with NVDEC/NVENC hardware acceleration
 
@@ -79,6 +79,12 @@ AI inference workloads are increasingly needed at the edge — in robots, camera
 - [[Isaac-ROS-Visual-Global-Localization]] — cuVGL global localization package for known environments
 - [[Isaac-ROS-DNN-Inference]] — TensorRT/Triton-backed DNN inference package family for robot perception
 - [[Isaac-ROS-Object-Detection]] — object detection package family for camera-based robot perception
+- [[Isaac-ROS-Image-Segmentation]] — semantic segmentation package family for pixel-level robot perception
+- [[Isaac-ROS-DNN-Stereo-Depth]] — deep stereo depth package family for robot depth perception
+- [[Isaac-ROS-AprilTag]] — accelerated fiducial marker detection package with CUDA/PVA/CPU backend support
+- [[Isaac-ROS-Image-Pipeline]] — accelerated camera preprocessing and stereo image processing package family
+- [[Isaac-ROS-Compression]] — hardware-accelerated H.264 camera compression/decompression package family
+- [[Isaac-ROS-SIPL-Camera]] — SIPL/CoE camera driver package for Jetson Thor-era camera ingest
 - [[Isaac-ROS-nvblox]] — GPU-accelerated 3D reconstruction and costmap component for Jetson robot navigation
 - [[Isaac-ROS-FoundationStereo]] — stereo-depth foundation model surfaced in recent Isaac ROS release notes for robot perception
 - [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows reference Jetson AGX Thor for robot-side deployment

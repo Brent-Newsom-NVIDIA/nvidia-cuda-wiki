@@ -2,6 +2,39 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 37: Isaac ROS perception utilities
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch37-20260429T090226Z`; local Git tag `codex-backup-overnight-pre-batch37-20260429T090226Z`
+
+**Source URLs:** https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_segmentation/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_dnn_stereo_depth/index.html, https://nvidia-isaac-ros.github.io/concepts/stereo_depth/ess/index.html, https://nvidia-isaac-ros.github.io/concepts/stereo_depth/foundationstereo/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_apriltag/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_image_pipeline/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_compression/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_sipl_camera/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
+
+**Gap analysis summary:**
+
+- Added the remaining current Isaac ROS perception/utilities pages with durable query value: Image Segmentation, DNN Stereo Depth, AprilTag, Image Pipeline, Compression, and SIPL Camera.
+- Kept ESS, SGM, and FoundationStereo context inside the DNN Stereo Depth page while preserving the existing FoundationStereo page as the model-specific canonical page.
+- Kept U-Net, SegFormer, Segment Anything, and Segment Anything 2 as details inside Image Segmentation rather than creating one page per model/tutorial.
+- Connected image pipeline, SIPL camera, DNN stereo depth, segmentation, AprilTag, and compression into Isaac ROS, Jetson, JetPack, VPI, TensorRT, NITROS, manipulation, and mobility pages.
+- Treated hardware support matrices, quickstarts, package subdirectories, and camera examples as source detail only; no one-off tutorial pages were created.
+
+**Pages created (6 total):**
+
+- `content/wiki/Isaac-ROS-Image-Segmentation.md`
+- `content/wiki/Isaac-ROS-DNN-Stereo-Depth.md`
+- `content/wiki/Isaac-ROS-AprilTag.md`
+- `content/wiki/Isaac-ROS-Image-Pipeline.md`
+- `content/wiki/Isaac-ROS-Compression.md`
+- `content/wiki/Isaac-ROS-SIPL-Camera.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-Isaac-ROS.md` - promoted the six new perception/utilities pages into the Isaac ROS graph.
+- `content/wiki/Isaac-ROS-DNN-Inference.md`, `content/wiki/Isaac-ROS-NITROS.md`, `content/wiki/Isaac-ROS-Object-Detection.md`, `content/wiki/Isaac-ROS-FoundationStereo.md`, and `content/wiki/Isaac-ROS-nvblox.md` - connected the new pages to inference, transport, perception, depth, and mapping.
+- `content/wiki/NVIDIA-Isaac-for-Manipulation.md` and `content/wiki/NVIDIA-Isaac-for-Mobility.md` - connected the new camera/perception pages to current reference workflows.
+- `content/wiki/NVIDIA-Jetson-Platform.md`, `content/wiki/NVIDIA-JetPack-SDK.md`, `content/wiki/TensorRT.md`, and `content/wiki/NVIDIA-VPI.md` - connected Jetson, JetPack, inference, and vision acceleration context.
+- `content/index.md` - updated page count to 391 and indexed the six new Isaac ROS perception/utilities pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 36: Isaac ROS core graph components
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch36-20260429T085823Z`; local Git tag `codex-backup-overnight-pre-batch36-20260429T085823Z`

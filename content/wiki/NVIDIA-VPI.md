@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, VPI, Vision Programming Interface, computer vision, image processing, Jetson, CUDA, PVA, VIC, OFA
-**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[CUDA-for-Tegra]], [[OpenCV-CUDA]], [[CV-CUDA]]
+**Related:** [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-JetPack-SDK]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-AprilTag]], [[Isaac-ROS-DNN-Stereo-Depth]], [[CUDA-for-Tegra]], [[OpenCV-CUDA]], [[CV-CUDA]]
 **Sources:** https://docs.nvidia.com/vpi/4.0/index.html, https://docs.nvidia.com/vpi/4.0/architecture.html, https://docs.nvidia.com/vpi/release_notes.html
 **Last Updated:** 2026-04-29
 
@@ -28,6 +28,9 @@ VPI complements [[OpenCV-CUDA]] and [[CV-CUDA]] but is especially important on [
 - [[NVIDIA-Jetson-Platform]] - VPI is a core Jetson vision and image-processing library.
 - [[NVIDIA-Jetson-Thor]] - VPI 4.0 adds current-generation Jetson Thor support.
 - [[NVIDIA-JetPack-SDK]] - VPI ships as part of the JetPack edge AI software stack.
+- [[Isaac-ROS-Image-Pipeline]] - Isaac ROS camera preprocessing package adjacent to VPI-style image processing and hardware acceleration.
+- [[Isaac-ROS-AprilTag]] - accelerated fiducial detection package with Jetson PVA backend support.
+- [[Isaac-ROS-DNN-Stereo-Depth]] - stereo-depth workflows that can sit near VPI/Jetson camera processing.
 - [[CUDA-for-Tegra]] - VPI often runs alongside CUDA on Tegra/Jetson integrated GPU platforms.
 - [[OpenCV-CUDA]] - VPI interoperates with OpenCV-style projects while exposing NVIDIA-specific backends.
 - [[CV-CUDA]] - adjacent NVIDIA computer vision acceleration library for AI pre/post-processing.

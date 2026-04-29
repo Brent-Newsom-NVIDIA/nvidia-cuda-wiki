@@ -2,7 +2,7 @@
 
 **Type:** Model / ROS Package
 **Tags:** NVIDIA, Isaac ROS, FoundationStereo, stereo depth, disparity, robotics, perception, CUDA, TensorRT, Jetson
-**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-nvblox]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[TensorRT]], [[NVIDIA-VPI]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-DNN-Inference]], [[Isaac-ROS-NITROS]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-nvblox]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Jetson-Thor]], [[TensorRT]], [[NVIDIA-VPI]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/stereo_depth/foundationstereo/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_dnn_stereo_depth/isaac_ros_foundationstereo/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -29,6 +29,7 @@ FoundationStereo sits at the camera-perception edge of Isaac ROS. Its stereo-der
 - [[NVIDIA-Isaac-ROS]] - parent ROS 2 package ecosystem for FoundationStereo.
 - [[NVIDIA-Isaac-for-Mobility]] - AMR workflow where stereo depth can support mapping and navigation.
 - [[NVIDIA-Isaac-for-Manipulation]] - manipulation workflow where stereo depth can feed obstacle perception.
+- [[Isaac-ROS-DNN-Stereo-Depth]] - parent Isaac ROS stereo-depth package family that includes FoundationStereo.
 - [[Isaac-ROS-DNN-Inference]] - DNN infrastructure for deep stereo disparity model execution.
 - [[Isaac-ROS-NITROS]] - accelerated transport layer for disparity image and tensor data.
 - [[Isaac-ROS-Visual-SLAM]] - adjacent stereo-camera mobility component.

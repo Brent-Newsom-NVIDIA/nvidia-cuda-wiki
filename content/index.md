@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 385*
+*Total pages: 391*
 
 ---
 
@@ -207,6 +207,12 @@
 - [[Isaac-ROS-Visual-Global-Localization]] — cuVGL-based global localization and relocalization from stereo keyframe maps
 - [[Isaac-ROS-DNN-Inference]] — TensorRT/Triton-backed DNN inference infrastructure for robot perception graphs
 - [[Isaac-ROS-Object-Detection]] — DetectNet, Grounding DINO, RT-DETR, and YOLOv8 object detection packages for Isaac ROS
+- [[Isaac-ROS-Image-Segmentation]] — GPU-accelerated semantic segmentation packages for pixel-level robot perception
+- [[Isaac-ROS-DNN-Stereo-Depth]] — DNN stereo disparity/depth packages including ESS and FoundationStereo context
+- [[Isaac-ROS-AprilTag]] — accelerated fiducial marker detection package with CUDA, CPU, and PVA backend support
+- [[Isaac-ROS-Image-Pipeline]] — accelerated camera preprocessing and stereo image-processing package family
+- [[Isaac-ROS-Compression]] — H.264 camera image compression/decompression using NVIDIA NVENC/NVDEC
+- [[Isaac-ROS-SIPL-Camera]] — SIPL and Camera-over-Ethernet camera driver package for Jetson Thor-era ingest
 - [[Isaac-ROS-cuMotion]] — CUDA-accelerated robot-arm motion planning, MoveIt 2 integration, and robot segmentation
 - [[Isaac-ROS-nvblox]] — GPU-accelerated 3D reconstruction, mapping, ESDF/TSDF, and Nav2 costmap component
 - [[Isaac-ROS-FoundationPose]] — 6DoF object pose-estimation model and ROS 2 package for manipulation workflows

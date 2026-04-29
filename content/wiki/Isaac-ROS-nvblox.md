@@ -2,7 +2,7 @@
 
 **Type:** Library / ROS Package
 **Tags:** NVIDIA, Isaac ROS, nvblox, CUDA, robotics, scene reconstruction, mapping, ESDF, TSDF, Nav2, Jetson
-**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-NITROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-VPI]]
+**Related:** [[NVIDIA-Isaac-ROS]], [[NVIDIA-Isaac-for-Mobility]], [[NVIDIA-Isaac-for-Manipulation]], [[Isaac-ROS-Visual-SLAM]], [[Isaac-ROS-Visual-Global-Localization]], [[Isaac-ROS-cuMotion]], [[Isaac-ROS-DNN-Stereo-Depth]], [[Isaac-ROS-Image-Segmentation]], [[Isaac-ROS-Image-Pipeline]], [[Isaac-ROS-FoundationStereo]], [[Isaac-ROS-NITROS]], [[NVIDIA-Jetson-Platform]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-VPI]]
 **Sources:** https://nvidia-isaac-ros.github.io/concepts/scene_reconstruction/nvblox/index.html, https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html, https://nvidia-isaac-ros.github.io/releases/index.html
 **Last Updated:** 2026-04-29
 
@@ -33,6 +33,9 @@ nvblox is a durable bridge between NVIDIA perception and robot motion. In mobile
 - [[Isaac-ROS-Visual-SLAM]] - pose/odometry source that can feed nvblox reconstruction.
 - [[Isaac-ROS-Visual-Global-Localization]] - global pose/relocalization path adjacent to mapping and costmaps.
 - [[Isaac-ROS-cuMotion]] - can consume reconstructed obstacle representations for collision-aware motion planning.
+- [[Isaac-ROS-DNN-Stereo-Depth]] - stereo depth source for reconstruction and obstacle maps.
+- [[Isaac-ROS-Image-Segmentation]] - segmentation masks can be fused with depth/reconstruction workflows.
+- [[Isaac-ROS-Image-Pipeline]] - camera preprocessing layer that can feed depth and reconstruction.
 - [[Isaac-ROS-FoundationStereo]] - stereo-depth source that can feed reconstruction.
 - [[Isaac-ROS-NITROS]] - accelerated transport layer for depth, pose, point-cloud, and occupancy-grid data.
 - [[NVIDIA-Jetson-Platform]] - edge deployment target for GPU-accelerated robot mapping.
