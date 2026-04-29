@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, InfiniBand, Networking, HPC, AI Networking, Quantum-2, NDR, HDR, Collective Offload
-**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]], [[NVIDIA-UFM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-UFM]], [[NVIDIA-HPC-X]], [[NVIDIA-DOCA]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://www.nvidia.com/en-us/networking/silicon-photonics/
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Quantum InfiniBand is NVIDIA's line of high-performance InfiniBand switch silicon and switch systems designed for AI and HPC cluster interconnects. The Quantum-2 generation supports NDR (Next Data Rate) 400Gb/s per port InfiniBand with SHARP (Scalable Hierarchical Aggregation and Reduction Protocol) in-network computing for lossless all-reduce collective operations without host CPU involvement. NVIDIA InfiniBand is the dominant interconnect fabric in AI supercomputers, used in DGX SuperPODs and top HPC clusters worldwide.
@@ -22,6 +22,7 @@ At hyperscale AI training, the interconnect between GPUs becomes the performance
 - Sub-600ns port-to-port latency
 - Adaptive routing for congestion avoidance in fat-tree topologies
 - Co-design with ConnectX-7/8 NICs for end-to-end acceleration
+- Future AI factory networking connects Quantum/InfiniBand concepts to [[NVIDIA-ConnectX-9]] and optical networking directions such as [[NVIDIA-Silicon-Photonics]]
 - UFM (Unified Fabric Manager) integration for fabric management
 - Used in NVIDIA DGX SuperPOD, Selene, Eos AI supercomputers
 
@@ -48,7 +49,9 @@ At hyperscale AI training, the interconnect between GPUs becomes the performance
 
 ## Connections
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX NICs are the endpoint adapters that connect to Quantum switches
+- [[NVIDIA-ConnectX-9]] — next-generation SuperNIC for 1.6 Tb/s-class InfiniBand/Ethernet networking.
 - [[NVIDIA-Spectrum-X]] — Spectrum-X is NVIDIA's Ethernet counterpart for AI networking
+- [[NVIDIA-Silicon-Photonics]] — optical networking direction for scaling AI factory fabrics.
 - [[NVIDIA-UFM]] — UFM manages and monitors the InfiniBand fabric
 - [[NVIDIA-HPC-X]] — HPC-X packages MPI/SHMEM/UCX/UCC and SHARP-aware communication libraries for NVIDIA fabrics
 - [[NVIDIA-DOCA]] — DOCA/DOCA-OFED supplies the modern host and adapter software substrate for NVIDIA networking

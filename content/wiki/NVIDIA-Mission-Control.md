@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI factory, cluster management, DGX, SuperPOD, orchestration, observability, recovery, GB200, GB300
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
-**Sources:** https://docs.nvidia.com/mission-control/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Base-Command]], [[NVIDIA-Run-ai]], [[NVIDIA-UFM]], [[NVIDIA-NetQ]], [[NVIDIA-DCGM]], [[NVLink]], [[NVIDIA-GPU-Operator]]
+**Sources:** https://docs.nvidia.com/mission-control/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/index.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-release-notes.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.2.0/overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.3.0/nvlink-management-software.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.3.0/nmc-user-guide-runai-installation.html; https://docs.nvidia.com/mission-control/docs/systems-quick-start-guide/2.0.0/ajr/ajr-overview.html; https://docs.nvidia.com/mission-control/docs/systems-administration-guide/2.1.0/prs/introduction.html; https://www.nvidia.com/en-us/data-center/gb300-nvl72/
 **Last Updated:** 2026-04-28
 
 ## Summary
@@ -36,6 +36,9 @@ As of docs accessed on 2026-04-28, the latest surfaced user-guide and release-no
 
 ## Connections
 - [[NVIDIA-DGX]] - Mission Control is the operations layer for current DGX B200/B300 and DGX GB200/GB300 deployments.
+- [[NVIDIA-DGX-B300]] - current Blackwell Ultra DGX system generation that needs AI factory operations.
+- [[NVIDIA-GB300-NVL72]] - rack-scale Blackwell Ultra platform adjacent to current Mission Control/NVL72 operations.
+- [[NVIDIA-Vera-Rubin]] - future rack-scale AI platform direction Mission Control-style operations will need to cover.
 - [[NVIDIA-Enterprise-AI-Factory]] - Mission Control is the operational control plane adjacent to enterprise AI factory reference designs.
 - [[NVIDIA-AI-Data-Platform]] - AI factory operations must account for data ingestion, retrieval, and context infrastructure.
 - [[NVIDIA-Certified-Storage]] - certified storage is part of the validated AI factory infrastructure Mission Control may operate around.

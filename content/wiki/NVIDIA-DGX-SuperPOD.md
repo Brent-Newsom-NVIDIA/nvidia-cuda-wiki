@@ -2,8 +2,8 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, DGX SuperPOD, AI supercomputer, cluster, data center, InfiniBand
-**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Spectrum-X]]
-**Sources:** https://docs.nvidia.com/dgx-superpod/index.html, https://www.nvidia.com/en-us/data-center/dgx-superpod/
+**Related:** [[NVIDIA-DGX]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-Mission-Control]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
+**Sources:** https://docs.nvidia.com/dgx-superpod/index.html, https://www.nvidia.com/en-us/data-center/dgx-superpod/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/technologies/rubin/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -26,10 +26,14 @@ Current AI factory guidance also makes storage and enterprise data access first-
 
 ## Connections
 - [[NVIDIA-DGX]] - DGX systems are the building blocks.
+- [[NVIDIA-DGX-B300]] - Blackwell Ultra DGX generation for current AI factory deployments.
+- [[NVIDIA-GB300-NVL72]] - rack-scale Blackwell Ultra NVL72 system in the DGX/SuperPOD direction.
+- [[NVIDIA-Vera-Rubin]] - next-generation platform for future SuperPOD-style AI factories.
 - [[NVIDIA-Enterprise-AI-Factory]] - enterprise AI factory guidance generalizes DGX/SuperPOD patterns into validated full-stack designs.
 - [[NVIDIA-Certified-Storage]] - validated storage is needed to feed large SuperPOD-scale workloads.
 - [[NVIDIA-AI-Data-Platform]] - data platform reference designs connect SuperPOD-scale compute to retrieval and agent data workflows.
 - [[NVIDIA-ConnectX-InfiniBand]] - high-performance networking for scale-out training.
+- [[NVIDIA-ConnectX-9]] - next-generation 1.6 Tb/s-class adapter for future AI factory fabrics.
 - [[NCCL]] - multi-node collectives are central to training at SuperPOD scale.
 - [[NVIDIA-BaseOS]] - validated OS layer for DGX infrastructure.
 - [[NVIDIA-Mission-Control]] - AI factory operations layer for large NVIDIA deployments.

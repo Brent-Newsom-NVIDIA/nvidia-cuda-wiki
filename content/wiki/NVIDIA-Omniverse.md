@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Simulation, 3D, USD, Digital Twin, Rendering, RTX, Collaboration
-**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
-**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-Isaac]], [[NVIDIA-Isaac-Sim]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]], [[NVIDIA-DRIVE-Sim]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Warp]], [[NVIDIA-Modulus]], [[TensorRT]], [[PyTorch]]
+**Sources:** NVIDIA official documentation, developer.nvidia.com/omniverse, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Omniverse is an open platform for building and operating real-time 3D simulation and collaboration applications, built on the OpenUSD (Universal Scene Description) standard. It provides a compute platform for developing industrial digital twins, physically accurate simulations, and robot/autonomous vehicle training environments through a suite of SDKs, renderers, and simulation engines. Omniverse serves as the foundation layer for [[NVIDIA-Isaac-Sim]] and the broader industrial AI simulation ecosystem.
@@ -55,6 +55,7 @@ Omniverse solves the challenge of collaborative, physically accurate 3D world si
 - [[NVIDIA-Isaac-Lab]] — robot-learning workflows use Isaac Sim and Omniverse for simulation and validation
 - [[NVIDIA-Isaac-GR00T]] — humanoid robot foundation model workflows use Omniverse/Cosmos simulation infrastructure
 - [[NVIDIA-DRIVE-Sim]] - AV simulation workflows use Omniverse-style reconstruction and synthetic data context.
+- [[NVIDIA-RTX-PRO-Server]] - enterprise RTX server platform for Omniverse, simulation, and digital twin workloads.
 - [[NVIDIA-Warp]] — Warp GPU simulation kernels are used within Omniverse for physics and differentiable simulation
 - [[NVIDIA-Modulus]] — physics-ML models trained with Modulus can be integrated into Omniverse digital twins
 - [[TensorRT]] — AI models deployed within Omniverse applications use TensorRT for inference

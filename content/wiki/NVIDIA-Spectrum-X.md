@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, Spectrum-X, Ethernet, AI Networking, RoCE, Lossless Ethernet, HPC Networking
-**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[NCCL]], [[NVIDIA-DGX]]
-**Sources:** NVIDIA official documentation, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/
+**Related:** [[NVIDIA-Cumulus-Linux]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA]], [[NVIDIA-HPC-X]], [[NVIDIA-NetQ]], [[NVIDIA-DSX-Air]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Quantum-InfiniBand]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NCCL]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking-ethernet-software/cumulus-linux/Whats-New/, https://docs.nvidia.com/networking/display/kubernetes2610/nic-conf-operator/spectrum-x-configuration.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/networking/silicon-photonics/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -25,6 +25,7 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - Compatible with standard 400GbE infrastructure and optics
 - Current NVIDIA docs tie Spectrum-X reference architecture 2.1 to [[NVIDIA-DOCA]] 3.3.0, [[NVIDIA-Cumulus-Linux]] 5.16, [[NVIDIA-HPC-X]] 2.26, and Network Operator Spectrum-X NIC configuration guidance
 - Current AI data/storage pages tie Spectrum-X to [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], and [[NVIDIA-CMX]] as the Ethernet fabric for accelerated enterprise storage and context-memory access
+- Current silicon photonics material connects Spectrum-X-class Ethernet to optical networking for future AI factory fabrics
 
 ### Use Cases
 - AI factory Ethernet backbone for LLM training clusters
@@ -56,9 +57,12 @@ Many cloud providers and enterprises have standardized on Ethernet infrastructur
 - [[NVIDIA-STX]] — STX uses Spectrum-X Ethernet in AI-native storage and data platform reference architecture.
 - [[NVIDIA-CMX]] — CMX uses Spectrum-X for low-latency RDMA access to context memory and KV cache.
 - [[NVIDIA-AI-Data-Platform]] — AI Data Platform references Spectrum-X for accelerated storage and retrieval workflows.
+- [[NVIDIA-Silicon-Photonics]] — optical networking direction that complements next-generation Spectrum-X AI fabrics.
 - [[NVIDIA-Quantum-InfiniBand]] — Quantum IB is NVIDIA's InfiniBand platform; Spectrum-X is the Ethernet alternative
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX-7/8 NICs used with Spectrum-X for end-to-end acceleration
+- [[NVIDIA-ConnectX-9]] — next-generation SuperNIC direction for 1.6 Tb/s-class AI networking.
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU can serve as a SmartNIC alongside Spectrum-X fabric
+- [[NVIDIA-BlueField-4]] — next-generation DPU direction for AI data and storage acceleration.
 - [[NCCL]] — NCCL runs over Spectrum-X using RoCEv2 transport
 - [[NVIDIA-DGX]] — DGX systems can use Spectrum-X as Ethernet alternative to Quantum InfiniBand
 

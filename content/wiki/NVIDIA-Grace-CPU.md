@@ -2,8 +2,8 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, CPU, ARM, Grace, NVLink-C2C, HPC, server, Grace Hopper, Grace Blackwell, Neoverse
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Data-Center-CPUs]], [[NVLink]], [[NVIDIA-DGX]], [[NVIDIA-Base-Command]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Vera-CPU]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-Data-Center-CPUs]], [[NVLink]], [[NVIDIA-DGX]], [[NVIDIA-Base-Command]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/data-center/technologies/rubin/)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -62,6 +62,8 @@ Traditional server CPUs (Intel Xeon, AMD EPYC) connected to GPUs via PCIe Gen4/5
 ## Connections
 - [[NVIDIA-Hopper-Architecture]] — Grace pairs with H100/H200 in the GH200 superchip; NVLink-C2C bridges the two
 - [[NVIDIA-Blackwell-Architecture]] — Grace pairs with B200 GPUs in GB200 superchip and GB200 NVL72 rack
+- [[NVIDIA-Vera-CPU]] — Vera is NVIDIA's next custom Arm CPU direction after Grace.
+- [[NVIDIA-Vera-Rubin]] — next-generation platform that pairs Vera CPU with Rubin GPUs.
 - [[NVIDIA-Data-Center-CPUs]] — central docs hub for Grace CPU, Grace Hopper, and Grace Blackwell deployment guidance
 - [[NVLink]] — NVLink-C2C is the CPU-to-GPU coherent interconnect; separate from GPU-to-GPU NVLink 5
 - [[NVIDIA-DGX]] — DGX GH200 and GB200 NVL72 systems are built around Grace CPU superchips

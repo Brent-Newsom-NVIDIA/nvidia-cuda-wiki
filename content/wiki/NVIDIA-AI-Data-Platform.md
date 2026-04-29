@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, AI Data Platform, enterprise storage, RAG, retrieval, AI factory, BlueField, Spectrum-X, NIM, NeMo Retriever
-**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[cuVS]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Spectrum-X]]
+**Related:** [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-Certified-Storage]], [[NeMo-Retriever]], [[NVIDIA-NIM]], [[cuVS]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Spectrum-X]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html
 **Last Updated:** 2026-04-29
 
@@ -36,6 +36,8 @@ The AI Data Platform is the data-side counterpart to [[NVIDIA-Enterprise-AI-Fact
 - [[NVIDIA-NIM]] - NIM provides inference microservices used by agents and retrieval workflows.
 - [[cuVS]] - GPU-accelerated vector search and indexing are part of the platform's retrieval story.
 - [[NVIDIA-BlueField-DPU]] - BlueField accelerates data access, storage paths, and secure scaling.
+- [[NVIDIA-BlueField-4]] - BlueField-4 is the current DPU generation tied to STX/CMX data platform designs.
+- [[NVIDIA-ConnectX-9]] - next-generation SuperNIC for high-bandwidth AI data movement.
 - [[NVIDIA-Spectrum-X]] - Spectrum-X provides the Ethernet fabric for high-throughput AI data movement.
 
 ## Source Excerpts

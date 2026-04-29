@@ -2,7 +2,7 @@
 
 **Type:** Framework
 **Tags:** NVIDIA, DOCA, BlueField, ConnectX, SuperNIC, DPU, networking, storage, security, SDK, DOCA-OFED
-**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
+**Related:** [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-Network-Operator]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-Spectrum-X]], [[NVIDIA-STX]], [[NVIDIA-CMX]], [[NVIDIA-AI-Data-Platform]], [[GPUDirect-RDMA]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]]
 **Sources:** https://docs.nvidia.com/doca/sdk/index.html; https://developer.nvidia.com/networking/doca; https://developer.nvidia.com/networking/doca/getting-started; https://www.nvidia.com/en-us/data-center/ai-storage/cmx/
 **Last Updated:** 2026-04-29
 
@@ -21,7 +21,9 @@ Current [[NVIDIA-CMX]] material extends that story into context memory: DOCA Mem
 
 ## Connections
 - [[NVIDIA-BlueField-DPU]] - DOCA is the primary software framework for programming BlueField DPUs and SuperNICs.
+- [[NVIDIA-BlueField-4]] - current STX/CMX direction uses BlueField-4 and DOCA-related software layers.
 - [[NVIDIA-ConnectX-InfiniBand]] - DOCA-Host and DOCA-OFED provide host-side support for current ConnectX adapters.
+- [[NVIDIA-ConnectX-9]] - next-generation SuperNIC that fits the same NVIDIA networking software ecosystem.
 - [[NVIDIA-Network-Operator]] - Network Operator deploys and manages DOCA-OFED driver containers and related networking components in Kubernetes.
 - [[NVIDIA-DOCA-Platform-Framework]] - DPF orchestrates BlueField-accelerated services built on the DOCA software stack.
 - [[NVIDIA-Spectrum-X]] - DOCA 3.3.0 is tied to the Spectrum-X reference architecture 2.1 release stack.

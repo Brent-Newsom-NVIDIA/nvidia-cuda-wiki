@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, CMX, context memory storage, KV cache, long-context inference, BlueField-4, DOCA, Spectrum-X, Dynamo
-**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-STX]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-Dynamo]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-ConnectX-9]], [[NVIDIA-DOCA]], [[NVIDIA-Spectrum-X]], [[NVIDIA-NIM]]
 **Sources:** https://www.nvidia.com/en-us/data-center/ai-storage/cmx/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/
 **Last Updated:** 2026-04-29
 
@@ -31,6 +31,8 @@ CMX is the context-memory building block inside [[NVIDIA-STX]] and [[NVIDIA-AI-D
 - [[NVIDIA-AI-Data-Platform]] - AI Data Platform uses storage and context infrastructure such as CMX to support agentic workloads.
 - [[NVIDIA-Dynamo]] - Dynamo is the serving layer NVIDIA describes as making CMX context storage usable across the pod.
 - [[NVIDIA-BlueField-DPU]] - BlueField provides storage, networking, integrity, encryption, and offload capabilities.
+- [[NVIDIA-BlueField-4]] - CMX public material names BlueField-4 as the context memory storage processor.
+- [[NVIDIA-ConnectX-9]] - high-bandwidth networking direction for AI data and context movement.
 - [[NVIDIA-DOCA]] - DOCA and DOCA Memos provide the software surface for BlueField-accelerated context memory.
 - [[NVIDIA-Spectrum-X]] - Ethernet fabric for low-latency RDMA access to context storage.
 - [[NVIDIA-NIM]] - NIM inference workloads can benefit from faster context and KV-cache handling in large deployments.

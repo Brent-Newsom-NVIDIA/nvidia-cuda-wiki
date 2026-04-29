@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RTX, Ray Tracing, Real-Time Rendering, Tensor Cores, DXR, Vulkan, Gaming
-**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-Omniverse]], [[TensorRT]]
-**Sources:** NVIDIA official documentation
+**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-Omniverse]], [[TensorRT]]
+**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -51,6 +51,7 @@ Physically accurate lighting simulation (ray tracing) produces dramatically more
 ## Connections
 - [[NVIDIA-DLSS]] — DLSS is the primary AI rendering technology in the RTX platform
 - [[NVIDIA-Blackwell-Architecture]] — Blackwell adds Neural Shaders, DMM, and DLSS 4 to RTX
+- [[NVIDIA-RTX-PRO-Server]] — enterprise server platform for RTX PRO Blackwell AI, rendering, simulation, and visualization workloads.
 - [[NVIDIA-Ada-Lovelace-Architecture]] — Ada introduced SER and major RTX rendering improvements
 - [[NVIDIA-Turing-Architecture]] — Turing introduced the original RTX hardware ray tracing generation
 - [[NVIDIA-CloudXR]] — CloudXR streams RTX-rendered XR workloads from GPU servers to clients

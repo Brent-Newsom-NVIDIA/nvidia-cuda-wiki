@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 11: Blackwell Ultra, Vera Rubin, and next-generation AI factory infrastructure
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch11-20260429T061925Z`; local Git tag `codex-backup-overnight-pre-batch11-20260429T061925Z`
+
+**Source URLs:** https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/dgx-b300/, https://www.nvidia.com/en-us/data-center/hgx/, https://www.nvidia.com/en-us/data-center/technologies/rubin/, https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform, https://www.nvidia.com/en-us/networking/products/data-processing-unit/, https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://docs.nvidia.com/networking/display/connectx9supernic/introduction, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://blogs.nvidia.com/blog/rtx-pro-servers/, https://www.nvidia.com/en-us/networking/silicon-photonics/
+
+**Gap analysis summary:**
+
+- Added durable pages for current Blackwell Ultra and next-generation NVIDIA AI factory infrastructure instead of creating separate pages for every HGX/baseboard/product variant.
+- Added GB300 NVL72 and DGX B300 as canonical Blackwell Ultra rack/system pages.
+- Added Vera Rubin and Vera CPU as the next-generation platform and CPU pages after Blackwell/Grace.
+- Added BlueField-4, ConnectX-9, Silicon Photonics, and RTX PRO Server as current NVIDIA-published infrastructure/product topics that connect AI factories, networking, storage, rendering, simulation, and inference.
+- Updated existing DGX, HGX, Blackwell, NVLink, data center CPU, networking, AI factory, STX/CMX, RTX, and Omniverse pages so the new pages are queryable from existing entry points.
+
+**Pages created (8 total):**
+
+- `content/wiki/NVIDIA-Vera-Rubin.md`
+- `content/wiki/NVIDIA-Vera-CPU.md`
+- `content/wiki/NVIDIA-GB300-NVL72.md`
+- `content/wiki/NVIDIA-DGX-B300.md`
+- `content/wiki/NVIDIA-BlueField-4.md`
+- `content/wiki/NVIDIA-ConnectX-9.md`
+- `content/wiki/NVIDIA-RTX-PRO-Server.md`
+- `content/wiki/NVIDIA-Silicon-Photonics.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-DGX.md`, `content/wiki/NVIDIA-DGX-SuperPOD.md`, `content/wiki/NVIDIA-HGX.md`, and `content/wiki/NVIDIA-GB200-NVL72.md` - connected Blackwell Ultra, GB300 NVL72, DGX B300, and Vera Rubin into system/platform context.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md`, `content/wiki/NVLink.md`, `content/wiki/NVIDIA-Data-Center-CPUs.md`, and `content/wiki/NVIDIA-Grace-CPU.md` - linked Blackwell Ultra, NVLink 6, Vera Rubin, and Vera CPU.
+- `content/wiki/NVIDIA-BlueField-DPU.md`, `content/wiki/NVIDIA-DOCA.md`, `content/wiki/NVIDIA-STX.md`, `content/wiki/NVIDIA-CMX.md`, and `content/wiki/NVIDIA-AI-Data-Platform.md` - connected BlueField-4 and ConnectX-9 to AI-native storage/context memory and AI data platforms.
+- `content/wiki/NVIDIA-ConnectX-InfiniBand.md`, `content/wiki/NVIDIA-Spectrum-X.md`, `content/wiki/NVIDIA-Quantum-InfiniBand.md`, and `content/wiki/GPUDirect-RDMA.md` - linked ConnectX-9 and silicon photonics into NVIDIA networking.
+- `content/wiki/NVIDIA-Enterprise-AI-Factory.md`, `content/wiki/NVIDIA-Certified-Systems.md`, `content/wiki/NVIDIA-AI-Enterprise.md`, `content/wiki/NVIDIA-RTX.md`, `content/wiki/NVIDIA-Omniverse.md`, and `content/wiki/NVIDIA-Mission-Control.md` - connected RTX PRO Server, DGX B300, GB300 NVL72, Vera Rubin, and next-generation infrastructure to enterprise AI factory/software/operations pages.
+- `content/index.md` - updated page count to 262 and indexed the eight new AI factory infrastructure pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 10: AI blueprints, enterprise AI factory, and AI data platform expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch10-20260429T061032Z`; local Git tag `codex-backup-overnight-pre-batch10-20260429T061032Z`

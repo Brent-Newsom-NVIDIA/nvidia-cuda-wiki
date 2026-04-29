@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, networking, InfiniBand, RDMA, HPC, data center, high performance networking, ConnectX, Ethernet
-**Related:** [[NVIDIA-DOCA]], [[GPUDirect-RDMA]], [[NVLink]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://developer.nvidia.com/networking, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking/display/hpcxv226)
+**Related:** [[NVIDIA-DOCA]], [[NVIDIA-ConnectX-9]], [[GPUDirect-RDMA]], [[NVLink]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-BlueField-4]], [[NVIDIA-Silicon-Photonics]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NVIDIA-Rivermax]], [[NCCL]], [[NVSHMEM]], [[NVIDIA-DGX]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://developer.nvidia.com/networking, https://developer.nvidia.com/networking/doca, https://docs.nvidia.com/doca/sdk/index.html, https://docs.nvidia.com/networking/display/hpcxv226, https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/, https://docs.nvidia.com/networking/display/connectx9supernic/introduction)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -24,6 +24,7 @@ Distributed AI training across multiple servers requires extremely low-latency, 
 | ConnectX-6 Dx | Ethernet only | 100/200 GbE | Smart offloads, VXLAN, hardware crypto |
 | ConnectX-7 | InfiniBand NDR / 400GbE | 400 Gb/s | PCIe Gen5, hardware packet pacing, NVIDIA DOCA |
 | ConnectX-8 | InfiniBand XDR / 800GbE | 800 Gb/s | Blackwell-generation; scheduled 2025 |
+| ConnectX-9 | InfiniBand / Ethernet SuperNIC | 1.6 Tb/s or dual 800 Gb/s | PCIe Gen6, CXL-ready, GPUDirect, storage/offload, current SuperNIC docs |
 
 **Key Capabilities:**
 - **RDMA (Remote Direct Memory Access):** Kernel-bypass DMA; NIC reads/writes host or GPU memory without CPU involvement; InfiniBand RC (Reliable Connected) QP; RoCE (RDMA over Converged Ethernet) for Ethernet networks
@@ -56,9 +57,12 @@ Distributed AI training across multiple servers requires extremely low-latency, 
 
 ## Connections
 - [[NVIDIA-DOCA]] — DOCA-Host and DOCA-OFED are the current NVIDIA host software stack for ConnectX and BlueField networking.
+- [[NVIDIA-ConnectX-9]] — generation-specific page for the current 1.6 Tb/s-class SuperNIC.
 - [[GPUDirect-RDMA]] — ConnectX HCAs implement GPUDirect RDMA by directly DMAing to/from NVIDIA GPU memory over PCIe
 - [[NVLink]] — NVLink handles intra-node GPU communication; ConnectX InfiniBand handles inter-node; both used in DGX SuperPOD
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU is a ConnectX adapter with an embedded ARM CPU for network function offloading; shares ASIC with ConnectX-7
+- [[NVIDIA-BlueField-4]] — next-generation DPU direction adjacent to ConnectX-9 and AI data platform networking.
+- [[NVIDIA-Silicon-Photonics]] — optical networking direction for next-generation AI factory fabrics.
 - [[NVIDIA-Network-Operator]] — exposes ConnectX RDMA, SR-IOV, and secondary-network capabilities to Kubernetes workloads.
 - [[NVIDIA-HPC-X]] — MPI/SHMEM/UCX/UCC toolkit optimized for ConnectX and NVIDIA fabrics.
 - [[NVIDIA-Rivermax]] — streaming SDK that supports ConnectX NICs for kernel-bypass media and data streaming.

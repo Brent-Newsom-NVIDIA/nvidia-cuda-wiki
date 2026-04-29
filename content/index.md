@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 254*
+*Total pages: 262*
 
 ---
 
@@ -251,6 +251,9 @@
 ### Hardware Platforms
 - [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
 - [[NVIDIA-DGX-SuperPOD]] — Scale-out NVIDIA AI supercomputing reference architecture for AI factories
+- [[NVIDIA-DGX-B300]] — Blackwell Ultra DGX system generation for AI factory training and inference deployments
+- [[NVIDIA-GB300-NVL72]] — Rack-scale Blackwell Ultra NVL72 system for dense large-model training and inference
+- [[NVIDIA-RTX-PRO-Server]] — RTX PRO Blackwell enterprise server platform for AI, rendering, simulation, and visualization
 - [[NVIDIA-Certified-Systems]] — partner systems validated by NVIDIA for enterprise AI and accelerated computing workloads
 - [[NVIDIA-Data-Center-CPUs]] — NVIDIA data center CPU documentation covering Grace, Grace Hopper, and Grace Blackwell systems
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
@@ -269,6 +272,8 @@
 ## GPU Architectures
 
 - [[NVIDIA-Blackwell-Architecture]] — 2024 architecture: FP4 Tensor Cores, NVLink 5 (1.8TB/s), NVL72 rack-scale, NVLink-C2C
+- [[NVIDIA-Vera-Rubin]] — Next-generation platform after Blackwell with Rubin GPUs, Vera CPU, NVLink 6, and Vera Rubin NVL144 direction
+- [[NVIDIA-Vera-CPU]] — Custom Arm CPU in the Vera Rubin platform, positioned as the successor direction after Grace
 - [[NVIDIA-Hopper-Architecture]] — 2022 architecture: Transformer Engine (FP8), NVLink 4 (900GB/s), MIG, Confidential Computing
 - [[NVIDIA-Ada-Lovelace-Architecture]] — 2022 architecture for RTX 40/pro visualization GPUs with SER and third-generation RT Cores
 - [[NVIDIA-Ampere-Architecture]] — 2020 architecture for A100/A30/A10 and RTX 30-era GPUs with Tensor Core and MIG advances
@@ -330,7 +335,9 @@
 - [[NVIDIA-NetQ]] — network operations and observability tool set for Cumulus, Spectrum, NVLink, and data center fabrics
 - [[NVIDIA-DSX-Air]] — cloud-hosted network simulation and digital twin platform for validating NVIDIA networking configurations
 - [[NVIDIA-ConnectX-InfiniBand]] — NVIDIA ConnectX NICs and Quantum InfiniBand switches powering DGX SuperPODs and HPC clusters (up to 400Gb/s)
+- [[NVIDIA-ConnectX-9]] — 1.6Tb/s-class SuperNIC for next-generation InfiniBand/Ethernet AI networking
 - [[NVIDIA-BlueField-DPU]] — Data Processing Unit combining ConnectX NIC with ARM CPU and hardware accelerators for infrastructure offload
+- [[NVIDIA-BlueField-4]] — Next-generation DPU tied to STX, CMX, AI-native storage, context memory, and AI data platforms
 - [[NVIDIA-Rivermax]] — optimized networking SDK for GPUDirect media/data streaming, SMPTE ST 2110, BlueField, and ConnectX workflows
 
 ---
@@ -390,6 +397,7 @@
 
 ### Ethernet AI Networking
 - [[NVIDIA-Spectrum-X]] — Spectrum-4 400GbE AI networking platform; Adaptive Routing for lossless Ethernet RDMA
+- [[NVIDIA-Silicon-Photonics]] — Optical networking direction for scaling future Spectrum-X/AI factory fabrics
 - [[NVIDIA-Cumulus-Linux]] — validated switch OS layer for current Spectrum-X reference architecture releases
 - [[NVIDIA-NetQ]] — fabric operations visibility and validation for Ethernet AI networking
 

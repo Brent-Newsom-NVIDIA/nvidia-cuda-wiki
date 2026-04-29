@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-AI-Blueprints]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-Data-Flywheel-Blueprint]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Run-ai]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Certified-Storage]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-MONAI-Toolkit]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/latest/index.html, https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/introduction.html)
 **Last Updated:** 2026-04-29
 
@@ -73,6 +73,7 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - [[NVIDIA-Run-ai]] — self-hosted GPU scheduling and workload orchestration included in current AI Enterprise guidance.
 - [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
 - [[NVIDIA-Certified-Storage]] — validated storage layer for AI factory and AI Data Platform deployments.
+- [[NVIDIA-RTX-PRO-Server]] — RTX PRO servers can run enterprise AI, simulation, and visual computing workloads with NVIDIA software.
 - [[NVIDIA-Certified-for-Cloudera]] — enterprise data-platform reference material built around NVIDIA-certified infrastructure
 - [[NVIDIA-MONAI-Toolkit]] — healthcare imaging AI toolkit offered through NVIDIA AI Enterprise support paths
 - [[NVIDIA-Cloud-Native-Technologies]] — Kubernetes/container documentation anchors cloud-native AI Enterprise deployments

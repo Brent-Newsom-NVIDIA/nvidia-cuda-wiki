@@ -2,8 +2,8 @@
 
 **Type:** Program
 **Tags:** NVIDIA, certified systems, hardware validation, AI Enterprise, servers, workstations, edge systems
-**Related:** [[NVIDIA-Certification-Programs]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Mission-Control]]
-**Sources:** https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html, https://www.nvidia.com/en-us/data-center/products/certified-systems/, https://www.nvidia.com/en-us/data-center/products/certified-storage/
+**Related:** [[NVIDIA-Certification-Programs]], [[NVIDIA-Certified-Storage]], [[NVIDIA-Certified-for-Cloudera]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-RTX-PRO-Server]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Mission-Control]]
+**Sources:** https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html, https://www.nvidia.com/en-us/data-center/products/certified-systems/, https://www.nvidia.com/en-us/data-center/products/certified-storage/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -23,6 +23,7 @@ NVIDIA-authored partner/reference material such as [[NVIDIA-Certified-for-Cloude
 - [[NVIDIA-AI-Enterprise]] - enterprise software stack commonly deployed on certified systems.
 - [[NVIDIA-Enterprise-AI-Factory]] - AI factory design guidance combines certified systems, certified storage, networking, and software.
 - [[NVIDIA-HGX]] - OEM server platforms can be built around NVIDIA HGX designs.
+- [[NVIDIA-RTX-PRO-Server]] - validated RTX PRO server path for enterprise AI, simulation, and visual computing.
 - [[NVIDIA-Cloud-Accelerator-NCX]] - cloud partner architectures rely on validated infrastructure.
 - [[NVIDIA-Mission-Control]] - AI factory operations depend on known-good infrastructure.
 

@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RDMA, networking, InfiniBand, GPU, peer-to-peer, MPI, HPC, inter-node, zero-copy
-**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Related:** [[NVLink]], [[NVIDIA-ConnectX-InfiniBand]], [[NVIDIA-ConnectX-9]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-DOCA]], [[NVIDIA-Network-Operator]], [[NVIDIA-HPC-X]], [[NCCL]], [[NVSHMEM]], [[GPU-Direct-Storage]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://www.nvidia.com/en-us/networking/products/ethernet-adapters/connectx-9-supernic/)
+**Last Updated:** 2026-04-29
 
 ## Summary
 GPUDirect RDMA (Remote Direct Memory Access) is an NVIDIA technology that enables network adapters (InfiniBand HCAs or RDMA-capable NICs) to directly read from and write to GPU memory over a network — bypassing the CPU and system DRAM entirely. In distributed GPU computing, this eliminates the double-copy bottleneck (GPU→CPU→NIC for send; NIC→CPU→GPU for receive), enabling inter-node GPU memory transfers at near-theoretical network bandwidth with minimal CPU involvement. GPUDirect RDMA is a foundational technology for large-scale distributed AI training and HPC applications.
@@ -49,6 +49,7 @@ In traditional GPU cluster programming (without GPUDirect RDMA), sending data fr
 ## Connections
 - [[NVLink]] — NVLink handles intra-node GPU-to-GPU communication; GPUDirect RDMA handles inter-node (between servers); both used together in large GPU clusters
 - [[NVIDIA-ConnectX-InfiniBand]] — ConnectX HCAs are the primary network adapters implementing GPUDirect RDMA in NVIDIA's networking stack
+- [[NVIDIA-ConnectX-9]] — current SuperNIC generation that includes GPUDirect and RDMA capabilities in NVIDIA docs.
 - [[NVIDIA-BlueField-DPU]] — BlueField DPU offloads RDMA network processing; BlueField-3 supports GPUDirect RDMA with DPU-accelerated NCCL flows
 - [[NVIDIA-DOCA]] — DOCA RDMA, DOCA-OFED, and GPUDirect support are part of the current NVIDIA networking software stack.
 - [[NVIDIA-Network-Operator]] — deploys the Kubernetes networking components required for GPUDirect RDMA workloads.

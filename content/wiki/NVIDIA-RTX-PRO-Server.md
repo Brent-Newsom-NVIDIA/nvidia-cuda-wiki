@@ -1,0 +1,41 @@
+# NVIDIA RTX PRO Server
+
+**Type:** Platform
+**Tags:** NVIDIA, RTX PRO Server, Blackwell, enterprise AI, rendering, simulation, Omniverse, inference
+**Related:** [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-RTX]], [[NVIDIA-Omniverse]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-DGX]]
+**Sources:** https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://blogs.nvidia.com/blog/rtx-pro-servers/
+**Last Updated:** 2026-04-29
+
+## Summary
+NVIDIA RTX PRO Server is NVIDIA's enterprise server platform for RTX PRO Blackwell GPUs, targeted at AI, rendering, simulation, digital twins, and visual computing workloads. It sits between workstation-class RTX workflows and DGX/HGX-class AI factory infrastructure.
+
+## Detail
+
+### Purpose
+Many enterprises need dense GPU servers for visualization, rendering, simulation, inference, video, and Omniverse workloads that do not require a DGX-class turnkey AI supercomputer. RTX PRO Server provides a validated server path for those workloads using RTX PRO Blackwell GPUs and NVIDIA enterprise software.
+
+### Workload fit
+- Enterprise inference and generative AI.
+- Visualization, rendering, virtual workstations, and graphics workloads.
+- [[NVIDIA-Omniverse]] and digital twin simulation.
+- Media, video, and physical AI data workflows.
+- Enterprise AI deployments where [[NVIDIA-Certified-Systems]], AI Enterprise, and RTX software matter.
+
+### NVIDIA context
+Treat RTX PRO Server as the enterprise RTX server counterpart to [[NVIDIA-DGX]] and [[NVIDIA-HGX]]. It should connect graphics/Omniverse/RTX workloads to the same AI Enterprise, certified systems, and AI factory planning context used for larger GPU infrastructure.
+
+## Connections
+- [[NVIDIA-Blackwell-Architecture]] - RTX PRO Blackwell GPUs use Blackwell-generation architecture.
+- [[NVIDIA-RTX]] - RTX platform for ray tracing, AI rendering, DLSS, and visual computing.
+- [[NVIDIA-Omniverse]] - major simulation and digital twin workload target.
+- [[NVIDIA-AI-Enterprise]] - enterprise software and support path for production AI workloads.
+- [[NVIDIA-Certified-Systems]] - RTX PRO Server deployments rely on validated partner systems.
+- [[NVIDIA-Enterprise-AI-Factory]] - RTX PRO servers can be part of an enterprise AI factory for visualization, simulation, and inference.
+- [[NVIDIA-DGX]] - DGX is the AI supercomputing counterpart for larger training/inference systems.
+
+## Source Excerpts
+- NVIDIA's RTX PRO Server page positions the platform for enterprise AI, rendering, simulation, and RTX PRO Blackwell GPU workloads.
+
+## Resources
+- [NVIDIA RTX PRO Server](https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/)
+- [NVIDIA Blog: RTX PRO Servers](https://blogs.nvidia.com/blog/rtx-pro-servers/)
