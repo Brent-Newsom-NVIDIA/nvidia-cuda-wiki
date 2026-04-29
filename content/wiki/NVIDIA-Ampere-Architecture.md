@@ -2,7 +2,7 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, Ampere, GPU architecture, A100, CUDA, Tensor Cores, asynchronous copy
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Compatibility]], [[CUDA-Streams]], [[cuBLAS]]
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CUDA]], [[CUDA-Ampere-Compatibility-Guide]], [[CUDA-Ampere-Tuning-Guide]], [[CUDA-Compatibility]], [[CUDA-Streams]], [[cuBLAS]]
 **Sources:** https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-tuning-guide/index.html
 **Last Updated:** 2026-04-29
 
@@ -17,6 +17,8 @@ Ampere is a key middle generation in the wiki because it introduced widely deplo
 ## Connections
 - [[NVIDIA-Hopper-Architecture]] - Hopper succeeds Ampere for data center AI workloads.
 - [[NVIDIA-Ada-Lovelace-Architecture]] - Ada is a related later architecture for graphics/workstation/client GPUs.
+- [[CUDA-Ampere-Compatibility-Guide]] - architecture-specific CUDA binary compatibility guidance for Ampere.
+- [[CUDA-Ampere-Tuning-Guide]] - Ampere-specific CUDA performance tuning guidance.
 - [[CUDA-Compatibility]] - Ampere docs cover compatibility for older CUDA applications.
 - [[CUDA-Streams]] - asynchronous copy and overlap patterns matter for tuning.
 - [[cuBLAS]] - Tensor Core dense math libraries are central to Ampere AI performance.

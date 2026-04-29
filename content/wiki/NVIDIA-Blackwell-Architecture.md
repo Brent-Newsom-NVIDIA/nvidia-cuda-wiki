@@ -2,8 +2,8 @@
 
 **Type:** Architecture
 **Tags:** NVIDIA, GPU architecture, Blackwell, B100, B200, GB200, NVLink 5, HBM3e, FP4, Tensor Core, AI superchip
-**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
-**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/)
+**Related:** [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Vera-Rubin]], [[NVIDIA-DGX]], [[NVIDIA-DGX-B300]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Enterprise-AI-Factory]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-STX]], [[NVIDIA-RTX-PRO-Server]], [[CUDA-Blackwell-Compatibility-Guide]], [[CUDA-Blackwell-Tuning-Guide]], [[NVLink]], [[NVIDIA-Grace-CPU]], [[TensorRT]], [[CUDA-Graphs]], [[CUDA-Compatibility]], [[NVIDIA-MIG]], [[NVIDIA-Attestation]], [[NVIDIA-Jetson-Thor]], [[NVIDIA-DRIVE-AGX-Thor]]
+**Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; updated from https://docs.nvidia.com/ai-enterprise/planning-resource/ai-factory-white-paper/latest/ecosystem-architecture.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://www.nvidia.com/en-us/data-center/ai-storage/stx/, https://www.nvidia.com/en-us/data-center/gb300-nvl72/, https://www.nvidia.com/en-us/data-center/products/rtx-pro-server/, https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/blackwell-tuning-guide/index.html)
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -72,6 +72,8 @@ As LLMs grow beyond 100 billion parameters and inference demands increase, Hoppe
 - [[NVIDIA-AI-Data-Platform]] — AI Data Platform references Blackwell GPUs for accelerating data processing and retrieval pipelines.
 - [[NVIDIA-STX]] — STX connects future AI-native storage/data platform designs to NVIDIA accelerated compute.
 - [[NVIDIA-RTX-PRO-Server]] — RTX PRO Server brings Blackwell GPUs into enterprise visualization, simulation, and inference servers.
+- [[CUDA-Blackwell-Compatibility-Guide]] — CUDA application binary compatibility guidance for Blackwell.
+- [[CUDA-Blackwell-Tuning-Guide]] — CUDA kernel and multi-GPU tuning guidance for Blackwell.
 - [[NVLink]] — NVLink 5 is a defining Blackwell feature; NVSwitch 4 enables GB200 NVL72 rack-scale connectivity
 - [[NVIDIA-Grace-CPU]] — Grace CPU pairs with B200 in GB200 superchip via NVLink-C2C
 - [[TensorRT]] — TensorRT exploits Blackwell FP4/FP6 precision and new Tensor Core capabilities for maximum throughput

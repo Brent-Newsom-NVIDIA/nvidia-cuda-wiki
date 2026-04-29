@@ -2,6 +2,40 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 12: CUDA architecture compatibility, tuning, and cuFile API coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch12-20260429T063040Z`; local Git tag `codex-backup-overnight-pre-batch12-20260429T063040Z`
+
+**Source URLs:** https://docs.nvidia.com/cuda/blackwell-compatibility-guide/index.html, https://docs.nvidia.com/cuda/blackwell-tuning-guide/index.html, https://docs.nvidia.com/cuda/hopper-compatibility-guide/index.html, https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-tuning-guide/index.html, https://docs.nvidia.com/gpudirect-storage/api-reference-guide/index.html, https://docs.nvidia.com/cuda/cuda-features-archive/index.html
+
+**Gap analysis summary:**
+
+- Added canonical pages for current CUDA 13.2 architecture compatibility and tuning guides for Blackwell, Hopper, and Ampere.
+- Added `cuFile-API.md` as the API-level companion to GPUDirect Storage.
+- Added `CUDA-Features-Archive.md` as a current reference page for feature availability, while explicitly not treating older toolkit releases as canonical.
+- Updated the CUDA compatibility, programming, best-practices, architecture, NVCC, PTX, and GPUDirect Storage pages so architecture-specific guidance is reachable from the main CUDA graph.
+
+**Pages created (8 total):**
+
+- `content/wiki/CUDA-Blackwell-Compatibility-Guide.md`
+- `content/wiki/CUDA-Blackwell-Tuning-Guide.md`
+- `content/wiki/CUDA-Hopper-Compatibility-Guide.md`
+- `content/wiki/CUDA-Hopper-Tuning-Guide.md`
+- `content/wiki/CUDA-Ampere-Compatibility-Guide.md`
+- `content/wiki/CUDA-Ampere-Tuning-Guide.md`
+- `content/wiki/cuFile-API.md`
+- `content/wiki/CUDA-Features-Archive.md`
+
+**Pages updated:**
+
+- `content/wiki/CUDA-Compatibility.md`, `content/wiki/CUDA-Best-Practices-Guide.md`, and `content/wiki/CUDA-Programming-Guide.md` - connected architecture-specific CUDA guide pages.
+- `content/wiki/NVIDIA-Blackwell-Architecture.md`, `content/wiki/NVIDIA-Hopper-Architecture.md`, and `content/wiki/NVIDIA-Ampere-Architecture.md` - linked compatibility and tuning guides from the relevant architecture pages.
+- `content/wiki/GPU-Direct-Storage.md` - linked cuFile API as the GPUDirect Storage API reference surface.
+- `content/wiki/NVCC.md` and `content/wiki/PTX-ISA.md` - linked PTX/cubin and `-gencode` compatibility guidance.
+- `content/index.md` - updated page count to 270 and indexed all eight new CUDA guide/API/reference pages.
+
+---
+
 ## 2026-04-29 - Overnight batch 11: Blackwell Ultra, Vera Rubin, and next-generation AI factory infrastructure
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch11-20260429T061925Z`; local Git tag `codex-backup-overnight-pre-batch11-20260429T061925Z`

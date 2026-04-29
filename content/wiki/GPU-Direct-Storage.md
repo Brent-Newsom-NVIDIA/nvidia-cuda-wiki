@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Storage, I/O, HPC, AI Training, Direct I/O
-**Related:** [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-DGX-SuperPOD]]
-**Sources:** NVIDIA official documentation, https://www.nvidia.com/en-us/data-center/products/certified-storage/
+**Related:** [[cuFile-API]], [[nvComp]], [[cuDF]], [[NVIDIA-DALI]], [[cuBLAS]], [[NVIDIA-Certified-Storage]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-DGX-SuperPOD]]
+**Sources:** NVIDIA official documentation, https://docs.nvidia.com/gpudirect-storage/api-reference-guide/index.html, https://www.nvidia.com/en-us/data-center/products/certified-storage/
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -44,6 +44,7 @@ In traditional GPU workloads, data must travel from storage → CPU memory → G
 
 ## Connections
 - [[nvComp]] — nvComp compressed data can flow via GDS directly from storage to GPU for decompression
+- [[cuFile-API]] — cuFile is the direct API reference surface for GPUDirect Storage programming.
 - [[cuDF]] — cuDF supports GDS-backed I/O for reading large datasets directly into GPU DataFrames
 - [[NVIDIA-DALI]] — DALI can use GDS for loading training images directly to GPU without CPU copies
 - [[cuBLAS]] — HPC workflows using cuBLAS benefit from GDS for loading matrix data from disk

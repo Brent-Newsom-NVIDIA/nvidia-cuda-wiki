@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 262*
+*Total pages: 270*
 
 ---
 
@@ -59,6 +59,7 @@
 - [[Morpheus]] — GPU-accelerated AI cybersecurity framework for real-time threat detection
 - [[nvComp]] — GPU-accelerated data compression and decompression library (LZ4, Snappy, ZSTD, GDeflate)
 - [[GPU-Direct-Storage]] — direct data path from NVMe/network storage to GPU memory bypassing CPU
+- [[cuFile-API]] — GPUDirect Storage API surface for registering GPU buffers/files and issuing direct storage I/O
 
 ### Image & Video
 - [[NVIDIA-DALI]] — GPU-accelerated data loading and augmentation for deep learning training pipelines
@@ -285,6 +286,13 @@
 ## CUDA Concepts
 
 - [[CUDA-Compatibility]] — Driver/toolkit compatibility rules for CUDA applications in managed deployments
+- [[CUDA-Blackwell-Compatibility-Guide]] — CUDA binary compatibility guide for running applications on Blackwell GPUs
+- [[CUDA-Blackwell-Tuning-Guide]] — Blackwell-specific CUDA performance tuning guide
+- [[CUDA-Hopper-Compatibility-Guide]] — CUDA binary compatibility guide for running applications on Hopper GPUs
+- [[CUDA-Hopper-Tuning-Guide]] — Hopper-specific CUDA performance tuning guide covering TMA, clusters, DPX, memory, and NVLink
+- [[CUDA-Ampere-Compatibility-Guide]] — CUDA binary compatibility guide for running applications on Ampere GPUs
+- [[CUDA-Ampere-Tuning-Guide]] — Ampere-specific CUDA performance tuning guide covering async copy, barriers, Tensor Cores, memory, and NVLink
+- [[CUDA-Features-Archive]] — current CUDA docs reference for feature availability across toolkit and driver releases
 - [[CUDA-Graphs]] — Capture GPU operation sequences as a graph for single-submission replay; eliminates per-kernel CPU launch overhead
 - [[CUDA-Unified-Memory]] — Single-pointer CPU+GPU memory with hardware-managed demand paging; GH200 enables coherent access at NVLink bandwidth
 - [[CUDA-Streams]] — Sequences of ordered GPU operations enabling concurrent kernel execution and compute/transfer overlap
