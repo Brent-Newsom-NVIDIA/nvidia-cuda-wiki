@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 458*
+*Total pages: 459*
 
 ---
 
@@ -379,6 +379,7 @@
 - [[NIM-for-Cosmos-Reason]] — Cosmos Reason VLM NIM family for image, video, and text reasoning
 - [[NIM-for-Cosmos-Embed1]] — Cosmos Embed1 NIM for joint video-text embeddings and physical AI video retrieval
 - [[NIM-for-Vision-Language-Models]] — VLM NIM family for multimodal reasoning, image understanding, and visual assistants
+- [[Llama-Nemotron-Rerank-VL-1B-v2]] — NVIDIA multimodal reranker for visual document retrieval and vision RAG
 - [[NIM-for-Visual-Generative-AI]] — Visual GenAI NIM family for image generation, image editing, and 3D asset generation
 - [[NVIDIA-TAO]] — Train, Adapt, and Optimize platform for fine-tuning and deploying CV, embedding, and VLM models
 - [[NVIDIA-Jetson-Platform-Services]] — Jetson edge AI microservice layer for video analytics, VLM, detection, storage, and APIs

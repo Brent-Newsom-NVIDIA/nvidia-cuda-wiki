@@ -2,6 +2,32 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 85: Llama Nemotron Rerank VL 1B v2
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch85-20260429T121645Z`; local Git tag `codex-backup-overnight-pre-batch85-20260429T121645Z`
+
+**Source URLs:** https://build.nvidia.com/nvidia/llama-nemotron-rerank-vl-1b-v2/modelcard, https://build.nvidia.com/nvidia/llama-nemotron-rerank-vl-1b-v2, https://huggingface.co/nvidia/llama-nemotron-rerank-vl-1b-v2
+
+**Gap analysis summary:**
+
+- Added a canonical page for the NVIDIA-published llama-nemotron-rerank-vl-1b-v2 model after finding a current Build NVIDIA model card and no existing wiki page.
+- Kept this as a model-specific complement to the broader NeMo Retriever Reranking NIM page rather than duplicating the service-level docs.
+- Connected the model to NeMo Retriever, reranking/embedding NIMs, VLM/EAGLE context, Nemotron, document parsing, RAG blueprints, AI Data Platform, TensorRT, and Triton.
+
+**Pages created (1 total):**
+
+- `content/wiki/Llama-Nemotron-Rerank-VL-1B-v2.md`
+
+**Pages updated:**
+
+- `content/wiki/NeMo-Retriever-Reranking-NIM.md` - linked the model-specific multimodal reranker.
+- `content/wiki/NeMo-Retriever.md` - connected visual document reranking to Retriever capabilities.
+- `content/wiki/NIM-for-Vision-Language-Models.md` - linked the VLM-style reranker.
+- `content/wiki/NVIDIA-NIM.md` - linked the Build NVIDIA multimodal reranking model.
+- `content/index.md` - updated total page count to 459 and indexed the new page.
+
+---
+
 ## 2026-04-29 - Overnight batch 84: NVIDIA Ising
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch84-20260429T121439Z`; local Git tag `codex-backup-overnight-pre-batch84-20260429T121439Z`

@@ -2,7 +2,7 @@
 
 **Type:** Microservice
 **Tags:** NVIDIA, NIM, VLM, vision-language model, multimodal AI, visual question answering, image understanding, video understanding, OpenAI-compatible
-**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[Nemotron-3-Nano-Omni]], [[Nemotron-Parse]], [[NIM-for-Cosmos-Reason]], [[Ising-Calibration-1-35B-A3B]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-NIM]], [[NVLM]], [[NIM-for-NV-CLIP]], [[NVIDIA-EAGLE]], [[Nemotron]], [[Nemotron-3-Nano-Omni]], [[Nemotron-Parse]], [[Llama-Nemotron-Rerank-VL-1B-v2]], [[NIM-for-Cosmos-Reason]], [[Ising-Calibration-1-35B-A3B]], [[NIM-for-Cosmos-WFM]], [[NIM-for-Cosmos-Embed1]], [[NVIDIA-RAG-Blueprint]], [[NVIDIA-Video-Search-and-Summarization-Blueprint]], [[NIM-for-Visual-Generative-AI]], [[NIM-for-Multimodal-Safety]], [[NeMo-Retriever]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[NVIDIA-AI-Data-Platform]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-AI-Enterprise]]
 **Sources:** https://docs.nvidia.com/nim/vision-language-models/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/support-matrix.html, https://docs.nvidia.com/nim/vision-language-models/latest/release-notes.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-3-nano-omni-30b-a3b-reasoning/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/cosmos-reason2/api.html, https://docs.nvidia.com/nim/vision-language-models/latest/fine-tune-model.html, https://docs.nvidia.com/rag/latest/multimodal-query.html, https://docs.nvidia.com/vss/latest/, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/vision-language-models/latest/index.html, https://docs.nvidia.com/nim/vision-language-models/latest/getting-started.html, https://docs.nvidia.com/nim/multimodal-safety/latest/overview.html
 **Last Updated:** 2026-04-29
 
@@ -35,6 +35,7 @@ This page bridges NVIDIA model families such as [[NVLM]], [[NVIDIA-EAGLE]], [[Ne
 - [[Nemotron]] - current VLM docs include Nemotron-branded omnimodal and parsing models.
 - [[Nemotron-3-Nano-Omni]] - current NVIDIA omnimodal VLM NIM for text, image, video, audio, document, and GUI understanding.
 - [[Nemotron-Parse]] - current Nemotron document parser for text/table extraction, layout classes, and bounding boxes.
+- [[Llama-Nemotron-Rerank-VL-1B-v2]] - VLM-style reranker for multimodal visual document retrieval.
 - [[NIM-for-Cosmos-Reason]] - Cosmos Reason1/Reason2 VLM NIM family.
 - [[Ising-Calibration-1-35B-A3B]] - domain-specific NVIDIA VLM endpoint for quantum calibration plot understanding.
 - [[NIM-for-Cosmos-WFM]] - Cosmos WFM NIM covers Predict and Transfer; VLM docs cover Cosmos Reason.

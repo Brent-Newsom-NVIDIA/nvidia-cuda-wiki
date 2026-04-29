@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, NeMo Retriever, RAG, retrieval, embedding, reranking, multimodal data extraction
-**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[Nemotron-Parse]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
+**Related:** [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NVIDIA-NIM]], [[NVIDIA-NIM-Operator]], [[NVIDIA-RAG-Blueprint]], [[NeMo-Retriever-Embedding-NIM]], [[NIM-for-NV-CLIP]], [[NeMo-Retriever-Reranking-NIM]], [[Llama-Nemotron-Rerank-VL-1B-v2]], [[NIM-for-Image-OCR]], [[NIM-for-Object-Detection]], [[Nemotron-Parse]], [[NVIDIA-AI-Data-Platform]], [[NVIDIA-AI-Q-Blueprint]], [[NVIDIA-AI-Blueprints]], [[cuVS]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Nemotron]]
 **Sources:** https://docs.nvidia.com/nemo/retriever/latest/index.html, https://docs.nvidia.com/rag/latest/, https://docs.nvidia.com/nim/nemo-retriever/text-embedding/latest/overview.html, https://docs.nvidia.com/nim/nvclip/latest/introduction.html, https://docs.nvidia.com/nim/nemo-retriever/text-reranking/latest/overview.html, https://docs.nvidia.com/nim/ingestion/image-ocr/latest/overview.html, https://docs.nvidia.com/nim/ingestion/object-detection/latest/overview.html, https://docs.nvidia.com/nim/vision-language-models/latest/examples/nemotron-parse/api.html, https://www.nvidia.com/en-us/data-center/ai-data-platform/, https://docs.nvidia.com/aiq-blueprint/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -20,6 +20,7 @@ Enterprise RAG and agent systems need to connect models to proprietary data with
 - Multimodal text/image embedding and semantic image retrieval through [[NIM-for-NV-CLIP]].
 - GPU-accelerated vector search and indexing through [[cuVS]].
 - Semantic and hybrid retrieval with embedding and reranking NIM microservices such as [[NeMo-Retriever-Embedding-NIM]] and [[NeMo-Retriever-Reranking-NIM]].
+- Multimodal visual-document reranking with model-specific endpoints such as [[Llama-Nemotron-Rerank-VL-1B-v2]].
 - Enterprise privacy and deployment model consistent with self-hosted NVIDIA AI stacks.
 
 ### NVIDIA context
@@ -34,6 +35,7 @@ NeMo Retriever is a central bridge between enterprise data and NVIDIA agent syst
 - [[NeMo-Retriever-Embedding-NIM]] - embedding microservice for semantic search and RAG.
 - [[NIM-for-NV-CLIP]] - multimodal text/image embedding NIM for semantic image search and multimodal RAG.
 - [[NeMo-Retriever-Reranking-NIM]] - reranking microservice for improving candidate context relevance.
+- [[Llama-Nemotron-Rerank-VL-1B-v2]] - NVIDIA multimodal reranker model for pages, slides, text, and image+text documents.
 - [[NIM-for-Image-OCR]] - OCR extraction microservice for images and visual document regions.
 - [[NIM-for-Object-Detection]] - document object-detection microservices for page, table, and graphic elements.
 - [[Nemotron-Parse]] - VLM document parser for text/table extraction, semantic classes, and bounding boxes.
