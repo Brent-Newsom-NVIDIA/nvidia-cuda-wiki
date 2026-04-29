@@ -2,9 +2,9 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, containers, Docker, Kubernetes, GPU, runtime, DevOps, cloud-native, nvidia-docker
-**Related:** [[NVIDIA-GPU-Operator]], [[NGC]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-NIM]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-GPU-Operator]], [[NGC]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DCGM]], [[NVIDIA-NIM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 The NVIDIA Container Toolkit (formerly nvidia-docker2) is a set of tools that enables GPU-accelerated containers by configuring the container runtime to expose NVIDIA GPUs and CUDA libraries to containers without bundling the driver inside the image. It acts as an OCI runtime hook, injecting the correct NVIDIA driver user-space libraries, device nodes, and capabilities into any Docker, containerd, or CRI-O container that requests GPU access. The Container Toolkit is the foundational layer enabling NVIDIA's entire container-based software ecosystem — NGC containers, NIM, GPU Operator — to function correctly.
@@ -48,6 +48,7 @@ Before NVIDIA Container Toolkit, running GPU code in Docker required either bund
 - **Container Spec (OCI):** `nvidia.com/gpu.present: "true"` annotation in container spec for CDI-based runtimes
 
 ## Connections
+- [[NVIDIA-Cloud-Native-Technologies]] — documentation hub for NVIDIA's Kubernetes, container, and cloud-native GPU stack
 - [[NVIDIA-GPU-Operator]] — GPU Operator automates the deployment and lifecycle management of Container Toolkit on all Kubernetes GPU nodes
 - [[NGC]] — All NGC containers are designed to work with Container Toolkit; `nvcr.io` images assume host-provided NVIDIA driver
 - [[NVIDIA-AI-Enterprise]] — Container Toolkit is a prerequisite for all AI Enterprise software deployments

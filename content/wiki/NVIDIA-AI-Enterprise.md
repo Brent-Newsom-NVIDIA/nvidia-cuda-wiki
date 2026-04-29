@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, enterprise AI, software suite, licensing, support, MLOps, LLMOps, production AI, cloud-native
-**Related:** [[NGC]], [[NVIDIA-NIM]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
+**Related:** [[NGC]], [[NVIDIA-NIM]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Agent-Intelligence-Toolkit]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[TensorRT]], [[NVIDIA-Base-Command]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-MIG]], [[NVIDIA-vGPU]], [[NVIDIA-Attestation]], [[NVIDIA-GPU-Operator]], [[NVIDIA-DCGM]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -19,10 +19,11 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 - **Enterprise SLA & Support:** 24×7 enterprise-grade support with defined severity-based response SLAs; dedicated AI Enterprise support portal and escalation paths
 - **Security & CVE Management:** Continuous CVE scanning of all container images; rapid patching cadence; signed containers on NGC — critical for HIPAA, SOC 2, FedRAMP, and GDPR compliance environments
 - **NIM Microservices:** Full access to the NIM catalog — LLMs, embedding models, rerankers, vision-language, speech, and biology models — under enterprise license for on-premises, data-private deployment
+- **API and recipe surface:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] document hosted/self-hosted API patterns for developers moving NVIDIA AI software into applications.
 - **NeMo Microservices (NeMo.ms):** Microservice-based LLMOps components: NeMo Curator (data curation), NeMo Customizer (LoRA/SFT/RLHF fine-tuning), NeMo Evaluator, and NeMo Guardrails (content safety)
 - **Flexible Licensing:** Licensed via NVIDIA License System (NLS); supports on-premises DGX and certified servers, VMware vSphere with vGPU, Red Hat OpenShift, bare metal, and all major public clouds (AWS, Azure, GCP, OCI Marketplace)
 - **NVIDIA-Certified Systems:** Hardware certification program ensuring server platforms from Dell, HPE, Lenovo, Supermicro, etc. are validated and performance-benchmarked for AI Enterprise workloads
-- **Software-Defined GPU Partitioning:** Support for MIG (Multi-Instance GPU) and vGPU with enterprise licensing for multi-tenant deployments
+- **Software-Defined GPU Partitioning:** Support for MIG (Multi-Instance GPU), vGPU, and [[NVIDIA-Cloud-Native-Technologies]] deployment patterns with enterprise licensing for multi-tenant deployments
 
 ### Use Cases
 - Enterprise LLM and generative AI deployment with on-premises data privacy and regulatory compliance
@@ -51,12 +52,16 @@ While NVIDIA's individual frameworks and libraries are freely available to devel
 ## Connections
 - [[NGC]] — AI Enterprise software is exclusively distributed and licensed through NGC; NGC Private Registry supports enterprise isolation
 - [[NVIDIA-NIM]] — NIM microservices are the primary inference delivery mechanism within AI Enterprise
+- [[NVIDIA-API-Documentation]] — public hosted API docs connect model endpoints to production application development
+- [[LLM-Inference-Quick-Start-Recipes]] — quick-start recipes show common LLM inference deployment paths on NVIDIA software
 - [[NeMo-Platform]] — NeMo Platform microservices provide customization, evaluation, guardrails, and inference workflows
 - [[NeMo-Retriever]] — enterprise RAG and data-retrieval microservices connect proprietary data to AI applications
 - [[NVIDIA-Agent-Intelligence-Toolkit]] — agent workflow, profiling, evaluation, MCP, and A2A toolkit in the NeMo family
 - [[Triton-Inference-Server]] — Triton is bundled with enterprise SLA; the primary model serving framework
 - [[NVIDIA-NeMo]] — NeMo training, fine-tuning, guardrails, and data curation tools included under enterprise support
 - [[NVIDIA-Base-Command]] — Base Command provides the MLOps orchestration and job scheduling layer for AI Enterprise at scale
+- [[NVIDIA-Certified-Systems]] — validated partner systems are deployment targets for AI Enterprise workloads
+- [[NVIDIA-Cloud-Native-Technologies]] — Kubernetes/container documentation anchors cloud-native AI Enterprise deployments
 - [[NVIDIA-MIG]] — GPU partitioning supports multi-tenant enterprise deployments
 - [[NVIDIA-vGPU]] — virtualization path for enterprise GPU access and CUDA-capable virtual environments
 - [[NVIDIA-Attestation]] — trust and integrity layer for confidential AI infrastructure

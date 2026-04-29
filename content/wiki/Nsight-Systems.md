@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, System Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Compute]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Compute]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 Nsight Systems is NVIDIA's system-wide performance profiler for GPU-accelerated applications, providing a unified timeline view of CPU, GPU, and memory activity across the entire application. It traces CUDA API calls, kernel launches, memory transfers, OS events, and framework-level operations (PyTorch, TensorFlow) to identify where time is spent at the application level — the starting point before diving into kernel-level optimization with Nsight Compute.
@@ -48,6 +48,8 @@ Before optimizing individual GPU kernels, developers need to understand the big 
 
 ## Connections
 - [[Nsight-Compute]] — Nsight Systems provides the high-level view; Nsight Compute provides per-kernel deep analysis
+- [[Nsight-Visual-Studio-Edition]] — Windows IDE integration for adjacent Nsight workflows
+- [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA IDE integration on Linux
 - [[NVCC]] — NVCC-compiled CUDA code is profiled by Nsight Systems
 - [[NCCL]] — NCCL communication operations appear in the Nsight Systems timeline for distributed training analysis
 - [[CUDA-GDB]] — CUDA-GDB provides interactive debugging; Nsight Systems provides performance profiling

@@ -1,13 +1,14 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 182*
+*Total pages: 204*
 
 ---
 
 ## Concepts
 
 - [[NVIDIA-AI-Grid]] — Distributed AI infrastructure concept for workload placement across cloud, data center, and edge locations
+- [[Floating-Point-and-IEEE-754]] — NVIDIA guidance on CUDA floating-point behavior, IEEE 754 compliance, FMA, and numerical accuracy
 
 ## People
 
@@ -33,6 +34,7 @@
 - [[cuTENSOR]] — GPU-accelerated tensor contraction, reduction, and elementwise operations
 - [[cuDSS]] — GPU-accelerated direct sparse solver for very sparse linear systems
 - [[AmgX]] — GPU-accelerated algebraic multigrid and Krylov solver library (open source)
+- [[Incomplete-LU-Cholesky]] — CUDA whitepaper guidance for preconditioned iterative solvers using cuSPARSE and cuBLAS
 - [[nvmath-python]] — Python interface to NVIDIA CUDA-X math libraries (cuBLAS, cuFFT, cuRAND, cuDSS)
 - [[NVBLAS]] — drop-in GPU BLAS shim; transparently redirects Level 3 BLAS calls to cuBLAS via LD_PRELOAD
 - [[NVPL]] — NVIDIA Performance Libraries: CPU math (BLAS, LAPACK, FFT, RAND) optimized for Grace/Arm
@@ -43,6 +45,8 @@
 - [[TensorRT-LLM]] — LLM inference optimization library with continuous batching, paged KV cache, FP8
 - [[CUTLASS]] — open-source C++ template library for custom high-performance GEMM on NVIDIA GPUs
 - [[FlashInfer]] — open-source GPU kernel toolkit for LLM inference (attention, batch decode, sampling)
+- [[NVIDIA-Deep-Learning-Performance]] — NVIDIA guidance for GPU deep learning performance, precision, Tensor Cores, and profiling
+- [[LLM-Inference-Quick-Start-Recipes]] — NVIDIA quick-start recipes for common LLM inference paths across NIM, TensorRT-LLM, Triton, and Dynamo
 
 ### Data Processing & ML
 - [[cuDF]] — GPU-accelerated DataFrame library; 50x faster pandas drop-in (RAPIDS)
@@ -102,6 +106,7 @@
 - [[nvFatbin]] — Runtime CUDA fatbin creation API for packaging cubin, PTX, and LTO-IR variants
 - [[CUDA-Binary-Utilities]] — cuobjdump, nvdisasm, cu++filt, and nvprune tools for CUDA binaries
 - [[CUDA-Compile-Time-Advisor]] — ctadvisor tool for analyzing and reducing CUDA C++ compile time
+- [[CUDA-Demo-Suite]] — CUDA validation demos such as deviceQuery and bandwidthTest for checking GPU/toolkit setup
 - [[CUDA-Debugger-API]] — Low-level CUDA debugger integration API
 - [[CUDA-Cpp-Standard-Library]] — CUDA-capable C++ standard library facilities in the CCCL stack
 - [[CUDA-Runtime-API]] — Higher-level CUDA API for devices, memory, streams, graphs, and launches
@@ -110,11 +115,14 @@
 - [[Compute-Sanitizer]] — GPU functional correctness checker (memory, race, init, sync errors)
 - [[Nsight-Compute]] — interactive GPU kernel profiler with hardware counters and guided analysis
 - [[Nsight-Systems]] — system-wide CPU+GPU performance profiler and timeline visualizer
+- [[Nsight-Visual-Studio-Edition]] — Visual Studio integration for CUDA debugging, profiling, and GPU development on Windows
+- [[Nsight-Eclipse-Plugins]] — Eclipse plugin path for CUDA Linux IDE development workflows
 
 ### Embedded & Edge
 - [[cuDLA]] — CUDA API for programming NVIDIA DLA (Deep Learning Accelerator) on Jetson/DRIVE SoCs
 - [[CUDA-for-Tegra]] — CUDA guidance for Tegra integrated GPU platforms including Jetson and DRIVE
 - [[CUDA-on-WSL]] — CUDA support for Linux GPU development inside Windows Subsystem for Linux 2
+- [[CUDA-on-EFLOW]] — CUDA deployment guidance for EFLOW-enabled Windows edge devices running Linux AI containers
 
 ### Inference & Data Transfer
 - [[NIXL]] — NVIDIA Inference Xfer Library; high-throughput KV cache and tensor transfer for LLM serving
@@ -178,6 +186,11 @@
 - [[NVIDIA-BaseOS]] — Validated production operating system layer for DGX and AI factory environments
 - [[NVIDIA-DGX-Cloud]] — Cloud-accessible NVIDIA AI supercomputing platform
 - [[NVIDIA-Cloud-Functions]] — NVIDIA cloud/API delivery surface for hosted AI functions and services
+- [[NVIDIA-API-Documentation]] — public API documentation hub for NVIDIA-hosted model and microservice endpoints
+- [[NVIDIA-Brev]] — NVIDIA cloud GPU development environments for prototyping and API experimentation
+- [[NVIDIA-Bright-Cluster-Manager]] — NVIDIA Bright cluster-management documentation for HPC and AI infrastructure
+- [[NVIDIA-Certification-Programs]] — NVIDIA certification documentation across systems, software, and partner validation programs
+- [[NVIDIA-Cloud-Accelerator-NCX]] — cloud accelerator documentation for validated NVIDIA AI infrastructure on cloud partners
 - [[NVIDIA-Mission-Control]] - Integrated AI factory management platform for DGX B200/B300 and GB200/GB300 NVL72 environments
 
 ### Agent Platforms
@@ -189,6 +202,9 @@
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
 - [[NVIDIA-Riva]] — GPU-accelerated real-time speech AI SDK: ASR, TTS, NLU with sub-100ms latency
 - [[NVIDIA-Maxine]] — GPU-accelerated audio/video/AR enhancement for video conferencing and media applications
+- [[NVIDIA-Capture-SDK]] — capture and stream SDKs for desktop/session capture and NVIDIA media workflows
+- [[NVIDIA-CloudXR]] — GPU-accelerated XR streaming platform for remote RTX-rendered spatial experiences
+- [[NVIDIA-Cosmos-Curator-LHA]] — Cosmos Curator/LHA documentation for large-scale video analysis and physical AI data curation
 - [[NVIDIA-Clara]] — Healthcare AI platform: Parabricks (genomics), MONAI (medical imaging), Clara Guardian (smart hospital)
 - [[NVIDIA-Metropolis]] — Intelligent video analytics platform and partner ecosystem for smart cities, retail, and industrial AI
 - [[NVIDIA-DeepStream]] — GStreamer-based streaming analytics toolkit for GPU-accelerated multi-stream video AI pipelines
@@ -196,6 +212,8 @@
 ### Hardware Platforms
 - [[NVIDIA-DGX]] — Purpose-built AI supercomputing systems: DGX H100, DGX B200, DGX SuperPOD
 - [[NVIDIA-DGX-SuperPOD]] — Scale-out NVIDIA AI supercomputing reference architecture for AI factories
+- [[NVIDIA-Certified-Systems]] — partner systems validated by NVIDIA for enterprise AI and accelerated computing workloads
+- [[NVIDIA-Data-Center-CPUs]] — NVIDIA data center CPU documentation covering Grace, Grace Hopper, and Grace Blackwell systems
 - [[NVIDIA-Jetson-Platform]] — Edge AI computing modules for robotics, drones, and intelligent cameras (Jetson Orin family)
 - [[NVIDIA-Drive-Platform]] — End-to-end autonomous vehicle platform: DRIVE AGX hardware, DriveWorks SDK, DRIVE Sim
 - [[NVIDIA-GB200-NVL72]] — Rack-scale liquid-cooled system: 72 Blackwell GPUs, 36 Grace CPUs, 130 TB/s NVLink, 1,440 PFLOPS FP4
@@ -208,6 +226,9 @@
 
 - [[NVIDIA-Blackwell-Architecture]] — 2024 architecture: FP4 Tensor Cores, NVLink 5 (1.8TB/s), NVL72 rack-scale, NVLink-C2C
 - [[NVIDIA-Hopper-Architecture]] — 2022 architecture: Transformer Engine (FP8), NVLink 4 (900GB/s), MIG, Confidential Computing
+- [[NVIDIA-Ada-Lovelace-Architecture]] — 2022 architecture for RTX 40/pro visualization GPUs with SER and third-generation RT Cores
+- [[NVIDIA-Ampere-Architecture]] — 2020 architecture for A100/A30/A10 and RTX 30-era GPUs with Tensor Core and MIG advances
+- [[NVIDIA-Turing-Architecture]] — 2018 architecture that introduced RTX RT Cores, Tensor Cores for graphics, and concurrent INT/FP execution
 - [[NVIDIA-Grace-CPU]] — NVIDIA's ARM Neoverse V2 data center CPU; paired with GPUs via NVLink-C2C in GH200/GB200
 
 ---
@@ -230,6 +251,7 @@
 - [[NVIDIA-MIG]] — Multi-Instance GPU partitioning for isolated slices of supported data center GPUs
 - [[NVIDIA-vGPU]] — Virtual GPU software and CUDA support for GPU-accelerated virtualized environments
 - [[NVIDIA-Attestation]] — Attestation suite for confidential computing and platform integrity verification
+- [[NVIDIA-Cloud-Native-Technologies]] — NVIDIA cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and container deployment
 - [[NVIDIA-GPU-Operator]] — Kubernetes operator automating NVIDIA driver, Container Toolkit, DCGM, MIG Manager, and device plugin lifecycle
 - [[NVIDIA-Container-Toolkit]] — Container runtime hook enabling GPU access from Docker/containerd/Podman without driver bundling in images
 - [[NVIDIA-DCGM]] — Data Center GPU Manager: cluster telemetry, health monitoring, diagnostics, and Prometheus metrics for GPU fleets

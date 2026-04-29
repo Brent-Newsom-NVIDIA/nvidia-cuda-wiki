@@ -2,9 +2,9 @@
 
 **Type:** Tool
 **Tags:** NVIDIA, Kubernetes, GPU, containers, operator, cloud-native, DevOps, infrastructure, K8s
-**Related:** [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-DGX]]
+**Related:** [[NVIDIA-Cloud-Native-Technologies]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-DCGM]], [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-DGX]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 The NVIDIA GPU Operator is a Kubernetes Operator that automates the deployment and management of all NVIDIA software components required to provision and use NVIDIA GPUs in Kubernetes clusters — including GPU drivers, the NVIDIA Container Toolkit, DCGM exporter, device plugin, node feature discovery, and MIG manager. Instead of requiring administrators to manually install GPU software on each node, the GPU Operator manages the full GPU software lifecycle declaratively via Kubernetes CRDs, enabling GPU nodes to be provisioned like any other cloud-native resource.
@@ -47,6 +47,7 @@ Running GPU workloads on Kubernetes requires several layers of software correctl
 - **REST:** GPU Operator controller uses Kubernetes REST API internally; no separate user-facing REST API
 
 ## Connections
+- [[NVIDIA-Cloud-Native-Technologies]] — cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and related deployment docs
 - [[NVIDIA-Container-Toolkit]] — GPU Operator manages the lifecycle of Container Toolkit installation on all cluster nodes
 - [[NVIDIA-DCGM]] — DCGM Exporter is a core component deployed by GPU Operator for GPU monitoring
 - [[NVIDIA-AI-Enterprise]] — GPU Operator is the recommended Kubernetes deployment mechanism for AI Enterprise

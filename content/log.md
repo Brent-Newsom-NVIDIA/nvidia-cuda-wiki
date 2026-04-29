@@ -2,6 +2,68 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 2: CUDA guides, AI platform docs, cloud-native infrastructure, and architecture coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch-20260429T052306Z`; local Git tag `codex-backup-overnight-pre-batch-20260429T052306Z`
+
+**Source URLs:** https://docs.api.nvidia.com/, https://build.nvidia.com/, https://docs.nvidia.com/llm-inference-quick-start-recipes/index.html, https://developer.nvidia.com/brev, https://docs.nvidia.com/bright-cluster-manager/index.html, https://docs.nvidia.com/base-command-manager/index.html, https://developer.nvidia.com/capture-sdk, https://docs.nvidia.com/nvidia-certification-programs/index.html, https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html, https://www.nvidia.com/en-us/data-center/products/certified-systems/, https://docs.nvidia.com/ncx/index.html, https://docs.nvidia.com/ncx/ncp-software-reference-guide/latest/index.html, https://docs.nvidia.com/datacenter/cloud-native/index.html, https://docs.nvidia.com/cloudxr-sdk/latest/index.html, https://docs.nvidia.com/cloudxr-sdk/latest/overview/overview.html, https://www.nvidia.com/en-us/design-visualization/solutions/cloud-xr/, https://docs.nvidia.com/cosmos-curator-lha/current, https://docs.nvidia.com/cosmos-curator-lha/current/introduction.html, https://docs.nvidia.com/cosmos/index.html, https://docs.nvidia.com/dccpu/index.html, https://docs.nvidia.com/deeplearning/performance/index.html, https://docs.nvidia.com/cuda/demo-suite/index.html, https://docs.nvidia.com/cuda/eflow-users-guide/index.html, https://docs.nvidia.com/nsight-visual-studio-edition/index.html, https://docs.nvidia.com/cuda/nsight-eclipse-plugins-guide/index.html, https://docs.nvidia.com/cuda/nsightee-plugins-install-guide/index.html, https://docs.nvidia.com/cuda/floating-point/index.html, https://docs.nvidia.com/cuda/incomplete-lu-cholesky/index.html, https://docs.nvidia.com/cuda/ampere-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ampere-tuning-guide/index.html, https://docs.nvidia.com/cuda/ada-compatibility-guide/index.html, https://docs.nvidia.com/cuda/ada-tuning-guide/index.html, https://docs.nvidia.com/cuda/turing-compatibility-guide/index.html, https://docs.nvidia.com/cuda/turing-tuning-guide/index.html
+
+**Gap analysis summary:**
+
+- Continued the current-docs pass across NVIDIA-authored public documentation, focusing on missing CUDA guide pages, architecture guide pages, AI platform docs, cloud-native infrastructure docs, certification docs, and media/XR SDK docs.
+- Treated `build.nvidia.com` as a discovery/API surface rather than a per-build page source; no duplicate pages were created for model/build variants.
+- Kept one page per canonical NVIDIA doc/topic, and consolidated related material into existing pages where a topic already existed.
+
+**Pages created (22 total):**
+
+### API, AI platform, and infrastructure docs (8)
+- `content/wiki/NVIDIA-API-Documentation.md`
+- `content/wiki/NVIDIA-Brev.md`
+- `content/wiki/NVIDIA-Bright-Cluster-Manager.md`
+- `content/wiki/NVIDIA-Certification-Programs.md`
+- `content/wiki/NVIDIA-Certified-Systems.md`
+- `content/wiki/NVIDIA-Cloud-Accelerator-NCX.md`
+- `content/wiki/NVIDIA-Cloud-Native-Technologies.md`
+- `content/wiki/NVIDIA-Data-Center-CPUs.md`
+
+### Inference and performance guides (2)
+- `content/wiki/LLM-Inference-Quick-Start-Recipes.md`
+- `content/wiki/NVIDIA-Deep-Learning-Performance.md`
+
+### Media, XR, and Cosmos docs (3)
+- `content/wiki/NVIDIA-Capture-SDK.md`
+- `content/wiki/NVIDIA-CloudXR.md`
+- `content/wiki/NVIDIA-Cosmos-Curator-LHA.md`
+
+### CUDA guides, tools, and architecture docs (9)
+- `content/wiki/CUDA-Demo-Suite.md`
+- `content/wiki/CUDA-on-EFLOW.md`
+- `content/wiki/Nsight-Visual-Studio-Edition.md`
+- `content/wiki/Nsight-Eclipse-Plugins.md`
+- `content/wiki/Floating-Point-and-IEEE-754.md`
+- `content/wiki/Incomplete-LU-Cholesky.md`
+- `content/wiki/NVIDIA-Ampere-Architecture.md`
+- `content/wiki/NVIDIA-Ada-Lovelace-Architecture.md`
+- `content/wiki/NVIDIA-Turing-Architecture.md`
+
+**Pages updated:**
+
+- `content/wiki/NVIDIA-CUDA.md` - linked CUDA Demo Suite, EFLOW, floating-point guidance, and Ampere/Ada/Turing architecture guidance.
+- `content/wiki/NVIDIA-DGX.md` - connected DGX to Bright Cluster Manager, Certified Systems, Data Center CPUs, and NCX.
+- `content/wiki/NVIDIA-AI-Enterprise.md` - connected API docs, LLM inference recipes, certified systems, and cloud-native deployment docs.
+- `content/wiki/NVIDIA-NIM.md` - linked API docs, LLM inference recipes, Brev, and NCX while preserving the no-per-build-page policy.
+- `content/wiki/NVIDIA-Base-Command-Manager.md` - linked Bright Cluster Manager as adjacent cluster-management documentation.
+- `content/wiki/NVIDIA-Cosmos.md` - connected Cosmos Curator/LHA to the existing Cosmos platform page.
+- `content/wiki/NVIDIA-Grace-CPU.md` - linked Data Center CPUs as the current NVIDIA docs hub for Grace-related CPU systems.
+- `content/wiki/NVIDIA-GPU-Operator.md` and `content/wiki/NVIDIA-Container-Toolkit.md` - linked the cloud-native docs hub.
+- `content/wiki/NVIDIA-RTX.md` and `content/wiki/NVIDIA-Maxine.md` - linked Capture SDK and CloudXR into RTX/media workflows.
+- `content/wiki/cuBLAS.md`, `content/wiki/cuSPARSE.md`, `content/wiki/cuSOLVER.md`, and `content/wiki/AmgX.md` - linked iterative solver/preconditioning guidance.
+- `content/wiki/NVCC.md`, `content/wiki/CUDA-Math-API.md`, and `content/wiki/cuFFT.md` - linked floating-point numerical guidance.
+- `content/wiki/Nsight-Compute.md`, `content/wiki/Nsight-Systems.md`, and `content/wiki/CUDA-GDB.md` - linked Nsight Visual Studio Edition and Nsight Eclipse plugin paths.
+- `content/index.md` - updated page count to 204 and added all 22 new pages to the master index.
+
+---
+
 ## 2026-04-29 - Gap analysis and first broad NVIDIA docs/build expansion
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/pre-expansion-20260429T042416Z`; local Git tag `codex-backup-pre-expansion-20260429T042416Z`

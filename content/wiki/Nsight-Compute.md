@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Profiling, Performance Analysis, Development Tools, CUDA Toolkit
-**Related:** [[Nsight-Systems]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
+**Related:** [[Nsight-Systems]], [[Nsight-Visual-Studio-Edition]], [[Nsight-Eclipse-Plugins]], [[NVCC]], [[CUDA-GDB]], [[Compute-Sanitizer]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 Nsight Compute is NVIDIA's next-generation interactive GPU kernel profiler for CUDA applications, providing detailed per-kernel performance metrics, hardware counter data, and guided analysis for identifying and resolving performance bottlenecks. It supports both an interactive GUI and a command-line interface (ncu), and provides roofline analysis, memory throughput breakdowns, and warp execution efficiency metrics to guide kernel optimization.
@@ -46,6 +46,8 @@ Writing a correct GPU kernel is only half the challenge — writing a fast one r
 
 ## Connections
 - [[Nsight-Systems]] — Nsight Systems provides application-level profiling; Nsight Compute provides kernel-level deep dive
+- [[Nsight-Visual-Studio-Edition]] — Windows Visual Studio integration for CUDA debugging/profiling workflows
+- [[Nsight-Eclipse-Plugins]] — Eclipse-based IDE plugins for older CUDA Linux development workflows
 - [[NVCC]] — NVCC compiles the kernels that Nsight Compute then profiles
 - [[CUDA-GDB]] — CUDA-GDB debugs kernel correctness; Nsight Compute optimizes kernel performance
 - [[Compute-Sanitizer]] — Compute Sanitizer checks correctness; Nsight Compute analyzes performance

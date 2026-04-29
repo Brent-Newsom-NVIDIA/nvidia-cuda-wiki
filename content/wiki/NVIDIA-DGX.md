@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, hardware, HPC, AI supercomputer, DGX, data center, training, infrastructure
-**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
+**Related:** [[NVIDIA-Base-Command]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-BaseOS]], [[NVIDIA-DGX-Cloud]], [[NVIDIA-DGX-SuperPOD]], [[NVIDIA-Certified-Systems]], [[NVIDIA-Data-Center-CPUs]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVLink]], [[NCCL]], [[NVIDIA-MIG]], [[NVIDIA-GPU-Operator]], [[NVIDIA-AI-Enterprise]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
 **Last Updated:** 2026-04-29
 
@@ -29,6 +29,7 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 - **NVLink/NVSwitch Fabric:** All 8 GPUs in a DGX node are fully connected via NVSwitch, enabling any-to-any GPU communication at line rate — critical for tensor parallelism in LLM training
 - **NVIDIA AI Enterprise Bundle:** DGX systems ship with Base Command Manager (cluster OS), NGC access, and AI Enterprise software as standard
 - **Validated Storage Integration:** Certified with VAST Data, WekaFS, DDN EXAScaler, and NetApp for high-throughput model checkpoint storage
+- **Validated AI factory ecosystem:** DGX deployments connect to [[NVIDIA-Certified-Systems]], [[NVIDIA-Bright-Cluster-Manager]], [[NVIDIA-Data-Center-CPUs]], and [[NVIDIA-Cloud-Accelerator-NCX]] guidance for broader data center infrastructure.
 
 ### Use Cases
 - Pre-training LLMs and multimodal foundation models at scale (GPT-4 class, Llama family, Nemotron)
@@ -55,9 +56,13 @@ Training large foundation models (LLMs, multi-modal models, scientific AI) at sc
 ## Connections
 - [[NVIDIA-Base-Command]] — Base Command Platform is the MLOps software layer for DGX SuperPOD and DGX Cloud
 - [[NVIDIA-Base-Command-Manager]] — Base Command Manager handles cluster management and infrastructure operations for AI data centers
+- [[NVIDIA-Bright-Cluster-Manager]] — Bright Cluster Manager is the HPC/AI cluster-management lineage adjacent to Base Command Manager
 - [[NVIDIA-BaseOS]] — BaseOS/DGX OS provides the validated operating system layer for DGX deployments
 - [[NVIDIA-DGX-Cloud]] — cloud-accessible counterpart to on-prem DGX infrastructure
 - [[NVIDIA-DGX-SuperPOD]] — scale-out DGX cluster architecture for AI factories and large training runs
+- [[NVIDIA-Certified-Systems]] — certified partner systems extend validated NVIDIA infrastructure beyond DGX-branded platforms
+- [[NVIDIA-Data-Center-CPUs]] — NVIDIA data center CPUs pair Grace with GPU systems in GH200, GB200, and rack-scale AI factory designs
+- [[NVIDIA-Cloud-Accelerator-NCX]] — NCX describes cloud partner accelerator infrastructure for NVIDIA AI workloads
 - [[NVIDIA-Blackwell-Architecture]] — DGX B200 and GB200 NVL72 are the flagship DGX systems for Blackwell architecture
 - [[NVIDIA-Hopper-Architecture]] — DGX H100 and H200 are the Hopper-generation DGX systems
 - [[NVLink]] — NVLink/NVSwitch fabric is the defining interconnect technology within every DGX node

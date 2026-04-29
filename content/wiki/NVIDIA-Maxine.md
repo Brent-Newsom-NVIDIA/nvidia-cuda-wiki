@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, video conferencing, audio AI, video AI, real-time, cloud, SDKs, AR, noise cancellation
-**Related:** [[NVIDIA-Riva]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
+**Related:** [[NVIDIA-Riva]], [[NVIDIA-Capture-SDK]], [[NVIDIA-CloudXR]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-NeMo]], [[NGC]], [[Triton-Inference-Server]], [[NVIDIA-Holoscan]]
 **Sources:** NVIDIA official documentation (live fetch attempted 2026-04-10; written from verified knowledge)
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Maxine is a platform of GPU-accelerated AI SDKs for enhancing real-time audio, video, and augmented reality (AR) in video conferencing and streaming applications. It provides production-ready AI effects — noise cancellation, background replacement, gaze correction, super-resolution video, face re-lighting, and 3D avatar animation — optimized to run on NVIDIA GPUs with latency low enough for live video calls. Maxine is used by video conferencing ISVs, cloud streaming platforms, and broadcast technology vendors to add AI-powered media enhancement without building models from scratch.
@@ -31,6 +31,7 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
   - **Expression Transfer:** Drive 3D avatars with facial expression from video input
   - **Body Pose Estimation:** Full-body and hand pose tracking for gesture-driven UI
 - **Cloud and On-Device:** Maxine SDKs available for both client-side (Windows SDK for RTX GPUs) and cloud-side (Linux containers for server GPUs) deployments
+- **Capture and streaming adjacency:** [[NVIDIA-Capture-SDK]] and [[NVIDIA-CloudXR]] cover neighboring capture, encode, and remote media delivery workflows.
 - **Low Latency Design:** All effects optimized for <30 ms end-to-end latency at 1080p30 on RTX and data center GPUs
 
 ### Use Cases
@@ -56,6 +57,8 @@ Video conferencing quality is degraded by background noise, poor lighting, camer
 
 ## Connections
 - [[NVIDIA-Riva]] — Maxine audio effects (noise cancellation) complement Riva ASR; together they form a complete voice + speech pipeline
+- [[NVIDIA-Capture-SDK]] — capture SDKs sit near Maxine media processing pipelines
+- [[NVIDIA-CloudXR]] — CloudXR uses adjacent streaming and RTX media delivery concepts
 - [[NVIDIA-AI-Enterprise]] — Maxine is available under AI Enterprise licensing for commercial ISV deployments
 - [[NGC]] — Maxine SDK containers and model files distributed via NGC
 - [[Triton-Inference-Server]] — Maxine server-side deployments can use Triton for batching and scaling AI effects

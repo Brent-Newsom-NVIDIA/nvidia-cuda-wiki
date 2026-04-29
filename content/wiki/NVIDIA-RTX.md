@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** NVIDIA, RTX, Ray Tracing, Real-Time Rendering, Tensor Cores, DXR, Vulkan, Gaming
-**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Hopper-Architecture]], [[NVIDIA-Omniverse]], [[TensorRT]]
+**Related:** [[NVIDIA-DLSS]], [[NVIDIA-Blackwell-Architecture]], [[NVIDIA-Ada-Lovelace-Architecture]], [[NVIDIA-Turing-Architecture]], [[NVIDIA-CloudXR]], [[NVIDIA-Capture-SDK]], [[NVIDIA-Omniverse]], [[TensorRT]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA RTX is a platform encompassing hardware ray tracing, AI-accelerated rendering, and programmable shading on NVIDIA Turing and later GPU architectures. RTX introduces dedicated RT Cores for hardware-accelerated ray/triangle and ray/bounding-box intersection, Tensor Cores for AI tasks (DLSS, denoising, neural shaders), and Shader Execution Reordering (SER) for coherent ray traversal. The RTX brand covers both consumer GeForce RTX GPUs and professional RTX Ada Generation workstation GPUs, and is the foundation for NVIDIA's AI-on-RTX PC computing initiative.
@@ -32,6 +32,8 @@ Physically accurate lighting simulation (ray tracing) produces dramatically more
 - Digital content creation (DCC): Blender, Maya, 3ds Max GPU rendering
 - Scientific visualization with physically accurate light transport
 - Autonomous vehicle sensor simulation
+- XR and remote visualization via [[NVIDIA-CloudXR]]
+- Capture, encode, and stream workflows adjacent to [[NVIDIA-Capture-SDK]]
 
 ### Hardware Requirements / Compatibility
 - RT Cores available on: RTX 20, 30, 40, 50 (GeForce) and RTX A-series (Quadro)
@@ -49,6 +51,10 @@ Physically accurate lighting simulation (ray tracing) produces dramatically more
 ## Connections
 - [[NVIDIA-DLSS]] — DLSS is the primary AI rendering technology in the RTX platform
 - [[NVIDIA-Blackwell-Architecture]] — Blackwell adds Neural Shaders, DMM, and DLSS 4 to RTX
+- [[NVIDIA-Ada-Lovelace-Architecture]] — Ada introduced SER and major RTX rendering improvements
+- [[NVIDIA-Turing-Architecture]] — Turing introduced the original RTX hardware ray tracing generation
+- [[NVIDIA-CloudXR]] — CloudXR streams RTX-rendered XR workloads from GPU servers to clients
+- [[NVIDIA-Capture-SDK]] — capture SDKs are adjacent to RTX remote visualization and media streaming workflows
 - [[NVIDIA-Omniverse]] — Omniverse uses RTX-accelerated path tracing for photorealistic USD rendering
 - [[TensorRT]] — Tensor Cores serve both TensorRT inference and RTX DLSS AI workloads
 

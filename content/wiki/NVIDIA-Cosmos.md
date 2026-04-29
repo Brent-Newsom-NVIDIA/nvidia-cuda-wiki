@@ -2,9 +2,9 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, World Foundation Model, WFM, Generative AI, Physical AI, Robotics, Autonomous Vehicles, Video Generation
-**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Isaac]], [[NVIDIA-Drive-Platform]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
-**Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-10
+**Related:** [[NVIDIA-Omniverse]], [[NVIDIA-Cosmos-Curator-LHA]], [[NVIDIA-Isaac]], [[NVIDIA-Drive-Platform]], [[NVIDIA-NeMo]], [[NVIDIA-NIM]]
+**Sources:** NVIDIA official documentation; https://docs.nvidia.com/cosmos/curator/latest/lha/index.html
+**Last Updated:** 2026-04-29
 
 ## Summary
 NVIDIA Cosmos is a world foundation model (WFM) platform designed to accelerate the development of physical AI systems such as robots and autonomous vehicles. It provides a suite of pre-trained generative world models capable of synthesizing photorealistic, physically plausible video from text, images, or sensor inputs, enabling developers to generate massive amounts of synthetic training data and test AI systems in virtual worlds. Cosmos was announced at CES 2025 and is available under an open model license.
@@ -18,6 +18,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 - World foundation models: Cosmos-1.0 family including video-to-world and text-to-world diffusion and autoregressive transformer models
 - Cosmos Tokenizer: high-compression discrete and continuous video/image tokenizers for efficient video generation
 - Cosmos Transfer: conditioned video generation from input signals (optical flow, depth, segmentation masks) for simulation-to-real transfer
+- Cosmos Curator/LHA: [[NVIDIA-Cosmos-Curator-LHA]] documentation covers video understanding and curation workflows for large-scale physical AI datasets.
 - Cosmos Predict: video prediction models for generating future frames from current observations
 - Physical realism: models trained to respect physics, object permanence, and scene continuity
 - Open model weights available under NVIDIA Open Model License
@@ -46,6 +47,7 @@ Training physical AI systems (robots, self-driving cars, drones) requires vast a
 
 ## Connections
 - [[NVIDIA-Omniverse]] — Cosmos integrates with Omniverse Replicator for synthetic data pipelines
+- [[NVIDIA-Cosmos-Curator-LHA]] — Curator/LHA provides large-scale video analysis and curation workflows adjacent to Cosmos world models
 - [[NVIDIA-Isaac]] — Cosmos-generated data used for Isaac Lab robot policy training
 - [[NVIDIA-Drive-Platform]] — Cosmos used for autonomous vehicle scenario generation and sensor simulation
 - [[NVIDIA-NeMo]] — Cosmos models trained and fine-tuned within NeMo ecosystem

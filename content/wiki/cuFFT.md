@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, FFT, Signal Processing, Math, HPC, Scientific Computing
-**Related:** [[cuBLAS]], [[cuFFTDx]], [[cuSOLVER]], [[NVSHMEM]], [[nvmath-python]], [[NVIDIA-CUDA]]
+**Related:** [[cuBLAS]], [[cuFFTDx]], [[cuSOLVER]], [[Floating-Point-and-IEEE-754]], [[NVSHMEM]], [[nvmath-python]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-29
 
@@ -47,6 +47,7 @@ FFTs are a core computation in signal processing, physics simulation, and deep l
 ## Connections
 - [[cuBLAS]] — complements cuFFT for dense linear algebra in signal pipelines
 - [[cuFFTDx]] — device-side FFT operations for fused CUDA kernels
+- [[Floating-Point-and-IEEE-754]] — numerical accuracy context for floating-point transform results
 - [[NVSHMEM]] — used by cuFFTMp for multi-node distributed FFTs
 - [[nvmath-python]] — Python interface exposing cuFFT functionality
 - [[cuSOLVER]] — used alongside cuFFT in scientific computing pipelines

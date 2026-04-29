@@ -1,0 +1,25 @@
+# NVIDIA-Certified Systems
+
+**Type:** Program
+**Tags:** NVIDIA, certified systems, hardware validation, AI Enterprise, servers, workstations, edge systems
+**Related:** [[NVIDIA-Certification-Programs]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-Cloud-Accelerator-NCX]], [[NVIDIA-Mission-Control]]
+**Sources:** https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html, https://www.nvidia.com/en-us/data-center/products/certified-systems/
+**Last Updated:** 2026-04-29
+
+## Summary
+NVIDIA-Certified Systems are partner systems tested and validated by NVIDIA for enterprise-grade performance, manageability, scalability, and security across AI and accelerated computing workloads. Categories include certified servers, workstations, and edge systems.
+
+## Detail
+NVIDIA positions certified systems as validated platforms for deploying high-performance accelerated software, including [[NVIDIA-AI-Enterprise]], [[NVIDIA-NIM]], [[NVIDIA-Omniverse]], visualization, HPC, and data science workloads. Certification includes functional, security, and performance testing across single-GPU, multi-GPU, and multi-node configurations.
+
+This page is the hardware validation companion to [[NVIDIA-Certification-Programs]], which covers the broader certification program area.
+
+## Connections
+- [[NVIDIA-Certification-Programs]] - broader certification documentation hub.
+- [[NVIDIA-AI-Enterprise]] - enterprise software stack commonly deployed on certified systems.
+- [[NVIDIA-HGX]] - OEM server platforms can be built around NVIDIA HGX designs.
+- [[NVIDIA-Cloud-Accelerator-NCX]] - cloud partner architectures rely on validated infrastructure.
+- [[NVIDIA-Mission-Control]] - AI factory operations depend on known-good infrastructure.
+
+## Source Excerpts
+- NVIDIA describes certified systems as rigorously tested and validated for enterprise-grade AI and accelerated computing deployments.

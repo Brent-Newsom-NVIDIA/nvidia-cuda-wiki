@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Linear Algebra, BLAS, Math, HPC, AI
-**Related:** [[cuSOLVER]], [[cuBLASDx]], [[cuBLASMp]], [[cuSPARSE]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]], [[NVIDIA-CUDA]]
+**Related:** [[cuSOLVER]], [[cuBLASDx]], [[cuBLASMp]], [[cuSPARSE]], [[Incomplete-LU-Cholesky]], [[Floating-Point-and-IEEE-754]], [[cuTENSOR]], [[CUTLASS]], [[nvmath-python]], [[NVIDIA-CUDA]]
 **Sources:** NVIDIA official documentation
 **Last Updated:** 2026-04-29
 
@@ -49,6 +49,8 @@ cuBLAS solves the problem of accelerating dense linear algebra workloads by offl
 - [[cuBLASDx]] — device-side BLAS-style operations for fused CUDA kernels
 - [[cuBLASMp]] — distributed dense linear algebra extension for multi-process GPU systems
 - [[cuSPARSE]] — sparse counterpart to cuBLAS dense operations
+- [[Incomplete-LU-Cholesky]] — iterative solver guide that combines cuBLAS vector operations with cuSPARSE sparse operations
+- [[Floating-Point-and-IEEE-754]] — numerical accuracy guidance relevant to BLAS precision and reproducibility questions
 - [[cuTENSOR]] — extends dense algebra to arbitrary tensor contractions
 - [[CUTLASS]] — open-source GEMM templates that complement cuBLAS
 - [[nvmath-python]] — Python-friendly wrapper exposing cuBLAS and other math libs

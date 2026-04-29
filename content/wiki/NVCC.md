@@ -2,7 +2,7 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Compiler, Development Tools, Build System, CUDA Toolkit
-**Related:** [[NVIDIA-CUDA]], [[NVRTC]], [[PTX-ISA]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
+**Related:** [[NVIDIA-CUDA]], [[NVRTC]], [[PTX-ISA]], [[NVVM-IR]], [[libdevice]], [[nvFatbin]], [[CUDA-Binary-Utilities]], [[CUDA-Compile-Time-Advisor]], [[Floating-Point-and-IEEE-754]], [[CUDA-GDB]], [[Compute-Sanitizer]], [[Nsight-Compute]], [[CUTLASS]]
 **Sources:** NVIDIA official documentation (docs.nvidia.com/cuda)
 **Last Updated:** 2026-04-29
 
@@ -48,6 +48,7 @@ CUDA programs contain mixed host and device code in the same source file — a s
 - [[nvFatbin]] — runtime fatbin creation complements offline compiler-produced CUDA binaries
 - [[CUDA-Binary-Utilities]] — inspect and manipulate CUDA binary artifacts produced by compiler workflows
 - [[CUDA-Compile-Time-Advisor]] — analyzes CUDA C++ compilation-time costs
+- [[Floating-Point-and-IEEE-754]] — compiler flags and FMA behavior affect CUDA floating-point results
 - [[CUDA-GDB]] — NVCC compiles debug builds that CUDA-GDB then debugs
 - [[Compute-Sanitizer]] — Compute Sanitizer instruments NVCC-compiled binaries for error detection
 - [[Nsight-Compute]] — Nsight Compute profiles NVCC-compiled CUDA kernels

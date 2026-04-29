@@ -2,7 +2,7 @@
 
 **Type:** Platform
 **Tags:** NVIDIA, inference, microservices, LLM, AI, REST API, containers, production deployment, OpenAI-compatible
-**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Dynamo]], [[NIXL]], [[Nemotron]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-API-Documentation]], [[LLM-Inference-Quick-Start-Recipes]], [[NVIDIA-Brev]], [[NVIDIA-Cloud-Accelerator-NCX]], [[TensorRT-LLM]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[NeMo-Platform]], [[NeMo-Retriever]], [[NVIDIA-Dynamo]], [[NIXL]], [[Nemotron]]
 **Sources:** https://docs.nvidia.com/nim/index.html, https://build.nvidia.com/models, https://docs.nvidia.com/nemo/microservices/latest/index.html
 **Last Updated:** 2026-04-29
 
@@ -16,6 +16,7 @@ NIM packages model-specific inference runtimes, APIs, containers, and deployment
 
 ### Current scope
 - **Model APIs:** build.nvidia.com exposes free, partner, and downloadable model endpoints across chat, code, retrieval, speech, biology, image/video, safety, and multimodal use cases.
+- **API docs and recipes:** [[NVIDIA-API-Documentation]] and [[LLM-Inference-Quick-Start-Recipes]] provide developer-facing examples for hosted APIs and NIM-style inference workflows.
 - **Self-hosted inference:** NIM containers are delivered through NVIDIA catalog/registry workflows and can run on NVIDIA GPU infrastructure.
 - **Enterprise runtime:** NIM is part of [[NVIDIA-AI-Enterprise]] and receives production-grade runtime and security-update treatment.
 - **NeMo integration:** [[NeMo-Platform]] uses NIM targets and inference gateways for agent lifecycle workflows.
@@ -34,6 +35,10 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 ## Connections
 - [[NVIDIA-AI-Enterprise]] - commercial enterprise software layer that includes supported NIM runtimes.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - distribution path for containers, models, and artifacts.
+- [[NVIDIA-API-Documentation]] - hosted API reference for NVIDIA model and microservice endpoints.
+- [[LLM-Inference-Quick-Start-Recipes]] - hands-on inference recipes that complement NIM deployment docs.
+- [[NVIDIA-Brev]] - cloud GPU development environments useful for prototyping against NIM and NVIDIA APIs.
+- [[NVIDIA-Cloud-Accelerator-NCX]] - cloud accelerator infrastructure for NIM and AI Enterprise workloads.
 - [[TensorRT-LLM]] - optimized LLM inference backend for many NVIDIA-serving workflows.
 - [[Triton-Inference-Server]] - serving layer used across NVIDIA model modalities.
 - [[NeMo-Platform]] - agent lifecycle platform that integrates hosted and self-hosted NIM targets.
@@ -50,4 +55,3 @@ NIM is the practical deployment boundary between NVIDIA's model catalog and prod
 - [Build NVIDIA Models](https://build.nvidia.com/models)
 - [NeMo Platform Documentation](https://docs.nvidia.com/nemo/microservices/latest/index.html)
 - [NIM API Catalog](https://build.nvidia.com)
-

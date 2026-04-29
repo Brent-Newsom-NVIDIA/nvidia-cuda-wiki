@@ -2,9 +2,9 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Linear Solvers, Eigensolvers, Math, HPC, Sparse
-**Related:** [[cuBLAS]], [[cuSPARSE]], [[cuFFT]], [[AmgX]], [[nvmath-python]]
+**Related:** [[cuBLAS]], [[cuSPARSE]], [[cuSOLVERMp]], [[Incomplete-LU-Cholesky]], [[cuFFT]], [[AmgX]], [[nvmath-python]]
 **Sources:** NVIDIA official documentation
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-29
 
 ## Summary
 cuSOLVER is NVIDIA's GPU-accelerated library providing dense and sparse direct linear solvers, eigensolvers, and matrix factorizations for HPC and scientific computing. It includes three sub-libraries — cusolverDN (dense), cusolverSP (sparse), and cusolverRF (sparse refactorization) — and a distributed variant, cuSOLVERMp, for multi-GPU and multi-node workloads.
@@ -46,6 +46,8 @@ Many engineering and scientific applications require solving large systems of li
 ## Connections
 - [[cuBLAS]] — cuSOLVER uses cuBLAS internally for dense BLAS operations
 - [[cuSPARSE]] — cusolverSP leverages cuSPARSE for sparse matrix operations
+- [[cuSOLVERMp]] — distributed dense linear solver and eigensolver companion library
+- [[Incomplete-LU-Cholesky]] — preconditioned iterative solver guide adjacent to cuSOLVER sparse workflows
 - [[AmgX]] — AmgX provides iterative solvers that complement cuSOLVER's direct solvers
 - [[nvmath-python]] — Python interface to cuSOLVER and related math libraries
 
