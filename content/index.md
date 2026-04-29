@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
 *Last updated: 2026-04-29*
-*Total pages: 427*
+*Total pages: 428*
 
 ---
 
@@ -442,6 +442,7 @@
 - [[NVIDIA-Data-Center-GPU-Drivers]] — Data center GPU driver release notes and deployment documentation
 - [[NVIDIA-MIG]] — Multi-Instance GPU partitioning for isolated slices of supported data center GPUs
 - [[NVIDIA-vGPU]] — Virtual GPU software and CUDA support for GPU-accelerated virtualized environments
+- [[NVIDIA-vGPU-for-Compute]] — AI Enterprise-licensed vGPU virtualization stack for compute VMs, MIG-backed modes, NLS licensing, and virtualized AI/HPC workloads
 - [[NVIDIA-Attestation]] — Attestation suite for confidential computing and platform integrity verification
 - [[NVIDIA-Cloud-Native-Technologies]] — NVIDIA cloud-native documentation hub for GPU Operator, Container Toolkit, Kubernetes, and container deployment
 - [[NVIDIA-GPU-Operator]] — Kubernetes operator automating NVIDIA driver, Container Toolkit, DCGM, MIG Manager, and device plugin lifecycle

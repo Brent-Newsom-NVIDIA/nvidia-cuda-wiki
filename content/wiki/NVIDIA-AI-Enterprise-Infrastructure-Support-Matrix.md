@@ -2,7 +2,7 @@
 
 **Type:** Support Matrix
 **Tags:** NVIDIA, AI Enterprise, support matrix, compatibility, infrastructure, GPUs, networking, Kubernetes, cloud, virtualization
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-Certified-Systems]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Run-ai]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Software]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-Certified-Systems]], [[NVIDIA-DGX]], [[NVIDIA-HGX]], [[NVIDIA-GB300-NVL72]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-BlueField-DPU]], [[NVIDIA-vGPU]], [[NVIDIA-vGPU-for-Compute]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Run-ai]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], [[NVIDIA-AI-Enterprise-Cloud-Deployment]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/software/latest/infrastructure-software.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/support-matrix/, https://docs.nvidia.com/ai-enterprise/release-8/latest/support/support-matrix.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/support/support-matrix-8/8.0.html, https://docs.nvidia.com/ai-enterprise/release-8/latest/overview/release-notes-8/8.0.html
 **Last Updated:** 2026-04-29
 
@@ -45,7 +45,7 @@ Use the support matrix before deploying or upgrading. The matrix is especially i
 - [[NVIDIA-AI-Enterprise-Quick-Start-Guide]] - quick start sends users to support-matrix checks after first setup.
 - [[NVIDIA-Certified-Systems]] - many on-premises configurations require certified systems; GB200/GB300 NVL systems use NVIDIA-qualified status.
 - [[NVIDIA-DGX]], [[NVIDIA-HGX]], and [[NVIDIA-GB300-NVL72]] - platform families represented in the support matrix.
-- [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], and [[NVIDIA-Container-Toolkit]] - infrastructure foundations checked by the matrix.
+- [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-vGPU]], [[NVIDIA-vGPU-for-Compute]], [[NVIDIA-MIG]], and [[NVIDIA-Container-Toolkit]] - infrastructure foundations checked by the matrix.
 - [[NVIDIA-Run-ai]] - self-hosted workload orchestration component listed in Infra 8.0 compatibility.
 - [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], and [[NVIDIA-NIM-Operator]] - Kubernetes operators with release-specific support entries.
 - [[NVIDIA-AI-Enterprise-Bare-Metal-Deployment]], [[NVIDIA-AI-Enterprise-VMware-Deployment]], and [[NVIDIA-AI-Enterprise-Cloud-Deployment]] - deployment guides whose prerequisites should be checked against the matrix.
