@@ -2,8 +2,8 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Deep Learning, Framework, Python, Machine Learning
-**Related:** [[NVIDIA-Optimized-Frameworks]], [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
-**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
+**Related:** [[NVIDIA-Optimized-Frameworks]], [[PyG]], [[cuDNN]], [[CUTLASS]], [[TensorRT]], [[NCCL]], [[NVSHMEM4Py]], [[Nsight-Python]], [[CUDA-Python]], [[cuBLAS]], [[NVIDIA-DALI]], [[TensorRT-LLM]], [[Transformer-Engine]], [[Megatron-LM]], [[BioNeMo-Recipes]], [[NVIDIA-Isaac-Lab]], [[NVIDIA-Isaac-GR00T]]
+**Sources:** NVIDIA official documentation, pytorch.org, https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/index.html, https://docs.nvidia.com/bionemo-framework/latest/main/recipes/, https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/getting_started/index.html
 **Last Updated:** 2026-04-29
 
 ## Summary
@@ -37,6 +37,7 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 - Reinforcement learning environments
 - Robot policy training in [[NVIDIA-Isaac-Lab]] and humanoid foundation model workflows in [[NVIDIA-Isaac-GR00T]]
 - Scientific ML and physics-informed neural networks
+- Graph neural network training through [[PyG]] / PyTorch Geometric and NVIDIA optimized PyG containers
 - Biological foundation model training through [[BioNeMo-Recipes]], including [[Transformer-Engine]]-backed PyTorch loops and FSDP-style scaling examples
 - Production inference via TorchServe or export to TensorRT
 - Multi-node distributed training on NVIDIA DGX/HGX clusters
@@ -56,6 +57,7 @@ PyTorch solves the problem of efficient GPU-accelerated neural network training 
 
 ## Connections
 - [[NVIDIA-Optimized-Frameworks]] - NVIDIA publishes optimized PyTorch container images with CUDA libraries, tools, and support-matrix versioning.
+- [[PyG]] - PyTorch Geometric builds graph neural network workflows on PyTorch, and NVIDIA publishes optimized PyG containers on top of NVIDIA PyTorch container releases.
 - [[cuDNN]] — PyTorch uses cuDNN for all convolution, attention, and normalization primitives
 - [[cuBLAS]] — underlies all `torch.matmul` / `torch.nn.Linear` operations on GPU
 - [[NCCL]] — powers `torch.distributed` for multi-GPU all-reduce and collective operations

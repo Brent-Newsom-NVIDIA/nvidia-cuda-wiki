@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-29 - Overnight batch 100: PyG / PyTorch Geometric coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch100-pyg-20260429T170744Z`; local Git tag `codex-backup-overnight-pre-batch100-pyg-20260429T170744Z`
+
+**Source URLs:** https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/index.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/overview.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/rel-26-04.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/running.html, https://docs.rapids.ai/api/cugraph/legacy/graph_support/pyg_support/, https://docs.nvidia.com/physicsnemo/latest/physicsnemo/examples/dgl_to_pyg_migration.html
+
+**Gap analysis summary:**
+
+- Found that the wiki only mentioned cuGraph-PyG inside [[cuGraph]] and did not have a canonical [[PyG]] page.
+- Added one page for PyG / PyTorch Geometric rather than splitting the NVIDIA PyG overview, release notes, running guide, cuGraph integration, and PhysicsNeMo migration guide into separate pages.
+- Captured the current NVIDIA PyG 26.04 container context, NGC image pattern, cuGraph `cugraph_pyg` integration, and PhysicsNeMo DGL-to-PyG backend direction.
+
+**Pages created (1 total):**
+
+- `content/wiki/PyG.md`
+
+**Pages updated:**
+
+- `content/wiki/cuGraph.md`
+- `content/wiki/PyTorch.md`
+- `content/wiki/NVIDIA-Optimized-Frameworks.md`
+- `content/wiki/PhysicsNeMo.md`
+- `content/wiki/NGC.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 99: Nemotron 3 Ultra base model coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch99-20260429T131411Z`; local Git tag `codex-backup-overnight-pre-batch99-20260429T131411Z`
