@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Image Processing, Computer Vision, RAPIDS, scikit-image, Open Source
-**Related:** [[cuDF]], [[cuML]], [[NVIDIA-DALI]], [[CV-CUDA]], [[NPP]]
-**Sources:** NVIDIA official documentation (RAPIDS)
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-RAPIDS]], [[cuDF]], [[cuML]], [[NVIDIA-DALI]], [[CV-CUDA]], [[NPP]]
+**Sources:** NVIDIA official documentation (RAPIDS), https://docs.nvidia.com/rapids/index.html, https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries, https://docs.rapids.ai/api/cucim/
+**Last Updated:** 2026-04-30
 
 ## Summary
-cuCIM (CUDA Clara IMage) is a GPU-accelerated image processing library that mirrors scikit-image's API for GPU execution, and incorporates OpenSlide for whole-slide image loading. Part of the RAPIDS ecosystem, it accelerates image manipulation and computer vision operations for scientific, medical, and industrial imaging workflows where scikit-image is too slow for large image volumes.
+cuCIM (CUDA Clara IMage) is a GPU-accelerated image processing library that mirrors scikit-image's API for GPU execution, and incorporates OpenSlide for whole-slide image loading. Part of [[NVIDIA-RAPIDS]], it accelerates image manipulation and computer vision operations for scientific, medical, and industrial imaging workflows where scikit-image is too slow for large image volumes.
 
 ## Detail
 
@@ -41,6 +41,7 @@ Scientific and medical imaging workflows often process thousands of high-resolut
 - Python (primary API, scikit-image compatible)
 
 ## Connections
+- [[NVIDIA-RAPIDS]] — cuCIM is the scientific image-processing library in the RAPIDS/CUDA-X data science family
 - [[cuDF]] — cuCIM integrates with cuDF for metadata and tabular data associated with images
 - [[cuML]] — cuML models consume features extracted by cuCIM for classification/detection
 - [[NVIDIA-DALI]] — DALI handles training data loading; cuCIM handles scientific image processing

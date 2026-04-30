@@ -1,13 +1,13 @@
 # NVIDIA Optimized Frameworks
 
 **Type:** Container stack
-**Tags:** NVIDIA, optimized frameworks, deep learning containers, NGC, Docker, PyTorch, PyG, TensorFlow, JAX, CUDA, cuDNN, NCCL, DGX
-**Related:** [[NGC]], [[NVIDIA-Container-Toolkit]], [[PyTorch]], [[PyG]], [[JAX]], [[TensorFlow-GPU]], [[Transformer-Engine]], [[Megatron-Core]], [[cuDNN]], [[NCCL]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-DGX]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-GPU-Operator]], [[CUDA-Compatibility]]
-**Sources:** https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html, https://docs.nvidia.com/deeplearning/frameworks/support-matrix/, https://docs.nvidia.com/deeplearning/frameworks/preparing-containers/index.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/index.html
-**Last Updated:** 2026-04-29
+**Tags:** NVIDIA, optimized frameworks, deep learning containers, NGC, Docker, PyTorch, PyG, DGL, TensorFlow, JAX, CUDA, cuDNN, NCCL, DGX
+**Related:** [[NGC]], [[NVIDIA-Container-Toolkit]], [[PyTorch]], [[PyG]], [[NVIDIA-DGL]], [[JAX]], [[TensorFlow-GPU]], [[Transformer-Engine]], [[Megatron-Core]], [[cuDNN]], [[NCCL]], [[TensorRT]], [[NVIDIA-DALI]], [[NVIDIA-DGX]], [[NVIDIA-AI-Enterprise]], [[NVIDIA-GPU-Operator]], [[CUDA-Compatibility]]
+**Sources:** https://docs.nvidia.com/deeplearning/frameworks/index.html, https://docs.nvidia.com/deeplearning/frameworks/user-guide/index.html, https://docs.nvidia.com/deeplearning/frameworks/support-matrix/, https://docs.nvidia.com/deeplearning/frameworks/preparing-containers/index.html, https://docs.nvidia.com/deeplearning/frameworks/pyg-release-notes/index.html, https://docs.nvidia.com/deeplearning/frameworks/dgl-release-notes/index.html
+**Last Updated:** 2026-04-30
 
 ## Summary
-NVIDIA Optimized Frameworks is NVIDIA's documentation and container distribution surface for GPU-optimized deep learning framework images, including PyTorch, [[PyG]], TensorFlow, JAX, TensorRT, and CUDA Deep Learning images. It covers preparing systems to use framework containers, pulling and running containers from [[NGC]], customizing/extending images, and reading the support matrix that maps each container release to its bundled CUDA, framework, communication, profiling, notebook, and acceleration components.
+NVIDIA Optimized Frameworks is NVIDIA's documentation and container distribution surface for GPU-optimized deep learning framework images, including PyTorch, [[PyG]], legacy [[NVIDIA-DGL]], TensorFlow, JAX, TensorRT, and CUDA Deep Learning images. It covers preparing systems to use framework containers, pulling and running containers from [[NGC]], customizing/extending images, and reading the support matrix that maps each container release to its bundled CUDA, framework, communication, profiling, notebook, and acceleration components.
 
 ## Detail
 
@@ -26,7 +26,7 @@ This page is the canonical wiki page for the containerized framework layer. Indi
 
 ### What the containers bundle
 Exact contents vary by container family and release, so the support matrix is the source of truth. Across the docs surface, NVIDIA framework containers commonly package combinations of:
-- Deep learning frameworks such as [[PyTorch]], [[PyG]], [[TensorFlow-GPU]], and [[JAX]].
+- Deep learning frameworks such as [[PyTorch]], [[PyG]], legacy [[NVIDIA-DGL]], [[TensorFlow-GPU]], and [[JAX]].
 - CUDA, [[cuDNN]], [[NCCL]], [[TensorRT]], [[NVIDIA-DALI]], and other acceleration libraries.
 - [[Transformer-Engine]] in NVIDIA PyTorch containers where supported.
 - Distributed training and networking components such as OpenMPI, OpenUCX, HPC-X, Horovod, rdma-core, and GDRCopy where applicable.
@@ -45,7 +45,7 @@ The usual path is:
 ## Connections
 - [[NGC]] - registry and catalog surface that distributes NVIDIA optimized framework containers.
 - [[NVIDIA-Container-Toolkit]] - runtime layer that exposes GPUs to the framework containers.
-- [[PyTorch]], [[PyG]], [[JAX]], and [[TensorFlow-GPU]] - framework pages for the model-development APIs inside the containers.
+- [[PyTorch]], [[PyG]], legacy [[NVIDIA-DGL]], [[JAX]], and [[TensorFlow-GPU]] - framework pages for the model-development APIs inside the containers.
 - [[Transformer-Engine]] - installed in supported NVIDIA PyTorch containers and used by current low-precision transformer workflows.
 - [[Megatron-Core]] - current installation docs recommend NVIDIA PyTorch containers for Megatron Core compatibility.
 - [[cuDNN]], [[NCCL]], [[TensorRT]], and [[NVIDIA-DALI]] - core acceleration libraries commonly bundled with framework containers.

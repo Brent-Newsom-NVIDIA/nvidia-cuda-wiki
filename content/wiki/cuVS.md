@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Vector Search, Approximate Nearest Neighbor, RAPIDS, AI, Open Source
-**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[TensorRT]], [[cuBLAS]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]]
+**Related:** [[NVIDIA-RAPIDS]], [[cuDF]], [[cuML]], [[cuGraph]], [[NVIDIA-Merlin]], [[TensorRT]], [[cuBLAS]], [[NeMo-Retriever]], [[NeMo-Retriever-Embedding-NIM]], [[NeMo-Retriever-Reranking-NIM]], [[NVIDIA-AI-Data-Platform]]
 **Sources:** NVIDIA official documentation (RAPIDS), https://www.nvidia.com/en-us/data-center/ai-data-platform/
-**Last Updated:** 2026-04-29
+**Last Updated:** 2026-04-30
 
 ## Summary
-cuVS is NVIDIA's GPU-accelerated vector search library providing world-class performance for approximate nearest neighbor (ANN) search via its CAGRA algorithm. Part of the RAPIDS ecosystem, it accelerates vector search operations critical to retrieval-augmented generation (RAG), recommendation systems, and semantic search at scale. It supports Python, C++, C, and Rust APIs.
+cuVS is NVIDIA's GPU-accelerated vector search library providing world-class performance for approximate nearest neighbor (ANN) search via its CAGRA algorithm. Part of [[NVIDIA-RAPIDS]], it accelerates vector search operations critical to retrieval-augmented generation (RAG), recommendation systems, and semantic search at scale. It supports Python, C++, C, and Rust APIs.
 
 ## Detail
 
@@ -47,9 +47,11 @@ Vector search (finding the most similar vectors in a large database) is foundati
 - Rust
 
 ## Connections
+- [[NVIDIA-RAPIDS]] — cuVS is the vector search library in NVIDIA's CUDA-X data science stack
 - [[cuDF]] — cuVS integrates with cuDF for end-to-end GPU vector search pipelines
 - [[cuML]] — cuML uses cuVS for K-nearest neighbors (KNN) operations
 - [[cuGraph]] — cuVS and cuGraph are both used in recommendation and retrieval pipelines
+- [[NVIDIA-Merlin]] — recommender systems often pair vector retrieval/search with ranking and feature pipelines
 - [[TensorRT]] — TensorRT generates embeddings that cuVS then indexes and searches
 - [[cuBLAS]] — cuVS uses BLAS routines internally for distance computation
 - [[NeMo-Retriever]] — retrieval stacks use vector search and indexing to connect enterprise data to agents

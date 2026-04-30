@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Graph Analytics, RAPIDS, Python, Open Source, NetworkX, PyG, GNN
-**Related:** [[cuDF]], [[cuML]], [[cuVS]], [[PyG]], [[Thrust]], [[NCCL]]
+**Related:** [[NVIDIA-RAPIDS]], [[cuDF]], [[cuML]], [[cuVS]], [[PyG]], [[NVIDIA-DGL]], [[NVIDIA-Merlin]], [[Thrust]], [[NCCL]]
 **Sources:** NVIDIA official documentation (RAPIDS), https://docs.rapids.ai/api/cugraph/legacy/graph_support/pyg_support/
-**Last Updated:** 2026-04-29
+**Last Updated:** 2026-04-30
 
 ## Summary
-cuGraph is a GPU-accelerated graph analytics library providing drop-in replacements for NetworkX, delivering up to 48x speedups on NVIDIA GPUs. Part of the RAPIDS ecosystem, it enables processing of graphs with millions of nodes on a single GPU without specialized software, and supports distributed multi-GPU graph analytics for billion-edge graphs.
+cuGraph is a GPU-accelerated graph analytics library providing drop-in replacements for NetworkX, delivering up to 48x speedups on NVIDIA GPUs. Part of [[NVIDIA-RAPIDS]], it enables processing of graphs with millions of nodes on a single GPU without specialized software, and supports distributed multi-GPU graph analytics for billion-edge graphs.
 
 ## Detail
 
@@ -45,10 +45,13 @@ Graph algorithms (PageRank, community detection, shortest paths, betweenness cen
 - C++ (underlying libcugraph)
 
 ## Connections
+- [[NVIDIA-RAPIDS]] — cuGraph is the graph analytics library in NVIDIA's CUDA-X data science stack
 - [[cuDF]] — cuGraph operates on cuDF DataFrames for edge and node data
 - [[cuML]] — cuML and cuGraph share graph-based clustering algorithms (Louvain, spectral)
 - [[cuVS]] — cuVS and cuGraph are both used in recommendation and search pipelines
 - [[PyG]] — `cugraph_pyg` connects cuGraph graph storage and sampling to PyTorch Geometric workflows
+- [[NVIDIA-DGL]] — legacy NVIDIA DGL containers bundled RAPIDS/WholeGraph components and now point users toward PyG
+- [[NVIDIA-Merlin]] — recommender-system workflows can combine graph analytics, vector search, and Merlin ranking/retrieval models
 - [[Thrust]] — cuGraph uses Thrust for parallel primitives internally
 - [[NCCL]] — distributed multi-GPU cuGraph uses NCCL for inter-GPU communication
 
