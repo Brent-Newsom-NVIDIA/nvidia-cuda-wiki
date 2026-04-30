@@ -1,7 +1,7 @@
 # NVIDIA Wiki — Master Index
 
-*Last updated: 2026-04-29*
-*Total pages: 486*
+*Last updated: 2026-04-30*
+*Total pages: 492*
 
 ---
 
@@ -53,16 +53,21 @@
 - [[Transformer-Engine]] — NVIDIA transformer acceleration library for PyTorch/JAX with FP8, MXFP8, and NVFP4 recipes
 - [[NVIDIA-Optimized-Frameworks]] — NVIDIA deep learning framework containers, user guide, and support matrix for PyTorch/TensorFlow/JAX environments
 - [[PyG]] — NVIDIA-optimized PyTorch Geometric container and graph neural network workflow for PyTorch, cuGraph, and PhysicsNeMo
+- [[NVIDIA-DGL]] — legacy NVIDIA DGL container/release-note surface now deprecated in favor of PyG for forward GNN workflows
 - [[CUTLASS]] — open-source C++ template library for custom high-performance GEMM on NVIDIA GPUs
 - [[FlashInfer]] — open-source GPU kernel toolkit for LLM inference (attention, batch decode, sampling)
 - [[NVIDIA-Deep-Learning-Performance]] — NVIDIA guidance for GPU deep learning performance, precision, Tensor Cores, and profiling
 - [[LLM-Inference-Quick-Start-Recipes]] — NVIDIA quick-start recipes for common LLM inference paths across NIM, TensorRT-LLM, Triton, and Dynamo
 
 ### Data Processing & ML
+- [[NVIDIA-RAPIDS]] — CUDA-X data science framework for GPU-accelerated DataFrames, ML, graphs, vector search, image processing, Dask, and Spark
+- [[RAPIDS-Accelerator-for-Apache-Spark]] — GPU acceleration plugin for Spark SQL/DataFrame workloads using RAPIDS cuDF
 - [[cuDF]] — GPU-accelerated DataFrame library; 50x faster pandas drop-in (RAPIDS)
 - [[cuML]] — GPU-accelerated machine learning; 50x faster scikit-learn drop-in (RAPIDS)
 - [[cuGraph]] — GPU-accelerated graph analytics; 48x faster NetworkX drop-in (RAPIDS)
 - [[cuVS]] — GPU-accelerated vector search with world-class CAGRA ANN performance (RAPIDS)
+- [[NVIDIA-Merlin]] — NVIDIA recommender systems framework family spanning NVTabular, HugeCTR, Merlin Models, Systems, and Triton inference
+- [[NVIDIA-Legate-Core]] — runtime and framework foundation for composable accelerated libraries such as cuPyNumeric
 - [[cuOpt]] — GPU-accelerated operations research solver for vehicle routing and logistics optimization
 - [[NVIDIA-cuOpt-Managed-Service]] — hosted/API-oriented cuOpt service for routing optimization workloads
 - [[NeMo-Curator]] — GPU-accelerated multimodal data curation pipelines for LLM training
@@ -367,6 +372,7 @@
 ### AI Application Platforms
 - [[NVIDIA-AI-Aerial]] — Accelerated AI-RAN platform for 5G/6G wireless network development and simulation
 - [[NVIDIA-BioNeMo]] — GPU-accelerated drug discovery and biomolecular AI (protein structure, molecular generation)
+- [[NVIDIA-FLARE]] — federated learning and privacy-preserving distributed collaboration SDK for ML, analytics, healthcare, and edge workflows
 - [[BioNeMo-Recipes]] — NVIDIA reference implementations for scaling biological foundation model training with Transformer Engine and PyTorch
 - [[NIM-for-AlphaFold2]] — BioNeMo NIM for single-chain AlphaFold2 protein structure prediction and MSA workflows
 - [[NIM-for-AlphaFold2-Multimer]] — BioNeMo NIM for AlphaFold2 multimer protein-complex structure prediction

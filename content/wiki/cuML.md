@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Machine Learning, RAPIDS, scikit-learn, Python, Open Source
-**Related:** [[cuDF]], [[cuGraph]], [[cuVS]], [[cuDNN]], [[Thrust]]
-**Sources:** NVIDIA official documentation (RAPIDS)
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-RAPIDS]], [[cuDF]], [[cuGraph]], [[cuVS]], [[Dask]], [[NVIDIA-Merlin]], [[cuDNN]], [[Thrust]]
+**Sources:** NVIDIA official documentation (RAPIDS), https://docs.nvidia.com/rapids/index.html, https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries, https://docs.rapids.ai/api/cuml/
+**Last Updated:** 2026-04-30
 
 ## Summary
-cuML is a GPU-accelerated machine learning library providing drop-in replacements for scikit-learn, UMAP, and HDBSCAN algorithms, delivering up to 50x speedups on NVIDIA GPUs. Part of the RAPIDS ecosystem, it enables data scientists to run classical ML algorithms — clustering, regression, dimensionality reduction, and more — on GPU without rewriting their scikit-learn code.
+cuML is a GPU-accelerated machine learning library providing drop-in replacements for scikit-learn, UMAP, and HDBSCAN algorithms, delivering up to 50x speedups on NVIDIA GPUs. Part of [[NVIDIA-RAPIDS]], it enables data scientists to run classical ML algorithms — clustering, regression, dimensionality reduction, and more — on GPU without rewriting their scikit-learn code.
 
 ## Detail
 
@@ -42,9 +42,12 @@ Scikit-learn is the standard Python ML library for classical algorithms, but it 
 - C++ (underlying libml implementation)
 
 ## Connections
+- [[NVIDIA-RAPIDS]] — cuML is the classical machine learning library in NVIDIA's CUDA-X data science stack
 - [[cuDF]] — cuML takes cuDF DataFrames as input/output for seamless GPU pipeline integration
 - [[cuGraph]] — cuML and cuGraph share graph-based clustering algorithms
 - [[cuVS]] — cuVS provides GPU-accelerated nearest neighbor search used by cuML KNN
+- [[Dask]] — dask-cuML scales cuML estimators across distributed GPU workers
+- [[NVIDIA-Merlin]] — recommender workflows can pair RAPIDS preprocessing and ML with Merlin-specific recommendation components
 - [[cuDNN]] — cuML complements cuDNN (which targets deep learning); cuML handles classical ML
 - [[Thrust]] — cuML uses Thrust for underlying parallel primitives
 

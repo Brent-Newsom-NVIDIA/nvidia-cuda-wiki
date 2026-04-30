@@ -2,9 +2,9 @@
 
 **Type:** Software Catalog
 **Tags:** NVIDIA, AI Enterprise, software catalog, application layer, infrastructure layer, NGC, support matrix
-**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-vGPU]], [[NVIDIA-vGPU-for-Compute]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Enterprise-Support-and-Services]]
+**Related:** [[NVIDIA-AI-Enterprise]], [[NVIDIA-AI-Enterprise-Quick-Start-Guide]], [[NVIDIA-AI-Enterprise-Lifecycle-Policy]], [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]], [[NGC]], [[NVIDIA-NGC-Catalog]], [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[NVIDIA-Omniverse]], [[NVIDIA-Run-ai]], [[NVIDIA-Run-ai-Support-and-Lifecycle]], [[NVIDIA-RAPIDS]], [[RAPIDS-Accelerator-for-Apache-Spark]], [[NVIDIA-FLARE]], [[TensorRT]], [[Triton-Inference-Server]], [[PyTorch]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-vGPU]], [[NVIDIA-vGPU-for-Compute]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], [[NVIDIA-Base-Command-Manager]], [[NVIDIA-Enterprise-Support-and-Services]]
 **Sources:** https://docs.nvidia.com/ai-enterprise/software/latest/overview.html, https://docs.nvidia.com/ai-enterprise/software/latest/application-software.html, https://docs.nvidia.com/ai-enterprise/software/latest/infrastructure-software.html, https://docs.nvidia.com/ai-enterprise/index.html
-**Last Updated:** 2026-04-29
+**Last Updated:** 2026-04-30
 
 ## Summary
 NVIDIA AI Enterprise Software is the current NVIDIA catalog of AI Enterprise application-layer and infrastructure-layer components. It describes the composable AI Enterprise stack, links components to NGC catalog entries and product docs, explains independent application/infrastructure release cadences, and points administrators to infrastructure support matrices and release notes for deployment compatibility.
@@ -22,7 +22,7 @@ Use this page to answer "what is included in NVIDIA AI Enterprise?" at the softw
 - NGC is the distribution and catalog surface for supported software components, while some infrastructure software is supported but obtained through support portals, licensing portals, partner channels, or vendor channels.
 
 ### Application layer
-The current application-layer table includes catalog and documentation entries for inference/deployment, AI frameworks and libraries, domain SDKs/toolkits, and pre-trained models. Durable wiki connections include [[NVIDIA-NIM]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[PyTorch]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Omniverse]], and model/NIM pages such as [[NIM-for-Large-Language-Models]].
+The current application-layer table includes catalog and documentation entries for inference/deployment, AI frameworks and libraries, domain SDKs/toolkits, and pre-trained models. Durable wiki connections include [[NVIDIA-NIM]], [[TensorRT]], [[Triton-Inference-Server]], [[NVIDIA-NeMo]], [[PyTorch]], [[NVIDIA-RAPIDS]], [[RAPIDS-Accelerator-for-Apache-Spark]], [[NVIDIA-FLARE]], [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], [[Morpheus]], [[NVIDIA-Omniverse]], and model/NIM pages such as [[NIM-for-Large-Language-Models]].
 
 ### Infrastructure layer
 The current infrastructure-layer table includes NGC catalog resources, core GPU/networking drivers, DOCA microservices, virtualization, container platform tooling, GPU orchestration, and Kubernetes operators. Durable wiki connections include [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-DOCA-Platform-Framework]], [[NVIDIA-vGPU]], [[NVIDIA-MIG]], [[NVIDIA-Container-Toolkit]], [[NVIDIA-Run-ai]], [[NVIDIA-GPU-Operator]], [[NVIDIA-Network-Operator]], [[NVIDIA-NIM-Operator]], and [[NVIDIA-Base-Command-Manager]].
@@ -36,6 +36,8 @@ The software catalog is a map, not an installation guide. Use deployment-specifi
 - [[NVIDIA-AI-Enterprise-Lifecycle-Policy]] and [[NVIDIA-AI-Enterprise-Infrastructure-Support-Matrix]] - define branch timelines and validate supported infrastructure combinations for software layers.
 - [[NGC]] and [[NVIDIA-NGC-Catalog]] - catalog/distribution path for AI Enterprise application and infrastructure software.
 - [[NVIDIA-NIM]], [[NVIDIA-NeMo]], [[TensorRT]], and [[Triton-Inference-Server]] - core application-layer inference and model development components.
+- [[NVIDIA-RAPIDS]] and [[RAPIDS-Accelerator-for-Apache-Spark]] - accelerated data science, analytics, ML, and Spark data-engineering components.
+- [[NVIDIA-FLARE]] - federated learning and privacy-preserving collaboration SDK adjacent to healthcare, edge, and regulated AI workflows.
 - [[NVIDIA-Omniverse]] - application-layer physical AI, digital twin, and OpenUSD component now included in AI Enterprise software documentation.
 - [[NVIDIA-Riva]], [[NVIDIA-TAO]], [[NVIDIA-DeepStream]], [[NVIDIA-Holoscan]], and [[Morpheus]] - domain SDK/toolkit examples from the application layer.
 - [[NVIDIA-Data-Center-GPU-Drivers]], [[NVIDIA-DOCA]], [[NVIDIA-vGPU]], [[NVIDIA-vGPU-for-Compute]], [[NVIDIA-MIG]], and [[NVIDIA-Container-Toolkit]] - infrastructure-layer runtime, virtualization, and driver foundations.

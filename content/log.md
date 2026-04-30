@@ -2,6 +2,51 @@
 
 ---
 
+## 2026-04-30 - Batch 101: RAPIDS, Spark RAPIDS, DGL, FLARE, Merlin, and Legate Core coverage
+
+**Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/next-practical-pre-batch101-20260430T171224Z`; local Git tag `codex-backup-pre-batch101-20260430T171224Z`
+
+**Source URLs:** https://docs.nvidia.com/rapids/index.html, https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries, https://docs.rapids.ai/, https://docs.nvidia.com/spark-rapids/index.html, https://docs.nvidia.com/spark-rapids/user-guide/latest/index.html, https://docs.nvidia.com/deeplearning/frameworks/dgl-release-notes/index.html, https://docs.nvidia.com/deeplearning/frameworks/dgl-release-notes/overview.html, https://docs.nvidia.com/deeplearning/frameworks/dgl-release-notes/rel-25-08.html, https://docs.nvidia.com/deeplearning/frameworks/dgl-release-notes/rel-25-10.html, https://docs.nvidia.com/physicsnemo/latest/physicsnemo/examples/dgl_to_pyg_migration.html, https://nvflare.readthedocs.io/en/main/flare_overview.html, https://nvflare.readthedocs.io/en/main/welcome.html, https://nvflare.readthedocs.io/en/main/release_notes/flare_272.html, https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/, https://developer.nvidia.com/merlin, https://developer.nvidia.com/nvidia-merlin/nvtabular, https://nvidia-merlin.github.io/Merlin/stable/guide/recommender_system_guide.html, https://nvidia-merlin.github.io/NVTabular/stable/Introduction.html, https://developer.nvidia.com/legate, https://docs.nvidia.com/legate/latest/manual/index.html, https://docs.nvidia.com/legate/latest/manual/usage/running.html, https://docs.nvidia.com/cupynumeric/latest/
+
+**Gap analysis summary:**
+
+- Promoted RAPIDS from scattered library references into a canonical [[NVIDIA-RAPIDS]] umbrella page connected to cuDF, cuML, cuGraph, cuVS, cuCIM, Dask, Spark, CUDA, and AI Enterprise.
+- Added one canonical [[RAPIDS-Accelerator-for-Apache-Spark]] page for the Spark plugin and user-guide surface instead of splitting deployment targets into separate pages.
+- Added [[NVIDIA-DGL]] as a legacy/current-transition GNN page because NVIDIA's current DGL notes deprecate DGL containers after 25.08 and point new GNN work toward [[PyG]].
+- Added [[NVIDIA-FLARE]], [[NVIDIA-Merlin]], and [[NVIDIA-Legate-Core]] as high-signal missing NVIDIA software pages for federated learning, recommender systems, and distributed Python/scientific computing.
+
+**Pages created (6 total):**
+
+- `content/wiki/NVIDIA-RAPIDS.md`
+- `content/wiki/RAPIDS-Accelerator-for-Apache-Spark.md`
+- `content/wiki/NVIDIA-DGL.md`
+- `content/wiki/NVIDIA-FLARE.md`
+- `content/wiki/NVIDIA-Merlin.md`
+- `content/wiki/NVIDIA-Legate-Core.md`
+
+**Pages updated:**
+
+- `content/wiki/cuDF.md`
+- `content/wiki/cuML.md`
+- `content/wiki/cuGraph.md`
+- `content/wiki/cuVS.md`
+- `content/wiki/cuCIM.md`
+- `content/wiki/Dask.md`
+- `content/wiki/cuPyNumeric.md`
+- `content/wiki/PyG.md`
+- `content/wiki/PhysicsNeMo.md`
+- `content/wiki/NVIDIA-Optimized-Frameworks.md`
+- `content/wiki/PyTorch.md`
+- `content/wiki/NGC.md`
+- `content/wiki/NVIDIA-MONAI-Toolkit.md`
+- `content/wiki/NVIDIA-Clara.md`
+- `content/wiki/NVIDIA-AI-Enterprise.md`
+- `content/wiki/NVIDIA-AI-Enterprise-Software.md`
+- `content/wiki/NVIDIA-Certified-for-Cloudera.md`
+- `content/index.md`
+
+---
+
 ## 2026-04-29 - Overnight batch 100: PyG / PyTorch Geometric coverage
 
 **Rollback backup:** `/home/bnewsom/codex/backups/nvidia-cuda-wiki/overnight-pre-batch100-pyg-20260429T170744Z`; local Git tag `codex-backup-overnight-pre-batch100-pyg-20260429T170744Z`

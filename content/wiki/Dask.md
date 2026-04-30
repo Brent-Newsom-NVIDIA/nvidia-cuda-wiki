@@ -2,12 +2,12 @@
 
 **Type:** Technology
 **Tags:** CUDA, NVIDIA, GPU, Parallel Computing, Distributed Computing, Python, Data Engineering, RAPIDS
-**Related:** [[cuDF]], [[cuML]], [[cuGraph]], [[CuPy]], [[NCCL]]
-**Sources:** docs.dask.org official documentation
-**Last Updated:** 2026-04-09
+**Related:** [[NVIDIA-RAPIDS]], [[cuDF]], [[cuML]], [[cuGraph]], [[RAPIDS-Accelerator-for-Apache-Spark]], [[CuPy]], [[NVIDIA-Legate-Core]], [[NCCL]]
+**Sources:** docs.dask.org official documentation, https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries, https://docs.rapids.ai/deployment/stable/dask/
+**Last Updated:** 2026-04-30
 
 ## Summary
-Dask is an open-source Python library for parallel and distributed computing that scales NumPy, pandas, and scikit-learn workflows from a single machine to multi-node clusters. With NVIDIA GPU support via RAPIDS (cuDF, cuML, cuGraph) and CuPy, Dask enables out-of-core and distributed GPU computing, allowing datasets larger than a single GPU's memory to be processed across multiple GPUs or nodes. Dask-CUDA and the RAPIDS Memory Manager (RMM) provide optimized multi-GPU scheduling and memory management.
+Dask is an open-source Python library for parallel and distributed computing that scales NumPy, pandas, and scikit-learn workflows from a single machine to multi-node clusters. With NVIDIA GPU support via [[NVIDIA-RAPIDS]] ([[cuDF]], [[cuML]], [[cuGraph]]) and [[CuPy]], Dask enables out-of-core and distributed GPU computing, allowing datasets larger than a single GPU's memory to be processed across multiple GPUs or nodes. Dask-CUDA and the RAPIDS Memory Manager (RMM) provide optimized multi-GPU scheduling and memory management.
 
 ## Detail
 
@@ -50,10 +50,13 @@ Dask solves the scalability problem for Python data science workflows: datasets 
 - REST API for distributed scheduler management
 
 ## Connections
+- [[NVIDIA-RAPIDS]] — RAPIDS uses Dask-CUDA and dask-cuDF/dask-cuML/dask-cuGraph for distributed GPU data science
 - [[cuDF]] — dask-cuDF distributes cuDF DataFrames across multiple GPU workers
 - [[cuML]] — dask-cuML enables multi-GPU distributed machine learning with cuML estimators
 - [[cuGraph]] — dask-cuGraph scales GPU graph analytics across multiple GPUs
+- [[RAPIDS-Accelerator-for-Apache-Spark]] — Spark RAPIDS is the Spark-cluster path adjacent to Dask's Python-native distributed path
 - [[CuPy]] — `dask.array` can use CuPy arrays as GPU array chunks
+- [[NVIDIA-Legate-Core]] — Legate is another NVIDIA distributed Python/runtime path, focused on implicit scaling and composable libraries
 - [[NCCL]] — NCCL collectives optionally used for GPU-to-GPU reductions in Dask distributed workflows
 
 ## Resources
